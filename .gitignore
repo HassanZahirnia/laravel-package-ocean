@@ -7,3 +7,12 @@ node_modules
 .env
 dist
 .DS_Store
+
+# windows 
+*:Zone.Identifier
+Thumbs.db
+
+# ide
+/.fleet
+/.idea
+/.vscode
