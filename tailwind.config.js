@@ -1,5 +1,6 @@
 /** @type import('tailwindcss').Config */
 module.exports = {
+    darkMode: 'class',
     content: [
         './components/**/*.{js,vue,ts}',
         './layouts/**/*.{js,vue,ts}',
@@ -10,7 +11,7 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                poppins: '\'poppins\'',
+                poppins: '\'poppins\', Verdana, sans-serif',
             },
         },
     },

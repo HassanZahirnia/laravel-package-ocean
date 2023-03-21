@@ -39,7 +39,12 @@ export default defineNuxtConfig({
     },
     modules: [
         'nuxt-simple-sitemap',
+        '@vueuse/nuxt',
+        '@nuxtjs/color-mode',
     ],
+    colorMode: {
+        classSuffix: '',
+    },
     typescript: {
         shim: false,
     },
