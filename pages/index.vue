@@ -37,11 +37,12 @@
                 src="@/assets/images/fluid-shape.webp"
                 width="auto"
                 height="auto"
-                class="pointer-events-none absolute top-0 right-1/2 z-[-1] h-60 w-60
-                translate-x-1/2 select-none sm:-top-5 lg:-top-10 lg:h-72 lg:w-72
+                alt=""
+                class="pointer-events-none absolute top-5 right-1/2 z-[-1] w-60
+                translate-x-1/2 select-none sm:-top-5 lg:-top-10 lg:w-72
                 "
                 />
-            <div class="px-5 pt-36 sm:px-10">
+            <div class="px-5 pt-40 sm:px-10 sm:pt-36">
                 <div
                     class="mx-auto w-full max-w-3xl rounded-3xl bg-white/20
                     px-10 pt-16 pb-10 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]

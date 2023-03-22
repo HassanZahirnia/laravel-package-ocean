@@ -15,6 +15,9 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
+            htmlAttrs: {
+                lang: 'en-US',
+            },
             title: 'Laravel Package Ocean - Discover new & useful Laravel packages',
             meta: [
                 {

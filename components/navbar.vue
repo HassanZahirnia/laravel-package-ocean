@@ -19,7 +19,7 @@ watch(
     <nav class="relative z-50 mx-auto w-full max-w-screen-xl">
         <header
             class="flex items-center justify-center gap-5
-            py-10 px-5 sm:justify-between xl:px-0
+            px-5 pt-5 pb-10 sm:justify-between sm:py-10 xl:px-0
             "
             >
             <!-- Logo and brand name -->
