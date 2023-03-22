@@ -17,7 +17,11 @@ watch(
 
 <template>
     <nav class="relative z-50 mx-auto w-full max-w-screen-xl">
-        <header class="flex items-center justify-between gap-5 py-10">
+        <header
+            class="flex items-center justify-center gap-5
+            py-10 px-5 sm:justify-between xl:px-0
+            "
+            >
             <!-- Logo and brand name -->
             <nuxt-link
                 href="/"
@@ -25,7 +29,9 @@ watch(
                 aria-label="Home"
                 rel="prefetch"
                 >
+                <!-- Logo -->
                 <div class="i-svg-logo text-5xl" />
+                <!-- Brand -->
                 <div class="text-[#090959] dark:text-inherit">
                     <div class="text-lg leading-snug">
                         Laravel
@@ -40,16 +46,16 @@ watch(
                     </div>
                 </div>
             </nuxt-link>
-            <div class="flex items-center gap-4">
+            <div class="hidden items-center gap-4 sm:flex">
                 <!-- Suggest a new package -->
                 <a
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
-                    class="rounded-xl px-3.5 py-2.5
+                    class="select-none rounded-xl px-3.5 py-2.5
                     text-sm font-medium text-[#2E3140] ring-1
                     ring-[#C3C6D5] transition
-                    duration-300 hover:bg-slate-100
-                    hover:text-[#51556d] dark:text-[#ABB0DD]
+                    duration-300 hover:bg-slate-800/5
+                    hover:text-slate-900 dark:text-[#ABB0DD]
                     dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40
                     "
                     >
@@ -57,8 +63,8 @@ watch(
                 </a>
                 <!-- Github link -->
                 <a
-                    class="i-carbon-logo-github text-3xl
-                    transition duration-300 hover:text-slate-700 dark:text-[#ABB0DD]
+                    class="i-carbon-logo-github select-none text-3xl
+                    transition duration-300 hover:text-slate-600 dark:text-[#ABB0DD]
                     dark:hover:text-[#bcc1ef]
                     "
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
