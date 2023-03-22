@@ -5,10 +5,12 @@ import '@fontsource/poppins/latin.css'
 
 <template>
     <section
-        class="min-h-screen bg-[#FAFCFF] font-poppins
-        antialiased dark:bg-slate-800 dark:text-slate-500
+        class="min-h-screen overflow-x-hidden bg-[#FAFCFF] font-poppins
+        antialiased transition-all duration-300
+        dark:bg-[#04041F] dark:text-[#EAEFFB]
         "
         >
+        <navbar />
         <slot />
     </section>
 </template>

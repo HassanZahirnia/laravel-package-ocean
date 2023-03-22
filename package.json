@@ -9,10 +9,15 @@
     },
     "devDependencies": {
         "@fontsource/poppins": "^4.5.10",
+        "@iconify-json/carbon": "^1.1.16",
+        "@iconify-json/ph": "^1.1.5",
+        "@iconify/utils": "^2.1.5",
         "@nuxtjs/color-mode": "^3.2.0",
         "@tailwindcss/forms": "^0.5.3",
         "@typescript-eslint/eslint-plugin": "^5.56.0",
         "@typescript-eslint/parser": "^5.56.0",
+        "@unocss/nuxt": "^0.50.6",
+        "@unocss/preset-icons": "^0.50.6",
         "@vueuse/core": "^9.13.0",
         "@vueuse/nuxt": "^9.13.0",
         "autoprefixer": "^10.4.14",
@@ -29,5 +34,13 @@
         "tailwindcss": "^3.2.7",
         "typescript": "^5.0.2",
         "vue": "^3.2.47"
+    },
+    "pnpm": {
+        "peerDependencyRules": {
+            "ignoreMissing": [
+                "vite",
+                "webpack"
+            ]
+        }
     }
 }

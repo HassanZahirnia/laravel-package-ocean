@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import presetIcons from '@unocss/preset-icons'
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
+
 export default defineNuxtConfig({
     routeRules: {
         '/': {
@@ -39,9 +42,31 @@ export default defineNuxtConfig({
     },
     modules: [
         'nuxt-simple-sitemap',
+        '@unocss/nuxt',
         '@vueuse/nuxt',
         '@nuxtjs/color-mode',
     ],
+    unocss: {
+        uno: false,
+        icons: true,
+        preflight: false,
+        attributify: false,
+        shortcuts: [],
+        rules: [],
+        presets: [
+            presetIcons({
+                collections: {
+                    svg: FileSystemIconLoader(
+                        './assets/icons',
+                    ),
+                },
+            }),
+        ],
+    },
+    sourcemap: {
+        server: true,
+        client: false,
+    },
     colorMode: {
         classSuffix: '',
     },
