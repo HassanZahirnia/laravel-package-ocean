@@ -18,16 +18,17 @@
         <!-- Purple blur -->
         <div
             class="pointer-events-none absolute top-[-5vw]
-            right-[calc(10rem-10vw)] -z-20 h-[30vw] w-[30vw]
-            select-none rounded-full bg-[#e2c9fc] blur-[15vw] transition
-            duration-300 dark:bg-[#63388E]
+            right-[calc(10rem-10vw)] -z-20 h-[calc(10rem+25vw)] w-[calc(10rem+25vw)]
+            select-none rounded-full bg-[#e2c9fc] blur-[calc(5rem+13vw)]
+            transition duration-300
+            dark:bg-[#63388E]
             "
             />
         <!-- Blue blur -->
         <div
             class="pointer-events-none absolute bottom-[-20vw]
-            left-[calc(10rem-10vw)] -z-30 h-[30vw] w-[30vw]
-            select-none rounded-full bg-[#60A9FF]/50 blur-[15vw]
+            left-[calc(10rem-10vw)] -z-30 h-[calc(10rem+25vw)] w-[calc(10rem+25vw)]
+            select-none rounded-full bg-[#60A9FF]/50 blur-[calc(5rem+13vw)]
             transition duration-300
             dark:bg-[#0A7BFF]/30
             "
