@@ -15,6 +15,14 @@ onMounted(() => {
             fishTimeline?.pause(0)
         },
     })
+        .to('.gsap-nav-logo', {
+            keyframes: {
+                rotate: [0, 10, 0],
+                easeEach: 'none',
+            },
+            ease: 'bounce.out',
+            duration: 0.5,
+        })
         .to('.gsap-nav-fish', {
             keyframes: {
                 '0%': { autoAlpha: 0, rotate: -15 },
@@ -37,14 +45,14 @@ onMounted(() => {
         }, '>-0.1')
         .to('.gsap-nav-droplet-1', {
             keyframes: {
-                x: [0, 5],
-                y: [0, -5],
-                autoAlpha: [0, 1, 0],
-                scale: [0, 1],
-                easeEach: 'none',
+                '0%': { autoAlpha: 0, x: 0, y: 0, scale: 0 },
+                '10%': { autoAlpha: 1 },
+                '90%': { autoAlpha: 1 },
+                '100%': { autoAlpha: 0, x: 10, y: -10, scale: 1 },
+                'easeEach': 'none',
             },
-            ease: 'power2.out',
-            duration: 0.5,
+            ease: 'expo.out',
+            duration: 0.4,
         }, '<')
 })
 
@@ -87,11 +95,11 @@ watch(
             <!-- Droplet -->
             <div
                 class="gsap-nav-droplet-1 pointer-events-none
-                absolute -right-4 top-5 select-none opacity-0
+                absolute -right-3 top-6 select-none opacity-0
                 "
                 >
                 <div
-                    class="i-fluent-emoji-sweat-droplets -rotate-90 text-2xl
+                    class="i-fluent-emoji-sweat-droplets -rotate-90 text-xl
                     "
                     />
             </div>
