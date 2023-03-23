@@ -1,3 +1,9 @@
+<script setup lang="ts">
+const colorMode = useColorMode()
+
+const isLight = computed(() => colorMode.preference === 'sepia' || colorMode.preference === 'light')
+</script>
+
 <template>
     <!-- Ellipse arc -->
     <div
@@ -12,21 +18,49 @@
         "
         />
     <!-- Purple blur -->
-    <div
-        class="pointer-events-none absolute top-[-5vw]
-        right-[calc(10rem-10vw)] -z-20 h-[calc(10rem+25vw)] w-[calc(10rem+25vw)]
-        select-none rounded-full bg-[#e2c9fc] blur-[calc(5rem+13vw)]
-        transition duration-300
-        dark:bg-[#63388E]
+    <img
+        v-if="isLight"
+        src="@/assets/images/pink-blur.webp"
+        width="auto"
+        height="auto"
+        alt=""
+        class="pointer-events-none absolute top-[-10vw]
+        right-[calc(10rem-15vw)] -z-20 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
+        scale-[2.5] select-none
+        "
+        />
+    <img
+        v-else
+        src="@/assets/images/pink-blur-dark.webp"
+        width="auto"
+        height="auto"
+        alt=""
+        class="pointer-events-none absolute top-[-10vw]
+        right-[calc(10rem-15vw)] -z-20 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
+        scale-[2.5] select-none opacity-90 min-[2000px]:scale-[1.7]
         "
         />
     <!-- Blue blur -->
-    <div
-        class="pointer-events-none absolute bottom-[-15vw]
-        left-[calc(10rem-10vw)] -z-30 h-[calc(10rem+25vw)] w-[calc(10rem+25vw)]
-        select-none rounded-full bg-[#60A9FF]/50 blur-[calc(5rem+13vw)]
-        transition duration-300
-        dark:bg-[#0A7BFF]/30
+    <img
+        v-if="isLight"
+        src="@/assets/images/blue-blur.webp"
+        width="auto"
+        height="auto"
+        alt=""
+        class="pointer-events-none absolute bottom-[calc(5rem-10vw)]
+        left-[calc(10rem-20vw)] -z-30 h-[calc(10rem+40vw)] w-[calc(10rem+40vw)]
+        scale-[2.5] select-none
+        "
+        />
+    <img
+        v-else
+        src="@/assets/images/blue-blur-dark.webp"
+        width="auto"
+        height="auto"
+        alt=""
+        class="pointer-events-none absolute bottom-[calc(5rem-10vw)] left-[calc(10rem-20vw)]
+        -z-30 h-[calc(10rem+40vw)] w-[calc(10rem+40vw)] scale-[2.5]
+        select-none opacity-60 min-[2000px]:scale-[1.7]
         "
         />
 </template>
