@@ -5,7 +5,7 @@ import '@fontsource/poppins/latin.css'
 
 <template>
     <section
-        class="min-h-screen overflow-x-hidden bg-[#FAFCFF] font-poppins
+        class="min-h-screen overflow-hidden bg-[#FAFCFF] font-poppins
         antialiased transition-all duration-300
         dark:bg-[#04041F] dark:text-[#EAEFFB]
         "

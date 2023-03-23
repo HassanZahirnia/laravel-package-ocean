@@ -22,7 +22,7 @@
         />
     <!-- Blue blur -->
     <div
-        class="pointer-events-none absolute bottom-[-20vw]
+        class="pointer-events-none absolute bottom-[-15vw]
         left-[calc(10rem-10vw)] -z-30 h-[calc(10rem+25vw)] w-[calc(10rem+25vw)]
         select-none rounded-full bg-[#60A9FF]/50 blur-[calc(5rem+13vw)]
         transition duration-300
