@@ -1,7 +1,21 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
+
 const colorMode = useColorMode()
 
 const isLight = computed(() => colorMode.preference === 'sepia' || colorMode.preference === 'light')
+
+onMounted(() => {
+    gsap.set('.gsap-background-blur', {
+        autoAlpha: 0,
+    })
+    gsap.fromTo('.gsap-background-blur', {
+        autoAlpha: 0,
+    }, {
+        autoAlpha: 1,
+        duration: 1,
+    })
+})
 </script>
 
 <template>
@@ -19,46 +33,46 @@ const isLight = computed(() => colorMode.preference === 'sepia' || colorMode.pre
         />
     <!-- Purple blur -->
     <img
-        v-if="isLight"
+        v-show="!colorMode.unknown && isLight"
         src="@/assets/images/pink-blur.webp"
         width="auto"
         height="auto"
         alt=""
-        class="pointer-events-none absolute top-[-10vw]
+        class="gsap-background-blur pointer-events-none absolute top-[-10vw]
         right-[calc(10rem-15vw)] -z-20 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
         scale-[2.5] select-none
         "
         />
     <img
-        v-else
+        v-show="!colorMode.unknown && !isLight"
         src="@/assets/images/pink-blur-dark.webp"
         width="auto"
         height="auto"
         alt=""
-        class="pointer-events-none absolute top-[-10vw]
+        class="gsap-background-blur pointer-events-none absolute top-[-10vw]
         right-[calc(10rem-15vw)] -z-20 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
         scale-[2.5] select-none opacity-90 min-[2000px]:scale-[1.7]
         "
         />
     <!-- Blue blur -->
     <img
-        v-if="isLight"
+        v-show="!colorMode.unknown && isLight"
         src="@/assets/images/blue-blur.webp"
         width="auto"
         height="auto"
         alt=""
-        class="pointer-events-none absolute bottom-[calc(5rem-10vw)]
+        class="gsap-background-blur pointer-events-none absolute bottom-[calc(5rem-10vw)]
         left-[calc(10rem-20vw)] -z-30 h-[calc(10rem+40vw)] w-[calc(10rem+40vw)]
         scale-[2.5] select-none
         "
         />
     <img
-        v-else
+        v-show="!colorMode.unknown && !isLight"
         src="@/assets/images/blue-blur-dark.webp"
         width="auto"
         height="auto"
         alt=""
-        class="pointer-events-none absolute bottom-[calc(5rem-10vw)] left-[calc(10rem-20vw)]
+        class="gsap-background-blur pointer-events-none absolute bottom-[calc(5rem-10vw)] left-[calc(10rem-20vw)]
         -z-30 h-[calc(10rem+40vw)] w-[calc(10rem+40vw)] scale-[2.5]
         select-none opacity-60 min-[2000px]:scale-[1.7]
         "
