@@ -10,7 +10,7 @@ import '@fontsource/poppins/latin.css'
         dark:bg-[#04041F] dark:text-[#EAEFFB]
         "
         >
-        <navbar />
+        <nav-bar />
         <slot />
     </section>
 </template>

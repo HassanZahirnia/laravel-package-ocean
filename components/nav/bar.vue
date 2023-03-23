@@ -23,35 +23,13 @@ watch(
             "
             >
             <!-- Logo and brand name -->
-            <nuxt-link
-                href="/"
-                class="flex items-center gap-7"
-                aria-label="Home"
-                rel="prefetch"
-                >
-                <!-- Logo -->
-                <div class="i-svg-logo text-5xl" />
-                <!-- Brand -->
-                <div class="text-[#090959] dark:text-inherit">
-                    <div class="text-lg leading-snug">
-                        Laravel
-                    </div>
-                    <div class="flex items-center gap-1 text-xl font-bold">
-                        <div class="">
-                            Package
-                        </div>
-                        <div class="bg-gradient-to-r from-cyan-400 to-[#08AFFF] bg-clip-text text-transparent">
-                            Ocean
-                        </div>
-                    </div>
-                </div>
-            </nuxt-link>
-            <div class="hidden items-center gap-4 sm:flex">
+            <nav-logo />
+            <div class="hidden items-center gap-1 sm:flex">
                 <!-- Suggest a new package -->
                 <a
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
-                    class="select-none rounded-xl px-3.5 py-2.5
+                    class="mr-1 select-none rounded-xl px-3.5 py-2.5
                     text-sm font-medium text-[#2E3140] ring-1
                     ring-[#C3C6D5] transition
                     duration-300 hover:bg-slate-800/5
@@ -63,23 +41,29 @@ watch(
                 </a>
                 <!-- Github link -->
                 <a
-                    class="i-carbon-logo-github select-none text-3xl
+                    class="select-none p-2
                     transition duration-300 hover:text-slate-600 dark:text-[#ABB0DD]
                     dark:hover:text-[#bcc1ef]
                     "
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
-                    />
+                    >
+                    <div class="i-carbon-logo-github text-3xl" />    
+                </a>
                 <!-- Theme toggle  -->
-                <div class="h-[1.75rem] transition-all duration-300 hover:rotate-12">
+                <label
+                    class="relative -top-px cursor-pointer p-2
+                    transition-all duration-300 hover:-rotate-12
+                    "
+                    >
                     <input
                         v-model="themeCheckbox"
-                        class="toggle z-[1] cursor-pointer select-none appearance-none border-none
-                        bg-transparent
+                        class="toggle z-[1] cursor-pointer
+                        select-none appearance-none border-none bg-transparent
                         "
                         type="checkbox"
                         />
-                </div>
+                </label>
             </div>
         </header>
     </nav>

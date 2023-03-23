@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fontsource/poppins': ^4.5.10
   '@iconify-json/carbon': ^1.1.16
+  '@iconify-json/fluent-emoji': ^1.1.13
   '@iconify-json/ph': ^1.1.5
   '@iconify/utils': ^2.1.5
   '@nuxtjs/color-mode': ^3.2.0
@@ -31,6 +32,7 @@ specifiers:
 devDependencies:
   '@fontsource/poppins': 4.5.10
   '@iconify-json/carbon': 1.1.16
+  '@iconify-json/fluent-emoji': 1.1.13
   '@iconify-json/ph': 1.1.5
   '@iconify/utils': 2.1.5
   '@nuxtjs/color-mode': 3.2.0
@@ -851,6 +853,12 @@ packages:
 
   /@iconify-json/carbon/1.1.16:
     resolution: {integrity: sha512-AD8bcnRSGA0WfcGEass2FbA0sagrUzrpFx5WchuDy3uf7yKBWumdypdQK121DH321fQDl5+zZQ26T6gC9knwUQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/fluent-emoji/1.1.13:
+    resolution: {integrity: sha512-9tyClxWzrLwbfItv10/oUp3G7s5X+MUa0VN5P8nN2gmVg9Uy87HoZnDt3IRKNwbyqncXRr3p0VoWuv/Tg2jUCg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
