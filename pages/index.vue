@@ -17,16 +17,17 @@
             />
         <!-- Purple blur -->
         <div
-            class="pointer-events-none absolute -top-10 right-20 -z-20 h-[30rem] w-[30rem]
-            select-none rounded-full bg-[#e2c9fc] blur-[200px]
-            transition duration-300
-            dark:bg-[#63388E]
+            class="pointer-events-none absolute top-[-5vw]
+            right-[calc(10rem-10vw)] -z-20 h-[30vw] w-[30vw]
+            select-none rounded-full bg-[#e2c9fc] blur-[15vw] transition
+            duration-300 dark:bg-[#63388E]
             "
             />
         <!-- Blue blur -->
         <div
-            class="pointer-events-none absolute -bottom-40 left-20 -z-30 h-[30rem] w-[30rem]
-            select-none rounded-full bg-[#60A9FF]/50 blur-[200px]
+            class="pointer-events-none absolute bottom-[-20vw]
+            left-[calc(10rem-10vw)] -z-30 h-[30vw] w-[30vw]
+            select-none rounded-full bg-[#60A9FF]/50 blur-[15vw]
             transition duration-300
             dark:bg-[#0A7BFF]/30
             "
