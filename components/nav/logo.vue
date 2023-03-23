@@ -17,11 +17,11 @@ onMounted(() => {
     })
         .to('.gsap-nav-logo', {
             keyframes: {
-                rotate: [0, 10, 0],
+                rotate: [0, 20, 0],
                 easeEach: 'none',
             },
-            ease: 'bounce.out',
-            duration: 0.5,
+            ease: 'power4.out',
+            duration: 1.5,
         })
         .to('.gsap-nav-fish', {
             keyframes: {

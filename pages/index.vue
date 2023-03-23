@@ -18,7 +18,7 @@
         <!-- Purple blur -->
         <div
             class="pointer-events-none absolute -top-10 right-20 -z-20 h-[30rem] w-[30rem]
-            select-none rounded-full bg-[#E6D0FC] blur-[200px]
+            select-none rounded-full bg-[#e2c9fc] blur-[200px]
             transition duration-300
             dark:bg-[#63388E]
             "

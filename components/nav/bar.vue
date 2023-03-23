@@ -19,7 +19,7 @@ watch(
     <nav class="relative z-50 mx-auto w-full max-w-screen-xl">
         <header
             class="flex items-center justify-center gap-5
-            px-5 pt-5 pb-10 sm:justify-between sm:py-10 xl:px-0
+            px-5 py-10 sm:justify-between xl:px-0
             "
             >
             <!-- Logo and brand name -->
@@ -29,11 +29,14 @@ watch(
                 <a
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
-                    class="mr-1 select-none rounded-xl px-3.5 py-2.5
-                    text-sm font-medium text-[#2E3140] ring-1
-                    ring-[#C3C6D5] transition
-                    duration-300 hover:bg-slate-800/5
-                    hover:text-slate-900 dark:text-[#ABB0DD]
+                    class="mr-1 select-none rounded-xl bg-white/20 px-5
+                    py-3 text-sm font-medium text-[#404a6b]
+                    shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20
+                    backdrop-blur-xl
+                    transition duration-300
+                    hover:bg-white/40 hover:text-slate-900 hover:shadow-xl
+                    hover:shadow-fuchsia-100
+                    dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none
                     dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40
                     "
                     >
@@ -86,7 +89,7 @@ watch(
     --offset-orthogonal: calc(var(--size) * 0.7);
     --offset-diagonal: calc(var(--size) * 0.5);
     transform: scale(0.75);
-    color: #ffaa00;
+    color: #ffb051;
     box-shadow: inset 0 0 0 var(--size), calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size), var(--offset-orthogonal) 0 0 var(--ray-size), 0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size), 0 var(--offset-orthogonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size), var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size), var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
 </style>
