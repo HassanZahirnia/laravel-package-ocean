@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
 const colorMode = useColorMode()
 
+const themIsUnknown = computed(() => colorMode.unknown)
+
 const currentThemeMode = computed(() => {
-    return (colorMode.preference === 'system' || colorMode.preference === 'sepia' || colorMode.preference === 'light') ? true : false
+    return (colorMode.value === 'sepia' || colorMode.value === 'light') ? true : false
 })
 
 const themeCheckbox = ref(currentThemeMode.value)
@@ -11,6 +14,21 @@ watch(
     themeCheckbox,
     (value) => {
         colorMode.preference = value ? 'light' : 'dark'
+    },
+)
+
+watch(
+    themIsUnknown,
+    (value) => {
+        if(!value) {
+            gsap.to('.gsap-theme-toggle', {
+                scale: 1,
+                duration: 0.1,
+            })
+        }
+    },
+    {
+        immediate: true,
     },
 )
 </script>
@@ -24,7 +42,9 @@ watch(
             >
             <!-- Logo and brand name -->
             <nav-logo />
-            <div class="hidden items-center gap-1 sm:flex">
+            <div
+                class="hidden items-center gap-1 sm:flex"
+                >
                 <!-- Suggest a new package -->
                 <a
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
@@ -55,8 +75,9 @@ watch(
                 </a>
                 <!-- Theme toggle  -->
                 <label
-                    class="relative -top-px cursor-pointer p-2
-                    transition-all duration-300 hover:-rotate-12
+                    class="gsap-theme-toggle relative -top-px scale-0 cursor-pointer
+                    p-2 transition-all duration-300
+                    hover:-rotate-12
                     "
                     >
                     <input

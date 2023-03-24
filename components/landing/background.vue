@@ -3,7 +3,7 @@ import { gsap } from 'gsap'
 
 const colorMode = useColorMode()
 
-const isLight = computed(() => colorMode.preference === 'sepia' || colorMode.preference === 'light')
+const isLight = computed(() => colorMode.value === 'sepia' || colorMode.value === 'light')
 
 onMounted(() => {
     gsap.set('.gsap-background-blur', {
@@ -13,7 +13,7 @@ onMounted(() => {
         autoAlpha: 0,
     }, {
         autoAlpha: 1,
-        duration: 1,
+        duration: 0.3,
     })
 })
 </script>

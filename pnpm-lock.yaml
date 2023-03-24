@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@fontsource/poppins': ^4.5.10
+  '@formkit/auto-animate': 1.0.0-beta.6
   '@iconify-json/carbon': ^1.1.16
   '@iconify-json/fluent-emoji': ^1.1.13
   '@iconify-json/ph': ^1.1.5
@@ -31,6 +32,7 @@ specifiers:
 
 devDependencies:
   '@fontsource/poppins': 4.5.10
+  '@formkit/auto-animate': 1.0.0-beta.6
   '@iconify-json/carbon': 1.1.16
   '@iconify-json/fluent-emoji': 1.1.13
   '@iconify-json/ph': 1.1.5
@@ -829,6 +831,10 @@ packages:
 
   /@fontsource/poppins/4.5.10:
     resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
+    dev: true
+
+  /@formkit/auto-animate/1.0.0-beta.6:
+    resolution: {integrity: sha512-PVDhLAlr+B4Xb7e+1wozBUWmXa6BFU8xUPR/W/E+TsQhPS1qkAdAsJ25keEnFrcePSnXHrOsh3tiFbEToOzV9w==}
     dev: true
 
   /@humanwhocodes/config-array/0.11.8:

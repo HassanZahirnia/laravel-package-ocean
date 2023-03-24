@@ -9,6 +9,7 @@
     },
     "devDependencies": {
         "@fontsource/poppins": "^4.5.10",
+        "@formkit/auto-animate": "1.0.0-beta.6",
         "@iconify-json/carbon": "^1.1.16",
         "@iconify-json/fluent-emoji": "^1.1.13",
         "@iconify-json/ph": "^1.1.5",
