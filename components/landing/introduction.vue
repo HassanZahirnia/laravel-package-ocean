@@ -12,7 +12,7 @@
             />
         <div class="px-5 pt-40 sm:px-10 sm:pt-36">
             <div
-                class="mx-auto w-full max-w-3xl rounded-3xl bg-white/20
+                class="mx-auto w-full max-w-3xl rounded-3xl bg-white/30
                 px-10 pt-16 pb-10 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
                 backdrop-blur-xl
                 transition duration-300

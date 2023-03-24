@@ -2,7 +2,6 @@
 import { gsap } from 'gsap'
 
 const colorMode = useColorMode()
-
 const isLight = computed(() => colorMode.value === 'sepia' || colorMode.value === 'light')
 
 onMounted(() => {

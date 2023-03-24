@@ -21,9 +21,9 @@ const laravelPackages: LaravelPackage[] = [
     {
         name: 'Laravel Auditing',
         description: 'Understand changes in Eloquent models.',
-        github: 'https://github.com/spatie/laravel-permission',
+        github: 'https://github.com/owen-it/laravel-auditing',
         repo: 'laravel-auditing',
-        stars: 2500,
+        stars: 2600,
         category: 'Validation',
     },
 ]
@@ -36,7 +36,7 @@ const laravelPackages: LaravelPackage[] = [
         </div>
         <div
             v-auto-animate
-            class="grid grid-cols-[repeat(auto-fill,20rem)] items-start gap-5 pt-5"
+            class="grid grid-cols-[repeat(auto-fill,19rem)] items-start gap-5 pt-5"
             >
             <package-card
                 v-for="laravelPackage in laravelPackages"

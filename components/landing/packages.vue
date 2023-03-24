@@ -1,14 +1,57 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
 
+const colorMode = useColorMode()
+const isLight = computed(() => colorMode.value === 'sepia' || colorMode.value === 'light')
+
+onMounted(() => {
+    gsap.set('.gsap-emerald-background-blur, .gsap-emerald-background-blur-dark', {
+        autoAlpha: 0,
+    })
+    gsap.fromTo('.gsap-emerald-background-blur', {
+        autoAlpha: 0,
+    }, {
+        autoAlpha: 1,
+        duration: 0.3,
+    })
+    gsap.fromTo('.gsap-emerald-background-blur-dark', {
+        autoAlpha: 0,
+    }, {
+        autoAlpha: 0.5,
+        duration: 0.3,
+    })
+})
 </script>
 
 <template>
     <div
-        class="px-5 pt-20 text-[#273240]
+        class="relative px-5 pt-20 text-[#273240]
         dark:text-[#EAEFFB]
         "
         >
-        <div class="flex flex-wrap items-center justify-between gap-10">
+        <img
+            v-show="!colorMode.unknown && isLight"
+            src="@/assets/images/emerald-blur.webp"
+            width="auto"
+            height="auto"
+            alt=""
+            class="gsap-emerald-background-blur pointer-events-none absolute top-1/2 right-1/2
+            -z-40 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)] -translate-y-1/2 translate-x-1/2
+            scale-[2.5] select-none
+            "
+            />
+        <img
+            v-show="!colorMode.unknown && !isLight"
+            src="@/assets/images/emerald-blur.webp"
+            width="auto"
+            height="auto"
+            alt=""
+            class="gsap-emerald-background-blur-dark pointer-events-none absolute top-1/2 right-1/2
+            -z-40 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)] -translate-y-1/2 translate-x-1/2
+            scale-[2.5] select-none
+            "
+            />
+        <div class="flex flex-wrap items-center justify-between gap-5">
             <div
                 class="
                 text-3xl

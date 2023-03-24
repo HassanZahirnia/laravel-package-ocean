@@ -5,18 +5,28 @@ const $props = defineProps<{
     laravelPackage: LaravelPackage
 }>()
 
-function formatLargeNumbers(n: number): string {
-    const value = n.toFixed().toString()
-    if (value.length >= 4 && value.length <= 6) 
-        return `${value.slice(0, -3)}K`
-	
-    if (value.length >= 7 && value.length <= 9) 
-        return `${value.slice(0, -6)}M`
-	
-    if (value.length >= 10 && value.length <= 12) 
-        return `${value.slice(0, -9)}B`
-	
-    return value
+// A function to format large numbers
+// Example: 1200 -> 1.1k
+// Example: 12000 -> 12k
+function formatLargeNumbers(number: number) {
+    if (number < 1000) 
+        return number
+    
+
+    const numberString = number.toString()
+    const firstDigit = numberString[0]
+    const lastTwoDigits = numberString.slice(1, 3)
+    const lastDigit = numberString.slice(-1)
+
+    if (lastTwoDigits === '00') 
+        return `${firstDigit}k`
+    
+
+    if (lastDigit === '0') 
+        return `${firstDigit}.${lastTwoDigits[0]}k`
+    
+
+    return `${firstDigit}.${lastTwoDigits}k`
 }
 </script>
 
@@ -24,8 +34,8 @@ function formatLargeNumbers(n: number): string {
     <a
         :href="laravelPackage.github"
         class="flex h-60 flex-col rounded-3xl
-        bg-white/20
-        p-7
+        bg-white/50
+        p-6
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         ring-1 ring-slate-100 backdrop-blur-xl
         transition
@@ -45,9 +55,9 @@ function formatLargeNumbers(n: number): string {
                 </div>
             </div>
         </div>
-        <div class="flex-1 pt-5">
+        <div class="flex-1 pt-6">
             <div
-                class="text-lg font-semibold
+                class="font-semibold
                 text-[#545D82]
                 dark:text-[#DEE4F1]
                 "
