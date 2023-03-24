@@ -12,5 +12,15 @@ import '@fontsource/poppins/latin.css'
         >
         <nav-bar />
         <slot />
+        <footer>
+            <div class="pt-20 pb-10 text-center">
+                <div class="text-sm text-[#545D82]">
+                    Made with ❤️ by
+                    <a href="https://zahirnia.com">
+                        Hassan Zahirnia
+                    </a>
+                </div>
+            </div>
+        </footer>
     </section>
 </template>

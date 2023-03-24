@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
-const colorMode = useColorMode()
 
+const colorMode = useColorMode()
+const themeIsHovering = ref(false)
 const themIsUnknown = computed(() => colorMode.unknown)
 
 const currentThemeMode = computed(() => {
@@ -31,13 +32,31 @@ watch(
         immediate: true,
     },
 )
+
+watch(
+    themeIsHovering,
+    (value) => {
+        if(value) {
+            gsap.to('.gsap-theme-toggle', {
+                rotate: -12,
+                duration: 0.3,
+            })
+        }
+        else{
+            gsap.to('.gsap-theme-toggle', {
+                rotate: 0,
+                duration: 0.3,
+            })
+        }
+    },
+)
 </script>
 
 <template>
     <nav class="relative z-50 mx-auto w-full max-w-screen-xl">
         <header
             class="flex items-center justify-center gap-5
-            px-5 py-10 sm:justify-between xl:px-0
+            px-5 py-10 sm:justify-between
             "
             >
             <!-- Logo and brand name -->
@@ -76,9 +95,10 @@ watch(
                 <!-- Theme toggle  -->
                 <label
                     class="gsap-theme-toggle relative -top-px scale-0 cursor-pointer
-                    p-2 transition-all duration-300
-                    hover:-rotate-12
+                    p-2
                     "
+                    @mouseenter="themeIsHovering = true"
+                    @mouseleave="themeIsHovering = false"
                     >
                     <input
                         v-model="themeCheckbox"
