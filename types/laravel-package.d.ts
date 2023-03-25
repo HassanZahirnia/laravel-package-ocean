@@ -1,14 +1,12 @@
-export type LaravelPackageCategory = 
-    'File Management' |
-    'Roles & Permissions' |
-    'Validation' |
-    'Logging & Audit'
+import { categories } from '@/database/categories'
 
 export type LaravelPackage = {
     name: string
     description: string
-    repo: string
+    category: typeof categories[number]
     github: string
+    repo: string
+    composer: string
     stars: number
-    category: LaravelPackageCategory
+    keywords: string[]
 }

@@ -33,6 +33,7 @@ function formatLargeNumbers(number: number) {
 <template>
     <a
         :href="laravelPackage.github"
+        target="_blank"
         class="flex h-60 flex-col rounded-3xl
         bg-white/50
         p-6
