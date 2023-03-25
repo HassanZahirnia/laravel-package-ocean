@@ -25,7 +25,7 @@ onMounted(() => {
 
 <template>
     <div
-        class="relative px-5 pt-14 text-[#273240]
+        class="relative px-5 pt-10 text-[#273240]
         dark:text-[#EAEFFB]
         "
         >
