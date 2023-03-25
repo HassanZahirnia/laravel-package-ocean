@@ -1,6 +1,6 @@
-import type { LaravelPackage } from '@/types/laravel-package'
+import type { Package } from '@/types/package'
 
-export const laravelPackages: LaravelPackage[] = [
+export const laravelPackages: Package[] = [
     {
         name: 'Laravel Auditing',
         description: 'Understand changes in Eloquent models.',

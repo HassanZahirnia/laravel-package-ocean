@@ -1,9 +1,11 @@
 import { categories } from '@/database/categories'
 
-export type LaravelPackage = {
+export type Category = typeof categories[number]
+
+export type Package = {
     name: string
     description: string
-    category: typeof categories[number]
+    category: Category
     github: string
     repo: string
     composer: string

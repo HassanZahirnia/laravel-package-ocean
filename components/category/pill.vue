@@ -1,14 +1,15 @@
 <script setup lang="ts">
-import type { LaravelPackageCategory } from '@/types/laravel-package'
+import type { Category } from '@/types/package'
 
-const $props = defineProps<{
-    category: LaravelPackageCategory
+defineProps<{
+    category: Category
 }>()
 </script>
 
 <template>
     <div
         class="rounded-full px-3.5 py-1 text-xs font-semibold
+        transition duration-300
         "
         :class="{
             'bg-[#F5E6FE] text-[#BD62F7] dark:bg-[#D48CFF]/20': category === 'File Management',

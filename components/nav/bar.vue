@@ -68,7 +68,7 @@ watch(
                 <a
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
-                    class="mr-1 select-none rounded-xl bg-white/20 px-5
+                    class="mr-1 select-none rounded-xl bg-white/30 px-5
                     py-3 text-sm font-medium text-[#404a6b]
                     shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20
                     backdrop-blur-xl

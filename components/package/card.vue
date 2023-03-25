@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { LaravelPackage } from '@/types/laravel-package'
+import type { Package } from '@/types/package'
 
-const $props = defineProps<{
-    laravelPackage: LaravelPackage
+defineProps<{
+    laravelPackage: Package
 }>()
 
 // A function to format large numbers
