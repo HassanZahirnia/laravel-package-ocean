@@ -12,7 +12,7 @@ import '@fontsource/poppins/latin.css'
         >
         <nav-bar />
         <slot />
-        <footer>
+        <footer class="mt-40">
             <div class="pt-20 pb-10 text-center">
                 <div class="text-sm text-[#545D82]">
                     Made with ❤️ by

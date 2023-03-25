@@ -1,5 +1,36 @@
 <script setup lang="ts">
+import MiniSearch from 'minisearch'
 import { laravelPackages } from '@/database/packages'
+
+// Initialize the minisearch instance
+const miniSearch = new MiniSearch({
+    idField: 'composer',
+    fields: ['name', 'description'],
+})
+
+// Index all packages
+miniSearch.addAll(laravelPackages)
+
+const search = useSearch()
+
+const results = computed(() => {
+    // If search is not empty, search packages using miniSearch,
+    // If not return all packages
+    if (search.value){
+        const searchResult = miniSearch.search(search.value,
+            {
+                fuzzy: 0.1,
+                prefix: true,
+            },
+        )
+        
+        // Return only packages that their `composer` property are included in searchResults's `id` property
+        return laravelPackages.filter(laravelPackage => searchResult.map(result => result.id).includes(laravelPackage.composer))
+    }
+
+    return laravelPackages
+})
+
 </script>
 
 <template>
@@ -15,7 +46,7 @@ import { laravelPackages } from '@/database/packages'
             class="grid grid-cols-[repeat(auto-fill,19rem)] items-start gap-5 pt-6"
             >
             <package-card
-                v-for="laravelPackage in laravelPackages"
+                v-for="laravelPackage in results"
                 :key="laravelPackage.name"
                 :laravel-package="laravelPackage"
                 />
