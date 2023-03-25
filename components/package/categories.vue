@@ -4,8 +4,10 @@
 
 <template>
     <div class="w-full max-w-[15rem]">
-        <div class="text-xl font-semibold">
-            Categories
+        <div class="flex min-h-[3rem] items-center">
+            <div class="text-2xl font-semibold">
+                Categories
+            </div>
         </div>
     </div>
 </template>

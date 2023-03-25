@@ -10,8 +10,19 @@ module.exports = {
         'plugin:vue/vue3-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:tailwindcss/recommended',
+        'plugin:jsonc/recommended-with-jsonc',
     ],
     overrides: [
+        {
+            files: ['*.json', '*.json5'],
+            parser: 'jsonc-eslint-parser',
+            rules: {
+                'jsonc/quotes': ['error', 'double'],
+                'jsonc/quote-props': ['error', 'always'],
+                'jsonc/comma-dangle': ['error', 'never'],
+                'jsonc/indent': ['error', 4],
+            },
+        },
         {
             files: ['*.vue'],
             parser: 'vue-eslint-parser',
@@ -41,7 +52,7 @@ module.exports = {
         sourceType: 'module',
     },
     ignorePatterns: [
-        'resources/types/*.d.ts',
+        'types/*.d.ts',
     ],
     plugins: [
         'vue',

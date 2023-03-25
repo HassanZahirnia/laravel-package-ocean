@@ -26,14 +26,13 @@ onMounted(() => {
 <template>
     <!-- Ellipse arc -->
     <div
-        class="pointer-events-none absolute top-[-70vw] left-1/2
+        class="pointer-events-none absolute top-[-80vw] left-1/2
         -z-10 h-[calc(100vw+10rem)] w-[calc(100vw+10rem)] -translate-x-1/2
         scale-y-75
         scale-x-150
         select-none rounded-full
         bg-white/20 transition
         duration-300 dark:bg-[#173563]/10
-        min-[2000px]:top-[-80vw]
         "
         />
     <!-- Purple blur -->

@@ -1,0 +1,11 @@
+{
+    "name": "Laravel Media Library",
+    "category": "File Management",
+    "description": "Associate files with eloquent models.",
+    "keywords": [],
+    "stars": 5100,
+    "links": {
+        "github": "https://github.com/spatie/laravel-medialibrary",
+        "repo": "laravel-medialibrary"
+    }
+}

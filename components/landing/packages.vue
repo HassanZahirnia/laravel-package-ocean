@@ -25,7 +25,7 @@ onMounted(() => {
 
 <template>
     <div
-        class="relative px-5 pt-20 text-[#273240]
+        class="relative px-5 pt-14 text-[#273240]
         dark:text-[#EAEFFB]
         "
         >
@@ -51,18 +51,7 @@ onMounted(() => {
             scale-[2.5] select-none
             "
             />
-        <div class="flex flex-wrap items-center justify-between gap-5">
-            <div
-                class="
-                text-3xl
-                font-bold
-                "
-                >
-                Packages
-            </div>
-            <ui-search-input />
-        </div>
-        <div class="flex items-start gap-10 pt-10">
+        <div class="flex items-start gap-10">
             <package-categories />
             <package-list />
         </div>

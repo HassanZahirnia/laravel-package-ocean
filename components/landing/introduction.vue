@@ -7,22 +7,21 @@
             height="auto"
             alt=""
             class="pointer-events-none absolute top-5 right-1/2 z-[-1] w-60
-            translate-x-1/2 select-none sm:-top-5 lg:-top-10 lg:w-72
+            translate-x-1/2 select-none sm:-top-10
             "
             />
-        <div class="px-5 pt-40 sm:px-10 sm:pt-36">
+        <div class="px-5 pt-20 sm:px-10">
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl bg-white/30
                 px-10 pt-16 pb-10 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
                 backdrop-blur-xl
                 transition duration-300
                 dark:bg-[#110E26]/50
-                lg:max-w-4xl
                 "
                 >
                 <div
                     class="text-2xl font-bold text-[#040404] transition duration-300 dark:text-white
-                    sm:text-3xl lg:text-4xl
+                    sm:text-3xl
                     "
                     >
                     Discover new Laravel packages.
@@ -30,8 +29,7 @@
                 <div
                     class="mx-auto max-w-sm pt-5 font-medium text-[#6A7789] transition duration-300
                     dark:text-[#96A5BB] sm:max-w-md
-                    sm:text-lg lg:max-w-lg
-                    lg:text-xl
+                    sm:text-lg
                     "
                     >
                     Our goal is to help the Laravel community to find new & useful Laravel packages in one place.
@@ -47,7 +45,7 @@
                     <div class="space-y-0.5">
                         <div
                             class="text-3xl font-bold text-[#4B6CFF] transition
-                            duration-300 lg:text-4xl
+                            duration-300
                             "
                             >
                             294
@@ -55,7 +53,7 @@
                         <div
                             class="text-sm font-medium text-[#827F98]
                             transition duration-300
-                            dark:text-[#96A5BB] lg:text-base
+                            dark:text-[#96A5BB]
                             "
                             >
                             Packages
@@ -64,7 +62,7 @@
                     <div class="space-y-0.5">
                         <div
                             class="text-3xl font-bold text-[#4B6CFF] transition
-                            duration-300 lg:text-4xl
+                            duration-300
                             "
                             >
                             84
@@ -72,7 +70,7 @@
                         <div
                             class="text-sm font-medium text-[#827F98]
                             transition duration-300
-                            dark:text-[#96A5BB] lg:text-base
+                            dark:text-[#96A5BB]
                             "
                             >
                             Authors
@@ -81,7 +79,7 @@
                     <div class="space-y-0.5">
                         <div
                             class="text-3xl font-bold text-[#4B6CFF] transition
-                            duration-300 lg:text-4xl
+                            duration-300
                             "
                             >
                             13
@@ -89,7 +87,7 @@
                         <div
                             class="text-sm font-medium text-[#827F98]
                             transition duration-300
-                            dark:text-[#96A5BB] lg:text-base
+                            dark:text-[#96A5BB]
                             "
                             >
                             Categories

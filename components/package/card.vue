@@ -40,8 +40,10 @@ function formatLargeNumbers(number: number) {
         ring-1 ring-slate-100 backdrop-blur-xl
         transition
         duration-300 hover:scale-105
-        dark:bg-[#362B59]/20 dark:ring-1
+        hover:ring-indigo-300 dark:bg-[#362B59]/20
+        dark:ring-1
         dark:ring-[#132447]
+        dark:hover:ring-indigo-900
         "
         >
         <div class="flex items-center justify-between gap-5">
