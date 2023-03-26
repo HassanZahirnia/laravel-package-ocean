@@ -1,18 +1,8 @@
 <script setup lang="ts">
 const route = useRoute()
-const router = useRouter()
 const search = useSearch()
-const page = usePage()
 
 search.value = route.query.search?.toString() ?? ''
-
-watch(search, (value) => {
-    router.push({
-        path: '/',
-        query: { search: value },
-    })
-    page.value = 1
-})
 </script>
 
 <template>
