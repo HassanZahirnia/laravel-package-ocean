@@ -1,5 +1,7 @@
 import type { Package } from '@/types/package'
 
+// Note that the `composer` property is used as the unique identifier for each package.
+
 export const laravelPackages: Package[] = [
     {
         name: 'Laravel Auditing',

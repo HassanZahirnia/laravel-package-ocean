@@ -5,7 +5,7 @@ import { laravelPackages } from '@/database/packages'
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
     idField: 'composer',
-    fields: ['name', 'description'],
+    fields: ['name', 'description', 'keywords'],
 })
 
 // Index all packages
@@ -19,12 +19,18 @@ const router = useRouter()
 const search = useSearch()
 
 // Page
-const page = ref(route.query.page ? Number(route.query.page) : 1)
-const pageSize = ref(2)
+const page = ref(Number(route.query.page) || 1)
+const pageSize = 2
 
 // Results
 const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
+
+const pageMounted = ref(false)
+
+onMounted(() => {
+    pageMounted.value = true
+})
 
 watch(
     [search, page],
@@ -32,39 +38,57 @@ watch(
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
         if (search.value){
+            if(newSearch !== oldSearch)
+                newPage = 1
+
             const searchResult = miniSearch.search(search.value,
                 {
                     fuzzy: 0.1,
                     prefix: true,
                 },
             )
-            
+
             // Return only packages that their `composer` property are included in searchResults's `id` property
-            results.value = laravelPackages.filter(laravelPackage => searchResult.map(result => result.id).includes(laravelPackage.composer))
+            results.value = laravelPackages.filter(
+                laravelPackage => searchResult.map(result => result.id).includes(laravelPackage.composer),
+            )
         }
         else{
             // Return all packages
             results.value = laravelPackages
         }
 
-        if(newSearch !== oldSearch)
-            newPage = 1
-
         // Paginate results
-        const start = (newPage - 1) * pageSize.value
-        const end = start + pageSize.value
+        const start = (newPage - 1) * pageSize
+        const end = start + pageSize
         resultsPaginated.value = results.value.slice(start, end)
 
         // Update the route
-        router.push({
-            path: '/',
-            query: { page: newPage, search: newSearch },
-        })
+        if(pageMounted.value){
+            if(results.value.length === laravelPackages.length && newPage === 1 && newSearch === ''){
+                router.push({
+                    path: '/',
+                    query: {},
+                })
+            }
+            else{
+                router.push({
+                    path: '/',
+                    query: { page: newPage, search: newSearch },
+                })
+            }
+            
+        }
     },
     { immediate: true },
 )
 
-function updatePageNumber({ currentPage, currentPageSize }: { currentPage: number; currentPageSize: number }) {
+function updatePageNumber(
+    { currentPage, currentPageSize }:
+    { currentPage: number; currentPageSize: number },
+) {
+    // Update the page number,
+    // which comes from user interaction with the pagination buttons
     page.value = currentPage
 }
 
@@ -77,8 +101,8 @@ const {
     next,
 } = useOffsetPagination({
     total: computed(() => results.value.length),
-    page: page.value,
-    pageSize: pageSize.value,
+    page,
+    pageSize,
     onPageChange: updatePageNumber,
 })
 </script>
