@@ -20,17 +20,11 @@ const search = useSearch()
 
 // Page
 const page = ref(Number(route.query.page) || 1)
-const pageSize = 2
+const pageSize = 10
 
 // Results
 const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
-
-const pageMounted = ref(false)
-
-onMounted(() => {
-    pageMounted.value = true
-})
 
 watch(
     [search, page],
@@ -64,21 +58,23 @@ watch(
         resultsPaginated.value = results.value.slice(start, end)
 
         // Update the route
-        if(pageMounted.value){
-            if(results.value.length === laravelPackages.length && newPage === 1 && newSearch === ''){
-                router.push({
-                    path: '/',
-                    query: {},
-                })
-            }
-            else{
-                router.push({
-                    path: '/',
-                    query: { page: newPage, search: newSearch },
-                })
-            }
-            
+        if(results.value.length === laravelPackages.length && newPage === 1 && newSearch === ''){
+            // Clear the query when page number is 1 and the search is empty
+            router.push({
+                path: '/',
+                query: {},
+            })
         }
+        else{
+            // Push the new query
+            router.push({
+                path: '/',
+                query: { page: newPage, search: newSearch },
+            })
+        }
+
+        // Update the page number incase it was previously set to 1 because of the search difference
+        page.value = newPage
     },
     { immediate: true },
 )

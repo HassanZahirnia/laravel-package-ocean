@@ -11,7 +11,6 @@ defineProps<{
 function formatLargeNumbers(number: number) {
     if (number < 1000) 
         return number
-    
 
     const numberString = number.toString()
     const firstDigit = numberString[0]
@@ -41,7 +40,7 @@ function formatLargeNumbers(number: number) {
         ring-1 ring-slate-100 backdrop-blur-xl
         transition
         duration-300 hover:scale-105
-        hover:ring-indigo-300 dark:bg-[#362B59]/20
+        hover:ring-indigo-200 dark:bg-[#362B59]/20
         dark:ring-1
         dark:ring-[#132447]
         dark:hover:ring-indigo-900

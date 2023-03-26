@@ -51,9 +51,32 @@ onMounted(() => {
             scale-[2.5] select-none
             "
             />
-        <div class="flex items-start gap-10">
-            <package-categories />
-            <package-list />
-        </div>
+        <ClientOnly
+            fallback-tag="span"
+            fallback=""
+            >
+            <div class="fade-in flex items-start gap-10">
+                <package-categories />
+                <package-list />
+            </div>
+        </ClientOnly>
     </div>
 </template>
+
+<style scoped lang="stylus">
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+</style>
