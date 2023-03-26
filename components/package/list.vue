@@ -11,7 +11,12 @@ const miniSearch = new MiniSearch({
 // Index all packages
 miniSearch.addAll(laravelPackages)
 
+const route = useRoute()
 const search = useSearch()
+const page = usePage()
+const pageSize = usePageSize()
+
+page.value = route.query.page ? Number(route.query.page) : 1
 
 const results = computed(() => {
     // If search is not empty, search packages using miniSearch,
@@ -31,6 +36,12 @@ const results = computed(() => {
     return laravelPackages
 })
 
+const resultsPaginated = computed(() => {
+    const start = (page.value - 1) * pageSize.value
+    const end = start + pageSize.value
+
+    return results.value.slice(start, end)
+})
 </script>
 
 <template>
@@ -46,10 +57,13 @@ const results = computed(() => {
             class="grid grid-cols-[repeat(auto-fill,19rem)] items-start gap-5 pt-6"
             >
             <package-card
-                v-for="laravelPackage in results"
-                :key="laravelPackage.name"
+                v-for="laravelPackage in resultsPaginated"
+                :key="laravelPackage.composer"
                 :laravel-package="laravelPackage"
                 />
+        </div>
+        <div class="flex justify-center px-5 pt-8">
+            <ui-pagination :total="results.length" />
         </div>
     </div>
 </template>

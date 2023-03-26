@@ -2,6 +2,8 @@
 const route = useRoute()
 const router = useRouter()
 const search = useSearch()
+const page = usePage()
+
 search.value = route.query.search?.toString() ?? ''
 
 watch(search, (value) => {
@@ -9,6 +11,7 @@ watch(search, (value) => {
         path: '/',
         query: { search: value },
     })
+    page.value = 1
 })
 </script>
 
