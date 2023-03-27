@@ -5,7 +5,11 @@ import { laravelPackages } from '@/database/packages'
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
     idField: 'composer',
-    fields: ['name', 'description', 'keywords'],
+    fields: [
+        'name',
+        'description',
+        'keywords',
+    ],
 })
 
 // Index all packages
@@ -20,7 +24,7 @@ const search = useSearch()
 
 // Page
 const page = ref(Number(route.query.page) || 1)
-const pageSize = 10
+const pageSize = 9
 
 // Results
 const results = ref(laravelPackages)
@@ -112,30 +116,51 @@ const {
             <!-- Search bar -->
             <ui-search-input />
         </div>
-        <!-- Packages list -->
-        <div
-            v-auto-animate
-            class="grid grid-cols-[repeat(auto-fill,19rem)] items-start gap-5 pt-6"
-            >
-            <package-card
-                v-for="laravelPackage in resultsPaginated"
-                :key="laravelPackage.composer"
-                :laravel-package="laravelPackage"
-                />
-        </div>
-        <!-- Pagination -->
-        <div
-            v-if="resultsPaginated.length"
-            class="flex justify-center px-5 pt-8"
-            >
-            <ui-pagination
-                :page-count="pageCount"
-                :current-page="currentPage"
-                :is-first-page="isFirstPage"
-                :is-last-page="isLastPage"
-                @press:next="next"
-                @press:prev="prev"
-                />
+        <div class="relative min-h-[16rem]">
+            <!-- Packages list -->
+            <div
+                v-auto-animate
+                class="grid grid-cols-[repeat(auto-fill,19rem)] items-start gap-5 pt-6"
+                :class="{
+                    'min-h-[17rem]': resultsPaginated.length,
+                }"
+                >
+                <package-card
+                    v-for="laravelPackage in resultsPaginated"
+                    :key="laravelPackage.composer"
+                    :laravel-package="laravelPackage"
+                    />
+            </div>
+            <!-- Pagination -->
+            <div
+                v-if="resultsPaginated.length"
+                class="flex justify-center px-5 pt-8"
+                >
+                <ui-pagination
+                    :page-count="pageCount"
+                    :current-page="currentPage"
+                    :is-first-page="isFirstPage"
+                    :is-last-page="isLastPage"
+                    @press:next="next"
+                    @press:prev="prev"
+                    />
+            </div>
+            <!-- No results message -->
+            <transition
+                enter-active-class="duration-300 ease-out"
+                enter-from-class="opacity-0"
+                enter-to-class="opacity-100"
+                leave-active-class="duration-300 ease-in"
+                leave-from-class="opacity-100"
+                leave-to-class="opacity-0"
+                >
+                <div
+                    v-if="!resultsPaginated.length"
+                    class="absolute top-0 right-1/2 translate-x-1/2"
+                    >
+                    <ui-search-result />
+                </div>
+            </transition>
         </div>
     </div>
 </template>
