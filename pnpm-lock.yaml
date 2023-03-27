@@ -9,6 +9,7 @@ specifiers:
   '@iconify/utils': ^2.1.5
   '@nuxtjs/color-mode': ^3.2.0
   '@tailwindcss/forms': ^0.5.3
+  '@types/lodash': ^4.14.191
   '@typescript-eslint/eslint-plugin': ^5.56.0
   '@typescript-eslint/parser': ^5.56.0
   '@unocss/nuxt': ^0.50.6
@@ -24,6 +25,7 @@ specifiers:
   eslint-plugin-vue: ^9.10.0
   gsap: ^3.11.5
   jsonc-eslint-parser: ^2.2.0
+  lodash: ^4.17.21
   minisearch: ^6.0.1
   nuxt: ^3.3.2
   nuxt-simple-sitemap: ^2.2.0
@@ -42,6 +44,7 @@ devDependencies:
   '@iconify/utils': 2.1.5
   '@nuxtjs/color-mode': 3.2.0
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
+  '@types/lodash': 4.14.191
   '@typescript-eslint/eslint-plugin': 5.56.0_2hcjazgfnbtq42tcc73br2vup4
   '@typescript-eslint/parser': 5.56.0_j4766f7ecgqbon3u7zlxn5zszu
   '@unocss/nuxt': 0.50.6_postcss@8.4.21
@@ -57,6 +60,7 @@ devDependencies:
   eslint-plugin-vue: 9.10.0_eslint@8.36.0
   gsap: 3.11.5
   jsonc-eslint-parser: 2.2.0
+  lodash: 4.17.21
   minisearch: 6.0.1
   nuxt: 3.3.2_i47s3harknsxjuk6lgc64zx7di
   nuxt-simple-sitemap: 2.2.0
@@ -1263,6 +1267,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:

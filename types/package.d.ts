@@ -12,4 +12,6 @@ export type Package = {
     author: string
     stars: number
     keywords: string[]
+    first_release_at: string
+    latest_release_at: string
 }

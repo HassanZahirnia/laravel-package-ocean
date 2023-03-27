@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { laravelPackages } from '@/database/packages'
 
@@ -55,6 +56,9 @@ watch(
             // Return all packages
             results.value = laravelPackages
         }
+
+        // Sort packages by their `first_release_at` property in an ascending order
+        results.value = orderBy(results.value, 'first_release_at', 'asc')
 
         // Paginate results
         const start = (newPage - 1) * pageSize

@@ -13,6 +13,8 @@ export const laravelPackages: Package[] = [
         composer: 'owen-it/laravel-auditing',
         stars: 2600,
         keywords: [],
+        first_release_at: '2015-08-20 11:48',
+        latest_release_at: '2023-03-17 11:39',
     },
     {
         name: 'Laravel Media Library',
@@ -24,6 +26,8 @@ export const laravelPackages: Package[] = [
         composer: 'spatie/laravel-medialibrary',
         stars: 5100,
         keywords: [],
+        first_release_at: '2015-04-22 19:07',
+        latest_release_at: '2023-03-06 11:26',
     },
     {
         name: 'Laravel Permissions',
@@ -35,5 +39,7 @@ export const laravelPackages: Package[] = [
         composer: 'spatie/laravel-permission',
         stars: 11100,
         keywords: [],
+        first_release_at: '2015-09-15 15:32',
+        latest_release_at: '2023-03-22 02:57',
     },
 ]
