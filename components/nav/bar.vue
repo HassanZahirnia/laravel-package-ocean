@@ -89,8 +89,9 @@ watch(
                     "
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
+                    aria-label="Github"
                     >
-                    <div class="i-carbon-logo-github text-3xl" />    
+                    <div class="i-carbon-logo-github text-3xl" />
                 </a>
                 <!-- Theme toggle  -->
                 <label
@@ -106,6 +107,7 @@ watch(
                         select-none appearance-none border-none bg-transparent
                         "
                         type="checkbox"
+                        aria-label="Theme toggle"
                         />
                 </label>
             </div>

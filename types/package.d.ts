@@ -9,6 +9,7 @@ export type Package = {
     github: string
     repo: string
     composer: string
+    author: string
     stars: number
     keywords: string[]
 }

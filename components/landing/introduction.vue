@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 import * as ScrollTrigger from 'gsap/ScrollTrigger'
+import { laravelPackages } from '@/database/packages'
+import { categories } from '@/database/categories'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
@@ -23,6 +25,9 @@ onMounted(() => {
         },
     })
 })
+
+// Get unique count of authors from laravelPackages
+const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackage.author)).size
 </script>
 
 <template>
@@ -37,8 +42,7 @@ onMounted(() => {
                 width="auto"
                 height="auto"
                 alt=""
-                class="gsap-fluid-shape pointer-events-none w-60 select-none
-                "
+                class="gsap-fluid-shape pointer-events-none w-60 select-none"
                 />
         </div>
         <div class="gsap-introduction-card px-5 pt-20 sm:px-10">
@@ -79,7 +83,7 @@ onMounted(() => {
                             duration-300
                             "
                             >
-                            294
+                            {{ laravelPackages.length }}
                         </div>
                         <div
                             class="text-sm font-medium text-[#827F98]
@@ -96,7 +100,7 @@ onMounted(() => {
                             duration-300
                             "
                             >
-                            84
+                            {{ authorsCount }}
                         </div>
                         <div
                             class="text-sm font-medium text-[#827F98]
@@ -113,7 +117,7 @@ onMounted(() => {
                             duration-300
                             "
                             >
-                            13
+                            {{ categories.length }}
                         </div>
                         <div
                             class="text-sm font-medium text-[#827F98]
