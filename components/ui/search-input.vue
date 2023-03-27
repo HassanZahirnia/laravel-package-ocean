@@ -6,7 +6,7 @@ search.value = route.query.search?.toString() ?? ''
 </script>
 
 <template>
-    <div class="relative w-full min-[550px]:max-w-xs">
+    <div class="relative w-full min-[550px]:max-w-[18rem]">
         <transition
             enter-active-class="duration-150 ease-out"
             enter-from-class="translate-x-1 rotate-45 opacity-0"
@@ -44,12 +44,12 @@ search.value = route.query.search?.toString() ?? ''
             v-model="search"
             type="text"
             class="w-full
-            rounded-2xl border-none
+            rounded-xl border-none
             py-3 px-11
-            font-medium shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+            text-sm font-medium
+            shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
             transition
             duration-300
-            placeholder:text-sm
             placeholder:text-[#9095AE] dark:bg-[#362B59]/20
             dark:ring-1 dark:ring-[#132447]
             dark:placeholder:text-[#ABB0DD]

@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@fontsource/poppins': ^4.5.10
   '@formkit/auto-animate': 1.0.0-beta.6
+  '@headlessui/vue': ^1.7.12
   '@iconify-json/carbon': ^1.1.16
   '@iconify-json/fluent-emoji': ^1.1.13
   '@iconify-json/ph': ^1.1.5
@@ -38,6 +39,7 @@ specifiers:
 devDependencies:
   '@fontsource/poppins': 4.5.10
   '@formkit/auto-animate': 1.0.0-beta.6
+  '@headlessui/vue': 1.7.12_vue@3.2.47
   '@iconify-json/carbon': 1.1.16
   '@iconify-json/fluent-emoji': 1.1.13
   '@iconify-json/ph': 1.1.5
@@ -647,6 +649,15 @@ packages:
 
   /@formkit/auto-animate/1.0.0-beta.6:
     resolution: {integrity: sha512-PVDhLAlr+B4Xb7e+1wozBUWmXa6BFU8xUPR/W/E+TsQhPS1qkAdAsJ25keEnFrcePSnXHrOsh3tiFbEToOzV9w==}
+    dev: true
+
+  /@headlessui/vue/1.7.12_vue@3.2.47:
+    resolution: {integrity: sha512-IV0k1I2I8Bj37HljFF231Y9cpldfiucf+inMCxA/VPoQT6UTxo0N/rb78CrogBxXNfsPxKmz3y/nlv+eRz6zvg==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      vue: 3.2.47
     dev: true
 
   /@humanwhocodes/config-array/0.11.8:

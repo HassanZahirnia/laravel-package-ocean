@@ -2,6 +2,7 @@
 import { orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { laravelPackages } from '@/database/packages'
+import type { PackageSortFields } from '@/types/package'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
@@ -23,6 +24,9 @@ const router = useRouter()
 // Search
 const search = useSearch()
 
+// Sort field
+const sortField = ref<PackageSortFields>('first_release_at')
+
 // Page
 const page = ref(Number(route.query.page) || 1)
 const pageSize = 9
@@ -32,8 +36,11 @@ const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
 
 watch(
-    [search, page],
-    ([newSearch, newPage], [oldSearch, oldPage]) => {
+    [search, page, sortField],
+    (
+        [newSearch, newPage, newSortField],
+        [oldSearch, oldPage, oldSortField],
+    ) => {
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
         if (search.value){
@@ -57,8 +64,23 @@ watch(
             results.value = laravelPackages
         }
 
-        // Sort packages by their `first_release_at` property in an ascending order
-        results.value = orderBy(results.value, 'first_release_at', 'asc')
+        // Sort packages
+        let sortOrder: 'asc' | 'desc' = 'desc'
+        switch (newSortField) {
+            case 'first_release_at':
+                sortOrder = 'desc'
+                break
+            case 'latest_release_at':
+                sortOrder = 'desc'
+                break
+            case 'stars':
+                sortOrder = 'desc'
+                break
+            default:
+                sortOrder = 'desc'
+                break
+        }
+        results.value = orderBy(results.value, newSortField, sortOrder)
 
         // Paginate results
         const start = (newPage - 1) * pageSize
@@ -117,8 +139,16 @@ const {
             <div class="text-2xl font-semibold">
                 Packages
             </div>
-            <!-- Search bar -->
-            <ui-search-input />
+            <div class="flex items-center gap-3">
+                <!-- Search bar -->
+                <ui-search-input />
+                <!-- Sort -->
+                <ui-listbox
+                    class="w-52"
+                    :sort-field="sortField"
+                    @update:sort-field="sortField = $event"
+                    />
+            </div>
         </div>
         <div class="relative min-h-[16rem]">
             <!-- Packages list -->

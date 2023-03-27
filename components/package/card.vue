@@ -6,27 +6,19 @@ defineProps<{
 }>()
 
 // A function to format large numbers
-// Example: 1200 -> 1.1k
-// Example: 12000 -> 12k
-function formatLargeNumbers(number: number) {
-    if (number < 1000) 
-        return number
-
-    const numberString = number.toString()
-    const firstDigit = numberString[0]
-    const lastTwoDigits = numberString.slice(1, 3)
-    const lastDigit = numberString.slice(-1)
-
-    if (lastTwoDigits === '00') 
-        return `${firstDigit}k`
-    
-
-    if (lastDigit === '0') 
-        return `${firstDigit}.${lastTwoDigits[0]}k`
-    
-
-    return `${firstDigit}.${lastTwoDigits}k`
+// Example: 2600 -> 2.6k
+// Example: 5100 -> 5.1k
+// Example: 11100 -> 11.1k
+function formatStars(numStars: number): string {
+    if (numStars >= 1000) {
+        const formattedNum = (numStars / 1000).toFixed(1)
+        return `${formattedNum}k`
+    }
+    else {
+        return `${numStars}`
+    }
 }
+
 </script>
 
 <template>
@@ -53,7 +45,7 @@ function formatLargeNumbers(number: number) {
             <div class="flex items-center gap-2">
                 <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
                 <div class="text-sm">
-                    {{ formatLargeNumbers(laravelPackage.stars) }}
+                    {{ formatStars(laravelPackage.stars) }}
                 </div>
             </div>
         </div>

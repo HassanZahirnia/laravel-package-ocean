@@ -15,3 +15,5 @@ export type Package = {
     first_release_at: string
     latest_release_at: string
 }
+
+export type PackageSortFields = 'first_release_at' | 'latest_release_at' | 'stars'

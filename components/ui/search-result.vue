@@ -41,11 +41,19 @@ const isHovering = ref(false)
         <div class="pt-1 font-medium">
             No packages found for
             <span
-                class="cursor-pointer font-semibold text-cyan-500 underline transition duration-300
-                hover:line-through
+                class="inline-flex cursor-pointer items-center gap-1 rounded-full
+                bg-cyan-200 px-2
+                pt-px pb-0.5 text-cyan-600 transition duration-300
+                hover:bg-cyan-200/50 dark:bg-cyan-900/50 dark:text-cyan-500
+                dark:hover:bg-cyan-800
                 "
                 @click="search = ''"
-                >{{ search }}</span>
+                >
+                <span class="">
+                    {{ search }}
+                </span>
+                <span class="i-ph-x" />
+            </span>
         </div>
         <div class="pt-2 text-sm text-[#6A7789] dark:text-[#96A5BB]">
             If you know a package that is not listed here,
