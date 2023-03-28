@@ -3,6 +3,7 @@ import { orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { laravelPackages } from '@/database/packages'
 import type { PackageSortFields } from '@/types/package'
+import { categories } from '@/database/categories'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
@@ -26,9 +27,12 @@ const search = useSearch()
 
 // Selected Category
 const selectedCategory = useSelectedCategory()
+// If the selectedCategory is not included in the categories array, set it to an empty string
+selectedCategory.value = route.query.category && categories.includes(route.query.category as typeof categories[number]) ? route.query.category?.toString() : ''
 
 // Sort field
 const sortField = ref<PackageSortFields>('first_release_at')
+sortField.value = route.query.sort?.toString() as PackageSortFields ?? 'first_release_at'
 
 // Page
 const page = ref(Number(route.query.page) || 1)
@@ -42,7 +46,7 @@ watch(
     [search, page, sortField, selectedCategory],
     (
         [newSearch, newPage, newSortField, newSelectedCategory],
-        [oldSearch, oldPage, oldSortField, oldSelectedCategory],
+        [oldSearch],
     ) => {
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
@@ -96,7 +100,12 @@ watch(
         resultsPaginated.value = results.value.slice(start, end)
 
         // Update the route
-        if(results.value.length === laravelPackages.length && newPage === 1 && newSearch === ''){
+        if(
+            results.value.length === laravelPackages.length
+            && newPage === 1 && newSearch === ''
+            && newSortField === 'first_release_at'
+            && newSelectedCategory === ''
+        ){
             // Clear the query when page number is 1 and the search is empty
             router.push({
                 path: '/',
@@ -107,7 +116,13 @@ watch(
             // Push the new query
             router.push({
                 path: '/',
-                query: { page: newPage, search: newSearch },
+                // Only include parameters that are not empty
+                query: {
+                    ...(newSearch && { search: newSearch }),
+                    ...(newPage && { page: newPage }),
+                    ...(newSortField && { sort: newSortField }),
+                    ...(newSelectedCategory && { category: newSelectedCategory }),
+                },
             })
         }
 
@@ -164,12 +179,12 @@ const {
                     <div class="i-ph-x-bold" />
                 </div>
             </div>
-            <div class="flex flex-wrap items-center gap-3">
+            <div class="flex w-full flex-wrap items-center justify-center gap-3 min-[800px]:w-auto ">
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
                 <ui-listbox
-                    class="w-52"
+                    class="w-full min-[800px]:w-52"
                     :sort-field="sortField"
                     @update:sort-field="sortField = $event"
                     />

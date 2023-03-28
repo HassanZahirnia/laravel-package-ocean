@@ -73,10 +73,9 @@ watch(
         @mouseleave="isHovering = false"
         >
         <nuxt-link
-            href="/"
+            to="/"
             class="relative flex items-center gap-7"
             aria-label="Home"
-            rel="prefetch"
             >
             <!-- Logo -->
             <div class="i-svg-logo gsap-nav-logo text-5xl" />

@@ -6,7 +6,7 @@ search.value = route.query.search?.toString() ?? ''
 </script>
 
 <template>
-    <div class="relative w-full min-[550px]:max-w-[16rem]">
+    <div class="relative w-full min-[800px]:max-w-[16rem]">
         <transition
             enter-active-class="duration-150 ease-out"
             enter-from-class="translate-x-1 rotate-45 opacity-0"

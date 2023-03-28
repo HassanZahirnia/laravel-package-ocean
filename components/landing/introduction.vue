@@ -36,7 +36,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         class="relative"
         >
         <!-- Fluid -->
-        <div class="absolute top-5 right-1/2 z-[-1] translate-x-1/2 sm:-top-10">
+        <div class="absolute top-0 right-1/2 z-[-1] translate-x-1/2 sm:-top-10">
             <img
                 src="@/assets/images/fluid-shape.webp"
                 width="auto"
@@ -48,10 +48,10 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         <div class="gsap-introduction-card px-5 pt-20 sm:px-10">
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl bg-white/30
-                px-10 pt-14 pb-10 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
-                backdrop-blur-xl
-                transition duration-300
-                dark:bg-[#110E26]/50
+                px-5 py-10 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+                backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50
+                sm:p-10
+                lg:p-14
                 "
                 >
                 <div
@@ -71,10 +71,10 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 </div>
                 <div
                     class="mt-11 flex flex-wrap
-                    justify-center gap-y-10 gap-x-24 border-t border-t-[#6A7789]/20
-                    pt-9 transition
-                    duration-300
-                    dark:border-t-[#627288]/20 sm:mx-10 md:mx-20
+                    justify-around gap-5 border-t border-t-[#6A7789]/20 pt-9
+                    transition duration-300
+                    dark:border-t-[#627288]/20 min-[450px]:gap-14
+                    sm:mx-10 md:mx-20 md:justify-center md:gap-24
                     "
                     >
                     <div class="space-y-0.5">
