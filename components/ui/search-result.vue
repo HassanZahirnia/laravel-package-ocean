@@ -38,9 +38,11 @@ const isHovering = ref(false)
         <div class="pt-2 text-2xl font-semibold">
             Oops!
         </div>
-        <div class="pt-1 font-medium">
-            No packages found for
+        <div class="inline-flex items-center gap-2 pt-1 font-medium">
+            No packages found
+            <span v-if="search">for</span>
             <span
+                v-if="search"
                 class="inline-flex cursor-pointer items-center gap-1 rounded-full
                 bg-cyan-200 px-2
                 pt-px pb-0.5 text-cyan-600 transition duration-300
