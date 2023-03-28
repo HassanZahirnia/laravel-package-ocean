@@ -24,6 +24,9 @@ const router = useRouter()
 // Search
 const search = useSearch()
 
+// Selected Category
+const selectedCategory = useSelectedCategory()
+
 // Sort field
 const sortField = ref<PackageSortFields>('first_release_at')
 
@@ -36,10 +39,10 @@ const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
 
 watch(
-    [search, page, sortField],
+    [search, page, sortField, selectedCategory],
     (
-        [newSearch, newPage, newSortField],
-        [oldSearch, oldPage, oldSortField],
+        [newSearch, newPage, newSortField, newSelectedCategory],
+        [oldSearch, oldPage, oldSortField, oldSelectedCategory],
     ) => {
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
@@ -63,6 +66,11 @@ watch(
             // Return all packages
             results.value = laravelPackages
         }
+
+        // Selected Category
+        if(newSelectedCategory)
+            results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
+        
 
         // Sort packages
         let sortOrder: 'asc' | 'desc' = 'desc'
@@ -134,10 +142,27 @@ const {
 </script>
 
 <template>
-    <div class="w-full">
+    <div class="sticky top-5 left-0 w-full">
         <div class="flex flex-wrap items-center justify-between gap-5">
-            <div class="text-2xl font-semibold">
-                Packages
+            <div class="flex items-center gap-5">
+                <div class="text-2xl font-semibold">
+                    Packages
+                </div>
+                <div
+                    v-if="selectedCategory"
+                    class="flex cursor-pointer items-center gap-2 rounded-full bg-slate-300/50
+                    py-1 px-3 text-sm font-medium text-slate-600
+                    transition duration-300
+                    hover:bg-slate-300 dark:bg-slate-700/50 dark:text-slate-400
+                    dark:hover:bg-slate-800/50
+                    "
+                    @click="selectedCategory = ''"
+                    >
+                    <div class="">
+                        {{ selectedCategory }}
+                    </div>
+                    <div class="i-ph-x-bold" />
+                </div>
             </div>
             <div class="flex items-center gap-3">
                 <!-- Search bar -->

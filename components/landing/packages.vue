@@ -55,7 +55,7 @@ onMounted(() => {
             fallback-tag="span"
             fallback=""
             >
-            <div class="fade-in flex items-start gap-10">
+            <div class="fade-in relative flex items-start gap-5">
                 <package-categories />
                 <package-list />
             </div>
