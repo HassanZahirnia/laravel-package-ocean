@@ -9,7 +9,6 @@ module.exports = {
         'plugin:import/recommended',
         'plugin:vue/vue3-recommended',
         'plugin:@typescript-eslint/recommended',
-        'plugin:tailwindcss/recommended',
         'plugin:jsonc/recommended-with-jsonc',
     ],
     overrides: [
@@ -238,8 +237,5 @@ module.exports = {
                 variables: true,
             },
         ],
-
-        // TailwindCSS
-        'tailwindcss/no-custom-classname': 'off',
     },
 }

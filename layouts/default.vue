@@ -7,7 +7,7 @@ import '@fontsource/poppins/latin.css'
     <section
         class="bg-[#FAFCFF] font-poppins antialiased transition
         duration-300
-        [overflow:clip] dark:bg-[#04041F]
+        overflow-clip dark:bg-[#04041F]
         dark:text-[#EAEFFB]"
         >
         <nav-bar />

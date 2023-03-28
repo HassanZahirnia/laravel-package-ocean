@@ -14,7 +14,7 @@ async function updatePackages() {
         const { data: packagistData } = await axios.get(`https://packagist.org/packages/${composer}.json`)
         const releases = packagistData.package.versions
 
-        const releaseVersions = Object.keys(releases).filter((release) => !releases[release].version.includes('dev'))
+        const releaseVersions = Object.keys(releases).filter(release => !releases[release].version.includes('dev'))
         const latestRelease = releaseVersions.reduce((a, b) => {
             const timeA = new Date(releases[a].time)
             const timeB = new Date(releases[b].time)
