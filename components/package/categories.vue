@@ -13,7 +13,7 @@ const selectedCategory = useSelectedCategory()
 </script>
 
 <template>
-    <div class="w-full max-w-[15rem]">
+    <div class="hidden w-full max-w-[15rem] sm:block">
         <div class="flex min-h-[3rem] items-center">
             <div class="text-2xl font-semibold transition duration-300">
                 Categories
@@ -38,7 +38,8 @@ const selectedCategory = useSelectedCategory()
                         rounded-lg transition duration-300
                         "
                         :class="{
-                            'bg-slate-200 text-slate-500 dark:bg-slate-800/50': selectedCategory !== category.name,
+                            'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50': selectedCategory !== category.name,
+                            
                             'bg-fuchsia-100 text-fuchsia-500 dark:bg-fuchsia-400/20': category.name === 'File Management' && selectedCategory === 'File Management',
                             'bg-cyan-100 text-cyan-500 dark:bg-cyan-400/20': category.name === 'Auth & Permissions' && selectedCategory === 'Auth & Permissions',
                             'bg-rose-100 text-rose-500 dark:bg-rose-400/20': category.name === 'Database & Eloquent' && selectedCategory === 'Database & Eloquent',

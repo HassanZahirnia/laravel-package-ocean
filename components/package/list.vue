@@ -164,7 +164,7 @@ const {
                     <div class="i-ph-x-bold" />
                 </div>
             </div>
-            <div class="flex items-center gap-3">
+            <div class="flex flex-wrap items-center gap-3">
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
@@ -179,7 +179,7 @@ const {
             <!-- Packages list -->
             <div
                 v-auto-animate
-                class="grid grid-cols-[repeat(auto-fill,19rem)] items-start gap-5 pt-6"
+                class="grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
                 :class="{
                     'min-h-[17rem]': resultsPaginated.length,
                 }"

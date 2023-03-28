@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import type { Package } from '@/types/package'
 
-defineProps<{
+const $props = defineProps<{
     laravelPackage: Package
 }>()
+
+const selectedCategory = useSelectedCategory()
 
 // A function to format large numbers
 // Example: 2600 -> 2.6k
@@ -19,13 +21,15 @@ function formatStars(numStars: number): string {
     }
 }
 
+// A function to open the package github link in a new tab
+function openGithubLink() {
+    window.open($props.laravelPackage.github, '_blank')
+}
 </script>
 
 <template>
-    <a
-        :href="laravelPackage.github"
-        target="_blank"
-        class="flex h-60 flex-col rounded-3xl
+    <div
+        class="flex h-60 cursor-pointer flex-col rounded-3xl
         bg-white/50
         p-6
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
@@ -37,10 +41,12 @@ function formatStars(numStars: number): string {
         dark:ring-[#132447]
         dark:hover:ring-indigo-900
         "
+        @click="openGithubLink"
         >
         <div class="flex items-center justify-between gap-5">
             <category-pill
                 :category="laravelPackage.category"
+                @click.stop="selectedCategory = laravelPackage.category"
                 />
             <div class="flex items-center gap-2">
                 <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
@@ -80,5 +86,5 @@ function formatStars(numStars: number): string {
                 {{ laravelPackage.repo }}
             </div>
         </div>
-    </a>
+    </div>
 </template>

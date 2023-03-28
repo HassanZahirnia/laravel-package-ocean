@@ -10,6 +10,7 @@ defineProps<{
     <div
         class="rounded-full px-3.5 py-1 text-xs font-semibold
         transition duration-300
+        hover:opacity-80
         "
         :class="{
             'bg-fuchsia-100 text-fuchsia-500 dark:bg-fuchsia-400/20': category === 'File Management',
