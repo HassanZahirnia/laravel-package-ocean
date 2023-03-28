@@ -215,7 +215,7 @@ const {
                 >
                 <div
                     v-if="!resultsPaginated.length"
-                    class="absolute top-0 right-1/2 translate-x-1/2"
+                    class="absolute top-0 right-1/2 w-full translate-x-1/2"
                     >
                     <ui-search-result />
                 </div>
