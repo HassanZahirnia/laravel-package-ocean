@@ -25,6 +25,13 @@ function formatStars(numStars: number): string {
 function openGithubLink() {
     window.open($props.laravelPackage.github, '_blank')
 }
+
+// Get name of repo from the github link
+const repoName = computed(() => {
+    const githubLink = $props.laravelPackage.github
+    const repoName = githubLink.split('/').pop()
+    return repoName
+})
 </script>
 
 <template>
@@ -83,7 +90,7 @@ function openGithubLink() {
             <div
                 class="text-sm font-medium"
                 >
-                {{ laravelPackage.repo }}
+                {{ repoName }}
             </div>
         </div>
     </div>

@@ -7,7 +7,6 @@ export type Package = {
     description: string
     category: Category
     github: string
-    repo: string
     composer: string
     author: string
     stars: number
