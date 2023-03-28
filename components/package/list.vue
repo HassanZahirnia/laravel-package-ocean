@@ -159,13 +159,13 @@ const {
 <template>
     <div class="sticky top-5 left-0 w-full">
         <div class="flex flex-wrap items-center justify-between gap-5">
-            <div class="flex items-center gap-5">
+            <div class="flex flex-wrap items-center gap-5 sm:flex-nowrap">
                 <div class="text-2xl font-semibold">
                     Packages
                 </div>
                 <div
                     v-if="selectedCategory"
-                    class="flex cursor-pointer items-center gap-2 rounded-full bg-slate-300/50
+                    class="flex cursor-pointer items-center gap-2 truncate rounded-full bg-slate-300/50
                     py-1 px-3 text-sm font-medium text-slate-600
                     transition duration-300
                     hover:bg-slate-300 dark:bg-slate-700/50 dark:text-slate-400
@@ -179,12 +179,12 @@ const {
                     <div class="i-ph-x-bold" />
                 </div>
             </div>
-            <div class="flex w-full flex-wrap items-center justify-center gap-3 min-[800px]:w-auto ">
+            <div class="flex w-full flex-wrap items-center justify-center gap-3 lg:w-auto lg:flex-1 lg:flex-nowrap lg:justify-end">
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
                 <ui-listbox
-                    class="w-full min-[800px]:w-52"
+                    class="w-full shrink-0 min-[800px]:w-52"
                     :sort-field="sortField"
                     @update:sort-field="sortField = $event"
                     />
