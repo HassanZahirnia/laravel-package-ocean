@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         '/': {
             sitemap: {
                 changefreq:
-                'monthly',
+                'daily',
                 priority: 1,
                 lastmod: new Date().toISOString(),
             },
@@ -42,6 +42,9 @@ export default defineNuxtConfig({
                 { rel: 'shortcut icon', href: '/favicon.ico?v=w1dBNxT7Wg' },
             ],
         },
+    },
+    sitemap: {
+        hostname: 'https://laravel-package-ocean.netlify.app',
     },
     modules: [
         'nuxt-simple-sitemap',
