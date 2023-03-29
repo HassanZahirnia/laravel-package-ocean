@@ -6,7 +6,7 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "update-packages-database": "tsx database/update-packages.ts && ./node_modules/.bin/eslint --fix database/packages.ts"
+        "update-packages-database": "tsx update-database.ts && ./node_modules/.bin/eslint --fix database/packages.ts"
     },
     "devDependencies": {
         "@fontsource/poppins": "^4.5.10",
