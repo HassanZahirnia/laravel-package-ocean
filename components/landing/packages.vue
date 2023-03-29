@@ -66,7 +66,7 @@ onMounted(() => {
                 flex items-start gap-5
                 "
                 >
-                <package-categories />
+                <category-list />
                 <package-list />
             </div>
         </ClientOnly>

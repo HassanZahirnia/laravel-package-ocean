@@ -209,7 +209,7 @@ const {
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
-                <ui-listbox
+                <ui-sort-selectbox
                     class="shrink-0 w-full min-[800px]:w-52"
                     :sort-field="sortField"
                     @update:sort-field="sortField = $event"

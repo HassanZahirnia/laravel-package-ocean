@@ -6,7 +6,7 @@ import { categories } from '@/database/categories'
 gsap.registerPlugin(ScrollTrigger)
 
 onMounted(() => {
-    gsap.to('.gsap-fluid-shape', {
+    gsap.to('#hero-section .gsap-fluid-shape', {
         yPercent: 7,
         scrollTrigger: {
             trigger: 'body',
@@ -15,7 +15,7 @@ onMounted(() => {
             end: 'bottom bottom',
         },
     })
-    gsap.to('.gsap-introduction-card', {
+    gsap.to('#hero-section .gsap-hero-card', {
         yPercent: -3,
         scrollTrigger: {
             trigger: 'body',
@@ -32,7 +32,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
 
 <template>
     <div
-        id="introduction-section"
+        id="hero-section"
         class="relative"
         >
         <!-- Fluid -->
@@ -54,7 +54,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 />
         </div>
         <div
-            class="gsap-introduction-card
+            class="gsap-hero-card
             px-5 pt-20 sm:px-10
             "
             >
