@@ -157,19 +157,37 @@ const {
 </script>
 
 <template>
-    <div class="sticky top-5 left-0 w-full">
-        <div class="flex flex-wrap items-center justify-between gap-5">
-            <div class="flex flex-wrap items-center gap-5 sm:flex-nowrap">
+    <div
+        class="w-full
+        sticky
+        top-5 left-0
+        "
+        >
+        <div class="flex gap-5 flex-wrap items-center justify-between">
+            <div
+                class="flex gap-5
+                items-center 
+                flex-wrap sm:flex-nowrap
+                "
+                >
                 <div class="text-2xl font-semibold">
                     Packages
                 </div>
                 <div
                     v-if="selectedCategory"
-                    class="flex cursor-pointer items-center gap-2 truncate rounded-full bg-slate-300/50
-                    py-1 px-3 text-sm font-medium text-slate-600
+                    class="py-1 px-3
+                    cursor-pointer truncate rounded-full
                     transition duration-300
-                    hover:bg-slate-300 dark:bg-slate-700/50 dark:text-slate-400
+                    flex gap-2
+                    items-center
+                    text-sm
+                    font-medium
+                    bg-slate-300/50
+                    hover:bg-slate-300
+                    dark:bg-slate-700/50
                     dark:hover:bg-slate-800/50
+                    text-slate-600
+                    dark:text-slate-400
                     "
                     @click="selectedCategory = ''"
                     >
@@ -179,12 +197,20 @@ const {
                     <div class="i-ph-x-bold" />
                 </div>
             </div>
-            <div class="flex w-full flex-wrap items-center justify-center gap-3 lg:w-auto lg:flex-1 lg:flex-nowrap lg:justify-end">
+            <div
+                class="lg:flex-1
+                flex gap-3
+                w-full lg:w-auto
+                flex-wrap lg:flex-nowrap
+                items-center
+                justify-center lg:justify-end
+                "
+                >
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
                 <ui-listbox
-                    class="w-full shrink-0 min-[800px]:w-52"
+                    class="shrink-0 w-full min-[800px]:w-52"
                     :sort-field="sortField"
                     @update:sort-field="sortField = $event"
                     />
@@ -194,7 +220,11 @@ const {
             <!-- Packages list -->
             <div
                 v-auto-animate
-                class="grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
+                class="pt-6
+                grid gap-5
+                grid-cols-[repeat(auto-fill,minmax(19rem,1fr))]
+                items-start justify-center
+                "
                 :class="{
                     'min-h-[17rem]': resultsPaginated.length,
                 }"
@@ -208,7 +238,7 @@ const {
             <!-- Pagination -->
             <div
                 v-if="resultsPaginated.length"
-                class="flex justify-center px-5 pt-8"
+                class="px-5 pt-8 flex justify-center"
                 >
                 <ui-pagination
                     :page-count="pageCount"
@@ -230,7 +260,11 @@ const {
                 >
                 <div
                     v-if="!resultsPaginated.length"
-                    class="absolute top-0 right-1/2 w-full translate-x-1/2"
+                    class="w-full
+                    absolute
+                    top-0 right-1/2
+                    translate-x-1/2
+                    "
                     >
                     <ui-search-result />
                 </div>

@@ -5,15 +5,17 @@ import '@fontsource/poppins/latin.css'
 
 <template>
     <section
-        class="bg-[#FAFCFF] font-poppins antialiased transition
-        duration-300
-        overflow-clip dark:bg-[#04041F]
-        dark:text-[#EAEFFB]"
+        class="overflow-clip antialiased
+        font-poppins
+        transition duration-300
+        bg-[#FAFCFF]
+        dark:bg-[#04041F] dark:text-[#EAEFFB]
+        "
         >
         <nav-bar />
         <slot />
         <footer class="mt-40">
-            <div class="py-20 text-center sm:py-10">
+            <div class="text-center py-20 sm:py-10">
                 <div class="text-sm text-[#545D82]">
                     Made with ❤️ by
                     <a href="https://zahirnia.com">

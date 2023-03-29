@@ -13,9 +13,18 @@ const selectedCategory = useSelectedCategory()
 </script>
 
 <template>
-    <div class="hidden w-full max-w-[15rem] sm:block">
-        <div class="flex min-h-[3rem] items-center">
-            <div class="text-2xl font-semibold transition duration-300">
+    <div
+        class="hidden sm:block
+        w-full max-w-[15rem]
+        "
+        >
+        <div class="min-h-[3rem] flex items-center">
+            <div
+                class="text-2xl
+                font-semibold
+                transition duration-300
+                "
+                >
                 Categories
             </div>
         </div>
@@ -24,9 +33,11 @@ const selectedCategory = useSelectedCategory()
                 <div
                     v-for="category in categoriesWithPackagesCount"
                     :key="category.name"
-                    class="relative flex cursor-pointer
+                    class="relative cursor-pointer
+                    flex
                     items-center gap-3
-                    transition duration-300 hover:translate-x-2
+                    transition duration-300
+                    hover:translate-x-2
                     "
                     :class="{
                         '': selectedCategory === category.name,
@@ -34,8 +45,9 @@ const selectedCategory = useSelectedCategory()
                     @click="selectedCategory = category.name"
                     >
                     <div
-                        class="grid h-8 w-8 place-items-center
-                        rounded-lg transition duration-300
+                        class="h-8 w-8 rounded-lg
+                        grid place-items-center
+                        transition duration-300
                         "
                         :class="{
                             'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50': selectedCategory !== category.name,
@@ -134,10 +146,19 @@ const selectedCategory = useSelectedCategory()
                             />
                     </div>
                     <div class="">
-                        <div class="text-sm font-medium dark:text-slate-300">
+                        <div
+                            class="text-sm
+                            font-medium
+                            dark:text-slate-300
+                            "
+                            >
                             {{ category.name }}
                         </div>
-                        <div class="text-xs text-slate-400 dark:text-slate-400">
+                        <div
+                            class="text-xs
+                            text-slate-400 dark:text-slate-400
+                            "
+                            >
                             {{ category.packagesCount }} Packages
                         </div>
                     </div>

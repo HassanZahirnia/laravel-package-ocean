@@ -74,31 +74,46 @@ watch(
         >
         <nuxt-link
             to="/"
-            class="relative flex items-center gap-7"
+            class="relative
+            flex items-center gap-7
+            "
             aria-label="Home"
             >
             <!-- Logo -->
-            <div class="i-svg-logo gsap-nav-logo text-5xl" />
+            <div
+                class="i-svg-logo
+                gsap-nav-logo
+                text-5xl
+                "
+                />
             <!-- Fish -->
             <div
-                class="gsap-nav-fish pointer-events-none
-                absolute left-12 -top-6 h-36 w-36 select-none
+                class="gsap-nav-fish pointer-events-none select-none
+                h-36 w-36
+                absolute
+                left-12 -top-6
                 opacity-0
                 "
                 >
                 <div
-                    class="i-fluent-emoji-fish scale-x-[-1] text-2xl
+                    class="i-fluent-emoji-fish
+                    scale-x-[-1]
+                    text-2xl
                     "
                     />
             </div>
             <!-- Droplet -->
             <div
-                class="gsap-nav-droplet-1 pointer-events-none
-                absolute -right-3 top-6 select-none opacity-0
+                class="gsap-nav-droplet-1 pointer-events-none select-none
+                absolute
+                -right-3 top-6
+                opacity-0
                 "
                 >
                 <div
-                    class="i-fluent-emoji-sweat-droplets -rotate-90 text-xl
+                    class="i-fluent-emoji-sweat-droplets
+                    -rotate-90
+                    text-xl
                     "
                     />
             </div>
@@ -107,11 +122,20 @@ watch(
                 <div class="text-lg leading-snug">
                     Laravel
                 </div>
-                <div class="flex items-center gap-1 text-xl font-bold">
+                <div
+                    class="flex items-center gap-1
+                    text-xl font-bold
+                    "
+                    >
                     <div class="">
                         Package
                     </div>
-                    <div class="gsap-nav-ocean bg-gradient-to-r from-cyan-400 to-[#08AFFF] bg-clip-text text-transparent">
+                    <div
+                        class="gsap-nav-ocean
+                        bg-gradient-to-r from-cyan-400 to-[#08AFFF]
+                        bg-clip-text text-transparent
+                        "
+                        >
                         Ocean
                     </div>
                 </div>

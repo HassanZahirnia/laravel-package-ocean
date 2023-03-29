@@ -26,13 +26,15 @@ onMounted(() => {
 <template>
     <!-- Ellipse arc -->
     <div
-        class="pointer-events-none absolute top-[-80vw] left-1/2
-        -z-10 h-[calc(100vw+10rem)] w-[calc(100vw+10rem)] -translate-x-1/2
-        scale-y-75
-        scale-x-150
-        select-none rounded-full
-        bg-white/20 transition
-        duration-300 dark:bg-[#173563]/10
+        class="pointer-events-none select-none rounded-full
+        h-[calc(100vw+10rem)] w-[calc(100vw+10rem)]
+        scale-y-75 scale-x-150
+        absolute -z-10
+        -translate-x-1/2
+        top-[-80vw] left-1/2
+        transition duration-300
+        bg-white/20
+        dark:bg-[#173563]/10
         "
         />
     <!-- Purple blur -->
@@ -42,9 +44,11 @@ onMounted(() => {
         width="auto"
         height="auto"
         alt=""
-        class="gsap-background-blur pointer-events-none absolute top-[-10vw]
-        right-[calc(10rem-15vw)] -z-20 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
-        scale-[2.5] select-none
+        class="gsap-background-blur pointer-events-none select-none
+        h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
+        scale-[2.5]
+        absolute -z-20
+        top-[-10vw] right-[calc(10rem-15vw)] 
         "
         />
     <img
@@ -53,9 +57,11 @@ onMounted(() => {
         width="auto"
         height="auto"
         alt=""
-        class="gsap-background-blur pointer-events-none absolute top-[-10vw]
-        right-[calc(10rem-15vw)] -z-20 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
-        scale-[2.5] select-none min-[2000px]:scale-[1.7]
+        class="gsap-background-blur pointer-events-none select-none
+        h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
+        scale-[2.5] min-[2000px]:scale-[1.7]
+        absolute -z-20
+        top-[-10vw] right-[calc(10rem-15vw)] 
         "
         />
     <!-- Blue blur -->
@@ -65,19 +71,14 @@ onMounted(() => {
         width="auto"
         height="auto"
         alt=""
-        class="gsap-background-blur
-        pointer-events-none
-        absolute
-        top-[24rem]
-        left-[6vw]
-        -z-30
-        h-[calc(10rem+40vw)]
-        w-[calc(10rem+40vw)]
+        class="gsap-background-blur pointer-events-none select-none
+        h-[calc(10rem+40vw)] w-[calc(10rem+40vw)]
         scale-[2.5]
-        select-none
+        absolute -z-30
+        top-[24rem]
         min-[500px]:top-[clamp(10rem,calc(25rem-30vw),500px)]
-        min-[600px]:left-[calc(10rem-20vw)]
         xl:top-[clamp(-25rem,-5vw,calc(-200px-10vw))]
+        left-[6vw] min-[600px]:left-[calc(10rem-20vw)]
         "
         />
     <img
@@ -86,20 +87,14 @@ onMounted(() => {
         width="auto"
         height="auto"
         alt=""
-        class="gsap-background-blur-opacity-70
-        pointer-events-none
-        absolute
-        top-[24rem]
-        left-[6vw]
-        -z-30
-        h-[calc(10rem+40vw)]
-        w-[calc(10rem+40vw)]
-        scale-[2.5]
-        select-none
+        class="gsap-background-blur-opacity-70 pointer-events-none select-none
+        h-[calc(10rem+40vw)] w-[calc(10rem+40vw)]
+        scale-[2.5] min-[2000px]:scale-[1.7]
+        absolute -z-30
+        top-[24rem] left-[6vw]
         min-[500px]:top-[clamp(10rem,calc(25rem-30vw),500px)]
-        min-[600px]:left-[calc(10rem-20vw)]
         xl:top-[clamp(-25rem,-5vw,calc(-200px-10vw))]
-        min-[2000px]:scale-[1.7]
+        min-[600px]:left-[calc(10rem-20vw)]
         "
         />
 </template>

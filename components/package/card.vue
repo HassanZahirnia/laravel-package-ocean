@@ -36,17 +36,21 @@ const repoName = computed(() => {
 
 <template>
     <div
-        class="flex h-60 cursor-pointer flex-col rounded-3xl
-        bg-white/50
+        class="rounded-3xl cursor-pointer
+        h-60
         p-6
-        shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
-        ring-1 ring-slate-100 backdrop-blur-xl
-        transition
-        duration-300 hover:scale-105
-        hover:ring-indigo-200 dark:bg-[#362B59]/20
-        dark:ring-1
+        backdrop-blur-xl
+        transition duration-300
+        flex flex-col
+        bg-white/50
+        dark:bg-[#362B59]/20
+        ring-1 dark:ring-1
+        ring-slate-100
         dark:ring-[#132447]
+        hover:ring-indigo-200
         dark:hover:ring-indigo-900
+        hover:scale-105
+        shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         "
         @click="openGithubLink"
         >
@@ -72,7 +76,8 @@ const repoName = computed(() => {
                 {{ laravelPackage.name }}
             </div>
             <div
-                class="pt-1.5 text-sm
+                class="pt-1.5
+                text-sm
                 text-[#959BAF]
                 dark:text-[#828CAC]
                 "
@@ -81,7 +86,8 @@ const repoName = computed(() => {
             </div>
         </div>
         <div
-            class="flex items-center gap-2 pt-7
+            class="flex items-center gap-2
+            pt-7
             text-[#505878]
             dark:text-[#BECDF2]
             "

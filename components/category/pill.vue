@@ -8,7 +8,8 @@ defineProps<{
 
 <template>
     <div
-        class="rounded-full px-3.5 py-1 text-xs font-semibold
+        class="px-3.5 py-1 rounded-full
+        text-xs font-semibold
         transition duration-300
         hover:opacity-80
         "

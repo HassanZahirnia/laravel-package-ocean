@@ -35,9 +35,12 @@ onMounted(() => {
             width="auto"
             height="auto"
             alt=""
-            class="gsap-emerald-background-blur pointer-events-none absolute top-1/2 right-1/2
-            -z-40 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)] -translate-y-1/2 translate-x-1/2
-            scale-[2.5] select-none
+            class="gsap-emerald-background-blur pointer-events-none select-none
+            h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
+            scale-[2.5]
+            absolute -z-40
+            top-1/2 right-1/2
+            -translate-y-1/2 translate-x-1/2
             "
             />
         <img
@@ -46,16 +49,23 @@ onMounted(() => {
             width="auto"
             height="auto"
             alt=""
-            class="gsap-emerald-background-blur-dark pointer-events-none absolute top-1/2 right-1/2
-            -z-40 h-[calc(10rem+35vw)] w-[calc(10rem+35vw)] -translate-y-1/2 translate-x-1/2
-            scale-[2.5] select-none
+            class="gsap-emerald-background-blur-dark pointer-events-none select-none
+            h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
+            scale-[2.5]
+            absolute -z-40
+            top-1/2 right-1/2
+            -translate-y-1/2 translate-x-1/2
             "
             />
         <ClientOnly
             fallback-tag="span"
             fallback=""
             >
-            <div class="fade-in relative flex items-start gap-5">
+            <div
+                class="fade-in relative
+                flex items-start gap-5
+                "
+                >
                 <package-categories />
                 <package-list />
             </div>

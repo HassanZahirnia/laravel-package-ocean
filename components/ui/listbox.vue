@@ -39,19 +39,32 @@ watch(selectedItem, (newItem, oldItem) => {
     <Listbox v-model="selectedItem">
         <div class="relative z-10">
             <ListboxButton
-                class="relative w-full cursor-default rounded-xl
-                bg-white py-3 pl-3 pr-10 text-left
+                class="relative cursor-default rounded-xl
+                transition duration-300
+                py-3 pl-3 pr-10
+                w-full
+                text-left
                 text-sm
-                shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] transition
-                duration-300 placeholder:text-[#9095AE]
-                focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2
-                focus-visible:ring-white/75 focus-visible:ring-offset-2
-                focus-visible:ring-offset-blue-300 dark:bg-[#362B59]/20
+                bg-white
+                dark:bg-[#362B59]/20
+                 placeholder:text-[#9095AE]
+                focus:outline-none
+                focus-visible:border-indigo-500
+                focus-visible:ring-2
+                focus-visible:ring-white/75
+                focus-visible:ring-offset-2
+                focus-visible:ring-offset-blue-300
+                shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] 
                 "
                 >
                 <span class="block truncate">{{ selectedItem.name }}</span>
                 <span
-                    class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2"
+                    class="pointer-events-none
+                    pr-2
+                    flex items-center
+                    absolute
+                    inset-y-0 right-0
+                    "
                     >
                     <div
                         class="i-ph-caret-down h-5 w-5 text-gray-400"
@@ -66,10 +79,16 @@ watch(selectedItem, (newItem, oldItem) => {
                 leave-to-class="opacity-0"
                 >
                 <ListboxOptions
-                    class="absolute mt-1 max-h-60 w-full overflow-auto
-                    rounded-md bg-white py-1 text-base shadow-lg
-                    ring-1 ring-black/5 focus:outline-none dark:bg-[#362B59]
-                    sm:text-sm
+                    class="overflow-auto rounded-md focus:outline-none
+                    max-h-60 w-full
+                    py-1
+                    mt-1
+                    absolute
+                    text-base sm:text-sm
+                    bg-white 
+                    dark:bg-[#362B59]
+                    shadow-lg
+                    ring-1 ring-black/5
                     "
                     >
                     <ListboxOption
@@ -93,7 +112,11 @@ watch(selectedItem, (newItem, oldItem) => {
                                 >{{ item.name }}</span>
                             <span
                                 v-if="selected"
-                                class="absolute inset-y-0 left-0 flex items-center pl-3 text-indigo-600"
+                                class="pl-3
+                                flex items-center
+                                text-indigo-600
+                                absolute inset-y-0 left-0
+                                "
                                 >
                                 <div
                                     class="i-ph-check h-5 w-5"
