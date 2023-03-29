@@ -3,7 +3,8 @@ import { orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { laravelPackages } from '@/database/packages'
 import type { PackageSortFields } from '@/types/package'
-import { categories } from '@/database/categories'
+import { categories, categoriesForSelectbox } from '@/database/categories'
+import type { selectboxItem } from '@/types/selectbox'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
@@ -154,6 +155,17 @@ const {
     pageSize,
     onPageChange: updatePageNumber,
 })
+
+const orderItems: selectboxItem<PackageSortFields>[] = [
+    { name: 'Newest', value: 'first_release_at' },
+    { name: 'Recently Updated', value: 'latest_release_at' },
+    { name: 'Most Stars', value: 'stars' },
+]
+
+const categoriesForSelectboxWithAll = [
+    { name: 'All Categories', value: '' },
+    ...categoriesForSelectbox,
+]
 </script>
 
 <template>
@@ -209,10 +221,16 @@ const {
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
-                <ui-sort-selectbox
-                    class="shrink-0 w-full min-[800px]:w-52"
-                    :sort-field="sortField"
-                    @update:sort-field="sortField = $event"
+                <ui-selectbox
+                    v-model="sortField"
+                    class="shrink-0 w-full min-[800px]:w-52 relative z-20"
+                    :items="orderItems"
+                    />
+                <!-- Categories -->
+                <ui-selectbox
+                    v-model="selectedCategory"
+                    class="shrink-0 w-full sm:hidden"
+                    :items="categoriesForSelectboxWithAll"
                     />
             </div>
         </div>

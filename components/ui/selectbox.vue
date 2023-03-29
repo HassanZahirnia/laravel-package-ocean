@@ -6,32 +6,24 @@ import {
     ListboxOption,
 } from '@headlessui/vue'
 import { find } from 'lodash'
-import type { PackageSortFields } from '@/types/package'
+import type { selectboxItem } from '@/types/selectbox'
 
 const $props = defineProps<{
-    sortField: PackageSortFields
+    items: selectboxItem<unknown>[]
+    modelValue: selectboxItem<unknown>['value']
 }>()
 
 const $emit = defineEmits<{
-    (e: 'update:sort-field', field: PackageSortFields): void
+    (e: 'update:modelValue', value: selectboxItem<unknown>['value']): void
 }>()
 
-type orderItem = {
-    name: string
-    value: PackageSortFields
-}
-
-const orderItems: orderItem[] = [
-    { name: 'Newest', value: 'first_release_at' },
-    { name: 'Recently Updated', value: 'latest_release_at' },
-    { name: 'Most Stars', value: 'stars' },
-]
-
-const selectedItem = ref(find(orderItems, { value: $props.sortField }) as orderItem)
-
-watch(selectedItem, (newItem, oldItem) => {
-    if (newItem.value !== oldItem.value)
-        $emit('update:sort-field', newItem.value)
+const selectedItem = computed({
+    get() {
+        return find($props.items, { value: $props.modelValue }) as selectboxItem<unknown>
+    },
+    set(newItem) {
+        $emit('update:modelValue', newItem.value)
+    },
 })
 </script>
 
@@ -92,7 +84,7 @@ watch(selectedItem, (newItem, oldItem) => {
                     "
                     >
                     <ListboxOption
-                        v-for="item in orderItems"
+                        v-for="item in items"
                         v-slot="{ active, selected }"
                         :key="item.name"
                         :value="item"

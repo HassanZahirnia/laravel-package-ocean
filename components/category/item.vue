@@ -31,7 +31,7 @@ defineProps<{
                 'bg-blue-100/70 text-blue-500 dark:bg-blue-500/20': category.name === 'Debugging & Dev Tools' && selectedCategory === 'Debugging & Dev Tools',
                 'bg-purple-100 text-purple-500 dark:bg-purple-500/20': category.name === 'Dev Ops' && selectedCategory === 'Dev Ops',
                 'bg-lime-100 text-lime-500 dark:bg-lime-400/20': category.name === 'Localization' && selectedCategory === 'Localization',
-                'bg-slate-200 text-[#4B5563] dark:bg-slate-500/20 dark:text-slate-300': category.name === 'API' && selectedCategory === 'API',
+                'bg-orange-200/70 text-orange-500 dark:bg-orange-500/20 dark:text-orange-400': category.name === 'API' && selectedCategory === 'API',
                 'bg-teal-100 text-teal-500 dark:bg-teal-500/20': category.name === 'SEO' && selectedCategory === 'SEO',
                 'bg-amber-100 text-amber-600 dark:bg-yellow-400/20': category.name === 'Testing' && selectedCategory === 'Testing',
                 'bg-pink-100 text-pink-500 dark:bg-pink-500/20': category.name === 'Payment' && selectedCategory === 'Payment',

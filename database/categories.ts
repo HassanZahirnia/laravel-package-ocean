@@ -1,3 +1,6 @@
+import type { Category } from '@/types/package'
+import type { selectboxItem } from '@/types/selectbox'
+
 export const categories = [
     'File Management',
     'Auth & Permissions',
@@ -18,3 +21,10 @@ export const categories = [
     'UI & Blade Components',
     'Utilities & Helpers',
 ] as const
+
+export const categoriesForSelectbox = categories.map((category: Category): selectboxItem<string> => {
+    return {
+        name: category,
+        value: category,
+    }
+})
