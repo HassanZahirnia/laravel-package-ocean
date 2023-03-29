@@ -68,7 +68,7 @@ function openModal() {
                         >
                         <DialogPanel
                             class="w-full
-                            p-6
+                            px-6 py-5
                             max-w-xs
                             transform
                             overflow-hidden
@@ -83,8 +83,8 @@ function openModal() {
                             "
                             >
                             <DialogTitle
-                                as="h3"
                                 class="text-lg
+                                flex items-center gap-2 justify-between
                                 font-medium
                                 text-left
                                 leading-6
@@ -92,7 +92,34 @@ function openModal() {
                                 dark:text-inherit
                                 "
                                 >
-                                Menu
+                                <div class="">
+                                    Menu
+                                </div>
+                                <button
+                                    type="button"
+                                    class="rounded-full
+                                    transition duration-300
+                                    px-2 py-2
+                                    inline-flex justify-center
+                                    border
+                                    border-transparent
+                                    text-sm
+                                    font-medium
+                                    text-indigo-900
+                                    bg-white/60
+                                    hover:bg-white
+                                    dark:bg-indigo-950/50
+                                    dark:hover:bg-indigo-900/50
+                                    dark:text-indigo-300
+                                    focus:outline-none
+                                    focus-visible:ring-2
+                                    focus-visible:ring-indigo-500
+                                    focus-visible:ring-offset-2
+                                    "
+                                    @click="closeModal"
+                                    >
+                                    <div class="i-ph-x text-lg" />
+                                </button>
                             </DialogTitle>
                             <div
                                 class="mt-5 relative
@@ -104,7 +131,7 @@ function openModal() {
                                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                                     target="_blank"
                                     class="mr-1 block w-full text-center
-                                    select-none rounded-xl
+                                    select-none rounded-full
                                     backdrop-blur-xl
                                     transition duration-300
                                     px-5 py-3
@@ -116,9 +143,6 @@ function openModal() {
                                     text-indigo-900
                                     hover:text-slate-900
                                     dark:text-[#ABB0DD]
-                                    shadow-lg shadow-black/5
-                                    hover:shadow-xl hover:shadow-indigo-100
-                                    dark:shadow-none
                                     ring-1 ring-slate-200/20
                                     dark:ring-[#627288]/40
                                     "
@@ -148,33 +172,6 @@ function openModal() {
                                     <!-- Theme toggle  -->
                                     <ui-theme-toggle />
                                 </div>
-                            </div>
-                            <div class="pt-5 grid place-items-center">
-                                <button
-                                    type="button"
-                                    class="rounded-full
-                                    transition duration-300
-                                    px-20 py-2.5
-                                    inline-flex justify-center
-                                    border
-                                    border-transparent
-                                    text-sm
-                                    font-medium
-                                    text-indigo-900
-                                    bg-white/60
-                                    hover:bg-white
-                                    dark:bg-indigo-950/50
-                                    dark:hover:bg-indigo-900/50
-                                    dark:text-indigo-300
-                                    focus:outline-none
-                                    focus-visible:ring-2
-                                    focus-visible:ring-indigo-500
-                                    focus-visible:ring-offset-2
-                                    "
-                                    @click="closeModal"
-                                    >
-                                    Close
-                                </button>
                             </div>
                         </DialogPanel>
                     </TransitionChild>

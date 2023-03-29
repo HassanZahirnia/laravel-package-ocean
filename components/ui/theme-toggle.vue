@@ -50,6 +50,13 @@ watch(
         }
     },
 )
+
+watch(
+    currentThemeMode,
+    (value) => {
+        themeCheckbox.value = value
+    },
+)
 </script>
 
 <template>
