@@ -32,13 +32,12 @@ async function updatePackages() {
             composerSet.add(composer)
         }
 
-        if (nameSet.has(name)) {
-            log(chalk.red(`Package with name '${name}' is not unique`))
-            continue
-        }
-        else {
+        if (nameSet.has(name)) 
+            log(chalk.black(`Package with name '${name}' is not unique`))
+        
+        else 
             nameSet.add(name)
-        }
+        
 
         if (descriptionSet.has(description)) {
             log(chalk.red(`Package with description '${description}' is not unique`))
@@ -92,7 +91,7 @@ async function updatePackages() {
 
         // Skip updating the package if it has been updated in less than a day compared to the current time
         if (new Date(updated_at) > new Date(Date.now() - 24 * 60 * 60 * 1000)) {
-            log(chalk.green(`Skipping ${composer} because it has been updated recently`))
+            // log(chalk.green(`Skipping ${composer} because it has been updated recently`))
             continue
         }
 
@@ -113,7 +112,7 @@ async function updatePackages() {
         packages[i].stars = githubData.stargazers_count
         packages[i].updated_at = new Date().toISOString()
 
-        log(chalk.blue(`Updated ${composer} with ${packages[i].stars} stars and first release at ${packages[i].first_release_at} and latest release at ${packages[i].latest_release_at}`))
+        log(chalk.greenBright(`Updated ${composer} with ${packages[i].stars} stars and first release at ${packages[i].first_release_at} and latest release at ${packages[i].latest_release_at}`))
     }
 
     // Order packages by category, and then by author, and then by name
@@ -132,6 +131,9 @@ export const laravelPackages: Package[] = ${JSON.stringify(
 `
 
     writeFileSync(packagesPath, updatedPackagesFile)
+
+    log(chalk.cyan('---------------------------'))
+    log(chalk.cyan('Finished update of packages'))
 }
 
 updatePackages()
