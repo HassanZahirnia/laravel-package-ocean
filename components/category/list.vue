@@ -16,7 +16,7 @@ const selectedCategory = useSelectedCategory()
 <template>
     <div
         class="hidden sm:block
-        w-full max-w-[15rem]
+        w-full max-w-[15rem] sm:pb-20
         "
         >
         <div class="min-h-[3rem] flex items-center">
