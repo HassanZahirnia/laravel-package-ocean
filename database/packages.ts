@@ -8,7 +8,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/owen-it/laravel-auditing',
         composer: 'owen-it/laravel-auditing',
         author: 'owen-it',
-        stars: 2570,
+        stars: 2572,
         keywords: [
             'log',
             'history',
@@ -17,7 +17,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-08-20T11:45:08+00:00',
         latest_release_at: '2023-03-17T11:39:04+00:00',
-        updated_at: '2023-03-29T11:10:37.645Z',
+        updated_at: '2023-03-30T12:16:40.399Z',
     },
     {
         name: 'Laravel Media Library',
@@ -39,8 +39,8 @@ export const laravelPackages: Package[] = [
             'filesystem',
         ],
         first_release_at: '2015-04-14T09:07:29+00:00',
-        latest_release_at: '2023-03-06T11:26:25+00:00',
-        updated_at: '2023-03-29T11:10:40.262Z',
+        latest_release_at: '2023-03-29T12:36:16+00:00',
+        updated_at: '2023-03-30T12:16:43.361Z',
     },
     {
         name: 'Laravel Permissions',
@@ -49,7 +49,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/spatie/laravel-permission',
         composer: 'spatie/laravel-permission',
         author: 'spatie',
-        stars: 11105,
+        stars: 11107,
         keywords: [
             'gate',
             'authorization',
@@ -59,7 +59,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-09-15T15:36:13+00:00',
         latest_release_at: '2023-03-22T02:57:36+00:00',
-        updated_at: '2023-03-29T11:10:43.014Z',
+        updated_at: '2023-03-30T12:16:46.341Z',
     },
     {
         name: 'Laravel Debugbar',
@@ -68,7 +68,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/barryvdh/laravel-debugbar',
         composer: 'barryvdh/laravel-debugbar',
         author: 'barryvdh',
-        stars: 15038,
+        stars: 15046,
         keywords: [
             'profiling',
             'profiler',
@@ -78,7 +78,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-09-05T10:33:08+00:00',
         latest_release_at: '2023-02-21T14:21:02+00:00',
-        updated_at: '2023-03-29T11:10:45.387Z',
+        updated_at: '2023-03-30T12:16:48.863Z',
     },
     {
         name: 'Laravel Backup',
@@ -87,7 +87,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/spatie/laravel-backup',
         composer: 'spatie/laravel-backup',
         author: 'spatie',
-        stars: 5193,
+        stars: 5195,
         keywords: [
             'files',
             'encrypt',
@@ -98,7 +98,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-02-17T16:21:56+00:00',
         latest_release_at: '2023-02-03T15:57:49+00:00',
-        updated_at: '2023-03-29T11:10:47.701Z',
+        updated_at: '2023-03-30T12:16:51.666Z',
     },
     {
         name: 'Laravel Localization',
@@ -117,7 +117,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-09-01T19:17:57+00:00',
         latest_release_at: '2023-02-18T15:43:23+00:00',
-        updated_at: '2023-03-29T11:10:50.449Z',
+        updated_at: '2023-03-30T12:16:54.264Z',
     },
     {
         name: 'Laravel GraphQL',
@@ -126,7 +126,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/rebing/graphql-laravel',
         composer: 'rebing/graphql-laravel',
         author: 'rebing',
-        stars: 1957,
+        stars: 1958,
         keywords: [
             'facebook',
             'query',
@@ -135,7 +135,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-09-19T10:55:53+00:00',
         latest_release_at: '2023-03-05T15:42:39+00:00',
-        updated_at: '2023-03-29T11:10:52.901Z',
+        updated_at: '2023-03-30T12:16:56.979Z',
     },
     {
         name: 'Laravel SEO',
@@ -144,7 +144,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/ralphjsmit/laravel-seo',
         composer: 'ralphjsmit/laravel-seo',
         author: 'ralphjsmit',
-        stars: 318,
+        stars: 319,
         keywords: [
             'opengraph',
             'twitter',
@@ -161,7 +161,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-02-08T13:33:02+00:00',
         latest_release_at: '2023-02-17T17:52:50+00:00',
-        updated_at: '2023-03-29T11:10:55.493Z',
+        updated_at: '2023-03-30T12:16:59.676Z',
     },
     {
         name: 'Pest',
@@ -170,7 +170,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/pestphp/pest',
         composer: 'pestphp/pest',
         author: 'pestphp',
-        stars: 6657,
+        stars: 6674,
         keywords: [
             'expectations',
             'assert',
@@ -184,7 +184,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-05-19T23:10:29+00:00',
         latest_release_at: '2023-03-28T09:16:29+00:00',
-        updated_at: '2023-03-29T11:10:57.734Z',
+        updated_at: '2023-03-30T12:17:02.907Z',
     },
     {
         name: 'Laravel Cashier',
@@ -193,7 +193,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/laravel/cashier-stripe',
         composer: 'laravel/cashier',
         author: 'laravel',
-        stars: 2209,
+        stars: 2210,
         keywords: [
             'invoice',
             'card',
@@ -204,7 +204,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-03-04T03:21:19+00:00',
         latest_release_at: '2023-03-02T16:11:43+00:00',
-        updated_at: '2023-03-29T11:11:00.555Z',
+        updated_at: '2023-03-30T12:17:05.757Z',
     },
     {
         name: 'Laravel Honeypot',
@@ -221,7 +221,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-12-27T08:58:24+00:00',
         latest_release_at: '2023-01-17T07:09:34+00:00',
-        updated_at: '2023-03-29T11:11:03.251Z',
+        updated_at: '2023-03-30T12:17:08.828Z',
     },
     {
         name: 'Laravel Mail Preview',
@@ -238,7 +238,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-01-27T17:19:36+00:00',
         latest_release_at: '2023-01-25T15:10:45+00:00',
-        updated_at: '2023-03-29T11:11:05.732Z',
+        updated_at: '2023-03-30T12:17:11.483Z',
     },
     {
         name: 'Aimeos',
@@ -247,7 +247,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/aimeos/aimeos-laravel',
         composer: 'aimeos/aimeos-laravel',
         author: 'aimeos',
-        stars: 6093,
+        stars: 6100,
         keywords: [
             'warehouse',
             'multi tentant',
@@ -261,7 +261,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-03-06T14:24:42+00:00',
         latest_release_at: '2023-02-16T09:59:16+00:00',
-        updated_at: '2023-03-29T11:11:09.113Z',
+        updated_at: '2023-03-30T12:17:14.725Z',
     },
     {
         name: 'Filament',
@@ -270,7 +270,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/filamentphp/filament',
         composer: 'filament/filament',
         author: 'filamentphp',
-        stars: 6190,
+        stars: 6204,
         keywords: [
             'dashboard',
             'livewire',
@@ -288,16 +288,16 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-04-28T19:14:44+00:00',
         latest_release_at: '2023-03-25T17:36:34+00:00',
-        updated_at: '2023-03-29T11:11:12.041Z',
+        updated_at: '2023-03-30T12:17:17.473Z',
     },
     {
         name: 'Laravel Actions',
-        description: 'Organising the logic of your Laravel applications by focusing on the actions your applications provide.',
+        description: 'Organising the logic of your applications by focusing on the actions your applications provide.',
         category: 'Code Architecture',
         github: 'https://github.com/lorisleiva/laravel-actions',
         composer: 'lorisleiva/laravel-actions',
         author: 'lorisleiva',
-        stars: 2023,
+        stars: 2025,
         keywords: [
             'controller',
             'jobs',
@@ -310,7 +310,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-05-19T19:19:13+00:00',
         latest_release_at: '2023-02-22T10:37:59+00:00',
-        updated_at: '2023-03-29T11:11:14.725Z',
+        updated_at: '2023-03-30T13:30:09.322Z',
     },
     {
         name: 'Flash',
@@ -319,7 +319,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/laracasts/flash',
         composer: 'laracasts/flash',
         author: 'laracasts',
-        stars: 2602,
+        stars: 2601,
         keywords: [
             'css',
             'html',
@@ -327,7 +327,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-06-30T04:07:13+00:00',
         latest_release_at: '2023-01-30T20:31:40+00:00',
-        updated_at: '2023-03-29T11:11:18.066Z',
+        updated_at: '2023-03-30T12:17:20.129Z',
     },
     {
         name: 'Blade Icons',
@@ -336,7 +336,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/blade-ui-kit/blade-icons',
         composer: 'blade-ui-kit/blade-icons',
         author: 'blade-ui-kit',
-        stars: 1768,
+        stars: 1769,
         keywords: [
             'css',
             'html',
@@ -345,7 +345,7 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-06-17T18:38:25+00:00',
         latest_release_at: '2023-02-15T16:30:12+00:00',
-        updated_at: '2023-03-29T11:11:20.689Z',
+        updated_at: '2023-03-30T12:17:22.505Z',
     },
     {
         name: 'Laravel Tags',
@@ -354,7 +354,7 @@ export const laravelPackages: Package[] = [
         github: 'https://github.com/spatie/laravel-tags',
         composer: 'spatie/laravel-tags',
         author: 'spatie',
-        stars: 1398,
+        stars: 1399,
         keywords: [
             'model',
             'eloquent',
@@ -362,6 +362,6 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-10-19T08:47:17+00:00',
         latest_release_at: '2023-01-25T09:12:48+00:00',
-        updated_at: '2023-03-29T11:11:23.530Z',
+        updated_at: '2023-03-30T12:17:25.752Z',
     },
 ]

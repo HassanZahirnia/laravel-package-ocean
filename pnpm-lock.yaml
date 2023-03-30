@@ -58,6 +58,9 @@ devDependencies:
   axios:
     specifier: ^1.3.4
     version: 1.3.4
+  chalk:
+    specifier: ^5.2.0
+    version: 5.2.0
   eslint:
     specifier: ^8.37.0
     version: 8.37.0

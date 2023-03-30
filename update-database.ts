@@ -1,7 +1,11 @@
 /* eslint-disable no-console */
 import { readFileSync, writeFileSync } from 'node:fs'
 import axios from 'axios'
+import chalk from 'chalk'
 import type { Package } from '@/types/package'
+import { categories } from '@/database/categories'
+
+const log = console.log
 
 async function updatePackages() {
     const packagesPath = 'database/packages.ts'
@@ -9,12 +13,85 @@ async function updatePackages() {
 
     const packages: Package[] = eval(packagesFile.split(' = ')[1])
 
+    const composerSet = new Set<string>()
+    const nameSet = new Set<string>()
+    const descriptionSet = new Set<string>()
+    const githubSet = new Set<string>()
+
     for (let i = 0; i < packages.length; i++) {
-        const { composer, updated_at } = packages[i]
+        const keywordSet = new Set<string>()
+        const { composer, name, description, github, keywords, updated_at } = packages[i]
+
+        // Check for uniqueness of composer, name, description, and github properties
+        if (composerSet.has(composer)) {
+            log(chalk.red(`Package with composer '${composer}' is not unique`))
+            continue
+        }
+        else {
+            composerSet.add(composer)
+        }
+
+        if (nameSet.has(name)) {
+            log(chalk.red(`Package with name '${name}' is not unique`))
+            continue
+        }
+        else {
+            nameSet.add(name)
+        }
+
+        if (descriptionSet.has(description)) {
+            log(chalk.red(`Package with description '${description}' is not unique`))
+            continue
+        }
+        else {
+            descriptionSet.add(description)
+        }
+
+        if (githubSet.has(github)) {
+            log(chalk.red(`Package with github '${github}' is not unique`))
+            continue
+        }
+        else {
+            githubSet.add(github)
+        }
+
+        // Check for description length
+        if (description.length >= 100) {
+            log(chalk.red(`Package with composer '${composer}' has a description longer than 100 characters`))
+            continue
+        }
+
+        // Check for unique keywords and keywords not included in the package name and description
+        for (let j = 0; j < keywords.length; j++) {
+            const keyword = keywords[j]
+            if (keywordSet.has(keyword)) {
+                log(chalk.red(`Package with composer '${composer}' has a duplicate keyword '${keyword}'`))
+                continue
+            }
+            else {
+                keywordSet.add(keyword)
+            }
+
+            if (name.toLowerCase().includes(keyword.toLowerCase())) {
+                log(chalk.red(`Package with composer '${composer}' has a keyword '${keyword}' that is already included in the package name`))
+                continue
+            }
+
+            if (description.toLowerCase().includes(keyword.toLowerCase())) {
+                log(chalk.red(`Package with composer '${composer}' has a keyword '${keyword}' that is already included in the package description`))
+                continue
+            }
+        }
+
+        // Check for category in the list of categories
+        if (!categories.includes(packages[i].category)) {
+            log(chalk.red(`Package with composer '${composer}' has an invalid category '${packages[i].category}'`))
+            continue
+        }
 
         // Skip updating the package if it has been updated in less than a day compared to the current time
         if (new Date(updated_at) > new Date(Date.now() - 24 * 60 * 60 * 1000)) {
-            console.log(`Skipping ${composer} because it has been updated recently`)
+            log(chalk.green(`Skipping ${composer} because it has been updated recently`))
             continue
         }
 
