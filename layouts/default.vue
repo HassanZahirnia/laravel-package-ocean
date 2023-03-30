@@ -5,7 +5,7 @@ import '@fontsource/poppins/latin.css'
 
 <template>
     <section
-        class="overflow-clip antialiased
+        class="overflow-clip antialiased min-h-screen
         font-poppins
         transition duration-300
         bg-[#FAFCFF]

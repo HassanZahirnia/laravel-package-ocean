@@ -12,7 +12,9 @@ const miniSearch = new MiniSearch({
     fields: [
         'name',
         'description',
+        'category',
         'keywords',
+        'author',
     ],
 })
 
