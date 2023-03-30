@@ -112,7 +112,7 @@ async function updatePackages() {
         packages[i].stars = githubData.stargazers_count
         packages[i].updated_at = new Date().toISOString()
 
-        log(chalk.greenBright(`Updated ${composer} with ${packages[i].stars} stars and first release at ${packages[i].first_release_at} and latest release at ${packages[i].latest_release_at}`))
+        log(chalk.greenBright(`Updated ${composer}`))
     }
 
     // Order packages by category, and then by author, and then by name
