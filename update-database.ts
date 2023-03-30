@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 import { readFileSync, writeFileSync } from 'node:fs'
+import { orderBy } from 'lodash'
 import axios from 'axios'
 import chalk from 'chalk'
 import type { Package } from '@/types/package'
@@ -112,13 +113,19 @@ async function updatePackages() {
         packages[i].stars = githubData.stargazers_count
         packages[i].updated_at = new Date().toISOString()
 
-        console.log(`Updated ${composer} with ${packages[i].stars} stars and first release at ${packages[i].first_release_at} and latest release at ${packages[i].latest_release_at}`)
+        log(chalk.blue(`Updated ${composer} with ${packages[i].stars} stars and first release at ${packages[i].first_release_at} and latest release at ${packages[i].latest_release_at}`))
     }
+
+    // Order packages by category, and then by author, and then by name
+    const sortedPackages = orderBy(packages,
+        ['category', 'author', 'name'],
+        ['asc', 'asc', 'asc'],
+    )
 
     const updatedPackagesFile = `import type { Package } from '@/types/package'
 
 export const laravelPackages: Package[] = ${JSON.stringify(
-        packages,
+        sortedPackages,
         null,
         4,
     ).replace(/"/g, "'")};
