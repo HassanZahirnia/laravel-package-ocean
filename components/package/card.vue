@@ -49,7 +49,7 @@ const repoName = computed(() => {
         dark:ring-[#132447]
         hover:ring-indigo-200
         dark:hover:ring-indigo-900
-        hover:scale-105
+        sm:hover:scale-105
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         "
         @click="openGithubLink"

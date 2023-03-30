@@ -49,8 +49,17 @@ watch(
     [search, page, sortField, selectedCategory],
     (
         [newSearch, newPage, newSortField, newSelectedCategory],
-        [oldSearch],
+        [oldSearch, oldPage],
     ) => {
+        // if newPage is changed, scroll to #scroll-to-reference element
+        if(newPage !== oldPage) {
+            nextTick(() => {
+                document.querySelector('#scroll-to-reference')?.scrollIntoView({
+                    behavior: 'smooth',
+                })
+            })
+        }
+
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
         if (search.value){
@@ -179,7 +188,8 @@ const categoriesForSelectboxWithAll = [
         >
         <div class="flex gap-5 flex-wrap items-center justify-between">
             <div
-                class="flex gap-5
+                id="scroll-to-reference"
+                class="flex gap-5 scroll-mt-5
                 items-center 
                 flex-wrap sm:flex-nowrap
                 "
