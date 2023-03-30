@@ -1,40 +1,13 @@
 <script setup lang="ts">
-import { gsap } from 'gsap'
-import * as ScrollTrigger from 'gsap/ScrollTrigger'
 import { laravelPackages } from '@/database/packages'
 import { categories } from '@/database/categories'
-gsap.registerPlugin(ScrollTrigger)
-
-onMounted(() => {
-    gsap.to('#hero-section .gsap-fluid-shape', {
-        yPercent: 7,
-        scrollTrigger: {
-            trigger: 'body',
-            scrub: 1.5,
-            start: '100px 50px',
-            end: 'bottom bottom',
-        },
-    })
-    gsap.to('#hero-section .gsap-hero-card', {
-        yPercent: -3,
-        scrollTrigger: {
-            trigger: 'body',
-            scrub: 1,
-            start: '100px 50px',
-            end: 'bottom bottom',
-        },
-    })
-})
 
 // Get unique count of authors from laravelPackages
 const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackage.author)).size
 </script>
 
 <template>
-    <div
-        id="hero-section"
-        class="relative"
-        >
+    <div class="relative">
         <!-- Fluid -->
         <div
             class="absolute z-[-1]
@@ -48,16 +21,12 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 width="auto"
                 height="auto"
                 alt=""
-                class="gsap-fluid-shape pointer-events-none select-none
+                class="pointer-events-none select-none
                 w-60
                 "
                 />
         </div>
-        <div
-            class="gsap-hero-card
-            px-5 pt-20 sm:px-10
-            "
-            >
+        <div class="px-5 pt-20 sm:px-10">
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10

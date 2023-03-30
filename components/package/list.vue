@@ -54,9 +54,9 @@ watch(
         // if newPage is changed, scroll to #scroll-to-reference element
         if(newPage !== oldPage) {
             nextTick(() => {
-                document.querySelector('#scroll-to-reference')?.scrollIntoView({
-                    behavior: 'smooth',
-                })
+                // If device width is less than 640px (mobile), scroll to #scroll-to-reference element
+                if(window.innerWidth < 640)
+                    document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'smooth' })
             })
         }
 

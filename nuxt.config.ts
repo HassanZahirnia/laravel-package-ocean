@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         },
     },
     sitemap: {
-        hostname: 'https://laravel-package-ocean.netlify.app',
+        hostname: 'https://laravel-package-ocean.com',
     },
     modules: [
         'nuxt-simple-sitemap',
