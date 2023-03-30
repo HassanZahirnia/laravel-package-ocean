@@ -91,6 +91,9 @@ devDependencies:
   nuxt:
     specifier: ^3.3.2
     version: 3.3.2(@types/node@18.15.11)(eslint@8.37.0)(stylus@0.59.0)(typescript@5.0.2)
+  nuxt-gtag:
+    specifier: ^0.3.0
+    version: 0.3.0
   nuxt-simple-sitemap:
     specifier: ^2.2.0
     version: 2.2.0
@@ -4750,6 +4753,17 @@ packages:
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
+    dev: true
+
+  /nuxt-gtag@0.3.0:
+    resolution: {integrity: sha512-BTG7q066aPpf3lj2bGfBO7WZWOg3SO8YBOPe+qD+t8G6Av9mzyYkwZ2smP1l4XMksANQDc8MyuKWP+4RhMcDMg==}
+    dependencies:
+      '@nuxt/kit': 3.3.2(rollup@3.20.2)
+      defu: 6.1.2
+      pathe: 1.1.0
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt-simple-sitemap@2.2.0:

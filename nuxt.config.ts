@@ -48,6 +48,7 @@ export default defineNuxtConfig({
     },
     modules: [
         'nuxt-simple-sitemap',
+        'nuxt-gtag',
         '@unocss/nuxt',
         '@vueuse/nuxt',
         '@nuxtjs/color-mode',
