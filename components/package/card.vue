@@ -39,7 +39,8 @@ const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || wi
 </script>
 
 <template>
-    <div
+    <a
+        :href="laravelPackage.github"
         class="rounded-3xl cursor-pointer
         h-60
         p-6
@@ -56,12 +57,11 @@ const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || wi
         sm:hover:scale-105
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         "
-        @click="openGithubLink"
         >
         <div class="flex items-center justify-between gap-5">
             <category-pill
                 :category="laravelPackage.category"
-                @click.stop="selectedCategory = laravelPackage.category"
+                @click.stop.prevent="selectedCategory = laravelPackage.category"
                 />
             <div class="flex items-center gap-2">
                 <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
@@ -105,5 +105,5 @@ const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || wi
                 {{ repoName }}
             </ui-tooltip>
         </div>
-    </div>
+    </a>
 </template>
