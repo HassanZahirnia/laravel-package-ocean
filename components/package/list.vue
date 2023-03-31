@@ -73,9 +73,9 @@ watch(
                 },
             )
 
-            // Return only packages that their `composer` property are included in searchResults's `id` property
+            // Return only packages that their `github` property are included in searchResults's `id` property
             results.value = laravelPackages.filter(
-                laravelPackage => searchResult.map(result => result.id).includes(laravelPackage.composer),
+                laravelPackage => searchResult.map(result => result.id).includes(laravelPackage.github),
             )
         }
         else{
