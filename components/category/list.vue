@@ -29,15 +29,13 @@ const selectedCategory = useSelectedCategory()
                 Categories
             </div>
         </div>
-        <div class="w-full pt-6">
-            <div class="space-y-5">
-                <category-item
-                    v-for="category in categoriesWithPackagesCount"
-                    :key="category.name"
-                    :category="category"
-                    @click="selectedCategory = category.name"
-                    />
-            </div>
+        <div class="w-full pt-4">
+            <category-item
+                v-for="category in categoriesWithPackagesCount"
+                :key="category.name"
+                :category="category"
+                @click="selectedCategory = category.name"
+                />
         </div>
     </div>
 </template>

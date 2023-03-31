@@ -11,6 +11,7 @@ defineProps<{
 <template>
     <div
         class="relative cursor-pointer
+        py-2.5
         flex
         items-center gap-3
         transition duration-300

@@ -22,11 +22,19 @@ async function updatePackages() {
 
     for (let i = 0; i < packages.length; i++) {
         const keywordSet = new Set<string>()
-        const { composer, npm, name, description, github, keywords, updated_at } = packages[i]
+        const { composer, npm, name, description, github, keywords, updated_at, category, author } = packages[i]
 
         // If the package has no composer or npm
-        if (!composer && !npm) 
-            log(chalk.red(`'${github}' has no composer or npm`))
+        if (!composer && !npm) {
+            log(chalk.red(`'${github || composer || npm || name || description}' has no composer or npm`))
+            continue
+        }
+
+        // If package has no github, name, description, give a warning and continue
+        if (!github || !name || !description || !category || !author) {
+            log(chalk.red(`'${github || composer || npm || name || description || category || author}' is missing one of the following: github, name, description, category, author`))
+            continue
+        }
 
         // If the package has both composer and npm
         if (composer && npm)
@@ -109,8 +117,8 @@ async function updatePackages() {
             continue
         }
 
-        // Skip updating the package if it has been updated in less than a day compared to the current time
-        if (new Date(updated_at) > new Date(Date.now() - 24 * 60 * 60 * 1000)) 
+        // Skip updating the package if it has been updated in less than 2 days compared to the current time
+        if (new Date(updated_at) > new Date(Date.now() - 2 * 24 * 60 * 60 * 1000))
             continue
         
 
