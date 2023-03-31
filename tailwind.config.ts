@@ -1,5 +1,6 @@
-/** @type import('tailwindcss').Config */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+export default {
     darkMode: 'class',
     content: [
         './components/**/*.{js,vue,ts}',
@@ -18,4 +19,5 @@ module.exports = {
     plugins: [
         require('@tailwindcss/forms'),
     ],
-}
+} satisfies Config
+
