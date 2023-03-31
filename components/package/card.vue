@@ -26,11 +26,13 @@ function openGithubLink() {
     window.open($props.laravelPackage.github, '_blank')
 }
 
-// Get name of repo from the github link
+// Get author and name of repo from the github link
 const repoName = computed(() => {
     const githubLink = $props.laravelPackage.github
-    const repoName = githubLink.split('/').pop()
-    return repoName
+    const githubLinkParts = githubLink.split('/')
+    const author = githubLinkParts[githubLinkParts.length - 2]
+    const repo = githubLinkParts[githubLinkParts.length - 1]
+    return `${author}/${repo}`
 })
 </script>
 
@@ -87,14 +89,14 @@ const repoName = computed(() => {
         </div>
         <div
             class="flex items-center gap-2
-            pt-7
+            pt-2
             text-[#505878]
             dark:text-[#BECDF2]
             "
             >
             <div class="i-ph-github-logo-duotone text-xl" />
             <div
-                class="text-sm font-medium"
+                class="text-xs font-medium truncate"
                 >
                 {{ repoName }}
             </div>
