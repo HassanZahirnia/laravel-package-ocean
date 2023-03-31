@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import tippy from 'tippy.js'
 import type { Package } from '@/types/package'
 
 const $props = defineProps<{
@@ -33,6 +34,22 @@ const repoName = computed(() => {
     const author = githubLinkParts[githubLinkParts.length - 2]
     const repo = githubLinkParts[githubLinkParts.length - 1]
     return `${author}/${repo}`
+})
+
+const tooltip = ref<HTMLElement|null>(null)
+
+onMounted(()=>{
+    nextTick(() => {
+        if(tooltip.value && (repoName.value.length > 34 || window.innerWidth < 370)){
+            tippy(tooltip.value, {
+                content: repoName.value,
+                theme: 'indigo',
+                placement: 'bottom',
+                animation: 'shift-away',
+                touch: 'hold',
+            })
+        }
+    })
 })
 </script>
 
@@ -96,6 +113,7 @@ const repoName = computed(() => {
             >
             <div class="i-ph-github-logo-duotone text-xl" />
             <div
+                ref="tooltip"
                 class="text-xs font-medium truncate"
                 >
                 {{ repoName }}
