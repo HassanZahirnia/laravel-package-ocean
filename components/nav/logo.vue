@@ -83,7 +83,7 @@ watch(
             <div
                 class="i-svg-logo
                 gsap-nav-logo
-                text-5xl
+                text-[3.3rem]
                 "
                 />
             <!-- Fish -->
