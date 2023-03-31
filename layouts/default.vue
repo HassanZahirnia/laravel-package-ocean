@@ -8,8 +8,7 @@ import '@fontsource/poppins/latin.css'
         class="overflow-clip antialiased min-h-screen
         font-poppins
         transition duration-300
-        bg-[#FAFCFF]
-        dark:bg-[#04041F] dark:text-[#EAEFFB]
+        bg-[#FAFCFF] dark:bg-[#04041F] dark:text-[#EAEFFB]
         "
         >
         <nav-bar />
@@ -26,12 +25,3 @@ import '@fontsource/poppins/latin.css'
         </footer>
     </section>
 </template>
-
-<style lang="stylus">
-html.light
-    background-color #FAFCFF
-
-html.dark
-    background-color #04041F
-    color #EAEFFB
-</style>

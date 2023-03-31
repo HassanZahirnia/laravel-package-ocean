@@ -18,6 +18,9 @@ export default defineNuxtConfig({
             htmlAttrs: {
                 lang: 'en-US',
             },
+            bodyAttrs: {
+                class: 'bg-[#FAFCFF] dark:bg-[#04041F] dark:text-[#EAEFFB]',
+            },
             title: 'Laravel Package Ocean - Discover new & useful Laravel packages',
             meta: [
                 {
