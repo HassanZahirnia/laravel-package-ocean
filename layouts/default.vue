@@ -26,3 +26,12 @@ import '@fontsource/poppins/latin.css'
         </footer>
     </section>
 </template>
+
+<style lang="stylus">
+html.light
+    background-color #FAFCFF
+
+html.dark
+    background-color #04041F
+    color #EAEFFB
+</style>
