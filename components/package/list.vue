@@ -8,7 +8,7 @@ import type { selectboxItem } from '@/types/selectbox'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
-    idField: 'composer',
+    idField: 'github',
     fields: [
         'name',
         'description',
@@ -261,7 +261,7 @@ const categoriesForSelectboxWithAll = [
                 >
                 <package-card
                     v-for="laravelPackage in resultsPaginated"
-                    :key="laravelPackage.composer"
+                    :key="laravelPackage.github"
                     :laravel-package="laravelPackage"
                     />
             </div>

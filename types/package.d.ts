@@ -19,8 +19,11 @@ export type Package = {
     // Github URL of the package.'
     github: string
 
-    // Composer name of the package. Example: 'spatie/laravel-backup'
-    composer: string
+    // Composer package
+    composer: string | null
+
+    // Npm package
+    npm: string | null
 
     // Author of the package. Example: 'spatie'
     author: string
