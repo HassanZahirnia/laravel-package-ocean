@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import '@/assets/css/tailwind.css'
 import '@fontsource/poppins/latin.css'
-import 'tippy.js/dist/tippy.css'
-import 'tippy.js/animations/shift-away.css'
 </script>
 
 <template>
@@ -28,16 +26,3 @@ import 'tippy.js/animations/shift-away.css'
         </footer>
     </section>
 </template>
-
-<style lang="stylus">
-.tippy-box[data-theme~='indigo']
-    @apply bg-slate-800 rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins;
-.tippy-box[data-theme~='indigo'][data-placement^='top'] > .tippy-arrow::before
-    @apply border-t-slate-800;
-.tippy-box[data-theme~='indigo'][data-placement^='bottom'] > .tippy-arrow::before
-    @apply border-b-slate-800;
-.tippy-box[data-theme~='indigo'][data-placement^='left'] > .tippy-arrow::before
-    @apply border-l-slate-800;
-.tippy-box[data-theme~='indigo'][data-placement^='right'] > .tippy-arrow::before
-    @apply border-r-slate-800;
-</style>
