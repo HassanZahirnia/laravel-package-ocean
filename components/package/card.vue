@@ -1,16 +1,50 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
 import type { Package } from '@/types/package'
 
 const $props = defineProps<{
     laravelPackage: Package
 }>()
 
+const cardIsHovering = ref(false)
+const warningIcon = ref<HTMLElement | null>(null)
+let warningIconTimeline: gsap.core.Timeline | null = null
+
+onMounted(() => {
+    warningIconTimeline = gsap.timeline({
+        paused: true,
+    })
+        .to(warningIcon.value, {
+            keyframes: [
+                { rotate: 0, scale: 1 },
+                { rotate: -30, scale: 1 },
+                { rotate: 30, scale: 1.5 },
+                { rotate: -20, scale: 1.5 },
+                { rotate: 20, scale: 1.3 },
+                { rotate: -10, scale: 1.2 },
+                { rotate: 10, scale: 1.1 },
+                { rotate: 0, scale: 1 },
+            ],
+            ease: 'power4.out',
+            duration: 3,
+        })
+
+})
+
+watch(
+    cardIsHovering,
+    (value) => {
+        if (value) 
+            warningIconTimeline?.play(0)
+        else
+            warningIconTimeline?.pause(0)
+        
+    })
+
 const selectedCategory = useSelectedCategory()
 
 // A function to format large numbers
 // Example: 2600 -> 2.6k
-// Example: 5100 -> 5.1k
-// Example: 11100 -> 11.1k
 function formatStars(numStars: number): string {
     if (numStars >= 1000) {
         const formattedNum = (numStars / 1000).toFixed(1)
@@ -19,11 +53,6 @@ function formatStars(numStars: number): string {
     else {
         return `${numStars}`
     }
-}
-
-// A function to open the package github link in a new tab
-function openGithubLink() {
-    window.open($props.laravelPackage.github, '_blank')
 }
 
 // Get author and name of repo from the github link
@@ -37,15 +66,17 @@ const repoName = computed(() => {
 
 const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || window.innerWidth < 370)
 
-// Check whether detected_compatible_versions includes 9 or 10
+// Check whether detected_compatible_versions includes 9 or 10, or one of it's elements includes a plus sign like '5+'
 const isCompatibleWithLatestLaravelVersion = computed(() => {
     const detectedCompatibleVersions = $props.laravelPackage.detected_compatible_versions
-    return detectedCompatibleVersions.includes('9') || detectedCompatibleVersions.includes('10')
+    return detectedCompatibleVersions.includes('9')
+        || detectedCompatibleVersions.includes('10')
+        || detectedCompatibleVersions.some(version => version.toString().includes('+'))
 })
 
 const compatiblityMessage = computed(() => {
     if (isCompatibleWithLatestLaravelVersion.value)
-        return 'This package is compatible with the latest Laravel version.'
+        return 'This package is compatible with maintained versions of Laravel.'
     else
         return 'This package does not work with maintained versions of Laravel.'
 })
@@ -71,6 +102,8 @@ const compatiblityMessage = computed(() => {
         sm:hover:scale-105
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         "
+        @mouseenter="cardIsHovering = true"
+        @mouseleave="cardIsHovering = false"
         >
         <div class="flex items-center justify-between gap-5">
             <category-pill
@@ -118,6 +151,7 @@ const compatiblityMessage = computed(() => {
                     />
                 <div
                     v-else
+                    ref="warningIcon"
                     class="i-ph-warning-circle-duotone text-xl text-amber-500"
                     />
                 <div class="">
@@ -128,7 +162,6 @@ const compatiblityMessage = computed(() => {
                 <div
                     v-for="version in laravelPackage.detected_compatible_versions"
                     :key="version"
-                    class=""
                     >
                     {{ version }}
                     <span v-if="version !== laravelPackage.detected_compatible_versions[laravelPackage.detected_compatible_versions.length - 1]">

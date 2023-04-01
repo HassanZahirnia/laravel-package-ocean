@@ -61,7 +61,7 @@ export const laravelPackages: Package[] = [
         detected_compatible_versions: [
             '10',
             '9',
-            '8',
+            '8+',
             '7',
         ],
         compatible_versions: [],
@@ -167,7 +167,7 @@ export const laravelPackages: Package[] = [
         first_release_at: '2020-10-24T10:54:43+00:00',
         latest_release_at: '2023-03-25T10:16:39+00:00',
         detected_compatible_versions: [
-            '5',
+            '5+',
         ],
         compatible_versions: [],
         updated_at: '2023-03-30T18:57:01.862Z',
@@ -608,8 +608,9 @@ export const laravelPackages: Package[] = [
             'records',
         ],
         first_release_at: '2020-04-28T19:14:44+00:00',
-        latest_release_at: '2023-03-30T21:42:36+00:00',
+        latest_release_at: '2023-03-31T12:33:27+00:00',
         detected_compatible_versions: [
+            '8',
             '9',
             '10',
         ],
@@ -682,7 +683,7 @@ export const laravelPackages: Package[] = [
         first_release_at: '2015-10-06T09:06:18+00:00',
         latest_release_at: '2021-03-25T13:30:23+00:00',
         detected_compatible_versions: [
-            '5',
+            '5+',
         ],
         compatible_versions: [],
         updated_at: '2023-03-31T16:34:57.210Z',
@@ -1082,7 +1083,7 @@ export const laravelPackages: Package[] = [
         first_release_at: '2018-04-04T12:24:28+00:00',
         latest_release_at: '2023-02-22T16:52:55+00:00',
         detected_compatible_versions: [
-            '5',
+            '5+',
             '11',
         ],
         compatible_versions: [],
@@ -1455,7 +1456,7 @@ export const laravelPackages: Package[] = [
         first_release_at: '2016-10-16T22:22:30+00:00',
         latest_release_at: '2023-03-10T16:05:19+00:00',
         detected_compatible_versions: [
-            '5',
+            '5+',
         ],
         compatible_versions: [],
         updated_at: '2023-03-30T20:54:29.130Z',
@@ -2272,7 +2273,7 @@ export const laravelPackages: Package[] = [
         first_release_at: '2017-08-04T17:53:35+00:00',
         latest_release_at: '2022-09-23T22:15:05+00:00',
         detected_compatible_versions: [
-            '5',
+            '5+',
         ],
         compatible_versions: [],
         updated_at: '2023-03-31T13:17:57.751Z',
@@ -2918,7 +2919,7 @@ export const laravelPackages: Package[] = [
         first_release_at: '2018-03-23T18:12:00+00:00',
         latest_release_at: '2023-02-16T16:10:20+00:00',
         detected_compatible_versions: [
-            '5',
+            '5+',
         ],
         compatible_versions: [],
         updated_at: '2023-03-30T21:23:27.483Z',
