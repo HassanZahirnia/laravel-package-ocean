@@ -40,10 +40,12 @@ export type Package = {
     // Date of the latest release on packagist. Example: '2023-03-22T02:57:36+00:00'
     latest_release_at: string
 
-    // Laravel compatible versions
+    // Laravel compatible versions, automatically detected from packagist.
     detected_compatible_versions: string[]
 
-    // Manually set compatible versions
+    // Manually set compatible versions,
+    // only should be used when the package is not on packagist, or it's a php only or npm package.
+    // If this is set, the `detected_compatible_versions` will be ignored.
     compatible_versions: string[]
 
     // Date when the package was updated in the database. Example: '2023-03-29T02:57:36+00:00'

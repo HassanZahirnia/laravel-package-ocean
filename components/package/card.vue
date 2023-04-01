@@ -41,9 +41,9 @@ const isCompatibleWithLatestLaravelVersion = computed(() => {
 
 const compatiblityMessage = computed(() => {
     if (isCompatibleWithLatestLaravelVersion.value)
-        return 'Compatible with maintained versions of Laravel'
+        return `Compatible with maintained versions of Laravel: ${$props.laravelPackage.detected_compatible_versions.join(', ')}`
     else
-        return 'Not compatible with maintained versions of Laravel'
+        return `Not compatible with maintained versions of Laravel: ${$props.laravelPackage.detected_compatible_versions.join(', ')}`
 })
 
 const cardIsHovering = ref(false)
@@ -93,7 +93,7 @@ watch(
         :href="laravelPackage.github"
         target="_blank"
         class="rounded-3xl cursor-pointer
-        h-64
+        h-60
         p-6
         backdrop-blur-xl
         transition duration-300
@@ -124,13 +124,36 @@ watch(
             </div>
         </div>
         <div class="flex-1 pt-6">
-            <div
-                class="font-semibold
-                text-[#545D82]
-                dark:text-[#DEE4F1]
-                "
-                >
-                {{ laravelPackage.name }}
+            <div class="flex gap-2 items-center">
+                <ui-tooltip
+                    v-if="laravelPackage.detected_compatible_versions.length"
+                    :content="compatiblityMessage"
+                    :theme="isCompatibleWithLatestLaravelVersion ? 'emerald' : 'amber'"
+                    class="text-xs
+                    flex items-center gap-1
+                    "
+                    >
+                    <div
+                        v-if="isCompatibleWithLatestLaravelVersion"
+                        class="i-ph-check-circle-duotone text-2xl text-emerald-500"
+                        />
+                    <div
+                        v-else
+                        ref="warningIcon"
+                        class="i-ph-warning-circle-duotone text-2xl text-amber-500"
+                        />
+                </ui-tooltip>
+                <div
+                    class="font-semibold
+                    text-[#545D82]
+                    dark:text-[#DEE4F1]
+                    "
+                    :class="{
+                        'text-sm': laravelPackage.name.length > 25,
+                    }"
+                    >
+                    {{ laravelPackage.name }}
+                </div>
             </div>
             <div
                 class="pt-1.5
@@ -142,40 +165,6 @@ watch(
                 {{ laravelPackage.description }}
             </div>
         </div>
-        <ui-tooltip
-            v-if="laravelPackage.detected_compatible_versions.length"
-            :content="compatiblityMessage"
-            :theme="isCompatibleWithLatestLaravelVersion ? 'emerald' : 'amber'"
-            class="text-xs pt-2
-            flex items-center gap-1
-            "
-            >
-            <div class="flex gap-2 items-center">
-                <div
-                    v-if="isCompatibleWithLatestLaravelVersion"
-                    class="i-ph-check-circle-duotone text-xl text-emerald-500"
-                    />
-                <div
-                    v-else
-                    ref="warningIcon"
-                    class="i-ph-warning-circle-duotone text-xl text-amber-500"
-                    />
-                <div class="">
-                    Compatible versions:
-                </div>
-            </div>
-            <div class="flex gap-0.5 items-center">
-                <div
-                    v-for="version in laravelPackage.detected_compatible_versions"
-                    :key="version"
-                    >
-                    {{ version }}
-                    <span v-if="version !== laravelPackage.detected_compatible_versions[laravelPackage.detected_compatible_versions.length - 1]">
-                        ,
-                    </span>
-                </div>
-            </div>
-        </ui-tooltip>
         <div
             class="flex items-center gap-2
             pt-2
