@@ -56,13 +56,15 @@ const isHovering = ref(false)
             font-medium
             "
             >
-            No packages found
-            <span v-if="search">for</span>
+            <span class="">
+                No packages found
+                <span v-if="search">for</span>
+            </span>
             <span
                 v-if="search"
                 class="rounded-full cursor-pointer
                 transition duration-300
-                px-2 pt-px pb-0.5
+                pl-3.5 pr-3 pt-px pb-0.5
                 inline-flex gap-1
                 items-center
                 text-cyan-600
@@ -77,7 +79,7 @@ const isHovering = ref(false)
                 <span class="">
                     {{ search }}
                 </span>
-                <span class="i-ph-x" />
+                <span class="i-ph-x-bold" />
             </span>
         </div>
         <div

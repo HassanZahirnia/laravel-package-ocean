@@ -49,7 +49,7 @@ watch(
     [search, page, sortField, selectedCategory],
     (
         [newSearch, newPage, newSortField, newSelectedCategory],
-        [oldSearch, oldPage],
+        [oldSearch, oldPage, oldSortField, oldSelectedCategory],
     ) => {
         // if newPage is changed, scroll to #scroll-to-reference element
         if(newPage !== oldPage) {
@@ -59,6 +59,10 @@ watch(
                     document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'smooth' })
             })
         }
+
+        // If newSelectedCategory and oldSelectedCategory are not equal, set page to 1
+        if(newSelectedCategory !== oldSelectedCategory)
+            newPage = 1
 
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
