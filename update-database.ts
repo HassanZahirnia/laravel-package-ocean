@@ -141,23 +141,23 @@ async function updatePackages() {
             // and save it in the `detected_compatible_versions` property
             // Example output: ['8', '9', '10']
             const supportedVersions = []
-            const dependencies = releases[latestRelease].require
-            const versionRegex = /(<|>=|>|^\^)?(\d+)(\.\d+)*(\s*\|\|\s*)?/g // Updated regex
+            const dependencies = { ...releases[latestRelease].require, ...releases[latestRelease]['require-dev'] } // merge require and require-dev
+            const versionRegex = /(<|>=|>|^\^)?(\d+)(\.\d+)*(\s*\|\|\s*)?/g
             for (const dependency in dependencies) {
                 if (dependency.startsWith('illuminate/') || dependency === 'laravel/framework') {
                     const version = dependencies[dependency]
                     let match = versionRegex.exec(version)
                     while (match !== null) {
-                        const operator = match[1] // Get the operator, if any
+                        const operator = match[1]
                         const versionMatch = match[2]
-                        let cleanedVersion = versionMatch // Start with the version number
+                        let cleanedVersion = versionMatch
                         if (operator) {
-                            if (operator === '<') {
+                            if (operator === '<') 
                                 cleanedVersion = `${cleanedVersion}-`
-                            }
-                            else if (operator !== '^') { // Check for the operators we care about
-                                cleanedVersion += '+' // Append the plus sign
-                            }
+                
+                            else if (operator !== '^') 
+                                cleanedVersion += '+'
+                
                         }
                         supportedVersions.push(cleanedVersion)
                         match = versionRegex.exec(version)
