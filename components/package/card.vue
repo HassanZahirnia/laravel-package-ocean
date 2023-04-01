@@ -6,41 +6,6 @@ const $props = defineProps<{
     laravelPackage: Package
 }>()
 
-const cardIsHovering = ref(false)
-const warningIcon = ref<HTMLElement | null>(null)
-let warningIconTimeline: gsap.core.Timeline | null = null
-
-onMounted(() => {
-    warningIconTimeline = gsap.timeline({
-        paused: true,
-    })
-        .to(warningIcon.value, {
-            keyframes: [
-                { rotate: 0, scale: 1 },
-                { rotate: -30, scale: 1 },
-                { rotate: 30, scale: 1.5 },
-                { rotate: -20, scale: 1.5 },
-                { rotate: 20, scale: 1.3 },
-                { rotate: -10, scale: 1.2 },
-                { rotate: 10, scale: 1.1 },
-                { rotate: 0, scale: 1 },
-            ],
-            ease: 'power4.out',
-            duration: 3,
-        })
-
-})
-
-watch(
-    cardIsHovering,
-    (value) => {
-        if (value) 
-            warningIconTimeline?.play(0)
-        else
-            warningIconTimeline?.pause(0)
-        
-    })
-
 const selectedCategory = useSelectedCategory()
 
 // A function to format large numbers
@@ -76,10 +41,51 @@ const isCompatibleWithLatestLaravelVersion = computed(() => {
 
 const compatiblityMessage = computed(() => {
     if (isCompatibleWithLatestLaravelVersion.value)
-        return 'This package is compatible with maintained versions of Laravel.'
+        return 'Compatible with maintained versions of Laravel'
     else
-        return 'This package does not work with maintained versions of Laravel.'
+        return 'Not compatible with maintained versions of Laravel'
 })
+
+const cardIsHovering = ref(false)
+const warningIcon = ref<HTMLElement | null>(null)
+let warningIconTimeline: gsap.core.Timeline | null = null
+
+onMounted(() => {
+    if(isCompatibleWithLatestLaravelVersion.value || $props.laravelPackage.detected_compatible_versions.length === 0) 
+        return
+    
+    warningIconTimeline = gsap.timeline({
+        paused: true,
+    })
+        .to(warningIcon.value, {
+            keyframes: [
+                { rotate: 0, scale: 1 },
+                { rotate: -30, scale: 1 },
+                { rotate: 30, scale: 1.5 },
+                { rotate: -20, scale: 1.5 },
+                { rotate: 20, scale: 1.3 },
+                { rotate: -10, scale: 1.2 },
+                { rotate: 10, scale: 1.1 },
+                { rotate: 0, scale: 1 },
+            ],
+            ease: 'power4.out',
+            duration: 3,
+        })
+
+})
+
+watch(
+    cardIsHovering,
+    (value) => {
+        if(isCompatibleWithLatestLaravelVersion.value || $props.laravelPackage.detected_compatible_versions.length === 0) 
+            return
+            
+        if (value) 
+            warningIconTimeline?.play(0)
+        else
+            warningIconTimeline?.pause(0)
+        
+    })
 </script>
 
 <template>

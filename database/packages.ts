@@ -1084,7 +1084,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-02-22T16:52:55+00:00',
         detected_compatible_versions: [
             '5+',
-            '11',
+            '11-',
         ],
         compatible_versions: [],
         updated_at: '2023-03-30T20:54:21.193Z',

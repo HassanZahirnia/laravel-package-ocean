@@ -62,6 +62,8 @@ watch(
         if (value) {
             if(fishTimeline?.progress() === 0)
                 fishTimeline?.play()
+            if(fishTimeline && fishTimeline?.progress() >= 0.5)
+                fishTimeline?.play(0)
         }
         
     })
