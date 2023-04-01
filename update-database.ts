@@ -135,6 +135,28 @@ async function updatePackages() {
 
             packages[i].first_release_at = packagistData.package.time
             packages[i].latest_release_at = releases[latestRelease].time
+
+            // Go through the latest release and get the list of compatible Laravel versions
+            // So it can be a `illuminate` dependency, or a `laravel` dependency,
+            // and save it in the `detected_compatible_versions` property
+            // Example output: ['8', '9', '10']
+            const supportedVersions = []
+            const dependencies = releases[latestRelease].require
+            const versionRegex = /(\^)?(\d+)(\.\d+)*(\s*\|\|\s*)?/g
+            for (const dependency in dependencies) {
+                if (dependency.startsWith('illuminate/') || dependency === 'laravel/framework') {
+                    const version = dependencies[dependency]
+                    let match = versionRegex.exec(version)
+                    while (match !== null) {
+                        const versionMatch = match[2]
+                        supportedVersions.push(versionMatch)
+                        match = versionRegex.exec(version)
+                    }
+                }
+            }
+            const uniqueVersions = [...new Set(supportedVersions)]
+            const cleanedVersions = uniqueVersions.map(version => version.split('.')[0])
+            packages[i].detected_compatible_versions = cleanedVersions
         }
         else if(npm){
             const { data: npmData } = await axios.get(`https://registry.npmjs.org/${npm}`)

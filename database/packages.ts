@@ -13,6 +13,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-12-24T22:39:38+00:00',
         latest_release_at: '2023-02-15T23:07:40+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:57:04.705Z',
     },
     {
@@ -29,6 +37,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-12-15T11:58:25+00:00',
         latest_release_at: '2023-03-16T07:44:44+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:57:12.821Z',
     },
     {
@@ -46,6 +58,13 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-03-16T14:04:03+00:00',
         latest_release_at: '2023-02-15T07:29:49+00:00',
+        detected_compatible_versions: [
+            '10',
+            '9',
+            '8',
+            '7',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:24.455Z',
     },
     {
@@ -60,6 +79,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-09-02T13:37:07+00:00',
         latest_release_at: '2023-01-31T18:16:26+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:24:30.375Z',
     },
     {
@@ -74,6 +101,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-08-16T01:37:19+00:00',
         latest_release_at: '2023-03-30T11:24:10+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:08:32.751Z',
     },
     {
@@ -88,6 +120,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-09-12T05:09:28+00:00',
         latest_release_at: '2023-03-28T20:03:21+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:41:52.737Z',
     },
     {
@@ -107,6 +144,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-09-19T10:55:53+00:00',
         latest_release_at: '2023-03-05T15:42:39+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:07.120Z',
     },
     {
@@ -123,6 +166,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-10-24T10:54:43+00:00',
         latest_release_at: '2023-03-25T10:16:39+00:00',
+        detected_compatible_versions: [
+            '5',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:57:01.862Z',
     },
     {
@@ -137,6 +184,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-09-01T14:05:22+00:00',
         latest_release_at: '2023-03-02T21:41:10+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:24.807Z',
     },
     {
@@ -156,6 +205,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-12-15T23:26:51+00:00',
         latest_release_at: '2023-02-24T20:08:19+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:43.425Z',
     },
     {
@@ -173,6 +227,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-06-24T13:25:15+00:00',
         latest_release_at: '2023-02-23T10:10:57+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:59:19.027Z',
     },
     {
@@ -192,6 +250,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2017-03-05T16:25:25+00:00',
         latest_release_at: '2023-02-24T08:18:49+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:59:22.442Z',
     },
     {
@@ -209,6 +272,14 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2017-02-10T17:40:02+00:00',
         latest_release_at: '2023-01-25T16:56:05+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:59:25.987Z',
     },
     {
@@ -225,6 +296,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-01-24T04:05:04+00:00',
         latest_release_at: '2023-02-28T02:55:59+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:59:28.851Z',
     },
     {
@@ -240,7 +313,13 @@ export const laravelPackages: Package[] = [
             'horizon',
         ],
         first_release_at: '2022-08-15T07:15:02+00:00',
-        latest_release_at: '2023-03-19T11:03:34+00:00',
+        latest_release_at: '2023-03-31T07:50:32+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:26.808Z',
     },
     {
@@ -257,6 +336,16 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-11-24T08:26:52+00:00',
         latest_release_at: '2023-02-15T07:36:34+00:00',
+        detected_compatible_versions: [
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:29.491Z',
     },
     {
@@ -275,6 +364,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-10-01T03:44:14+00:00',
         latest_release_at: '2023-02-23T18:45:01+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:59:32.442Z',
     },
     {
@@ -293,6 +386,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-05-26T13:22:20+00:00',
         latest_release_at: '2023-03-29T15:59:45+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:13.493Z',
     },
     {
@@ -312,6 +409,14 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-09-17T03:40:19+00:00',
         latest_release_at: '2023-02-10T16:47:25+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:19.137Z',
     },
     {
@@ -332,6 +437,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-06-23T22:40:27+00:00',
         latest_release_at: '2023-01-25T17:04:51+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:22.627Z',
     },
     {
@@ -352,6 +463,13 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-09-15T15:36:13+00:00',
         latest_release_at: '2023-03-22T02:57:36+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:09.922Z',
     },
     {
@@ -366,6 +484,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-07-02T13:24:02+00:00',
         latest_release_at: '2023-02-10T12:34:41+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:43.360Z',
     },
     {
@@ -384,6 +506,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-03-10T14:23:28+00:00',
         latest_release_at: '2023-03-30T17:31:23+00:00',
+        detected_compatible_versions: [
+            '10',
+            '9',
+            '8',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:45.954Z',
     },
     {
@@ -398,6 +526,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-09-02T11:39:24+00:00',
         latest_release_at: '2023-02-21T19:12:38+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:59.138Z',
     },
     {
@@ -415,6 +552,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-10-29T18:15:26+00:00',
         latest_release_at: '2023-03-31T10:53:06+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:27.113Z',
     },
     {
@@ -429,6 +575,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-09-05T08:25:31+00:00',
         latest_release_at: '2023-03-15T08:20:01+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:57:10.063Z',
     },
     {
@@ -457,6 +609,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-04-28T19:14:44+00:00',
         latest_release_at: '2023-03-30T21:42:36+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:13.205Z',
     },
     {
@@ -471,6 +628,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-11-06T06:49:36+00:00',
         latest_release_at: '2023-03-02T14:27:41+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:55.907Z',
     },
     {
@@ -488,6 +649,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-10-25T12:37:16+00:00',
         latest_release_at: '2023-03-17T06:22:06+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:57:07.579Z',
     },
     {
@@ -502,6 +665,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-12-30T10:34:25+00:00',
         latest_release_at: '2023-03-03T17:15:45+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:05.188Z',
     },
     {
@@ -516,6 +681,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-10-06T09:06:18+00:00',
         latest_release_at: '2021-03-25T13:30:23+00:00',
+        detected_compatible_versions: [
+            '5',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:34:57.210Z',
     },
     {
@@ -532,6 +701,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-11-23T14:26:02+00:00',
         latest_release_at: '2023-03-29T02:53:46+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:40.534Z',
     },
     {
@@ -546,6 +719,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-03-28T03:59:14+00:00',
         latest_release_at: '2023-02-16T18:32:49+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:59.021Z',
     },
     {
@@ -560,6 +739,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-01-30T21:48:05+00:00',
         latest_release_at: '2023-02-24T22:19:53+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:24:26.512Z',
     },
     {
@@ -574,6 +757,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-11-21T14:49:01+00:00',
         latest_release_at: '2023-03-27T18:58:40+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:52.263Z',
     },
     {
@@ -591,6 +779,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-11-27T05:02:00+00:00',
         latest_release_at: '2023-03-28T07:33:58+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:56:38.177Z',
     },
     {
@@ -605,6 +798,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-09-07T21:42:48+00:00',
         latest_release_at: '2023-02-13T14:09:29+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:15:38.591Z',
     },
     {
@@ -631,6 +829,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-10-12T17:20:19+00:00',
         latest_release_at: '2023-03-26T11:18:27+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:24:11.102Z',
     },
     {
@@ -651,6 +854,14 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-04-01T16:36:44+00:00',
         latest_release_at: '2023-01-17T01:02:51+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:27:18.670Z',
     },
     {
@@ -668,6 +879,13 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-09-20T03:22:45+00:00',
         latest_release_at: '2023-03-03T20:12:38+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:55:09.535Z',
     },
     {
@@ -691,6 +909,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-05-19T19:19:13+00:00',
         latest_release_at: '2023-02-22T10:37:59+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T14:07:38.913Z',
     },
     {
@@ -705,6 +929,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-06-28T11:03:54+00:00',
         latest_release_at: '2023-02-16T11:08:15+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:15:32.503Z',
     },
     {
@@ -721,7 +947,12 @@ export const laravelPackages: Package[] = [
             'vue',
         ],
         first_release_at: '2022-07-22T10:25:49+00:00',
-        latest_release_at: '2023-03-24T15:46:43+00:00',
+        latest_release_at: '2023-03-30T23:11:49+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:15:44.464Z',
     },
     {
@@ -739,6 +970,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-07-08T15:53:32+00:00',
         latest_release_at: '2023-03-30T15:46:13+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:50.065Z',
     },
     {
@@ -753,6 +989,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-05-17T19:40:31+00:00',
         latest_release_at: '2023-02-09T09:02:18+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:15:41.221Z',
     },
     {
@@ -769,6 +1011,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-01-18T16:05:15+00:00',
         latest_release_at: '2023-02-16T16:21:06+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T17:15:35.288Z',
     },
     {
@@ -783,6 +1030,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-12-09T17:43:52+00:00',
         latest_release_at: '2023-03-28T19:12:45+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:53.691Z',
     },
     {
@@ -797,6 +1046,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '',
         latest_release_at: '',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '',
     },
     {
@@ -811,6 +1062,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-05-07T20:53:41+00:00',
         latest_release_at: '2023-03-28T23:10:53+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:53:49.545Z',
     },
     {
@@ -825,6 +1081,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-04-04T12:24:28+00:00',
         latest_release_at: '2023-02-22T16:52:55+00:00',
+        detected_compatible_versions: [
+            '5',
+            '11',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:21.193Z',
     },
     {
@@ -842,6 +1103,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-08-24T11:22:54+00:00',
         latest_release_at: '2022-06-10T17:26:17+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:03.369Z',
     },
     {
@@ -856,6 +1121,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-11-07T13:54:48+00:00',
         latest_release_at: '2023-03-15T17:27:13+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:08:40.412Z',
     },
     {
@@ -870,6 +1140,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-01-28T13:58:43+00:00',
         latest_release_at: '2023-01-11T16:19:01+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:45.323Z',
     },
     {
@@ -884,6 +1163,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-10-03T15:24:32+00:00',
         latest_release_at: '2023-02-15T14:18:19+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:41:44.966Z',
     },
     {
@@ -898,6 +1183,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-06-11T16:19:46+00:00',
         latest_release_at: '2023-02-16T23:01:35+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:58.499Z',
     },
     {
@@ -912,6 +1201,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-01-03T18:08:26+00:00',
         latest_release_at: '2023-02-24T13:09:28+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:35.656Z',
     },
     {
@@ -926,6 +1220,13 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-05-28T14:01:43+00:00',
         latest_release_at: '2022-02-28T15:14:45+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:11.018Z',
     },
     {
@@ -942,6 +1243,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-07-07T15:37:11+00:00',
         latest_release_at: '2023-02-14T03:28:31+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:15.782Z',
     },
     {
@@ -956,6 +1263,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-10-23T22:54:57+00:00',
         latest_release_at: '2023-03-19T14:29:15+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:41:48.790Z',
     },
     {
@@ -970,6 +1282,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-03-20T12:26:27+00:00',
         latest_release_at: '2023-03-26T07:37:00+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:42.821Z',
     },
     {
@@ -984,6 +1305,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-03-01T22:36:17+00:00',
         latest_release_at: '2023-02-17T09:46:34+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:08.331Z',
     },
     {
@@ -998,6 +1328,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-02-28T05:20:26+00:00',
         latest_release_at: '2023-03-17T13:20:54+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:53:57.975Z',
     },
     {
@@ -1012,6 +1348,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-06-27T15:16:08+00:00',
         latest_release_at: '2023-02-28T06:36:45+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:53:52.126Z',
     },
     {
@@ -1026,6 +1367,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-07-17T13:46:24+00:00',
         latest_release_at: '2023-03-27T06:14:43+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:53.305Z',
     },
     {
@@ -1045,6 +1395,13 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-08-20T11:45:08+00:00',
         latest_release_at: '2023-03-17T11:39:04+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:15.998Z',
     },
     {
@@ -1059,6 +1416,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-10-16T18:15:11+00:00',
         latest_release_at: '2023-02-16T18:23:03+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:26.444Z',
     },
     {
@@ -1073,6 +1435,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-07-07T20:04:46+00:00',
         latest_release_at: '2023-02-21T21:06:13+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:18.456Z',
     },
     {
@@ -1087,6 +1454,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-10-16T22:22:30+00:00',
         latest_release_at: '2023-03-10T16:05:19+00:00',
+        detected_compatible_versions: [
+            '5',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:29.130Z',
     },
     {
@@ -1101,6 +1472,13 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2014-06-28T01:41:28+00:00',
         latest_release_at: '2023-02-19T06:06:15+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:53:54.715Z',
     },
     {
@@ -1115,6 +1493,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2014-07-15T20:23:51+00:00',
         latest_release_at: '2023-01-23T08:34:14+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:37.552Z',
     },
     {
@@ -1129,6 +1512,13 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-03-22T19:27:28+00:00',
         latest_release_at: '2023-03-27T13:24:34+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:12.873Z',
     },
     {
@@ -1143,6 +1533,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-09-27T07:22:53+00:00',
         latest_release_at: '2023-02-20T06:41:50+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:23.710Z',
     },
     {
@@ -1157,6 +1553,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-02-06T15:07:21+00:00',
         latest_release_at: '2023-01-25T09:11:28+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:13.240Z',
     },
     {
@@ -1171,6 +1573,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-01-16T11:10:08+00:00',
         latest_release_at: '2023-02-24T15:48:30+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:55.992Z',
     },
     {
@@ -1187,6 +1594,13 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-05-08T18:39:01+00:00',
         latest_release_at: '2023-01-14T20:58:52+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:15.984Z',
     },
     {
@@ -1201,6 +1615,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-12-07T13:32:42+00:00',
         latest_release_at: '2023-01-24T23:15:11+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:34.748Z',
     },
     {
@@ -1215,6 +1635,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-10-20T10:11:16+00:00',
         latest_release_at: '2023-03-30T12:47:39+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:08:44.350Z',
     },
     {
@@ -1229,6 +1655,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-12-24T14:51:56+00:00',
         latest_release_at: '2023-01-23T14:29:54+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:31.930Z',
     },
     {
@@ -1243,6 +1675,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-06-26T01:28:12+00:00',
         latest_release_at: '2023-02-07T20:48:26+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:47.783Z',
     },
     {
@@ -1257,6 +1693,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-04-06T20:02:45+00:00',
         latest_release_at: '2023-03-30T08:42:04+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T14:07:49.114Z',
     },
     {
@@ -1271,6 +1715,16 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-03-06T13:07:22+00:00',
         latest_release_at: '2023-02-18T01:49:34+00:00',
+        detected_compatible_versions: [
+            '4',
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:50.584Z',
     },
     {
@@ -1285,6 +1739,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-03-10T19:05:45+00:00',
         latest_release_at: '2023-02-15T09:35:24+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:00.751Z',
     },
     {
@@ -1301,6 +1764,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-03-10T09:39:50+00:00',
         latest_release_at: '2023-02-04T13:56:40+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:11.042Z',
     },
     {
@@ -1323,6 +1792,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-09-05T10:33:08+00:00',
         latest_release_at: '2023-02-21T14:21:02+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:19.277Z',
     },
     {
@@ -1340,6 +1814,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-07-25T16:00:01+00:00',
         latest_release_at: '2022-03-19T21:26:19+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:52.429Z',
     },
     {
@@ -1358,6 +1837,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-12-15T02:49:51+00:00',
         latest_release_at: '2023-02-16T09:24:45+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:49.633Z',
     },
     {
@@ -1375,6 +1860,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-12-14T05:25:56.332Z',
         latest_release_at: '2023-01-20T20:30:32.190Z',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:40.455Z',
     },
     {
@@ -1391,6 +1878,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-07-15T11:50:49+00:00',
         latest_release_at: '2023-02-15T10:37:22+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:22.533Z',
     },
     {
@@ -1405,6 +1901,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2023-03-03T20:45:05+00:00',
         latest_release_at: '2023-03-11T19:04:33+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:01.462Z',
     },
     {
@@ -1421,6 +1923,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-04-06T02:19:28+00:00',
         latest_release_at: '2023-03-19T14:19:48+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:20.080Z',
     },
     {
@@ -1442,6 +1953,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-06-22T00:10:46+00:00',
         latest_release_at: '2022-12-13T00:04:12+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:36.727Z',
     },
     {
@@ -1456,6 +1969,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-07-26T13:48:50+00:00',
         latest_release_at: '2023-03-07T17:45:21+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:00.322Z',
     },
     {
@@ -1481,6 +2000,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-10-23T14:27:56+00:00',
         latest_release_at: '2023-03-17T18:13:19+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:31.854Z',
     },
     {
@@ -1497,6 +2022,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-03-04T02:47:21+00:00',
         latest_release_at: '2023-03-23T22:24:41+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:41:55.997Z',
     },
     {
@@ -1511,6 +2041,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-07-05T21:40:04+00:00',
         latest_release_at: '2023-03-04T23:46:40+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:34.338Z',
     },
     {
@@ -1527,6 +2062,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-12-23T13:09:52+00:00',
         latest_release_at: '2023-01-05T10:19:20+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:58:58.983Z',
     },
     {
@@ -1543,6 +2080,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-08-01T06:38:55+00:00',
         latest_release_at: '2023-03-03T17:59:51+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:35.685Z',
     },
     {
@@ -1559,6 +2101,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-10-10T06:12:55+00:00',
         latest_release_at: '2023-03-10T14:06:50+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:38.413Z',
     },
     {
@@ -1575,6 +2122,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-03-12T12:34:28+00:00',
         latest_release_at: '2023-02-01T08:53:25+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:54.813Z',
     },
     {
@@ -1591,6 +2143,13 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-02-25T09:11:49+00:00',
         latest_release_at: '2023-01-19T17:12:44+00:00',
+        detected_compatible_versions: [
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:10.472Z',
     },
     {
@@ -1607,6 +2166,14 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-01-18T09:14:03+00:00',
         latest_release_at: '2023-02-01T08:51:32+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:39.659Z',
     },
     {
@@ -1621,6 +2188,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-02-10T21:57:16+00:00',
         latest_release_at: '2023-01-25T16:03:32+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:47.256Z',
     },
     {
@@ -1635,6 +2208,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-02-08T18:37:46+00:00',
         latest_release_at: '2023-03-01T07:21:54+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:55:12.909Z',
     },
     {
@@ -1649,6 +2231,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-06-13T22:41:33+00:00',
         latest_release_at: '2023-01-17T10:35:34+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:53:57.538Z',
     },
     {
@@ -1663,6 +2251,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-06-11T18:43:20+00:00',
         latest_release_at: '2023-03-17T09:01:16+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:53:54.165Z',
     },
     {
@@ -1677,6 +2271,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-08-04T17:53:35+00:00',
         latest_release_at: '2022-09-23T22:15:05+00:00',
+        detected_compatible_versions: [
+            '5',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:57.751Z',
     },
     {
@@ -1691,6 +2289,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-12-04T21:24:47+00:00',
         latest_release_at: '2023-02-15T10:40:49+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:02.957Z',
     },
     {
@@ -1705,6 +2311,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-09-17T15:24:10+00:00',
         latest_release_at: '2023-03-14T06:04:19+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:58:53.457Z',
     },
     {
@@ -1726,6 +2334,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-02-17T16:21:56+00:00',
         latest_release_at: '2023-02-03T15:57:49+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:22.104Z',
     },
     {
@@ -1743,6 +2356,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-11-23T20:23:07+00:00',
         latest_release_at: '2023-03-29T07:39:16+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:03.594Z',
     },
     {
@@ -1757,6 +2376,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-07-08T15:45:48+00:00',
         latest_release_at: '2023-02-01T19:24:32+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:05.435Z',
     },
     {
@@ -1771,6 +2395,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-02-16T10:28:23+00:00',
         latest_release_at: '2023-02-23T08:14:38+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:07.680Z',
     },
     {
@@ -1785,6 +2414,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-09-09T07:14:28+00:00',
         latest_release_at: '2023-02-17T08:44:52+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:59:17.922Z',
     },
     {
@@ -1809,6 +2444,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-03-06T14:24:42+00:00',
         latest_release_at: '2023-02-16T09:59:16+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:24.997Z',
     },
     {
@@ -1823,6 +2463,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-10-26T06:15:13+00:00',
         latest_release_at: '2022-09-21T09:30:01+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:19.628Z',
     },
     {
@@ -1846,6 +2490,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-11-20T10:25:29+00:00',
         latest_release_at: '2023-02-15T12:35:38+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:22.073Z',
     },
     {
@@ -1864,7 +2517,12 @@ export const laravelPackages: Package[] = [
             'currency',
         ],
         first_release_at: '2022-09-26T11:31:20+00:00',
-        latest_release_at: '2023-03-30T10:55:16+00:00',
+        latest_release_at: '2023-03-31T16:21:07+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:24.960Z',
     },
     {
@@ -1887,6 +2545,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2017-10-29T19:17:54+00:00',
         latest_release_at: '2023-03-12T09:53:14+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:27.383Z',
     },
     {
@@ -1901,6 +2564,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-06-23T11:38:00+00:00',
         latest_release_at: '2023-01-12T15:12:49+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:05.387Z',
     },
     {
@@ -1915,6 +2586,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-12-18T13:47:19+00:00',
         latest_release_at: '2023-02-05T15:10:01+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:49.436Z',
     },
     {
@@ -1933,6 +2609,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-01-19T15:08:51+00:00',
         latest_release_at: '2022-08-12T17:16:27+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:29:47.891Z',
     },
     {
@@ -1947,6 +2625,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-11-09T15:46:05+00:00',
         latest_release_at: '2023-02-22T21:01:38+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:08.346Z',
     },
     {
@@ -1961,6 +2648,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-07-29T12:43:33+00:00',
         latest_release_at: '2023-02-15T10:10:46+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:34:02.179Z',
     },
     {
@@ -1977,6 +2669,14 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-04-05T08:24:07+00:00',
         latest_release_at: '2023-03-13T14:25:33+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:29:55.619Z',
     },
     {
@@ -1995,6 +2695,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-05-02T19:56:12+00:00',
         latest_release_at: '2023-01-03T19:12:47+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:29:50.334Z',
     },
     {
@@ -2009,6 +2711,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-07-02T20:52:55+00:00',
         latest_release_at: '2023-03-10T08:43:19+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:29:53.241Z',
     },
     {
@@ -2033,6 +2737,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-04-14T09:07:29+00:00',
         latest_release_at: '2023-03-30T07:51:35+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:27.832Z',
     },
     {
@@ -2050,6 +2759,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-07-02T09:21:53+00:00',
         latest_release_at: '2022-03-08T07:52:26+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T18:29:58.529Z',
     },
     {
@@ -2064,6 +2775,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-06-17T11:38:15+00:00',
         latest_release_at: '2023-02-27T10:27:10+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T21:23:37.432Z',
     },
     {
@@ -2078,6 +2795,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-02-16T14:23:56+00:00',
         latest_release_at: '2023-03-30T08:30:37+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T21:23:30.066Z',
     },
     {
@@ -2098,6 +2821,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-09-01T19:17:57+00:00',
         latest_release_at: '2023-02-18T15:43:23+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:30.512Z',
     },
     {
@@ -2112,6 +2844,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-10-25T04:24:41+00:00',
         latest_release_at: '2023-03-26T06:55:55+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:24:38.404Z',
     },
     {
@@ -2126,6 +2860,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-11-13T00:33:00+00:00',
         latest_release_at: '2023-02-19T07:11:46+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T21:23:32.576Z',
     },
     {
@@ -2140,6 +2876,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-04-07T22:12:58+00:00',
         latest_release_at: '2023-03-19T17:50:34+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T21:23:39.768Z',
     },
     {
@@ -2154,6 +2895,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-10-07T12:23:41+00:00',
         latest_release_at: '2023-02-07T10:08:04+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T21:23:34.861Z',
     },
     {
@@ -2168,6 +2917,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-03-23T18:12:00+00:00',
         latest_release_at: '2023-02-16T16:10:20+00:00',
+        detected_compatible_versions: [
+            '5',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T21:23:27.483Z',
     },
     {
@@ -2182,6 +2935,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-11-18T03:54:59.529Z',
         latest_release_at: '2023-03-06T10:16:48.936Z',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T12:01:07.188Z',
     },
     {
@@ -2201,6 +2956,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-03-03T01:10:32+00:00',
         latest_release_at: '2022-11-21T14:37:14+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T14:08:01.928Z',
     },
     {
@@ -2219,6 +2978,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-01-27T17:19:36+00:00',
         latest_release_at: '2023-01-25T15:10:45+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:13.935Z',
     },
     {
@@ -2233,6 +2997,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-07-07T22:09:15+00:00',
         latest_release_at: '2023-02-14T18:10:31+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:55.195Z',
     },
     {
@@ -2251,6 +3020,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-06-30T04:07:13+00:00',
         latest_release_at: '2023-01-30T20:31:40+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:16.644Z',
     },
     {
@@ -2268,6 +3046,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2019-11-05T02:38:22+00:00',
         latest_release_at: '2023-03-28T05:01:47+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:57.864Z',
     },
     {
@@ -2285,6 +3069,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2017-11-26T19:07:05+00:00',
         latest_release_at: '2023-02-15T07:13:11+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:43:00.370Z',
     },
     {
@@ -2299,6 +3092,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-03-14T10:37:31+00:00',
         latest_release_at: '2023-01-23T14:53:09+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:43:02.844Z',
     },
     {
@@ -2316,6 +3115,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-10-11T12:26:27+00:00',
         latest_release_at: '2023-03-05T17:46:07+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:43:05.632Z',
     },
     {
@@ -2333,6 +3138,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-01-08T13:38:42+00:00',
         latest_release_at: '2023-01-14T02:38:08+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:43:08.349Z',
     },
     {
@@ -2354,6 +3161,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-03-04T03:21:19+00:00',
         latest_release_at: '2023-03-02T16:11:43+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:19.786Z',
     },
     {
@@ -2368,6 +3180,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-02-28T16:39:49+00:00',
         latest_release_at: '2023-02-15T12:13:16+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:52.141Z',
     },
     {
@@ -2395,6 +3216,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-02-08T13:33:02+00:00',
         latest_release_at: '2023-02-17T17:52:50+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:22.487Z',
     },
     {
@@ -2409,6 +3235,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-08-15T18:03:49+00:00',
         latest_release_at: '2023-01-26T13:07:05+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:08.973Z',
     },
     {
@@ -2425,6 +3257,15 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-12-03T23:39:19+00:00',
         latest_release_at: '2023-02-15T16:07:08+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:01.367Z',
     },
     {
@@ -2443,6 +3284,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2018-12-27T08:58:24+00:00',
         latest_release_at: '2023-01-17T07:09:34+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:25.400Z',
     },
     {
@@ -2467,6 +3314,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-05-19T23:10:29+00:00',
         latest_release_at: '2023-03-28T09:16:29+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:27.886Z',
     },
     {
@@ -2484,6 +3333,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2023-01-22T00:08:41.323Z',
         latest_release_at: '2023-01-22T00:08:41.656Z',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:31.562Z',
     },
     {
@@ -2501,6 +3352,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-06-27T20:07:51+00:00',
         latest_release_at: '2023-01-22T22:30:39+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:36.957Z',
     },
     {
@@ -2520,6 +3377,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-06-17T18:38:25+00:00',
         latest_release_at: '2023-02-15T16:30:12+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:30.588Z',
     },
     {
@@ -2537,6 +3400,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-11-15T16:23:20+00:00',
         latest_release_at: '2023-02-17T00:12:06+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:32.905Z',
     },
     {
@@ -2553,6 +3420,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2013-12-10T22:41:50+00:00',
         latest_release_at: '2023-02-26T14:22:13+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:21:34.413Z',
     },
     {
@@ -2567,6 +3440,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-02-17T08:04:51+00:00',
         latest_release_at: '2023-03-30T18:03:34+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:42:00.049Z',
     },
     {
@@ -2585,6 +3460,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-10-12T07:07:34+00:00',
         latest_release_at: '2023-02-25T02:57:48+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:28.140Z',
     },
     {
@@ -2599,6 +3480,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-04-08T13:37:35+00:00',
         latest_release_at: '2023-03-29T19:43:39+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:52.155Z',
     },
     {
@@ -2617,6 +3504,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2020-07-14T22:44:19+00:00',
         latest_release_at: '2023-02-21T21:25:14+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:23:26.849Z',
     },
     {
@@ -2631,6 +3523,10 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-02-18T15:38:46+00:00',
         latest_release_at: '2023-02-19T00:50:09+00:00',
+        detected_compatible_versions: [
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T14:07:43.964Z',
     },
     {
@@ -2645,6 +3541,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-05-28T15:08:40+00:00',
         latest_release_at: '2023-01-12T16:59:59+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:31.391Z',
     },
     {
@@ -2659,6 +3561,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2017-01-25T23:09:21+00:00',
         latest_release_at: '2023-01-24T23:47:16+00:00',
+        detected_compatible_versions: [
+            '9',
+            '8',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:21:42.646Z',
     },
     {
@@ -2673,6 +3581,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-02-22T22:23:32+00:00',
         latest_release_at: '2023-01-25T15:25:43+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:08:36.249Z',
     },
     {
@@ -2690,6 +3604,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-02-26T19:05:37+00:00',
         latest_release_at: '2022-10-24T17:14:16+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:21:45.437Z',
     },
     {
@@ -2707,6 +3623,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2021-10-30T13:50:07+00:00',
         latest_release_at: '2022-07-05T12:40:12+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:23:33.349Z',
     },
     {
@@ -2721,6 +3639,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-10-30T13:31:59+00:00',
         latest_release_at: '2023-02-02T11:19:30+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:21:40.059Z',
     },
     {
@@ -2735,6 +3659,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-12-03T14:27:53+00:00',
         latest_release_at: '2023-02-01T05:47:14+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:21:36.795Z',
     },
     {
@@ -2749,6 +3679,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2019-12-30T21:24:52+00:00',
         latest_release_at: '2023-03-21T11:44:18+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:30.931Z',
     },
     {
@@ -2766,6 +3702,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-06-09T04:23:32.662Z',
         latest_release_at: '2023-01-03T11:05:52.140Z',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:46.715Z',
     },
     {
@@ -2783,6 +3721,11 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-10-18T09:02:30+00:00',
         latest_release_at: '2022-10-15T19:31:58+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T15:42:34.163Z',
     },
     {
@@ -2797,6 +3740,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2015-03-19T13:00:21+00:00',
         latest_release_at: '2023-02-06T07:57:20+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:59:36.488Z',
     },
     {
@@ -2814,6 +3766,10 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2022-12-07T14:59:44+00:00',
         latest_release_at: '2022-12-07T14:54:57+00:00',
+        detected_compatible_versions: [
+            '9',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:41.211Z',
     },
     {
@@ -2828,6 +3784,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-01-02T19:29:33+00:00',
         latest_release_at: '2023-02-11T20:01:12+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:41:40.819Z',
     },
     {
@@ -2842,6 +3803,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2022-04-05T10:08:20+00:00',
         latest_release_at: '2023-02-13T16:16:40+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:05.949Z',
     },
     {
@@ -2856,6 +3822,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-03-27T00:15:55+00:00',
         latest_release_at: '2023-03-14T08:30:02+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:43.805Z',
     },
     {
@@ -2870,6 +3845,11 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2014-02-23T23:26:56+00:00',
         latest_release_at: '2023-02-04T16:13:42+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:19.249Z',
     },
     {
@@ -2884,6 +3864,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-10-04T17:09:35+00:00',
         latest_release_at: '2023-03-06T01:27:14+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T19:58:56.081Z',
     },
     {
@@ -2900,6 +3888,8 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2014-06-09T22:37:43+00:00',
         latest_release_at: '2021-02-08T20:43:55+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:17:46.713Z',
     },
     {
@@ -2914,6 +3904,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-07-26T15:21:49+00:00',
         latest_release_at: '2023-03-22T13:01:33+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-30T20:54:40.009Z',
     },
     {
@@ -2928,6 +3924,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-06-28T09:16:14+00:00',
         latest_release_at: '2023-01-25T09:18:22+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:55.129Z',
     },
     {
@@ -2942,6 +3944,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-03-03T08:59:21+00:00',
         latest_release_at: '2023-01-25T09:39:38+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:08:27.743Z',
     },
     {
@@ -2956,6 +3964,14 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2016-05-08T16:52:12+00:00',
         latest_release_at: '2023-01-24T23:20:59+00:00',
+        detected_compatible_versions: [
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:33:39.039Z',
     },
     {
@@ -2972,6 +3988,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2015-07-16T14:28:16+00:00',
         latest_release_at: '2023-01-23T14:22:08+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:15.529Z',
     },
     {
@@ -2986,6 +4008,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2020-06-05T21:29:25+00:00',
         latest_release_at: '2023-01-23T15:08:13+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:24:34.072Z',
     },
     {
@@ -3000,6 +4028,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2021-03-29T18:26:32+00:00',
         latest_release_at: '2023-02-10T15:33:25+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T14:07:46.529Z',
     },
     {
@@ -3018,6 +4052,12 @@ export const laravelPackages: Package[] = [
         ],
         first_release_at: '2016-10-19T08:47:17+00:00',
         latest_release_at: '2023-01-25T09:12:48+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T13:18:32.840Z',
     },
     {
@@ -3032,6 +4072,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-10-11T13:58:34+00:00',
         latest_release_at: '2023-01-25T16:22:06+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:43.516Z',
     },
     {
@@ -3046,6 +4092,8 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2018-11-28T07:50:53+00:00',
         latest_release_at: '2023-02-20T14:31:09+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:34:09.583Z',
     },
     {
@@ -3060,6 +4108,15 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-09-16T20:50:53+00:00',
         latest_release_at: '2023-02-16T17:34:31+00:00',
+        detected_compatible_versions: [
+            '5',
+            '6',
+            '7',
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T17:50:35.871Z',
     },
     {
@@ -3074,6 +4131,12 @@ export const laravelPackages: Package[] = [
         keywords: [],
         first_release_at: '2013-12-11T22:28:05+00:00',
         latest_release_at: '2023-02-21T14:02:27+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
         updated_at: '2023-03-31T16:35:12.487Z',
     },
 ]
