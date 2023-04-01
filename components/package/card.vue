@@ -36,13 +36,27 @@ const repoName = computed(() => {
 })
 
 const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || window.innerWidth < 370)
+
+// Check whether detected_compatible_versions includes 9 or 10
+const isCompatibleWithLatestLaravelVersion = computed(() => {
+    const detectedCompatibleVersions = $props.laravelPackage.detected_compatible_versions
+    return detectedCompatibleVersions.includes('9') || detectedCompatibleVersions.includes('10')
+})
+
+const compatiblityMessage = computed(() => {
+    if (isCompatibleWithLatestLaravelVersion.value)
+        return 'This package is compatible with the latest Laravel version.'
+    else
+        return 'This package does not work with maintained versions of Laravel.'
+})
 </script>
 
 <template>
     <a
         :href="laravelPackage.github"
+        target="_blank"
         class="rounded-3xl cursor-pointer
-        h-60
+        h-64
         p-6
         backdrop-blur-xl
         transition duration-300
@@ -89,6 +103,40 @@ const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || wi
                 {{ laravelPackage.description }}
             </div>
         </div>
+        <ui-tooltip
+            v-if="laravelPackage.detected_compatible_versions.length"
+            :content="compatiblityMessage"
+            :theme="isCompatibleWithLatestLaravelVersion ? 'emerald' : 'amber'"
+            class="text-xs pt-2
+            flex items-center gap-1
+            "
+            >
+            <div class="flex gap-2 items-center">
+                <div
+                    v-if="isCompatibleWithLatestLaravelVersion"
+                    class="i-ph-check-circle-duotone text-xl text-emerald-500"
+                    />
+                <div
+                    v-else
+                    class="i-ph-warning-circle-duotone text-xl text-amber-500"
+                    />
+                <div class="">
+                    Compatible versions:
+                </div>
+            </div>
+            <div class="flex gap-0.5 items-center">
+                <div
+                    v-for="version in laravelPackage.detected_compatible_versions"
+                    :key="version"
+                    class=""
+                    >
+                    {{ version }}
+                    <span v-if="version !== laravelPackage.detected_compatible_versions[laravelPackage.detected_compatible_versions.length - 1]">
+                        ,
+                    </span>
+                </div>
+            </div>
+        </ui-tooltip>
         <div
             class="flex items-center gap-2
             pt-2

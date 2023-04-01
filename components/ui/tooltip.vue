@@ -6,14 +6,14 @@ import 'tippy.js/animations/shift-away.css'
 interface Props {
     content: string
     placement?: 'top' | 'bottom' | 'left' | 'right'
-    theme?: 'indigo' | 'blue' | 'rose' | 'cyan' | 'amber' | 'yellow' | 'pink'
+    theme?: 'slate' | 'amber' | 'emerald'
     size?: 'small' | 'medium'
     condition?: boolean
 }
 
 const $props = withDefaults(defineProps<Props>(), {
     placement: 'bottom',
-    theme: 'indigo',
+    theme: 'slate',
     size: 'medium',
     condition: true,
 })
@@ -29,6 +29,7 @@ onMounted(()=>{
                 theme: $props.theme,
                 placement: $props.placement,
                 animation: 'shift-away',
+                maxWidth: 500,
                 touch: 'hold',
             })
         }
@@ -48,14 +49,36 @@ watch(() => $props.content, () => {
 </template>
 
 <style lang="stylus">
-.tippy-box[data-theme~='indigo']
-    @apply bg-slate-800 rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins;
-.tippy-box[data-theme~='indigo'][data-placement^='top'] > .tippy-arrow::before
+.tippy-box[data-theme~='slate']
+    @apply bg-slate-800 rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins text-center;
+.tippy-box[data-theme~='slate'][data-placement^='top'] > .tippy-arrow::before
     @apply border-t-slate-800;
-.tippy-box[data-theme~='indigo'][data-placement^='bottom'] > .tippy-arrow::before
+.tippy-box[data-theme~='slate'][data-placement^='bottom'] > .tippy-arrow::before
     @apply border-b-slate-800;
-.tippy-box[data-theme~='indigo'][data-placement^='left'] > .tippy-arrow::before
+.tippy-box[data-theme~='slate'][data-placement^='left'] > .tippy-arrow::before
     @apply border-l-slate-800;
-.tippy-box[data-theme~='indigo'][data-placement^='right'] > .tippy-arrow::before
+.tippy-box[data-theme~='slate'][data-placement^='right'] > .tippy-arrow::before
     @apply border-r-slate-800;
+
+.tippy-box[data-theme~='amber']
+    @apply bg-amber-500 rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins text-center;
+.tippy-box[data-theme~='amber'][data-placement^='top'] > .tippy-arrow::before
+    @apply border-t-amber-500;
+.tippy-box[data-theme~='amber'][data-placement^='bottom'] > .tippy-arrow::before
+    @apply border-b-amber-500;
+.tippy-box[data-theme~='amber'][data-placement^='left'] > .tippy-arrow::before
+    @apply border-l-amber-500;
+.tippy-box[data-theme~='amber'][data-placement^='right'] > .tippy-arrow::before
+    @apply border-r-amber-500;
+
+.tippy-box[data-theme~='emerald']
+    @apply bg-emerald-500 rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins text-center;
+.tippy-box[data-theme~='emerald'][data-placement^='top'] > .tippy-arrow::before
+    @apply border-t-emerald-500;
+.tippy-box[data-theme~='emerald'][data-placement^='bottom'] > .tippy-arrow::before
+    @apply border-b-emerald-500;
+.tippy-box[data-theme~='emerald'][data-placement^='left'] > .tippy-arrow::before
+    @apply border-l-emerald-500;
+.tippy-box[data-theme~='emerald'][data-placement^='right'] > .tippy-arrow::before
+    @apply border-r-emerald-500;
 </style>
