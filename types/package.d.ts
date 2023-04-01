@@ -6,6 +6,19 @@ export type CategoryWithPackagesCount = {
     packagesCount: number
 }
 
+export type LaravelVersion =
+    '1' | '1-' | '1+'
+    | '2' | '2-' | '2+'
+    | '3' | '3-' | '3+'
+    | '4' | '4-' | '4+'
+    | '5' | '5-' | '5+'
+    | '6' | '6-' | '6+'
+    | '7' | '7-' | '7+'
+    | '8' | '8-' | '8+'
+    | '9' | '9-' | '9+'
+    | '10' | '10-' | '10+'
+    | '11' | '11-' | '11+'
+
 export type Package = {
     // Name of the package. Example: 'Laravel Backup'
     name: string
@@ -41,12 +54,12 @@ export type Package = {
     latest_release_at: string
 
     // Laravel compatible versions, automatically detected from packagist.
-    detected_compatible_versions: string[]
+    detected_compatible_versions: LaravelVersion[]
 
     // Manually set compatible versions,
     // only should be used when the package is not on packagist, or it's a php only or npm package.
     // If this is set, the `detected_compatible_versions` will be ignored.
-    compatible_versions: string[]
+    compatible_versions: LaravelVersion[]
 
     // Date when the package was updated in the database. Example: '2023-03-29T02:57:36+00:00'
     updated_at: string

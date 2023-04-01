@@ -6,6 +6,10 @@ const $props = defineProps<{
     laravelPackage: Package
 }>()
 
+const compatible_versions = computed(() => $props.laravelPackage.compatible_versions.length
+    ? $props.laravelPackage.compatible_versions
+    : $props.laravelPackage.detected_compatible_versions)
+
 const selectedCategory = useSelectedCategory()
 
 // A function to format large numbers
@@ -21,7 +25,7 @@ function formatStars(numStars: number): string {
 }
 
 // Get author and name of repo from the github link
-const repoName = computed(() => {
+const github_repository_name = computed(() => {
     const githubLink = $props.laravelPackage.github
     const githubLinkParts = githubLink.split('/')
     const author = githubLinkParts[githubLinkParts.length - 2]
@@ -29,29 +33,31 @@ const repoName = computed(() => {
     return `${author}/${repo}`
 })
 
-const repoNameTooltipCondition = computed(() => repoName.value.length > 34 || window.innerWidth < 370)
+const github_repository_nameTooltipCondition = computed(() => github_repository_name.value.length > 34 || window.innerWidth < 370)
 
 // Check whether detected_compatible_versions includes 9 or 10, or one of it's elements includes a plus sign like '5+'
-const isCompatibleWithLatestLaravelVersion = computed(() => {
-    const detectedCompatibleVersions = $props.laravelPackage.detected_compatible_versions
+const package_is_compatible_with_latest_laravel_version = computed(() => {
+    const detectedCompatibleVersions = compatible_versions.value
     return detectedCompatibleVersions.includes('9')
         || detectedCompatibleVersions.includes('10')
         || detectedCompatibleVersions.some(version => version.toString().includes('+'))
 })
 
-const compatiblityMessage = computed(() => {
-    if (isCompatibleWithLatestLaravelVersion.value)
-        return `Compatible with maintained versions of Laravel: ${$props.laravelPackage.detected_compatible_versions.join(', ')}`
+// Compatiblity and verions list message
+const compatiblity_message = computed(() => {
+    if (package_is_compatible_with_latest_laravel_version.value)
+        return `Compatible with maintained versions of Laravel: ${compatible_versions.value.join(', ')}`
     else
-        return `Not compatible with maintained versions of Laravel: ${$props.laravelPackage.detected_compatible_versions.join(', ')}`
+        return `Not compatible with maintained versions of Laravel: ${compatible_versions.value.join(', ')}`
 })
 
-const cardIsHovering = ref(false)
+// Warning icon animation
+const card_is_hovering = ref(false)
 const warningIcon = ref<HTMLElement | null>(null)
 let warningIconTimeline: gsap.core.Timeline | null = null
 
 onMounted(() => {
-    if(isCompatibleWithLatestLaravelVersion.value || $props.laravelPackage.detected_compatible_versions.length === 0) 
+    if(package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0) 
         return
     
     warningIconTimeline = gsap.timeline({
@@ -75,9 +81,9 @@ onMounted(() => {
 })
 
 watch(
-    cardIsHovering,
+    card_is_hovering,
     (value) => {
-        if(isCompatibleWithLatestLaravelVersion.value || $props.laravelPackage.detected_compatible_versions.length === 0) 
+        if(package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0) 
             return
             
         if (value) 
@@ -108,8 +114,8 @@ watch(
         sm:hover:scale-105
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         "
-        @mouseenter="cardIsHovering = true"
-        @mouseleave="cardIsHovering = false"
+        @mouseenter="card_is_hovering = true"
+        @mouseleave="card_is_hovering = false"
         >
         <div class="flex items-center justify-between gap-5">
             <category-pill
@@ -126,15 +132,15 @@ watch(
         <div class="flex-1 pt-6">
             <div class="flex gap-2 items-center">
                 <ui-tooltip
-                    v-if="laravelPackage.detected_compatible_versions.length"
-                    :content="compatiblityMessage"
-                    :theme="isCompatibleWithLatestLaravelVersion ? 'emerald' : 'amber'"
+                    v-if="compatible_versions.length"
+                    :content="compatiblity_message"
+                    :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
                     class="text-xs
                     flex items-center gap-1
                     "
                     >
                     <div
-                        v-if="isCompatibleWithLatestLaravelVersion"
+                        v-if="package_is_compatible_with_latest_laravel_version"
                         class="i-ph-check-circle-duotone text-2xl text-emerald-500"
                         />
                     <div
@@ -175,10 +181,10 @@ watch(
             <div class="i-ph-github-logo-duotone text-xl" />
             <ui-tooltip
                 class="text-xs font-medium truncate"
-                :content="repoName"
-                :condition="repoNameTooltipCondition"
+                :content="github_repository_name"
+                :condition="github_repository_nameTooltipCondition"
                 >
-                {{ repoName }}
+                {{ github_repository_name }}
             </ui-tooltip>
         </div>
     </a>

@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { orderBy } from 'lodash'
 import axios from 'axios'
 import chalk from 'chalk'
-import type { Package } from '@/types/package'
+import type { LaravelVersion, Package } from '@/types/package'
 import { categories } from '@/database/categories'
 
 const log = console.log
@@ -166,7 +166,7 @@ async function updatePackages() {
             }
             const uniqueVersions = [...new Set(supportedVersions)]
             const cleanedVersions = uniqueVersions.map(version => version.split('.')[0])
-            packages[i].detected_compatible_versions = cleanedVersions
+            packages[i].detected_compatible_versions = cleanedVersions as LaravelVersion[]
         }
         else if(npm){
             const { data: npmData } = await axios.get(`https://registry.npmjs.org/${npm}`)

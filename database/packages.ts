@@ -651,7 +651,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2021-10-25T12:37:16+00:00',
         latest_release_at: '2023-03-17T06:22:06+00:00',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '9+',
+        ],
         updated_at: '2023-03-30T18:57:07.579Z',
     },
     {
@@ -667,7 +669,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2019-12-30T10:34:25+00:00',
         latest_release_at: '2023-03-03T17:15:45+00:00',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '7+',
+        ],
         updated_at: '2023-03-31T16:35:05.188Z',
     },
     {
@@ -1847,25 +1851,6 @@ export const laravelPackages: Package[] = [
         updated_at: '2023-03-31T15:42:49.633Z',
     },
     {
-        name: 'Vite Watcher Runner',
-        description: 'Run custom shell commands on file changes.',
-        category: 'Debugging & Dev Tools',
-        github: 'https://github.com/lepikhinb/vite-plugin-watch',
-        composer: null,
-        npm: 'vite-plugin-watch',
-        author: 'based',
-        stars: 11,
-        keywords: [
-            'boris',
-            'lepikhinb',
-        ],
-        first_release_at: '2022-12-14T05:25:56.332Z',
-        latest_release_at: '2023-01-20T20:30:32.190Z',
-        detected_compatible_versions: [],
-        compatible_versions: [],
-        updated_at: '2023-03-31T15:42:40.455Z',
-    },
-    {
         name: 'Laravel N+1 Query Detector',
         description: 'Reduce the number of queries your application executes.',
         category: 'Debugging & Dev Tools',
@@ -2313,7 +2298,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2022-09-17T15:24:10+00:00',
         latest_release_at: '2023-03-14T06:04:19+00:00',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '8+',
+        ],
         updated_at: '2023-03-30T19:58:53.457Z',
     },
     {
@@ -2862,7 +2849,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2022-11-13T00:33:00+00:00',
         latest_release_at: '2023-02-19T07:11:46+00:00',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '8+',
+        ],
         updated_at: '2023-03-30T21:23:32.576Z',
     },
     {
@@ -2937,7 +2926,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2021-11-18T03:54:59.529Z',
         latest_release_at: '2023-03-06T10:16:48.936Z',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '9+',
+        ],
         updated_at: '2023-03-31T12:01:07.188Z',
     },
     {
@@ -3140,7 +3131,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2018-01-08T13:38:42+00:00',
         latest_release_at: '2023-01-14T02:38:08+00:00',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '4+',
+        ],
         updated_at: '2023-03-31T15:43:08.349Z',
     },
     {
@@ -3316,7 +3309,9 @@ export const laravelPackages: Package[] = [
         first_release_at: '2020-05-19T23:10:29+00:00',
         latest_release_at: '2023-03-28T09:16:29+00:00',
         detected_compatible_versions: [],
-        compatible_versions: [],
+        compatible_versions: [
+            '10+',
+        ],
         updated_at: '2023-03-31T13:18:27.886Z',
     },
     {
@@ -3589,25 +3584,6 @@ export const laravelPackages: Package[] = [
         ],
         compatible_versions: [],
         updated_at: '2023-03-31T17:08:36.249Z',
-    },
-    {
-        name: 'Laravel Wizard',
-        description: 'A dynamic Laravel Livewire component for multi steps form.',
-        category: 'UI & Blade Components',
-        github: 'https://github.com/vildanbina/livewire-wizard',
-        composer: 'vildanbina/livewire-wizard',
-        npm: null,
-        author: 'vildanbina',
-        stars: 245,
-        keywords: [
-            'alpine',
-            'tailwind',
-        ],
-        first_release_at: '2022-02-26T19:05:37+00:00',
-        latest_release_at: '2022-10-24T17:14:16+00:00',
-        detected_compatible_versions: [],
-        compatible_versions: [],
-        updated_at: '2023-03-30T19:21:45.437Z',
     },
     {
         name: 'Wire Modal',
