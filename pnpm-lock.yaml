@@ -61,6 +61,9 @@ devDependencies:
   chalk:
     specifier: ^5.2.0
     version: 5.2.0
+  dotenv:
+    specifier: ^16.0.3
+    version: 16.0.3
   eslint:
     specifier: ^8.37.0
     version: 8.37.0

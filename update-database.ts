@@ -3,8 +3,11 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { orderBy } from 'lodash'
 import axios from 'axios'
 import chalk from 'chalk'
+import dotenv from 'dotenv'
 import type { LaravelVersion, Package } from '@/types/package'
 import { categories } from '@/database/categories'
+
+dotenv.config()
 
 const log = console.log
 
@@ -175,9 +178,19 @@ async function updatePackages() {
         }
 
         // Update Github stars
-        const { data: githubData } = await axios.get(`https://api.github.com/repos/${packages[i].github.substring(19)}`)
+        const { data: githubData } = await axios.get(`https://api.github.com/repos/${packages[i].github.substring(19)}`, {
+            headers: {
+                Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+            },
+        })
         packages[i].stars = githubData.stargazers_count
         packages[i].updated_at = new Date().toISOString()
+
+        // Repository is archived and/or read-only
+        if (githubData.archived){ 
+            log(chalk.bgRed('Warning!'))
+            log(chalk.red(`'${github}' is archived and/or read-only`))
+        }
 
         log(chalk.greenBright(`Updated ${composer || npm || github}`))
     }
