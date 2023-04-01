@@ -1,4 +1,4 @@
-![](https://laravel-package-ocean.com/opengraph.webp)
+![](https://laravel-package-ocean.com/laravel-package-ocean-opengraph.webp)
 
 
 # Laravel Package Ocean

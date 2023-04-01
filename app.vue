@@ -2,7 +2,7 @@
 const siteName = 'Laravel Package Ocean'
 const siteTitle = 'Laravel Package Ocean - Discover new Laravel packages'
 const siteDescription = 'A place where you can find any Laravel package that you may need for your next project.'
-const ogImageUrl = 'https://laravel-package-ocean.com/opengraph.webp'
+const ogImageUrl = 'https://laravel-package-ocean.com/laravel-package-ocean-opengraph.webp'
 const twitterHandle = '@HassanZahirnia'
 const siteUrl = 'https://laravel-package-ocean.com'
 

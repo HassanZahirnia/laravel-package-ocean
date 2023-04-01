@@ -170,6 +170,11 @@ async function updatePackages() {
             const uniqueVersions = [...new Set(supportedVersions)]
             const cleanedVersions = uniqueVersions.map(version => version.split('.')[0])
             packages[i].detected_compatible_versions = cleanedVersions as LaravelVersion[]
+
+            // if no versions were detected, log a warning
+            if (cleanedVersions.length === 0) 
+                log(chalk.yellow(`Could not detect any compatible versions for: '${composer || npm || github}'`))
+            
         }
         else if(npm){
             const { data: npmData } = await axios.get(`https://registry.npmjs.org/${npm}`)
