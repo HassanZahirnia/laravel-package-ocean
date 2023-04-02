@@ -23,9 +23,8 @@ onMounted(() => {
         .to(item.value, {
             x: 10,
             ease: 'sine.out',
-            duration: 0.20,
+            duration: 0.2,
         })
-
 })
 
 watch(

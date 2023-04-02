@@ -41,29 +41,32 @@ const package_is_compatible_with_latest_laravel_version = computed(() => {
     const compatibleVersions = compatible_versions.value
     return active_laravel_versions.some((activeVersion) => {
         return compatibleVersions.some((compatibleVersion) => {
-            // Check if the active version satisfies the condition specified in compatibleVersion
-            const operator = compatibleVersion.match(/^([<>]=?)/)?.[1] ?? ''
-            const version = parseInt(compatibleVersion.replace(/^([<>]=?)/, ''))
-            if (operator === '') {
-                // The compatible version is a plain string
+            const match = compatibleVersion.match(/^([<>]=?|>=|<=)(\d+)$/)
+            if (!match) 
                 return activeVersion === compatibleVersion
-            }
-            else if (operator === '>=') {
+      
+            const operator = match[1]
+            const version = parseInt(match[2])
+            if (operator === '') 
+                return activeVersion === compatibleVersion
+      
+            else if (operator === '>=') 
                 return parseInt(activeVersion) >= version
-            }
-            else if (operator === '<=') {
+      
+            else if (operator === '<=') 
                 return parseInt(activeVersion) <= version
-            }
-            else if (operator === '>') {
+      
+            else if (operator === '>') 
                 return parseInt(activeVersion) > version
-            }
-            else if (operator === '<') {
+      
+            else if (operator === '<') 
                 return parseInt(activeVersion) < version
-            }
+      
             return false
         })
     })
 })
+
 
 // Compatiblity and verions list message
 const compatiblity_message = computed(() => {
@@ -75,11 +78,27 @@ const compatiblity_message = computed(() => {
 
 const isHovering = ref(false)
 // Warning icon animation
+const card = ref<HTMLElement | null>(null)
 const warningIcon = ref<HTMLElement | null>(null)
-const should_not_animate_warning_icon = computed(() => package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0)
+let cardTimeline: gsap.core.Timeline | null = null
 let warningIconTimeline: gsap.core.Timeline | null = null
 
+const should_not_animate_warning_icon = computed(() => package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0)
+
 onMounted(() => {
+    cardTimeline = gsap.timeline({
+        paused: true,
+        onComplete: () => {
+            if(!isHovering.value)
+                cardTimeline?.reverse()
+        },
+    })
+        .to(card.value, {
+            scale: 1.03,
+            ease: 'sine.out',
+            duration: 0.2,
+        })
+
     if(should_not_animate_warning_icon.value) 
         return
     
@@ -106,6 +125,10 @@ onMounted(() => {
 watch(
     isHovering,
     (value) => {
+        if (value) cardTimeline?.play() 
+        else if(cardTimeline?.progress() === 1)
+            cardTimeline?.reverse()
+
         if(should_not_animate_warning_icon.value) 
             return
             
@@ -118,97 +141,100 @@ watch(
 </script>
 
 <template>
-    <a
-        :href="laravelPackage.github"
-        target="_blank"
-        class="rounded-3xl cursor-pointer
-        h-60
-        p-6
-        backdrop-blur-xl
-        transition duration-300
-        flex flex-col
-        bg-white/50
-        dark:bg-[#362B59]/20
-        ring-1 dark:ring-1
-        ring-slate-100
-        dark:ring-[#132447]
-        hover:ring-indigo-200
-        dark:hover:ring-indigo-900
-        sm:hover:scale-105
-        shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
-        "
+    <div
+        ref="card"
         @mouseenter="isHovering = true"
         @mouseleave="isHovering = false"
         >
-        <div class="flex items-center justify-between gap-5">
-            <category-pill
-                :category="laravelPackage.category"
-                @click.stop.prevent="selectedCategory = laravelPackage.category"
-                />
-            <div class="flex items-center gap-2">
-                <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
-                <div class="text-sm">
-                    {{ formatStars(laravelPackage.stars) }}
+        <a
+            :href="laravelPackage.github"
+            target="_blank"
+            class="rounded-3xl
+            h-60
+            p-6
+            backdrop-blur-xl
+            transition duration-300
+            flex flex-col
+            bg-white/50
+            dark:bg-[#362B59]/20
+            ring-1 dark:ring-1
+            ring-slate-100
+            dark:ring-[#132447]
+            hover:ring-indigo-200
+            dark:hover:ring-indigo-900
+            shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+            "
+            >
+            <div class="flex items-center justify-between gap-5">
+                <category-pill
+                    :category="laravelPackage.category"
+                    @click.stop.prevent="selectedCategory = laravelPackage.category"
+                    />
+                <div class="flex items-center gap-2">
+                    <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
+                    <div class="text-sm">
+                        {{ formatStars(laravelPackage.stars) }}
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="flex-1 pt-6">
-            <div class="flex gap-2 items-center">
-                <ui-tooltip
-                    v-if="compatible_versions.length"
-                    :content="compatiblity_message"
-                    :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
-                    class="text-xs
-                    flex items-center gap-1
-                    "
-                    >
+            <div class="flex-1 pt-6">
+                <div class="flex gap-2 items-center">
+                    <ui-tooltip
+                        v-if="compatible_versions.length"
+                        :content="compatiblity_message"
+                        :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
+                        class="text-xs
+                        flex items-center gap-1
+                        "
+                        >
+                        <div
+                            v-if="package_is_compatible_with_latest_laravel_version"
+                            class="i-ph-check-circle-duotone text-xl text-emerald-500"
+                            />
+                        <div
+                            v-else
+                            ref="warningIcon"
+                            class="i-ph-warning-circle-duotone text-xl text-amber-500"
+                            />
+                    </ui-tooltip>
                     <div
-                        v-if="package_is_compatible_with_latest_laravel_version"
-                        class="i-ph-check-circle-duotone text-2xl text-emerald-500"
-                        />
-                    <div
-                        v-else
-                        ref="warningIcon"
-                        class="i-ph-warning-circle-duotone text-2xl text-amber-500"
-                        />
-                </ui-tooltip>
+                        class="font-semibold
+                        text-[#545D82]
+                        dark:text-[#DEE4F1]
+                        "
+                        :class="{
+                            'text-sm': laravelPackage.name.length > 25,
+                        }"
+                        >
+                        {{ laravelPackage.name }}
+                    </div>
+                </div>
                 <div
-                    class="font-semibold
-                    text-[#545D82]
-                    dark:text-[#DEE4F1]
+                    class="pt-1.5
+                    text-sm
+                    text-[#959BAF]
+                    dark:text-[#828CAC]
                     "
-                    :class="{
-                        'text-sm': laravelPackage.name.length > 25,
-                    }"
                     >
-                    {{ laravelPackage.name }}
+                    {{ laravelPackage.description }}
                 </div>
             </div>
             <div
-                class="pt-1.5
-                text-sm
-                text-[#959BAF]
-                dark:text-[#828CAC]
+                class="flex items-center gap-2
+                pt-2
+                text-[#505878]
+                dark:text-[#BECDF2]
                 "
                 >
-                {{ laravelPackage.description }}
+                <div class="i-ph-github-logo-duotone text-xl" />
+                <ui-tooltip
+                    class="text-xs font-medium truncate"
+                    :content="github_repository_name"
+                    :condition="show_github_repository_name"
+                    >
+                    {{ github_repository_name }}
+                </ui-tooltip>
             </div>
-        </div>
-        <div
-            class="flex items-center gap-2
-            pt-2
-            text-[#505878]
-            dark:text-[#BECDF2]
-            "
-            >
-            <div class="i-ph-github-logo-duotone text-xl" />
-            <ui-tooltip
-                class="text-xs font-medium truncate"
-                :content="github_repository_name"
-                :condition="show_github_repository_name"
-                >
-                {{ github_repository_name }}
-            </ui-tooltip>
-        </div>
-    </a>
+        </a>
+    </div>
 </template>
