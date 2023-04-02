@@ -27,6 +27,7 @@ function openModal() {
         dark:hover:bg-slate-700/50
         hover:shadow-lg hover:shadow-black/5
         "
+        aria-label="Open Menu"
         @click="openModal"
         >
         <div class="i-ph-list text-3xl" />
