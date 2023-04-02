@@ -38,25 +38,32 @@ const show_github_repository_name = computed(() => github_repository_name.value.
 
 // Check whether compatible_versions includes the versions from the list active_laravel_versions
 const package_is_compatible_with_latest_laravel_version = computed(() => {
-    return compatible_versions.value.some((version) => {
-        if (version.includes('+')) {
-            const baseVersion = version.slice(0, -1)
-            return active_laravel_versions.some((activeVersion) => {
-                return activeVersion >= baseVersion
-            })
-        }
-        else if (version.includes('-')) {
-            const [startVersion, endVersion] = version.split('-')
-            return active_laravel_versions.some((activeVersion) => {
-                return activeVersion >= startVersion && activeVersion <= endVersion
-            })
-        }
-        else {
-            return active_laravel_versions.includes(version)
-        }
+    const compatibleVersions = compatible_versions.value
+    return active_laravel_versions.some((activeVersion) => {
+        return compatibleVersions.some((compatibleVersion) => {
+            // Check if the active version satisfies the condition specified in compatibleVersion
+            const operator = compatibleVersion.match(/^([<>]=?)/)?.[1] ?? ''
+            const version = parseInt(compatibleVersion.replace(/^([<>]=?)/, ''))
+            if (operator === '') {
+                // The compatible version is a plain string
+                return activeVersion === compatibleVersion
+            }
+            else if (operator === '>=') {
+                return parseInt(activeVersion) >= version
+            }
+            else if (operator === '<=') {
+                return parseInt(activeVersion) <= version
+            }
+            else if (operator === '>') {
+                return parseInt(activeVersion) > version
+            }
+            else if (operator === '<') {
+                return parseInt(activeVersion) < version
+            }
+            return false
+        })
     })
 })
-
 
 // Compatiblity and verions list message
 const compatiblity_message = computed(() => {

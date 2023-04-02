@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://laravel-package-ocean.com">
-        <img src="https://laravel-package-ocean.com/laravel-package-ocean-opengraph.webp" height="300">
+        <img src="https://laravel-package-ocean.com/laravel-package-ocean-opengraph.webp" height="350">
         <h1 align="center">Laravel Package Ocean</h1>
     </a>
 </p>

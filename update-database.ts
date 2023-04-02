@@ -4,7 +4,7 @@ import { orderBy } from 'lodash'
 import axios from 'axios'
 import chalk from 'chalk'
 import dotenv from 'dotenv'
-import type { LaravelVersion, Package } from '@/types/package'
+import type { Package } from '@/types/package'
 import { categories } from '@/database/categories'
 
 dotenv.config()
@@ -145,31 +145,66 @@ async function updatePackages() {
             // Example output: ['8', '9', '10']
             const supportedVersions = []
             const dependencies = { ...releases[latestRelease].require, ...releases[latestRelease]['require-dev'] } // merge require and require-dev
-            const versionRegex = /(<|>=|>|^\^)?(\d+)(\.\d+)*(\s*\|\|\s*)?/g
+            const versionRegex = /((\^|\~|\>|\<|\>=|\<=)?(\d+)(\.\d+)*(\s*\|\|\s*)?)+/g
             for (const dependency in dependencies) {
                 if (dependency.startsWith('illuminate/') || dependency === 'laravel/framework') {
                     const version = dependencies[dependency]
                     let match = versionRegex.exec(version)
                     while (match !== null) {
-                        const operator = match[1]
-                        const versionMatch = match[2]
-                        let cleanedVersion = versionMatch
-                        if (operator) {
-                            if (operator === '<') 
-                                cleanedVersion = `${cleanedVersion}-`
-                
-                            else if (operator !== '^') 
-                                cleanedVersion += '+'
-                
-                        }
-                        supportedVersions.push(cleanedVersion)
+                        const versionMatches = match[0].split('||').map(v => v.trim())
+                        const cleanedVersions = versionMatches.map((v) => {
+                            const versionMatch = /(\^|\~|\>|\<|\>=|\<=)?(=)?(\d+)(\.\d+)*/.exec(v)
+                            if (versionMatch) {
+                                const operator = versionMatch[1] ? versionMatch[1].replace(/\d/g, '') : ''
+                                const equals = versionMatch[2] || ''
+                                const versionNumber = versionMatch[3]
+                                return operator + equals + versionNumber
+                            }
+                            return ''
+                        }).filter(v => v !== '').sort((a, b) => {
+                            const aParsed = a.replace(/(\^|\~|\>|\<|\>=|\<=)?(=)?/g, '')
+                            const bParsed = b.replace(/(\^|\~|\>|\<|\>=|\<=)?(=)?/g, '')
+                            const aSemVer = aParsed.split('.').map(v => parseInt(v))
+                            const bSemVer = bParsed.split('.').map(v => parseInt(v))
+                            for (let i = 0; i < Math.max(aSemVer.length, bSemVer.length); i++) {
+                                if (aSemVer[i] === undefined) 
+                                    return -1
+                    
+                                else if (bSemVer[i] === undefined) 
+                                    return 1
+                    
+                                else if (aSemVer[i] !== bSemVer[i]) 
+                                    return aSemVer[i] - bSemVer[i]
+                    
+                            }
+                            return 0
+                        })
+                        supportedVersions.push(...cleanedVersions)
                         match = versionRegex.exec(version)
                     }
                 }
             }
             const uniqueVersions = [...new Set(supportedVersions)]
-            const cleanedVersions = uniqueVersions.map(version => version.split('.')[0])
-            packages[i].detected_compatible_versions = cleanedVersions as LaravelVersion[]
+            const cleanedVersions = uniqueVersions.map(version => version.replace(/[^\d\>\<=]/g, '')).sort((a, b) => {
+                const aParsed = a.replace(/(\^|\~|\>|\<|\>=|\<=)?(=)?/g, '')
+                const bParsed = b.replace(/(\^|\~|\>|\<|\>=|\<=)?(=)?/g, '')
+                const aSemVer = aParsed.split('.').map(v => parseInt(v))
+                const bSemVer = bParsed.split('.').map(v => parseInt(v))
+                for (let i = 0; i < Math.max(aSemVer.length, bSemVer.length); i++) {
+                    if (aSemVer[i] === undefined) 
+                        return -1
+        
+                    else if (bSemVer[i] === undefined) 
+                        return 1
+        
+                    else if (aSemVer[i] !== bSemVer[i]) 
+                        return aSemVer[i] - bSemVer[i]
+        
+                }
+                return 0
+            })
+            packages[i].detected_compatible_versions = [...new Set(cleanedVersions)]
+
 
             // if no versions were detected, log a warning
             if (cleanedVersions.length === 0) 
