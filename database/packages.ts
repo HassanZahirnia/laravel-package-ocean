@@ -2032,7 +2032,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Momentum Trail',
         description: 'Easily use your Laravel named routes in TypeScript with auto-completion and type-safety.',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/lepikhinb/momentum-trail',
         author: 'based',
         composer: 'based/momentum-trail',
@@ -2081,7 +2081,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Flaky',
         description: 'Handle intermittent failures caused by unreliable third parties.',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/hammerstonedev/flaky',
         author: 'hammerstone',
         composer: 'hammerstone/flaky',
@@ -2101,7 +2101,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Receiver',
         description: 'A drop-in webhook handling library.',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/hotmeteor/receiver',
         author: 'hotmeteor',
         composer: 'hotmeteor/receiver',
@@ -2259,7 +2259,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Laravel Fast Refresh Database',
         description: 'Refresh your test databases faster during testing.',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/PlannrCrm/laravel-fast-refresh-database',
         author: 'plannr',
         composer: 'plannr/laravel-fast-refresh-database',
@@ -2298,7 +2298,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Venture',
         description: 'Build and manage complex workflows of interdependent jobs using Laravel queueing system.',
-        category: 'Debugging & Dev Tools',
+        category: 'Code Architecture',
         github: 'https://github.com/ksassnowski/venture',
         author: 'sassnowski',
         composer: 'sassnowski/venture',
@@ -2319,7 +2319,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Laravel Analytics',
         description: 'Retrieve pageviews and other data from Google Analytics',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-analytics',
         author: 'spatie',
         composer: 'spatie/laravel-analytics',
@@ -2430,7 +2430,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Laravel Webhook Client',
         description: 'Receive webhooks in Laravel apps',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-webhook-client',
         author: 'spatie',
         composer: 'spatie/laravel-webhook-client',
@@ -2450,7 +2450,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'Laravel Webhook Server',
         description: 'Send webhooks from Laravel apps.',
-        category: 'Debugging & Dev Tools',
+        category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-webhook-server',
         author: 'spatie',
         composer: 'spatie/laravel-webhook-server',
