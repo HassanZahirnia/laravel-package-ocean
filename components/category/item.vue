@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
 import type { CategoryWithPackagesCount } from '@/types/package'
 
 const selectedCategory = useSelectedCategory()
@@ -6,17 +7,46 @@ const selectedCategory = useSelectedCategory()
 defineProps<{
     category: CategoryWithPackagesCount
 }>()
+
+const isHovering = ref(false)
+const item = ref<HTMLElement | null>(null)
+let timeline: gsap.core.Timeline | null = null
+
+onMounted(() => {
+    timeline = gsap.timeline({
+        paused: true,
+        onComplete: () => {
+            if(!isHovering.value)
+                timeline?.reverse()
+        },
+    })
+        .to(item.value, {
+            x: 10,
+            ease: 'sine.out',
+            duration: 0.20,
+        })
+
+})
+
+watch(
+    isHovering,
+    (value) => {
+        if (value) timeline?.play() 
+        else if(timeline?.progress() === 1)
+            timeline?.reverse()
+    })
 </script>
 
 <template>
     <div
+        ref="item"
         class="relative cursor-pointer
         py-2.5
         flex
         items-center gap-3
-        transition duration-300
-        hover:translate-x-2
         "
+        @mouseenter="isHovering = true"
+        @mouseleave="isHovering = false"
         >
         <div
             class="h-8 w-8 rounded-lg

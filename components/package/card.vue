@@ -73,8 +73,8 @@ const compatiblity_message = computed(() => {
         return `Not compatible with maintained versions of Laravel: ${compatible_versions.value.join(', ')}`
 })
 
+const isHovering = ref(false)
 // Warning icon animation
-const card_is_hovering = ref(false)
 const warningIcon = ref<HTMLElement | null>(null)
 const should_not_animate_warning_icon = computed(() => package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0)
 let warningIconTimeline: gsap.core.Timeline | null = null
@@ -104,7 +104,7 @@ onMounted(() => {
 })
 
 watch(
-    card_is_hovering,
+    isHovering,
     (value) => {
         if(should_not_animate_warning_icon.value) 
             return
@@ -137,8 +137,8 @@ watch(
         sm:hover:scale-105
         shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
         "
-        @mouseenter="card_is_hovering = true"
-        @mouseleave="card_is_hovering = false"
+        @mouseenter="isHovering = true"
+        @mouseleave="isHovering = false"
         >
         <div class="flex items-center justify-between gap-5">
             <category-pill

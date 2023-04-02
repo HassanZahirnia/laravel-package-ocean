@@ -201,29 +201,38 @@ const categoriesForSelectboxWithAll = [
                 <div class="text-2xl font-semibold">
                     Packages
                 </div>
-                <div
-                    v-if="selectedCategory"
-                    class="py-1 px-3
-                    cursor-pointer truncate rounded-full
-                    transition duration-300
-                    flex gap-2
-                    items-center
-                    text-sm
-                    font-medium
-                    bg-slate-300/50
-                    hover:bg-slate-300
-                    dark:bg-slate-700/50
-                    dark:hover:bg-slate-800/50
-                    text-slate-600
-                    dark:text-slate-400
-                    "
-                    @click="selectedCategory = ''"
+                <transition
+                    enter-active-class="duration-150 ease-out"
+                    enter-from-class="translate-x-2 opacity-0"
+                    enter-to-class="translate-x-0 opacity-100"
+                    leave-active-class="duration-150 ease-in"
+                    leave-from-class="translate-x-0 opacity-100"
+                    leave-to-class="translate-x-2 opacity-0"
                     >
-                    <div class="">
-                        {{ selectedCategory }}
+                    <div
+                        v-if="selectedCategory"
+                        class="py-1 px-3
+                        cursor-pointer truncate rounded-full
+                        transition duration-300
+                        flex gap-2
+                        items-center
+                        text-sm
+                        font-medium
+                        bg-slate-300/50
+                        hover:bg-slate-300
+                        dark:bg-slate-700/50
+                        dark:hover:bg-slate-800/50
+                        text-slate-600
+                        dark:text-slate-400
+                        "
+                        @click="selectedCategory = ''"
+                        >
+                        <div class="">
+                            {{ selectedCategory }}
+                        </div>
+                        <div class="i-ph-x-bold" />
                     </div>
-                    <div class="i-ph-x-bold" />
-                </div>
+                </transition>
             </div>
             <div
                 class="lg:flex-1
