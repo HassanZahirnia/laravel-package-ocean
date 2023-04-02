@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
+import { active_laravel_versions } from '@/database/laravel-versions'
 import type { Package } from '@/types/package'
 
 const $props = defineProps<{
@@ -33,15 +34,29 @@ const github_repository_name = computed(() => {
     return `${author}/${repo}`
 })
 
-const github_repository_nameTooltipCondition = computed(() => github_repository_name.value.length > 34 || window.innerWidth < 370)
+const show_github_repository_name = computed(() => github_repository_name.value.length > 34 || window.innerWidth < 370)
 
-// Check whether detected_compatible_versions includes 9 or 10, or one of it's elements includes a plus sign like '5+'
+// Check whether compatible_versions includes the versions from the list active_laravel_versions
 const package_is_compatible_with_latest_laravel_version = computed(() => {
-    const detectedCompatibleVersions = compatible_versions.value
-    return detectedCompatibleVersions.includes('9')
-        || detectedCompatibleVersions.includes('10')
-        || detectedCompatibleVersions.some(version => version.toString().includes('+'))
+    return compatible_versions.value.some((version) => {
+        if (version.includes('+')) {
+            const baseVersion = version.slice(0, -1)
+            return active_laravel_versions.some((activeVersion) => {
+                return activeVersion >= baseVersion
+            })
+        }
+        else if (version.includes('-')) {
+            const [startVersion, endVersion] = version.split('-')
+            return active_laravel_versions.some((activeVersion) => {
+                return activeVersion >= startVersion && activeVersion <= endVersion
+            })
+        }
+        else {
+            return active_laravel_versions.includes(version)
+        }
+    })
 })
+
 
 // Compatiblity and verions list message
 const compatiblity_message = computed(() => {
@@ -54,10 +69,11 @@ const compatiblity_message = computed(() => {
 // Warning icon animation
 const card_is_hovering = ref(false)
 const warningIcon = ref<HTMLElement | null>(null)
+const should_not_animate_warning_icon = computed(() => package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0)
 let warningIconTimeline: gsap.core.Timeline | null = null
 
 onMounted(() => {
-    if(package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0) 
+    if(should_not_animate_warning_icon.value) 
         return
     
     warningIconTimeline = gsap.timeline({
@@ -83,7 +99,7 @@ onMounted(() => {
 watch(
     card_is_hovering,
     (value) => {
-        if(package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0) 
+        if(should_not_animate_warning_icon.value) 
             return
             
         if (value) 
@@ -182,7 +198,7 @@ watch(
             <ui-tooltip
                 class="text-xs font-medium truncate"
                 :content="github_repository_name"
-                :condition="github_repository_nameTooltipCondition"
+                :condition="show_github_repository_name"
                 >
                 {{ github_repository_name }}
             </ui-tooltip>

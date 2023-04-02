@@ -202,7 +202,7 @@ async function updatePackages() {
         const twoMonthsAgo = new Date(Date.now() - 2 * 30 * 24 * 60 * 60 * 1000)
 
         if (latestCommitDate < twoMonthsAgo) 
-            log(chalk.red(`Warning: The latest commit for ${composer || npm || github} was older than 2 weeks ago`))
+            log(chalk.red(`Warning: The latest commit for ${composer || npm || github} was older than 2 months ago`))
 
 
         log(chalk.greenBright(`Updated ${composer || npm || github}`))
@@ -229,4 +229,26 @@ export const laravelPackages: Package[] = ${JSON.stringify(
     log(chalk.cyan('Finished update of packages'))
 }
 
+async function updateActiveLaravelVersions() {
+    const { data: laravelVersions } = await axios.get('https://laravelversions.com/api/versions')
+    const activeVersions = laravelVersions.data.filter((version: { status: string }) => version.status === 'active')
+    const activeVersionNumbers = activeVersions.map((version: { major: { toString: () => unknown } }) => version.major.toString())
+
+    const laravel_versions_path = 'database/laravel-versions.ts'
+    const laravel_versions_file = readFileSync(laravel_versions_path, 'utf-8')
+    
+    const updatedLaravelVersionsFile = laravel_versions_file.replace(
+        /export const active_laravel_versions = \[.*\] as const/,
+        `export const active_laravel_versions = ${JSON.stringify(activeVersionNumbers)} as const`,
+    )
+
+    writeFileSync(laravel_versions_path, updatedLaravelVersionsFile)
+
+
+    log(chalk.cyan('---------------------------'))
+    log(chalk.cyan('Finished update of active Laravel versions'))
+}
+
 updatePackages()
+
+updateActiveLaravelVersions()

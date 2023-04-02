@@ -1,0 +1,1 @@
+export const active_laravel_versions = ['10', '9'] as const
