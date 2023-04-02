@@ -8,7 +8,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
 
 <template>
     <div class="relative">
-        <!-- Fluid -->
+        <!-- Fluid shape -->
         <div
             class="absolute z-[-1]
             top-0 sm:-top-10
@@ -18,14 +18,13 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
             >
             <img
                 src="@/assets/images/fluid-shape.webp"
-                width="auto"
-                height="auto"
+                width="240"
+                height="220"
                 alt=""
-                class="pointer-events-none select-none
-                w-60
-                "
+                class="pointer-events-none select-none"
                 />
         </div>
+        <!-- Hero text -->
         <div class="px-5 pt-20 sm:px-10">
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl
