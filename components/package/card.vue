@@ -149,7 +149,7 @@ watch(
         <a
             :href="laravelPackage.github"
             target="_blank"
-            class="rounded-3xl
+            class="rounded-3xl relative
             h-60
             p-6
             backdrop-blur-xl
@@ -165,6 +165,18 @@ watch(
             hover:shadow-2xl hover:shadow-slate-700/10
             "
             >
+            <ui-tooltip
+                v-if="laravelPackage.author === 'laravel'"
+                content="Official Laravel Package"
+                class="absolute -top-4 -left-4"
+                theme="amber"
+                >
+                <div
+                    class="i-fluent-emoji-crown text-3xl
+                    -rotate-45
+                    "
+                    />
+            </ui-tooltip>
             <div class="flex items-center justify-between gap-5">
                 <category-pill
                     :category="laravelPackage.category"
