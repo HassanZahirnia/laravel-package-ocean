@@ -126,9 +126,10 @@ onMounted(() => {
     <div
         class="gsap-theme-toggle
         cursor-pointer select-none
-        h-10 w-10
+        h-11 w-11
         relative
         sm:scale-0
+        dark:text-[#ABB0DD]
         dark:hover:text-[#bcc1ef]
         "
         @click="themeCheckbox = !themeCheckbox"
@@ -147,8 +148,8 @@ onMounted(() => {
         <div
             ref="miniStar"
             class="absolute
-            top-[.45rem]
-            left-[.45rem]
+            top-[.6rem]
+            left-[.6rem]
             "
             >
             <div class="i-ph-star-four-fill text-[0.45rem] transition duration-300" />
@@ -157,8 +158,8 @@ onMounted(() => {
         <div
             ref="microStar"
             class="absolute
-            top-[0.85rem]
-            left-[0.85rem]
+            top-[1rem]
+            left-[1rem]
             "
             >
             <div class="i-ph-star-four-fill text-[0.35rem] transition duration-300" />
@@ -192,30 +193,8 @@ onMounted(() => {
                 <div
                     class="h-[0.22rem] w-0.5 rounded-full
                     absolute
-                    top-[0.35rem]
+                    top-[0.5rem]
                     right-1/2 translate-x-1/2
-                    bg-current
-                    transition duration-300
-                    "
-                    />
-                <!-- Top Right -->
-                <div
-                    class="h-[0.22rem] w-0.5 rounded-full
-                    absolute
-                    top-[0.6rem]
-                    right-[0.65rem]
-                    rotate-[45deg]
-                    bg-current
-                    transition duration-300
-                    "
-                    />
-                <!-- Top Left -->
-                <div
-                    class="h-[0.22rem] w-0.5 rounded-full
-                    absolute
-                    top-[0.6rem]
-                    left-[0.65rem]
-                    rotate-[-45deg]
                     bg-current
                     transition duration-300
                     "
@@ -225,7 +204,7 @@ onMounted(() => {
                     class="h-[0.22rem] w-0.5 rounded-full
                     absolute
                     top-1/2 -translate-y-1/2
-                    right-[0.35rem]
+                    right-[0.5rem]
                     rotate-[90deg]
                     bg-current
                     transition duration-300
@@ -235,30 +214,8 @@ onMounted(() => {
                 <div
                     class="h-[0.22rem] w-0.5 rounded-full
                     absolute
-                    bottom-[0.35rem]
+                    bottom-[0.5rem]
                     right-1/2 translate-x-1/2
-                    bg-current
-                    transition duration-300
-                    "
-                    />
-                <!-- Bottom Right -->
-                <div
-                    class="h-[0.22rem] w-0.5 rounded-full
-                    absolute
-                    bottom-[0.6rem]
-                    right-[0.65rem]
-                    rotate-[-45deg]
-                    bg-current
-                    transition duration-300
-                    "
-                    />
-                <!-- Bottom Left -->
-                <div
-                    class="h-[0.22rem] w-0.5 rounded-full
-                    absolute
-                    bottom-[0.6rem]
-                    left-[0.65rem]
-                    rotate-[45deg]
                     bg-current
                     transition duration-300
                     "
@@ -268,8 +225,53 @@ onMounted(() => {
                     class="h-[0.22rem] w-0.5 rounded-full
                     absolute
                     top-1/2 -translate-y-1/2
-                    left-[0.35rem]
+                    left-[0.5rem]
                     rotate-[90deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Top Right -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-[0.75rem]
+                    right-[0.75rem]
+                    rotate-[45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Top Left -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-[0.75rem]
+                    left-[0.75rem]
+                    rotate-[-45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                
+                <!-- Bottom Right -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    bottom-[0.75rem]
+                    right-[0.75rem]
+                    rotate-[-45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Bottom Left -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    bottom-[0.75rem]
+                    left-[0.75rem]
+                    rotate-[45deg]
                     bg-current
                     transition duration-300
                     "
