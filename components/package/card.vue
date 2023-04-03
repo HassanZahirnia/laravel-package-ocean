@@ -96,7 +96,7 @@ onMounted(() => {
         .to(card.value, {
             y: -4,
             ease: 'sine.out',
-            duration: 0.3,
+            duration: 0.25,
         })
 
     if(should_not_animate_warning_icon.value) 
