@@ -1,6 +1,14 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
+let timeline: gsap.core.Timeline | null = null
+
+const moon = ref<HTMLElement|null>(null)
+const miniStar = ref<HTMLElement|null>(null)
+const microStar = ref<HTMLElement|null>(null)
+const sunBall = ref<HTMLElement|null>(null)
+const sunShine = ref<HTMLElement|null>(null)
+
 const colorMode = useColorMode()
 const themeIsHovering = ref(false)
 const themIsUnknown = computed(() => colorMode.unknown)
@@ -15,6 +23,8 @@ watch(
     themeCheckbox,
     (value) => {
         colorMode.preference = value ? 'light' : 'dark'
+        if (!value) timeline?.play()
+        else timeline?.reverse()
     },
 )
 
@@ -57,54 +67,214 @@ watch(
         themeCheckbox.value = value
     },
 )
+
+onMounted(() => {
+    timeline = gsap.timeline({
+        paused: true,
+    })
+        .to(moon.value, {
+            rotate: 70,
+            ease: 'sine.out',
+            duration: 0.3,
+        })
+        .to(miniStar.value, {
+            autoAlpha: 0,
+            scale: 0,
+            ease: 'sine.out',
+            duration: 0.3,
+        }, '>-0.3')
+        .to(microStar.value, {
+            autoAlpha: 0,
+            scale: 0,
+            ease: 'sine.out',
+            duration: 0.3,
+        }, '<')
+        .to(moon.value, {
+            scale: 0.6,
+            ease: 'sine.out',
+            duration: 0.3,
+        }, '<')
+        .fromTo(sunBall.value, {
+            scale: 0,
+            x: -5,
+            y: 5,
+        }, {
+            x: 0,
+            y: 0,
+            scale: 1,
+            ease: 'expo.out',
+            duration: 0.3,
+        }, '>-0.15')
+        .fromTo(sunShine.value, {
+            // autoAlpha: 0,
+            scale: 0,
+            rotate: -180,
+        }, {
+            // autoAlpha: 1,
+            scale: 1,
+            rotate: 0,
+            ease: 'expo.out',
+            duration: 0.3,
+        }, '<')
+
+    if (colorMode.preference === 'dark')
+        timeline.progress(1)
+})
 </script>
 
 <template>
-    <label
+    <div
         class="gsap-theme-toggle
-        cursor-pointer
-        p-2
+        cursor-pointer select-none
+        h-10 w-10
         relative
-        -top-px
         sm:scale-0
+        dark:hover:text-[#bcc1ef]
         "
-        @mouseenter="themeIsHovering = true"
-        @mouseleave="themeIsHovering = false"
+        @click="themeCheckbox = !themeCheckbox"
         >
-        <input
-            v-model="themeCheckbox"
-            class="toggle
-            z-[1]
-            cursor-pointer
-            select-none
-            appearance-none
-            border-none
-            bg-transparent
+        <!-- Moon -->
+        <div
+            ref="moon"
+            class="absolute
+            top-1/2 -translate-y-1/2
+            right-1/2 translate-x-1/2
             "
-            type="checkbox"
-            aria-label="Theme toggle"
-            />
-    </label>
+            >
+            <div class="i-bi-moon-fill text-2xl scale-x-[-1] transition duration-300" />
+        </div>
+        <!-- Mini star -->
+        <div
+            ref="miniStar"
+            class="absolute
+            top-[.45rem]
+            left-[.45rem]
+            "
+            >
+            <div class="i-ph-star-four-fill text-[0.45rem] transition duration-300" />
+        </div>
+        <!-- Micro star -->
+        <div
+            ref="microStar"
+            class="absolute
+            top-[0.85rem]
+            left-[0.85rem]
+            "
+            >
+            <div class="i-ph-star-four-fill text-[0.35rem] transition duration-300" />
+        </div>
+        <!-- Sun ball -->
+        <div
+            class="absolute
+            top-1/2 -translate-y-1/2
+            right-1/2 translate-x-1/2
+            "
+            >
+            <div ref="sunBall">
+                <div
+                    class="h-4 w-4 rounded-full
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+            </div>
+        </div>
+        <!-- sunShine -->
+        <div
+            ref="sunShine"
+            class="grid
+            absolute
+            inset-0 w-full h-full
+            "
+            >
+            <div class="relative w-full h-full">
+                <!-- Top -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-[0.35rem]
+                    right-1/2 translate-x-1/2
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Top Right -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-[0.6rem]
+                    right-[0.65rem]
+                    rotate-[45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Top Left -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-[0.6rem]
+                    left-[0.65rem]
+                    rotate-[-45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Right -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-1/2 -translate-y-1/2
+                    right-[0.35rem]
+                    rotate-[90deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Bottom -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    bottom-[0.35rem]
+                    right-1/2 translate-x-1/2
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Bottom Right -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    bottom-[0.6rem]
+                    right-[0.65rem]
+                    rotate-[-45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Bottom Left -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    bottom-[0.6rem]
+                    left-[0.65rem]
+                    rotate-[45deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+                <!-- Left -->
+                <div
+                    class="h-[0.22rem] w-0.5 rounded-full
+                    absolute
+                    top-1/2 -translate-y-1/2
+                    left-[0.35rem]
+                    rotate-[90deg]
+                    bg-current
+                    transition duration-300
+                    "
+                    />
+            </div>
+        </div>
+    </div>
 </template>
-
-<style scoped lang="stylus">
-.toggle
-    --size: 1.45rem;
-    outline: none !important;
-    width: var(--size);
-    height: var(--size);
-    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0
-    border-radius: 999px;
-    color: #ABB0DD;
-    transition: all 300ms;
-    &:focus
-        box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0
-.toggle:checked {
-    --ray-size: calc(var(--size) * -0.4);
-    --offset-orthogonal: calc(var(--size) * 0.7);
-    --offset-diagonal: calc(var(--size) * 0.5);
-    transform: scale(0.75);
-    color: #ffb051;
-    box-shadow: inset 0 0 0 var(--size), calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size), var(--offset-orthogonal) 0 0 var(--ray-size), 0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size), 0 var(--offset-orthogonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size), var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size), var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
-}
-</style>

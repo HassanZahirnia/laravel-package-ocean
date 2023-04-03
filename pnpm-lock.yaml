@@ -10,6 +10,9 @@ devDependencies:
   '@headlessui/vue':
     specifier: ^1.7.12
     version: 1.7.12(vue@3.2.47)
+  '@iconify-json/bi':
+    specifier: ^1.1.16
+    version: 1.1.16
   '@iconify-json/carbon':
     specifier: ^1.1.16
     version: 1.1.16
@@ -725,6 +728,12 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/bi@1.1.16:
+    resolution: {integrity: sha512-93jzbeGLqgjD+2DuwP1O0x/6KXQasrEYeLyPYs4PoXpkSRGWPnIvNtgTkjjPcMW4hHJxMMf7IZ90vrmOko9k1Q==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify-json/carbon@1.1.16:
