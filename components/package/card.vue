@@ -94,9 +94,9 @@ onMounted(() => {
         },
     })
         .to(card.value, {
-            scale: 1.03,
+            y: -4,
             ease: 'sine.out',
-            duration: 0.2,
+            duration: 0.3,
         })
 
     if(should_not_animate_warning_icon.value) 
@@ -160,9 +160,9 @@ watch(
             ring-1 dark:ring-1
             ring-slate-100
             dark:ring-[#132447]
-            hover:ring-indigo-200
             dark:hover:ring-indigo-900
             shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+            hover:shadow-2xl hover:shadow-slate-700/10
             "
             >
             <div class="flex items-center justify-between gap-5">

@@ -31,6 +31,7 @@ onMounted(()=>{
                 animation: 'shift-away',
                 maxWidth: 500,
                 touch: 'hold',
+                delay: 100,
             })
         }
     })

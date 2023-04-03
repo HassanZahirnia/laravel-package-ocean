@@ -21,7 +21,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:38:58.529Z',
+        updated_at: '2023-04-03T10:08:42.593Z',
     },
     {
         name: 'Laravel Restify',
@@ -41,7 +41,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:01.577Z',
+        updated_at: '2023-04-03T10:08:44.521Z',
     },
     {
         name: 'L5 Swagger',
@@ -65,7 +65,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:04.176Z',
+        updated_at: '2023-04-03T10:08:46.171Z',
     },
     {
         name: 'Laravel API Response Helpers',
@@ -75,7 +75,7 @@ export const laravelPackages: Package[] = [
         author: 'f9webltd',
         composer: 'f9webltd/laravel-api-response-helpers',
         npm: null,
-        stars: 516,
+        stars: 517,
         keywords: [],
         first_release_at: '2021-09-02T13:37:07+00:00',
         latest_release_at: '2023-01-31T18:16:26+00:00',
@@ -87,7 +87,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:06.767Z',
+        updated_at: '2023-04-03T10:08:48.122Z',
     },
     {
         name: 'Laravel Firebase',
@@ -106,7 +106,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:09.687Z',
+        updated_at: '2023-04-03T10:08:49.772Z',
     },
     {
         name: 'Laravel Kafka',
@@ -125,7 +125,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:12.364Z',
+        updated_at: '2023-04-03T10:08:51.368Z',
     },
     {
         name: 'OpenAI PHP',
@@ -135,7 +135,7 @@ export const laravelPackages: Package[] = [
         author: 'openai-php',
         composer: 'openai-php/laravel',
         npm: null,
-        stars: 1101,
+        stars: 1105,
         keywords: [
             'nuno maduro',
             'sandro gehri',
@@ -147,7 +147,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:15.202Z',
+        updated_at: '2023-04-03T10:08:53.768Z',
     },
     {
         name: 'Laravel GraphQL',
@@ -172,7 +172,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:17.684Z',
+        updated_at: '2023-04-03T10:08:55.324Z',
     },
     {
         name: 'Saloon',
@@ -182,7 +182,7 @@ export const laravelPackages: Package[] = [
         author: 'sammyjo20',
         composer: 'sammyjo20/saloon',
         npm: null,
-        stars: 1325,
+        stars: 1326,
         keywords: [],
         first_release_at: '2022-01-14T18:32:47+00:00',
         latest_release_at: '2023-03-25T16:47:08+00:00',
@@ -190,7 +190,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:20.340Z',
+        updated_at: '2023-04-03T10:08:56.993Z',
     },
     {
         name: 'Laravel Orion',
@@ -210,7 +210,7 @@ export const laravelPackages: Package[] = [
             '>=5',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:23.052Z',
+        updated_at: '2023-04-03T10:08:58.910Z',
     },
     {
         name: 'LogViewer',
@@ -228,7 +228,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:26.123Z',
+        updated_at: '2023-04-03T10:09:00.727Z',
     },
     {
         name: 'Momentum Lock',
@@ -252,7 +252,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:28.349Z',
+        updated_at: '2023-04-03T10:09:02.340Z',
     },
     {
         name: 'Sentinel',
@@ -273,7 +273,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:31.119Z',
+        updated_at: '2023-04-03T10:09:04.197Z',
     },
     {
         name: 'Laravel Ban',
@@ -297,7 +297,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:33.972Z',
+        updated_at: '2023-04-03T10:09:06.466Z',
     },
     {
         name: 'Laravel Impersonate',
@@ -307,7 +307,7 @@ export const laravelPackages: Package[] = [
         author: 'lab404',
         composer: 'lab404/laravel-impersonate',
         npm: null,
-        stars: 1685,
+        stars: 1686,
         keywords: [
             'management',
             'admin',
@@ -322,7 +322,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:36.449Z',
+        updated_at: '2023-04-03T10:09:08.103Z',
     },
     {
         name: 'Banhammer',
@@ -332,13 +332,13 @@ export const laravelPackages: Package[] = [
         author: 'mchev',
         composer: 'mchev/banhammer',
         npm: null,
-        stars: 196,
+        stars: 197,
         keywords: [],
         first_release_at: '2023-02-11T20:02:42+00:00',
         latest_release_at: '2023-03-02T17:28:01+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:38.805Z',
+        updated_at: '2023-04-03T10:09:09.992Z',
     },
     {
         name: 'Laravel Impersonate',
@@ -359,7 +359,7 @@ export const laravelPackages: Package[] = [
             '9',
             '10',
         ],
-        updated_at: '2023-04-02T17:39:41.654Z',
+        updated_at: '2023-04-03T10:09:11.630Z',
     },
     {
         name: 'Log Viewer',
@@ -369,7 +369,7 @@ export const laravelPackages: Package[] = [
         author: 'opcodesio',
         composer: 'opcodesio/log-viewer',
         npm: null,
-        stars: 2409,
+        stars: 2410,
         keywords: [
             'horizon',
         ],
@@ -381,7 +381,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:44.102Z',
+        updated_at: '2023-04-03T10:09:13.281Z',
     },
     {
         name: 'Laravel Log Viewer',
@@ -391,7 +391,7 @@ export const laravelPackages: Package[] = [
         author: 'rap2hpoutre',
         composer: 'rap2hpoutre/laravel-log-viewer',
         npm: null,
-        stars: 2968,
+        stars: 2970,
         keywords: [
             'security',
         ],
@@ -407,7 +407,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:46.844Z',
+        updated_at: '2023-04-03T10:09:15.150Z',
     },
     {
         name: 'Laravel Authentication Log',
@@ -429,7 +429,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:49.421Z',
+        updated_at: '2023-04-03T10:09:16.718Z',
     },
     {
         name: 'Laratrust',
@@ -451,7 +451,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:52.381Z',
+        updated_at: '2023-04-03T10:09:18.375Z',
     },
     {
         name: 'Bouncer',
@@ -461,7 +461,7 @@ export const laravelPackages: Package[] = [
         author: 'silber',
         composer: 'silber/bouncer',
         npm: null,
-        stars: 3224,
+        stars: 3225,
         keywords: [
             'multitenancy',
             'acl',
@@ -478,7 +478,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:54.976Z',
+        updated_at: '2023-04-03T10:09:20.191Z',
     },
     {
         name: 'Laravel Activity Log',
@@ -488,7 +488,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-activitylog',
         npm: null,
-        stars: 4739,
+        stars: 4741,
         keywords: [
             'tracking',
             'model',
@@ -504,7 +504,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:39:57.460Z',
+        updated_at: '2023-04-03T10:09:22.452Z',
     },
     {
         name: 'Laravel Permissions',
@@ -514,7 +514,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-permission',
         npm: null,
-        stars: 11117,
+        stars: 11118,
         keywords: [
             'gate',
             'authorization',
@@ -531,7 +531,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:00.100Z',
+        updated_at: '2023-04-03T10:09:25.351Z',
     },
     {
         name: 'Twill',
@@ -541,7 +541,7 @@ export const laravelPackages: Package[] = [
         author: 'area17',
         composer: 'area17/twill',
         npm: null,
-        stars: 3106,
+        stars: 3107,
         keywords: [],
         first_release_at: '2018-07-02T13:24:02+00:00',
         latest_release_at: '2023-02-10T12:34:41+00:00',
@@ -549,7 +549,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:03.199Z',
+        updated_at: '2023-04-03T10:09:27.136Z',
     },
     {
         name: 'Backpack',
@@ -559,7 +559,7 @@ export const laravelPackages: Package[] = [
         author: 'backpack',
         composer: 'backpack/crud',
         npm: null,
-        stars: 2578,
+        stars: 2580,
         keywords: [
             'widget',
             'alert',
@@ -573,7 +573,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:06.138Z',
+        updated_at: '2023-04-03T10:09:29.289Z',
     },
     {
         name: 'LaRecipe',
@@ -583,7 +583,7 @@ export const laravelPackages: Package[] = [
         author: 'binarytorch',
         composer: 'binarytorch/larecipe',
         npm: null,
-        stars: 2141,
+        stars: 2142,
         keywords: [],
         first_release_at: '2018-09-02T11:39:24+00:00',
         latest_release_at: '2023-02-21T19:12:38+00:00',
@@ -596,7 +596,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:09.561Z',
+        updated_at: '2023-04-03T10:09:31.308Z',
     },
     {
         name: 'Laravel Messenger',
@@ -622,7 +622,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:11.901Z',
+        updated_at: '2023-04-03T10:09:32.997Z',
     },
     {
         name: 'Sharp',
@@ -642,7 +642,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:14.585Z',
+        updated_at: '2023-04-03T10:09:36.392Z',
     },
     {
         name: 'Filament',
@@ -652,7 +652,7 @@ export const laravelPackages: Package[] = [
         author: 'filamentphp',
         composer: 'filament/filament',
         npm: null,
-        stars: 6231,
+        stars: 6236,
         keywords: [
             'dashboard',
             'livewire',
@@ -676,7 +676,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:17.361Z',
+        updated_at: '2023-04-03T10:09:38.337Z',
     },
     {
         name: 'Blueprint',
@@ -694,7 +694,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:19.881Z',
+        updated_at: '2023-04-03T10:09:39.972Z',
     },
     {
         name: 'Larastarters',
@@ -715,7 +715,7 @@ export const laravelPackages: Package[] = [
         compatible_versions: [
             '>=9',
         ],
-        updated_at: '2023-04-02T17:40:22.583Z',
+        updated_at: '2023-04-03T10:09:42.327Z',
     },
     {
         name: 'Chatify',
@@ -733,7 +733,7 @@ export const laravelPackages: Package[] = [
         compatible_versions: [
             '>=7',
         ],
-        updated_at: '2023-04-02T17:40:25.603Z',
+        updated_at: '2023-04-03T10:09:44.166Z',
     },
     {
         name: 'Laravel Talk',
@@ -751,7 +751,7 @@ export const laravelPackages: Package[] = [
             '>=5',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:27.980Z',
+        updated_at: '2023-04-03T10:09:45.935Z',
     },
     {
         name: 'Laravel Orchid',
@@ -761,7 +761,7 @@ export const laravelPackages: Package[] = [
         author: 'orchid',
         composer: 'orchid/platform',
         npm: null,
-        stars: 3611,
+        stars: 3613,
         keywords: [
             'builder',
         ],
@@ -771,7 +771,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:30.810Z',
+        updated_at: '2023-04-03T10:09:48.315Z',
     },
     {
         name: 'Laravel Livewire Tables',
@@ -791,7 +791,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:33.194Z',
+        updated_at: '2023-04-03T10:09:50.323Z',
     },
     {
         name: 'Laravel Forum',
@@ -809,7 +809,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:35.951Z',
+        updated_at: '2023-04-03T10:09:51.977Z',
     },
     {
         name: 'Statamic',
@@ -819,7 +819,7 @@ export const laravelPackages: Package[] = [
         author: 'statamic',
         composer: 'statamic/cms',
         npm: null,
-        stars: 2571,
+        stars: 2572,
         keywords: [],
         first_release_at: '2019-11-21T14:49:01+00:00',
         latest_release_at: '2023-03-27T18:58:40+00:00',
@@ -828,7 +828,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:38.904Z',
+        updated_at: '2023-04-03T10:09:54.222Z',
     },
     {
         name: 'Laravel DataTables',
@@ -850,7 +850,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:41.901Z',
+        updated_at: '2023-04-03T10:09:56.059Z',
     },
     {
         name: 'Laravel Enum',
@@ -869,7 +869,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:44.380Z',
+        updated_at: '2023-04-03T10:09:57.642Z',
     },
     {
         name: 'Hybridly',
@@ -900,7 +900,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:47.203Z',
+        updated_at: '2023-04-03T10:09:59.754Z',
     },
     {
         name: 'Inertia',
@@ -928,7 +928,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:49.706Z',
+        updated_at: '2023-04-03T10:10:01.378Z',
     },
     {
         name: 'Pennant',
@@ -946,7 +946,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:52.516Z',
+        updated_at: '2023-04-03T10:10:04.463Z',
     },
     {
         name: 'Laravel Livewire',
@@ -956,7 +956,7 @@ export const laravelPackages: Package[] = [
         author: 'livewire',
         composer: 'livewire/livewire',
         npm: null,
-        stars: 18553,
+        stars: 18558,
         keywords: [
             'alpine',
             'calebporzio',
@@ -970,7 +970,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:54.995Z',
+        updated_at: '2023-04-03T10:10:06.409Z',
     },
     {
         name: 'Laravel Actions',
@@ -980,7 +980,7 @@ export const laravelPackages: Package[] = [
         author: 'lorisleiva',
         composer: 'lorisleiva/laravel-actions',
         npm: null,
-        stars: 2027,
+        stars: 2028,
         keywords: [
             'controller',
             'jobs',
@@ -999,7 +999,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:40:57.571Z',
+        updated_at: '2023-04-03T10:10:08.071Z',
     },
     {
         name: 'Laravel Modules',
@@ -1017,7 +1017,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:00.264Z',
+        updated_at: '2023-04-03T10:10:10.121Z',
     },
     {
         name: 'Laravel Splade',
@@ -1027,7 +1027,7 @@ export const laravelPackages: Package[] = [
         author: 'protonemedia',
         composer: 'protonemedia/laravel-splade',
         npm: null,
-        stars: 907,
+        stars: 908,
         keywords: [
             'spa',
             'vue',
@@ -1039,7 +1039,28 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:03.162Z',
+        updated_at: '2023-04-03T10:10:12.262Z',
+    },
+    {
+        name: 'Venture',
+        description: 'Build and manage complex workflows of interdependent jobs using Laravel queueing system.',
+        category: 'Code Architecture',
+        github: 'https://github.com/ksassnowski/venture',
+        author: 'sassnowski',
+        composer: 'sassnowski/venture',
+        npm: null,
+        stars: 724,
+        keywords: [
+            'directed-acyclic-graph',
+        ],
+        first_release_at: '2020-10-10T06:12:55+00:00',
+        latest_release_at: '2023-03-10T14:06:50+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:10:13.952Z',
     },
     {
         name: 'Laravel Data',
@@ -1049,7 +1070,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-data',
         npm: null,
-        stars: 696,
+        stars: 697,
         keywords: [
             'typescript',
             'dto',
@@ -1061,7 +1082,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:05.789Z',
+        updated_at: '2023-04-03T10:10:15.958Z',
     },
     {
         name: 'Laravel Multitenancy',
@@ -1081,7 +1102,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:08.448Z',
+        updated_at: '2023-04-03T10:10:17.547Z',
     },
     {
         name: 'Tenancy',
@@ -1091,7 +1112,7 @@ export const laravelPackages: Package[] = [
         author: 'stancl',
         composer: 'stancl/tenancy',
         npm: null,
-        stars: 2870,
+        stars: 2873,
         keywords: [
             'multi database',
         ],
@@ -1102,7 +1123,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:10.943Z',
+        updated_at: '2023-04-03T10:10:19.230Z',
     },
     {
         name: 'Laravel Validated DTO',
@@ -1112,7 +1133,7 @@ export const laravelPackages: Package[] = [
         author: 'wendelladriel',
         composer: 'wendelladriel/laravel-validated-dto',
         npm: null,
-        stars: 226,
+        stars: 231,
         keywords: [],
         first_release_at: '2022-12-09T17:43:52+00:00',
         latest_release_at: '2023-03-28T19:12:45+00:00',
@@ -1123,7 +1144,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:13.644Z',
+        updated_at: '2023-04-03T10:10:21.262Z',
     },
     {
         name: 'Feature Flags',
@@ -1142,7 +1163,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:16.153Z',
+        updated_at: '2023-04-03T10:10:23.159Z',
     },
     {
         name: 'Approval',
@@ -1161,7 +1182,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:19.001Z',
+        updated_at: '2023-04-03T10:10:25.198Z',
     },
     {
         name: 'Compoships',
@@ -1180,7 +1201,7 @@ export const laravelPackages: Package[] = [
             '<11',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:21.664Z',
+        updated_at: '2023-04-03T10:10:27.254Z',
     },
     {
         name: 'Laravel Fluent',
@@ -1190,7 +1211,7 @@ export const laravelPackages: Package[] = [
         author: 'based',
         composer: 'based/laravel-fluent',
         npm: null,
-        stars: 515,
+        stars: 516,
         keywords: [
             'boris',
             'lepikhinb',
@@ -1201,7 +1222,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:24.451Z',
+        updated_at: '2023-04-03T10:10:29.618Z',
     },
     {
         name: 'Laravel Wallet',
@@ -1220,7 +1241,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:27.041Z',
+        updated_at: '2023-04-03T10:10:31.470Z',
     },
     {
         name: 'Sushi',
@@ -1243,7 +1264,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:29.683Z',
+        updated_at: '2023-04-03T10:10:33.502Z',
     },
     {
         name: 'Laravel Sign Pad',
@@ -1263,7 +1284,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:32.219Z',
+        updated_at: '2023-04-03T10:10:35.819Z',
     },
     {
         name: 'Eloquent Sluggable',
@@ -1281,7 +1302,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:34.667Z',
+        updated_at: '2023-04-03T10:10:37.962Z',
     },
     {
         name: 'Laravel Love',
@@ -1300,7 +1321,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:37.380Z',
+        updated_at: '2023-04-03T10:10:41.088Z',
     },
     {
         name: 'Eloquent Viewable',
@@ -1321,7 +1342,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:40.082Z',
+        updated_at: '2023-04-03T10:10:43.179Z',
     },
     {
         name: 'Fast Paginate',
@@ -1343,7 +1364,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:42.666Z',
+        updated_at: '2023-04-03T10:10:45.007Z',
     },
     {
         name: 'Explorer',
@@ -1362,7 +1383,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:45.161Z',
+        updated_at: '2023-04-03T10:10:46.909Z',
     },
     {
         name: 'Laravel Migrations Generator',
@@ -1372,7 +1393,7 @@ export const laravelPackages: Package[] = [
         author: 'kitloong',
         composer: 'kitloong/laravel-migrations-generator',
         npm: null,
-        stars: 1597,
+        stars: 1599,
         keywords: [],
         first_release_at: '2020-03-20T12:26:27+00:00',
         latest_release_at: '2023-03-26T07:37:00+00:00',
@@ -1385,7 +1406,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:47.735Z',
+        updated_at: '2023-04-03T10:10:48.578Z',
     },
     {
         name: 'Laravel Multiplex',
@@ -1404,7 +1425,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:50.428Z',
+        updated_at: '2023-04-03T10:10:50.850Z',
     },
     {
         name: 'Column Sortable',
@@ -1427,7 +1448,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:52.874Z',
+        updated_at: '2023-04-03T10:10:52.667Z',
     },
     {
         name: 'Laravel Model Filter',
@@ -1446,7 +1467,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:55.735Z',
+        updated_at: '2023-04-03T10:10:54.248Z',
     },
     {
         name: 'Eloquent Filter',
@@ -1456,7 +1477,7 @@ export const laravelPackages: Package[] = [
         author: 'mehdi-fathi',
         composer: 'mehdi-fathi/eloquent-filter',
         npm: null,
-        stars: 347,
+        stars: 348,
         keywords: [],
         first_release_at: '2019-02-28T05:20:26+00:00',
         latest_release_at: '2023-03-17T13:20:54+00:00',
@@ -1466,7 +1487,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:41:58.640Z',
+        updated_at: '2023-04-03T10:10:58.050Z',
     },
     {
         name: 'Laravel Drafts',
@@ -1485,7 +1506,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:01.462Z',
+        updated_at: '2023-04-03T10:11:00.489Z',
     },
     {
         name: 'iSeed (Inverse Seed Generator)',
@@ -1508,7 +1529,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:04.187Z',
+        updated_at: '2023-04-03T10:11:03.565Z',
     },
     {
         name: 'Laravel Auditing',
@@ -1534,7 +1555,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:06.973Z',
+        updated_at: '2023-04-03T10:11:08.629Z',
     },
     {
         name: 'Parental',
@@ -1553,7 +1574,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:09.798Z',
+        updated_at: '2023-04-03T10:11:10.648Z',
     },
     {
         name: 'Laravel Cross Eloquent Search',
@@ -1572,7 +1593,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:13.024Z',
+        updated_at: '2023-04-03T10:11:13.343Z',
     },
     {
         name: 'Reliese Model Generator',
@@ -1590,7 +1611,7 @@ export const laravelPackages: Package[] = [
             '>=5',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:15.749Z',
+        updated_at: '2023-04-03T10:11:15.245Z',
     },
     {
         name: 'Rutorika Sortable',
@@ -1611,7 +1632,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:18.638Z',
+        updated_at: '2023-04-03T10:11:17.157Z',
     },
     {
         name: 'Laravel Comments',
@@ -1621,7 +1642,7 @@ export const laravelPackages: Package[] = [
         author: 'ryangjchandler',
         composer: 'ryangjchandler/laravel-comments',
         npm: null,
-        stars: 135,
+        stars: 136,
         keywords: [],
         first_release_at: '2022-06-23T09:56:23+00:00',
         latest_release_at: '2023-03-24T10:38:13+00:00',
@@ -1630,7 +1651,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:21.382Z',
+        updated_at: '2023-04-03T10:11:19.088Z',
     },
     {
         name: 'Eloquent Sortable',
@@ -1640,7 +1661,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/eloquent-sortable',
         npm: null,
-        stars: 1198,
+        stars: 1199,
         keywords: [],
         first_release_at: '2014-07-15T20:23:51+00:00',
         latest_release_at: '2023-01-23T08:34:14+00:00',
@@ -1649,7 +1670,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:24.323Z',
+        updated_at: '2023-04-03T10:11:20.723Z',
     },
     {
         name: 'Laravel DB Snapshots',
@@ -1659,7 +1680,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-db-snapshots',
         npm: null,
-        stars: 849,
+        stars: 850,
         keywords: [],
         first_release_at: '2017-03-22T19:27:28+00:00',
         latest_release_at: '2023-03-27T13:24:34+00:00',
@@ -1670,7 +1691,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:26.687Z',
+        updated_at: '2023-04-03T10:11:22.473Z',
     },
     {
         name: 'Laravel Deleted Models',
@@ -1689,7 +1710,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:29.505Z',
+        updated_at: '2023-04-03T10:11:24.404Z',
     },
     {
         name: 'Laravel Model Flags',
@@ -1708,7 +1729,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:32.182Z',
+        updated_at: '2023-04-03T10:11:26.213Z',
     },
     {
         name: 'Laravel Model Info',
@@ -1727,7 +1748,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:34.690Z',
+        updated_at: '2023-04-03T10:11:27.979Z',
     },
     {
         name: 'Laravel Model States',
@@ -1747,7 +1768,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:37.134Z',
+        updated_at: '2023-04-03T10:11:30.010Z',
     },
     {
         name: 'Laravel Model Status',
@@ -1757,7 +1778,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-model-status',
         npm: null,
-        stars: 783,
+        stars: 784,
         keywords: [],
         first_release_at: '2018-02-06T15:07:21+00:00',
         latest_release_at: '2023-01-25T09:11:28+00:00',
@@ -1767,7 +1788,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:40.044Z',
+        updated_at: '2023-04-03T10:11:31.749Z',
     },
     {
         name: 'Laravel Query Builder',
@@ -1786,7 +1807,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:42.611Z',
+        updated_at: '2023-04-03T10:11:35.432Z',
     },
     {
         name: 'Laravel Schemaless Attributes',
@@ -1809,7 +1830,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:45.232Z',
+        updated_at: '2023-04-03T10:11:37.990Z',
     },
     {
         name: 'Laravel Searchable',
@@ -1829,7 +1850,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:47.793Z',
+        updated_at: '2023-04-03T10:11:39.749Z',
     },
     {
         name: 'Laravel Settings',
@@ -1849,7 +1870,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:50.287Z',
+        updated_at: '2023-04-03T10:11:41.613Z',
     },
     {
         name: 'Laravel Sluggable',
@@ -1869,7 +1890,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:52.662Z',
+        updated_at: '2023-04-03T10:11:43.506Z',
     },
     {
         name: 'Eloquent Has Many Deep',
@@ -1887,7 +1908,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:55.456Z',
+        updated_at: '2023-04-03T10:11:45.320Z',
     },
     {
         name: 'Laravel Postgresql Enhanced',
@@ -1897,7 +1918,7 @@ export const laravelPackages: Package[] = [
         author: 'tpetry',
         composer: 'tpetry/laravel-postgresql-enhanced',
         npm: null,
-        stars: 419,
+        stars: 420,
         keywords: [],
         first_release_at: '2021-04-06T20:02:45+00:00',
         latest_release_at: '2023-03-30T08:42:04+00:00',
@@ -1909,7 +1930,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:42:57.837Z',
+        updated_at: '2023-04-03T10:11:47.094Z',
     },
     {
         name: 'Revisionable',
@@ -1933,7 +1954,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:00.432Z',
+        updated_at: '2023-04-03T10:11:48.902Z',
     },
     {
         name: 'Laravel Userstamps',
@@ -1943,7 +1964,7 @@ export const laravelPackages: Package[] = [
         author: 'wildside',
         composer: 'wildside/userstamps',
         npm: null,
-        stars: 419,
+        stars: 420,
         keywords: [],
         first_release_at: '2016-03-10T19:05:45+00:00',
         latest_release_at: '2023-02-15T09:35:24+00:00',
@@ -1956,7 +1977,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:02.770Z',
+        updated_at: '2023-04-03T10:11:50.594Z',
     },
     {
         name: 'IDE Helper Generator',
@@ -1966,7 +1987,7 @@ export const laravelPackages: Package[] = [
         author: 'barryvdh',
         composer: 'barryvdh/laravel-ide-helper',
         npm: null,
-        stars: 13031,
+        stars: 13032,
         keywords: [
             'autocompletion',
         ],
@@ -1978,7 +1999,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:05.731Z',
+        updated_at: '2023-04-03T10:11:52.370Z',
     },
     {
         name: 'Laravel Debugbar',
@@ -1988,7 +2009,7 @@ export const laravelPackages: Package[] = [
         author: 'barryvdh',
         composer: 'barryvdh/laravel-debugbar',
         npm: null,
-        stars: 15055,
+        stars: 15058,
         keywords: [
             'profiling',
             'profiler',
@@ -2005,7 +2026,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:08.179Z',
+        updated_at: '2023-04-03T10:11:53.978Z',
     },
     {
         name: 'Laravel TypeScript',
@@ -2027,31 +2048,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:10.964Z',
-    },
-    {
-        name: 'Momentum Trail',
-        description: 'Easily use your Laravel named routes in TypeScript with auto-completion and type-safety.',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/lepikhinb/momentum-trail',
-        author: 'based',
-        composer: 'based/momentum-trail',
-        npm: null,
-        stars: 34,
-        keywords: [
-            'boris',
-            'lepikhinb',
-            'ziggy',
-        ],
-        first_release_at: '2022-12-15T02:49:51+00:00',
-        latest_release_at: '2023-02-16T09:24:45+00:00',
-        detected_compatible_versions: [
-            '8',
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:43:13.234Z',
+        updated_at: '2023-04-03T10:11:56.107Z',
     },
     {
         name: 'Laravel N+1 Query Detector',
@@ -2076,46 +2073,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:15.707Z',
-    },
-    {
-        name: 'Flaky',
-        description: 'Handle intermittent failures caused by unreliable third parties.',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/hammerstonedev/flaky',
-        author: 'hammerstone',
-        composer: 'hammerstone/flaky',
-        npm: null,
-        stars: 357,
-        keywords: [],
-        first_release_at: '2023-03-03T20:45:05+00:00',
-        latest_release_at: '2023-03-11T19:04:33+00:00',
-        detected_compatible_versions: [
-            '8',
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:43:18.621Z',
-    },
-    {
-        name: 'Receiver',
-        description: 'A drop-in webhook handling library.',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/hotmeteor/receiver',
-        author: 'hotmeteor',
-        composer: 'hotmeteor/receiver',
-        npm: null,
-        stars: 297,
-        keywords: [],
-        first_release_at: '2022-08-22T12:44:06+00:00',
-        latest_release_at: '2023-03-01T18:33:55+00:00',
-        detected_compatible_versions: [
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:43:21.344Z',
+        updated_at: '2023-04-03T10:11:58.028Z',
     },
     {
         name: 'Laravel Microscope',
@@ -2125,7 +2083,7 @@ export const laravelPackages: Package[] = [
         author: 'imanghafoori',
         composer: 'imanghafoori/laravel-microscope',
         npm: null,
-        stars: 1261,
+        stars: 1262,
         keywords: [
             'performance',
         ],
@@ -2140,7 +2098,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:24.380Z',
+        updated_at: '2023-04-03T10:12:01.060Z',
     },
     {
         name: 'Clockwork',
@@ -2150,7 +2108,7 @@ export const laravelPackages: Package[] = [
         author: 'itsgoingd',
         composer: 'itsgoingd/clockwork',
         npm: null,
-        stars: 4932,
+        stars: 4933,
         keywords: [
             'profiler',
             'xdebug',
@@ -2163,7 +2121,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2022-12-13T00:04:12+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:26.732Z',
+        updated_at: '2023-04-03T10:12:02.746Z',
     },
     {
         name: 'Laravel Horizon',
@@ -2173,7 +2131,7 @@ export const laravelPackages: Package[] = [
         author: 'laravel',
         composer: 'laravel/horizon',
         npm: null,
-        stars: 3585,
+        stars: 3586,
         keywords: [],
         first_release_at: '2017-07-26T13:48:50+00:00',
         latest_release_at: '2023-03-07T17:45:21+00:00',
@@ -2183,7 +2141,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:29.454Z',
+        updated_at: '2023-04-03T10:12:04.713Z',
     },
     {
         name: 'Laravel Telescope',
@@ -2193,7 +2151,7 @@ export const laravelPackages: Package[] = [
         author: 'laravel',
         composer: 'laravel/telescope',
         npm: null,
-        stars: 4449,
+        stars: 4450,
         keywords: [
             'request',
             'exceptions',
@@ -2214,7 +2172,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:32.060Z',
+        updated_at: '2023-04-03T10:12:06.348Z',
     },
     {
         name: 'Laravel Workflow',
@@ -2224,7 +2182,7 @@ export const laravelPackages: Package[] = [
         author: 'laravel-workflow',
         composer: 'laravel-workflow/laravel-workflow',
         npm: null,
-        stars: 379,
+        stars: 380,
         keywords: [
             'queue',
         ],
@@ -2235,7 +2193,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:34.815Z',
+        updated_at: '2023-04-03T10:12:08.169Z',
     },
     {
         name: 'Larastan',
@@ -2245,7 +2203,7 @@ export const laravelPackages: Package[] = [
         author: 'nunomaduro',
         composer: 'nunomaduro/larastan',
         npm: null,
-        stars: 4550,
+        stars: 4552,
         keywords: [],
         first_release_at: '2018-07-05T21:40:04+00:00',
         latest_release_at: '2023-03-04T23:46:40+00:00',
@@ -2254,25 +2212,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:37.233Z',
-    },
-    {
-        name: 'Laravel Fast Refresh Database',
-        description: 'Refresh your test databases faster during testing.',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/PlannrCrm/laravel-fast-refresh-database',
-        author: 'plannr',
-        composer: 'plannr/laravel-fast-refresh-database',
-        npm: null,
-        stars: 314,
-        keywords: [
-            'migration',
-        ],
-        first_release_at: '2022-12-23T13:09:52+00:00',
-        latest_release_at: '2023-01-05T10:19:20+00:00',
-        detected_compatible_versions: [],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:43:40.253Z',
+        updated_at: '2023-04-03T10:12:10.169Z',
     },
     {
         name: 'Laravel Haystack',
@@ -2293,49 +2233,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:42.723Z',
-    },
-    {
-        name: 'Venture',
-        description: 'Build and manage complex workflows of interdependent jobs using Laravel queueing system.',
-        category: 'Code Architecture',
-        github: 'https://github.com/ksassnowski/venture',
-        author: 'sassnowski',
-        composer: 'sassnowski/venture',
-        npm: null,
-        stars: 724,
-        keywords: [
-            'directed-acyclic-graph',
-        ],
-        first_release_at: '2020-10-10T06:12:55+00:00',
-        latest_release_at: '2023-03-10T14:06:50+00:00',
-        detected_compatible_versions: [
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:43:47.512Z',
-    },
-    {
-        name: 'Laravel Analytics',
-        description: 'Retrieve pageviews and other data from Google Analytics',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/spatie/laravel-analytics',
-        author: 'spatie',
-        composer: 'spatie/laravel-analytics',
-        npm: null,
-        stars: 2837,
-        keywords: [
-            'statistics',
-        ],
-        first_release_at: '2015-03-12T12:34:28+00:00',
-        latest_release_at: '2023-02-01T08:53:25+00:00',
-        detected_compatible_versions: [
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:43:50.023Z',
+        updated_at: '2023-04-03T10:12:11.972Z',
     },
     {
         name: 'Laravel Failed Job Monitor',
@@ -2358,7 +2256,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:52.969Z',
+        updated_at: '2023-04-03T10:12:13.657Z',
     },
     {
         name: 'Laravel Server Side Rendering',
@@ -2382,7 +2280,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:55.429Z',
+        updated_at: '2023-04-03T10:12:15.487Z',
     },
     {
         name: 'Laravel Tail',
@@ -2402,7 +2300,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:43:58.345Z',
+        updated_at: '2023-04-03T10:12:17.149Z',
     },
     {
         name: 'Laravel Web Tinker',
@@ -2425,47 +2323,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:00.808Z',
-    },
-    {
-        name: 'Laravel Webhook Client',
-        description: 'Receive webhooks in Laravel apps',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/spatie/laravel-webhook-client',
-        author: 'spatie',
-        composer: 'spatie/laravel-webhook-client',
-        npm: null,
-        stars: 741,
-        keywords: [],
-        first_release_at: '2019-06-13T22:41:33+00:00',
-        latest_release_at: '2023-01-17T10:35:34+00:00',
-        detected_compatible_versions: [
-            '8',
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:44:03.520Z',
-    },
-    {
-        name: 'Laravel Webhook Server',
-        description: 'Send webhooks from Laravel apps.',
-        category: 'Utilities & Helpers',
-        github: 'https://github.com/spatie/laravel-webhook-server',
-        author: 'spatie',
-        composer: 'spatie/laravel-webhook-server',
-        npm: null,
-        stars: 754,
-        keywords: [],
-        first_release_at: '2019-06-11T18:43:20+00:00',
-        latest_release_at: '2023-03-17T09:01:16+00:00',
-        detected_compatible_versions: [
-            '8',
-            '9',
-            '10',
-        ],
-        compatible_versions: [],
-        updated_at: '2023-04-02T17:44:06.124Z',
+        updated_at: '2023-04-03T10:12:18.949Z',
     },
     {
         name: 'Blade CLI',
@@ -2478,12 +2336,12 @@ export const laravelPackages: Package[] = [
         stars: 33,
         keywords: [],
         first_release_at: '2022-05-24T03:44:17+00:00',
-        latest_release_at: '2023-04-01T23:58:04+00:00',
+        latest_release_at: '2023-04-02T18:55:39+00:00',
         detected_compatible_versions: [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:08.922Z',
+        updated_at: '2023-04-03T10:12:22.408Z',
     },
     {
         name: 'Ziggy',
@@ -2493,7 +2351,7 @@ export const laravelPackages: Package[] = [
         author: 'tightenco',
         composer: 'tightenco/ziggy',
         npm: null,
-        stars: 3209,
+        stars: 3210,
         keywords: [],
         first_release_at: '2017-08-04T17:53:35+00:00',
         latest_release_at: '2022-09-23T22:15:05+00:00',
@@ -2501,7 +2359,7 @@ export const laravelPackages: Package[] = [
             '>=5',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:11.770Z',
+        updated_at: '2023-04-03T10:12:24.238Z',
     },
     {
         name: 'Bladestan',
@@ -2511,7 +2369,7 @@ export const laravelPackages: Package[] = [
         author: 'tomasvotruba',
         composer: 'tomasvotruba/bladestan',
         npm: null,
-        stars: 163,
+        stars: 169,
         keywords: [],
         first_release_at: '2023-03-05T10:04:26+00:00',
         latest_release_at: '2023-03-26T11:00:30+00:00',
@@ -2521,7 +2379,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:14.534Z',
+        updated_at: '2023-04-03T10:12:26.035Z',
     },
     {
         name: 'Fleet',
@@ -2537,7 +2395,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-05T22:51:57+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:16.939Z',
+        updated_at: '2023-04-03T10:12:28.078Z',
     },
     {
         name: 'Laravel WebSockets',
@@ -2559,7 +2417,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:19.507Z',
+        updated_at: '2023-04-03T10:12:29.716Z',
     },
     {
         name: 'Stethoscope',
@@ -2577,7 +2435,7 @@ export const laravelPackages: Package[] = [
         compatible_versions: [
             '>=8',
         ],
-        updated_at: '2023-04-02T17:44:21.968Z',
+        updated_at: '2023-04-03T10:12:31.436Z',
     },
     {
         name: 'Laravel Backup',
@@ -2587,7 +2445,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-backup',
         npm: null,
-        stars: 5199,
+        stars: 5200,
         keywords: [
             'files',
             'encrypt',
@@ -2603,7 +2461,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:25.235Z',
+        updated_at: '2023-04-03T10:12:33.440Z',
     },
     {
         name: 'Laravel Dynamic Servers',
@@ -2622,7 +2480,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:27.815Z',
+        updated_at: '2023-04-03T10:12:35.190Z',
     },
     {
         name: 'Laravel Health',
@@ -2645,7 +2503,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:30.743Z',
+        updated_at: '2023-04-03T10:12:36.949Z',
     },
     {
         name: 'Laravel Schedule Monitor',
@@ -2664,7 +2522,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:33.336Z',
+        updated_at: '2023-04-03T10:12:38.756Z',
     },
     {
         name: 'Laravel Server Monitor',
@@ -2683,7 +2541,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:36.166Z',
+        updated_at: '2023-04-03T10:12:40.522Z',
     },
     {
         name: 'Laravel Uptime Monitor',
@@ -2703,7 +2561,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:38.843Z',
+        updated_at: '2023-04-03T10:12:45.816Z',
     },
     {
         name: 'One-Time Operations',
@@ -2713,7 +2571,7 @@ export const laravelPackages: Package[] = [
         author: 'timokoerber',
         composer: 'timokoerber/laravel-one-time-operations',
         npm: null,
-        stars: 180,
+        stars: 184,
         keywords: [
             'ci/cd',
         ],
@@ -2724,7 +2582,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:41.612Z',
+        updated_at: '2023-04-03T10:12:48.107Z',
     },
     {
         name: 'Aimeos',
@@ -2734,7 +2592,7 @@ export const laravelPackages: Package[] = [
         author: 'aimeos',
         composer: 'aimeos/aimeos-laravel',
         npm: null,
-        stars: 6109,
+        stars: 6112,
         keywords: [
             'warehouse',
             'multi tentant',
@@ -2753,7 +2611,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:44.232Z',
+        updated_at: '2023-04-03T10:12:50.148Z',
     },
     {
         name: 'Bagisto',
@@ -2771,7 +2629,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:47.082Z',
+        updated_at: '2023-04-03T10:12:52.018Z',
     },
     {
         name: 'Laravel Invoices',
@@ -2803,7 +2661,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:49.528Z',
+        updated_at: '2023-04-03T10:12:53.610Z',
     },
     {
         name: 'Lunar',
@@ -2813,7 +2671,7 @@ export const laravelPackages: Package[] = [
         author: 'lunarphp',
         composer: 'lunarphp/lunar',
         npm: null,
-        stars: 773,
+        stars: 774,
         keywords: [
             'carts',
             'payment',
@@ -2827,7 +2685,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:52.597Z',
+        updated_at: '2023-04-03T10:12:55.446Z',
     },
     {
         name: 'Vanilo',
@@ -2854,7 +2712,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:55.159Z',
+        updated_at: '2023-04-03T10:12:57.005Z',
     },
     {
         name: 'Laravel Dompdf',
@@ -2876,7 +2734,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:44:57.736Z',
+        updated_at: '2023-04-03T10:12:58.609Z',
     },
     {
         name: 'Laravel Snappy',
@@ -2895,7 +2753,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:00.215Z',
+        updated_at: '2023-04-03T10:13:00.645Z',
     },
     {
         name: 'Intervention Image',
@@ -2905,7 +2763,7 @@ export const laravelPackages: Package[] = [
         author: 'intervention',
         composer: 'intervention/image',
         npm: null,
-        stars: 13158,
+        stars: 13159,
         keywords: [
             'gd',
             'imagick',
@@ -2915,7 +2773,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2022-08-12T17:16:27+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:02.811Z',
+        updated_at: '2023-04-03T10:13:02.294Z',
     },
     {
         name: 'Laravel Excel',
@@ -2938,7 +2796,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:05.507Z',
+        updated_at: '2023-04-03T10:13:04.101Z',
     },
     {
         name: 'Laravel FFMpeg',
@@ -2957,7 +2815,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:08.661Z',
+        updated_at: '2023-04-03T10:13:05.876Z',
     },
     {
         name: 'Fast Excel',
@@ -2981,7 +2839,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:11.355Z',
+        updated_at: '2023-04-03T10:13:07.554Z',
     },
     {
         name: 'Browsershot',
@@ -3001,7 +2859,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-01-03T19:12:47+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:14.416Z',
+        updated_at: '2023-04-03T10:13:10.250Z',
     },
     {
         name: 'Image Optimizer',
@@ -3017,7 +2875,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-10T08:43:19+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:16.760Z',
+        updated_at: '2023-04-03T10:13:12.161Z',
     },
     {
         name: 'Laravel Media Library',
@@ -3027,7 +2885,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-medialibrary',
         npm: null,
-        stars: 5286,
+        stars: 5287,
         keywords: [
             'image',
             'pdf',
@@ -3046,7 +2904,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:19.794Z',
+        updated_at: '2023-04-03T10:13:14.129Z',
     },
     {
         name: 'Pdf to image',
@@ -3065,7 +2923,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2022-03-08T07:52:26+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:22.176Z',
+        updated_at: '2023-04-03T10:13:15.724Z',
     },
     {
         name: 'Laravel Translatable',
@@ -3085,7 +2943,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:24.764Z',
+        updated_at: '2023-04-03T10:13:17.572Z',
     },
     {
         name: 'Laravel Translations Checker',
@@ -3105,7 +2963,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:27.465Z',
+        updated_at: '2023-04-03T10:13:19.162Z',
     },
     {
         name: 'Laravel Localization',
@@ -3115,7 +2973,7 @@ export const laravelPackages: Package[] = [
         author: 'mcamara',
         composer: 'mcamara/laravel-localization',
         npm: null,
-        stars: 3113,
+        stars: 3115,
         keywords: [
             'language',
             'locale',
@@ -3134,7 +2992,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:29.924Z',
+        updated_at: '2023-04-03T10:13:20.754Z',
     },
     {
         name: 'World',
@@ -3150,7 +3008,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-26T06:55:55+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:32.750Z',
+        updated_at: '2023-04-03T10:13:22.702Z',
     },
     {
         name: 'Laravel Translations UI',
@@ -3160,7 +3018,7 @@ export const laravelPackages: Package[] = [
         author: 'outhebox',
         composer: 'outhebox/laravel-translations',
         npm: null,
-        stars: 283,
+        stars: 284,
         keywords: [],
         first_release_at: '2022-11-13T00:33:00+00:00',
         latest_release_at: '2023-02-19T07:11:46+00:00',
@@ -3168,7 +3026,7 @@ export const laravelPackages: Package[] = [
         compatible_versions: [
             '>=8',
         ],
-        updated_at: '2023-04-02T17:45:35.331Z',
+        updated_at: '2023-04-03T10:13:24.535Z',
     },
     {
         name: 'Laravel Translatable',
@@ -3187,7 +3045,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:38.268Z',
+        updated_at: '2023-04-03T10:13:26.560Z',
     },
     {
         name: 'Laravel Translation Loader',
@@ -3209,7 +3067,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:40.723Z',
+        updated_at: '2023-04-03T10:13:28.388Z',
     },
     {
         name: 'Laravel Localization',
@@ -3227,7 +3085,7 @@ export const laravelPackages: Package[] = [
             '>=5',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:43.757Z',
+        updated_at: '2023-04-03T10:13:29.984Z',
     },
     {
         name: 'Laravel Vue i18n',
@@ -3245,7 +3103,7 @@ export const laravelPackages: Package[] = [
         compatible_versions: [
             '>=9',
         ],
-        updated_at: '2023-04-02T17:45:48.377Z',
+        updated_at: '2023-04-03T10:13:33.328Z',
     },
     {
         name: 'Mail SPF Checker',
@@ -3265,7 +3123,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:51.177Z',
+        updated_at: '2023-04-03T10:13:35.219Z',
     },
     {
         name: 'Laravel Mail Editor',
@@ -3288,7 +3146,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:53.767Z',
+        updated_at: '2023-04-03T10:13:37.151Z',
     },
     {
         name: 'Laravel Mail Preview',
@@ -3298,7 +3156,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-mail-preview',
         npm: null,
-        stars: 1044,
+        stars: 1045,
         keywords: [
             'smtp',
             'transport',
@@ -3311,7 +3169,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:56.277Z',
+        updated_at: '2023-04-03T10:13:38.999Z',
     },
     {
         name: 'Mailbook',
@@ -3321,7 +3179,7 @@ export const laravelPackages: Package[] = [
         author: 'xammie',
         composer: 'xammie/mailbook',
         npm: null,
-        stars: 329,
+        stars: 330,
         keywords: [],
         first_release_at: '2022-07-07T22:09:15+00:00',
         latest_release_at: '2023-02-14T18:10:31+00:00',
@@ -3330,7 +3188,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:45:59.286Z',
+        updated_at: '2023-04-03T10:13:40.686Z',
     },
     {
         name: 'Flash',
@@ -3357,7 +3215,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:01.786Z',
+        updated_at: '2023-04-03T10:13:42.337Z',
     },
     {
         name: 'Laravel Notify',
@@ -3367,7 +3225,7 @@ export const laravelPackages: Package[] = [
         author: 'mckenziearts',
         composer: 'mckenziearts/laravel-notify',
         npm: null,
-        stars: 1302,
+        stars: 1303,
         keywords: [
             'toast',
             'flash messages',
@@ -3380,7 +3238,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:04.458Z',
+        updated_at: '2023-04-03T10:13:44.057Z',
     },
     {
         name: 'Sweet Alert',
@@ -3406,7 +3264,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:07.156Z',
+        updated_at: '2023-04-03T10:13:45.861Z',
     },
     {
         name: 'Laravel Flash',
@@ -3416,7 +3274,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-flash',
         npm: null,
-        stars: 474,
+        stars: 475,
         keywords: [],
         first_release_at: '2019-03-14T10:37:31+00:00',
         latest_release_at: '2023-01-23T14:53:09+00:00',
@@ -3426,7 +3284,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:09.984Z',
+        updated_at: '2023-04-03T10:13:47.636Z',
     },
     {
         name: 'Laravel Notification Log',
@@ -3444,7 +3302,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:12.928Z',
+        updated_at: '2023-04-03T10:13:49.432Z',
     },
     {
         name: 'Tall Toasts',
@@ -3454,7 +3312,7 @@ export const laravelPackages: Package[] = [
         author: 'usernotnull',
         composer: 'usernotnull/tall-toasts',
         npm: null,
-        stars: 395,
+        stars: 396,
         keywords: [
             'livewire',
             'alpinejs',
@@ -3467,7 +3325,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:15.626Z',
+        updated_at: '2023-04-03T10:13:52.230Z',
     },
     {
         name: 'Toastr',
@@ -3488,7 +3346,7 @@ export const laravelPackages: Package[] = [
         compatible_versions: [
             '>=4',
         ],
-        updated_at: '2023-04-02T17:46:17.747Z',
+        updated_at: '2023-04-03T10:13:55.001Z',
     },
     {
         name: 'Laravel Cashier',
@@ -3498,7 +3356,7 @@ export const laravelPackages: Package[] = [
         author: 'laravel',
         composer: 'laravel/cashier',
         npm: null,
-        stars: 2210,
+        stars: 2211,
         keywords: [
             'invoice',
             'card',
@@ -3514,7 +3372,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:20.480Z',
+        updated_at: '2023-04-03T10:13:56.946Z',
     },
     {
         name: 'SEO Tools',
@@ -3524,7 +3382,7 @@ export const laravelPackages: Package[] = [
         author: 'artesaos',
         composer: 'artesaos/seotools',
         npm: null,
-        stars: 2781,
+        stars: 2782,
         keywords: [],
         first_release_at: '2015-02-28T16:39:49+00:00',
         latest_release_at: '2023-02-15T12:13:16+00:00',
@@ -3537,7 +3395,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:22.965Z',
+        updated_at: '2023-04-03T10:13:58.715Z',
     },
     {
         name: 'Laravel SEO',
@@ -3569,7 +3427,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:25.714Z',
+        updated_at: '2023-04-03T10:14:00.810Z',
     },
     {
         name: 'Laravel Sitemap',
@@ -3589,7 +3447,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:28.106Z',
+        updated_at: '2023-04-03T10:14:02.521Z',
     },
     {
         name: 'No Captcha',
@@ -3599,7 +3457,7 @@ export const laravelPackages: Package[] = [
         author: 'anhskohbo',
         composer: 'anhskohbo/no-captcha',
         npm: null,
-        stars: 1659,
+        stars: 1660,
         keywords: [
             'google',
         ],
@@ -3614,7 +3472,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:31.045Z',
+        updated_at: '2023-04-03T10:14:04.170Z',
     },
     {
         name: 'Laravel CipherSweet',
@@ -3633,7 +3491,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:33.729Z',
+        updated_at: '2023-04-03T10:14:06.156Z',
     },
     {
         name: 'Laravel Honeypot',
@@ -3657,7 +3515,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:36.408Z',
+        updated_at: '2023-04-03T10:14:07.916Z',
     },
     {
         name: 'Laravel Scrubber',
@@ -3676,7 +3534,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:38.997Z',
+        updated_at: '2023-04-03T10:14:09.748Z',
     },
     {
         name: 'Infection',
@@ -3686,13 +3544,13 @@ export const laravelPackages: Package[] = [
         author: 'infection',
         composer: 'infection/infection',
         npm: null,
-        stars: 1854,
+        stars: 1855,
         keywords: [],
         first_release_at: '2017-07-01T15:00:12+00:00',
         latest_release_at: '2023-02-05T21:47:26+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:41.806Z',
+        updated_at: '2023-04-03T10:14:11.700Z',
     },
     {
         name: 'Pest',
@@ -3702,7 +3560,7 @@ export const laravelPackages: Package[] = [
         author: 'pestphp',
         composer: 'pestphp/pest',
         npm: null,
-        stars: 6710,
+        stars: 6714,
         keywords: [
             'expectations',
             'assert',
@@ -3715,12 +3573,12 @@ export const laravelPackages: Package[] = [
             'dataset',
         ],
         first_release_at: '2020-05-19T23:10:29+00:00',
-        latest_release_at: '2023-03-28T09:16:29+00:00',
+        latest_release_at: '2023-04-02T20:12:31+00:00',
         detected_compatible_versions: [],
         compatible_versions: [
             '>=10',
         ],
-        updated_at: '2023-04-02T17:46:43.932Z',
+        updated_at: '2023-04-03T10:14:13.477Z',
     },
     {
         name: 'Momentum Layout',
@@ -3739,7 +3597,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-01-22T00:08:41.656Z',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:47.446Z',
+        updated_at: '2023-04-03T10:14:15.832Z',
     },
     {
         name: 'Momentum Modal',
@@ -3762,7 +3620,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:50.147Z',
+        updated_at: '2023-04-03T10:14:18.131Z',
     },
     {
         name: 'Blade Icons',
@@ -3772,7 +3630,7 @@ export const laravelPackages: Package[] = [
         author: 'blade-ui-kit',
         composer: 'blade-ui-kit/blade-icons',
         npm: null,
-        stars: 1772,
+        stars: 1773,
         keywords: [
             'css',
             'html',
@@ -3787,7 +3645,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:52.936Z',
+        updated_at: '2023-04-03T10:14:21.041Z',
     },
     {
         name: 'Vanilla Components',
@@ -3808,7 +3666,7 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:55.541Z',
+        updated_at: '2023-04-03T10:14:23.061Z',
     },
     {
         name: 'Laravel Markdown',
@@ -3830,7 +3688,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:46:58.133Z',
+        updated_at: '2023-04-03T10:14:24.657Z',
     },
     {
         name: 'Laravel Charts',
@@ -3846,7 +3704,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-30T18:03:34+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:00.369Z',
+        updated_at: '2023-04-03T10:14:26.557Z',
     },
     {
         name: 'Avatar',
@@ -3856,7 +3714,7 @@ export const laravelPackages: Package[] = [
         author: 'laravolt',
         composer: 'laravolt/avatar',
         npm: null,
-        stars: 1699,
+        stars: 1698,
         keywords: [
             'svg',
             'optimize',
@@ -3870,7 +3728,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:03.093Z',
+        updated_at: '2023-04-03T10:14:28.349Z',
     },
     {
         name: 'Blade Flags',
@@ -3890,7 +3748,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:05.544Z',
+        updated_at: '2023-04-03T10:14:29.891Z',
     },
     {
         name: 'Livewire PowerGrid',
@@ -3900,7 +3758,7 @@ export const laravelPackages: Package[] = [
         author: 'power-components',
         composer: 'power-components/livewire-powergrid',
         npm: null,
-        stars: 1067,
+        stars: 1069,
         keywords: [],
         first_release_at: '2021-04-08T13:37:35+00:00',
         latest_release_at: '2023-03-29T19:43:39+00:00',
@@ -3910,7 +3768,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:08.256Z',
+        updated_at: '2023-04-03T10:14:31.914Z',
     },
     {
         name: 'Laravel Form Components',
@@ -3920,7 +3778,7 @@ export const laravelPackages: Package[] = [
         author: 'protonemedia',
         composer: 'protonemedia/laravel-form-components',
         npm: null,
-        stars: 707,
+        stars: 708,
         keywords: [
             'validation',
             'translation',
@@ -3933,7 +3791,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:10.833Z',
+        updated_at: '2023-04-03T10:14:33.942Z',
     },
     {
         name: 'Inertia Breadcrumbs',
@@ -3943,7 +3801,7 @@ export const laravelPackages: Package[] = [
         author: 'robertboes',
         composer: 'robertboes/inertia-breadcrumbs',
         npm: null,
-        stars: 17,
+        stars: 18,
         keywords: [],
         first_release_at: '2022-02-18T15:38:46+00:00',
         latest_release_at: '2023-02-19T00:50:09+00:00',
@@ -3951,7 +3809,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:13.648Z',
+        updated_at: '2023-04-03T10:14:36.118Z',
     },
     {
         name: 'Laravel Blade Javascript',
@@ -3971,7 +3829,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:16.234Z',
+        updated_at: '2023-04-03T10:14:37.935Z',
     },
     {
         name: 'Laravel Html',
@@ -3981,7 +3839,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-html',
         npm: null,
-        stars: 630,
+        stars: 631,
         keywords: [],
         first_release_at: '2017-01-25T23:09:21+00:00',
         latest_release_at: '2023-01-24T23:47:16+00:00',
@@ -3991,7 +3849,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:18.948Z',
+        updated_at: '2023-04-03T10:14:39.718Z',
     },
     {
         name: 'Laravel Login Link',
@@ -4010,7 +3868,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:21.586Z',
+        updated_at: '2023-04-03T10:14:41.561Z',
     },
     {
         name: 'Laravel Menu',
@@ -4030,7 +3888,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:24.349Z',
+        updated_at: '2023-04-03T10:14:43.292Z',
     },
     {
         name: 'Laravel Navigation',
@@ -4050,7 +3908,7 @@ export const laravelPackages: Package[] = [
             '9',
             '10',
         ],
-        updated_at: '2023-04-02T17:47:26.808Z',
+        updated_at: '2023-04-03T10:14:45.158Z',
     },
     {
         name: 'Wire Modal',
@@ -4069,7 +3927,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2022-07-05T12:40:12+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:29.845Z',
+        updated_at: '2023-04-03T10:14:48.599Z',
     },
     {
         name: 'Wire Spotlight',
@@ -4089,7 +3947,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:32.359Z',
+        updated_at: '2023-04-03T10:14:51.193Z',
     },
     {
         name: 'WireUI',
@@ -4109,7 +3967,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:35.254Z',
+        updated_at: '2023-04-03T10:14:52.842Z',
     },
     {
         name: 'Laravel Smart Ads',
@@ -4125,7 +3983,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-04T10:32:53+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:37.999Z',
+        updated_at: '2023-04-03T10:14:54.890Z',
     },
     {
         name: 'Short Url',
@@ -4145,7 +4003,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:40.873Z',
+        updated_at: '2023-04-03T10:14:56.763Z',
     },
     {
         name: 'Momentum Paginator',
@@ -4164,7 +4022,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-01-03T11:05:52.140Z',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:43.580Z',
+        updated_at: '2023-04-03T10:14:59.102Z',
     },
     {
         name: 'Momentum Preflight',
@@ -4186,7 +4044,31 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:46.394Z',
+        updated_at: '2023-04-03T10:15:00.844Z',
+    },
+    {
+        name: 'Momentum Trail',
+        description: 'Easily use your Laravel named routes in TypeScript with auto-completion and type-safety.',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/lepikhinb/momentum-trail',
+        author: 'based',
+        composer: 'based/momentum-trail',
+        npm: null,
+        stars: 35,
+        keywords: [
+            'boris',
+            'lepikhinb',
+            'ziggy',
+        ],
+        first_release_at: '2022-12-15T02:49:51+00:00',
+        latest_release_at: '2023-02-16T09:24:45+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:02.898Z',
     },
     {
         name: 'Gravatar',
@@ -4209,7 +4091,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:48.720Z',
+        updated_at: '2023-04-03T10:15:04.612Z',
     },
     {
         name: 'Inertia Flash',
@@ -4230,7 +4112,46 @@ export const laravelPackages: Package[] = [
             '9',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:51.394Z',
+        updated_at: '2023-04-03T10:15:06.611Z',
+    },
+    {
+        name: 'Flaky',
+        description: 'Handle intermittent failures caused by unreliable third parties.',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/hammerstonedev/flaky',
+        author: 'hammerstone',
+        composer: 'hammerstone/flaky',
+        npm: null,
+        stars: 357,
+        keywords: [],
+        first_release_at: '2023-03-03T20:45:05+00:00',
+        latest_release_at: '2023-03-11T19:04:33+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:09.426Z',
+    },
+    {
+        name: 'Receiver',
+        description: 'A drop-in webhook handling library.',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/hotmeteor/receiver',
+        author: 'hotmeteor',
+        composer: 'hotmeteor/receiver',
+        npm: null,
+        stars: 297,
+        keywords: [],
+        first_release_at: '2022-08-22T12:44:06+00:00',
+        latest_release_at: '2023-03-01T18:33:55+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:11.164Z',
     },
     {
         name: 'Require PIN',
@@ -4249,7 +4170,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:53.878Z',
+        updated_at: '2023-04-03T10:15:12.828Z',
     },
     {
         name: 'Laravel Hours Helper',
@@ -4268,7 +4189,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:56.620Z',
+        updated_at: '2023-04-03T10:15:14.819Z',
     },
     {
         name: 'Html Strings Affixer',
@@ -4286,7 +4207,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-27T18:22:36+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:47:58.655Z',
+        updated_at: '2023-04-03T10:15:16.576Z',
     },
     {
         name: 'Laravel Markable',
@@ -4296,7 +4217,7 @@ export const laravelPackages: Package[] = [
         author: 'maize-tech',
         composer: 'maize-tech/laravel-markable',
         npm: null,
-        stars: 538,
+        stars: 539,
         keywords: [],
         first_release_at: '2022-04-05T10:08:20+00:00',
         latest_release_at: '2023-02-13T16:16:40+00:00',
@@ -4305,7 +4226,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:01.582Z',
+        updated_at: '2023-04-03T10:15:18.225Z',
     },
     {
         name: 'Captcha',
@@ -4328,7 +4249,25 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:04.235Z',
+        updated_at: '2023-04-03T10:15:20.017Z',
+    },
+    {
+        name: 'Laravel Fast Refresh Database',
+        description: 'Refresh your test databases faster during testing.',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/PlannrCrm/laravel-fast-refresh-database',
+        author: 'plannr',
+        composer: 'plannr/laravel-fast-refresh-database',
+        npm: null,
+        stars: 314,
+        keywords: [
+            'migration',
+        ],
+        first_release_at: '2022-12-23T13:09:52+00:00',
+        latest_release_at: '2023-01-05T10:19:20+00:00',
+        detected_compatible_versions: [],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:21.908Z',
     },
     {
         name: 'Standards',
@@ -4338,13 +4277,13 @@ export const laravelPackages: Package[] = [
         author: 'prinsfrank',
         composer: 'prinsfrank/standards',
         npm: null,
-        stars: 307,
+        stars: 308,
         keywords: [],
         first_release_at: '2022-06-08T20:28:39+00:00',
         latest_release_at: '2023-03-25T17:51:32+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:07.134Z',
+        updated_at: '2023-04-03T10:15:23.709Z',
     },
     {
         name: 'Laravel Phone',
@@ -4363,7 +4302,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:09.566Z',
+        updated_at: '2023-04-03T10:15:25.473Z',
     },
     {
         name: 'Laravel App Settings',
@@ -4373,7 +4312,7 @@ export const laravelPackages: Package[] = [
         author: 'qcod',
         composer: 'qcod/laravel-app-settings',
         npm: null,
-        stars: 296,
+        stars: 299,
         keywords: [],
         first_release_at: '2018-10-04T17:09:35+00:00',
         latest_release_at: '2023-03-06T01:27:14+00:00',
@@ -4385,7 +4324,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:12.596Z',
+        updated_at: '2023-04-03T10:15:27.319Z',
     },
     {
         name: 'Simple QrCode',
@@ -4395,7 +4334,7 @@ export const laravelPackages: Package[] = [
         author: 'simplesoftwareio',
         composer: 'simplesoftwareio/simple-qrcode',
         npm: null,
-        stars: 2305,
+        stars: 2306,
         keywords: [
             'qr-code',
         ],
@@ -4403,7 +4342,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2021-02-08T20:43:55+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:15.286Z',
+        updated_at: '2023-04-03T10:15:29.168Z',
     },
     {
         name: 'Filament Markdown Editor',
@@ -4422,7 +4361,28 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:17.998Z',
+        updated_at: '2023-04-03T10:15:31.033Z',
+    },
+    {
+        name: 'Laravel Analytics',
+        description: 'Retrieve pageviews and other data from Google Analytics',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/spatie/laravel-analytics',
+        author: 'spatie',
+        composer: 'spatie/laravel-analytics',
+        npm: null,
+        stars: 2837,
+        keywords: [
+            'statistics',
+        ],
+        first_release_at: '2015-03-12T12:34:28+00:00',
+        latest_release_at: '2023-02-01T08:53:25+00:00',
+        detected_compatible_versions: [
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:32.717Z',
     },
     {
         name: 'Laravel Collection Macros',
@@ -4442,7 +4402,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:20.586Z',
+        updated_at: '2023-04-03T10:15:34.434Z',
     },
     {
         name: 'Laravel Cookie Consent',
@@ -4452,7 +4412,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-cookie-consent',
         npm: null,
-        stars: 1217,
+        stars: 1218,
         keywords: [],
         first_release_at: '2016-06-28T09:16:14+00:00',
         latest_release_at: '2023-01-25T09:18:22+00:00',
@@ -4462,7 +4422,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:23.024Z',
+        updated_at: '2023-04-03T10:15:36.319Z',
     },
     {
         name: 'Laravel Feed',
@@ -4472,7 +4432,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-feed',
         npm: null,
-        stars: 758,
+        stars: 759,
         keywords: [],
         first_release_at: '2016-03-03T08:59:21+00:00',
         latest_release_at: '2023-01-25T09:39:38+00:00',
@@ -4482,7 +4442,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:25.544Z',
+        updated_at: '2023-04-03T10:15:37.993Z',
     },
     {
         name: 'Laravel Google Calendar',
@@ -4504,7 +4464,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:28.495Z',
+        updated_at: '2023-04-03T10:15:39.687Z',
     },
     {
         name: 'Laravel Onboard',
@@ -4523,7 +4483,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:30.941Z',
+        updated_at: '2023-04-03T10:15:41.738Z',
     },
     {
         name: 'Laravel Response Cache',
@@ -4545,7 +4505,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:33.861Z',
+        updated_at: '2023-04-03T10:15:43.403Z',
     },
     {
         name: 'Laravel Short Schedule',
@@ -4565,7 +4525,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:36.347Z',
+        updated_at: '2023-04-03T10:15:45.065Z',
     },
     {
         name: 'Laravel Stats',
@@ -4585,7 +4545,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:39.046Z',
+        updated_at: '2023-04-03T10:15:46.874Z',
     },
     {
         name: 'Laravel Tags',
@@ -4595,7 +4555,7 @@ export const laravelPackages: Package[] = [
         author: 'spatie',
         composer: 'spatie/laravel-tags',
         npm: null,
-        stars: 1402,
+        stars: 1404,
         keywords: [
             'model',
             'eloquent',
@@ -4609,7 +4569,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:41.295Z',
+        updated_at: '2023-04-03T10:15:48.617Z',
     },
     {
         name: 'Laravel Validation Rules',
@@ -4629,7 +4589,47 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:44.098Z',
+        updated_at: '2023-04-03T10:15:50.362Z',
+    },
+    {
+        name: 'Laravel Webhook Client',
+        description: 'Receive webhooks in Laravel apps',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/spatie/laravel-webhook-client',
+        author: 'spatie',
+        composer: 'spatie/laravel-webhook-client',
+        npm: null,
+        stars: 741,
+        keywords: [],
+        first_release_at: '2019-06-13T22:41:33+00:00',
+        latest_release_at: '2023-01-17T10:35:34+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:52.177Z',
+    },
+    {
+        name: 'Laravel Webhook Server',
+        description: 'Send webhooks from Laravel apps.',
+        category: 'Utilities & Helpers',
+        github: 'https://github.com/spatie/laravel-webhook-server',
+        author: 'spatie',
+        composer: 'spatie/laravel-webhook-server',
+        npm: null,
+        stars: 754,
+        keywords: [],
+        first_release_at: '2019-06-11T18:43:20+00:00',
+        latest_release_at: '2023-03-17T09:01:16+00:00',
+        detected_compatible_versions: [
+            '8',
+            '9',
+            '10',
+        ],
+        compatible_versions: [],
+        updated_at: '2023-04-03T10:15:53.844Z',
     },
     {
         name: 'Period',
@@ -4645,7 +4645,7 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-02-20T14:31:09+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:46.711Z',
+        updated_at: '2023-04-03T10:15:55.560Z',
     },
     {
         name: 'Geocoder Laravel',
@@ -4655,7 +4655,7 @@ export const laravelPackages: Package[] = [
         author: 'toin0u',
         composer: 'toin0u/geocoder-laravel',
         npm: null,
-        stars: 615,
+        stars: 616,
         keywords: [],
         first_release_at: '2013-09-16T20:50:53+00:00',
         latest_release_at: '2023-02-16T17:34:31+00:00',
@@ -4668,7 +4668,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:49.503Z',
+        updated_at: '2023-04-03T10:15:57.438Z',
     },
     {
         name: 'Laravel GeoIP',
@@ -4678,7 +4678,7 @@ export const laravelPackages: Package[] = [
         author: 'torann',
         composer: 'torann/geoip',
         npm: null,
-        stars: 1964,
+        stars: 1965,
         keywords: [],
         first_release_at: '2013-12-11T22:28:05+00:00',
         latest_release_at: '2023-02-21T14:02:27+00:00',
@@ -4688,7 +4688,7 @@ export const laravelPackages: Package[] = [
             '10',
         ],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:51.972Z',
+        updated_at: '2023-04-03T10:15:59.156Z',
     },
     {
         name: 'Laravel Model Json',
@@ -4704,6 +4704,6 @@ export const laravelPackages: Package[] = [
         latest_release_at: '2023-03-20T11:57:51+00:00',
         detected_compatible_versions: [],
         compatible_versions: [],
-        updated_at: '2023-04-02T17:48:54.329Z',
+        updated_at: '2023-04-03T10:16:01.247Z',
     },
 ]
