@@ -129,6 +129,7 @@ onMounted(() => {
         h-11 w-11
         relative
         sm:scale-0
+        hover:text-slate-600
         dark:text-[#ABB0DD]
         dark:hover:text-[#bcc1ef]
         "
