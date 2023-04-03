@@ -42,7 +42,7 @@ export default defineNuxtConfig({
                 { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon/favicon-16x16.png?v=tepFhKkKP8' },
                 { rel: 'manifest', href: '/favicon/site.webmanifest?v=tepFhKkKP8' },
                 { rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg?v=tepFhKkKP8', color: '#5bbad5' },
-                { rel: 'shortcut icon', href: '/favicon/favicon.ico?v=tepFhKkKP8' },
+                { rel: 'shortcut icon', href: '/favicon/favicon-2.ico?v=tepFhKkKP8' },
             ],
         },
     },
