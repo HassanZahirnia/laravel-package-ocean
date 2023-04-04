@@ -25,7 +25,7 @@ export default defineNuxtConfig({
             meta: [
                 {
                     name: 'description',
-                    content: 'Discover new & useful Laravel packages',
+                    content: 'A place where you can find any Laravel package that you may need for your next project.',
                 },
                 {
                     name: 'msapplication-TileColor',
