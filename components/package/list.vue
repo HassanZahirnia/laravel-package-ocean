@@ -41,8 +41,9 @@ const sortField = ref<PackageSortFields>('first_release_at')
 sortField.value = route.query.sort?.toString() as PackageSortFields ?? 'first_release_at'
 
 // Only show official packages
-const show_only_official_packages = ref<'0' | '1'>('0')
-show_only_official_packages.value = route.query.official?.toString() as '0' | '1' ?? '0'
+const showOfficialPackages = useShowOfficialPackages()
+// Only use route.query.official if it's value is either '0' or '1', if not set it to '0'
+showOfficialPackages.value = route.query.official && ['0', '1'].includes(route.query.official?.toString()) ? route.query.official?.toString() as '0' | '1' : '0'
 
 // Page
 const page = ref(Number(route.query.page) || 1)
@@ -53,9 +54,9 @@ const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
 
 watch(
-    [search, page, sortField, selectedCategory, show_only_official_packages],
+    [search, page, sortField, selectedCategory, showOfficialPackages],
     (
-        [newSearch, newPage, newSortField, newSelectedCategory, newShowOnlyOfficialPackages],
+        [newSearch, newPage, newSortField, newSelectedCategory, newShowOfficialPackages],
         [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages],
     ) => {
         results.value = laravelPackages
@@ -73,8 +74,8 @@ watch(
         if(newSelectedCategory !== oldSelectedCategory)
             newPage = 1
 
-        // Show only official packages if show_only_official_packages is true
-        if(newShowOnlyOfficialPackages === '1')
+        // Show only official packages if showOfficialPackages is true
+        if(newShowOfficialPackages === '1')
             results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
 
         // Selected Category
@@ -140,7 +141,7 @@ watch(
                     ...(newPage && { page: newPage }),
                     ...(newSortField && { sort: newSortField }),
                     ...(newSelectedCategory && { category: newSelectedCategory }),
-                    ...(newShowOnlyOfficialPackages && { official: newShowOnlyOfficialPackages }),
+                    ...(newShowOfficialPackages && { official: newShowOfficialPackages }),
                 },
             })
         }
@@ -257,10 +258,10 @@ const categoriesForSelectboxWithAll = [
                         lg:hover:w-40
                         "
                         :class="{
-                            'bg-white/50 dark:bg-[#362B59]/20 dark:hover:bg-[#362B59]/30': show_only_official_packages === '0',
-                            'lg:w-40 bg-white dark:bg-indigo-500/20 dark:hover:bg-indigo-500/10': show_only_official_packages === '1',
+                            'bg-white/50 dark:bg-[#362B59]/20 dark:hover:bg-[#362B59]/30': showOfficialPackages === '0',
+                            'lg:w-40 bg-white dark:bg-indigo-500/20 dark:hover:bg-indigo-500/10': showOfficialPackages === '1',
                         }"
-                        @click="show_only_official_packages = show_only_official_packages === '1' ? '0' : '1'"
+                        @click="showOfficialPackages = showOfficialPackages === '1' ? '0' : '1'"
                         >
                         <div
                             class="i-fluent-emoji-crown text-2xl
@@ -277,7 +278,7 @@ const categoriesForSelectboxWithAll = [
                             lg:group-hover:translate-x-[-5.8rem]
                             "
                             :class="{
-                                'lg:opacity-100 lg:translate-x-[-5.8rem]': show_only_official_packages === '1',
+                                'lg:opacity-100 lg:translate-x-[-5.8rem]': showOfficialPackages === '1',
                             }"
                             >
                             Official Packages

@@ -7,6 +7,8 @@ const $props = defineProps<{
     laravelPackage: Package
 }>()
 
+const showOfficialPackages = useShowOfficialPackages()
+
 const compatible_versions = computed(() => $props.laravelPackage.compatible_versions.length
     ? $props.laravelPackage.compatible_versions
     : $props.laravelPackage.detected_compatible_versions)
@@ -171,6 +173,7 @@ watch(
                     content="Official Laravel Package"
                     class="absolute -top-3 -left-3"
                     theme="amber"
+                    @click.stop.prevent="showOfficialPackages = '1'"
                     >
                     <div
                         class="i-fluent-emoji-crown text-2xl
