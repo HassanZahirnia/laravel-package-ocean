@@ -6,7 +6,7 @@ const isHovering = ref(false)
 
 <template>
     <div
-        class="pt-8
+        class="pt-8 text-center
         grid place-items-center 
         "
         >

@@ -169,11 +169,11 @@ watch(
                 <ui-tooltip
                     v-if="laravelPackage.author === 'laravel'"
                     content="Official Laravel Package"
-                    class="absolute -top-4 -left-4"
+                    class="absolute -top-3 -left-3"
                     theme="amber"
                     >
                     <div
-                        class="i-fluent-emoji-crown text-3xl
+                        class="i-fluent-emoji-crown text-2xl
                         -rotate-45
                         "
                         />

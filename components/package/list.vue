@@ -40,6 +40,10 @@ selectedCategory.value = route.query.category && categories.includes(route.query
 const sortField = ref<PackageSortFields>('first_release_at')
 sortField.value = route.query.sort?.toString() as PackageSortFields ?? 'first_release_at'
 
+// Only show official packages
+const show_only_official_packages = ref<'0' | '1'>('0')
+show_only_official_packages.value = route.query.official?.toString() as '0' | '1' ?? '0'
+
 // Page
 const page = ref(Number(route.query.page) || 1)
 const pageSize = 9
@@ -49,10 +53,10 @@ const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
 
 watch(
-    [search, page, sortField, selectedCategory],
+    [search, page, sortField, selectedCategory, show_only_official_packages],
     (
-        [newSearch, newPage, newSortField, newSelectedCategory],
-        [oldSearch, oldPage, oldSortField, oldSelectedCategory],
+        [newSearch, newPage, newSortField, newSelectedCategory, newShowOnlyOfficialPackages],
+        [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages],
     ) => {
         // if newPage is changed, scroll to #scroll-to-reference element
         if(newPage !== oldPage) {
@@ -80,8 +84,12 @@ watch(
             results.value = searchResult.map(searchResultItem => laravelPackages.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
         }
         else{
-            // Return all packages
-            results.value = laravelPackages
+            // Show only official packages if show_only_official_packages is true
+            if(newShowOnlyOfficialPackages === '1')
+                results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
+            else
+                // Return all packages
+                results.value = laravelPackages
 
             // Sort packages
             let sortOrder: 'asc' | 'desc' = 'desc'
@@ -134,6 +142,7 @@ watch(
                     ...(newPage && { page: newPage }),
                     ...(newSortField && { sort: newSortField }),
                     ...(newSelectedCategory && { category: newSelectedCategory }),
+                    ...(newShowOnlyOfficialPackages && { official: newShowOnlyOfficialPackages }),
                 },
             })
         }
@@ -231,20 +240,58 @@ const categoriesForSelectboxWithAll = [
                 </transition>
             </div>
             <div
-                class="lg:flex-1
+                class="xl:flex-1
                 flex gap-3
-                w-full lg:w-auto
-                flex-wrap lg:flex-nowrap
+                w-full xl:w-auto
+                flex-wrap xl:flex-nowrap
                 items-center
                 justify-center lg:justify-end
                 "
                 >
+                <!-- Official package toggle -->
+                <div class="flex-1 flex justify-start min-[920px]:justify-end w-40">
+                    <div
+                        class="relative rounded-xl cursor-pointer group select-none
+                        transition-all duration-300
+                        overflow-hidden
+                        w-40 lg:w-11 h-11
+                        flex items-center
+                        lg:hover:w-40
+                        "
+                        :class="{
+                            'bg-white/50 dark:bg-[#362B59]/20 dark:hover:bg-[#362B59]/30': show_only_official_packages === '0',
+                            'lg:w-40 bg-white dark:bg-indigo-500/20 dark:hover:bg-indigo-500/10': show_only_official_packages === '1',
+                        }"
+                        @click="show_only_official_packages = show_only_official_packages === '1' ? '0' : '1'"
+                        >
+                        <div
+                            class="i-fluent-emoji-crown text-2xl
+                            mb-1 ml-2.5
+                            "
+                            />
+                        <div
+                            class="text-xs truncate
+                            absolute top-3.5 -right-20
+                            transition-all duration-300
+                            translate-x-[-5.8rem]
+                            lg:opacity-0
+                            lg:group-hover:opacity-100
+                            lg:group-hover:translate-x-[-5.8rem]
+                            "
+                            :class="{
+                                'lg:opacity-100 lg:translate-x-[-5.8rem]': show_only_official_packages === '1',
+                            }"
+                            >
+                            Official Packages
+                        </div>
+                    </div>
+                </div>
                 <!-- Search bar -->
                 <ui-search-input />
                 <!-- Sort -->
                 <ui-selectbox
                     v-model="sortField"
-                    class="shrink-0 w-full min-[800px]:w-52 relative z-20"
+                    class="shrink-0 w-full min-[920px]:w-52 relative z-20"
                     :items="orderItems"
                     />
                 <!-- Categories -->

@@ -9,7 +9,7 @@ search.value = route.query.search?.toString() ?? ''
     <div
         class="relative
         w-full
-        min-w-[13rem] min-[800px]:max-w-[16rem]
+        min-[920px]:max-w-[13rem]
         "
         >
         <transition
@@ -64,11 +64,11 @@ search.value = route.query.search?.toString() ?? ''
             dark:bg-[#362B59]/20
             placeholder:text-[#9095AE]
             dark:placeholder:text-[#ABB0DD]
-            dark:ring-1 dark:ring-[#132447]
+            dark:ring-1 dark:ring-transparent
             dark:focus:ring-indigo-500
             shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
             "
-            placeholder="Search anything ..."
+            placeholder="Search ..."
             />
     </div>
 </template>
