@@ -73,9 +73,9 @@ const package_is_compatible_with_latest_laravel_version = computed(() => {
 // Compatiblity and verions list message
 const compatiblity_message = computed(() => {
     if (package_is_compatible_with_latest_laravel_version.value)
-        return `Compatible with maintained versions of Laravel: ${compatible_versions.value.join(', ')}`
+        return `Compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
     else
-        return `Not compatible with maintained versions of Laravel: ${compatible_versions.value.join(', ')}`
+        return `Not compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
 })
 
 const isHovering = ref(false)
@@ -196,7 +196,7 @@ watch(
                 <div class="flex-1 pt-6">
                     <div class="flex gap-2 items-center">
                         <ui-tooltip
-                            v-if="compatible_versions.length"
+                            v-if="compatible_versions.length && !laravelPackage.php_only"
                             :content="compatiblity_message"
                             :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
                             class="text-xs
@@ -211,6 +211,18 @@ watch(
                                 v-else
                                 ref="warningIcon"
                                 class="i-ph-warning-circle-duotone text-xl text-amber-500"
+                                />
+                        </ui-tooltip>
+                        <ui-tooltip
+                            v-if="laravelPackage.php_only"
+                            content="This package is for PHP only <br> It does not require Laravel."
+                            theme="indigo"
+                            class="text-xs
+                            flex items-center gap-1
+                            "
+                            >
+                            <div
+                                class="i-svg-elephant text-lg"
                                 />
                         </ui-tooltip>
                         <div

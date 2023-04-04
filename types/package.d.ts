@@ -48,6 +48,10 @@ export type Package = {
     // If this is set, the `detected_compatible_versions` will be ignored.
     compatible_versions: string[]
 
+    // Indicates that this is a php only package and is not directly related to Laravel.
+    // We use this to skip some of the Laravel specific checks.
+    php_only: boolean
+
     // Date when the package was updated in the database. Example: '2023-03-29T02:57:36+00:00'
     updated_at: string
 }

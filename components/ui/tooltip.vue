@@ -6,7 +6,7 @@ import 'tippy.js/animations/shift-away.css'
 interface Props {
     content: string
     placement?: 'top' | 'bottom' | 'left' | 'right'
-    theme?: 'slate' | 'amber' | 'emerald'
+    theme?: 'slate' | 'amber' | 'emerald' | 'indigo'
     size?: 'small' | 'medium'
     condition?: boolean
 }
@@ -29,8 +29,8 @@ onMounted(()=>{
                 theme: $props.theme,
                 placement: $props.placement,
                 animation: 'shift-away',
-                maxWidth: 500,
                 touch: 'hold',
+                allowHTML: true,
                 delay: 100,
             })
         }
@@ -96,5 +96,21 @@ watch(() => $props.content, () => {
 }
 .tippy-box[data-theme~='emerald'][data-placement^='right'] > .tippy-arrow::before{
     @apply border-r-emerald-500 dark:border-r-emerald-600;
+}
+
+.tippy-box[data-theme~='indigo']{
+    @apply bg-indigo-500 dark:bg-indigo-600 rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins text-center;
+}
+.tippy-box[data-theme~='indigo'][data-placement^='top'] > .tippy-arrow::before{
+    @apply border-t-indigo-500 dark:border-t-indigo-600;
+}
+.tippy-box[data-theme~='indigo'][data-placement^='bottom'] > .tippy-arrow::before{
+    @apply border-b-indigo-500 dark:border-b-indigo-600;
+}
+.tippy-box[data-theme~='indigo'][data-placement^='left'] > .tippy-arrow::before{
+    @apply border-l-indigo-500 dark:border-l-indigo-600;
+}
+.tippy-box[data-theme~='indigo'][data-placement^='right'] > .tippy-arrow::before{
+    @apply border-r-indigo-500 dark:border-r-indigo-600;
 }
 </style>
