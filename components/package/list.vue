@@ -228,6 +228,7 @@ const categoriesForSelectboxWithAll = [
                 "
                 >
                 <div class="text-2xl font-semibold">
+                    {{ results.length }}
                     Packages
                 </div>
                 <transition
