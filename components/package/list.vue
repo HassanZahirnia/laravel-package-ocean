@@ -254,7 +254,7 @@ const categoriesForSelectboxWithAll = [
                         transition-all duration-300
                         overflow-hidden
                         w-40 lg:w-11 h-11
-                        flex items-center
+                        flex gap-2 items-center
                         lg:hover:w-40
                         "
                         :class="{
@@ -265,20 +265,18 @@ const categoriesForSelectboxWithAll = [
                         >
                         <div
                             class="i-fluent-emoji-crown text-2xl
+                            shrink-0
                             mb-1 ml-2.5
                             "
                             />
                         <div
                             class="text-xs truncate
-                            absolute top-3.5 -right-20
-                            transition-all duration-300
-                            translate-x-[-5.8rem]
+                            transition duration-300
                             lg:opacity-0
                             lg:group-hover:opacity-100
-                            lg:group-hover:translate-x-[-5.8rem]
                             "
                             :class="{
-                                'lg:opacity-100 lg:translate-x-[-5.8rem]': showOfficialPackages === '1',
+                                'lg:opacity-100': showOfficialPackages === '1',
                             }"
                             >
                             Official Packages
