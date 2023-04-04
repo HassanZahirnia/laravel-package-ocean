@@ -8,7 +8,6 @@
         "postinstall": "nuxt prepare",
         "update-packages-database": "tsx update-database.ts && ./node_modules/.bin/eslint --fix database/packages.ts database/laravel-versions.ts"
     },
-    "packageManager": "^pnpm@8.0.0",
     "devDependencies": {
         "@fontsource/poppins": "^4.5.10",
         "@formkit/auto-animate": "1.0.0-beta.6",
