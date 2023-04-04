@@ -129,7 +129,7 @@ function openModal() {
                                 >
                                 <!-- Suggest a new package -->
                                 <a
-                                    href="https://github.com/HassanZahirnia/laravel-package-ocean"
+                                    href="https://github.com/HassanZahirnia/laravel-package-ocean/discussions/categories/package-suggestions"
                                     target="_blank"
                                     class="mr-1 block w-full text-center
                                     select-none rounded-full

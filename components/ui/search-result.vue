@@ -94,7 +94,7 @@ const isHovering = ref(false)
         <!-- Suggest a new package -->
         <div class="mt-6">
             <a
-                href="https://github.com/HassanZahirnia/laravel-package-ocean"
+                href="https://github.com/HassanZahirnia/laravel-package-ocean/discussions/categories/package-suggestions"
                 target="_blank"
                 class="rounded-xl select-none
                 transition duration-300

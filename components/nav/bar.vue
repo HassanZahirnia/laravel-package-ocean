@@ -25,7 +25,7 @@
                 >
                 <!-- Suggest a new package -->
                 <a
-                    href="https://github.com/HassanZahirnia/laravel-package-ocean"
+                    href="https://github.com/HassanZahirnia/laravel-package-ocean/discussions/categories/package-suggestions"
                     target="_blank"
                     class="mr-1
                     select-none rounded-xl
