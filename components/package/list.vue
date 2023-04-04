@@ -12,10 +12,13 @@ const miniSearch = new MiniSearch({
     fields: [
         'name',
         'description',
-        'category',
         'keywords',
         'author',
     ],
+    searchOptions: {
+        fuzzy: 0.1,
+        prefix: true,
+    },
 })
 
 // Index all packages
@@ -70,46 +73,39 @@ watch(
             if(newSearch !== oldSearch)
                 newPage = 1
 
-            const searchResult = miniSearch.search(search.value,
-                {
-                    fuzzy: 0.1,
-                    prefix: true,
-                },
-            )
+            const searchResult = miniSearch.search(search.value)
 
-            // Return only packages that their `github` property are included in searchResults's `id` property
-            results.value = laravelPackages.filter(
-                laravelPackage => searchResult.map(result => result.id).includes(laravelPackage.github),
-            )
+            // Filter packages that their `github` property are included in searchResults's `id` property
+            // But keep the order from searchResult's score (desc)
+            results.value = searchResult.map(searchResultItem => laravelPackages.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
         }
         else{
             // Return all packages
             results.value = laravelPackages
+
+            // Sort packages
+            let sortOrder: 'asc' | 'desc' = 'desc'
+            switch (newSortField) {
+                case 'first_release_at':
+                    sortOrder = 'desc'
+                    break
+                case 'latest_release_at':
+                    sortOrder = 'desc'
+                    break
+                case 'stars':
+                    sortOrder = 'desc'
+                    break
+                default:
+                    sortOrder = 'desc'
+                    break
+            }
+            results.value = orderBy(results.value, newSortField, sortOrder)
         }
 
         // Selected Category
         if(newSelectedCategory)
             results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
         
-
-        // Sort packages
-        let sortOrder: 'asc' | 'desc' = 'desc'
-        switch (newSortField) {
-            case 'first_release_at':
-                sortOrder = 'desc'
-                break
-            case 'latest_release_at':
-                sortOrder = 'desc'
-                break
-            case 'stars':
-                sortOrder = 'desc'
-                break
-            default:
-                sortOrder = 'desc'
-                break
-        }
-        results.value = orderBy(results.value, newSortField, sortOrder)
-
         // Paginate results
         const start = (newPage - 1) * pageSize
         const end = start + pageSize

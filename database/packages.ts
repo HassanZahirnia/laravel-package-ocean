@@ -3,7 +3,7 @@ import type { Package } from '@/types/package'
 export const laravelPackages: Package[] = [
     {
         name: 'Laravel API to Postman',
-        description: 'Generate a Postman collection automatically from your Laravel API.',
+        description: 'Generate a Postman collection automatically from your API.',
         category: 'API',
         github: 'https://github.com/AndreasElia/laravel-api-to-postman',
         author: 'andreaselia',
@@ -25,7 +25,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Restify',
-        description: 'The fastest way to make a powerful JSON:API compatible Rest API with Laravel.',
+        description: 'The fastest way to make a powerful JSON:API compatible Rest API.',
         category: 'API',
         github: 'https://github.com/binarcode/laravel-restify',
         author: 'binaryk',
@@ -45,7 +45,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'L5 Swagger',
-        description: 'OpenApi or Swagger Specification for your Laravel project made easy.',
+        description: 'OpenApi or Swagger Specification for your project made easy.',
         category: 'API',
         github: 'https://github.com/DarkaOnLine/L5-Swagger',
         author: 'darkaonline',
@@ -89,7 +89,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel API Response Helpers',
-        description: 'A simple package allowing for consistent API responses throughout your Laravel application.',
+        description: 'A simple package allowing for consistent API responses throughout your application.',
         category: 'API',
         github: 'https://github.com/f9webltd/laravel-api-response-helpers',
         author: 'f9webltd',
@@ -130,7 +130,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Kafka',
-        description: 'Use Kafka Producers and Consumers in your laravel app with ease!',
+        description: 'Use Kafka Producers and Consumers in your app with ease!',
         category: 'API',
         github: 'https://github.com/mateusjunges/laravel-kafka',
         author: 'mateusjunges',
@@ -234,7 +234,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Orion',
-        description: 'The simplest way to create REST API with Laravel.',
+        description: 'The simplest way to create REST API.',
         category: 'API',
         github: 'https://github.com/tailflow/laravel-orion',
         author: 'tailflow',
@@ -272,7 +272,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Momentum Lock',
-        description: 'Handle Laravel authorizations on the frontend level.',
+        description: 'Handle authorizations on the frontend level.',
         category: 'Auth & Permissions',
         github: 'https://github.com/lepikhinb/momentum-lock',
         author: 'based',
@@ -282,7 +282,6 @@ export const laravelPackages: Package[] = [
         keywords: [
             'boris',
             'lepikhinb',
-            'laravel-data',
             'typescript',
         ],
         first_release_at: '2022-12-15T23:26:51+00:00',
@@ -366,7 +365,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Breeze',
-        description: 'Minimal Laravel authentication scaffolding with Blade, Vue, or React + Tailwind.',
+        description: 'Minimal authentication scaffolding with Blade, Vue, or React + Tailwind.',
         category: 'Auth & Permissions',
         github: 'https://github.com/laravel/breeze',
         author: 'laravel',
@@ -384,7 +383,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Fortify',
-        description: 'Backend controllers and scaffolding for Laravel authentication.',
+        description: 'Backend controllers and scaffolding for authentication.',
         category: 'Auth & Permissions',
         github: 'https://github.com/laravel/fortify',
         author: 'laravel',
@@ -404,7 +403,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Passport',
-        description: 'Provides OAuth2 server support to Laravel.',
+        description: 'Provides OAuth2 server support.',
         category: 'Auth & Permissions',
         github: 'https://github.com/laravel/passport',
         author: 'laravel',
@@ -501,7 +500,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Log Viewer',
-        description: 'Fast and beautiful Log Viewer for Laravel.',
+        description: 'Fast and beautiful Log Viewer.',
         category: 'Auth & Permissions',
         github: 'https://github.com/opcodesio/log-viewer',
         author: 'opcodesio',
@@ -571,7 +570,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laratrust',
-        description: 'An easy and flexible way to add roles, permissions and teams authorization to Laravel.',
+        description: 'An easy and flexible way to add roles, permissions and teams authorization.',
         category: 'Auth & Permissions',
         github: 'https://github.com/santigarcor/laratrust',
         author: 'santigarcor',
@@ -715,7 +714,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'LaRecipe',
-        description: 'Write gorgeous documentation for your products using Markdown inside your Laravel app.',
+        description: 'Write gorgeous documentation for your products using Markdown inside your app.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/saleem-hadad/larecipe',
         author: 'binarytorch',
@@ -738,7 +737,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Messenger',
-        description: 'Full user messaging system for your Laravel application.',
+        description: 'Full user messaging system for your application.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/cmgmyr/laravel-messenger',
         author: 'cmgmyr',
@@ -784,7 +783,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Filament',
-        description: 'Admin panel, form builder and table builder for Laravel. Built with the TALL stack.',
+        description: 'Admin panel, form builder and table builder. Built with the TALL stack.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/filamentphp/filament',
         author: 'filamentphp',
@@ -818,7 +817,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Blueprint',
-        description: 'A code generation tool for Laravel developers.',
+        description: 'A code generation tool for developers.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/laravel-shift/blueprint',
         author: 'laravel-shift',
@@ -836,7 +835,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Larastarters',
-        description: 'A regular Laravel Starter Kit and with a Design Theme.',
+        description: 'A regular Starter Kit and with a Design Theme.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/LaravelDaily/Larastarters',
         author: 'laraveldaily',
@@ -857,7 +856,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Chatify',
-        description: 'Complete real-time chatting system for your new/existing Laravel application with only one command.',
+        description: 'Complete real-time chatting system for your new/existing application with only one command.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/munafio/chatify',
         author: 'munafio',
@@ -913,7 +912,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Livewire Tables',
-        description: 'A dynamic table component for Laravel Livewire.',
+        description: 'A dynamic table component for Livewire.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/rappasoft/laravel-livewire-tables',
         author: 'rappasoft',
@@ -933,7 +932,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Forum',
-        description: 'A slim, lean forum package designed for quick and easy integration in Laravel projects.',
+        description: 'A slim, lean forum package.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/Team-Tea-Time/laravel-forum',
         author: 'riari',
@@ -951,7 +950,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Statamic',
-        description: 'Flat-first, Laravel + Git powered CMS designed for building beautiful, easy to manage websites.',
+        description: 'Flat-first, Git powered CMS designed for building beautiful, easy to manage websites.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/statamic/cms',
         author: 'statamic',
@@ -970,7 +969,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel DataTables',
-        description: 'jQuery DataTables API for Laravel.',
+        description: 'jQuery DataTables API.',
         category: 'CMS & Admin Panels',
         github: 'https://github.com/yajra/laravel-datatables',
         author: 'yajra',
@@ -992,7 +991,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Enum',
-        description: 'Simple, extensible and powerful enumeration implementation for Laravel.',
+        description: 'Simple, extensible and powerful enumeration implementation.',
         category: 'Code Architecture',
         github: 'https://github.com/BenSampo/laravel-enum',
         author: 'bensampo',
@@ -1063,7 +1062,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Inertia',
-        description: 'The Laravel adapter for Inertia.js',
+        description: 'Adapter for Inertia.js',
         category: 'Code Architecture',
         github: 'https://github.com/inertiajs/inertia-laravel',
         author: 'inertiajs',
@@ -1109,7 +1108,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Livewire',
-        description: 'A full-stack framework for Laravel that takes the pain out of building dynamic UIs.',
+        description: 'A full-stack framework that takes the pain out of building dynamic UIs.',
         category: 'Code Architecture',
         github: 'https://github.com/livewire/livewire',
         author: 'livewire',
@@ -1162,7 +1161,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Modules',
-        description: 'Manage your large Laravel app using modules.',
+        description: 'Manage your large app using modules.',
         category: 'Code Architecture',
         github: 'https://github.com/nWidart/laravel-modules',
         author: 'nwidart',
@@ -1202,7 +1201,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Venture',
-        description: 'Build and manage complex workflows of interdependent jobs using Laravel queueing system.',
+        description: 'Build and manage complex workflows of interdependent jobs using queueing system.',
         category: 'Code Architecture',
         github: 'https://github.com/ksassnowski/venture',
         author: 'sassnowski',
@@ -1223,7 +1222,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Data',
-        description: 'Powerful data objects for Laravel.',
+        description: 'Powerful data objects.',
         category: 'Code Architecture',
         github: 'https://github.com/spatie/laravel-data',
         author: 'spatie',
@@ -1245,7 +1244,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Multitenancy',
-        description: 'Make your Laravel app usable by multiple tenants',
+        description: 'Make your app usable by multiple tenants',
         category: 'Code Architecture',
         github: 'https://github.com/spatie/laravel-multitenancy',
         author: 'spatie',
@@ -1265,7 +1264,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Tenancy',
-        description: 'Automatic multi-tenancy for Laravel. No code changes needed.',
+        description: 'Automatic multi-tenancy. No code changes needed.',
         category: 'Code Architecture',
         github: 'https://github.com/archtechx/tenancy',
         author: 'stancl',
@@ -1286,7 +1285,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Validated DTO',
-        description: 'Data Transfer Objects with validation for Laravel applications.',
+        description: 'Data Transfer Objects with validation for applications.',
         category: 'Code Architecture',
         github: 'https://github.com/WendellAdriel/laravel-validated-dto',
         author: 'wendelladriel',
@@ -1447,7 +1446,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Eloquent Sluggable',
-        description: 'Easy creation of slugs for your Eloquent models in Laravel.',
+        description: 'Easy creation of slugs for your Eloquent models.',
         category: 'Database & Eloquent',
         github: 'https://github.com/cviebrock/eloquent-sluggable',
         author: 'cviebrock',
@@ -1484,7 +1483,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Eloquent Viewable',
-        description: 'Associate views with Eloquent models in Laravel.',
+        description: 'Associate views with Eloquent models.',
         category: 'Database & Eloquent',
         github: 'https://github.com/cyrildewit/eloquent-viewable',
         author: 'cyrildewit',
@@ -1505,7 +1504,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Fast Paginate',
-        description: 'A fast implementation of offset/limit pagination for Laravel.',
+        description: 'A fast implementation of offset/limit pagination.',
         category: 'Database & Eloquent',
         github: 'https://github.com/hammerstonedev/fast-paginate',
         author: 'hammerstone',
@@ -1610,7 +1609,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Column Sortable',
-        description: 'Package for handling column sorting in Laravel.',
+        description: 'Package for handling column sorting.',
         category: 'Database & Eloquent',
         github: 'https://github.com/Kyslik/column-sortable',
         author: 'kyslik',
@@ -1691,7 +1690,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Drafts',
-        description: 'A simple, drop-in drafts/revisions system for Laravel models.',
+        description: 'A simple, drop-in drafts/revisions system for models.',
         category: 'Database & Eloquent',
         github: 'https://github.com/oddvalue/laravel-drafts',
         author: 'oddvalue',
@@ -1759,7 +1758,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Parental',
-        description: 'Use single table inheritance in your Laravel app.',
+        description: 'Use single table inheritance in your app.',
         category: 'Database & Eloquent',
         github: 'https://github.com/tighten/parental',
         author: 'parental',
@@ -1815,7 +1814,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Rutorika Sortable',
-        description: 'Adds sortable behavior to Laravel Eloquent models',
+        description: 'Adds sortable behavior to Eloquent models',
         category: 'Database & Eloquent',
         github: 'https://github.com/boxfrommars/rutorika-sortable',
         author: 'rutorika',
@@ -2113,7 +2112,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Eloquent Has Many Deep',
-        description: 'Laravel Eloquent HasManyThrough relationships with unlimited levels.',
+        description: 'Eloquent HasManyThrough relationships with unlimited levels.',
         category: 'Database & Eloquent',
         github: 'https://github.com/staudenmeir/eloquent-has-many-deep',
         author: 'staudenmeir',
@@ -2171,7 +2170,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Revisionable',
-        description: 'Easily create a revision history for any laravel model.',
+        description: 'Easily create a revision history for any model.',
         category: 'Database & Eloquent',
         github: 'https://github.com/VentureCraft/revisionable',
         author: 'venturecraft',
@@ -2240,7 +2239,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Debugbar',
-        description: 'This is a package to integrate PHP Debug Bar with Laravel.',
+        description: 'PHP Debug Bar integration.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/barryvdh/laravel-debugbar',
         author: 'barryvdh',
@@ -2267,7 +2266,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel TypeScript',
-        description: 'Generate TypeScript interfaces from your Laravel models.',
+        description: 'Generate TypeScript interfaces from your models.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/lepikhinb/laravel-typescript',
         author: 'based',
@@ -2378,7 +2377,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Horizon',
-        description: 'Dashboard and code-driven configuration for Laravel queues.',
+        description: 'Dashboard and code-driven configuration for queues.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/laravel/horizon',
         author: 'laravel',
@@ -2416,7 +2415,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Sail',
-        description: 'Docker files for running a basic Laravel application.',
+        description: 'Docker files for running a basic application.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/laravel/sail',
         author: 'laravel',
@@ -2436,7 +2435,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Telescope',
-        description: 'An elegant debug assistant for the Laravel framework.',
+        description: 'An elegant debug assistant.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/laravel/telescope',
         author: 'laravel',
@@ -2529,7 +2528,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Larastan',
-        description: 'Adds code analysis to Laravel improving developer productivity and code quality.',
+        description: 'Adds code analysis to improve developer productivity and code quality.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/nunomaduro/larastan',
         author: 'nunomaduro',
@@ -2548,7 +2547,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Haystack',
-        description: 'Supercharged job chains for Laravel.',
+        description: 'Supercharged job chains.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/Sammyjo20/laravel-haystack',
         author: 'sammyjo20',
@@ -2592,7 +2591,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Server Side Rendering',
-        description: 'Server side rendering JavaScript in your Laravel application.',
+        description: 'Server side rendering JavaScript in your application.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/spatie/laravel-server-side-rendering',
         author: 'spatie',
@@ -2677,7 +2676,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Ziggy',
-        description: 'Use your Laravel named routes in JavaScript.',
+        description: 'Use your named routes in JavaScript.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/tighten/ziggy',
         author: 'tightenco',
@@ -2775,7 +2774,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Stethoscope',
-        description: 'A laravel package to monitor cpu, memory, hard disk, web server and network connection.',
+        description: 'Monitor cpu, memory, hard disk, web server and network connection.',
         category: 'Dev Ops',
         github: 'https://github.com/MohsenAbrishami/stethoscope',
         author: 'mohsenabrishami',
@@ -2793,7 +2792,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Backup',
-        description: 'A package to backup your Laravel app.',
+        description: 'Backup your app.',
         category: 'Dev Ops',
         github: 'https://github.com/spatie/laravel-backup',
         author: 'spatie',
@@ -2838,7 +2837,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Health',
-        description: 'Check the health of your Laravel app.',
+        description: 'Check the health of your app.',
         category: 'Dev Ops',
         github: 'https://github.com/spatie/laravel-health',
         author: 'spatie',
@@ -2861,7 +2860,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Schedule Monitor',
-        description: 'Monitor scheduled tasks in a Laravel app.',
+        description: 'Monitor scheduled tasks.',
         category: 'Dev Ops',
         github: 'https://github.com/spatie/laravel-schedule-monitor',
         author: 'spatie',
@@ -3070,7 +3069,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Dompdf',
-        description: 'A DOMPDF Wrapper for Laravel',
+        description: 'A DOMPDF Wrapper',
         category: 'File Management',
         github: 'https://github.com/barryvdh/laravel-dompdf',
         author: 'barryvdh',
@@ -3092,7 +3091,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Snappy',
-        description: 'Snappy PDF/Image Wrapper for Laravel.',
+        description: 'Snappy PDF/Image Wrapper.',
         category: 'File Management',
         github: 'https://github.com/barryvdh/laravel-snappy',
         author: 'barryvdh',
@@ -3131,7 +3130,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Excel',
-        description: 'Supercharged Excel exports and imports in Laravel.',
+        description: 'Supercharged Excel exports and imports.',
         category: 'File Management',
         github: 'https://github.com/SpartnerNL/Laravel-Excel',
         author: 'maatwebsite',
@@ -3154,7 +3153,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel FFMpeg',
-        description: 'Integration with FFmpeg for Laravel.',
+        description: 'Integration with FFmpeg.',
         category: 'File Management',
         github: 'https://github.com/protonemedia/laravel-ffmpeg',
         author: 'pbmedia',
@@ -3173,7 +3172,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Fast Excel',
-        description: 'Fast Excel import/export for Laravel.',
+        description: 'Fast Excel import/export.',
         category: 'File Management',
         github: 'https://github.com/rap2hpoutre/fast-excel',
         author: 'rap2hpoutre',
@@ -3281,7 +3280,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Translatable',
-        description: 'A Laravel package for multilingual models.',
+        description: 'Multilingual models.',
         category: 'Localization',
         github: 'https://github.com/Astrotomic/laravel-translatable',
         author: 'astrotomic',
@@ -3321,7 +3320,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Localization',
-        description: 'Easy i18n localization for Laravel, an useful tool to combine with Laravel localization classes.',
+        description: 'Easy i18n localization, an useful tool to combine with localization classes.',
         category: 'Localization',
         github: 'https://github.com/mcamara/laravel-localization',
         author: 'mcamara',
@@ -3366,7 +3365,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Translations UI',
-        description: 'A simple and friendly user interface for managing translations in a Laravel app.',
+        description: 'A simple and friendly user interface for managing translations.',
         category: 'Localization',
         github: 'https://github.com/MohmmedAshraf/laravel-translations',
         author: 'outhebox',
@@ -3425,7 +3424,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Localization',
-        description: 'Translation.io client for Laravel.',
+        description: 'Translation.io client.',
         category: 'Localization',
         github: 'https://github.com/translation/laravel',
         author: 'tio',
@@ -3443,7 +3442,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Vue i18n',
-        description: 'Allows to connect your Laravel Framework translation files with Vue.',
+        description: 'Allows to connect your translation files with Vue.',
         category: 'Localization',
         github: 'https://github.com/xiCO2k/laravel-vue-i18n',
         author: 'xico2k',
@@ -3660,7 +3659,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Tall Toasts',
-        description: 'A Toast notification library for the Laravel TALL stack.',
+        description: 'A Toast notification library for the TALL stack.',
         category: 'Notifications',
         github: 'https://github.com/usernotnull/tall-toasts',
         author: 'usernotnull',
@@ -3683,7 +3682,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Toastr',
-        description: 'Toastr.js notifications for Laravel and Lumen',
+        description: 'Toastr.js notifications',
         category: 'Notifications',
         github: 'https://github.com/yoeunes/toastr',
         author: 'yoeunes',
@@ -3753,7 +3752,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel SEO',
-        description: 'A package to handle the SEO in any Laravel application, big or small.',
+        description: 'A package to handle the SEO in any application, big or small.',
         category: 'SEO',
         github: 'https://github.com/ralphjsmit/laravel-seo',
         author: 'ralphjsmit',
@@ -3805,7 +3804,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'No Captcha',
-        description: 'reCAPTCHA For Laravel.',
+        description: 'reCAPTCHA integration.',
         category: 'Security',
         github: 'https://github.com/anhskohbo/no-captcha',
         author: 'anhskohbo',
@@ -3997,7 +3996,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Blade Icons',
-        description: 'Easily make use of SVG icons in your Laravel Blade views.',
+        description: 'Easily make use of SVG icons in your Blade views.',
         category: 'UI & Blade Components',
         github: 'https://github.com/blade-ui-kit/blade-icons',
         author: 'blade-ui-kit',
@@ -4064,7 +4063,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Markdown',
-        description: 'A CommonMark wrapper for Laravel.',
+        description: 'A CommonMark wrapper.',
         category: 'UI & Blade Components',
         github: 'https://github.com/GrahamCampbell/Laravel-Markdown',
         author: 'graham-campbell',
@@ -4086,7 +4085,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Jetstream',
-        description: 'Tailwind scaffolding for the Laravel framework.',
+        description: 'Tailwind scaffolding.',
         category: 'UI & Blade Components',
         github: 'https://github.com/laravel/jetstream',
         author: 'laravel',
@@ -4104,7 +4103,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Charts',
-        description: 'Draw charts in Laravel with Chart.js',
+        description: 'Draw charts with Chart.js',
         category: 'UI & Blade Components',
         github: 'https://github.com/LaravelDaily/laravel-charts',
         author: 'laraveldaily',
@@ -4144,7 +4143,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Blade Flags',
-        description: 'Display countries & languages flags in your Laravel Blade views',
+        description: 'Display countries & languages flags in your Blade views',
         category: 'UI & Blade Components',
         github: 'https://github.com/MohmmedAshraf/blade-flags',
         author: 'outhebox',
@@ -4164,7 +4163,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Livewire PowerGrid',
-        description: 'PowerGrid generates Advanced Datatables using Laravel Livewire.',
+        description: 'PowerGrid generates Advanced Datatables using Livewire.',
         category: 'UI & Blade Components',
         github: 'https://github.com/Power-Components/livewire-powergrid',
         author: 'power-components',
@@ -4284,7 +4283,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Menu',
-        description: 'Html Menu generator for Laravel.',
+        description: 'Html Menu generator.',
         category: 'UI & Blade Components',
         github: 'https://github.com/spatie/laravel-menu',
         author: 'spatie',
@@ -4324,7 +4323,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Rich Text Laravel',
-        description: 'Integrates the Trix Editor with Laravel. Inspired by the Action Text gem from Rails.',
+        description: 'Integrates the Trix Editor. Inspired by the Action Text gem from Rails.',
         category: 'UI & Blade Components',
         github: 'https://github.com/tonysm/rich-text-laravel',
         author: 'tonysm',
@@ -4363,7 +4362,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Wire Spotlight',
-        description: 'Livewire component that brings Spotlight/Alfred-like functionality to your Laravel application.',
+        description: 'Livewire component that brings Spotlight/Alfred-like functionality.',
         category: 'UI & Blade Components',
         github: 'https://github.com/wire-elements/spotlight',
         author: 'wire-elements',
@@ -4403,7 +4402,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Smart Ads',
-        description: 'Ads, Banners, Callout Manager and Auto Ad Inserter for Laravel.',
+        description: 'Ads, Banners, Callout Manager and Auto Ad Inserter.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/5balloons/laravel-smart-ads',
         author: '5balloons',
@@ -4439,7 +4438,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Momentum Paginator',
-        description: 'A framework-agnostic headless wrapper around Laravel Pagination meta data.',
+        description: 'A framework-agnostic headless wrapper around Pagination meta data.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/lepikhinb/momentum-paginator',
         author: 'based',
@@ -4480,7 +4479,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Momentum Trail',
-        description: 'Easily use your Laravel named routes in TypeScript with auto-completion and type-safety.',
+        description: 'Easily use named routes in TypeScript with auto-completion and type-safety.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/lepikhinb/momentum-trail',
         author: 'based',
@@ -4739,7 +4738,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Captcha',
-        description: 'Provider for including the Captcha for Laravel.',
+        description: 'Provider for including the Captcha.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/mewebstudio/captcha',
         author: 'mews',
@@ -4831,7 +4830,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Phone',
-        description: 'Phone number functionality for Laravel',
+        description: 'Phone number functionality.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/Propaganistas/Laravel-Phone',
         author: 'propaganistas',
@@ -4850,7 +4849,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel App Settings',
-        description: 'Store settings in database with a manager UI for your Laravel app.',
+        description: 'Store settings in database with a manager UI for your app.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/qcod/laravel-app-settings',
         author: 'qcod',
@@ -4891,7 +4890,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Simple QrCode',
-        description: 'An easy-to-use PHP QrCode generator with first-party support for Laravel.',
+        description: 'An easy-to-use PHP QrCode generator with first-party support.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/SimpleSoftwareIO/simple-qrcode',
         author: 'simplesoftwareio',
@@ -4949,7 +4948,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Collection Macros',
-        description: 'A set of useful Laravel collection macros.',
+        description: 'A set of useful collection macros.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-collection-macros',
         author: 'spatie',
@@ -4969,7 +4968,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Cookie Consent',
-        description: 'Make your Laravel app comply with the EU cookie law.',
+        description: 'Make your app comply with the EU cookie law.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-cookie-consent',
         author: 'spatie',
@@ -5050,7 +5049,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Response Cache',
-        description: 'Speed up a Laravel app by caching the entire response.',
+        description: 'Speed up your app by caching the entire response.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-responsecache',
         author: 'spatie',
@@ -5152,7 +5151,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Tags',
-        description: 'Add tags and taggable behaviour to your Laravel app.',
+        description: 'Add tags and taggable behaviour to your app.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-tags',
         author: 'spatie',
@@ -5176,7 +5175,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Validation Rules',
-        description: 'A set of useful Laravel validation rules.',
+        description: 'A set of useful validation rules.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-validation-rules',
         author: 'spatie',
@@ -5196,7 +5195,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Webhook Client',
-        description: 'Receive webhooks in Laravel apps',
+        description: 'Receive webhooks',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-webhook-client',
         author: 'spatie',
@@ -5216,7 +5215,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Laravel Webhook Server',
-        description: 'Send webhooks from Laravel apps.',
+        description: 'Send webhooks.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/spatie/laravel-webhook-server',
         author: 'spatie',
@@ -5252,7 +5251,7 @@ export const laravelPackages: Package[] = [
     },
     {
         name: 'Geocoder Laravel',
-        description: 'Geocoder service provider for Laravel.',
+        description: 'Geocoder service provider.',
         category: 'Utilities & Helpers',
         github: 'https://github.com/geocoder-php/GeocoderLaravel',
         author: 'toin0u',

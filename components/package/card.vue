@@ -141,112 +141,114 @@ watch(
 </script>
 
 <template>
-    <div
-        ref="card"
-        @mouseenter="isHovering = true"
-        @mouseleave="isHovering = false"
-        >
-        <a
-            :href="laravelPackage.github"
-            target="_blank"
-            class="rounded-3xl relative
-            h-60
-            p-6
-            backdrop-blur-xl
-            transition duration-300
-            flex flex-col
-            bg-white/50
-            dark:bg-[#362B59]/20
-            ring-1 dark:ring-1
-            ring-slate-100
-            dark:ring-[#132447]
-            dark:hover:ring-indigo-900
-            shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
-            hover:shadow-2xl hover:shadow-slate-700/10
-            "
+    <div>
+        <div
+            ref="card"
+            @mouseenter="isHovering = true"
+            @mouseleave="isHovering = false"
             >
-            <ui-tooltip
-                v-if="laravelPackage.author === 'laravel'"
-                content="Official Laravel Package"
-                class="absolute -top-4 -left-4"
-                theme="amber"
-                >
-                <div
-                    class="i-fluent-emoji-crown text-3xl
-                    -rotate-45
-                    "
-                    />
-            </ui-tooltip>
-            <div class="flex items-center justify-between gap-5">
-                <category-pill
-                    :category="laravelPackage.category"
-                    @click.stop.prevent="selectedCategory = laravelPackage.category"
-                    />
-                <div class="flex items-center gap-2">
-                    <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
-                    <div class="text-sm">
-                        {{ formatStars(laravelPackage.stars) }}
-                    </div>
-                </div>
-            </div>
-            <div class="flex-1 pt-6">
-                <div class="flex gap-2 items-center">
-                    <ui-tooltip
-                        v-if="compatible_versions.length"
-                        :content="compatiblity_message"
-                        :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
-                        class="text-xs
-                        flex items-center gap-1
-                        "
-                        >
-                        <div
-                            v-if="package_is_compatible_with_latest_laravel_version"
-                            class="i-ph-check-circle-duotone text-xl text-emerald-500"
-                            />
-                        <div
-                            v-else
-                            ref="warningIcon"
-                            class="i-ph-warning-circle-duotone text-xl text-amber-500"
-                            />
-                    </ui-tooltip>
-                    <div
-                        class="font-semibold
-                        text-[#545D82]
-                        dark:text-[#DEE4F1]
-                        "
-                        :class="{
-                            'text-sm': laravelPackage.name.length > 25,
-                        }"
-                        >
-                        {{ laravelPackage.name }}
-                    </div>
-                </div>
-                <div
-                    class="pt-1.5
-                    text-sm
-                    text-[#959BAF]
-                    dark:text-[#828CAC]
-                    "
-                    >
-                    {{ laravelPackage.description }}
-                </div>
-            </div>
-            <div
-                class="flex items-center gap-2
-                pt-2
-                text-[#505878]
-                dark:text-[#BECDF2]
+            <a
+                :href="laravelPackage.github"
+                target="_blank"
+                class="rounded-3xl relative
+                h-60
+                p-6
+                backdrop-blur-xl
+                transition duration-300
+                flex flex-col
+                bg-white/50
+                dark:bg-[#362B59]/20
+                ring-1 dark:ring-1
+                ring-slate-100
+                dark:ring-[#132447]
+                dark:hover:ring-indigo-900
+                shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+                hover:shadow-2xl hover:shadow-slate-700/10
                 "
                 >
-                <div class="i-ph-github-logo-duotone text-xl" />
                 <ui-tooltip
-                    class="text-xs font-medium truncate"
-                    :content="github_repository_name"
-                    :condition="show_github_repository_name"
+                    v-if="laravelPackage.author === 'laravel'"
+                    content="Official Laravel Package"
+                    class="absolute -top-4 -left-4"
+                    theme="amber"
                     >
-                    {{ github_repository_name }}
+                    <div
+                        class="i-fluent-emoji-crown text-3xl
+                        -rotate-45
+                        "
+                        />
                 </ui-tooltip>
-            </div>
-        </a>
+                <div class="flex items-center justify-between gap-5">
+                    <category-pill
+                        :category="laravelPackage.category"
+                        @click.stop.prevent="selectedCategory = laravelPackage.category"
+                        />
+                    <div class="flex items-center gap-2">
+                        <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
+                        <div class="text-sm">
+                            {{ formatStars(laravelPackage.stars) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 pt-6">
+                    <div class="flex gap-2 items-center">
+                        <ui-tooltip
+                            v-if="compatible_versions.length"
+                            :content="compatiblity_message"
+                            :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
+                            class="text-xs
+                            flex items-center gap-1
+                            "
+                            >
+                            <div
+                                v-if="package_is_compatible_with_latest_laravel_version"
+                                class="i-ph-check-circle-duotone text-xl text-emerald-500"
+                                />
+                            <div
+                                v-else
+                                ref="warningIcon"
+                                class="i-ph-warning-circle-duotone text-xl text-amber-500"
+                                />
+                        </ui-tooltip>
+                        <div
+                            class="font-semibold
+                            text-[#545D82]
+                            dark:text-[#DEE4F1]
+                            "
+                            :class="{
+                                'text-sm': laravelPackage.name.length > 25,
+                            }"
+                            >
+                            {{ laravelPackage.name }}
+                        </div>
+                    </div>
+                    <div
+                        class="pt-1.5
+                        text-sm
+                        text-[#959BAF]
+                        dark:text-[#828CAC]
+                        "
+                        >
+                        {{ laravelPackage.description }}
+                    </div>
+                </div>
+                <div
+                    class="flex items-center gap-2
+                    pt-2
+                    text-[#505878]
+                    dark:text-[#BECDF2]
+                    "
+                    >
+                    <div class="i-ph-github-logo-duotone text-xl" />
+                    <ui-tooltip
+                        class="text-xs font-medium truncate"
+                        :content="github_repository_name"
+                        :condition="show_github_repository_name"
+                        >
+                        {{ github_repository_name }}
+                    </ui-tooltip>
+                </div>
+            </a>
+        </div>
     </div>
 </template>
