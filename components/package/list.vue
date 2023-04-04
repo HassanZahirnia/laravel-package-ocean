@@ -58,6 +58,8 @@ watch(
         [newSearch, newPage, newSortField, newSelectedCategory, newShowOnlyOfficialPackages],
         [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages],
     ) => {
+        results.value = laravelPackages
+
         // if newPage is changed, scroll to #scroll-to-reference element
         if(newPage !== oldPage) {
             nextTick(() => {
@@ -71,6 +73,32 @@ watch(
         if(newSelectedCategory !== oldSelectedCategory)
             newPage = 1
 
+        // Show only official packages if show_only_official_packages is true
+        if(newShowOnlyOfficialPackages === '1')
+            results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
+
+        // Selected Category
+        if(newSelectedCategory)
+            results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
+
+        // Sort packages
+        let sortOrder: 'asc' | 'desc' = 'desc'
+        switch (newSortField) {
+            case 'first_release_at':
+                sortOrder = 'desc'
+                break
+            case 'latest_release_at':
+                sortOrder = 'desc'
+                break
+            case 'stars':
+                sortOrder = 'desc'
+                break
+            default:
+                sortOrder = 'desc'
+                break
+        }
+        results.value = orderBy(results.value, newSortField, sortOrder)
+
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
         if (search.value){
@@ -81,38 +109,8 @@ watch(
 
             // Filter packages that their `github` property are included in searchResults's `id` property
             // But keep the order from searchResult's score (desc)
-            results.value = searchResult.map(searchResultItem => laravelPackages.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
+            results.value = searchResult.map(searchResultItem => results.value.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
         }
-        else{
-            // Show only official packages if show_only_official_packages is true
-            if(newShowOnlyOfficialPackages === '1')
-                results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
-            else
-                // Return all packages
-                results.value = laravelPackages
-
-            // Sort packages
-            let sortOrder: 'asc' | 'desc' = 'desc'
-            switch (newSortField) {
-                case 'first_release_at':
-                    sortOrder = 'desc'
-                    break
-                case 'latest_release_at':
-                    sortOrder = 'desc'
-                    break
-                case 'stars':
-                    sortOrder = 'desc'
-                    break
-                default:
-                    sortOrder = 'desc'
-                    break
-            }
-            results.value = orderBy(results.value, newSortField, sortOrder)
-        }
-
-        // Selected Category
-        if(newSelectedCategory)
-            results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
         
         // Paginate results
         const start = (newPage - 1) * pageSize
