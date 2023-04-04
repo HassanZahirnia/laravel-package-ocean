@@ -232,9 +232,10 @@ async function updatePackages() {
             log(chalk.red(`'${github}' is archived and/or read-only`))
         }
 
-        // Repository latest commit is older than 2 months
+        // Repository latest commit is older than specified months below:
+        const months = 3
         const latestCommitDate = new Date(githubData.pushed_at)
-        const twoMonthsAgo = new Date(Date.now() - 2 * 30 * 24 * 60 * 60 * 1000)
+        const twoMonthsAgo = new Date(Date.now() - months * 30 * 24 * 60 * 60 * 1000)
 
         if (latestCommitDate < twoMonthsAgo) 
             log(chalk.red(`Warning: The latest commit for ${composer || npm || github} was older than 2 months ago`))
