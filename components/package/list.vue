@@ -26,24 +26,18 @@ miniSearch.addAll(laravelPackages)
 
 // Route
 const route = useRoute()
-const router = useRouter()
 
 // Search
 const search = useSearch()
 
 // Selected Category
 const selectedCategory = useSelectedCategory()
-// If the selectedCategory is not included in the categories array, set it to an empty string
-selectedCategory.value = route.query.category && categories.includes(route.query.category as typeof categories[number]) ? route.query.category?.toString() : ''
 
 // Sort field
 const sortField = ref<PackageSortFields>('first_release_at')
-sortField.value = route.query.sort?.toString() as PackageSortFields ?? 'first_release_at'
 
 // Only show official packages
 const showOfficialPackages = useShowOfficialPackages()
-// Only use route.query.official if it's value is either '0' or '1', if not set it to '0'
-showOfficialPackages.value = route.query.official && ['0', '1'].includes(route.query.official?.toString()) ? route.query.official?.toString() as '0' | '1' : '0'
 
 // Page
 const page = ref(Number(route.query.page) || 1)
@@ -52,6 +46,33 @@ const pageSize = 9
 // Results
 const results = ref(laravelPackages)
 const resultsPaginated = ref(results.value)
+
+// Update all relevant variables when the route.query changes
+watch(
+    () => route.query,
+    (newQuery, oldQuery) => {
+        // Update the search
+        if(newQuery.search !== oldQuery?.search)
+            search.value = newQuery.search?.toString() || ''
+
+        // Update the page
+        if(newQuery.page !== oldQuery?.page)
+            page.value = Number(newQuery.page) || 1
+
+        // Update the sort field
+        if(newQuery.sort !== oldQuery?.sort)
+            sortField.value = newQuery.sort?.toString() as PackageSortFields || 'first_release_at'
+
+        // If the selectedCategory is not included in the categories array, set it to an empty string
+        if(newQuery.category !== oldQuery?.category)
+            selectedCategory.value = newQuery.category && categories.includes(newQuery.category as typeof categories[number]) ? newQuery.category?.toString() : ''
+
+        // Only use route.query.official if it's value is either '0' or '1', if not set it to '0'
+        if(newQuery.official !== oldQuery?.official)
+            showOfficialPackages.value = newQuery.official && ['0', '1'].includes(newQuery.official?.toString()) ? newQuery.official?.toString() as '0' | '1' : '0'
+    },
+    { immediate: true },
+)
 
 watch(
     [search, page, sortField, selectedCategory, showOfficialPackages],
@@ -126,14 +147,14 @@ watch(
             && newSelectedCategory === ''
         ){
             // Clear the query when page number is 1 and the search is empty
-            router.push({
+            navigateTo({
                 path: '/',
                 query: {},
             })
         }
         else{
             // Push the new query
-            router.push({
+            navigateTo({
                 path: '/',
                 // Only include parameters that are not empty
                 query: {
@@ -152,6 +173,7 @@ watch(
     { immediate: true },
 )
 
+// Callback function for the useOffsetPagination's onPageChange option
 function updatePageNumber(
     { currentPage, currentPageSize }:
     { currentPage: number; currentPageSize: number },
@@ -161,6 +183,7 @@ function updatePageNumber(
     page.value = currentPage
 }
 
+// Offset pagination
 const {
     currentPage,
     pageCount,
@@ -175,12 +198,14 @@ const {
     onPageChange: updatePageNumber,
 })
 
+// Selectbox items for the sort field
 const orderItems: selectboxItem<PackageSortFields>[] = [
     { name: 'Newest', value: 'first_release_at' },
     { name: 'Recently Updated', value: 'latest_release_at' },
     { name: 'Most Stars', value: 'stars' },
 ]
 
+// Selectbox items for the categories
 const categoriesForSelectboxWithAll = [
     { name: 'All Categories', value: '' },
     ...categoriesForSelectbox,
