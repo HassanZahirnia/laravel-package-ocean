@@ -3,10 +3,13 @@ import { laravelPackages } from '@/database/packages'
 import { categories } from '@/database/categories'
 import type { Category, CategoryWithPackagesCount } from '@/types/package'
 
+// Categories with packages count
 const categoriesWithPackagesCount = categories.map((category: Category): CategoryWithPackagesCount => {
+    const packagesCount = laravelPackages.filter(laravelPackage => laravelPackage.category === category).length
+
     return {
         name: category,
-        packagesCount: laravelPackages.filter(laravelPackage => laravelPackage.category === category).length,
+        packagesCount,
     }
 })
 
@@ -19,6 +22,7 @@ const selectedCategory = useSelectedCategory()
         w-full max-w-[15rem] sm:pb-20
         "
         >
+        <!-- Category title -->
         <div class="min-h-[3rem] flex items-center">
             <div
                 class="text-2xl
@@ -29,6 +33,7 @@ const selectedCategory = useSelectedCategory()
                 Categories
             </div>
         </div>
+        <!-- Category list -->
         <div class="w-full pt-4">
             <category-item
                 v-for="category in categoriesWithPackagesCount"

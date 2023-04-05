@@ -38,6 +38,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
                 "
                 >
+                <!-- Title -->
                 <div
                     class="text-2xl sm:text-3xl
                     font-bold
@@ -47,6 +48,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                     >
                     Discover new Laravel packages.
                 </div>
+                <!-- Description -->
                 <div
                     class="mx-auto max-w-sm sm:max-w-md
                     pt-5
@@ -69,6 +71,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                     transition duration-300
                     "
                     >
+                    <!-- Packages count -->
                     <div class="space-y-0.5">
                         <div
                             class="text-3xl
@@ -89,6 +92,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                             Packages
                         </div>
                     </div>
+                    <!-- Authors count -->
                     <div class="space-y-0.5">
                         <div
                             class="text-3xl
@@ -109,6 +113,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                             Authors
                         </div>
                     </div>
+                    <!-- Categories count -->
                     <div class="space-y-0.5">
                         <div
                             class="text-3xl

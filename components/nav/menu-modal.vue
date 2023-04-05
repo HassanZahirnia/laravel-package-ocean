@@ -7,17 +7,22 @@ import {
     DialogTitle,
 } from '@headlessui/vue'
 
+// Open state
 const isOpen = ref(false)
 
+// Close modal
 function closeModal() {
     isOpen.value = false
 }
+
+// Open modal
 function openModal() {
     isOpen.value = true
 }
 </script>
 
 <template>
+    <!-- Burger/Menu button -->
     <button
         class="grid sm:hidden place-items-center
         rounded-lg cursor-pointer
@@ -32,6 +37,7 @@ function openModal() {
         >
         <div class="i-ph-list text-3xl" />
     </button>
+    <!-- Dialog -->
     <TransitionRoot
         appear
         :show="isOpen"
@@ -83,6 +89,7 @@ function openModal() {
                             dark:text-[#EAEFFB]
                             "
                             >
+                            <!-- Dialog title -->
                             <DialogTitle
                                 class="text-lg
                                 flex items-center gap-2 justify-between
@@ -93,9 +100,11 @@ function openModal() {
                                 dark:text-inherit
                                 "
                                 >
+                                <!-- Menu title -->
                                 <div class="">
                                     Menu
                                 </div>
+                                <!-- Close button -->
                                 <button
                                     type="button"
                                     class="rounded-full
@@ -150,6 +159,7 @@ function openModal() {
                                     >
                                     Suggest a new package
                                 </a>
+                                <!-- Icons -->
                                 <div
                                     class="relative
                                     flex gap-5 items-center justify-center

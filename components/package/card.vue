@@ -7,13 +7,17 @@ const $props = defineProps<{
     laravelPackage: Package
 }>()
 
+// Determines whether only official packages should be displayed.
 const showOfficialPackages = useShowOfficialPackages()
 
+// Determines which category of packages should be displayed.
+const selectedCategory = useSelectedCategory()
+
+// If there are compatible versions, use those.
+// Otherwise, use the detected compatible versions.
 const compatible_versions = computed(() => $props.laravelPackage.compatible_versions.length
     ? $props.laravelPackage.compatible_versions
     : $props.laravelPackage.detected_compatible_versions)
-
-const selectedCategory = useSelectedCategory()
 
 // A function to format large numbers
 // Example: 2600 -> 2.6k
@@ -28,7 +32,8 @@ function formatStars(numStars: number): string {
 }
 
 // Get author and name of repo from the github link
-const github_repository_name = computed(() => {
+// Example: https://github.com/spatie/once -> spatie/once
+const repositoryName = computed(() => {
     const githubLink = $props.laravelPackage.github
     const githubLinkParts = githubLink.split('/')
     const author = githubLinkParts[githubLinkParts.length - 2]
@@ -36,11 +41,17 @@ const github_repository_name = computed(() => {
     return `${author}/${repo}`
 })
 
-const show_github_repository_name = computed(() => github_repository_name.value.length > 34 || window.innerWidth < 370)
+// Determines whether to show a tooltip for long repository names
+const showRepositoryNameTooltip = computed(() => repositoryName.value.length > 34 || window.innerWidth < 370)
 
 // Check whether compatible_versions includes the versions from the list active_laravel_versions
-const package_is_compatible_with_latest_laravel_version = computed(() => {
+const isCompatible = computed(() => {
     const compatibleVersions = compatible_versions.value
+
+    // Here we go through each version and make sure the package is compatible with the active versions.
+    // Example: If the package is compatible with Laravel >=9, but the active versions are 9 and 10, it will return true.
+    // Example: If the package is compatible with Laravel 8, but the active versions are 9 and 10, it will return false.
+    // And so on.
     return active_laravel_versions.some((activeVersion) => {
         return compatibleVersions.some((compatibleVersion) => {
             const match = compatibleVersion.match(/^([<>]=?|>=|<=)(\d+)$/)
@@ -70,22 +81,30 @@ const package_is_compatible_with_latest_laravel_version = computed(() => {
 })
 
 
-// Compatiblity and verions list message
+// Compatiblity and versions list message
 const compatiblity_message = computed(() => {
-    if (package_is_compatible_with_latest_laravel_version.value)
+    if (isCompatible.value)
         return `Compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
     else
         return `Not compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
 })
 
+// Hover state
 const isHovering = ref(false)
-// Warning icon animation
+
+// The card DOM node to animate
 const card = ref<HTMLElement | null>(null)
+
+// The warning icon DOM node to animate
 const warningIcon = ref<HTMLElement | null>(null)
+
+// The card animation timeline
 let cardTimeline: gsap.core.Timeline | null = null
+
+// The warning icon animation timeline
 let warningIconTimeline: gsap.core.Timeline | null = null
 
-const should_not_animate_warning_icon = computed(() => package_is_compatible_with_latest_laravel_version.value || compatible_versions.value.length === 0)
+const dontPlayWarningAnimation = computed(() => isCompatible.value || compatible_versions.value.length === 0)
 
 onMounted(() => {
     cardTimeline = gsap.timeline({
@@ -95,18 +114,21 @@ onMounted(() => {
                 cardTimeline?.reverse()
         },
     })
+        // Card
         .to(card.value, {
             y: -4,
             ease: 'sine.out',
             duration: 0.25,
         })
 
-    if(should_not_animate_warning_icon.value) 
+    // Skip the warning animation if the package is compatible
+    if(dontPlayWarningAnimation.value) 
         return
     
     warningIconTimeline = gsap.timeline({
         paused: true,
     })
+        // Warning icon
         .to(warningIcon.value, {
             keyframes: [
                 { rotate: 0, scale: 1 },
@@ -127,15 +149,20 @@ onMounted(() => {
 watch(
     isHovering,
     (value) => {
+        // If hovering, play the animation
         if (value) cardTimeline?.play() 
+        // If not hovering and animation is done, reverse it
         else if(cardTimeline?.progress() === 1)
             cardTimeline?.reverse()
 
-        if(should_not_animate_warning_icon.value) 
+        // Skip the warning animation if the package is compatible
+        if(dontPlayWarningAnimation.value) 
             return
             
+        // If hovering, play the animation from the beginning
         if (value) 
             warningIconTimeline?.play(0)
+        // If not hovering, pause the animation at the beginning
         else
             warningIconTimeline?.pause(0)
         
@@ -168,6 +195,7 @@ watch(
                 hover:shadow-2xl hover:shadow-slate-700/10
                 "
                 >
+                <!-- Crown icon -->
                 <ui-tooltip
                     v-if="laravelPackage.author === 'laravel'"
                     content="Official Laravel Package"
@@ -182,12 +210,19 @@ watch(
                         />
                 </ui-tooltip>
                 <div class="flex items-center justify-between gap-5">
+                    <!-- Category -->
                     <category-pill
                         :category="laravelPackage.category"
                         @click.stop.prevent="selectedCategory = laravelPackage.category"
                         />
-                    <div class="flex items-center gap-2">
-                        <div class="i-ph-star-duotone text-lg text-[#F5B02B]" />
+                    <!-- Stars -->
+                    <div class="flex items-center gap-2 group">
+                        <div
+                            class="i-ph-star-duotone text-lg text-[#F5B02B]
+                            transition duration-500 ease-out
+                            group-hover:rotate-[75deg]
+                            "
+                            />
                         <div class="text-sm">
                             {{ formatStars(laravelPackage.stars) }}
                         </div>
@@ -195,24 +230,28 @@ watch(
                 </div>
                 <div class="flex-1 pt-6">
                     <div class="flex gap-2 items-center">
+                        <!-- Compatibility icons -->
                         <ui-tooltip
                             v-if="compatible_versions.length && !laravelPackage.php_only"
                             :content="compatiblity_message"
-                            :theme="package_is_compatible_with_latest_laravel_version ? 'emerald' : 'amber'"
+                            :theme="isCompatible ? 'emerald' : 'amber'"
                             class="text-xs
                             flex items-center gap-1
                             "
                             >
+                            <!-- Checkmark -->
                             <div
-                                v-if="package_is_compatible_with_latest_laravel_version"
-                                class="i-ph-check-circle-duotone text-xl text-emerald-500"
+                                v-if="isCompatible"
+                                class="i-logos-laravel text-lg text-emerald-500"
                                 />
+                            <!-- Warning -->
                             <div
                                 v-else
                                 ref="warningIcon"
                                 class="i-ph-warning-circle-duotone text-xl text-amber-500"
                                 />
                         </ui-tooltip>
+                        <!-- PHP icon -->
                         <ui-tooltip
                             v-if="laravelPackage.php_only"
                             content="This package is for PHP only <br> It does not require Laravel."
@@ -225,6 +264,7 @@ watch(
                                 class="i-svg-elephant text-lg"
                                 />
                         </ui-tooltip>
+                        <!-- Name -->
                         <div
                             class="font-semibold
                             text-[#545D82]
@@ -237,6 +277,7 @@ watch(
                             {{ laravelPackage.name }}
                         </div>
                     </div>
+                    <!-- Description -->
                     <div
                         class="pt-1.5
                         text-sm
@@ -247,6 +288,7 @@ watch(
                         {{ laravelPackage.description }}
                     </div>
                 </div>
+                <!-- Repo name -->
                 <div
                     class="flex items-center gap-2
                     pt-2
@@ -257,10 +299,10 @@ watch(
                     <div class="i-ph-github-logo-duotone text-xl" />
                     <ui-tooltip
                         class="text-xs font-medium truncate"
-                        :content="github_repository_name"
-                        :condition="show_github_repository_name"
+                        :content="repositoryName"
+                        :condition="showRepositoryNameTooltip"
                         >
-                        {{ github_repository_name }}
+                        {{ repositoryName }}
                     </ui-tooltip>
                 </div>
             </a>

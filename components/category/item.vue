@@ -8,14 +8,20 @@ defineProps<{
     category: CategoryWithPackagesCount
 }>()
 
+// The state of hovering
 const isHovering = ref(false)
+
+// The DOM node to animate
 const item = ref<HTMLElement | null>(null)
+
+// The GSAP timeline
 let timeline: gsap.core.Timeline | null = null
 
 onMounted(() => {
     timeline = gsap.timeline({
         paused: true,
         onComplete: () => {
+            // If not hovering, reverse the animation
             if(!isHovering.value)
                 timeline?.reverse()
         },
@@ -30,7 +36,9 @@ onMounted(() => {
 watch(
     isHovering,
     (value) => {
-        if (value) timeline?.play() 
+        // If hovering, play the animation
+        if (value) timeline?.play()
+        // If not hovering and animation is done, reverse it
         else if(timeline?.progress() === 1)
             timeline?.reverse()
     })
@@ -41,8 +49,7 @@ watch(
         ref="item"
         class="relative cursor-pointer
         py-2.5
-        flex
-        items-center gap-3
+        flex items-center gap-3
         "
         @mouseenter="isHovering = true"
         @mouseleave="isHovering = false"
@@ -75,6 +82,7 @@ watch(
                 'bg-zinc-200/50 text-zinc-500 dark:bg-zinc-500/20 dark:text-zinc-400': category.name === 'Utilities & Helpers' && selectedCategory === 'Utilities & Helpers',
             }"
             >
+            <!-- Category Icons -->
             <div
                 v-if="category.name === 'File Management'"
                 class="i-ph-files-duotone text-xl"
@@ -148,6 +156,7 @@ watch(
                 class="i-ph-wrench-duotone text-xl"
                 />
         </div>
+        <!-- Category name and package count -->
         <div class="">
             <div
                 class="text-sm

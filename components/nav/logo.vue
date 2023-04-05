@@ -4,17 +4,22 @@ import { CustomEase } from 'gsap/all'
 
 gsap.registerPlugin(CustomEase)
 
+// Hover state
 const isHovering = ref(false)
 
+// Fish animation timeline
 let fishTimeline: gsap.core.Timeline | null = null
 
+// Animations
 onMounted(() => {
     fishTimeline = gsap.timeline({
         paused: true,
         onComplete: () => {
+            // Reset the timeline when it is complete
             fishTimeline?.pause(0)
         },
     })
+        // Logo
         .to('.gsap-nav-logo', {
             keyframes: {
                 rotate: [0, 20, 0],
@@ -23,6 +28,7 @@ onMounted(() => {
             ease: 'power4.out',
             duration: 1.5,
         })
+        // Fish
         .to('.gsap-nav-fish', {
             keyframes: {
                 '0%': { autoAlpha: 0, rotate: -15 },
@@ -35,6 +41,7 @@ onMounted(() => {
             ease: CustomEase.create('custom', 'M0,0 C0,0.302 1,0.7 1,1 '),
             duration: 0.8,
         }, '<')
+        // Ocean
         .to('.gsap-nav-ocean', {
             keyframes: {
                 rotate: [0, 10, 0],
@@ -43,6 +50,7 @@ onMounted(() => {
             ease: 'bounce.out',
             duration: 1,
         }, '>-0.1')
+        // Droplet
         .to('.gsap-nav-droplet-1', {
             keyframes: {
                 '0%': { autoAlpha: 0, x: 0, y: 0, scale: 0 },
@@ -60,8 +68,10 @@ watch(
     isHovering,
     (value) => {
         if (value) {
+            // Play the timeline from the beginning if it's not already playing
             if(fishTimeline?.progress() === 0)
                 fishTimeline?.play()
+            // Play the timeline from the beginning if it's past the halfway point
             if(fishTimeline && fishTimeline?.progress() >= 0.5)
                 fishTimeline?.play(0)
         }
@@ -119,7 +129,7 @@ watch(
                     "
                     />
             </div>
-            <!-- Brand -->
+            <!-- Brand name -->
             <div class="text-[#090959] dark:text-inherit">
                 <div class="text-lg leading-snug">
                     Laravel

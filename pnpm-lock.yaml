@@ -19,6 +19,9 @@ devDependencies:
   '@iconify-json/fluent-emoji':
     specifier: ^1.1.13
     version: 1.1.13
+  '@iconify-json/logos':
+    specifier: ^1.1.24
+    version: 1.1.24
   '@iconify-json/ph':
     specifier: ^1.1.5
     version: 1.1.5
@@ -966,6 +969,12 @@ packages:
 
   /@iconify-json/fluent-emoji@1.1.13:
     resolution: {integrity: sha512-9tyClxWzrLwbfItv10/oUp3G7s5X+MUa0VN5P8nN2gmVg9Uy87HoZnDt3IRKNwbyqncXRr3p0VoWuv/Tg2jUCg==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/logos@1.1.24:
+    resolution: {integrity: sha512-A93dQCvPlka1c5Mn52lQYW4kEQkd3+oXzYI9ju2n8xW2aBJOyAltyJYcYWeVhw7bofJ0bj66Cw/r9avBCiKH0Q==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

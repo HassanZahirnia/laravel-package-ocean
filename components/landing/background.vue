@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
+// Color mode
 const colorMode = useColorMode()
+
+// Check if 'light' mode is active
 const isLight = computed(() => colorMode.value === 'sepia' || colorMode.value === 'light')
 
+// Animations
 onMounted(() => {
     gsap.set('.gsap-background-blur, .gsap-background-blur-opacity-70', {
         autoAlpha: 0,
@@ -51,6 +55,7 @@ onMounted(() => {
         top-[-10vw] right-[calc(10rem-15vw)] 
         "
         />
+    <!-- Purple blur for dark theme -->
     <img
         v-show="!colorMode.unknown && !isLight"
         src="@/assets/images/pink-blur-dark.webp"
@@ -81,6 +86,7 @@ onMounted(() => {
         left-[6vw] min-[600px]:left-[calc(10rem-20vw)]
         "
         />
+    <!-- Blue blur for dark theme -->
     <img
         v-show="!colorMode.unknown && !isLight"
         src="@/assets/images/blue-blur-dark.webp"

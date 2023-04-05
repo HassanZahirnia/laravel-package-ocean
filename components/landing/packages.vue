@@ -1,9 +1,13 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 
+// Color mode
 const colorMode = useColorMode()
+
+// Check if 'light' mode is active
 const isLight = computed(() => colorMode.value === 'sepia' || colorMode.value === 'light')
 
+// Animations
 onMounted(() => {
     gsap.set('.gsap-emerald-background-blur, .gsap-emerald-background-blur-dark', {
         autoAlpha: 0,
@@ -29,6 +33,7 @@ onMounted(() => {
         dark:text-[#EAEFFB]
         "
         >
+        <!-- Emerald background -->
         <img
             v-show="!colorMode.unknown && isLight"
             src="@/assets/images/emerald-blur.webp"
@@ -43,6 +48,7 @@ onMounted(() => {
             -translate-y-1/2 translate-x-1/2
             "
             />
+        <!-- Emerald background for dark theme -->
         <img
             v-show="!colorMode.unknown && !isLight"
             src="@/assets/images/emerald-blur.webp"
@@ -57,6 +63,7 @@ onMounted(() => {
             -translate-y-1/2 translate-x-1/2
             "
             />
+        <!-- Categories & Packages list -->
         <ClientOnly
             fallback-tag="span"
             fallback=""
