@@ -95,6 +95,10 @@ watch(
         if(newSelectedCategory !== oldSelectedCategory)
             newPage = 1
 
+        // If newShowOfficialPackages and oldShowOfficialPackages are not equal, set page to 1
+        if(newShowOfficialPackages !== oldShowOnlyOfficialPackages)
+            newPage = 1
+
         // Show only official packages if showOfficialPackages is true
         if(newShowOfficialPackages === '1')
             results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
@@ -145,6 +149,7 @@ watch(
             && newPage === 1 && newSearch === ''
             && newSortField === 'first_release_at'
             && newSelectedCategory === ''
+            && newShowOfficialPackages === '0'
         ){
             // Clear the query when page number is 1 and the search is empty
             navigateTo({
