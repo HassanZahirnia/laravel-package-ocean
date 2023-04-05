@@ -3,12 +3,12 @@
     "short_name": "",
     "icons": [
         {
-            "src": "https://laravel-package-ocean.com/favicon/android-chrome-192x192.png?v=tepFhZKP8",
+            "src": "/favicon/android-chrome-192x192.png?v=tepFhZKP8",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://laravel-package-ocean.com/favicon/android-chrome-512x512.png?v=tepFhZKP8",
+            "src": "/favicon/android-chrome-512x512.png?v=tepFhZKP8",
             "sizes": "512x512",
             "type": "image/png"
         }
