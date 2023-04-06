@@ -232,10 +232,12 @@ const categoriesForSelectboxWithAll = [
                 flex-wrap sm:flex-nowrap
                 "
                 >
+                <!-- Title -->
                 <div class="text-2xl font-semibold">
                     {{ results.length }}
                     Packages
                 </div>
+                <!-- Category selected -->
                 <transition
                     enter-active-class="duration-150 ease-out"
                     enter-from-class="translate-x-2 opacity-0"
@@ -278,19 +280,20 @@ const categoriesForSelectboxWithAll = [
                 justify-center lg:justify-end
                 "
                 >
-                <!-- Official package toggle -->
+                <!-- Crown/Official package toggle -->
                 <div class="flex-1 flex justify-start min-[920px]:justify-end w-40">
                     <div
                         class="relative rounded-xl cursor-pointer group select-none
-                        transition-all duration-300
+                        transition-all duration-300 ease-out
+                        delay-75
                         overflow-hidden
                         w-40 lg:w-11 h-11
                         flex gap-2 items-center
                         lg:hover:w-40
                         "
                         :class="{
-                            'bg-white/50 dark:bg-[#362B59]/20 dark:hover:bg-[#362B59]/30': showOfficialPackages === '0',
-                            'lg:w-40 bg-white dark:bg-indigo-500/20 dark:hover:bg-indigo-500/10': showOfficialPackages === '1',
+                            'bg-white/50 dark:bg-[#362B59]/30 dark:hover:bg-[#362B59]/40': showOfficialPackages === '0',
+                            'lg:w-40 bg-white hover:bg-white/80 dark:bg-indigo-500/20 dark:hover:bg-indigo-500/10': showOfficialPackages === '1',
                         }"
                         @click="showOfficialPackages = showOfficialPackages === '1' ? '0' : '1'"
                         >
