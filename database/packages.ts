@@ -1230,7 +1230,7 @@ export const laravelPackages: Package[] = [
         description: 'A micro-framework built on top of Laravel components for building command-line applications',
         category: 'Code Architecture',
         github: 'https://github.com/laravel-zero/laravel-zero',
-        author: 'Nuno Maduro and Owen Voke',
+        author: 'laravel-zero',
         composer: 'laravel-zero/laravel-zero',
         npm: null,
         stars: 3280,
