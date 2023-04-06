@@ -5451,7 +5451,7 @@ export const laravelPackages: Package[] = [
     {
         name: 'PHP Monitor',
         description: 'Native Mac menu bar app that interacts with Laravel Valet. Helps you manage multiple PHP installations, locate config files and more.',
-        category: 'Utilities & Helpers',
+        category: 'Debugging & Dev Tools',
         github: 'https://github.com/nicoverbruggen/phpmon',
         author: 'Nico Verbruggen',
         composer: null,
