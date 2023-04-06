@@ -25,7 +25,13 @@ export type Package = {
     // Npm package
     npm: string | null
 
-    // Author of the package. Example: 'spatie'
+    // Author of the package.
+    // The author should usually be the name of the composer package owner,
+    // Example: spatie/laravel-data -> spatie
+    // In some cases where there is no composer package, and it's a npm package,
+    // you can use their github username in lowercase, or something they're famous for.
+    // Example: https://github.com/xiCO2k/laravel-vue-i18n which is a npm (laravel-vue-i18n)
+    // package the author becomes -> xico2k
     author: string
 
     // Number of stars on Github. Example: 5194
