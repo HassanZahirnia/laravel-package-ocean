@@ -5453,7 +5453,7 @@ export const laravelPackages: Package[] = [
         description: 'Native Mac menu bar app that interacts with Laravel Valet. Helps you manage multiple PHP installations, locate config files and more.',
         category: 'Debugging & Dev Tools',
         github: 'https://github.com/nicoverbruggen/phpmon',
-        author: 'Nico Verbruggen',
+        author: 'nicoverbruggen',
         composer: null,
         npm: null,
         stars: 2620,
