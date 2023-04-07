@@ -19,6 +19,9 @@ devDependencies:
   '@iconify-json/fluent-emoji':
     specifier: ^1.1.13
     version: 1.1.13
+  '@iconify-json/fluent-emoji-flat':
+    specifier: ^1.1.11
+    version: 1.1.11
   '@iconify-json/logos':
     specifier: ^1.1.24
     version: 1.1.24
@@ -963,6 +966,12 @@ packages:
 
   /@iconify-json/carbon@1.1.16:
     resolution: {integrity: sha512-AD8bcnRSGA0WfcGEass2FbA0sagrUzrpFx5WchuDy3uf7yKBWumdypdQK121DH321fQDl5+zZQ26T6gC9knwUQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/fluent-emoji-flat@1.1.11:
+    resolution: {integrity: sha512-TXPnI/5w/3ANY3klilbua09EAOO1sTtZa1NZnGsPYYYBPcYFbroxojtIE3CK9yLkkM4vZa2TM0thhJpKAAtcug==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true

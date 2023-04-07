@@ -218,9 +218,10 @@ watch(
                     <!-- Stars -->
                     <div class="flex items-center gap-2 group">
                         <div
-                            class="i-ph-star-duotone text-lg text-[#F5B02B]
+                            class="i-fluent-emoji-flat:star w-[1.15rem] h-[1.15rem]
                             transition duration-500 ease-out
-                            group-hover:rotate-[75deg]
+                            group-hover:rotate-[-75deg]
+                            relative -top-px
                             "
                             />
                         <div class="text-sm">
@@ -296,7 +297,7 @@ watch(
                     dark:text-[#BECDF2]
                     "
                     >
-                    <div class="i-ph-github-logo-duotone text-xl" />
+                    <div class="i-carbon:logo-github text-xl" />
                     <ui-tooltip
                         class="text-xs font-medium truncate"
                         :content="repositoryName"

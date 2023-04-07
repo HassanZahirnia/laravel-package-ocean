@@ -15,6 +15,7 @@
         "@iconify-json/bi": "^1.1.16",
         "@iconify-json/carbon": "^1.1.16",
         "@iconify-json/fluent-emoji": "^1.1.13",
+        "@iconify-json/fluent-emoji-flat": "^1.1.11",
         "@iconify-json/logos": "^1.1.24",
         "@iconify-json/ph": "^1.1.5",
         "@iconify/utils": "^2.1.5",
