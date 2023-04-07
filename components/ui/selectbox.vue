@@ -93,7 +93,7 @@ const selectedItem = computed({
                         <li
                             :class="[
                                 active ? 'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100' : 'text-gray-900 dark:text-[#ABB0DD]',
-                                'relative cursor-default select-none py-2 pl-10 pr-4',
+                                'relative cursor-default select-none py-2 pl-9 pr-4',
                             ]"
                             >
                             <span
@@ -104,14 +104,14 @@ const selectedItem = computed({
                                 >{{ item.name }}</span>
                             <span
                                 v-if="selected"
-                                class="pl-3
+                                class="pl-2
                                 flex items-center
                                 text-indigo-600
                                 absolute inset-y-0 left-0
                                 "
                                 >
                                 <div
-                                    class="i-ph-check h-5 w-5"
+                                    class="i-ph-check-bold h-5 w-5"
                                     aria-hidden="true"
                                     />
                             </span>

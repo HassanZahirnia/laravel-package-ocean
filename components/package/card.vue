@@ -182,7 +182,6 @@ watch(
                 class="rounded-3xl relative
                 h-60
                 p-6
-                backdrop-blur-xl
                 transition duration-300
                 flex flex-col
                 bg-white/50

@@ -9,7 +9,7 @@ search.value = route.query.search?.toString() ?? ''
     <div
         class="group rounded-xl relative overflow-hidden
         transition-all duration-500 ease-out
-        delay-75
+        delay-100
         w-full md:max-w-[13rem]
         lg:hover:w-60 lg:focus-within:w-60
         "

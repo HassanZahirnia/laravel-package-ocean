@@ -232,28 +232,31 @@ const categoriesForSelectboxWithAll = [
                 flex-wrap sm:flex-nowrap
                 "
                 >
-                <!-- Title -->
-                <div class="text-2xl font-semibold">
-                    {{ results.length }}
-                    Packages
-                </div>
-                <!-- Category selected -->
                 <transition
+                    mode="out-in"
                     enter-active-class="duration-150 ease-out"
-                    enter-from-class="translate-x-2 opacity-0"
+                    enter-from-class="-translate-x-2 opacity-0"
                     enter-to-class="translate-x-0 opacity-100"
                     leave-active-class="duration-150 ease-in"
                     leave-from-class="translate-x-0 opacity-100"
                     leave-to-class="translate-x-2 opacity-0"
                     >
+                    <!-- Title -->
                     <div
-                        v-if="selectedCategory"
-                        class="py-1 px-3
+                        v-if="!selectedCategory"
+                        class="text-2xl font-semibold"
+                        >
+                        {{ results.length }}
+                        Packages
+                    </div>
+                    <!-- Category selected -->
+                    <div
+                        v-else
+                        class="py-1.5 px-4
                         cursor-pointer truncate rounded-full
                         transition duration-300
                         flex gap-2
                         items-center
-                        text-sm
                         font-medium
                         bg-slate-300/50
                         hover:bg-slate-300
@@ -285,7 +288,7 @@ const categoriesForSelectboxWithAll = [
                     <div
                         class="relative rounded-xl cursor-pointer group select-none
                         transition-all duration-300 ease-out
-                        delay-75
+                        delay-100
                         overflow-hidden
                         w-40 lg:w-11 h-11
                         flex gap-2 items-center
@@ -306,6 +309,7 @@ const categoriesForSelectboxWithAll = [
                         <div
                             class="text-xs truncate
                             transition duration-300
+                            delay-100
                             lg:opacity-0
                             lg:group-hover:opacity-100
                             "
@@ -322,7 +326,7 @@ const categoriesForSelectboxWithAll = [
                 <!-- Sort -->
                 <ui-selectbox
                     v-model="sortField"
-                    class="shrink-0 w-full min-[920px]:w-52 relative z-20"
+                    class="shrink-0 w-full min-[920px]:w-[11.5rem] relative z-20"
                     :items="orderItems"
                     />
                 <!-- Categories -->
