@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { laravelPackages } from '@/database/packages'
 import { categories } from '@/database/categories'
-import type { Category, CategoryWithPackagesCount } from '@/types/package'
+import type { CategoryWithPackagesCount, Category } from '@/types/category'
 
 // Categories with packages count
 const categoriesWithPackagesCount = categories.map((category: Category): CategoryWithPackagesCount => {

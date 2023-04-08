@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
-import type { CategoryWithPackagesCount } from '@/types/package'
+import type { CategoryWithPackagesCount } from '@/types/category'
 
 const selectedCategory = useSelectedCategory()
 

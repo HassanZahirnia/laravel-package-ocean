@@ -3,8 +3,9 @@ import { orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { laravelPackages } from '@/database/packages'
 import type { PackageSortFields } from '@/types/package'
-import { categories, categoriesForSelectbox } from '@/database/categories'
+import { categories } from '@/database/categories'
 import type { selectboxItem } from '@/types/selectbox'
+import type { Category } from '@/types/category'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
@@ -19,6 +20,14 @@ const miniSearch = new MiniSearch({
         fuzzy: 0.1,
         prefix: true,
     },
+})
+
+// Categories for select box
+const categoriesForSelectbox = categories.map((category: Category): selectboxItem<string> => {
+    return {
+        name: category,
+        value: category,
+    }
 })
 
 // Index all packages

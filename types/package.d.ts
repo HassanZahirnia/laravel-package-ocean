@@ -1,10 +1,5 @@
 import { categories } from '@/database/categories'
-
-export type Category = typeof categories[number]
-export type CategoryWithPackagesCount = {
-    name: Category
-    packagesCount: number
-}
+import type { Category } from '@/types/category'
 
 export type Package = {
     // Name of the package. Example: 'Laravel Backup'
