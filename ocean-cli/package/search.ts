@@ -4,31 +4,31 @@ import MiniSearch from 'minisearch'
 import { showPackageMenu } from '~/ocean-cli/package/menu'
 import { Package } from '~/models/Package'
 import { clearScreen, log } from '~/ocean-cli/print'
-import { laravelPackages } from '~/database/packages'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
 
-// Initialize the minisearch instance
-const miniSearch = new MiniSearch({
-    idField: 'github',
-    fields: [
-        'name',
-        'github',
-        'author',
-        'composer',
-        'npm',
-    ],
-    searchOptions: {
-        fuzzy: 0.1,
-        prefix: true,
-    },
-})
+export const showPackageSearch = async function(){
+    const laravelPackages = await Package.query()
 
-// Index all packages
-miniSearch.addAll(laravelPackages)
+    // Initialize the minisearch instance
+    const miniSearch = new MiniSearch({
+        fields: [
+            'name',
+            'github',
+            'author',
+            'composer',
+            'npm',
+        ],
+        searchOptions: {
+            fuzzy: 0.1,
+            prefix: true,
+        },
+    })
 
-export const showPackageSearch = function(){
+    // Index all packages
+    miniSearch.addAll(laravelPackages)
+
     inquirer.prompt({
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
@@ -39,7 +39,7 @@ export const showPackageSearch = function(){
             let results = laravelPackages
             const searchResult = miniSearch.search(input)
 
-            results = searchResult.map(searchResultItem => results.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
+            results = searchResult.map(searchResultItem => results.find(laravelPackage => laravelPackage.id === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
 
             return results.map(result => result.github)
         },

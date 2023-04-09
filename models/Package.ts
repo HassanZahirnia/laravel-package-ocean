@@ -4,6 +4,7 @@ import type { Category } from '../types/category'
 import { categories } from '../database/categories'
 
 class Package extends Model {
+    id?: number
     name!: string
     description!: string
     category!: Category

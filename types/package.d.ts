@@ -2,6 +2,8 @@ import { categories } from '@/database/categories'
 import type { Category } from '@/types/category'
 
 export type Package = {
+    id: number
+
     // Name of the package. Example: 'Laravel Backup'
     name: string
     
@@ -14,12 +16,6 @@ export type Package = {
     // Github URL of the package.'
     github: string
 
-    // Composer package
-    composer: string | null
-
-    // Npm package
-    npm: string | null
-
     // Author of the package.
     // The author should usually be the name of the composer package owner,
     // Example: spatie/laravel-data -> spatie
@@ -28,6 +24,12 @@ export type Package = {
     // Example: https://github.com/xiCO2k/laravel-vue-i18n which is a npm (laravel-vue-i18n)
     // package the author becomes -> xico2k
     author: string
+
+    // Composer package
+    composer: string | null
+
+    // Npm package
+    npm: string | null
 
     // Number of stars on Github. Example: 5194
     stars: number
@@ -54,7 +56,10 @@ export type Package = {
     php_only: boolean
 
     // Date when the package was updated in the database. Example: '2023-03-29T02:57:36+00:00'
-    updated_at: string
+    updated_at: string | null
+
+    // Date when the package was created in the database. Example: '2023-03-29T02:57:36+00:00'
+    created_at: string | null
 }
 
 export type PackageSortFields = 'first_release_at' | 'latest_release_at' | 'stars'

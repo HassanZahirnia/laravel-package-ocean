@@ -2,11 +2,15 @@ import inquirer from 'inquirer'
 import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { initObjection } from '~/ocean-cli/knex'
+import { compileToJSON } from '~/ocean-cli/compile'
 
+// Initialize Objection and Knex (database)
 initObjection()
 
+// Clear the screen
 clearScreen()
 
+// Print the logo
 printLogo()
 
 export const showMainMenu = function(){
@@ -16,11 +20,13 @@ export const showMainMenu = function(){
                 type: 'list',
                 name: 'menu',
                 message: 'Main menu:',
+                loop: false,
                 choices: [
+                    'Database: Compile To JSON',
                     'Package: Add',
                     'Package: Search',
-                    'Package: Run Health Check (outdated/archived repos)',
-                    'Package: Update All (stars, compatible versions, etc.)',
+                    'Package: Run Health Check',
+                    'Package: Update All',
                     'Package: Update Compatible Versions',
                     'Package: Update Github Stars',
                     'Exit',
@@ -29,16 +35,14 @@ export const showMainMenu = function(){
         ])
         .then((answers) => {
             switch (answers.menu) {
-                case 'Package: Add':
+                case 'Database: Compile To JSON':
+                    compileToJSON()
+                        .then(() => showMainMenu())
                     break
                 case 'Package: Search':
-                    // Search for a package
                     showPackageSearch()
-
-                    // Break
                     break
                 case 'Exit':
-                    // Exit the program
                     process.exit(0)
             }
 

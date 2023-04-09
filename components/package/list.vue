@@ -9,7 +9,6 @@ import type { Category } from '@/types/category'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
-    idField: 'github',
     fields: [
         'name',
         'description',
@@ -144,7 +143,7 @@ watch(
 
             // Filter packages that their `github` property are included in searchResults's `id` property
             // But keep the order from searchResult's score (desc)
-            results.value = searchResult.map(searchResultItem => results.value.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
+            results.value = searchResult.map(searchResultItem => results.value.find(laravelPackage => laravelPackage.id === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
         }
         
         // Paginate results
@@ -361,7 +360,7 @@ const categoriesForSelectboxWithAll = [
                 >
                 <package-card
                     v-for="laravelPackage in resultsPaginated"
-                    :key="laravelPackage.github"
+                    :key="laravelPackage.id"
                     :laravel-package="laravelPackage"
                     />
             </div>
