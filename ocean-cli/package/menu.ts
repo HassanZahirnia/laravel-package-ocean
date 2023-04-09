@@ -35,8 +35,7 @@ export const showPackageMenu = function(laravelPackage: Package){
                     clearScreen()
 
                     // Show a success message
-                    log(chalk.magenta(`Package ${laravelPackage.github} has been deleted!
-                    `))
+                    log(chalk.magenta(`Package ${laravelPackage.github} has been deleted!`), '\n')
 
                     // Show the main menu
                     showMainMenu()

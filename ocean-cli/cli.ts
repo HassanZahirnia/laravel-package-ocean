@@ -1,17 +1,12 @@
 import inquirer from 'inquirer'
-import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
+import chalk from 'chalk'
+import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { initObjection } from '~/ocean-cli/knex'
 import { compileToJSON } from '~/ocean-cli/compile'
 
 // Initialize Objection and Knex (database)
 initObjection()
-
-// Clear the screen
-clearScreen()
-
-// Print the logo
-printLogo()
 
 export const showMainMenu = function(){
     inquirer
@@ -20,7 +15,7 @@ export const showMainMenu = function(){
                 type: 'list',
                 name: 'menu',
                 message: 'Main menu:',
-                loop: false,
+                pageSize: 10,
                 choices: [
                     'Database: Compile To JSON',
                     'Package: Add',
@@ -37,6 +32,7 @@ export const showMainMenu = function(){
             switch (answers.menu) {
                 case 'Database: Compile To JSON':
                     compileToJSON()
+                        .then(() => log('\n', chalk.cyan('Database has been compiled to JSON!'), '\n'))
                         .then(() => showMainMenu())
                     break
                 case 'Package: Search':
@@ -49,4 +45,19 @@ export const showMainMenu = function(){
         })
 }
 
-showPackageStats().then(() => showMainMenu())
+// Check if --compile-database-to-json argument is passed
+const compileDatabaseToJsonFlag = process.argv.includes('--compile-database-to-json')
+if (compileDatabaseToJsonFlag) {
+    compileToJSON()
+        .then(() => log('\n', chalk.cyan('Database has been compiled to JSON!'), '\n'))
+        .then(() => process.exit(0))
+}
+else{
+    // Clear the screen
+    clearScreen()
+
+    // Print the logo
+    printLogo()
+
+    showPackageStats().then(() => showMainMenu())
+}

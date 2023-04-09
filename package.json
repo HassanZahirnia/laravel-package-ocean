@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "build": "nuxt build",
+        "build": "tsx ./ocean-cli/cli.ts --compile-database-to-json && nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",

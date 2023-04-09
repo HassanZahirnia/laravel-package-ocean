@@ -1,4 +1,5 @@
-import { writeFileSync } from 'node:fs'
+import { writeFileSync, mkdirSync } from 'node:fs'
+import { resolve } from 'node:path'
 import { Package } from '~/models/Package'
 
 export const compileToJSON = async function(){
@@ -12,6 +13,10 @@ export const compileToJSON = async function(){
             php_only: pkg.php_only ? true : false,
         }
     })
+
+    // Create the directory if it doesn't exist
+    const dirPath = resolve(packagesPath, '..')
+    mkdirSync(dirPath, { recursive: true })
 
     // Write the packages to a JSON file
     await writeFileSync(packagesPath, JSON.stringify(modifiedPackages, null, 4))
