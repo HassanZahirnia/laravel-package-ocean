@@ -97,6 +97,9 @@ devDependencies:
   eslint-plugin-vue:
     specifier: ^9.10.0
     version: 9.10.0(eslint@8.38.0)
+  fuse.js:
+    specifier: ^6.6.2
+    version: 6.6.2
   gradient-string:
     specifier: ^2.0.2
     version: 2.0.2
@@ -3931,6 +3934,11 @@ packages:
 
   /functions-have-names@1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
+    dev: true
+
+  /fuse.js@6.6.2:
+    resolution: {integrity: sha512-cJaJkxCCxC8qIIcPBF9yGxY0W/tVZS3uEISDxhYIdtk8OL93pe+6Zj7LjCqVV4dzbqcriOZ+kQ/NE4RXZHsIGA==}
+    engines: {node: '>=10'}
     dev: true
 
   /gauge@3.0.2:

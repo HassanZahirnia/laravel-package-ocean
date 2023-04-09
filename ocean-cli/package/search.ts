@@ -39,9 +39,11 @@ export const showPackageSearch = async function(){
             let results = laravelPackages
             const searchResult = miniSearch.search(input)
 
+            // Filter out packages that are not in the search result
             results = searchResult.map(searchResultItem => results.find(laravelPackage => laravelPackage.id === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
 
-            return results.map(result => result.github)
+            // Return package name followed by github url
+            return results.map(result => `${result.name} (${result.github})`)
         },
     })
         .then(

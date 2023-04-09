@@ -4,6 +4,7 @@ import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { initObjection } from '~/ocean-cli/knex'
 import { compileToJSON } from '~/ocean-cli/compile'
+import { addPackage } from '~/ocean-cli/package/add'
 
 // Initialize Objection and Knex (database)
 initObjection()
@@ -34,6 +35,9 @@ export const showMainMenu = function(){
                     compileToJSON()
                         .then(() => log('\n', chalk.cyan('Database has been compiled to JSON!'), '\n'))
                         .then(() => showMainMenu())
+                    break
+                case 'Package: Add':
+                    addPackage()
                     break
                 case 'Package: Search':
                     showPackageSearch()
