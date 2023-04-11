@@ -2,7 +2,7 @@ import inquirer from 'inquirer'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import { find } from 'lodash'
 import MiniSearch from 'minisearch'
-import { laravelPackages } from '~/database/packages'
+import { readPackagesDatabase } from '../database'
 import { showPackageMenu } from '~/ocean-cli/package/menu'
 import { clearScreen, log } from '~/ocean-cli/print'
 import type { Package } from '~/types/package'
@@ -25,6 +25,8 @@ export const showPackageSearch = async function(){
             prefix: true,
         },
     })
+
+    const laravelPackages = readPackagesDatabase()
 
     // Index all packages
     miniSearch.addAll(laravelPackages)

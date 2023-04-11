@@ -1,17 +1,17 @@
 import inquirer from 'inquirer'
 import Fuse from 'fuse.js'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
-import MiniSearch from 'minisearch'
 import { find } from 'lodash'
-import { showPackageMenu } from '~/ocean-cli/package/menu'
-import { clearScreen, log } from '~/ocean-cli/print'
+import { readPackagesDatabase } from '../database'
+import { log } from '~/ocean-cli/print'
 import { categories } from '~/database/categories'
-import { laravelPackages } from '~/database/packages'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
 
 export const addPackage = async function(){
+    const laravelPackages = readPackagesDatabase()
+    
     const fuseCategories = new Fuse(categories, {
         minMatchCharLength: 0,
         threshold: 0.2,

@@ -50,7 +50,6 @@
         "jsonc-eslint-parser": "^2.2.0",
         "lodash": "^4.17.21",
         "minisearch": "^6.0.1",
-        "node-json-db": "^2.2.0",
         "nuxt": "^3.3.3",
         "nuxt-gtag": "^0.5.1",
         "nuxt-simple-sitemap": "^2.4.7",

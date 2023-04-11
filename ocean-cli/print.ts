@@ -1,7 +1,7 @@
 import gradient from 'gradient-string'
 import chalk from 'chalk'
 import { filter, isEmpty } from 'lodash'
-import { laravelPackages } from '~/database/packages'
+import { readPackagesDatabase } from './database'
 
 const asciiArt = `
    ___                         ___   __   _____ 
@@ -24,9 +24,11 @@ export const printLogo = function() {
 }
 
 export const showPackageStats = async function() {
-    const composerPackages = filter(laravelPackages, item => isEmpty(item.composer))
-    const npmPackages = filter(laravelPackages, item => isEmpty(item.npm))
-    const nonComposerNpmPackages = filter(laravelPackages, item => !isEmpty(item.composer) && !isEmpty(item.npm))
+    const laravelPackages = readPackagesDatabase()
+
+    const composerPackages = filter(laravelPackages, item => !isEmpty(item.composer))
+    const npmPackages = filter(laravelPackages, item => !isEmpty(item.npm))
+    const nonComposerNpmPackages = filter(laravelPackages, item => isEmpty(item.composer) && isEmpty(item.npm))
 
     log(`
 Total Packages: ${chalk.cyan(laravelPackages.length)}

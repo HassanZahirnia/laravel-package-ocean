@@ -121,9 +121,6 @@ devDependencies:
   minisearch:
     specifier: ^6.0.1
     version: 6.0.1
-  node-json-db:
-    specifier: ^2.2.0
-    version: 2.2.0
   nuxt:
     specifier: ^3.3.3
     version: 3.3.3(@types/node@18.15.11)(eslint@8.38.0)(stylus@0.59.0)(typescript@5.0.4)
@@ -5331,12 +5328,6 @@ packages:
     dev: true
     optional: true
 
-  /node-json-db@2.2.0:
-    resolution: {integrity: sha512-GBuXPjItZ+XivMxR7bhSjVeXKiHZKRN/HbvqrwVemV6V5atcnIIZbg2J2vJHE6RYHydtPCJoUy05YaK4wQO0TA==}
-    dependencies:
-      rwlock: 5.0.0
-    dev: true
-
   /node-releases@2.0.10:
     resolution: {integrity: sha512-5GFldHPXVG/YZmFzJvKK2zDSzPKhEp0+ZR5SVaoSag9fsL5YgHbUHDfnG5494ISANDcK4KwPXAx2xqVEydmd7w==}
     dev: true
@@ -6414,10 +6405,6 @@ packages:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
       queue-microtask: 1.2.3
-    dev: true
-
-  /rwlock@5.0.0:
-    resolution: {integrity: sha512-XgzRqLMfCcm9QfZuPav9cV3Xin5TRcIlp4X/SH3CvB+x5D2AakdlEepfJKDd8ByncvfpcxNWdRZVUl38PS6ZJg==}
     dev: true
 
   /rxjs@7.8.0:
