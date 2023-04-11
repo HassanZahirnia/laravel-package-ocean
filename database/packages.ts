@@ -4931,7 +4931,7 @@ export const laravelPackages: Package[] = [
         ],
         compatible_versions: [],
         php_only: true,
-        updated_at: '2023-04-06T20:59:49.606Z',
+        updated_at: '2023-04-11T16:20:04.200Z',
     },
     {
         name: 'Infection',
