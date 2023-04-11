@@ -1,8 +1,9 @@
 import inquirer from 'inquirer'
 import chalk from 'chalk'
+import { removePackage } from './remove'
 import { clearScreen, log } from '~/ocean-cli/print'
 import { showMainMenu } from '~/ocean-cli/cli'
-import { laravelPackages } from '~/database/packages'
+import type { Package } from '~/types/package'
 
 export const showPackageMenu = function(laravelPackage: Package){
     inquirer
@@ -29,7 +30,7 @@ export const showPackageMenu = function(laravelPackage: Package){
                     break
                 case 'Delete':
                     // Delete the package
-                    // const newPackages = laravelPackages.filter(laravelPackage => laravelPackage.id !== laravelPackage.id)
+                    removePackage(laravelPackage)
 
                     // Clear the screen
                     clearScreen()

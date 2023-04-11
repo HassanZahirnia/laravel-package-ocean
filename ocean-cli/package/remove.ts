@@ -1,8 +1,9 @@
-import { JsonDB, Config } from 'node-json-db'
+import { writeFileSync } from 'node:fs'
+import { laravelPackages } from '~/database/packages'
 import type { Package } from '~/types/package'
 
-const db = new JsonDB(new Config('./database/json/packages', true, false, '/'))
-
-export const removePackage = async function(){
-    return await db.getObject<Package>('/')
+export const removePackage = (laravelPackage: Package) => {
+    const newPackages = laravelPackages.filter(item => item.id !== laravelPackage.id)
+    
+    writeFileSync('database/json/packages.json', JSON.stringify(newPackages, null, 4))
 }

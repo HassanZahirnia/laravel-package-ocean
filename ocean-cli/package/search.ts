@@ -5,6 +5,7 @@ import MiniSearch from 'minisearch'
 import { laravelPackages } from '~/database/packages'
 import { showPackageMenu } from '~/ocean-cli/package/menu'
 import { clearScreen, log } from '~/ocean-cli/print'
+import type { Package } from '~/types/package'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
@@ -47,10 +48,13 @@ export const showPackageSearch = async function(){
     })
         .then(
             (answers) => {
-                // Get the package that matches the github url
-                const result = find(laravelPackages, { github: answers.github.split(' ')[1].slice(1, -1) })
-
                 clearScreen()
+
+                // Extract the GitHub URL from answers.github
+                const githubUrl = answers.github.slice(answers.github.lastIndexOf('(') + 1, answers.github.lastIndexOf(')')).trim()
+
+                // Get the package that matches the extracted GitHub URL
+                const result = find(laravelPackages, laravelPackage => laravelPackage.github === githubUrl) as Package
 
                 log(result)
 
