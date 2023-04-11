@@ -11,7 +11,9 @@ export const name = z
     .string()
     .min(2)
     .max(40)
-    .regex(/^(?!.*[\-\+\(\)&]{2})[0-9a-zA-Z\-\+\(\)&]+(\s[0-9a-zA-Z\-\+\(\)&]+)*$/)
+    .regex(/^(?!.*[\-\+\(\)&]{2})[0-9a-zA-Z\-\+\(\)&]+(\s[0-9a-zA-Z\-\+\(\)&]+)*$/, {
+        message: 'Must contain only letters, numbers, spaces, and the following characters: - + ( ) &',
+    })
     .refine(
         name => !/\s{2,}/.test(name),
         {
@@ -34,7 +36,7 @@ export const name = z
             return capitalizedWords.join(' ') === name
         },
         {
-            message: 'Each word in the name should be capitalized',
+            message: 'Each word should be capitalized',
         },
     )
 
@@ -81,40 +83,39 @@ export const github = z
     .url()
     .min(19)
     .startsWith('https://github.com/')
-    .regex(/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i)
+    .regex(/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i, {
+        message: 'Must be a valid Github URL',
+    })
 
 // Author
 export const author = z
     .string()
-    .nonempty()
     .min(2)
-    .regex(/^[a-zA-Z0-9\-]+$/)
+    .regex(/^[a-zA-Z0-9\-]+$/, {
+        message: 'Must contain only letters, numbers, and the following characters: -',
+    })
 
 // Composer
 export const composer = z
-    .union([
-        z
-            .string()
-            .min(2)
-            .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*$/i)
-            .refine((value) => {
-                const packageName = value.split('/')[1]
-                return packageName.length >= 1 && packageName.length <= 100
-            }, 'Invalid composer package name'),
-        z
-            .null(),
-    ])
+    .string()
+    .min(2)
+    .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*$/i, {
+        message: 'Must be a valid composer package name',
+    })
+    .refine((value) => {
+        const packageName = value.split('/')[1]
+        return packageName.length >= 1 && packageName.length <= 100
+    }, 'Invalid composer package name')
+    .nullable()
 
 // Npm
 export const npm = z
-    .union([
-        z
-            .string()
-            .min(2)
-            .regex(/^(?!-)(?!.*--)[a-zA-Z0-9_.-]+$/),
-        z
-            .null(),
-    ])
+    .string()
+    .min(2)
+    .regex(/^(?!-)(?!.*--)[a-zA-Z0-9_.-]+$/, {
+        message: 'Must be a valid npm package name',
+    })
+    .nullable()
 
 // Stars
 export const stars = z
@@ -132,18 +133,20 @@ export const keywords = z
     })
 
 // First Release At
-export const first_release_at = z
+export const first_release_at = z.coerce
     .date()
 
 // Latest Release At
-export const latest_release_at = z
+export const latest_release_at = z.coerce
     .date()
 
 // Detected Compatible Versions
 export const detected_compatible_versions = z
     .array(z
         .string()
-        .regex(/^(\d+|<=\d+|<\d+|>=\d+|>\d+)$/),
+        .regex(/^(\d+|<=\d+|<\d+|>=\d+|>\d+)$/, {
+            message: 'Must be a valid version constraint, like: >=8 or 10',
+        }),
     )
     .refine(items => new Set(items.map(item => item)).size === items.length, {
         message: 'Must be an array of unique strings',
@@ -157,11 +160,11 @@ export const php_only = z
     .boolean()
 
 // Created At
-export const created_at = z
+export const created_at = z.coerce
     .date()
 
 // Updated At
-export const updated_at = z
+export const updated_at = z.coerce
     .date()
 
 // Laravel Package

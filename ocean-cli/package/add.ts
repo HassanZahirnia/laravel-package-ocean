@@ -1,8 +1,17 @@
 import inquirer from 'inquirer'
 import Fuse from 'fuse.js'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
-import { find } from 'lodash'
-import { readPackagesDatabase } from '../database'
+import { find, isEmpty } from 'lodash'
+import { readPackagesDatabase } from '~/ocean-cli/database'
+import {
+    name as z_name,
+    description as z_description,
+    github as z_github,
+    author as z_author,
+    composer as z_composer,
+    npm as z_npm,
+    php_only as z_php_only,
+} from '~/ocean-cli/validation-rules'
 import { log } from '~/ocean-cli/print'
 import { categories } from '~/database/categories'
 
@@ -23,19 +32,8 @@ export const addPackage = async function(){
             name: 'name',
             message: 'Name:',
             validate: (value: string) => {
-                if (value.trim() === '')
-                    return 'Name is required'
-            
-                if (!/^[a-zA-Z\s]+$/.test(value))
-                    return 'Name must contain only English letters and spaces'
-            
-                if (/\s{2,}/.test(value))
-                    return 'Name must not contain multiple spaces between words'
-
-                if (value.length < 2 || value.length > 40)
-                    return 'Name must be between 2 and 40 characters'
-            
-                return true
+                const result = z_name.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
             filter: (value: string) => {
                 const words = value.split(' ')
@@ -50,19 +48,8 @@ export const addPackage = async function(){
             name: 'description',
             message: 'Description:',
             validate: (value: string) => {
-                if (value.trim() === '')
-                    return 'Description is required'
-
-                if (!/^[a-zA-Z]/.test(value))
-                    return 'Description must start with a letter'
-            
-                if (/\s{2,}/.test(value))
-                    return 'Description must not contain multiple spaces between words'
-
-                if (value.length < 5 || value.length > 100)
-                    return 'Description must be between 5 and 100 characters'
-            
-                return true
+                const result = z_description.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
             filter: (value: string) => {
                 // Capitalize the first letter of the description
@@ -81,26 +68,8 @@ export const addPackage = async function(){
             name: 'github',
             message: 'Github:',
             validate: (value: string) => {
-                if (value.trim() === '')
-                    return 'Github is required'
-
-                try {
-                    new URL(value)
-                }
-                catch (error) {
-                    return 'Github must be a valid URL'
-                }
-
-                if (!/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i.test(value))
-                    return 'Github must be a valid GitHub repository link'
-
-                if (value.length < 20)
-                    return 'Github must be longer than 20 characters'
-
-                if (find(laravelPackages, { github: value }))
-                    return 'This package already exists in the database'
-
-                return true
+                const result = z_github.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
         },
         {
@@ -108,56 +77,33 @@ export const addPackage = async function(){
             name: 'author',
             message: 'Author:',
             validate: (value: string) => {
-                if (value.trim() === '') 
-                    return 'Author is required'
-
-                if (value.length < 2)
-                    return 'Author must be longer than 2 characters'
-
-                if (!/^[a-zA-Z0-9\-]+$/.test(value))
-                    return 'Author must only consist of alphanumeric characters and dashes'
-                return true
+                const result = z_author.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
         },
         {
             type: 'input',
             name: 'composer',
             message: 'Composer(optional, default: null):',
-            default: null,
             validate: (value: string) => {
-                if (value.trim() === '' || value === null) 
-                    return true
-
-                if (value.length < 2)
-                    return 'Composer must be longer than 2 characters'
-
-                if (!/^[a-zA-Z0-9][a-zA-Z0-9\-]*(?!.*\/\/)[a-zA-Z0-9]\/[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9]$/.test(value))
-                    return 'Composer must be in the format "vendor/package"'
-
-                return true
+                if(isEmpty(value)) return true
+                const result = z_composer.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
         },
         {
             type: 'input',
             name: 'npm',
             message: 'Npm(optional, default: null):',
-            default: null,
             validate: (value: string) => {
-                if (value.trim() === '' || value === null) 
-                    return true
-
-                if (value.length < 2)
-                    return 'Npm must be longer than 2 characters'
-
-                if (!/^[a-zA-Z0-9][a-zA-Z0-9\-]*(?!.*\/\/)[a-zA-Z0-9]\/[a-zA-Z0-9][a-zA-Z0-9\-]*[a-zA-Z0-9]$/.test(value))
-                    return 'Npm must be in the format "vendor/package"'
-
-                return true
+                if(isEmpty(value)) return true
+                const result = z_npm.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
         },
         {
             type: 'confirm',
-            name: 'php_only',
+            name: 'php_only (default: false)',
             message: 'Is this a PHP only package (does not require Laravel)?',
             default: false,
         },

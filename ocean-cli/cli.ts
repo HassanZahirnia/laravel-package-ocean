@@ -1,5 +1,7 @@
 import inquirer from 'inquirer'
 import chalk from 'chalk'
+import { laravelPackageSchema } from './validation-rules'
+import { readPackagesDatabase } from './database'
 import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
@@ -39,15 +41,20 @@ export const showMainMenu = function(){
 }
 
 // Check if --compile-database-to-json argument is passed
-// const compileDatabaseToJsonFlag = process.argv.includes('--compile-database-to-json')
-// if (compileDatabaseToJsonFlag) {
-// }
-// else{
+const validateJsonFlag = process.argv.includes('--validate-json')
+if (validateJsonFlag) {
+    const laravelPackages = readPackagesDatabase()
+    const validationResult = laravelPackageSchema.safeParse(laravelPackages)
+
+    if (!validationResult.success) 
+        log(chalk.bgRed('Validation failed!'))
+}
+else{
 // Clear the screen
-clearScreen()
+    clearScreen()
 
-// Print the logo
-printLogo()
+    // Print the logo
+    printLogo()
 
-showPackageStats().then(() => showMainMenu())
-// }
+    showPackageStats().then(() => showMainMenu())
+}
