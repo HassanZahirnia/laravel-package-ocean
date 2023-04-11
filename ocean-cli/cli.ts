@@ -2,12 +2,7 @@ import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
-import { initObjection } from '~/ocean-cli/knex'
-import { compileToJSON } from '~/ocean-cli/compile'
 import { addPackage } from '~/ocean-cli/package/add'
-
-// Initialize Objection and Knex (database)
-initObjection()
 
 export const showMainMenu = function(){
     inquirer
@@ -18,7 +13,6 @@ export const showMainMenu = function(){
                 message: 'Main menu:',
                 pageSize: 10,
                 choices: [
-                    'Database: Compile To JSON',
                     'Package: Add',
                     'Package: Search',
                     'Package: Run Health Check',
@@ -31,11 +25,6 @@ export const showMainMenu = function(){
         ])
         .then((answers) => {
             switch (answers.menu) {
-                case 'Database: Compile To JSON':
-                    compileToJSON()
-                        .then(() => log('\n', chalk.cyan('Database has been compiled to JSON!'), '\n'))
-                        .then(() => showMainMenu())
-                    break
                 case 'Package: Add':
                     addPackage()
                     break
@@ -50,18 +39,15 @@ export const showMainMenu = function(){
 }
 
 // Check if --compile-database-to-json argument is passed
-const compileDatabaseToJsonFlag = process.argv.includes('--compile-database-to-json')
-if (compileDatabaseToJsonFlag) {
-    compileToJSON()
-        .then(() => log('\n', chalk.cyan('Database has been compiled to JSON!'), '\n'))
-        .then(() => process.exit(0))
-}
-else{
-    // Clear the screen
-    clearScreen()
+// const compileDatabaseToJsonFlag = process.argv.includes('--compile-database-to-json')
+// if (compileDatabaseToJsonFlag) {
+// }
+// else{
+// Clear the screen
+clearScreen()
 
-    // Print the logo
-    printLogo()
+// Print the logo
+printLogo()
 
-    showPackageStats().then(() => showMainMenu())
-}
+showPackageStats().then(() => showMainMenu())
+// }

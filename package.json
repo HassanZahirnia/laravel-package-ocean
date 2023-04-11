@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "build": "tsx ./ocean-cli/cli.ts --compile-database-to-json && nuxt build",
+        "build": "nuxt build",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
@@ -48,13 +48,12 @@
         "inquirer": "^9.1.5",
         "inquirer-autocomplete-prompt": "^3.0.0",
         "jsonc-eslint-parser": "^2.2.0",
-        "knex": "^2.4.2",
         "lodash": "^4.17.21",
         "minisearch": "^6.0.1",
+        "node-json-db": "^2.2.0",
         "nuxt": "^3.3.3",
         "nuxt-gtag": "^0.5.1",
         "nuxt-simple-sitemap": "^2.4.7",
-        "objection": "^3.0.1",
         "postcss": "^8.4.21",
         "sqlite3": "^5.1.6",
         "stylus": "^0.59.0",
@@ -62,7 +61,8 @@
         "tippy.js": "^6.3.7",
         "tsx": "^3.12.6",
         "typescript": "^5.0.4",
-        "vue": "^3.2.47"
+        "vue": "^3.2.47",
+        "zod": "^3.21.4"
     },
     "pnpm": {
         "peerDependencyRules": {

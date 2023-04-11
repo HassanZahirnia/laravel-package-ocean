@@ -1,8 +1,8 @@
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { clearScreen, log } from '~/ocean-cli/print'
-import type { Package } from '~/models/Package'
 import { showMainMenu } from '~/ocean-cli/cli'
+import { laravelPackages } from '~/database/packages'
 
 export const showPackageMenu = function(laravelPackage: Package){
     inquirer
@@ -19,7 +19,7 @@ export const showPackageMenu = function(laravelPackage: Package){
                 ],
             },
         ])
-        .then(async(answers) => {
+        .then((answers) => {
             switch (answers.menu) {
                 case 'Update (online)':
                     // Break
@@ -29,7 +29,7 @@ export const showPackageMenu = function(laravelPackage: Package){
                     break
                 case 'Delete':
                     // Delete the package
-                    await laravelPackage.$query().delete()
+                    // const newPackages = laravelPackages.filter(laravelPackage => laravelPackage.id !== laravelPackage.id)
 
                     // Clear the screen
                     clearScreen()

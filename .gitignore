@@ -16,6 +16,3 @@ Thumbs.db
 /.fleet
 /.idea
 /.vscode
-
-# database
-/database/json

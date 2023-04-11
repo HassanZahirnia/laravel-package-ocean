@@ -2,10 +2,11 @@ import inquirer from 'inquirer'
 import Fuse from 'fuse.js'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import MiniSearch from 'minisearch'
+import { find } from 'lodash'
 import { showPackageMenu } from '~/ocean-cli/package/menu'
-import { Package } from '~/models/Package'
 import { clearScreen, log } from '~/ocean-cli/print'
 import { categories } from '~/database/categories'
+import { laravelPackages } from '~/database/packages'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
@@ -79,7 +80,7 @@ export const addPackage = async function(){
             type: 'input',
             name: 'github',
             message: 'Github:',
-            validate: async(value: string) => {
+            validate: (value: string) => {
                 if (value.trim() === '')
                     return 'Github is required'
 
@@ -96,7 +97,7 @@ export const addPackage = async function(){
                 if (value.length < 20)
                     return 'Github must be longer than 20 characters'
 
-                if (await Package.query().where('github', value).first())
+                if (find(laravelPackages, { github: value }))
                     return 'This package already exists in the database'
 
                 return true
@@ -106,7 +107,7 @@ export const addPackage = async function(){
             type: 'input',
             name: 'author',
             message: 'Author:',
-            validate: async(value: string) => {
+            validate: (value: string) => {
                 if (value.trim() === '') 
                     return 'Author is required'
 
@@ -123,7 +124,7 @@ export const addPackage = async function(){
             name: 'composer',
             message: 'Composer(optional, default: null):',
             default: null,
-            validate: async(value: string) => {
+            validate: (value: string) => {
                 if (value.trim() === '' || value === null) 
                     return true
 
@@ -141,7 +142,7 @@ export const addPackage = async function(){
             name: 'npm',
             message: 'Npm(optional, default: null):',
             default: null,
-            validate: async(value: string) => {
+            validate: (value: string) => {
                 if (value.trim() === '' || value === null) 
                     return true
 
@@ -162,7 +163,7 @@ export const addPackage = async function(){
         },
     ])
         .then(
-            async(answers) => {
+            (answers) => {
                 log(answers)
             },
         )

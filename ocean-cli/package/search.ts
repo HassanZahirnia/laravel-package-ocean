@@ -1,16 +1,15 @@
 import inquirer from 'inquirer'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
+import { find } from 'lodash'
 import MiniSearch from 'minisearch'
+import { laravelPackages } from '~/database/packages'
 import { showPackageMenu } from '~/ocean-cli/package/menu'
-import { Package } from '~/models/Package'
 import { clearScreen, log } from '~/ocean-cli/print'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
 
 export const showPackageSearch = async function(){
-    const laravelPackages = await Package.query()
-
     // Initialize the minisearch instance
     const miniSearch = new MiniSearch({
         fields: [
@@ -47,14 +46,15 @@ export const showPackageSearch = async function(){
         },
     })
         .then(
-            async(answers) => {
-                const result = await Package.query().where('github', answers.github).first()
+            (answers) => {
+                // Get the package that matches the github url
+                const result = find(laravelPackages, { github: answers.github.split(' ')[1].slice(1, -1) })
 
                 clearScreen()
 
-                log(result?.toJSON())
+                log(result)
 
-                showPackageMenu(result as Package)
+                showPackageMenu(result)
             },
         )
 }
