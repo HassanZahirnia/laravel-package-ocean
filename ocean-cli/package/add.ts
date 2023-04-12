@@ -2,10 +2,14 @@ import inquirer from 'inquirer'
 import Fuse from 'fuse.js'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import { find, isEmpty } from 'lodash'
+import axios from 'axios'
+import dotenv from 'dotenv'
 import type { packagistData } from '../utils/composer'
-import { extract_packagist_detected_compatible_versions, extract_packagist_first_release_at, extract_packagist_latest_release_at, fetch_packagist_data } from '../utils/composer'
-import { extract_npm_first_release_at, extract_npm_latest_release_at, fetch_npm_data } from '../utils/npm'
-import type { npmData } from '../utils/npm'
+import { extract_packagist_detected_compatible_versions, extract_packagist_first_release_at, extract_packagist_latest_release_at } from '../utils/composer'
+import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../utils/npm'
+import type { NpmData } from '../utils/npm'
+import type { GithubData } from '../utils/github'
+import { extract_github_stars } from '../utils/github'
 import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
 import {
     name as z_name,
@@ -16,7 +20,6 @@ import {
     npm as z_npm,
     php_only as z_php_only,
 } from '~/ocean-cli/validation-rules'
-import { log } from '~/ocean-cli/print'
 import { categories } from '~/database/categories'
 import type { Package } from '~/types/package'
 
@@ -134,7 +137,9 @@ export const addPackage = async function(){
         },
     ])
         .then(
-            (answers: Package) => {
+            async(answers: Package) => {
+                dotenv.config()
+
                 answers.id = laravelPackages.length + 1
                 answers.composer = isEmpty(answers.composer) ? null : answers.composer
                 answers.npm = isEmpty(answers.npm) ? null : answers.npm
@@ -148,41 +153,30 @@ export const addPackage = async function(){
                 answers.compatible_versions = []
 
                 if(answers.composer && !answers.php_only){
-                    fetch_packagist_data(answers.composer)
-                        .then((data) => {
-                            const packagistData = data as packagistData
-                            answers.first_release_at = extract_packagist_first_release_at(packagistData)
-                            answers.latest_release_at = extract_packagist_latest_release_at(packagistData)
-                            answers.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
-
-                            laravelPackages.push(answers)
-
-                            writePackagesDatabase(laravelPackages)
-                        })
-                        .catch((error) => {
-                            log(error)
-                        })
+                    const { data: packagistData }: { data: packagistData }
+                        = await axios.get(`https://packagist.org/packages/${answers.composer}.json`)
+                    
+                    answers.first_release_at = extract_packagist_first_release_at(packagistData)
+                    answers.latest_release_at = extract_packagist_latest_release_at(packagistData)
+                    answers.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
                 }
                 else if(answers.npm){
-                    fetch_npm_data(answers.npm)
-                        .then((data) => {
-                            const npmData = data as npmData
-                            answers.first_release_at = extract_npm_first_release_at(npmData)
-                            answers.latest_release_at = extract_npm_latest_release_at(npmData)
-
-                            laravelPackages.push(answers)
-
-                            writePackagesDatabase(laravelPackages)
-                        })
-                        .catch((error) => {
-                            log(error)
-                        })
+                    const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${answers.npm}`)
+                    answers.first_release_at = extract_npm_first_release_at(npmData)
+                    answers.latest_release_at = extract_npm_latest_release_at(npmData)
                 }
-                else{
-                    laravelPackages.push(answers)
 
-                    writePackagesDatabase(laravelPackages)
-                }
+                const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${answers.github.substring(19)}`, {
+                    headers: {
+                        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+                    },
+                })
+
+                answers.stars = extract_github_stars(githubData)
+
+                laravelPackages.push(answers)
+
+                writePackagesDatabase(laravelPackages)
             },
         )
 }

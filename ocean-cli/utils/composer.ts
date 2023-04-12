@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 export type packagistData = {
     package: {
         time: string
@@ -16,11 +14,6 @@ export type packagistData = {
             }
         }
     }
-}
-
-export const fetch_packagist_data = async(composer: string) => {
-    const { data: packagistData } = await axios.get(`https://packagist.org/packages/${composer}.json`)
-    return packagistData as packagistData
 }
 
 export const extract_packagist_first_release_at = (packagistData: packagistData) => packagistData.package.time

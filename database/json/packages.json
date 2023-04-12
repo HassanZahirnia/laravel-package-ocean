@@ -7687,5 +7687,27 @@
         "php_only": false,
         "updated_at": "2023-04-06T21:02:26.086Z",
         "created_at": "2023-04-09T13:58:49.010Z"
+    },
+    {
+        "name": "Laravel Date Scopes",
+        "description": "A big range of useful date scopes for your eloquent models.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/laracraft-tech/laravel-date-scopes",
+        "author": "laracraft-tech",
+        "composer": "laracraft-tech/laravel-date-scopes",
+        "npm": null,
+        "php_only": false,
+        "id": 327,
+        "updated_at": "2023-04-12T00:55:15.324Z",
+        "created_at": "2023-04-12T00:55:15.324Z",
+        "stars": 107,
+        "keywords": [],
+        "first_release_at": "2023-04-08T20:33:57+00:00",
+        "latest_release_at": "2023-04-08T20:46:06+00:00",
+        "detected_compatible_versions": [
+            "9",
+            "10"
+        ],
+        "compatible_versions": []
     }
 ]
