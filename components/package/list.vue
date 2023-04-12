@@ -214,9 +214,21 @@ const {
 
 // Selectbox items for the sort field
 const orderItems: selectboxItem<PackageSortFields>[] = [
-    { name: 'Newest', value: 'first_release_at' },
-    { name: 'Recently Updated', value: 'latest_release_at' },
-    { name: 'Most Stars', value: 'stars' },
+    {
+        name: 'Newest',
+        value: 'first_release_at',
+        detail: 'Freshly released',
+    },
+    {
+        name: 'Recently Updated',
+        value: 'latest_release_at',
+        detail: 'Recently updated',
+    },
+    {
+        name: 'Most Stars',
+        value: 'stars',
+        detail: 'Popular',
+    },
 ]
 
 // Selectbox items for the categories
@@ -335,7 +347,7 @@ const categoriesForSelectboxWithAll = [
                 <!-- Sort -->
                 <ui-selectbox
                     v-model="sortField"
-                    class="shrink-0 w-full min-[920px]:w-[11.5rem] relative z-20"
+                    class="shrink-0 w-full min-[920px]:w-[12.5rem] relative z-20"
                     :items="orderItems"
                     />
                 <!-- Categories -->

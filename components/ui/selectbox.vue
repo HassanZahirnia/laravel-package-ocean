@@ -89,7 +89,7 @@ const selectedItem = computed({
                     >
                     <ListboxOption
                         v-for="item in items"
-                        v-slot="{ active, selected }"
+                        v-slot="{ selected }"
                         :key="item.name"
                         :value="item"
                         as="template"
@@ -103,22 +103,35 @@ const selectedItem = computed({
                             transition duration-200
                             "
                             :class="[
-                                active ?
+                                selected ?
                                     'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100'
                                     : 'text-gray-900 dark:text-[#ABB0DD]',
                             ]"
                             >
-                            <span
-                                class="transition duration-200
-                                group-hover:translate-x-0.5"
-                                :class="[
-                                    selected ? 'font-medium' : 'font-normal',
-                                    'block truncate',
-                                ]"
-                                >{{ item.name }}</span>
+                            <div
+                                class="pl-1
+                                transition duration-200
+                                group-hover:translate-x-0.5
+                                "
+                                >
+                                <div
+                                    :class="[
+                                        selected ? 'font-medium' : 'font-normal',
+                                        'block truncate',
+                                    ]"
+                                    >
+                                    {{ item.name }}
+                                </div>
+                                <div
+                                    v-if="item.detail"
+                                    class="text-xs truncate opacity-60"
+                                    >
+                                    {{ item.detail }}
+                                </div>
+                            </div>
                             <span
                                 v-if="selected"
-                                class="pl-2
+                                class="pl-2.5
                                 flex items-center
                                 transition duration-200
                                 text-indigo-600
