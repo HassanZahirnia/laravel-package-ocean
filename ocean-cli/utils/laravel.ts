@@ -13,7 +13,7 @@ export const fetch_active_laravel_versions = async() => {
 }
 
 export const writeActiveLaravelVersion = (
-    { noMenu } = { noMenu: false },
+    { noMenu = false } = {},
 ) => {
     fetch_active_laravel_versions().then((activeVersions) => {
         const laravelDatabase = readLaravelDatabase()

@@ -7563,5 +7563,27 @@
         "php_only": false,
         "updated_at": "2023-04-12T14:26:04.979Z",
         "created_at": "2023-04-12T14:26:04.979Z"
+    },
+    {
+        "name": "Laravel URL Shortener",
+        "description": "URL redirection with password protection, expiration, limits, activation dates, and click tracking.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/YorCreative/Laravel-UrlShortener",
+        "author": "yorcreative",
+        "composer": "yorcreative/laravel-urlshortener",
+        "npm": null,
+        "stars": 62,
+        "keywords": [],
+        "first_release_at": "2022-08-22T17:52:28+00:00",
+        "latest_release_at": "2023-04-12T15:11:03+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-12T15:29:46.961Z",
+        "created_at": "2023-04-12T15:29:46.961Z"
     }
 ]

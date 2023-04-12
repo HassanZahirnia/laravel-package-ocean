@@ -69,12 +69,11 @@ export const description = z
     )
     .refine(
         (description) => {
-            // Regular expression to check for special characters that need to be escaped in JSON
-            const specialCharRegex = /["\\/]/
+            const specialCharRegex = /[\"\\\b\f\n\r\t]/g
             return !specialCharRegex.test(description)
         },
         {
-            message: 'Must not contain characters that need to be escaped in JSON',
+            message: 'Must not contain characters that need to be escaped in JSON strings',
         },
     )
 

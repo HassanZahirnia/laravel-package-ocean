@@ -1,9 +1,7 @@
 import inquirer from 'inquirer'
-import chalk from 'chalk'
-import { laravelPackageArraySchema } from './validation-rules'
-import { readPackagesDatabase } from './database'
 import { writeActiveLaravelVersion } from './utils/laravel'
-import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print'
+import { validateJson } from './utils/health'
+import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
 
@@ -23,6 +21,8 @@ export const showMainMenu = function(){
                     'Package: Update Compatible Versions',
                     'Package: Update Github Stars',
                     'Laravel: Update Active Versions',
+                    'Health: Validate JSON',
+                    'Health: Validate JSON (Verbose)',
                     'Exit',
                 ],
             },
@@ -38,6 +38,12 @@ export const showMainMenu = function(){
                 case 'Laravel: Update Active Versions':
                     writeActiveLaravelVersion()
                     break
+                case 'Health: Validate JSON':
+                    validateJson()
+                    break
+                case 'Health: Validate JSON (Verbose)':
+                    validateJson({ verbose: true })
+                    break
                 case 'Exit':
                     process.exit(0)
             }
@@ -50,23 +56,7 @@ const validateJsonFlag = process.argv.includes('--validate-json')
 const updateActiveLaravelVersionsFlag = process.argv.includes('--update-active-laravel-versions')
 
 if (validateJsonFlag) {
-    const laravelPackages = readPackagesDatabase()
-    const validationResult = laravelPackageArraySchema.safeParse(laravelPackages)
-
-    if (!validationResult.success){ 
-        log(chalk.bgRed('Validation failed!'))
-        if (verboseFlag) {
-            const errorsWithGithub = validationResult.error.errors.map((error) => {
-                const packageIndex = error.path[0] as number // Get the index of the package in the array
-                const github = laravelPackages[packageIndex].github // Get the github property of the package
-                return {
-                    ...error,
-                    github, // Add the github property to the error object
-                }
-            })
-            log(errorsWithGithub)
-        }
-    }
+    validateJson({ verbose: verboseFlag })
 }
 else if(updateActiveLaravelVersionsFlag){
     writeActiveLaravelVersion({ noMenu: true })
