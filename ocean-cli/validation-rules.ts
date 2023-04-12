@@ -166,7 +166,7 @@ export const updated_at = z.coerce
     .date()
 
 // Laravel Package
-export const laravelPackage = z.object({
+export const laravelPackageSchema = z.object({
     name,
     description,
     category,
@@ -197,7 +197,7 @@ export const laravelPackage = z.object({
     )
 
 // Package Schema
-export const laravelPackageSchema = z.array(laravelPackage)
+export const laravelPackageArraySchema = z.array(laravelPackageSchema)
     // Make sure the github in the array is unique
     .refine(items => new Set(items.map(item => item.github)).size === items.length, {
         message: 'Github must be unique in the array',

@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 import chalk from 'chalk'
-import { laravelPackageSchema } from './validation-rules'
+import { laravelPackageArraySchema } from './validation-rules'
 import { readPackagesDatabase } from './database'
 import { writeActiveLaravelVersion } from './utils/laravel'
 import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print'
@@ -51,20 +51,19 @@ const updateActiveLaravelVersionsFlag = process.argv.includes('--update-active-l
 
 if (validateJsonFlag) {
     const laravelPackages = readPackagesDatabase()
-    const validationResult = laravelPackageSchema.safeParse(laravelPackages)
+    const validationResult = laravelPackageArraySchema.safeParse(laravelPackages)
 
     if (!validationResult.success){ 
         log(chalk.bgRed('Validation failed!'))
         if(verboseFlag)
             log(validationResult.error.errors)
-        
     }
 }
 else if(updateActiveLaravelVersionsFlag){
     writeActiveLaravelVersion({ noMenu: true })
 }
 else{
-// Clear the screen
+    // Clear the screen
     clearScreen()
 
     // Print the logo

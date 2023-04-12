@@ -21,7 +21,7 @@ import {
     composer as z_composer,
     npm as z_npm,
     php_only as z_php_only,
-} from '~/ocean-cli/validation-rules'
+    laravelPackageSchema } from '~/ocean-cli/validation-rules'
 import { categories } from '~/database/categories'
 import type { Package } from '~/types/package'
 
@@ -189,9 +189,16 @@ export const addPackage = async function(){
 
                 newPackage.stars = extract_github_stars(githubData)
 
-                laravelPackages.push(newPackage)
+                const validationResult = laravelPackageSchema.safeParse(newPackage)
 
-                writePackagesDatabase(laravelPackages)
+                if(!validationResult.success) {
+                    throw new Error(validationResult.error.errors.map(error => error.message).join('\n')) 
+                }
+                else{
+                    laravelPackages.push(newPackage)
+                    writePackagesDatabase(laravelPackages)
+                }
+
             },
         )
 }
