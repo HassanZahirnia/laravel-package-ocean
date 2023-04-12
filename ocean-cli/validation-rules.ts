@@ -103,8 +103,11 @@ export const composer = z
         message: 'Must be a valid composer package name',
     })
     .refine((value) => {
-        const packageName = value.split('/')[1]
-        return packageName.length >= 1 && packageName.length <= 100
+        if(value) {
+            const packageName = value.split('/')[1]
+            return packageName.length >= 1 && packageName.length <= 100
+        }
+        return true
     }, 'Invalid composer package name')
     .nullable()
 
@@ -187,6 +190,17 @@ export const laravelPackage = z.object({
     created_at,
     updated_at,
 })
+    .refine(
+        (item) => {
+            const keywords = item.keywords
+            const name = item.name
+            const description = item.description
+            return keywords.every(keyword => !name.includes(keyword) && !description.includes(keyword))
+        },
+        {
+            message: 'Keywords must not be used in name and description',
+        },
+    )
 
 // Package Schema
 export const laravelPackageSchema = z.array(laravelPackage)

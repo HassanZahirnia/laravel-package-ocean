@@ -2,7 +2,9 @@ import inquirer from 'inquirer'
 import Fuse from 'fuse.js'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import { find, isEmpty } from 'lodash'
-import { readPackagesDatabase } from '~/ocean-cli/database'
+import type { packagistData } from '../utils/composer'
+import { extractDetectedCompatibleVersions, extractFirstReleaseAt, extractLatestReleaseAt, fetchPackagistData } from '../utils/composer'
+import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
 import {
     name as z_name,
     description as z_description,
@@ -14,6 +16,7 @@ import {
 } from '~/ocean-cli/validation-rules'
 import { log } from '~/ocean-cli/print'
 import { categories } from '~/database/categories'
+import type { Package } from '~/types/package'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
@@ -69,7 +72,12 @@ export const addPackage = async function(){
             message: 'Github:',
             validate: (value: string) => {
                 const result = z_github.safeParse(value)
-                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
+                if(!result.success)
+                    return result.error.errors.map(error => error.message).join('\n')
+                if(find(laravelPackages, { github: value }))
+                    return 'This package is already in the database'
+
+                return true
             },
         },
         {
@@ -86,9 +94,15 @@ export const addPackage = async function(){
             name: 'composer',
             message: 'Composer(optional, default: null):',
             validate: (value: string) => {
-                if(isEmpty(value)) return true
+                if(isEmpty(value))
+                    return true
                 const result = z_composer.safeParse(value)
-                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
+                if(!result.success)
+                    return result.error.errors.map(error => error.message).join('\n')
+                if(find(laravelPackages, { composer: value }))
+                    return 'This package is already in the database'
+
+                return true
             },
         },
         {
@@ -98,19 +112,60 @@ export const addPackage = async function(){
             validate: (value: string) => {
                 if(isEmpty(value)) return true
                 const result = z_npm.safeParse(value)
-                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
+                if(!result.success)
+                    return result.error.errors.map(error => error.message).join('\n')
+                if(find(laravelPackages, { npm: value }))
+                    return 'This package is already in the database'
+
+                return true
             },
         },
         {
             type: 'confirm',
-            name: 'php_only (default: false)',
+            name: 'php_only',
             message: 'Is this a PHP only package (does not require Laravel)?',
             default: false,
+            validate: (value: boolean) => {
+                const result = z_php_only.safeParse(value)
+                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
+            },
         },
     ])
         .then(
-            (answers) => {
-                log(answers)
+            (answers: Package) => {
+                answers.id = laravelPackages.length + 1
+                answers.composer = isEmpty(answers.composer) ? null : answers.composer
+                answers.npm = isEmpty(answers.npm) ? null : answers.npm
+                answers.updated_at = new Date().toISOString()
+                answers.created_at = new Date().toISOString()
+                answers.stars = 0
+                answers.keywords = []
+                answers.first_release_at = ''
+                answers.latest_release_at = ''
+                answers.detected_compatible_versions = []
+                answers.compatible_versions = []
+
+                if(answers.composer && !answers.php_only){
+                    fetchPackagistData(answers.composer)
+                        .then((data) => {
+                            const packagistData = data as packagistData
+                            answers.first_release_at = extractFirstReleaseAt(packagistData)
+                            answers.latest_release_at = extractLatestReleaseAt(packagistData)
+                            answers.detected_compatible_versions = extractDetectedCompatibleVersions(packagistData)
+
+                            laravelPackages.push(answers)
+
+                            writePackagesDatabase(laravelPackages)
+                        })
+                        .catch((error) => {
+                            log(error)
+                        })
+                }
+                else{
+                    laravelPackages.push(answers)
+
+                    writePackagesDatabase(laravelPackages)
+                }
             },
         )
 }

@@ -41,13 +41,18 @@ export const showMainMenu = function(){
 }
 
 // Check if --compile-database-to-json argument is passed
+const verboseFlag = process.argv.includes('--verbose')
 const validateJsonFlag = process.argv.includes('--validate-json')
 if (validateJsonFlag) {
     const laravelPackages = readPackagesDatabase()
     const validationResult = laravelPackageSchema.safeParse(laravelPackages)
 
-    if (!validationResult.success) 
+    if (!validationResult.success){ 
         log(chalk.bgRed('Validation failed!'))
+        if(verboseFlag)
+            log(validationResult.error.errors)
+        
+    }
 }
 else{
 // Clear the screen
