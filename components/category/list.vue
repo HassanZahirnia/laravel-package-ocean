@@ -1,17 +1,5 @@
 <script setup lang="ts">
-import { laravelPackages } from '@/database/packages'
-import { categories } from '@/database/categories'
-import type { CategoryWithPackagesCount, Category } from '@/types/category'
-
-// Categories with packages count
-const categoriesWithPackagesCount = categories.map((category: Category): CategoryWithPackagesCount => {
-    const packagesCount = laravelPackages.filter(laravelPackage => laravelPackage.category === category).length
-
-    return {
-        name: category,
-        packagesCount,
-    }
-})
+import { categoriesWithPackagesCount } from '@/database/categories'
 
 const selectedCategory = useSelectedCategory()
 </script>

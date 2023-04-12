@@ -1,4 +1,6 @@
-import type { Category } from '@/types/category'
+import type { Category, CategoryWithPackagesCount } from '@/types/category'
+
+import { laravelPackages } from '@/database/packages'
 
 export const categories: Category[] = [
     'File Management',
@@ -20,3 +22,13 @@ export const categories: Category[] = [
     'UI & Blade Components',
     'Utilities & Helpers',
 ]
+
+// Categories with packages count
+export const categoriesWithPackagesCount = categories.map((category: Category): CategoryWithPackagesCount => {
+    const packagesCount = laravelPackages.filter(laravelPackage => laravelPackage.category === category).length
+
+    return {
+        name: category,
+        packagesCount,
+    }
+})

@@ -110,8 +110,8 @@ const selectedItem = computed({
                             >
                             <div
                                 class="pl-1
-                                transition duration-200
-                                group-hover:translate-x-0.5
+                                transition duration-300
+                                group-hover:translate-x-1
                                 "
                                 >
                                 <div
