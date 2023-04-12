@@ -52,6 +52,7 @@
         "nuxt": "3.3.3",
         "nuxt-gtag": "^0.5.4",
         "nuxt-simple-sitemap": "^2.4.11",
+        "ora": "^6.3.0",
         "postcss": "^8.4.21",
         "sqlite3": "^5.1.6",
         "stylus": "^0.59.0",

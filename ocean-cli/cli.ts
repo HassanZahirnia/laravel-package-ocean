@@ -55,8 +55,17 @@ if (validateJsonFlag) {
 
     if (!validationResult.success){ 
         log(chalk.bgRed('Validation failed!'))
-        if(verboseFlag)
-            log(validationResult.error.errors)
+        if (verboseFlag) {
+            const errorsWithGithub = validationResult.error.errors.map((error) => {
+                const packageIndex = error.path[0] as number // Get the index of the package in the array
+                const github = laravelPackages[packageIndex].github // Get the github property of the package
+                return {
+                    ...error,
+                    github, // Add the github property to the error object
+                }
+            })
+            log(errorsWithGithub)
+        }
     }
 }
 else if(updateActiveLaravelVersionsFlag){

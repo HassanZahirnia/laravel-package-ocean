@@ -124,7 +124,10 @@ export const stars = z
 export const keywords = z
     .array(z
         .string()
-        .nonempty(),
+        .nonempty()
+        .regex(/^(?!.* {2})[a-zA-Z0-9]+([ -\/\.]?[a-zA-Z0-9]+)*$/, {
+            message: 'Must be alphanumeric and single spaces and the following characters: - / .',
+        }),
     )
     .refine(items => new Set(items).size === items.length, {
         message: 'Must be an array of unique strings',

@@ -5,6 +5,7 @@ import { find, isEmpty } from 'lodash'
 import axios from 'axios'
 import dotenv from 'dotenv'
 import chalk from 'chalk'
+import ora from 'ora'
 import type { packagistData } from '../utils/composer'
 import { extract_packagist_detected_compatible_versions, extract_packagist_first_release_at, extract_packagist_latest_release_at } from '../utils/composer'
 import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../utils/npm'
@@ -21,6 +22,7 @@ import {
     composer as z_composer,
     npm as z_npm,
     php_only as z_php_only,
+    keywords as z_keywords,
     laravelPackageSchema } from '~/ocean-cli/validation-rules'
 import { categories } from '~/database/categories'
 import type { Package } from '~/types/package'
@@ -139,11 +141,28 @@ export const addPackage = async function(){
                 return result.success ? true : result.error.errors.map(error => error.message).join('\n')
             },
         },
+        {
+            type: 'input',
+            name: 'keywords',
+            message: 'Keywords (optional, separate words with comma):',
+            validate: (value: string) => {
+                if(isEmpty(value)) return true
+
+                const keywords = value.split(',').map(keyword => keyword.trim())
+
+                const result = z_keywords.safeParse(keywords)
+                if(!result.success)
+                    return result.error.errors.map(error => error.message).join('\n')
+
+                return true
+            },
+        },
     ])
         .then(
             async(
                 answers: Pick<Package,
-                    'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github' | 'php_only'>,
+                    'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github' | 'php_only'>
+                & { keywords: string },
             ) => {
                 const newPackage: Package = {
                     name: answers.name,
@@ -154,7 +173,7 @@ export const addPackage = async function(){
                     composer: isEmpty(answers.composer) ? null : answers.composer,
                     npm: isEmpty(answers.npm) ? null : answers.npm,
                     stars: 0,
-                    keywords: [],
+                    keywords: isEmpty(answers.keywords) ? [] : answers.keywords.split(',').map(keyword => keyword.trim()),
                     first_release_at: '',
                     latest_release_at: '',
                     detected_compatible_versions: [],
@@ -164,7 +183,11 @@ export const addPackage = async function(){
                     created_at: new Date().toISOString(),
                 }
 
+                const spinner = ora('Fetching online information').start()
+
                 if(newPackage.composer && !newPackage.php_only){
+                    spinner.text = 'Getting packagist data'
+
                     const { data: packagistData }: { data: packagistData }
                         = await axios.get(`https://packagist.org/packages/${newPackage.composer}.json`)
                     
@@ -173,13 +196,17 @@ export const addPackage = async function(){
                     newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
 
                     if (newPackage.detected_compatible_versions.length === 0) 
-                        log(chalk.yellow('Could not detect any compatible versions \n'))
+                        log(chalk.yellow('\n Could not detect any compatible versions \n'))
                 }
                 else if(newPackage.npm){
+                    spinner.text = 'Getting npm data'
+                    
                     const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
                     newPackage.first_release_at = extract_npm_first_release_at(npmData)
                     newPackage.latest_release_at = extract_npm_latest_release_at(npmData)
                 }
+
+                spinner.text = 'Getting github data'
 
                 const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${newPackage.github.substring(19)}`, {
                     headers: {
@@ -187,12 +214,17 @@ export const addPackage = async function(){
                     },
                 })
 
+                spinner.text = 'Finished fetching online information.'
+
+                spinner.stop()
+
                 newPackage.stars = extract_github_stars(githubData)
 
                 const validationResult = laravelPackageSchema.safeParse(newPackage)
 
                 if(!validationResult.success) {
-                    throw new Error(validationResult.error.errors.map(error => error.message).join('\n')) 
+                    log(chalk.yellow('Validation failed \n'))
+                    log(validationResult.error.errors.map(error => error.message).join('\n'))
                 }
                 else{
                     laravelPackages.push(newPackage)

@@ -7464,5 +7464,23 @@
             "10"
         ],
         "compatible_versions": []
+    },
+    {
+        "name": "Laravel Paperclip",
+        "description": "Allows you to attach files to eloquent models.",
+        "category": "File Management",
+        "github": "https://github.com/czim/laravel-paperclip",
+        "author": "czim",
+        "composer": "czim/laravel-paperclip",
+        "npm": null,
+        "stars": 76,
+        "keywords": [],
+        "first_release_at": "2017-08-14T17:58:05+00:00",
+        "latest_release_at": "2023-04-10T08:37:45+00:00",
+        "detected_compatible_versions": [],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-12T13:40:32.500Z",
+        "created_at": "2023-04-12T13:40:32.500Z"
     }
 ]

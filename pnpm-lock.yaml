@@ -130,6 +130,9 @@ devDependencies:
   nuxt-simple-sitemap:
     specifier: ^2.4.11
     version: 2.4.11
+  ora:
+    specifier: ^6.3.0
+    version: 6.3.0
   postcss:
     specifier: ^8.4.21
     version: 8.4.21
