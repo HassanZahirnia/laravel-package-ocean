@@ -3,7 +3,9 @@ import Fuse from 'fuse.js'
 import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import { find, isEmpty } from 'lodash'
 import type { packagistData } from '../utils/composer'
-import { extractDetectedCompatibleVersions, extractFirstReleaseAt, extractLatestReleaseAt, fetchPackagistData } from '../utils/composer'
+import { extract_packagist_detected_compatible_versions, extract_packagist_first_release_at, extract_packagist_latest_release_at, fetch_packagist_data } from '../utils/composer'
+import { extract_npm_first_release_at, extract_npm_latest_release_at, fetch_npm_data } from '../utils/npm'
+import type { npmData } from '../utils/npm'
 import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
 import {
     name as z_name,
@@ -146,12 +148,12 @@ export const addPackage = async function(){
                 answers.compatible_versions = []
 
                 if(answers.composer && !answers.php_only){
-                    fetchPackagistData(answers.composer)
+                    fetch_packagist_data(answers.composer)
                         .then((data) => {
                             const packagistData = data as packagistData
-                            answers.first_release_at = extractFirstReleaseAt(packagistData)
-                            answers.latest_release_at = extractLatestReleaseAt(packagistData)
-                            answers.detected_compatible_versions = extractDetectedCompatibleVersions(packagistData)
+                            answers.first_release_at = extract_packagist_first_release_at(packagistData)
+                            answers.latest_release_at = extract_packagist_latest_release_at(packagistData)
+                            answers.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
 
                             laravelPackages.push(answers)
 
@@ -160,6 +162,23 @@ export const addPackage = async function(){
                         .catch((error) => {
                             log(error)
                         })
+                }
+                else if(answers.npm){
+                    fetch_npm_data(answers.npm)
+                        .then((data) => {
+                            const npmData = data as npmData
+                            answers.first_release_at = extract_npm_first_release_at(npmData)
+                            answers.latest_release_at = extract_npm_latest_release_at(npmData)
+
+                            laravelPackages.push(answers)
+
+                            writePackagesDatabase(laravelPackages)
+                        },
+                        )
+                        .catch((error) => {
+                            log(error)
+                        },
+                        )
                 }
                 else{
                     laravelPackages.push(answers)

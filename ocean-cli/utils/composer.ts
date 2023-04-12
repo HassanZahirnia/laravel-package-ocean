@@ -18,14 +18,14 @@ export type packagistData = {
     }
 }
 
-export const fetchPackagistData = async(composer: string) => {
+export const fetch_packagist_data = async(composer: string) => {
     const { data: packagistData } = await axios.get(`https://packagist.org/packages/${composer}.json`)
     return packagistData as packagistData
 }
 
-export const extractFirstReleaseAt = (packagistData: packagistData) => packagistData.package.time
+export const extract_packagist_first_release_at = (packagistData: packagistData) => packagistData.package.time
 
-export const extractLatestRelease = (packagistData: packagistData) => {
+export const extract_packagist_latest_release = (packagistData: packagistData) => {
     const releases = packagistData.package.versions
     const releaseVersions = Object.keys(releases).filter(release => !releases[release].version.includes('dev'))
     const latestRelease = releaseVersions.reduce((a, b) => {
@@ -37,14 +37,14 @@ export const extractLatestRelease = (packagistData: packagistData) => {
     return latestRelease
 }
 
-export const extractLatestReleaseAt = (packagistData: packagistData) => {
-    const latestRelease = extractLatestRelease(packagistData)
+export const extract_packagist_latest_release_at = (packagistData: packagistData) => {
+    const latestRelease = extract_packagist_latest_release(packagistData)
     return packagistData.package.versions[latestRelease].time
 }
 
-export const extractDetectedCompatibleVersions = (packagistData: packagistData) => {
+export const extract_packagist_detected_compatible_versions = (packagistData: packagistData) => {
     const releases = packagistData.package.versions
-    const latestRelease = extractLatestRelease(packagistData)
+    const latestRelease = extract_packagist_latest_release(packagistData)
     // Go through the latest release and get the list of compatible Laravel versions
     // So it can be a `illuminate` dependency, or a `laravel` dependency,
     // and save it in the `detected_compatible_versions` property
