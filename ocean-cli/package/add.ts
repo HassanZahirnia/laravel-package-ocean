@@ -173,12 +173,10 @@ export const addPackage = async function(){
                             laravelPackages.push(answers)
 
                             writePackagesDatabase(laravelPackages)
-                        },
-                        )
+                        })
                         .catch((error) => {
                             log(error)
-                        },
-                        )
+                        })
                 }
                 else{
                     laravelPackages.push(answers)
