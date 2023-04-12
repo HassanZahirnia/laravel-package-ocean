@@ -140,7 +140,6 @@ export const addPackage = async function(){
             async(answers: Package) => {
                 dotenv.config()
 
-                answers.id = laravelPackages.length + 1
                 answers.composer = isEmpty(answers.composer) ? null : answers.composer
                 answers.npm = isEmpty(answers.npm) ? null : answers.npm
                 answers.updated_at = new Date().toISOString()

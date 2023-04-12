@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Laravel API To Postman",
         "description": "Generate a Postman collection automatically from your API.",
         "category": "API",
@@ -25,7 +24,6 @@
         "created_at": "2023-04-09T13:58:47.687Z"
     },
     {
-        "id": 2,
         "name": "Laravel Restify",
         "description": "The fastest way to make a powerful JSON:API compatible Rest API.",
         "category": "API",
@@ -48,7 +46,6 @@
         "created_at": "2023-04-09T13:58:47.695Z"
     },
     {
-        "id": 3,
         "name": "L5 Swagger",
         "description": "OpenApi or Swagger Specification for your project made easy.",
         "category": "API",
@@ -75,7 +72,6 @@
         "created_at": "2023-04-09T13:58:47.702Z"
     },
     {
-        "id": 4,
         "name": "Telegraph",
         "description": "Fluently interacting with Telegram Bots.",
         "category": "API",
@@ -98,7 +94,6 @@
         "created_at": "2023-04-09T13:58:47.707Z"
     },
     {
-        "id": 5,
         "name": "Laravel API Response Helpers",
         "description": "A simple package allowing for consistent API responses throughout your application.",
         "category": "API",
@@ -123,7 +118,6 @@
         "created_at": "2023-04-09T13:58:47.713Z"
     },
     {
-        "id": 6,
         "name": "Laravel DigitalOcean",
         "description": "A DigitalOcean API bridge.",
         "category": "API",
@@ -146,7 +140,6 @@
         "created_at": "2023-04-09T13:58:47.716Z"
     },
     {
-        "id": 7,
         "name": "Laravel GitHub",
         "description": "A GitHub API bridge.",
         "category": "API",
@@ -169,7 +162,6 @@
         "created_at": "2023-04-09T13:58:47.723Z"
     },
     {
-        "id": 8,
         "name": "Laravel Firebase",
         "description": "Firebase PHP Admin SDK.",
         "category": "API",
@@ -191,7 +183,6 @@
         "created_at": "2023-04-09T13:58:47.726Z"
     },
     {
-        "id": 9,
         "name": "Laravel Kafka",
         "description": "Use Kafka Producers and Consumers in your app with ease.",
         "category": "API",
@@ -213,7 +204,6 @@
         "created_at": "2023-04-09T13:58:47.733Z"
     },
     {
-        "id": 10,
         "name": "OpenAI PHP",
         "description": "Supercharged PHP API client that allows you to interact with OpenAI API.",
         "category": "API",
@@ -238,7 +228,6 @@
         "created_at": "2023-04-09T13:58:47.738Z"
     },
     {
-        "id": 11,
         "name": "Laravel Open Food Facts",
         "description": "A convenient wrapper to the Open Food Facts API for applications.",
         "category": "API",
@@ -259,7 +248,6 @@
         "created_at": "2023-04-09T13:58:47.742Z"
     },
     {
-        "id": 12,
         "name": "OpenAI PHP SDK",
         "description": "SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming.",
         "category": "API",
@@ -278,7 +266,6 @@
         "created_at": "2023-04-09T13:58:47.746Z"
     },
     {
-        "id": 13,
         "name": "Laravel GraphQL",
         "description": "Laravel wrapper for GraphQL language.",
         "category": "API",
@@ -306,7 +293,6 @@
         "created_at": "2023-04-09T13:58:47.753Z"
     },
     {
-        "id": 14,
         "name": "Saloon",
         "description": "Build beautiful API integrations and SDKs with Saloon.",
         "category": "API",
@@ -327,7 +313,6 @@
         "created_at": "2023-04-09T13:58:47.756Z"
     },
     {
-        "id": 15,
         "name": "Laravel Slack Alerts",
         "description": "Quickly send a message to Slack.",
         "category": "API",
@@ -350,7 +335,6 @@
         "created_at": "2023-04-09T13:58:47.761Z"
     },
     {
-        "id": 16,
         "name": "Laravel Orion",
         "description": "The simplest way to create REST API.",
         "category": "API",
@@ -373,7 +357,6 @@
         "created_at": "2023-04-09T13:58:47.765Z"
     },
     {
-        "id": 17,
         "name": "LogViewer",
         "description": "Allows you to manage and keep track of each one of your log files.",
         "category": "Auth & Permissions",
@@ -394,7 +377,6 @@
         "created_at": "2023-04-09T13:58:47.771Z"
     },
     {
-        "id": 18,
         "name": "Laravel Auth0",
         "description": "SDK for Auth0 Authentication and Management APIs.",
         "category": "Auth & Permissions",
@@ -416,7 +398,6 @@
         "created_at": "2023-04-09T13:58:47.774Z"
     },
     {
-        "id": 19,
         "name": "Momentum Lock",
         "description": "Handle authorizations on the frontend level.",
         "category": "Auth & Permissions",
@@ -442,7 +423,6 @@
         "created_at": "2023-04-09T13:58:47.777Z"
     },
     {
-        "id": 20,
         "name": "Sentinel",
         "description": "A framework agnostic authentication & authorization system.",
         "category": "Auth & Permissions",
@@ -466,7 +446,6 @@
         "created_at": "2023-04-09T13:58:47.781Z"
     },
     {
-        "id": 21,
         "name": "Laravel Ban",
         "description": "Simplify blocking and banning Eloquent models.",
         "category": "Auth & Permissions",
@@ -493,7 +472,6 @@
         "created_at": "2023-04-09T13:58:47.785Z"
     },
     {
-        "id": 22,
         "name": "Laravel Passwordless Login",
         "description": "A simple, safe magic login link generator.",
         "category": "Auth & Permissions",
@@ -518,7 +496,6 @@
         "created_at": "2023-04-09T13:58:47.788Z"
     },
     {
-        "id": 23,
         "name": "Socialstream",
         "description": "Add OAuth to your Jetstream application.",
         "category": "Auth & Permissions",
@@ -540,7 +517,6 @@
         "created_at": "2023-04-09T13:58:47.792Z"
     },
     {
-        "id": 24,
         "name": "Laravel Impersonate",
         "description": "Easily authenticate as your users.",
         "category": "Auth & Permissions",
@@ -568,7 +544,6 @@
         "created_at": "2023-04-09T13:58:47.795Z"
     },
     {
-        "id": 25,
         "name": "Breeze",
         "description": "Minimal authentication scaffolding with Blade, Vue, or React + Tailwind.",
         "category": "Auth & Permissions",
@@ -589,7 +564,6 @@
         "created_at": "2023-04-09T13:58:47.799Z"
     },
     {
-        "id": 26,
         "name": "Fortify",
         "description": "Backend controllers and scaffolding for authentication.",
         "category": "Auth & Permissions",
@@ -612,7 +586,6 @@
         "created_at": "2023-04-09T13:58:47.802Z"
     },
     {
-        "id": 27,
         "name": "Passport",
         "description": "Provides OAuth2 server support.",
         "category": "Auth & Permissions",
@@ -634,7 +607,6 @@
         "created_at": "2023-04-09T13:58:47.806Z"
     },
     {
-        "id": 28,
         "name": "Sanctum",
         "description": "A featherweight authentication system for SPAs and simple APIs.",
         "category": "Auth & Permissions",
@@ -656,7 +628,6 @@
         "created_at": "2023-04-09T13:58:47.812Z"
     },
     {
-        "id": 29,
         "name": "Socialite",
         "description": "Wrapper around OAuth 1 & OAuth 2 libraries.",
         "category": "Auth & Permissions",
@@ -681,7 +652,6 @@
         "created_at": "2023-04-09T13:58:47.816Z"
     },
     {
-        "id": 30,
         "name": "Banhammer",
         "description": "A simple way to ban any Model by ID and by IP. It also allows to block requests by IP addresses.",
         "category": "Auth & Permissions",
@@ -703,7 +673,6 @@
         "created_at": "2023-04-09T13:58:47.820Z"
     },
     {
-        "id": 31,
         "name": "Teamwork",
         "description": "Fastest and easiest method to add a User / Team association with Invites to your project.",
         "category": "Auth & Permissions",
@@ -725,7 +694,6 @@
         "created_at": "2023-04-09T13:58:47.823Z"
     },
     {
-        "id": 32,
         "name": "Laravel Impersonate",
         "description": "Login as a different user quickly.",
         "category": "Auth & Permissions",
@@ -749,7 +717,6 @@
         "created_at": "2023-04-09T13:58:47.826Z"
     },
     {
-        "id": 33,
         "name": "Log Viewer",
         "description": "Fast and beautiful Log Viewer.",
         "category": "Auth & Permissions",
@@ -774,7 +741,6 @@
         "created_at": "2023-04-09T13:58:47.830Z"
     },
     {
-        "id": 34,
         "name": "Laravel Log Viewer",
         "description": "An interface to view the log file.",
         "category": "Auth & Permissions",
@@ -803,7 +769,6 @@
         "created_at": "2023-04-09T13:58:47.834Z"
     },
     {
-        "id": 35,
         "name": "Laravel Authentication Log",
         "description": "Tracks your users authentication information such as login/logout time, IP, Browser, Location, etc.",
         "category": "Auth & Permissions",
@@ -828,7 +793,6 @@
         "created_at": "2023-04-09T13:58:47.837Z"
     },
     {
-        "id": 36,
         "name": "Laratrust",
         "description": "An easy and flexible way to add roles, permissions and teams authorization.",
         "category": "Auth & Permissions",
@@ -853,7 +817,6 @@
         "created_at": "2023-04-09T13:58:47.842Z"
     },
     {
-        "id": 37,
         "name": "Bouncer",
         "description": "An elegant, framework-agnostic approach to managing roles and abilities.",
         "category": "Auth & Permissions",
@@ -883,7 +846,6 @@
         "created_at": "2023-04-09T13:58:47.846Z"
     },
     {
-        "id": 38,
         "name": "Laravel Activity Log",
         "description": "Easy to use functions to log the activities of the users of your app.",
         "category": "Auth & Permissions",
@@ -912,7 +874,6 @@
         "created_at": "2023-04-09T13:58:47.850Z"
     },
     {
-        "id": 39,
         "name": "Laravel Permissions",
         "description": "Associate users with roles and permissions.",
         "category": "Auth & Permissions",
@@ -942,7 +903,6 @@
         "created_at": "2023-04-09T13:58:47.853Z"
     },
     {
-        "id": 40,
         "name": "JWT Auth",
         "description": "JSON Web Token Authentication.",
         "category": "Auth & Permissions",
@@ -964,7 +924,6 @@
         "created_at": "2023-04-09T13:58:47.856Z"
     },
     {
-        "id": 41,
         "name": "Twill",
         "description": "CMS toolkit to rapidly create a custom admin console that is intuitive, powerful and flexible.",
         "category": "CMS & Admin Panels",
@@ -985,7 +944,6 @@
         "created_at": "2023-04-09T13:58:47.861Z"
     },
     {
-        "id": 42,
         "name": "Canvas",
         "description": "A blog publishing platform.",
         "category": "CMS & Admin Panels",
@@ -1010,7 +968,6 @@
         "created_at": "2023-04-09T13:58:47.864Z"
     },
     {
-        "id": 43,
         "name": "Backpack",
         "description": "Build custom admin panels fast.",
         "category": "CMS & Admin Panels",
@@ -1037,7 +994,6 @@
         "created_at": "2023-04-09T13:58:47.867Z"
     },
     {
-        "id": 44,
         "name": "LaRecipe",
         "description": "Write gorgeous documentation for your products using Markdown inside your app.",
         "category": "CMS & Admin Panels",
@@ -1063,7 +1019,6 @@
         "created_at": "2023-04-09T13:58:47.873Z"
     },
     {
-        "id": 45,
         "name": "Laravel Messenger",
         "description": "Full user messaging system for your application.",
         "category": "CMS & Admin Panels",
@@ -1092,7 +1047,6 @@
         "created_at": "2023-04-09T13:58:47.876Z"
     },
     {
-        "id": 46,
         "name": "Sharp",
         "description": "A content management framework, a toolset which provides help to build a CMS section.",
         "category": "CMS & Admin Panels",
@@ -1115,7 +1069,6 @@
         "created_at": "2023-04-09T13:58:47.881Z"
     },
     {
-        "id": 47,
         "name": "Filament",
         "description": "Admin panel, form builder and table builder. Built with the TALL stack.",
         "category": "CMS & Admin Panels",
@@ -1152,7 +1105,6 @@
         "created_at": "2023-04-09T13:58:47.884Z"
     },
     {
-        "id": 48,
         "name": "Blueprint",
         "description": "A code generation tool for developers.",
         "category": "CMS & Admin Panels",
@@ -1173,7 +1125,6 @@
         "created_at": "2023-04-09T13:58:47.887Z"
     },
     {
-        "id": 49,
         "name": "Larastarters",
         "description": "A regular Starter Kit and with a Design Theme.",
         "category": "CMS & Admin Panels",
@@ -1197,7 +1148,6 @@
         "created_at": "2023-04-09T13:58:47.892Z"
     },
     {
-        "id": 50,
         "name": "Chatify",
         "description": "Complete real-time chatting system for your new/existing application with only one command.",
         "category": "CMS & Admin Panels",
@@ -1218,7 +1168,6 @@
         "created_at": "2023-04-09T13:58:47.896Z"
     },
     {
-        "id": 51,
         "name": "Laravel Talk",
         "description": "A user conversation (chatting) system with realtime messaging.",
         "category": "CMS & Admin Panels",
@@ -1239,7 +1188,6 @@
         "created_at": "2023-04-09T13:58:47.900Z"
     },
     {
-        "id": 52,
         "name": "Laravel Orchid",
         "description": "Rapid application development of back-office applications, admin/user panels, and dashboards.",
         "category": "CMS & Admin Panels",
@@ -1262,7 +1210,6 @@
         "created_at": "2023-04-09T13:58:47.903Z"
     },
     {
-        "id": 53,
         "name": "Laravel Livewire Tables",
         "description": "A dynamic table component for Livewire.",
         "category": "CMS & Admin Panels",
@@ -1285,7 +1232,6 @@
         "created_at": "2023-04-09T13:58:47.906Z"
     },
     {
-        "id": 54,
         "name": "Laravel Forum",
         "description": "A slim, lean forum package.",
         "category": "CMS & Admin Panels",
@@ -1306,7 +1252,6 @@
         "created_at": "2023-04-09T13:58:47.913Z"
     },
     {
-        "id": 55,
         "name": "Statamic",
         "description": "Flat-first, Git powered CMS designed for building beautiful, easy to manage websites.",
         "category": "CMS & Admin Panels",
@@ -1328,7 +1273,6 @@
         "created_at": "2023-04-09T13:58:47.916Z"
     },
     {
-        "id": 56,
         "name": "Laravel DataTables",
         "description": "Handle server-side works of DataTables jQuery plugin via AJAX option by using eloquent.",
         "category": "CMS & Admin Panels",
@@ -1353,7 +1297,6 @@
         "created_at": "2023-04-09T13:58:47.921Z"
     },
     {
-        "id": 57,
         "name": "Laravel Enum",
         "description": "Simple, extensible and powerful enumeration implementation.",
         "category": "Code Architecture",
@@ -1375,7 +1318,6 @@
         "created_at": "2023-04-09T13:58:47.924Z"
     },
     {
-        "id": 58,
         "name": "Laravel Deploy Actions",
         "description": "Performing actions with saving the list of called files.",
         "category": "Code Architecture",
@@ -1399,7 +1341,6 @@
         "created_at": "2023-04-09T13:58:47.927Z"
     },
     {
-        "id": 59,
         "name": "Hybridly",
         "description": "Develop server-driven, client-rendered applications.",
         "category": "Code Architecture",
@@ -1433,7 +1374,6 @@
         "created_at": "2023-04-09T13:58:47.931Z"
     },
     {
-        "id": 60,
         "name": "Inertia",
         "description": "Adapter for Inertia.js library.",
         "category": "Code Architecture",
@@ -1464,7 +1404,6 @@
         "created_at": "2023-04-09T13:58:47.934Z"
     },
     {
-        "id": 61,
         "name": "Pennant",
         "description": "A simple, lightweight library for managing feature flags.",
         "category": "Code Architecture",
@@ -1485,7 +1424,6 @@
         "created_at": "2023-04-09T13:58:47.938Z"
     },
     {
-        "id": 62,
         "name": "Laravel Zero",
         "description": "A micro-framework built on top of Laravel components for building command-line applications.",
         "category": "Code Architecture",
@@ -1504,7 +1442,6 @@
         "created_at": "2023-04-09T13:58:47.941Z"
     },
     {
-        "id": 63,
         "name": "Laravel Livewire",
         "description": "A full-stack framework that takes the pain out of building dynamic UIs.",
         "category": "Code Architecture",
@@ -1531,7 +1468,6 @@
         "created_at": "2023-04-09T13:58:47.945Z"
     },
     {
-        "id": 64,
         "name": "Laravel Actions",
         "description": "Organising the logic of your applications by focusing on the actions your applications provide.",
         "category": "Code Architecture",
@@ -1563,7 +1499,6 @@
         "created_at": "2023-04-09T13:58:47.948Z"
     },
     {
-        "id": 65,
         "name": "Laravel Modules",
         "description": "Manage your large app using modules.",
         "category": "Code Architecture",
@@ -1584,7 +1519,6 @@
         "created_at": "2023-04-09T13:58:47.951Z"
     },
     {
-        "id": 66,
         "name": "Laravel Splade",
         "description": "The magic of Inertia.js with the simplicity of Blade.",
         "category": "Code Architecture",
@@ -1609,7 +1543,6 @@
         "created_at": "2023-04-09T13:58:47.954Z"
     },
     {
-        "id": 67,
         "name": "Venture",
         "description": "Build and manage complex workflows of interdependent jobs using queueing system.",
         "category": "Code Architecture",
@@ -1633,7 +1566,6 @@
         "created_at": "2023-04-09T13:58:47.957Z"
     },
     {
-        "id": 68,
         "name": "Laravel Data",
         "description": "Powerful data objects.",
         "category": "Code Architecture",
@@ -1658,7 +1590,6 @@
         "created_at": "2023-04-09T13:58:47.962Z"
     },
     {
-        "id": 69,
         "name": "Laravel Multitenancy",
         "description": "Make your app usable by multiple tenants.",
         "category": "Code Architecture",
@@ -1681,7 +1612,6 @@
         "created_at": "2023-04-09T13:58:47.965Z"
     },
     {
-        "id": 70,
         "name": "Laravel View Models",
         "description": "Simple classes that take some data, and transform it into something usable for the view.",
         "category": "Code Architecture",
@@ -1704,7 +1634,6 @@
         "created_at": "2023-04-09T13:58:47.968Z"
     },
     {
-        "id": 71,
         "name": "Tenancy",
         "description": "Automatic multi-tenancy. No code changes needed.",
         "category": "Code Architecture",
@@ -1728,7 +1657,6 @@
         "created_at": "2023-04-09T13:58:47.972Z"
     },
     {
-        "id": 72,
         "name": "Tenancy",
         "description": "Run multiple websites using the same installation while keeping tenant specific data separated.",
         "category": "Code Architecture",
@@ -1750,7 +1678,6 @@
         "created_at": "2023-04-09T13:58:47.975Z"
     },
     {
-        "id": 73,
         "name": "Laravel Validated DTO",
         "description": "Data Transfer Objects with validation for applications.",
         "category": "Code Architecture",
@@ -1772,7 +1699,6 @@
         "created_at": "2023-04-09T13:58:47.978Z"
     },
     {
-        "id": 74,
         "name": "Feature Flags",
         "description": "A strategy used along with source control to make it easier to continuously integrate and deploy.",
         "category": "Code Architecture",
@@ -1794,7 +1720,6 @@
         "created_at": "2023-04-09T13:58:47.982Z"
     },
     {
-        "id": 75,
         "name": "Approval",
         "description": "Approve new Model data before it is persisted.",
         "category": "Database & Eloquent",
@@ -1816,7 +1741,6 @@
         "created_at": "2023-04-09T13:58:47.985Z"
     },
     {
-        "id": 76,
         "name": "Laravel Eloquent State Machines",
         "description": "State Machines for your Eloquent models.",
         "category": "Database & Eloquent",
@@ -1841,7 +1765,6 @@
         "created_at": "2023-04-09T13:58:47.988Z"
     },
     {
-        "id": 77,
         "name": "Compoships",
         "description": "Multi-columns relationships for Eloquent ORM.",
         "category": "Database & Eloquent",
@@ -1863,7 +1786,6 @@
         "created_at": "2023-04-09T13:58:47.998Z"
     },
     {
-        "id": 78,
         "name": "Laravel Fluent",
         "description": "An expressive fluent way to define model attributes.",
         "category": "Database & Eloquent",
@@ -1887,7 +1809,6 @@
         "created_at": "2023-04-09T13:58:48.002Z"
     },
     {
-        "id": 79,
         "name": "Laravel Wallet",
         "description": "Easy work with virtual wallet.",
         "category": "Database & Eloquent",
@@ -1909,7 +1830,6 @@
         "created_at": "2023-04-09T13:58:48.005Z"
     },
     {
-        "id": 80,
         "name": "Sushi",
         "description": "Eloquent missing array driver.",
         "category": "Database & Eloquent",
@@ -1935,7 +1855,6 @@
         "created_at": "2023-04-09T13:58:48.008Z"
     },
     {
-        "id": 81,
         "name": "Laravel Magellan",
         "description": "A modern PostGIS toolbox.",
         "category": "Database & Eloquent",
@@ -1962,7 +1881,6 @@
         "created_at": "2023-04-09T13:58:48.012Z"
     },
     {
-        "id": 82,
         "name": "Laravel Sign Pad",
         "description": "Sign documents and optionally generate certified PDFs associated with Eloquent models.",
         "category": "Database & Eloquent",
@@ -1985,7 +1903,6 @@
         "created_at": "2023-04-09T13:58:48.015Z"
     },
     {
-        "id": 83,
         "name": "Eloquent Sluggable",
         "description": "Easy creation of slugs for your Eloquent models.",
         "category": "Database & Eloquent",
@@ -2006,7 +1923,6 @@
         "created_at": "2023-04-09T13:58:48.020Z"
     },
     {
-        "id": 84,
         "name": "Laravel Love",
         "description": "Add Social Reactions to let people express how they feel about the content.",
         "category": "Database & Eloquent",
@@ -2028,7 +1944,6 @@
         "created_at": "2023-04-09T13:58:48.023Z"
     },
     {
-        "id": 85,
         "name": "Eloquent Viewable",
         "description": "Associate views with Eloquent models.",
         "category": "Database & Eloquent",
@@ -2052,7 +1967,6 @@
         "created_at": "2023-04-09T13:58:48.026Z"
     },
     {
-        "id": 86,
         "name": "Migrate DB",
         "description": "Easy data transfer from one database to another.",
         "category": "Database & Eloquent",
@@ -2075,7 +1989,6 @@
         "created_at": "2023-04-09T13:58:48.030Z"
     },
     {
-        "id": 87,
         "name": "Fast Paginate",
         "description": "A fast implementation of offset/limit pagination.",
         "category": "Database & Eloquent",
@@ -2100,7 +2013,6 @@
         "created_at": "2023-04-09T13:58:48.034Z"
     },
     {
-        "id": 88,
         "name": "Laravel MongoDB",
         "description": "A MongoDB based Eloquent model and Query builder.",
         "category": "Database & Eloquent",
@@ -2121,7 +2033,6 @@
         "created_at": "2023-04-09T13:58:48.038Z"
     },
     {
-        "id": 89,
         "name": "Explorer",
         "description": "Next-gen Elasticsearch driver for Laravel Scout.",
         "category": "Database & Eloquent",
@@ -2143,7 +2054,6 @@
         "created_at": "2023-04-09T13:58:48.043Z"
     },
     {
-        "id": 90,
         "name": "Eloquent Power Joins",
         "description": "Eloquent joins made more Laravel-like with relationship definitions and model scopes.",
         "category": "Database & Eloquent",
@@ -2166,7 +2076,6 @@
         "created_at": "2023-04-09T13:58:48.046Z"
     },
     {
-        "id": 91,
         "name": "Laravel DynamoDB",
         "description": "A DynamoDB based Eloquent model and Query builder.",
         "category": "Database & Eloquent",
@@ -2191,7 +2100,6 @@
         "created_at": "2023-04-09T13:58:48.052Z"
     },
     {
-        "id": 92,
         "name": "Laravel Migrations Generator",
         "description": "Automatically generate your migrations from an existing database schema.",
         "category": "Database & Eloquent",
@@ -2217,7 +2125,6 @@
         "created_at": "2023-04-09T13:58:48.056Z"
     },
     {
-        "id": 93,
         "name": "Laravel Multiplex",
         "description": "Attach time-sliced meta data to Eloquent models.",
         "category": "Database & Eloquent",
@@ -2239,7 +2146,6 @@
         "created_at": "2023-04-09T13:58:48.059Z"
     },
     {
-        "id": 94,
         "name": "Column Sortable",
         "description": "Package for handling column sorting.",
         "category": "Database & Eloquent",
@@ -2265,7 +2171,6 @@
         "created_at": "2023-04-09T13:58:48.063Z"
     },
     {
-        "id": 95,
         "name": "Laravel Model Filter",
         "description": "Offers an simple way to filter and search eloquent models by array parameters and query strings.",
         "category": "Database & Eloquent",
@@ -2287,7 +2192,6 @@
         "created_at": "2023-04-09T13:58:48.066Z"
     },
     {
-        "id": 96,
         "name": "Scout",
         "description": "A driver based solution to searching your Eloquent models.",
         "category": "Database & Eloquent",
@@ -2309,7 +2213,6 @@
         "created_at": "2023-04-09T13:58:48.070Z"
     },
     {
-        "id": 97,
         "name": "Doctrine ORM",
         "description": "A drop-in Doctrine ORM 2 implementation.",
         "category": "Database & Eloquent",
@@ -2330,7 +2233,6 @@
         "created_at": "2023-04-09T13:58:48.073Z"
     },
     {
-        "id": 98,
         "name": "Eloquent Filter",
         "description": "Filter data of models by the query strings. Easy to use and fully dynamic.",
         "category": "Database & Eloquent",
@@ -2353,7 +2255,6 @@
         "created_at": "2023-04-09T13:58:48.076Z"
     },
     {
-        "id": 99,
         "name": "Laravel Acquaintances",
         "description": "Manage friendships (with groups), followships along with Likes, favorites..",
         "category": "Database & Eloquent",
@@ -2372,7 +2273,6 @@
         "created_at": "2023-04-09T13:58:48.081Z"
     },
     {
-        "id": 100,
         "name": "Lighthouse",
         "description": "A GraphQL framework that integrates with your application.",
         "category": "Database & Eloquent",
@@ -2394,7 +2294,6 @@
         "created_at": "2023-04-09T13:58:48.084Z"
     },
     {
-        "id": 101,
         "name": "Laravel Drafts",
         "description": "A simple, drop-in drafts/revisions system for models.",
         "category": "Database & Eloquent",
@@ -2416,7 +2315,6 @@
         "created_at": "2023-04-09T13:58:48.087Z"
     },
     {
-        "id": 102,
         "name": "iSeed (Inverse Seed Generator)",
         "description": "Generate a new seed file based on data from the existing database table.",
         "category": "Database & Eloquent",
@@ -2442,7 +2340,6 @@
         "created_at": "2023-04-09T13:58:48.091Z"
     },
     {
-        "id": 103,
         "name": "Laravel Auditing",
         "description": "Understand changes in Eloquent models.",
         "category": "Database & Eloquent",
@@ -2471,7 +2368,6 @@
         "created_at": "2023-04-09T13:58:48.094Z"
     },
     {
-        "id": 104,
         "name": "Parental",
         "description": "Use single table inheritance in your app.",
         "category": "Database & Eloquent",
@@ -2493,7 +2389,6 @@
         "created_at": "2023-04-09T13:58:48.098Z"
     },
     {
-        "id": 105,
         "name": "Laravel Cross Eloquent Search",
         "description": "Search through multiple models. Supports sorting, pagination, scoped queries, eager loading.",
         "category": "Database & Eloquent",
@@ -2515,7 +2410,6 @@
         "created_at": "2023-04-09T13:58:48.102Z"
     },
     {
-        "id": 106,
         "name": "Reliese Model Generator",
         "description": "Speed up the development process by providing some convenient code-generation capabilities.",
         "category": "Database & Eloquent",
@@ -2536,7 +2430,6 @@
         "created_at": "2023-04-09T13:58:48.106Z"
     },
     {
-        "id": 107,
         "name": "Rutorika Sortable",
         "description": "Adds sortable behavior to Eloquent models.",
         "category": "Database & Eloquent",
@@ -2560,7 +2453,6 @@
         "created_at": "2023-04-09T13:58:48.113Z"
     },
     {
-        "id": 108,
         "name": "Laravel Comments",
         "description": "An incredibly simple comment system.",
         "category": "Database & Eloquent",
@@ -2582,7 +2474,6 @@
         "created_at": "2023-04-09T13:58:48.116Z"
     },
     {
-        "id": 109,
         "name": "Orbit",
         "description": "A flat-file database driver for Eloquent.",
         "category": "Database & Eloquent",
@@ -2604,7 +2495,6 @@
         "created_at": "2023-04-09T13:58:48.122Z"
     },
     {
-        "id": 110,
         "name": "Eloquent Sortable",
         "description": "Sortable behaviour for Eloquent models.",
         "category": "Database & Eloquent",
@@ -2626,7 +2516,6 @@
         "created_at": "2023-04-09T13:58:48.128Z"
     },
     {
-        "id": 111,
         "name": "Laravel DB Snapshots",
         "description": "Quickly dump and load databases.",
         "category": "Database & Eloquent",
@@ -2650,7 +2539,6 @@
         "created_at": "2023-04-09T13:58:48.132Z"
     },
     {
-        "id": 112,
         "name": "Laravel Deleted Models",
         "description": "Automatically copy deleted records to a separate table.",
         "category": "Database & Eloquent",
@@ -2672,7 +2560,6 @@
         "created_at": "2023-04-09T13:58:48.135Z"
     },
     {
-        "id": 113,
         "name": "Laravel Model Flags",
         "description": "Quickly save the state of a process, update, migration, etc... to a model.",
         "category": "Database & Eloquent",
@@ -2694,7 +2581,6 @@
         "created_at": "2023-04-09T13:58:48.140Z"
     },
     {
-        "id": 114,
         "name": "Laravel Model Info",
         "description": "Get information on all the models.",
         "category": "Database & Eloquent",
@@ -2716,7 +2602,6 @@
         "created_at": "2023-04-09T13:58:48.144Z"
     },
     {
-        "id": 115,
         "name": "Laravel Model States",
         "description": "Adds state support to models. It combines concepts from the state pattern and state machines.",
         "category": "Database & Eloquent",
@@ -2739,7 +2624,6 @@
         "created_at": "2023-04-09T13:58:48.147Z"
     },
     {
-        "id": 116,
         "name": "Laravel Model Status",
         "description": "Easily add statuses to your models.",
         "category": "Database & Eloquent",
@@ -2762,7 +2646,6 @@
         "created_at": "2023-04-09T13:58:48.152Z"
     },
     {
-        "id": 117,
         "name": "Laravel Prefixed IDs",
         "description": "Friendly prefixed IDs for models.",
         "category": "Database & Eloquent",
@@ -2785,7 +2668,6 @@
         "created_at": "2023-04-09T13:58:48.156Z"
     },
     {
-        "id": 118,
         "name": "Laravel Query Builder",
         "description": "Easily build Eloquent queries from API requests.",
         "category": "Database & Eloquent",
@@ -2807,7 +2689,6 @@
         "created_at": "2023-04-09T13:58:48.162Z"
     },
     {
-        "id": 119,
         "name": "Laravel Schemaless Attributes",
         "description": "Add schemaless attributes to Eloquent models.",
         "category": "Database & Eloquent",
@@ -2833,7 +2714,6 @@
         "created_at": "2023-04-09T13:58:48.166Z"
     },
     {
-        "id": 120,
         "name": "Laravel Searchable",
         "description": "Pragmatically search through models and other sources.",
         "category": "Database & Eloquent",
@@ -2856,7 +2736,6 @@
         "created_at": "2023-04-09T13:58:48.170Z"
     },
     {
-        "id": 121,
         "name": "Laravel Settings",
         "description": "Store strongly typed application settings.",
         "category": "Database & Eloquent",
@@ -2879,7 +2758,6 @@
         "created_at": "2023-04-09T13:58:48.173Z"
     },
     {
-        "id": 122,
         "name": "Laravel Sluggable",
         "description": "An opinionated package to create slugs for Eloquent models.",
         "category": "Database & Eloquent",
@@ -2902,7 +2780,6 @@
         "created_at": "2023-04-09T13:58:48.177Z"
     },
     {
-        "id": 123,
         "name": "BelongsToThrough",
         "description": "Unlimited intermediate BelongsToThrough relationships with Inverse HasManyThrough.",
         "category": "Database & Eloquent",
@@ -2923,7 +2800,6 @@
         "created_at": "2023-04-09T13:58:48.183Z"
     },
     {
-        "id": 124,
         "name": "Eloquent Has Many Deep",
         "description": "Eloquent HasManyThrough relationships with unlimited levels.",
         "category": "Database & Eloquent",
@@ -2944,7 +2820,6 @@
         "created_at": "2023-04-09T13:58:48.186Z"
     },
     {
-        "id": 125,
         "name": "Laravel Adjacency List",
         "description": "Recursive Laravel Eloquent relationships with CTEs.",
         "category": "Database & Eloquent",
@@ -2965,7 +2840,6 @@
         "created_at": "2023-04-09T13:58:48.190Z"
     },
     {
-        "id": 126,
         "name": "TNTSearch For Scout",
         "description": "Driver for Laravel Scout search package.",
         "category": "Database & Eloquent",
@@ -2991,7 +2865,6 @@
         "created_at": "2023-04-09T13:58:48.195Z"
     },
     {
-        "id": 127,
         "name": "Laravel Postgresql Enhanced",
         "description": "Support for many missing PostgreSQL specific features.",
         "category": "Database & Eloquent",
@@ -3016,7 +2889,6 @@
         "created_at": "2023-04-09T13:58:48.198Z"
     },
     {
-        "id": 128,
         "name": "Laravel Query Expressions",
         "description": "Replace any DB::raw() call with expressions.",
         "category": "Database & Eloquent",
@@ -3037,7 +2909,6 @@
         "created_at": "2023-04-09T13:58:48.202Z"
     },
     {
-        "id": 129,
         "name": "Eloquent Filter",
         "description": "An eloquent way to filter models and their relationships.",
         "category": "Database & Eloquent",
@@ -3062,7 +2933,6 @@
         "created_at": "2023-04-09T13:58:48.205Z"
     },
     {
-        "id": 130,
         "name": "Revisionable",
         "description": "Easily create a revision history for any model.",
         "category": "Database & Eloquent",
@@ -3089,7 +2959,6 @@
         "created_at": "2023-04-09T13:58:48.209Z"
     },
     {
-        "id": 131,
         "name": "Laravel Userstamps",
         "description": "An Eloquent trait which automatically maintains created_by and updated_by columns on your model.",
         "category": "Database & Eloquent",
@@ -3115,7 +2984,6 @@
         "created_at": "2023-04-09T13:58:48.213Z"
     },
     {
-        "id": 132,
         "name": "Laravel-OCI8",
         "description": "Oracle DB driver.",
         "category": "Database & Eloquent",
@@ -3136,7 +3004,6 @@
         "created_at": "2023-04-09T13:58:48.216Z"
     },
     {
-        "id": 133,
         "name": "Porter",
         "description": "Spin up your development background processes with ease.",
         "category": "Debugging & Dev Tools",
@@ -3155,7 +3022,6 @@
         "created_at": "2023-04-09T13:58:48.221Z"
     },
     {
-        "id": 134,
         "name": "IDE Helper Generator",
         "description": "Complete PHPDocs, directly from the source.",
         "category": "Debugging & Dev Tools",
@@ -3180,7 +3046,6 @@
         "created_at": "2023-04-09T13:58:48.224Z"
     },
     {
-        "id": 135,
         "name": "Laravel Debugbar",
         "description": "PHP Debug Bar integration.",
         "category": "Debugging & Dev Tools",
@@ -3210,7 +3075,6 @@
         "created_at": "2023-04-09T13:58:48.227Z"
     },
     {
-        "id": 136,
         "name": "Laravel TypeScript",
         "description": "Generate TypeScript interfaces from your models.",
         "category": "Debugging & Dev Tools",
@@ -3235,7 +3099,6 @@
         "created_at": "2023-04-09T13:58:48.231Z"
     },
     {
-        "id": 137,
         "name": "Laravel N+1 Query Detector",
         "description": "Reduce the number of queries your application executes.",
         "category": "Debugging & Dev Tools",
@@ -3263,7 +3126,6 @@
         "created_at": "2023-04-09T13:58:48.234Z"
     },
     {
-        "id": 138,
         "name": "PHP CS Fixer",
         "description": "A tool to automatically fix PHP Coding Standards issues.",
         "category": "Debugging & Dev Tools",
@@ -3282,7 +3144,6 @@
         "created_at": "2023-04-09T13:58:48.238Z"
     },
     {
-        "id": 139,
         "name": "Laravel Microscope",
         "description": "Fearless refactoring, it does a lot of smart checks to find certain errors.",
         "category": "Debugging & Dev Tools",
@@ -3310,7 +3171,6 @@
         "created_at": "2023-04-09T13:58:48.243Z"
     },
     {
-        "id": 140,
         "name": "Clockwork",
         "description": "Php dev tools in your browser - server-side component.",
         "category": "Debugging & Dev Tools",
@@ -3336,7 +3196,6 @@
         "created_at": "2023-04-09T13:58:48.246Z"
     },
     {
-        "id": 141,
         "name": "Homestead",
         "description": "A pre-packaged Vagrant box that provides you a wonderful development environment.",
         "category": "Debugging & Dev Tools",
@@ -3355,7 +3214,6 @@
         "created_at": "2023-04-09T13:58:48.253Z"
     },
     {
-        "id": 142,
         "name": "Horizon",
         "description": "Dashboard and code-driven configuration for queues.",
         "category": "Debugging & Dev Tools",
@@ -3378,7 +3236,6 @@
         "created_at": "2023-04-09T13:58:48.256Z"
     },
     {
-        "id": 143,
         "name": "Pint",
         "description": "An opinionated PHP code style fixer for minimalists.",
         "category": "Debugging & Dev Tools",
@@ -3399,7 +3256,6 @@
         "created_at": "2023-04-09T13:58:48.262Z"
     },
     {
-        "id": 144,
         "name": "Sail",
         "description": "Docker files for running a basic application.",
         "category": "Debugging & Dev Tools",
@@ -3422,7 +3278,6 @@
         "created_at": "2023-04-09T13:58:48.265Z"
     },
     {
-        "id": 145,
         "name": "Telescope",
         "description": "An elegant debug assistant.",
         "category": "Debugging & Dev Tools",
@@ -3456,7 +3311,6 @@
         "created_at": "2023-04-09T13:58:48.268Z"
     },
     {
-        "id": 146,
         "name": "Valet",
         "description": "A more enjoyable local development experience for Mac.",
         "category": "Debugging & Dev Tools",
@@ -3482,7 +3336,6 @@
         "created_at": "2023-04-09T13:58:48.271Z"
     },
     {
-        "id": 147,
         "name": "Mix",
         "description": "The power of webpack, distilled for the rest of us.",
         "category": "Debugging & Dev Tools",
@@ -3503,7 +3356,6 @@
         "created_at": "2023-04-09T13:58:48.275Z"
     },
     {
-        "id": 148,
         "name": "Laravel Workflow",
         "description": "Track job status and write long running persistent distributed workflows (orchestrations).",
         "category": "Debugging & Dev Tools",
@@ -3527,7 +3379,6 @@
         "created_at": "2023-04-09T13:58:48.278Z"
     },
     {
-        "id": 149,
         "name": "PHP Monitor",
         "description": "Native Mac menu bar app that interacts with Valet. Helps you manage multiple PHP installations.",
         "category": "Debugging & Dev Tools",
@@ -3546,7 +3397,6 @@
         "created_at": "2023-04-09T13:58:48.283Z"
     },
     {
-        "id": 150,
         "name": "Larastan",
         "description": "Adds code analysis to improve developer productivity and code quality.",
         "category": "Debugging & Dev Tools",
@@ -3568,7 +3418,6 @@
         "created_at": "2023-04-09T13:58:48.286Z"
     },
     {
-        "id": 151,
         "name": "Laravel Haystack",
         "description": "Supercharged job chains.",
         "category": "Debugging & Dev Tools",
@@ -3592,7 +3441,6 @@
         "created_at": "2023-04-09T13:58:48.291Z"
     },
     {
-        "id": 152,
         "name": "Laravel Failed Job Monitor",
         "description": "Get notified when a queued job fails.",
         "category": "Debugging & Dev Tools",
@@ -3618,7 +3466,6 @@
         "created_at": "2023-04-09T13:58:48.294Z"
     },
     {
-        "id": 153,
         "name": "Laravel Server Side Rendering",
         "description": "Server side rendering JavaScript in your application.",
         "category": "Debugging & Dev Tools",
@@ -3645,7 +3492,6 @@
         "created_at": "2023-04-09T13:58:48.297Z"
     },
     {
-        "id": 154,
         "name": "Laravel Tail",
         "description": "An artisan command to tail your application logs.",
         "category": "Debugging & Dev Tools",
@@ -3668,7 +3514,6 @@
         "created_at": "2023-04-09T13:58:48.303Z"
     },
     {
-        "id": 155,
         "name": "Laravel Web Tinker",
         "description": "Artisan Tinker in your browser.",
         "category": "Debugging & Dev Tools",
@@ -3694,7 +3539,6 @@
         "created_at": "2023-04-09T13:58:48.306Z"
     },
     {
-        "id": 156,
         "name": "Laravel Totem",
         "description": "Manage your schedule from a web dashboard.",
         "category": "Debugging & Dev Tools",
@@ -3716,7 +3560,6 @@
         "created_at": "2023-04-09T13:58:48.312Z"
     },
     {
-        "id": 157,
         "name": "Blade CLI",
         "description": "Compile and save any textual files from the command line using Blade engine.",
         "category": "Debugging & Dev Tools",
@@ -3737,7 +3580,6 @@
         "created_at": "2023-04-09T13:58:48.316Z"
     },
     {
-        "id": 158,
         "name": "Laravel Swoole",
         "description": "High performance HTTP server based on Swoole. Speed up your applications.",
         "category": "Debugging & Dev Tools",
@@ -3762,7 +3604,6 @@
         "created_at": "2023-04-09T13:58:48.321Z"
     },
     {
-        "id": 159,
         "name": "Ziggy",
         "description": "Use your named routes in JavaScript.",
         "category": "Debugging & Dev Tools",
@@ -3783,7 +3624,6 @@
         "created_at": "2023-04-09T13:58:48.324Z"
     },
     {
-        "id": 160,
         "name": "Bladestan",
         "description": "PHPStan (static) analysis for Blade templates.",
         "category": "Debugging & Dev Tools",
@@ -3806,7 +3646,6 @@
         "created_at": "2023-04-09T13:58:48.327Z"
     },
     {
-        "id": 161,
         "name": "Laravel Stats",
         "description": "Get insights about your app.",
         "category": "Debugging & Dev Tools",
@@ -3828,7 +3667,6 @@
         "created_at": "2023-04-09T13:58:48.333Z"
     },
     {
-        "id": 162,
         "name": "Fleet",
         "description": "Run multiple Laravel Sail websites locally with custom domain names and https.",
         "category": "Dev Ops",
@@ -3847,7 +3685,6 @@
         "created_at": "2023-04-09T13:58:48.336Z"
     },
     {
-        "id": 163,
         "name": "Laravel WebSockets",
         "description": "Drop-in Pusher replacement, SSL support, Laravel Echo support and a debug dashboard.",
         "category": "Dev Ops",
@@ -3872,7 +3709,6 @@
         "created_at": "2023-04-09T13:58:48.341Z"
     },
     {
-        "id": 164,
         "name": "Deployer",
         "description": "The PHP deployment tool with support for popular frameworks out of the box.",
         "category": "Dev Ops",
@@ -3891,7 +3727,6 @@
         "created_at": "2023-04-09T13:58:48.344Z"
     },
     {
-        "id": 165,
         "name": "Envoy",
         "description": "A clean, minimal syntax for defining common tasks you run on your remote servers.",
         "category": "Dev Ops",
@@ -3916,7 +3751,6 @@
         "created_at": "2023-04-09T13:58:48.348Z"
     },
     {
-        "id": 166,
         "name": "Stethoscope",
         "description": "Monitor cpu, memory, hard disk, web server and network connection.",
         "category": "Dev Ops",
@@ -3937,7 +3771,6 @@
         "created_at": "2023-04-09T13:58:48.352Z"
     },
     {
-        "id": 167,
         "name": "Laravel Backup",
         "description": "Backup your app.",
         "category": "Dev Ops",
@@ -3966,7 +3799,6 @@
         "created_at": "2023-04-09T13:58:48.355Z"
     },
     {
-        "id": 168,
         "name": "Laravel Dynamic Servers",
         "description": "Dynamically create and destroy servers.",
         "category": "Dev Ops",
@@ -3988,7 +3820,6 @@
         "created_at": "2023-04-09T13:58:48.359Z"
     },
     {
-        "id": 169,
         "name": "Laravel Health",
         "description": "Check the health of your app.",
         "category": "Dev Ops",
@@ -4014,7 +3845,6 @@
         "created_at": "2023-04-09T13:58:48.363Z"
     },
     {
-        "id": 170,
         "name": "Laravel Remote",
         "description": "Execute Artisan commands on a remote server.",
         "category": "Dev Ops",
@@ -4037,7 +3867,6 @@
         "created_at": "2023-04-09T13:58:48.366Z"
     },
     {
-        "id": 171,
         "name": "Laravel Schedule Monitor",
         "description": "Monitor scheduled tasks.",
         "category": "Dev Ops",
@@ -4059,7 +3888,6 @@
         "created_at": "2023-04-09T13:58:48.369Z"
     },
     {
-        "id": 172,
         "name": "Laravel Server Monitor",
         "description": "An easy to use powerful server monitor.",
         "category": "Dev Ops",
@@ -4081,7 +3909,6 @@
         "created_at": "2023-04-09T13:58:48.373Z"
     },
     {
-        "id": 173,
         "name": "Laravel Uptime Monitor",
         "description": "A powerful and easy to configure uptime and SSL monitor.",
         "category": "Dev Ops",
@@ -4104,7 +3931,6 @@
         "created_at": "2023-04-09T13:58:48.376Z"
     },
     {
-        "id": 174,
         "name": "One-Time Operations",
         "description": "Run operations once after deployment, just like you do it with migrations.",
         "category": "Dev Ops",
@@ -4128,7 +3954,6 @@
         "created_at": "2023-04-09T13:58:48.380Z"
     },
     {
-        "id": 175,
         "name": "Aimeos",
         "description": "Ultra fast online shops, scalable marketplaces, complex B2B applications and Gigacommerce.",
         "category": "E-Commerce",
@@ -4160,7 +3985,6 @@
         "created_at": "2023-04-09T13:58:48.383Z"
     },
     {
-        "id": 176,
         "name": "Bagisto",
         "description": "An easy to use, free and open source platform to build your online shop in no time.",
         "category": "E-Commerce",
@@ -4181,7 +4005,6 @@
         "created_at": "2023-04-09T13:58:48.386Z"
     },
     {
-        "id": 177,
         "name": "Laravel Invoices",
         "description": "An easy to use interface to generate Invoice PDF files with your provided data.",
         "category": "E-Commerce",
@@ -4216,7 +4039,6 @@
         "created_at": "2023-04-09T13:58:48.392Z"
     },
     {
-        "id": 178,
         "name": "Lunar",
         "description": "Power of modern headless e-commerce functionality.",
         "category": "E-Commerce",
@@ -4243,7 +4065,6 @@
         "created_at": "2023-04-09T13:58:48.396Z"
     },
     {
-        "id": 179,
         "name": "Vanilo",
         "description": "Rapidly create E-commerce applications with pleasure.",
         "category": "E-Commerce",
@@ -4273,7 +4094,6 @@
         "created_at": "2023-04-09T13:58:48.402Z"
     },
     {
-        "id": 180,
         "name": "Laravel Dompdf",
         "description": "A DOMPDF Wrapper.",
         "category": "File Management",
@@ -4298,7 +4118,6 @@
         "created_at": "2023-04-09T13:58:48.405Z"
     },
     {
-        "id": 181,
         "name": "Laravel Snappy",
         "description": "Snappy PDF/Image Wrapper.",
         "category": "File Management",
@@ -4320,7 +4139,6 @@
         "created_at": "2023-04-09T13:58:48.408Z"
     },
     {
-        "id": 182,
         "name": "Intervention Image",
         "description": "Image handling and manipulation.",
         "category": "File Management",
@@ -4343,7 +4161,6 @@
         "created_at": "2023-04-09T13:58:48.412Z"
     },
     {
-        "id": 183,
         "name": "Laravel Excel",
         "description": "Supercharged Excel exports and imports.",
         "category": "File Management",
@@ -4369,7 +4186,6 @@
         "created_at": "2023-04-09T13:58:48.416Z"
     },
     {
-        "id": 184,
         "name": "Laravel FFMpeg",
         "description": "Integration with FFmpeg.",
         "category": "File Management",
@@ -4391,7 +4207,6 @@
         "created_at": "2023-04-09T13:58:48.420Z"
     },
     {
-        "id": 185,
         "name": "Fast Excel",
         "description": "Fast Excel import/export.",
         "category": "File Management",
@@ -4418,7 +4233,6 @@
         "created_at": "2023-04-09T13:58:48.423Z"
     },
     {
-        "id": 186,
         "name": "Browsershot",
         "description": "Convert a webpage to an image or PDF.",
         "category": "File Management",
@@ -4441,7 +4255,6 @@
         "created_at": "2023-04-09T13:58:48.427Z"
     },
     {
-        "id": 187,
         "name": "Laravel Image Optimizer",
         "description": "Easily optimize images (PNGs, JPGs, SVGs and GIFs).",
         "category": "File Management",
@@ -4464,7 +4277,6 @@
         "created_at": "2023-04-09T13:58:48.432Z"
     },
     {
-        "id": 188,
         "name": "Laravel Media Library",
         "description": "Associate files with eloquent models.",
         "category": "File Management",
@@ -4496,7 +4308,6 @@
         "created_at": "2023-04-09T13:58:48.435Z"
     },
     {
-        "id": 189,
         "name": "Pdf To Image",
         "description": "Convert a pdf to an image.",
         "category": "File Management",
@@ -4518,7 +4329,6 @@
         "created_at": "2023-04-09T13:58:48.441Z"
     },
     {
-        "id": 190,
         "name": "Localizator",
         "description": "Scan your project and generate language files ready to translate in language(s) of choosing.",
         "category": "Localization",
@@ -4541,7 +4351,6 @@
         "created_at": "2023-04-09T13:58:48.444Z"
     },
     {
-        "id": 191,
         "name": "Laravel Translatable",
         "description": "Multilingual models.",
         "category": "Localization",
@@ -4564,7 +4373,6 @@
         "created_at": "2023-04-09T13:58:48.448Z"
     },
     {
-        "id": 192,
         "name": "Laravel Unique Translation",
         "description": "Check if a translated value in a JSON column is unique in the database.",
         "category": "Localization",
@@ -4583,7 +4391,6 @@
         "created_at": "2023-04-09T13:58:48.451Z"
     },
     {
-        "id": 193,
         "name": "Laravel Translations Checker",
         "description": "Never worry about missing translations again! Use the translations checker.",
         "category": "Localization",
@@ -4606,7 +4413,6 @@
         "created_at": "2023-04-09T13:58:48.455Z"
     },
     {
-        "id": 194,
         "name": "Laravel Localization",
         "description": "Easy i18n localization, an useful tool to combine with localization classes.",
         "category": "Localization",
@@ -4638,7 +4444,6 @@
         "created_at": "2023-04-09T13:58:48.458Z"
     },
     {
-        "id": 195,
         "name": "World",
         "description": "A list of the countries, states, cities, currencies, timezones and languages.",
         "category": "Localization",
@@ -4657,7 +4462,6 @@
         "created_at": "2023-04-09T13:58:48.462Z"
     },
     {
-        "id": 196,
         "name": "Laravel Translations UI",
         "description": "A simple and friendly user interface for managing translations.",
         "category": "Localization",
@@ -4678,7 +4482,6 @@
         "created_at": "2023-04-09T13:58:48.466Z"
     },
     {
-        "id": 197,
         "name": "Laravel Translatable",
         "description": "Making Eloquent models translatable.",
         "category": "Localization",
@@ -4700,7 +4503,6 @@
         "created_at": "2023-04-09T13:58:48.470Z"
     },
     {
-        "id": 198,
         "name": "Laravel Translation Loader",
         "description": "Store your translations in the database or other sources.",
         "category": "Localization",
@@ -4725,7 +4527,6 @@
         "created_at": "2023-04-09T13:58:48.473Z"
     },
     {
-        "id": 199,
         "name": "Laravel Localization",
         "description": "Translation.io client.",
         "category": "Localization",
@@ -4746,7 +4547,6 @@
         "created_at": "2023-04-09T13:58:48.477Z"
     },
     {
-        "id": 200,
         "name": "Laravel Vue i18n",
         "description": "Allows to connect your translation files with Vue.",
         "category": "Localization",
@@ -4767,7 +4567,6 @@
         "created_at": "2023-04-09T13:58:48.483Z"
     },
     {
-        "id": 201,
         "name": "Laravel Mailbox",
         "description": "Catch incoming emails in your application.",
         "category": "Mail",
@@ -4792,7 +4591,6 @@
         "created_at": "2023-04-09T13:58:48.487Z"
     },
     {
-        "id": 202,
         "name": "Mail SPF Checker",
         "description": "Check if you can send e-mail through a given mailserver in name of a given e-mail address.",
         "category": "Mail",
@@ -4815,7 +4613,6 @@
         "created_at": "2023-04-09T13:58:48.491Z"
     },
     {
-        "id": 203,
         "name": "Laravel Mail Editor",
         "description": "A mailable editor to create and manage mailables using a web UI.",
         "category": "Mail",
@@ -4842,7 +4639,6 @@
         "created_at": "2023-04-09T13:58:48.495Z"
     },
     {
-        "id": 204,
         "name": "Laravel Mail Preview",
         "description": "A mail driver to quickly preview mail.",
         "category": "Mail",
@@ -4868,7 +4664,6 @@
         "created_at": "2023-04-09T13:58:48.499Z"
     },
     {
-        "id": 205,
         "name": "Laravel Newsletter",
         "description": "Manage Mailcoach and MailChimp newsletters.",
         "category": "Mail",
@@ -4887,7 +4682,6 @@
         "created_at": "2023-04-09T13:58:48.503Z"
     },
     {
-        "id": 206,
         "name": "Mailbook",
         "description": "Lets you easily inspect your mails without having to actually trigger it in your application.",
         "category": "Mail",
@@ -4909,7 +4703,6 @@
         "created_at": "2023-04-09T13:58:48.507Z"
     },
     {
-        "id": 207,
         "name": "Flash",
         "description": "Offers a Twitter Bootstrap optimized flash messaging setup.",
         "category": "Notifications",
@@ -4939,7 +4732,6 @@
         "created_at": "2023-04-09T13:58:48.511Z"
     },
     {
-        "id": 208,
         "name": "Echo",
         "description": "Beautiful Pusher and Ably integration.",
         "category": "Notifications",
@@ -4958,7 +4750,6 @@
         "created_at": "2023-04-09T13:58:48.515Z"
     },
     {
-        "id": 209,
         "name": "Laravel Notify",
         "description": "Add custom notifications to your project. A diverse range of notification design is available.",
         "category": "Notifications",
@@ -4984,7 +4775,6 @@
         "created_at": "2023-04-09T13:58:48.520Z"
     },
     {
-        "id": 210,
         "name": "Sweet Alert",
         "description": "Beautiful, responsive, customizable, accessible (wai-aria) popup boxes.",
         "category": "Notifications",
@@ -5013,7 +4803,6 @@
         "created_at": "2023-04-09T13:58:48.523Z"
     },
     {
-        "id": 211,
         "name": "Laravel Flash",
         "description": "A lightweight package to flash messages.",
         "category": "Notifications",
@@ -5036,7 +4825,6 @@
         "created_at": "2023-04-09T13:58:48.527Z"
     },
     {
-        "id": 212,
         "name": "Laravel Notification Log",
         "description": "Log all the notifications sent by your app.",
         "category": "Notifications",
@@ -5057,7 +4845,6 @@
         "created_at": "2023-04-09T13:58:48.533Z"
     },
     {
-        "id": 213,
         "name": "Tall Toasts",
         "description": "A Toast notification library for the TALL stack.",
         "category": "Notifications",
@@ -5083,7 +4870,6 @@
         "created_at": "2023-04-09T13:58:48.537Z"
     },
     {
-        "id": 214,
         "name": "Toastr",
         "description": "Toastr.js notifications for your app.",
         "category": "Notifications",
@@ -5107,7 +4893,6 @@
         "created_at": "2023-04-09T13:58:48.543Z"
     },
     {
-        "id": 215,
         "name": "Cashier",
         "description": "An expressive, fluent interface to Stripe subscription billing services.",
         "category": "Payment",
@@ -5136,7 +4921,6 @@
         "created_at": "2023-04-09T13:58:48.552Z"
     },
     {
-        "id": 216,
         "name": "SEO Tools",
         "description": "Helpers for some common SEO techniques.",
         "category": "SEO",
@@ -5162,7 +4946,6 @@
         "created_at": "2023-04-09T13:58:48.557Z"
     },
     {
-        "id": 217,
         "name": "Laravel SEO",
         "description": "A package to handle the SEO in any application, big or small.",
         "category": "SEO",
@@ -5197,7 +4980,6 @@
         "created_at": "2023-04-09T13:58:48.563Z"
     },
     {
-        "id": 218,
         "name": "Laravel Sitemap",
         "description": "Create and generate sitemaps with ease.",
         "category": "SEO",
@@ -5220,7 +5002,6 @@
         "created_at": "2023-04-09T13:58:48.567Z"
     },
     {
-        "id": 219,
         "name": "No Captcha",
         "description": "Integration for reCAPTCHA.",
         "category": "Security",
@@ -5248,7 +5029,6 @@
         "created_at": "2023-04-09T13:58:48.573Z"
     },
     {
-        "id": 220,
         "name": "Secure Headers",
         "description": "Add security related headers to HTTP response.",
         "category": "Security",
@@ -5267,7 +5047,6 @@
         "created_at": "2023-04-09T13:58:48.576Z"
     },
     {
-        "id": 221,
         "name": "Honey",
         "description": "Anti-spam tool with honeypot, IP blocking, and easy Recaptcha integration.",
         "category": "Security",
@@ -5289,7 +5068,6 @@
         "created_at": "2023-04-09T13:58:48.580Z"
     },
     {
-        "id": 222,
         "name": "Laravel CipherSweet",
         "description": "Easily use CipherSweet with Eloquent models.",
         "category": "Security",
@@ -5311,7 +5089,6 @@
         "created_at": "2023-04-09T13:58:48.584Z"
     },
     {
-        "id": 223,
         "name": "Laravel Honeypot",
         "description": "Preventing spam submitted through forms.",
         "category": "Security",
@@ -5338,7 +5115,6 @@
         "created_at": "2023-04-09T13:58:48.587Z"
     },
     {
-        "id": 224,
         "name": "Laravel Scrubber",
         "description": "Scrub sensitive information that breaks operational security policies from being leaked accidently.",
         "category": "Security",
@@ -5360,7 +5136,6 @@
         "created_at": "2023-04-09T13:58:48.592Z"
     },
     {
-        "id": 225,
         "name": "Infection",
         "description": "Mutation testing framework.",
         "category": "Testing",
@@ -5379,7 +5154,6 @@
         "created_at": "2023-04-09T13:58:48.596Z"
     },
     {
-        "id": 226,
         "name": "Dusk",
         "description": "Simple end-to-end testing and browser automation.",
         "category": "Testing",
@@ -5401,7 +5175,6 @@
         "created_at": "2023-04-09T13:58:48.599Z"
     },
     {
-        "id": 227,
         "name": "Pest",
         "description": "An elegant PHP testing Framework with a focus on simplicity.",
         "category": "Testing",
@@ -5432,7 +5205,6 @@
         "created_at": "2023-04-09T13:58:48.603Z"
     },
     {
-        "id": 228,
         "name": "Request Factories",
         "description": "Test requests without all the boilerplate.",
         "category": "Testing",
@@ -5453,7 +5225,6 @@
         "created_at": "2023-04-09T13:58:48.606Z"
     },
     {
-        "id": 229,
         "name": "Momentum Layout",
         "description": "A Vue 3 compiler macro to define persistent layouts for Inertia.js apps.",
         "category": "UI & Blade Components",
@@ -5475,7 +5246,6 @@
         "created_at": "2023-04-09T13:58:48.610Z"
     },
     {
-        "id": 230,
         "name": "Momentum Modal",
         "description": "Implement backend-driven modal dialogs for Inertia apps.",
         "category": "UI & Blade Components",
@@ -5501,7 +5271,6 @@
         "created_at": "2023-04-09T13:58:48.613Z"
     },
     {
-        "id": 231,
         "name": "Blade Icons",
         "description": "Easily make use of SVG icons in your Blade views.",
         "category": "UI & Blade Components",
@@ -5529,7 +5298,6 @@
         "created_at": "2023-04-09T13:58:48.616Z"
     },
     {
-        "id": 232,
         "name": "Smart",
         "description": "Easy image manipulation and file downloads.",
         "category": "UI & Blade Components",
@@ -5553,7 +5321,6 @@
         "created_at": "2023-04-09T13:58:48.622Z"
     },
     {
-        "id": 233,
         "name": "Vanilla Components",
         "description": "A lightweight, flexible & customizable UI library for Vue 3, styled with Tailwind CSS.",
         "category": "UI & Blade Components",
@@ -5577,7 +5344,6 @@
         "created_at": "2023-04-09T13:58:48.626Z"
     },
     {
-        "id": 234,
         "name": "Laravel Markdown",
         "description": "A CommonMark wrapper.",
         "category": "UI & Blade Components",
@@ -5602,7 +5368,6 @@
         "created_at": "2023-04-09T13:58:48.630Z"
     },
     {
-        "id": 235,
         "name": "Jetstream",
         "description": "Tailwind scaffolding.",
         "category": "UI & Blade Components",
@@ -5623,7 +5388,6 @@
         "created_at": "2023-04-09T13:58:48.633Z"
     },
     {
-        "id": 236,
         "name": "Laravel Charts",
         "description": "Draw charts with Chart.js library.",
         "category": "UI & Blade Components",
@@ -5642,7 +5406,6 @@
         "created_at": "2023-04-09T13:58:48.636Z"
     },
     {
-        "id": 237,
         "name": "Avatar",
         "description": "Plug n play avatar, turn name, email, and any other string into beautiful avatar or gravatar.",
         "category": "UI & Blade Components",
@@ -5669,7 +5432,6 @@
         "created_at": "2023-04-09T13:58:48.643Z"
     },
     {
-        "id": 238,
         "name": "Blade Flags",
         "description": "Display countries & languages flags in your Blade views.",
         "category": "UI & Blade Components",
@@ -5692,7 +5454,6 @@
         "created_at": "2023-04-09T13:58:48.647Z"
     },
     {
-        "id": 239,
         "name": "Livewire PowerGrid",
         "description": "PowerGrid generates Advanced Datatables using Livewire.",
         "category": "UI & Blade Components",
@@ -5714,7 +5475,6 @@
         "created_at": "2023-04-09T13:58:48.652Z"
     },
     {
-        "id": 240,
         "name": "Laravel Form Components",
         "description": "A set of Blade components to rapidly build forms with Tailwind CSS and Bootstrap.",
         "category": "UI & Blade Components",
@@ -5740,7 +5500,6 @@
         "created_at": "2023-04-09T13:58:48.656Z"
     },
     {
-        "id": 241,
         "name": "Laravel Themer",
         "description": "Adds multi-theme support to your application.",
         "category": "UI & Blade Components",
@@ -5762,7 +5521,6 @@
         "created_at": "2023-04-09T13:58:48.661Z"
     },
     {
-        "id": 242,
         "name": "Inertia Breadcrumbs",
         "description": "Automatically share breadcrumbs to Inertia.",
         "category": "UI & Blade Components",
@@ -5783,7 +5541,6 @@
         "created_at": "2023-04-09T13:58:48.664Z"
     },
     {
-        "id": 243,
         "name": "Laravel Blade Javascript",
         "description": "A Blade directive to export variables to JavaScript.",
         "category": "UI & Blade Components",
@@ -5806,7 +5563,6 @@
         "created_at": "2023-04-09T13:58:48.668Z"
     },
     {
-        "id": 244,
         "name": "Laravel Html",
         "description": "Painless html generation.",
         "category": "UI & Blade Components",
@@ -5829,7 +5585,6 @@
         "created_at": "2023-04-09T13:58:48.672Z"
     },
     {
-        "id": 245,
         "name": "Laravel Login Link",
         "description": "Quickly login to your local environment.",
         "category": "UI & Blade Components",
@@ -5851,7 +5606,6 @@
         "created_at": "2023-04-09T13:58:48.676Z"
     },
     {
-        "id": 246,
         "name": "Laravel Menu",
         "description": "Html Menu generator.",
         "category": "UI & Blade Components",
@@ -5874,7 +5628,6 @@
         "created_at": "2023-04-09T13:58:48.682Z"
     },
     {
-        "id": 247,
         "name": "Laravel Navigation",
         "description": "Manage menus, breadcrumbs, and other navigational elements.",
         "category": "UI & Blade Components",
@@ -5897,7 +5650,6 @@
         "created_at": "2023-04-09T13:58:48.686Z"
     },
     {
-        "id": 248,
         "name": "Rich Text Laravel",
         "description": "Integrates the Trix Editor. Inspired by the Action Text gem from Rails.",
         "category": "UI & Blade Components",
@@ -5920,7 +5672,6 @@
         "created_at": "2023-04-09T13:58:48.692Z"
     },
     {
-        "id": 249,
         "name": "Torchlight",
         "description": "A VS Code-compatible syntax highlighter through an HTTP API that tokenizes and highlights code.",
         "category": "UI & Blade Components",
@@ -5944,7 +5695,6 @@
         "created_at": "2023-04-09T13:58:48.696Z"
     },
     {
-        "id": 250,
         "name": "Laraberg",
         "description": "A Gutenberg implementation.",
         "category": "UI & Blade Components",
@@ -5963,7 +5713,6 @@
         "created_at": "2023-04-09T13:58:48.702Z"
     },
     {
-        "id": 251,
         "name": "WireUI",
         "description": "A library of components and resources to empower your Laravel and Livewire application development.",
         "category": "UI & Blade Components",
@@ -5986,7 +5735,6 @@
         "created_at": "2023-04-09T13:58:48.706Z"
     },
     {
-        "id": 252,
         "name": "Laravel Smart Ads",
         "description": "Ads, Banners, Callout Manager and Auto Ad Inserter.",
         "category": "Utilities & Helpers",
@@ -6005,7 +5753,6 @@
         "created_at": "2023-04-09T13:58:48.711Z"
     },
     {
-        "id": 253,
         "name": "Laravel Settings",
         "description": "Persistent, application-wide settings.",
         "category": "Utilities & Helpers",
@@ -6033,7 +5780,6 @@
         "created_at": "2023-04-09T13:58:48.714Z"
     },
     {
-        "id": 254,
         "name": "Short Url",
         "description": "Creating shortened URLs.",
         "category": "Utilities & Helpers",
@@ -6056,7 +5802,6 @@
         "created_at": "2023-04-09T13:58:48.718Z"
     },
     {
-        "id": 255,
         "name": "Momentum Paginator",
         "description": "A framework-agnostic headless wrapper around Pagination meta data.",
         "category": "Utilities & Helpers",
@@ -6078,7 +5823,6 @@
         "created_at": "2023-04-09T13:58:48.722Z"
     },
     {
-        "id": 256,
         "name": "Momentum Preflight",
         "description": "Realtime backend-driven request validation for Inertia apps.",
         "category": "Utilities & Helpers",
@@ -6103,7 +5847,6 @@
         "created_at": "2023-04-09T13:58:48.726Z"
     },
     {
-        "id": 257,
         "name": "Momentum Trail",
         "description": "Easily use named routes in TypeScript with auto-completion and type-safety.",
         "category": "Utilities & Helpers",
@@ -6130,7 +5873,6 @@
         "created_at": "2023-04-09T13:58:48.731Z"
     },
     {
-        "id": 258,
         "name": "Laravel Prose Linter",
         "description": "Syntax-aware proofreading for your application.",
         "category": "Utilities & Helpers",
@@ -6153,7 +5895,6 @@
         "created_at": "2023-04-09T13:58:48.734Z"
     },
     {
-        "id": 259,
         "name": "Laravel Server Timings",
         "description": "Add Server-Timing header information from within your apps.",
         "category": "Utilities & Helpers",
@@ -6179,7 +5920,6 @@
         "created_at": "2023-04-09T13:58:48.738Z"
     },
     {
-        "id": 260,
         "name": "Doorman",
         "description": "Limit access to your application by using invite codes.",
         "category": "Utilities & Helpers",
@@ -6200,7 +5940,6 @@
         "created_at": "2023-04-09T13:58:48.743Z"
     },
     {
-        "id": 261,
         "name": "Gravatar",
         "description": "Retrieve gravatar image URLs or check the existance of an image.",
         "category": "Utilities & Helpers",
@@ -6226,7 +5965,6 @@
         "created_at": "2023-04-09T13:58:48.746Z"
     },
     {
-        "id": 262,
         "name": "Laravel Cache",
         "description": "An improved helper for working with cache.",
         "category": "Utilities & Helpers",
@@ -6248,7 +5986,6 @@
         "created_at": "2023-04-09T13:58:48.754Z"
     },
     {
-        "id": 263,
         "name": "Laravel Defibrillator",
         "description": "Ensure that aspects of your application that should be running at a regular interval are doing so.",
         "category": "Utilities & Helpers",
@@ -6269,7 +6006,6 @@
         "created_at": "2023-04-09T13:58:48.757Z"
     },
     {
-        "id": 264,
         "name": "Inertia Flash",
         "description": "A Quick way to flash variables to InertiaJS that persist on session.",
         "category": "Utilities & Helpers",
@@ -6293,7 +6029,6 @@
         "created_at": "2023-04-09T13:58:48.762Z"
     },
     {
-        "id": 265,
         "name": "Laravel Responder",
         "description": "A package for building API responses, integrating Fractal.",
         "category": "Utilities & Helpers",
@@ -6319,7 +6054,6 @@
         "created_at": "2023-04-09T13:58:48.765Z"
     },
     {
-        "id": 266,
         "name": "Flaky",
         "description": "Handle intermittent failures caused by unreliable third parties.",
         "category": "Utilities & Helpers",
@@ -6342,7 +6076,6 @@
         "created_at": "2023-04-09T13:58:48.770Z"
     },
     {
-        "id": 267,
         "name": "Sidecar",
         "description": "Deploy and execute AWS Lambda functions.",
         "category": "Utilities & Helpers",
@@ -6365,7 +6098,6 @@
         "created_at": "2023-04-09T13:58:48.774Z"
     },
     {
-        "id": 268,
         "name": "RandoPHP",
         "description": "Random generators (Integer, Char, Byte, Sequences, Boolean) and take random sample from arrays.",
         "category": "Utilities & Helpers",
@@ -6384,7 +6116,6 @@
         "created_at": "2023-04-09T13:58:48.777Z"
     },
     {
-        "id": 269,
         "name": "Receiver",
         "description": "A drop-in webhook handling library.",
         "category": "Utilities & Helpers",
@@ -6406,7 +6137,6 @@
         "created_at": "2023-04-09T13:58:48.783Z"
     },
     {
-        "id": 270,
         "name": "Turbo Laravel",
         "description": "A set of conventions to make the most out of Hotwire.",
         "category": "Utilities & Helpers",
@@ -6429,7 +6159,6 @@
         "created_at": "2023-04-09T13:58:48.787Z"
     },
     {
-        "id": 271,
         "name": "Laravel HTMLMin",
         "description": "A simple HTML minifier.",
         "category": "Utilities & Helpers",
@@ -6454,7 +6183,6 @@
         "created_at": "2023-04-09T13:58:48.793Z"
     },
     {
-        "id": 272,
         "name": "Require PIN",
         "description": "Pin confirmation and validation before processing requests to a specified route.",
         "category": "Utilities & Helpers",
@@ -6476,7 +6204,6 @@
         "created_at": "2023-04-09T13:58:48.796Z"
     },
     {
-        "id": 273,
         "name": "Transporter",
         "description": "A futuristic way to send API requests in PHP. This is an OOP approach to handling API requests.",
         "category": "Utilities & Helpers",
@@ -6497,7 +6224,6 @@
         "created_at": "2023-04-09T13:58:48.802Z"
     },
     {
-        "id": 274,
         "name": "Snappy",
         "description": "A PHP library allowing thumbnail, snapshot or PDF generation from a url or a html page.",
         "category": "Utilities & Helpers",
@@ -6516,7 +6242,6 @@
         "created_at": "2023-04-09T13:58:48.806Z"
     },
     {
-        "id": 275,
         "name": "Laravel Hours Helper",
         "description": "Create a Collection of dates/times with a specific interval for a specific period.",
         "category": "Utilities & Helpers",
@@ -6538,7 +6263,6 @@
         "created_at": "2023-04-09T13:58:48.812Z"
     },
     {
-        "id": 276,
         "name": "Octane",
         "description": "Supercharge your application performance.",
         "category": "Utilities & Helpers",
@@ -6561,7 +6285,6 @@
         "created_at": "2023-04-09T13:58:48.816Z"
     },
     {
-        "id": 277,
         "name": "Html Strings Affixer",
         "description": "Finds texts in HTML and replaces it with suffixed and prefixed string.",
         "category": "Utilities & Helpers",
@@ -6582,7 +6305,6 @@
         "created_at": "2023-04-09T13:58:48.822Z"
     },
     {
-        "id": 278,
         "name": "Laravel Markable",
         "description": "Integrate likes, bookmarks, favorites, reactions and custom made marks into your application.",
         "category": "Utilities & Helpers",
@@ -6604,7 +6326,6 @@
         "created_at": "2023-04-09T13:58:48.825Z"
     },
     {
-        "id": 279,
         "name": "Laravel Invite Codes",
         "description": "Easily manage invite codes for your application.",
         "category": "Utilities & Helpers",
@@ -6626,7 +6347,6 @@
         "created_at": "2023-04-09T13:58:48.829Z"
     },
     {
-        "id": 280,
         "name": "Captcha",
         "description": "Provider for including the Captcha.",
         "category": "Utilities & Helpers",
@@ -6652,7 +6372,6 @@
         "created_at": "2023-04-09T13:58:48.833Z"
     },
     {
-        "id": 281,
         "name": "Purifier",
         "description": "A simple service provider for easily using HTMLPurifier.",
         "category": "Utilities & Helpers",
@@ -6678,7 +6397,6 @@
         "created_at": "2023-04-09T13:58:48.836Z"
     },
     {
-        "id": 282,
         "name": "Laravel Auto Binder",
         "description": "Bind interfaces to concrete classes automatically.",
         "category": "Utilities & Helpers",
@@ -6700,7 +6418,6 @@
         "created_at": "2023-04-09T13:58:48.842Z"
     },
     {
-        "id": 283,
         "name": "VatCalculator",
         "description": "Handle all the hard stuff related to EU MOSS tax/vat regulations, the way it should be.",
         "category": "Utilities & Helpers",
@@ -6725,7 +6442,6 @@
         "created_at": "2023-04-09T13:58:48.845Z"
     },
     {
-        "id": 284,
         "name": "Laravel Desktop Notifier",
         "description": "Send notifications to your desktop from your Laravel Artisan Commands.",
         "category": "Utilities & Helpers",
@@ -6749,7 +6465,6 @@
         "created_at": "2023-04-09T13:58:48.850Z"
     },
     {
-        "id": 285,
         "name": "Splat",
         "description": "Glob-like file and pattern matching utility.",
         "category": "Utilities & Helpers",
@@ -6768,7 +6483,6 @@
         "created_at": "2023-04-09T13:58:48.853Z"
     },
     {
-        "id": 286,
         "name": "Laravel Fast Refresh Database",
         "description": "Refresh your test databases faster during testing.",
         "category": "Utilities & Helpers",
@@ -6789,7 +6503,6 @@
         "created_at": "2023-04-09T13:58:48.857Z"
     },
     {
-        "id": 287,
         "name": "Standards",
         "description": "A collection of standards as PHP Enums: ISO3166, ISO4217, ISO639...",
         "category": "Utilities & Helpers",
@@ -6808,7 +6521,6 @@
         "created_at": "2023-04-09T13:58:48.861Z"
     },
     {
-        "id": 288,
         "name": "Laravel Phone",
         "description": "Phone number functionality.",
         "category": "Utilities & Helpers",
@@ -6830,7 +6542,6 @@
         "created_at": "2023-04-09T13:58:48.865Z"
     },
     {
-        "id": 289,
         "name": "Laravel App Settings",
         "description": "Store settings in database with a manager UI for your app.",
         "category": "Utilities & Helpers",
@@ -6855,7 +6566,6 @@
         "created_at": "2023-04-09T13:58:48.869Z"
     },
     {
-        "id": 290,
         "name": "Laravel FilePond",
         "description": "A straight forward backend support to work with FilePond library.",
         "category": "Utilities & Helpers",
@@ -6879,7 +6589,6 @@
         "created_at": "2023-04-09T13:58:48.873Z"
     },
     {
-        "id": 291,
         "name": "Laravel Printing",
         "description": "Directly send PDF documents or raw text directly to a printer on your local network.",
         "category": "Utilities & Helpers",
@@ -6902,7 +6611,6 @@
         "created_at": "2023-04-09T13:58:48.876Z"
     },
     {
-        "id": 292,
         "name": "Roach",
         "description": "The complete web scraping toolkit for PHP.",
         "category": "Utilities & Helpers",
@@ -6924,7 +6632,6 @@
         "created_at": "2023-04-09T13:58:48.881Z"
     },
     {
-        "id": 293,
         "name": "Laravel Page Cache",
         "description": "Caches responses as static files on disk for lightning fast page loads.",
         "category": "Utilities & Helpers",
@@ -6950,7 +6657,6 @@
         "created_at": "2023-04-09T13:58:48.884Z"
     },
     {
-        "id": 294,
         "name": "Simple QrCode",
         "description": "An easy-to-use PHP QrCode generator with first-party support.",
         "category": "Utilities & Helpers",
@@ -6971,7 +6677,6 @@
         "created_at": "2023-04-09T13:58:48.888Z"
     },
     {
-        "id": 295,
         "name": "Crypto",
         "description": "Encrypt and decrypt data using private/public keys.",
         "category": "Utilities & Helpers",
@@ -6990,7 +6695,6 @@
         "created_at": "2023-04-09T13:58:48.891Z"
     },
     {
-        "id": 296,
         "name": "Filament Markdown Editor",
         "description": "A markdown editor for Filament with code highlighting and image uploads.",
         "category": "Utilities & Helpers",
@@ -7012,7 +6716,6 @@
         "created_at": "2023-04-09T13:58:48.895Z"
     },
     {
-        "id": 297,
         "name": "Laravel Analytics",
         "description": "Retrieve pageviews and other data from Google Analytics.",
         "category": "Utilities & Helpers",
@@ -7035,7 +6738,6 @@
         "created_at": "2023-04-09T13:58:48.898Z"
     },
     {
-        "id": 298,
         "name": "Laravel Collection Macros",
         "description": "A set of useful collection macros.",
         "category": "Utilities & Helpers",
@@ -7058,7 +6760,6 @@
         "created_at": "2023-04-09T13:58:48.902Z"
     },
     {
-        "id": 299,
         "name": "Laravel Cookie Consent",
         "description": "Make your app comply with the EU cookie law.",
         "category": "Utilities & Helpers",
@@ -7081,7 +6782,6 @@
         "created_at": "2023-04-09T13:58:48.906Z"
     },
     {
-        "id": 300,
         "name": "Laravel Cronless Schedule",
         "description": "Run the Laravel scheduler without relying on cron.",
         "category": "Utilities & Helpers",
@@ -7104,7 +6804,6 @@
         "created_at": "2023-04-09T13:58:48.912Z"
     },
     {
-        "id": 301,
         "name": "Laravel Feed",
         "description": "Easily generate RSS feeds.",
         "category": "Utilities & Helpers",
@@ -7127,7 +6826,6 @@
         "created_at": "2023-04-09T13:58:48.915Z"
     },
     {
-        "id": 302,
         "name": "Laravel Fractal",
         "description": "An easy to use Fractal wrapper.",
         "category": "Utilities & Helpers",
@@ -7150,7 +6848,6 @@
         "created_at": "2023-04-09T13:58:48.918Z"
     },
     {
-        "id": 303,
         "name": "Laravel Google Calendar",
         "description": "Manage events on a Google Calendar.",
         "category": "Utilities & Helpers",
@@ -7175,7 +6872,6 @@
         "created_at": "2023-04-09T13:58:48.922Z"
     },
     {
-        "id": 304,
         "name": "Laravel Google Fonts",
         "description": "Cache & serve Google Fonts from your application.",
         "category": "Utilities & Helpers",
@@ -7198,7 +6894,6 @@
         "created_at": "2023-04-09T13:58:48.926Z"
     },
     {
-        "id": 305,
         "name": "Laravel Onboard",
         "description": "Track user onboarding steps.",
         "category": "Utilities & Helpers",
@@ -7220,7 +6915,6 @@
         "created_at": "2023-04-09T13:58:48.931Z"
     },
     {
-        "id": 306,
         "name": "Laravel Response Cache",
         "description": "Speed up your app by caching the entire response.",
         "category": "Utilities & Helpers",
@@ -7245,7 +6939,6 @@
         "created_at": "2023-04-09T13:58:48.935Z"
     },
     {
-        "id": 307,
         "name": "Laravel Route Discovery",
         "description": "Automatically discover routes.",
         "category": "Utilities & Helpers",
@@ -7268,7 +6961,6 @@
         "created_at": "2023-04-09T13:58:48.938Z"
     },
     {
-        "id": 308,
         "name": "Laravel Short Schedule",
         "description": "Schedule artisan commands to run at a sub-minute frequency.",
         "category": "Utilities & Helpers",
@@ -7291,7 +6983,6 @@
         "created_at": "2023-04-09T13:58:48.942Z"
     },
     {
-        "id": 309,
         "name": "Laravel Site Search",
         "description": "Create a full-text search index by crawling your site.",
         "category": "Utilities & Helpers",
@@ -7314,7 +7005,6 @@
         "created_at": "2023-04-09T13:58:48.947Z"
     },
     {
-        "id": 310,
         "name": "Laravel Stats",
         "description": "Easily track application stats like orders, subscriptions and users and their change over time.",
         "category": "Utilities & Helpers",
@@ -7337,7 +7027,6 @@
         "created_at": "2023-04-09T13:58:48.951Z"
     },
     {
-        "id": 311,
         "name": "Laravel Tags",
         "description": "Add tags and taggable behaviour to your app.",
         "category": "Utilities & Helpers",
@@ -7364,7 +7053,6 @@
         "created_at": "2023-04-09T13:58:48.954Z"
     },
     {
-        "id": 312,
         "name": "Laravel Typescript Transformer",
         "description": "Transform PHP types to Typescript.",
         "category": "Utilities & Helpers",
@@ -7383,7 +7071,6 @@
         "created_at": "2023-04-09T13:58:48.958Z"
     },
     {
-        "id": 313,
         "name": "Laravel URL Signer",
         "description": "Create and validate signed URLs with a limited lifetime.",
         "category": "Utilities & Helpers",
@@ -7405,7 +7092,6 @@
         "created_at": "2023-04-09T13:58:48.962Z"
     },
     {
-        "id": 314,
         "name": "Laravel Validation Rules",
         "description": "A set of useful validation rules.",
         "category": "Utilities & Helpers",
@@ -7428,7 +7114,6 @@
         "created_at": "2023-04-09T13:58:48.966Z"
     },
     {
-        "id": 315,
         "name": "Laravel Webhook Client",
         "description": "Receive webhooks.",
         "category": "Utilities & Helpers",
@@ -7451,7 +7136,6 @@
         "created_at": "2023-04-09T13:58:48.970Z"
     },
     {
-        "id": 316,
         "name": "Laravel Webhook Server",
         "description": "Send webhooks.",
         "category": "Utilities & Helpers",
@@ -7474,7 +7158,6 @@
         "created_at": "2023-04-09T13:58:48.973Z"
     },
     {
-        "id": 317,
         "name": "Once",
         "description": "A magic memoization function.",
         "category": "Utilities & Helpers",
@@ -7493,7 +7176,6 @@
         "created_at": "2023-04-09T13:58:48.976Z"
     },
     {
-        "id": 318,
         "name": "Period",
         "description": "Adds support for comparing multiple dates with each other.",
         "category": "Utilities & Helpers",
@@ -7512,7 +7194,6 @@
         "created_at": "2023-04-09T13:58:48.982Z"
     },
     {
-        "id": 319,
         "name": "Schema Org",
         "description": "A fluent builder Schema.org types and ld+json generator.",
         "category": "Utilities & Helpers",
@@ -7531,7 +7212,6 @@
         "created_at": "2023-04-09T13:58:48.985Z"
     },
     {
-        "id": 320,
         "name": "Artisan View",
         "description": "Manage your views in Laravel projects through artisan.",
         "category": "Utilities & Helpers",
@@ -7554,7 +7234,6 @@
         "created_at": "2023-04-09T13:58:48.988Z"
     },
     {
-        "id": 321,
         "name": "Has Parameters",
         "description": "A trait that allows you to pass arguments to Laravel middleware in a more PHP-ish way.",
         "category": "Utilities & Helpers",
@@ -7576,7 +7255,6 @@
         "created_at": "2023-04-09T13:58:48.992Z"
     },
     {
-        "id": 322,
         "name": "Geocoder Laravel",
         "description": "Geocoder service provider.",
         "category": "Utilities & Helpers",
@@ -7602,7 +7280,6 @@
         "created_at": "2023-04-09T13:58:48.995Z"
     },
     {
-        "id": 323,
         "name": "Laravel GeoIP",
         "description": "Determine the geographical location of website visitors based on their IP addresses.",
         "category": "Utilities & Helpers",
@@ -7625,7 +7302,6 @@
         "created_at": "2023-04-09T13:58:48.998Z"
     },
     {
-        "id": 324,
         "name": "Laravel Model Json",
         "description": "Easily export data from specific models to JSON format.",
         "category": "Utilities & Helpers",
@@ -7644,7 +7320,6 @@
         "created_at": "2023-04-09T13:58:49.002Z"
     },
     {
-        "id": 325,
         "name": "Laravel Hashids",
         "description": "A Hashids bridge.",
         "category": "Utilities & Helpers",
@@ -7665,7 +7340,6 @@
         "created_at": "2023-04-09T13:58:49.005Z"
     },
     {
-        "id": 326,
         "name": "Laravel ETag & Conditionals",
         "description": "A set of middlewares to both set ETags and handle HTTP Conditional Requests.",
         "category": "Utilities & Helpers",
@@ -7697,7 +7371,6 @@
         "composer": "laracraft-tech/laravel-date-scopes",
         "npm": null,
         "php_only": false,
-        "id": 327,
         "updated_at": "2023-04-12T00:55:15.324Z",
         "created_at": "2023-04-12T00:55:15.324Z",
         "stars": 107,

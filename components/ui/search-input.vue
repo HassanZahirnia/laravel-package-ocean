@@ -21,11 +21,11 @@ search.value = route.query.search?.toString() ?? ''
         <!-- X icon -->
         <transition
             enter-active-class="duration-150 ease-out"
-            enter-from-class="translate-x-1 rotate-90 opacity-0"
+            enter-from-class="translate-x-2 rotate-90 opacity-0"
             enter-to-class="translate-x-0 rotate-0 opacity-100"
             leave-active-class="duration-150 ease-in"
             leave-from-class="translate-x-0 rotate-0 opacity-100"
-            leave-to-class="translate-x-1 rotate-90 opacity-0"
+            leave-to-class="translate-x-2 rotate-90 opacity-0"
             >
             <div
                 v-if="search"

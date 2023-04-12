@@ -1,11 +1,6 @@
 import { z } from 'zod'
 import { categories } from '~/database/categories'
 
-// Id
-export const id = z
-    .number()
-    .int()
-
 // Name
 export const name = z
     .string()
@@ -172,7 +167,6 @@ export const updated_at = z.coerce
 
 // Laravel Package
 export const laravelPackage = z.object({
-    id,
     name,
     description,
     category,
@@ -207,10 +201,6 @@ export const laravelPackageSchema = z.array(laravelPackage)
     // Make sure the github in the array is unique
     .refine(items => new Set(items.map(item => item.github)).size === items.length, {
         message: 'Github must be unique in the array',
-    })
-    // Make sure the id in the array is unique
-    .refine(items => new Set(items.map(item => item.id)).size === items.length, {
-        message: 'Id must be unique in the array',
     })
     // Make sure the composer in the array is unique if it is not null
     .refine(items => new Set(items.filter(item => item.composer !== null).map(item => item.composer)).size === items.filter(item => item.composer !== null).length, {

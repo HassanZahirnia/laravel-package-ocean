@@ -2,8 +2,6 @@ import { categories } from '@/database/categories'
 import type { Category } from '@/types/category'
 
 export type Package = {
-    id: number
-
     // Name of the package. Example: 'Laravel Backup'
     name: string
     

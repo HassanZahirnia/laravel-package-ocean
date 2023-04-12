@@ -13,6 +13,7 @@ inquirer.registerPrompt('autocomplete', inquirerPrompt)
 export const showPackageSearch = async function(){
     // Initialize the minisearch instance
     const miniSearch = new MiniSearch({
+        idField: 'github',
         fields: [
             'name',
             'github',
@@ -42,7 +43,7 @@ export const showPackageSearch = async function(){
             const searchResult = miniSearch.search(input)
 
             // Filter out packages that are not in the search result
-            results = searchResult.map(searchResultItem => results.find(laravelPackage => laravelPackage.id === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
+            results = searchResult.map(searchResultItem => results.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
 
             // Return package name followed by github url
             return results.map(result => `${result.name} (${result.github})`)
