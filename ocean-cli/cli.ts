@@ -2,6 +2,7 @@ import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { laravelPackageSchema } from './validation-rules'
 import { readPackagesDatabase } from './database'
+import { writeActiveLaravelVersion } from './utils/laravel'
 import { clearScreen, log, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
@@ -21,6 +22,7 @@ export const showMainMenu = function(){
                     'Package: Update All',
                     'Package: Update Compatible Versions',
                     'Package: Update Github Stars',
+                    'Laravel: Update Active Versions',
                     'Exit',
                 ],
             },
@@ -33,6 +35,9 @@ export const showMainMenu = function(){
                 case 'Package: Search':
                     showPackageSearch()
                     break
+                case 'Laravel: Update Active Versions':
+                    writeActiveLaravelVersion()
+                    break
                 case 'Exit':
                     process.exit(0)
             }
@@ -40,9 +45,10 @@ export const showMainMenu = function(){
         })
 }
 
-// Check if --compile-database-to-json argument is passed
 const verboseFlag = process.argv.includes('--verbose')
 const validateJsonFlag = process.argv.includes('--validate-json')
+const updateActiveLaravelVersionsFlag = process.argv.includes('--update-active-laravel-versions')
+
 if (validateJsonFlag) {
     const laravelPackages = readPackagesDatabase()
     const validationResult = laravelPackageSchema.safeParse(laravelPackages)
@@ -53,6 +59,9 @@ if (validateJsonFlag) {
             log(validationResult.error.errors)
         
     }
+}
+else if(updateActiveLaravelVersionsFlag){
+    writeActiveLaravelVersion({ noMenu: true })
 }
 else{
 // Clear the screen

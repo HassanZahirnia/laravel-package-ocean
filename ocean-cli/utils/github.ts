@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 export type GithubData = {
     stargazers_count: number
     archived: boolean

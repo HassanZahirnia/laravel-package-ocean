@@ -25,7 +25,7 @@ import '@fontsource/poppins/latin.css'
                     <span class="i-fluent-emoji-purple-heart text-lg inline-block relative top-1" />
                     by
                     <a
-                        href="https://github.com/HassanZahirnia"
+                        href="https://zahirnia.com"
                         class="
                         transition duration-300
                         hover:text-black

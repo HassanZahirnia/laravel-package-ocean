@@ -6,7 +6,6 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "update-packages-database": "tsx update-database.ts && ./node_modules/.bin/eslint --fix database/packages.ts database/laravel-versions.ts",
         "ocean": "tsx ./ocean-cli/cli.ts"
     },
     "devDependencies": {
@@ -52,7 +51,7 @@
         "minisearch": "^6.0.1",
         "nuxt": "3.3.3",
         "nuxt-gtag": "^0.5.4",
-        "nuxt-simple-sitemap": "^2.4.8",
+        "nuxt-simple-sitemap": "^2.4.11",
         "postcss": "^8.4.21",
         "sqlite3": "^5.1.6",
         "stylus": "^0.59.0",

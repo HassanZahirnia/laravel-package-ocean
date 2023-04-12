@@ -4,12 +4,14 @@ import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import { find, isEmpty } from 'lodash'
 import axios from 'axios'
 import dotenv from 'dotenv'
+import chalk from 'chalk'
 import type { packagistData } from '../utils/composer'
 import { extract_packagist_detected_compatible_versions, extract_packagist_first_release_at, extract_packagist_latest_release_at } from '../utils/composer'
 import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../utils/npm'
 import type { NpmData } from '../utils/npm'
 import type { GithubData } from '../utils/github'
 import { extract_github_stars } from '../utils/github'
+import { log } from '../print'
 import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
 import {
     name as z_name,
@@ -22,6 +24,8 @@ import {
 } from '~/ocean-cli/validation-rules'
 import { categories } from '~/database/categories'
 import type { Package } from '~/types/package'
+
+dotenv.config()
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
@@ -137,43 +141,55 @@ export const addPackage = async function(){
         },
     ])
         .then(
-            async(answers: Package) => {
-                dotenv.config()
+            async(
+                answers: Pick<Package,
+                    'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github' | 'php_only'>,
+            ) => {
+                const newPackage: Package = {
+                    name: answers.name,
+                    description: answers.description,
+                    category: answers.category,
+                    github: answers.github,
+                    author: answers.author,
+                    composer: isEmpty(answers.composer) ? null : answers.composer,
+                    npm: isEmpty(answers.npm) ? null : answers.npm,
+                    stars: 0,
+                    keywords: [],
+                    first_release_at: '',
+                    latest_release_at: '',
+                    detected_compatible_versions: [],
+                    compatible_versions: [],
+                    php_only: answers.php_only,
+                    updated_at: new Date().toISOString(),
+                    created_at: new Date().toISOString(),
+                }
 
-                answers.composer = isEmpty(answers.composer) ? null : answers.composer
-                answers.npm = isEmpty(answers.npm) ? null : answers.npm
-                answers.updated_at = new Date().toISOString()
-                answers.created_at = new Date().toISOString()
-                answers.stars = 0
-                answers.keywords = []
-                answers.first_release_at = ''
-                answers.latest_release_at = ''
-                answers.detected_compatible_versions = []
-                answers.compatible_versions = []
-
-                if(answers.composer && !answers.php_only){
+                if(newPackage.composer && !newPackage.php_only){
                     const { data: packagistData }: { data: packagistData }
-                        = await axios.get(`https://packagist.org/packages/${answers.composer}.json`)
+                        = await axios.get(`https://packagist.org/packages/${newPackage.composer}.json`)
                     
-                    answers.first_release_at = extract_packagist_first_release_at(packagistData)
-                    answers.latest_release_at = extract_packagist_latest_release_at(packagistData)
-                    answers.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
+                    newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
+                    newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
+                    newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
+
+                    if (newPackage.detected_compatible_versions.length === 0) 
+                        log(chalk.yellow('Could not detect any compatible versions \n'))
                 }
-                else if(answers.npm){
-                    const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${answers.npm}`)
-                    answers.first_release_at = extract_npm_first_release_at(npmData)
-                    answers.latest_release_at = extract_npm_latest_release_at(npmData)
+                else if(newPackage.npm){
+                    const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
+                    newPackage.first_release_at = extract_npm_first_release_at(npmData)
+                    newPackage.latest_release_at = extract_npm_latest_release_at(npmData)
                 }
 
-                const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${answers.github.substring(19)}`, {
+                const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${newPackage.github.substring(19)}`, {
                     headers: {
                         Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
                     },
                 })
 
-                answers.stars = extract_github_stars(githubData)
+                newPackage.stars = extract_github_stars(githubData)
 
-                laravelPackages.push(answers)
+                laravelPackages.push(newPackage)
 
                 writePackagesDatabase(laravelPackages)
             },

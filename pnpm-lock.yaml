@@ -128,8 +128,8 @@ devDependencies:
     specifier: ^0.5.4
     version: 0.5.4
   nuxt-simple-sitemap:
-    specifier: ^2.4.8
-    version: 2.4.8
+    specifier: ^2.4.11
+    version: 2.4.11
   postcss:
     specifier: ^8.4.21
     version: 8.4.21
@@ -1060,7 +1060,7 @@ packages:
     resolution: {integrity: sha512-Z2UmPkBy5WjxvHKuUcl1X6vKWnIyWSP+9UGde1F+MzzZxYgAQybFud1uL2B3KCowxZdoqT1hd2WklV7EtyCwrQ==}
     hasBin: true
     dependencies:
-      '@nuxt/kit': 3.3.3
+      '@nuxt/kit': 3.4.0
       chalk: 5.2.0
       ci-info: 3.8.0
       consola: 3.0.1
@@ -5165,13 +5165,14 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-simple-sitemap@2.4.8:
-    resolution: {integrity: sha512-wxosIoPO1TWaJh55Fhk7H72gctbasmPPdvPI22msqkZyN9sFrAupjwjPr6SuoT694mLzjolZeWaGwMQ5c1KevA==}
+  /nuxt-simple-sitemap@2.4.11:
+    resolution: {integrity: sha512-GQLFJ/0WoH5zNTd91mBxq+zT96YFZt71dHxo40M+aCZIQbQE4ikYoXEyOa3K9H+kS/MXLVoHzWAriEemS12jiQ==}
     dependencies:
-      '@nuxt/kit': 3.3.3
+      '@nuxt/kit': 3.4.0
       chalk: 5.2.0
       defu: 6.1.2
       escape-string-regexp: 5.0.0
+      globby: 13.1.4
       knitwork: 1.0.0
       pathe: 1.1.0
       radix3: 1.0.1

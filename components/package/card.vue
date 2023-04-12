@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
-import { active_laravel_versions } from '@/database/laravel-versions'
+import { active_laravel_versions } from '@/database/laravel'
 import type { Package } from '@/types/package'
 
 const $props = defineProps<{
