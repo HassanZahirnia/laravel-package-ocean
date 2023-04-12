@@ -31,14 +31,16 @@ const selectedItem = computed({
     <Listbox v-model="selectedItem">
         <div class="relative z-10">
             <ListboxButton
-                class="relative cursor-default rounded-xl
+                class="relative cursor-pointer rounded-xl
                 transition duration-300
                 py-3 pl-3 pr-10
                 w-full
                 text-left
                 text-sm
-                bg-white
+                bg-white/50
+                hover:bg-white/80
                 dark:bg-[#362B59]/20
+                dark:hover:bg-[#362B59]/40
                  placeholder:text-[#9095AE]
                 focus:outline-none
                 focus-visible:border-indigo-500
@@ -52,7 +54,7 @@ const selectedItem = computed({
                 <span class="block truncate">{{ selectedItem.name }}</span>
                 <span
                     class="pointer-events-none
-                    pr-2
+                    pr-3
                     flex items-center
                     absolute
                     inset-y-0 right-0
@@ -66,14 +68,16 @@ const selectedItem = computed({
             </ListboxButton>
 
             <transition
-                leave-active-class="transition duration-100 ease-in"
-                leave-from-class="opacity-100"
-                leave-to-class="opacity-0"
+                enter-active-class="duration-150 ease-out"
+                enter-from-class="-translate-y-1 opacity-0"
+                enter-to-class="translate-y-0 rotate-0 opacity-100"
+                leave-active-class="duration-150 ease-in"
+                leave-from-class="translate-y-0 rotate-0 opacity-100"
+                leave-to-class="-translate-y-1 opacity-0"
                 >
                 <ListboxOptions
                     class="overflow-auto rounded-md focus:outline-none
                     max-h-60 w-full
-                    py-1
                     mt-1
                     absolute
                     text-base sm:text-sm
@@ -91,12 +95,22 @@ const selectedItem = computed({
                         as="template"
                         >
                         <li
+                            class="group cursor-pointer
+                            relative select-none
+                            py-2.5 pl-9 pr-4
+                            first:pt-3
+                            last:pb-3
+                            transition duration-200
+                            "
                             :class="[
-                                active ? 'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100' : 'text-gray-900 dark:text-[#ABB0DD]',
-                                'relative cursor-default select-none py-2 pl-9 pr-4',
+                                active ?
+                                    'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100'
+                                    : 'text-gray-900 dark:text-[#ABB0DD]',
                             ]"
                             >
                             <span
+                                class="transition duration-200
+                                group-hover:translate-x-0.5"
                                 :class="[
                                     selected ? 'font-medium' : 'font-normal',
                                     'block truncate',
@@ -106,6 +120,7 @@ const selectedItem = computed({
                                 v-if="selected"
                                 class="pl-2
                                 flex items-center
+                                transition duration-200
                                 text-indigo-600
                                 absolute inset-y-0 left-0
                                 "
