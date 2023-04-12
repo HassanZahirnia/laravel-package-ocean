@@ -7585,5 +7585,26 @@
         "php_only": false,
         "updated_at": "2023-04-12T15:29:46.961Z",
         "created_at": "2023-04-12T15:29:46.961Z"
+    },
+    {
+        "name": "Laravel Event Sourcing",
+        "description": "Event sourcing setup with aggregates, projectors, and reactors.",
+        "category": "Code Architecture",
+        "github": "https://github.com/spatie/laravel-event-sourcing",
+        "author": "spatie",
+        "composer": "spatie/laravel-event-sourcing",
+        "npm": null,
+        "stars": 616,
+        "keywords": [],
+        "first_release_at": "2019-09-20T07:47:13+00:00",
+        "latest_release_at": "2023-01-25T09:36:07+00:00",
+        "detected_compatible_versions": [
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-12T20:25:55.354Z",
+        "created_at": "2023-04-12T20:25:55.354Z"
     }
 ]
