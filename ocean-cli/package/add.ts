@@ -185,7 +185,7 @@ export const addPackage = async function(){
 
                 const spinner = ora('Fetching online information').start()
 
-                if(newPackage.composer && !newPackage.php_only){
+                if(newPackage.composer){
                     spinner.text = 'Getting packagist data'
 
                     const { data: packagistData }: { data: packagistData }
@@ -193,10 +193,13 @@ export const addPackage = async function(){
                     
                     newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
                     newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
-                    newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
 
-                    if (newPackage.detected_compatible_versions.length === 0) 
-                        log(chalk.yellow('\n Could not detect any compatible versions \n'))
+                    if(!newPackage.php_only){
+                        newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
+
+                        if (newPackage.detected_compatible_versions.length === 0) 
+                            log(chalk.yellow('\n Could not detect any compatible versions \n'))
+                    }
                 }
                 else if(newPackage.npm){
                     spinner.text = 'Getting npm data'
@@ -227,10 +230,15 @@ export const addPackage = async function(){
                     log(validationResult.error.errors.map(error => error.message).join('\n'))
                 }
                 else{
+                    // Add the new package to the array
                     laravelPackages.push(newPackage)
-                    writePackagesDatabase(laravelPackages)
-                }
 
+                    // Write the new package to the database
+                    writePackagesDatabase(laravelPackages)
+
+                    // Show a success message
+                    log(chalk.magenta('\n Package has been added! \n'))
+                }
             },
         )
 }

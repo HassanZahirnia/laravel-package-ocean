@@ -67,6 +67,16 @@ export const description = z
             message: 'Must not contain multiple spaces between words',
         },
     )
+    .refine(
+        (description) => {
+            // Regular expression to check for special characters that need to be escaped in JSON
+            const specialCharRegex = /["\\/]/
+            return !specialCharRegex.test(description)
+        },
+        {
+            message: 'Must not contain characters that need to be escaped in JSON',
+        },
+    )
 
 // Category
 export const category = z

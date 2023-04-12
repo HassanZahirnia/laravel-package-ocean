@@ -3077,7 +3077,7 @@
     {
         "name": "Laravel TypeScript",
         "description": "Generate TypeScript interfaces from your models.",
-        "category": "Debugging & Dev Tools",
+        "category": "Utilities & Helpers",
         "github": "https://github.com/lepikhinb/laravel-typescript",
         "author": "based",
         "composer": "based/laravel-typescript",
@@ -7482,5 +7482,86 @@
         "php_only": false,
         "updated_at": "2023-04-12T13:40:32.500Z",
         "created_at": "2023-04-12T13:40:32.500Z"
+    },
+    {
+        "name": "Laravel-Model-TS-Type",
+        "description": "Generate TypeScript types based on your models.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/scrumble-nl/laravel-model-ts-type",
+        "author": "scrumble-nl",
+        "composer": "scrumble-nl/laravel-model-ts-type",
+        "npm": null,
+        "stars": 43,
+        "keywords": [],
+        "first_release_at": "2020-09-28T16:07:46+00:00",
+        "latest_release_at": "2023-02-15T10:20:47+00:00",
+        "detected_compatible_versions": [
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-12T13:52:40.627Z",
+        "created_at": "2023-04-12T13:52:40.627Z"
+    },
+    {
+        "name": "Laravel Eloquent Query Cache",
+        "description": "Adding cache on your eloquent queries' results is now a breeze.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/renoki-co/laravel-eloquent-query-cache",
+        "author": "rennokki",
+        "composer": "rennokki/laravel-eloquent-query-cache",
+        "npm": null,
+        "stars": 883,
+        "keywords": [],
+        "first_release_at": "2019-11-21T18:29:36+00:00",
+        "latest_release_at": "2023-04-01T12:26:34+00:00",
+        "detected_compatible_versions": [
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-12T14:13:49.769Z",
+        "created_at": "2023-04-12T14:13:49.769Z"
+    },
+    {
+        "name": "Dcter Dates Converter",
+        "description": "Convert date from Hijri to Gregorian and Jalali and vice versa.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/hanifhefaz/dcter",
+        "author": "hanifhefaz",
+        "composer": "hanifhefaz/dcter",
+        "npm": null,
+        "stars": 7,
+        "keywords": [],
+        "first_release_at": "2023-04-07T13:42:26+00:00",
+        "latest_release_at": "2023-04-11T07:57:20+00:00",
+        "detected_compatible_versions": [],
+        "compatible_versions": [],
+        "php_only": true,
+        "updated_at": "2023-04-12T14:21:21.440Z",
+        "created_at": "2023-04-12T14:21:21.440Z"
+    },
+    {
+        "name": "Laravel Multipayment Gateways",
+        "description": "Handle multiple payment gateways such as Paystack, Flutterwave and Stripe.",
+        "category": "Payment",
+        "github": "https://github.com/MusahMusah/laravel-multipayment-gateways",
+        "author": "musahmusah",
+        "composer": "musahmusah/laravel-multipayment-gateways",
+        "npm": null,
+        "stars": 43,
+        "keywords": [],
+        "first_release_at": "2023-02-01T12:06:49+00:00",
+        "latest_release_at": "2023-04-07T21:09:00+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-12T14:26:04.979Z",
+        "created_at": "2023-04-12T14:26:04.979Z"
     }
 ]
