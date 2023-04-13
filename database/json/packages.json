@@ -7804,5 +7804,27 @@
         "php_only": false,
         "updated_at": "2023-04-13T11:54:16.541Z",
         "created_at": "2023-04-13T11:54:16.541Z"
+    },
+    {
+        "name": "Notion For Laravel",
+        "description": "A simple and crisp way to access the Notion API endpoints, query data and update existing entries.",
+        "category": "API",
+        "github": "https://github.com/5am-code/laravel-notion-api",
+        "author": "fiveam-code",
+        "composer": "fiveam-code/laravel-notion-api",
+        "npm": null,
+        "stars": 313,
+        "keywords": [],
+        "first_release_at": "2021-05-14T21:09:04+00:00",
+        "latest_release_at": "2023-04-10T08:21:30+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T17:55:02.785Z",
+        "created_at": "2023-04-13T17:55:02.785Z"
     }
 ]

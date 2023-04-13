@@ -1,8 +1,4 @@
-export type GithubData = {
-    stargazers_count: number
-    archived: boolean
-    pushed_at: string
-}
+import type { GithubData } from '~/types/github'
 
 export const extract_github_stars = (githubData: GithubData): number => githubData.stargazers_count
 

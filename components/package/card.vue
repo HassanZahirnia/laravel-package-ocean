@@ -55,26 +55,26 @@ const isCompatible = computed(() => {
     return active_laravel_versions.some((activeVersion) => {
         return compatibleVersions.some((compatibleVersion) => {
             const match = compatibleVersion.match(/^([<>]=?|>=|<=)(\d+)$/)
-            if (!match) 
+            if (!match)
                 return activeVersion === compatibleVersion
-      
+
             const operator = match[1]
             const version = parseInt(match[2])
-            if (operator === '') 
+            if (operator === '')
                 return activeVersion === compatibleVersion
-      
-            else if (operator === '>=') 
+
+            else if (operator === '>=')
                 return parseInt(activeVersion) >= version
-      
-            else if (operator === '<=') 
+
+            else if (operator === '<=')
                 return parseInt(activeVersion) <= version
-      
-            else if (operator === '>') 
+
+            else if (operator === '>')
                 return parseInt(activeVersion) > version
-      
-            else if (operator === '<') 
+
+            else if (operator === '<')
                 return parseInt(activeVersion) < version
-      
+
             return false
         })
     })
@@ -122,9 +122,9 @@ onMounted(() => {
         })
 
     // Skip the warning animation if the package is compatible
-    if(dontPlayWarningAnimation.value) 
+    if(dontPlayWarningAnimation.value)
         return
-    
+
     warningIconTimeline = gsap.timeline({
         paused: true,
     })
@@ -150,22 +150,22 @@ watch(
     isHovering,
     (value) => {
         // If hovering, play the animation
-        if (value) cardTimeline?.play() 
+        if (value) cardTimeline?.play()
         // If not hovering and animation is done, reverse it
         else if(cardTimeline?.progress() === 1)
             cardTimeline?.reverse()
 
         // Skip the warning animation if the package is compatible
-        if(dontPlayWarningAnimation.value) 
+        if(dontPlayWarningAnimation.value)
             return
-            
+
         // If hovering, play the animation from the beginning
-        if (value) 
+        if (value)
             warningIconTimeline?.play(0)
         // If not hovering, pause the animation at the beginning
         else
             warningIconTimeline?.pause(0)
-        
+
     })
 </script>
 

@@ -28,7 +28,10 @@ const selectedItem = computed({
 </script>
 
 <template>
-    <Listbox v-model="selectedItem">
+    <Listbox
+        v-slot="{ open }"
+        v-model="selectedItem"
+        >
         <div class="relative z-10">
             <ListboxButton
                 class="relative cursor-pointer rounded-xl
@@ -48,7 +51,7 @@ const selectedItem = computed({
                 focus-visible:ring-white/75
                 focus-visible:ring-offset-2
                 focus-visible:ring-offset-blue-300
-                shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] 
+                shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
                 "
                 >
                 <span class="block truncate">{{ selectedItem.name }}</span>
@@ -61,8 +64,13 @@ const selectedItem = computed({
                     "
                     >
                     <div
-                        class="i-ph-caret-down h-5 w-5 text-gray-400"
+                        class="i-ph-caret-down h-5 w-5 text-gray-400
+                        transition duration-300
+                        "
                         aria-hidden="true"
+                        :class="{
+                            'rotate-180': open
+                        }"
                         />
                 </span>
             </ListboxButton>
@@ -75,77 +83,79 @@ const selectedItem = computed({
                 leave-from-class="translate-y-0 rotate-0 opacity-100"
                 leave-to-class="-translate-y-1 opacity-0"
                 >
-                <ListboxOptions
-                    class="overflow-auto rounded-md focus:outline-none
-                    max-h-60 w-full
-                    mt-1
-                    absolute
-                    text-base sm:text-sm
-                    bg-white 
-                    dark:bg-[#362B59]
-                    shadow-lg
-                    ring-1 ring-black/5
-                    "
-                    >
-                    <ListboxOption
-                        v-for="item in items"
-                        v-slot="{ selected }"
-                        :key="item.name"
-                        :value="item"
-                        as="template"
+                <div v-show="open">
+                    <ListboxOptions
+                        static
+                        class="overflow-auto rounded-md focus:outline-none
+                        max-h-60 w-full
+                        mt-1
+                        absolute
+                        text-base sm:text-sm
+                        bg-white
+                        dark:bg-[#362B59]
+                        shadow-xl shadow-black/5
+                        "
                         >
-                        <li
-                            class="group cursor-pointer
-                            relative select-none
-                            py-2.5 pl-9 pr-4
-                            first:pt-3
-                            last:pb-3
-                            transition duration-200
-                            "
-                            :class="[
-                                selected ?
-                                    'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100'
-                                    : 'text-gray-900 dark:text-[#ABB0DD]',
-                            ]"
+                        <ListboxOption
+                            v-for="item in items"
+                            v-slot="{ selected }"
+                            :key="item.name"
+                            :value="item"
+                            as="template"
                             >
-                            <div
-                                class="pl-1
-                                transition duration-300
-                                group-hover:translate-x-1
-                                "
-                                >
-                                <div
-                                    :class="[
-                                        selected ? 'font-medium' : 'font-normal',
-                                        'block truncate',
-                                    ]"
-                                    >
-                                    {{ item.name }}
-                                </div>
-                                <div
-                                    v-if="item.detail"
-                                    class="text-xs truncate opacity-60"
-                                    >
-                                    {{ item.detail }}
-                                </div>
-                            </div>
-                            <span
-                                v-if="selected"
-                                class="pl-2.5
-                                flex items-center
+                            <li
+                                class="group cursor-pointer
+                                relative select-none
+                                py-2.5 pl-9 pr-4
+                                first:pt-3
+                                last:pb-3
                                 transition duration-200
-                                text-indigo-600
-                                absolute inset-y-0 left-0
                                 "
+                                :class="[
+                                    selected ?
+                                        'bg-indigo-100 text-indigo-900 dark:bg-indigo-900 dark:text-indigo-100'
+                                        : 'text-gray-900 dark:text-[#ABB0DD]',
+                                ]"
                                 >
                                 <div
-                                    class="i-ph-check-bold h-5 w-5"
-                                    aria-hidden="true"
-                                    />
-                            </span>
-                        </li>
-                    </ListboxOption>
-                </ListboxOptions>
+                                    class="pl-1
+                                    transition duration-300
+                                    group-hover:translate-x-1
+                                    "
+                                    >
+                                    <div
+                                        :class="[
+                                            selected ? 'font-medium' : 'font-normal',
+                                            'block truncate',
+                                        ]"
+                                        >
+                                        {{ item.name }}
+                                    </div>
+                                    <div
+                                        v-if="item.detail"
+                                        class="text-xs truncate opacity-60"
+                                        >
+                                        {{ item.detail }}
+                                    </div>
+                                </div>
+                                <span
+                                    v-if="selected"
+                                    class="pl-2.5
+                                    flex items-center
+                                    transition duration-200
+                                    text-indigo-600
+                                    absolute inset-y-0 left-0
+                                    "
+                                    >
+                                    <div
+                                        class="i-ph-check-bold h-5 w-5"
+                                        aria-hidden="true"
+                                        />
+                                </span>
+                            </li>
+                        </ListboxOption>
+                    </ListboxOptions>
+                </div>
             </transition>
         </div>
     </Listbox>

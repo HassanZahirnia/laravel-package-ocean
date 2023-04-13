@@ -64,7 +64,9 @@ module.exports = {
         },
     },
     rules: {
-    // Use 'type' when importing TS typings
+        'no-trailing-spaces': 'error',
+
+        // Use 'type' when importing TS typings
         '@typescript-eslint/consistent-type-imports': 'error',
 
         // Import
@@ -228,7 +230,7 @@ module.exports = {
         'require-await': 'off',
         'no-return-assign': 'off',
         'operator-linebreak': ['error', 'before'],
-        
+
         'no-use-before-define': [
             'error',
             {
