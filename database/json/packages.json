@@ -2738,7 +2738,7 @@
     {
         "name": "Laravel Settings",
         "description": "Store strongly typed application settings.",
-        "category": "Database & Eloquent",
+        "category": "Utilities & Helpers",
         "github": "https://github.com/spatie/laravel-settings",
         "author": "spatie",
         "composer": "spatie/laravel-settings",
@@ -7606,5 +7606,203 @@
         "php_only": false,
         "updated_at": "2023-04-12T20:25:55.354Z",
         "created_at": "2023-04-12T20:25:55.354Z"
+    },
+    {
+        "name": "Laravel Settings",
+        "description": "Super simple key/value settings that comes with encryption and multi-tenancy out of the box.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/hackerESQ/laravel-settings",
+        "author": "hackeresq",
+        "composer": "hackeresq/laravel-settings",
+        "npm": null,
+        "stars": 24,
+        "keywords": [],
+        "first_release_at": "2018-10-10T16:34:36+00:00",
+        "latest_release_at": "2022-05-06T04:13:36+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:03:46.628Z",
+        "created_at": "2023-04-13T11:03:46.628Z"
+    },
+    {
+        "name": "Laravel Test Assertions",
+        "description": "A set of helpful assertions.",
+        "category": "Testing",
+        "github": "https://github.com/jasonmccreary/laravel-test-assertions",
+        "author": "jasonmccreary",
+        "composer": "jasonmccreary/laravel-test-assertions",
+        "npm": null,
+        "stars": 291,
+        "keywords": [],
+        "first_release_at": "2019-06-25T15:25:34+00:00",
+        "latest_release_at": "2023-03-15T16:29:35+00:00",
+        "detected_compatible_versions": [
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:06:27.137Z",
+        "created_at": "2023-04-13T11:06:27.137Z"
+    },
+    {
+        "name": "Laravel CSP",
+        "description": "Set content security policy headers.",
+        "category": "Security",
+        "github": "https://github.com/spatie/laravel-csp",
+        "author": "spatie",
+        "composer": "spatie/laravel-csp",
+        "npm": null,
+        "stars": 579,
+        "keywords": [],
+        "first_release_at": "2018-02-12T15:24:19+00:00",
+        "latest_release_at": "2023-02-01T12:22:53+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:10:07.138Z",
+        "created_at": "2023-04-13T11:10:07.138Z"
+    },
+    {
+        "name": "Geocoder",
+        "description": "Convert any address to GPS coordinates using Google's geocoding service.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/spatie/geocoder",
+        "author": "spatie",
+        "composer": "spatie/geocoder",
+        "npm": null,
+        "stars": 691,
+        "keywords": [],
+        "first_release_at": "2014-05-01T19:47:27+00:00",
+        "latest_release_at": "2023-02-01T08:46:29+00:00",
+        "detected_compatible_versions": [],
+        "compatible_versions": [],
+        "php_only": true,
+        "updated_at": "2023-04-13T11:15:15.210Z",
+        "created_at": "2023-04-13T11:15:15.210Z"
+    },
+    {
+        "name": "Laravel Factorize",
+        "description": "Effortlessly generate Laravel factories for all your models using GPT-4.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/smousss/laravel-factorize",
+        "author": "smousss",
+        "composer": "smousss/laravel-factorize",
+        "npm": null,
+        "stars": 1,
+        "keywords": [
+            "ai",
+            "artificial intelligence"
+        ],
+        "first_release_at": "2023-04-05T10:28:34+00:00",
+        "latest_release_at": "2023-04-12T17:25:16+00:00",
+        "detected_compatible_versions": [
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:21:51.972Z",
+        "created_at": "2023-04-13T11:21:51.972Z"
+    },
+    {
+        "name": "Sidecar Browsershot",
+        "description": "Run Browsershot on AWS Lambda with Sidecar.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/stefanzweifel/sidecar-browsershot",
+        "author": "wnx",
+        "composer": "wnx/sidecar-browsershot",
+        "npm": null,
+        "stars": 133,
+        "keywords": [],
+        "first_release_at": "2022-02-06T17:06:29+00:00",
+        "latest_release_at": "2023-03-29T08:31:46+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:32:15.080Z",
+        "created_at": "2023-04-13T11:32:15.080Z"
+    },
+    {
+        "name": "Laravel Sends",
+        "description": "Keep track of outgoing emails in your application.",
+        "category": "Mail",
+        "github": "https://github.com/stefanzweifel/laravel-sends",
+        "author": "wnx",
+        "composer": "wnx/laravel-sends",
+        "npm": null,
+        "stars": 121,
+        "keywords": [],
+        "first_release_at": "2021-12-03T19:41:46+00:00",
+        "latest_release_at": "2023-01-25T19:13:15+00:00",
+        "detected_compatible_versions": [
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:35:17.746Z",
+        "created_at": "2023-04-13T11:35:17.746Z"
+    },
+    {
+        "name": "Laravel Seo",
+        "description": "SEO meta tags with extensible features for OpenGraph and Twitter tags.",
+        "category": "SEO",
+        "github": "https://github.com/archtechx/laravel-seo",
+        "author": "archtechx",
+        "composer": "archtechx/laravel-seo",
+        "npm": null,
+        "stars": 215,
+        "keywords": [
+            "flipp",
+            "previewify"
+        ],
+        "first_release_at": "2021-05-24T16:14:33+00:00",
+        "latest_release_at": "2023-03-03T13:19:18+00:00",
+        "detected_compatible_versions": [
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:47:33.834Z",
+        "created_at": "2023-04-13T11:47:33.834Z"
+    },
+    {
+        "name": "Migrator",
+        "description": "A GUI migration manager which you can create, manage and delete your migration.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/rezaamini-ir/migrator",
+        "author": "rezaamini-ir",
+        "composer": "rezaamini-ir/migrator",
+        "npm": null,
+        "stars": 472,
+        "keywords": [],
+        "first_release_at": "2021-09-13T12:48:12+00:00",
+        "latest_release_at": "2023-04-05T14:03:00+00:00",
+        "detected_compatible_versions": [
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "compatible_versions": [],
+        "php_only": false,
+        "updated_at": "2023-04-13T11:54:16.541Z",
+        "created_at": "2023-04-13T11:54:16.541Z"
     }
 ]

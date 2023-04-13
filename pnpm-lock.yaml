@@ -79,6 +79,9 @@ devDependencies:
   chalk:
     specifier: ^5.2.0
     version: 5.2.0
+  dayjs:
+    specifier: ^1.11.7
+    version: 1.11.7
   dotenv:
     specifier: ^16.0.3
     version: 16.0.3
@@ -2812,6 +2815,10 @@ packages:
   /data-uri-to-buffer@4.0.1:
     resolution: {integrity: sha512-0R9ikRb668HB7QDxT1vkpuUBtqc53YyAwMwGeUFKRojY/NWKvdZ+9UYtRfGmhqNbRkTSVpMbmyhXipFFv2cb/A==}
     engines: {node: '>= 12'}
+    dev: true
+
+  /dayjs@1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: true
 
   /debug@2.6.9:
