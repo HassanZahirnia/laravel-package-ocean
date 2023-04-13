@@ -207,6 +207,16 @@ export const laravelPackageSchema = z.object({
             message: 'Keywords must not be used in name and description',
         },
     )
+    .refine(
+        (item) => {
+            const composer = item.composer
+            const npm = item.npm
+            return (composer === null || composer.trim() === '') || (npm === null || npm.trim() === '')
+        },
+        {
+            message: 'Either composer or npm can be null or empty, but not both',
+        },
+    )
 
 // Package Schema
 export const laravelPackageArraySchema = z.array(laravelPackageSchema)

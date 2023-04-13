@@ -6,6 +6,13 @@ import { log } from '../print'
 import type { GithubData } from '~/types/github'
 import type { Package } from '~/types/package'
 
+/**
+
+---------------------------------------------------------------------------
+:: Validation
+---------------------------------------------------------------------------
+
+*/
 export const validateJson = (
     { verbose = false } = {},
 ) => {
@@ -28,7 +35,14 @@ export const validateJson = (
     }
 }
 
-export const pushed_at_is_old = (githubData: GithubData): boolean => {
+/**
+
+---------------------------------------------------------------------------
+:: Github
+---------------------------------------------------------------------------
+
+*/
+export const last_commit_is_very_old = (githubData: GithubData): boolean => {
     const latestCommitDate = dayjs(githubData.pushed_at)
     const threeMonthsAgo = dayjs().subtract(3, 'month')
 
@@ -38,7 +52,32 @@ export const pushed_at_is_old = (githubData: GithubData): boolean => {
     return false
 }
 
-// TODO Check active laravel version compatibility
+export const github_is_healthy = (githubData: GithubData): string | true => {
+    if (githubData.archived)
+        return `${githubData.full_name} is archived!`
+
+    if (githubData.private)
+        return `${githubData.full_name} is private!`
+
+    if (githubData.disabled)
+        return `${githubData.full_name} is disabled!`
+
+    if (githubData.message === 'Not Found')
+        return `${githubData.full_name} does not exist!`
+
+    if (last_commit_is_very_old(githubData))
+        return `${githubData.full_name} has not been updated in 3 months!`
+
+    return true
+}
+
+/**
+
+---------------------------------------------------------------------------
+:: Laravel/Composer
+---------------------------------------------------------------------------
+
+*/
 export const is_compatible_with_active_laravel_versions = (laravelPackage: Package): boolean => {
     const { active_versions } = readLaravelDatabase()
     const package_compatible_versions = laravelPackage.compatible_versions.length
@@ -71,23 +110,4 @@ export const is_compatible_with_active_laravel_versions = (laravelPackage: Packa
             return false
         })
     })
-}
-
-export const github_is_healthy = (githubData: GithubData): string | true => {
-    if (githubData.archived)
-        return `${githubData.full_name} is archived!`
-
-    if (githubData.private)
-        return `${githubData.full_name} is private!`
-
-    if (githubData.disabled)
-        return `${githubData.full_name} is disabled!`
-
-    if (githubData.message === 'Not Found')
-        return `${githubData.full_name} does not exist!`
-
-    if (pushed_at_is_old(githubData))
-        return `${githubData.full_name} has not been updated in 3 months!`
-
-    return true
 }
