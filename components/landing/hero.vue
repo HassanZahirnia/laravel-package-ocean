@@ -1,13 +1,47 @@
 <script setup lang="ts">
+import { gsap } from 'gsap'
+import * as ScrollTrigger from 'gsap/ScrollTrigger'
+import { UAParser } from 'ua-parser-js'
 import { laravelPackages } from '@/database/packages'
 import { categories } from '@/database/categories'
+
+const parser = new UAParser()
+const browserName = parser.getBrowser().name
+
+onMounted(() => {
+    if(browserName && !/firefox/i.test(browserName)) {
+        gsap.registerPlugin(ScrollTrigger)
+
+        gsap.to('#hero-section .gsap-fluid-shape', {
+            yPercent: 7,
+            scrollTrigger: {
+                trigger: 'body',
+                scrub: 1.5,
+                start: '100px 50px',
+                end: 'bottom bottom',
+            },
+        })
+        gsap.to('#hero-section .gsap-hero-card', {
+            yPercent: -3,
+            scrollTrigger: {
+                trigger: 'body',
+                scrub: 1,
+                start: '100px 50px',
+                end: 'bottom bottom',
+            },
+        })
+    }
+})
 
 // Get unique count of authors from laravelPackages
 const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackage.author)).size
 </script>
 
 <template>
-    <div class="relative">
+    <div
+        id="hero-section"
+        class="relative"
+        >
         <!-- Fluid shape -->
         <div
             class="absolute z-[-1]
@@ -21,12 +55,13 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 width="240"
                 height="220"
                 alt=""
-                class="pointer-events-none select-none"
+                class="gsap-fluid-shape pointer-events-none select-none"
                 />
         </div>
         <!-- Hero text -->
-        <div class="px-5 pt-20 sm:px-10">
+        <div class="gsap-hero-card px-5 pt-20 sm:px-10">
             <div
+                ref="heroCardInner"
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10
                 sm:p-10 lg:p-14

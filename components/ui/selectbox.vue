@@ -31,7 +31,7 @@ const selectedItem = computed({
             <ListboxButton
                 class="relative cursor-pointer rounded-xl
                 transition duration-300
-                py-3 pl-3 pr-10
+                py-3 pl-3.5 pr-10
                 w-full
                 text-left
                 leading-5
