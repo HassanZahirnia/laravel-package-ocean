@@ -9,29 +9,29 @@ const parser = new UAParser()
 const browserName = parser.getBrowser().name
 
 onMounted(() => {
-    if(browserName && !/firefox/i.test(browserName) || browserName === undefined) {
+    if (browserName && /firefox/i.test(browserName))
+        return
 
-        gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger)
 
-        gsap.to('#hero-section .gsap-fluid-shape', {
-            yPercent: 7,
-            scrollTrigger: {
-                trigger: 'body',
-                scrub: 1.5,
-                start: '100px 50px',
-                end: 'bottom bottom',
-            },
-        })
-        gsap.to('#hero-section .gsap-hero-card', {
-            yPercent: -3,
-            scrollTrigger: {
-                trigger: 'body',
-                scrub: 1,
-                start: '100px 50px',
-                end: 'bottom bottom',
-            },
-        })
-    }
+    gsap.to('#hero-section .gsap-fluid-shape', {
+        yPercent: 7,
+        scrollTrigger: {
+            trigger: 'body',
+            scrub: 1.5,
+            start: '100px 50px',
+            end: 'bottom bottom',
+        },
+    })
+    gsap.to('#hero-section .gsap-hero-card', {
+        yPercent: -3,
+        scrollTrigger: {
+            trigger: 'body',
+            scrub: 1,
+            start: '100px 50px',
+            end: 'bottom bottom',
+        },
+    })
 })
 
 // Get unique count of authors from laravelPackages

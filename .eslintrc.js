@@ -71,6 +71,7 @@ module.exports = {
             4,
             120,
         ],
+        'keyword-spacing': ['error', { before: true, after: true }],
 
         // Use 'type' when importing TS typings
         '@typescript-eslint/consistent-type-imports': 'error',

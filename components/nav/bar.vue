@@ -5,7 +5,7 @@
         "
         >
         <header
-            class="px-5 pt-5 pb-14 sm:py-10 relative
+            class="px-5 pt-9 pb-14 sm:py-10 relative
             flex gap-5
             items-center
             justify-between
