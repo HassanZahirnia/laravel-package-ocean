@@ -34,7 +34,8 @@ const selectedItem = computed({
                 py-3 pl-3 pr-10
                 w-full
                 text-left
-                text-sm
+                leading-5
+                sm:text-sm
                 bg-white/50
                 hover:bg-white/80
                 dark:bg-[#362B59]/20

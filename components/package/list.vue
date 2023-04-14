@@ -312,7 +312,7 @@ const categoriesForSelectboxWithAll = [
                         transition-all duration-300 ease-out
                         delay-100
                         overflow-hidden
-                        w-40 lg:w-11 h-11
+                        w-[12.5rem] sm:w-40 lg:w-11 h-11
                         flex gap-2 items-center
                         lg:hover:w-40
                         "
@@ -329,7 +329,9 @@ const categoriesForSelectboxWithAll = [
                             "
                             />
                         <div
-                            class="text-xs truncate
+                            class="truncate
+                            leading-5
+                            sm:text-xs
                             transition duration-300
                             delay-100
                             lg:opacity-0

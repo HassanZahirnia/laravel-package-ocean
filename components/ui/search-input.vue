@@ -67,7 +67,8 @@ search.value = route.query.search?.toString() ?? ''
             class="w-full
             border-none
             py-3 px-10
-            text-sm
+            leading-5
+            sm:text-sm
             transition
             duration-300
             bg-white/50
