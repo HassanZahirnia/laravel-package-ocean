@@ -9,7 +9,8 @@ const parser = new UAParser()
 const browserName = parser.getBrowser().name
 
 onMounted(() => {
-    if(browserName && !/firefox/i.test(browserName)) {
+    if(browserName && !/firefox/i.test(browserName) || browserName === undefined) {
+
         gsap.registerPlugin(ScrollTrigger)
 
         gsap.to('#hero-section .gsap-fluid-shape', {
@@ -61,13 +62,13 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         <!-- Hero text -->
         <div class="gsap-hero-card px-5 pt-20 sm:px-10">
             <div
-                ref="heroCardInner"
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10
                 sm:p-10 lg:p-14
                 text-center
                 backdrop-blur-xl
-                transition duration-300
+                dark:backdrop-blur-lg
+                transition-colors duration-300
                 bg-white/30
                 dark:bg-[#110E26]/50
                 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
