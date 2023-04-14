@@ -1,8 +1,9 @@
 import chalk from 'chalk'
 import dayjs from 'dayjs'
 import { readLaravelDatabase, readPackagesDatabase } from '../database'
-import { laravelPackageArraySchema } from '../validation-rules'
+import { laravelPackageArraySchema } from '../validations/package.validation'
 import { log } from '../print'
+import { laravelSchema } from '../validations/laravel.validation'
 import type { GithubData } from '~/types/github'
 import type { Package } from '~/types/package'
 
@@ -16,15 +17,17 @@ import type { Package } from '~/types/package'
 export const validateJson = (
     { verbose = false } = {},
 ) => {
-    const laravelPackages = readPackagesDatabase()
-    const validationResult = laravelPackageArraySchema.safeParse(laravelPackages)
+    const laravelDatabase = readLaravelDatabase()
+    const packagesDatabase = readPackagesDatabase()
+    const packagesValidationResult = laravelPackageArraySchema.safeParse(packagesDatabase)
+    const laravelValidationResult = laravelSchema.safeParse(laravelDatabase)
 
-    if (!validationResult.success){
-        log(chalk.bgRed('Validation failed!'))
+    if (!packagesValidationResult.success){
+        log(chalk.bgRed('packages.json validation failed!'))
         if (verbose) {
-            const errorsWithGithub = validationResult.error.errors.map((error) => {
+            const errorsWithGithub = packagesValidationResult.error.errors.map((error) => {
                 const packageIndex = error.path[0] as number // Get the index of the package in the array
-                const github = laravelPackages[packageIndex].github // Get the github property of the package
+                const github = packagesDatabase[packageIndex].github // Get the github property of the package
                 return {
                     ...error,
                     github, // Add the github property to the error object
@@ -32,7 +35,20 @@ export const validateJson = (
             })
             log(errorsWithGithub)
         }
+
+        process.exit(1)
     }
+
+    if (!laravelValidationResult.success){
+        log(chalk.bgRed('laravel.json validation failed!'))
+        if (verbose)
+            log(laravelValidationResult.error.errors)
+
+        process.exit(1)
+    }
+
+    log(chalk.bgGreen('All validations passed!'))
+    process.exit(0)
 }
 
 /**

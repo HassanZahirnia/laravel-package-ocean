@@ -52,7 +52,7 @@ export const showMainMenu = function(){
 }
 
 const verboseFlag = process.argv.includes('--verbose')
-const validateJsonFlag = process.argv.includes('--validate-json')
+const validateJsonFlag = process.argv.includes('--validate')
 const updateActiveLaravelVersionsFlag = process.argv.includes('--update-active-laravel-versions')
 
 if (validateJsonFlag) {

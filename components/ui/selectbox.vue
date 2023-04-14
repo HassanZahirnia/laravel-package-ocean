@@ -1,10 +1,5 @@
 <script setup lang="ts">
-import {
-    Listbox,
-    ListboxButton,
-    ListboxOptions,
-    ListboxOption,
-} from '@headlessui/vue'
+import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '@headlessui/vue'
 import { find } from 'lodash'
 import type { selectboxItem } from '@/types/selectbox'
 

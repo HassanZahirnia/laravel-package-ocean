@@ -57,6 +57,7 @@ module.exports = {
         'vue',
         'unicorn',
         '@typescript-eslint',
+        'import-newlines',
     ],
     settings: {
         'import/resolver': {
@@ -65,6 +66,11 @@ module.exports = {
     },
     rules: {
         'no-trailing-spaces': 'error',
+        'import-newlines/enforce': [
+            'error',
+            4,
+            120,
+        ],
 
         // Use 'type' when importing TS typings
         '@typescript-eslint/consistent-type-imports': 'error',
@@ -76,6 +82,7 @@ module.exports = {
         'import/no-mutable-exports': 'error',
         'import/no-unresolved': 'off',
         'import/no-absolute-path': 'off',
+        'import/no-unassigned-import': 'off',
 
         // Common
         'semi': ['error', 'never'],

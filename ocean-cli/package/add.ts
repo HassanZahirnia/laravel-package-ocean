@@ -7,7 +7,11 @@ import dotenv from 'dotenv'
 import chalk from 'chalk'
 import ora from 'ora'
 import type { packagistData } from '../utils/composer'
-import { extract_packagist_detected_compatible_versions, extract_packagist_first_release_at, extract_packagist_latest_release_at } from '../utils/composer'
+import {
+    extract_packagist_detected_compatible_versions,
+    extract_packagist_first_release_at,
+    extract_packagist_latest_release_at,
+} from '../utils/composer'
 import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../utils/npm'
 import type { NpmData } from '../utils/npm'
 import { extract_github_stars } from '../utils/github'
@@ -23,7 +27,8 @@ import {
     npm as z_npm,
     php_only as z_php_only,
     keywords as z_keywords,
-    laravelPackageSchema } from '~/ocean-cli/validation-rules'
+    laravelPackageSchema,
+} from '~/ocean-cli/validations/package.validation'
 import { categories } from '~/database/categories'
 import type { Package } from '~/types/package'
 import type { GithubData } from '~/types/github'
