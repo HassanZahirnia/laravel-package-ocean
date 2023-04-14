@@ -55,7 +55,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                     font-medium
                     sm:text-lg
                     transition duration-300
-                    text-[#6A7789] dark:text-[#96A5BB] 
+                    text-[#6A7789] dark:text-[#96A5BB]
                     "
                     >
                     Our goal is to help the Laravel community to find new & useful Laravel packages in one place.
@@ -65,7 +65,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                     pt-9
                     flex flex-wrap
                     justify-around md:justify-center
-                    border-t border-t-[#6A7789]/20 
+                    border-t border-t-[#6A7789]/20
                     dark:border-t-[#627288]/20
                     gap-5 md:gap-24 min-[450px]:gap-14
                     transition duration-300

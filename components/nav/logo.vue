@@ -75,7 +75,7 @@ watch(
             if(fishTimeline && fishTimeline?.progress() >= 0.5)
                 fishTimeline?.play(0)
         }
-        
+
     })
 </script>
 

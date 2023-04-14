@@ -66,15 +66,15 @@ export const extract_packagist_detected_compatible_versions = (packagistData: pa
                     const aSemVer = aParsed.split('.').map(v => parseInt(v))
                     const bSemVer = bParsed.split('.').map(v => parseInt(v))
                     for (let i = 0; i < Math.max(aSemVer.length, bSemVer.length); i++) {
-                        if (aSemVer[i] === undefined) 
+                        if (aSemVer[i] === undefined)
                             return -1
-                    
-                        else if (bSemVer[i] === undefined) 
+
+                        else if (bSemVer[i] === undefined)
                             return 1
-                    
-                        else if (aSemVer[i] !== bSemVer[i]) 
+
+                        else if (aSemVer[i] !== bSemVer[i])
                             return aSemVer[i] - bSemVer[i]
-                    
+
                     }
                     return 0
                 })
@@ -90,15 +90,15 @@ export const extract_packagist_detected_compatible_versions = (packagistData: pa
         const aSemVer = aParsed.split('.').map(v => parseInt(v))
         const bSemVer = bParsed.split('.').map(v => parseInt(v))
         for (let i = 0; i < Math.max(aSemVer.length, bSemVer.length); i++) {
-            if (aSemVer[i] === undefined) 
+            if (aSemVer[i] === undefined)
                 return -1
-        
-            else if (bSemVer[i] === undefined) 
+
+            else if (bSemVer[i] === undefined)
                 return 1
-        
-            else if (aSemVer[i] !== bSemVer[i]) 
+
+            else if (aSemVer[i] !== bSemVer[i])
                 return aSemVer[i] - bSemVer[i]
-        
+
         }
         return 0
     })

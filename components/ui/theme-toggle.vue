@@ -254,7 +254,7 @@ onMounted(() => {
                     transition duration-300
                     "
                     />
-                
+
                 <!-- Bottom Right -->
                 <div
                     class="h-[0.22rem] w-0.5 rounded-full

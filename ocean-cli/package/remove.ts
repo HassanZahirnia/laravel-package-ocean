@@ -5,6 +5,6 @@ export const removePackage = (laravelPackage: Package) => {
     const laravelPackages = readPackagesDatabase()
 
     const newPackages = laravelPackages.filter(item => item.github !== laravelPackage.github)
-    
+
     writePackagesDatabase(newPackages)
 }

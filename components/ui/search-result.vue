@@ -7,7 +7,7 @@ const isHovering = ref(false)
 <template>
     <div
         class="pt-8 text-center
-        grid place-items-center 
+        grid place-items-center
         "
         >
         <!-- Emote faces -->

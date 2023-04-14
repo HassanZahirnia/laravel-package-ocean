@@ -52,7 +52,7 @@ onMounted(() => {
         h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
         scale-[2.5]
         absolute -z-20
-        top-[-10vw] right-[calc(10rem-15vw)] 
+        top-[-10vw] right-[calc(10rem-15vw)]
         "
         />
     <!-- Purple blur for dark theme -->
@@ -66,7 +66,7 @@ onMounted(() => {
         h-[calc(10rem+35vw)] w-[calc(10rem+35vw)]
         scale-[2.5] min-[2000px]:scale-[1.7]
         absolute -z-20
-        top-[-10vw] right-[calc(10rem-15vw)] 
+        top-[-10vw] right-[calc(10rem-15vw)]
         "
         />
     <!-- Blue blur -->

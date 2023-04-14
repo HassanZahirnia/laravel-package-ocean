@@ -39,7 +39,7 @@ onMounted(()=>{
 watch(() => $props.content, () => {
     if(tooltipInstance.value)
         tooltipInstance.value.setContent($props.content)
-    
+
 })
 </script>
 

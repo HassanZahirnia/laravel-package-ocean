@@ -147,7 +147,7 @@ watch(
             // But keep the order from searchResult's score (desc)
             results.value = searchResult.map(searchResultItem => results.value.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
         }
-        
+
         // Paginate results
         const start = (newPage - 1) * pageSize
         const end = start + pageSize
@@ -250,7 +250,7 @@ const categoriesForSelectboxWithAll = [
             <div
                 id="scroll-to-reference"
                 class="flex gap-5 scroll-mt-5
-                items-center 
+                items-center
                 flex-wrap sm:flex-nowrap
                 "
                 >
