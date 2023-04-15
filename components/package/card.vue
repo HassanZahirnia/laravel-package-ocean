@@ -225,9 +225,9 @@ watch(
                         />
                     <!-- Stars -->
                     <div
-                        class="flex items-center gap-1.5"
+                        class="flex items-center gap-2"
                         :class="{
-                            'transition-transform duration-300 group-hover:-translate-x-1': isStarCountOver1k,
+                            'transition-transform duration-300 group-hover:-translate-x-2': isStarCountOver1k,
                         }"
                         >
                         <div
@@ -239,9 +239,9 @@ watch(
                                 'group-hover:rotate-[-75deg]': isStarCountOver1k,
                             }"
                             />
-                        <div class="grid text-sm">
+                        <div class="relative text-sm">
                             <div
-                                class="[grid-area:1/-1] justify-self-center self-center"
+                                class=""
                                 :class="{
                                     'transition-opacity duration-300 group-hover:opacity-0': isStarCountOver1k,
                                 }"
@@ -249,7 +249,7 @@ watch(
                                 {{ formatStars(laravelPackage.stars) }}
                             </div>
                             <div
-                                class="[grid-area:1/-1] justify-self-center self-center"
+                                class="absolute top-0 left-0"
                                 :class="{
                                     'transition-opacity duration-300 opacity-0 group-hover:opacity-100': isStarCountOver1k,
                                 }"
