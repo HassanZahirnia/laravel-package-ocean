@@ -28,7 +28,7 @@ export const validateJson = (
     const laravelValidationResult = laravelSchema.safeParse(laravelDatabase)
 
     if (!packagesValidationResult.success){
-        log(chalk.bgRed('packages.json validation failed!'))
+        log(chalk.red('✗ packages.json validation failed!'))
         if (verbose) {
             const errorsWithGithub = packagesValidationResult.error.errors.map((error) => {
                 const packageIndex = error.path[0] as number // Get the index of the package in the array
@@ -45,14 +45,14 @@ export const validateJson = (
     }
 
     if (!laravelValidationResult.success){
-        log(chalk.bgRed('laravel.json validation failed!'))
+        log(chalk.red('✗ laravel.json validation failed!'))
         if (verbose)
             log(laravelValidationResult.error.errors)
 
         process.exit(1)
     }
 
-    log(chalk.bgGreen('All validations passed!'))
+    log(chalk.green('✓ All validations passed!'))
     process.exit(0)
 }
 
@@ -63,7 +63,7 @@ export const validateJson = (
 ---------------------------------------------------------------------------
 
 */
-const oldMonths = 4
+const oldMonths = 8
 
 export const last_commit_is_very_old = (githubData: GithubData): boolean => {
     const latestCommitDate = dayjs(githubData.pushed_at)
@@ -86,6 +86,9 @@ export const github_is_healthy = (githubData: GithubData): string | true => {
 
     if (githubData.message === 'Not Found')
         return `${githubData.full_name} does not exist!`
+
+    if (githubData.open_issues_count >= 100)
+        return `${githubData.full_name} has ${githubData.open_issues_count} open issues!`
 
     if (last_commit_is_very_old(githubData))
         return `${githubData.full_name} has not been updated in ${oldMonths} months!`
@@ -169,14 +172,17 @@ Finished checking github health of ${chalk.cyan(totalPackages)} packages!
 ---------------------------------------------------------------------------
 
 */
-export const is_compatible_with_active_laravel_versions = (laravelPackage: Package): boolean => {
-    const { active_versions } = readLaravelDatabase()
-    const package_compatible_versions = laravelPackage.compatible_versions.length
+export const package_compatible_versions = (laravelPackage: Package): string[] => {
+    return laravelPackage.compatible_versions.length
         ? laravelPackage.compatible_versions
         : laravelPackage.detected_compatible_versions
+}
+
+export const is_compatible_with_active_laravel_versions = (laravelPackage: Package): boolean => {
+    const { active_versions } = readLaravelDatabase()
 
     return active_versions.some((activeVersion) => {
-        return package_compatible_versions.some((compatibleVersion) => {
+        return package_compatible_versions(laravelPackage).some((compatibleVersion) => {
             const match = compatibleVersion.match(/^([<>]=?|>=|<=)(\d+)$/)
             if (!match)
                 return activeVersion === compatibleVersion

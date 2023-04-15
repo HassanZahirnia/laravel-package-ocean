@@ -16,7 +16,7 @@ import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../
 import type { NpmData } from '../utils/npm'
 import { extract_github_stars } from '../utils/github'
 import { log } from '../print'
-import { github_is_healthy } from '../utils/health'
+import { github_is_healthy, is_compatible_with_active_laravel_versions } from '../utils/health'
 import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
 import {
     name as z_name,
@@ -217,46 +217,87 @@ export const addPackage = async function(){
                 if (newPackage.composer){
                     spinner.text = 'Getting packagist data'
 
-                    const { data: packagistData }: { data: packagistData }
+                    try {
+                        const { data: packagistData }: { data: packagistData }
                         = await axios.get(`https://packagist.org/packages/${newPackage.composer}.json`)
 
-                    newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
-                    newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
+                        newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
+                        newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
 
-                    if (!newPackage.php_only){
-                        newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
+                        if (!newPackage.php_only){
+                            newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
 
-                        if (newPackage.detected_compatible_versions.length === 0)
-                            log(chalk.yellow('\n Could not detect any compatible versions \n'))
+                            if (newPackage.detected_compatible_versions.length === 0)
+                                log(chalk.yellow('\n Could not detect any compatible versions \n'))
+                        }
+                    }
+                    catch (error) {
+                        if (isAxiosError(error)) {
+                            if (error.response && error.response.status === 404)
+                                log(chalk.bgRed('\n Composer package does not exist! \n'))
+                        }
+                        else {
+                            log(chalk.bgRed('Unknown error!'))
+                        }
+
+                        process.exit(1)
                     }
                 }
                 else if (newPackage.npm){
                     spinner.text = 'Getting npm data'
 
-                    const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
-                    newPackage.first_release_at = extract_npm_first_release_at(npmData)
-                    newPackage.latest_release_at = extract_npm_latest_release_at(npmData)
+                    try {
+                        const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
+                        newPackage.first_release_at = extract_npm_first_release_at(npmData)
+                        newPackage.latest_release_at = extract_npm_latest_release_at(npmData)
+                    }
+                    catch (error) {
+                        if (isAxiosError(error)) {
+                            if (error.response && error.response.status === 404)
+                                log(chalk.bgRed('\n Npm package does not exist! \n'))
+                        }
+                        else {
+                            log(chalk.bgRed('Unknown error!'))
+                        }
+
+                        process.exit(1)
+                    }
                 }
 
                 spinner.text = 'Getting github data'
 
-                const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${newPackage.github.substring(19)}`, {
-                    headers: {
-                        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-                    },
-                })
+                try {
+                    const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${newPackage.github.substring(19)}`, {
+                        headers: {
+                            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+                        },
+                    })
+                    newPackage.stars = extract_github_stars(githubData)
+                }
+                catch (error) {
+                    if (isAxiosError(error)) {
+                        if (error.response && error.response.status === 404)
+                            log(chalk.bgRed('\n This GitHub repository does not exist! \n'))
+                    }
+                    else {
+                        log(chalk.bgRed('Unknown error!'))
+                    }
 
-                spinner.text = 'Finished fetching online information.'
+                    process.exit(1)
+                }
+
+                spinner.succeed('Done fetching online information')
 
                 spinner.stop()
-
-                newPackage.stars = extract_github_stars(githubData)
 
                 const validationResult = laravelPackageSchema.safeParse(newPackage)
 
                 if (!validationResult.success) {
-                    log(chalk.yellow('Validation failed \n'))
+                    log(chalk.yellow('Validation failed! \n'))
                     log(validationResult.error.errors.map(error => error.message).join('\n'))
+                }
+                else if (!is_compatible_with_active_laravel_versions(newPackage)){
+                    log(chalk.yellow('Package is not compatible with active Laravel versions! \n'))
                 }
                 else {
                     // Add the new package to the array

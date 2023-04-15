@@ -107,9 +107,9 @@ export const composer = z
         message: 'Must be a valid composer package name',
     })
     .refine((value) => {
-        if(value) {
+        if (value) {
             const packageName = value.split('/')[1]
-            return packageName.length >= 1 && packageName.length <= 100
+            return packageName?.length >= 1 && packageName?.length <= 100
         }
         return true
     }, 'Invalid composer package name')
@@ -138,7 +138,7 @@ export const keywords = z
             message: 'Must be alphanumeric and single spaces and the following characters: - / .',
         }),
     )
-    .refine(items => new Set(items).size === items.length, {
+    .refine(items => new Set(items).size === items?.length, {
         message: 'Must be an array of unique strings',
     })
 
@@ -158,7 +158,7 @@ export const detected_compatible_versions = z
             message: 'Must be a valid version constraint, like: >=8 or 10',
         }),
     )
-    .refine(items => new Set(items.map(item => item)).size === items.length, {
+    .refine(items => new Set(items.map(item => item)).size === items?.length, {
         message: 'Must be an array of unique strings',
     })
 
@@ -221,14 +221,14 @@ export const laravelPackageSchema = z.object({
 // Package Schema
 export const laravelPackageArraySchema = z.array(laravelPackageSchema)
     // Make sure the github in the array is unique
-    .refine(items => new Set(items.map(item => item.github)).size === items.length, {
+    .refine(items => new Set(items.map(item => item.github)).size === items?.length, {
         message: 'Github must be unique in the array',
     })
     // Make sure the composer in the array is unique if it is not null
-    .refine(items => new Set(items.filter(item => item.composer !== null).map(item => item.composer)).size === items.filter(item => item.composer !== null).length, {
+    .refine(items => new Set(items.filter(item => item.composer !== null).map(item => item.composer)).size === items.filter(item => item.composer !== null)?.length, {
         message: 'Composer must be unique in the array',
     })
     // Make sure the npm in the array is unique if it is not null
-    .refine(items => new Set(items.filter(item => item.npm !== null).map(item => item.npm)).size === items.filter(item => item.npm !== null).length, {
+    .refine(items => new Set(items.filter(item => item.npm !== null).map(item => item.npm)).size === items.filter(item => item.npm !== null)?.length, {
         message: 'Npm must be unique in the array',
     })
