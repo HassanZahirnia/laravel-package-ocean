@@ -31,6 +31,12 @@ function formatStars(numStars: number): string {
     }
 }
 
+// A function to separate large numbers with commas
+// Example: 2600 -> 2,600
+function numberWithCommas(num: number): string {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
 // Get author and name of repo from the github link
 // Example: https://github.com/spatie/once -> spatie/once
 const repositoryName = computed(() => {
@@ -248,7 +254,7 @@ watch(
                                     'transition-opacity duration-300 opacity-0 group-hover:opacity-100': isStarCountOver1k,
                                 }"
                                 >
-                                {{ laravelPackage.stars }}
+                                {{ numberWithCommas(laravelPackage.stars) }}
                             </div>
                         </div>
                     </div>
