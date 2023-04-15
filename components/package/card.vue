@@ -86,13 +86,12 @@ const isCompatible = computed(() => {
     })
 })
 
-
 // Compatiblity and versions list message
 const compatiblity_message = computed(() => {
     if (isCompatible.value)
-        return `Compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
+        return 'Compatible with maintained versions of Laravel.'
     else
-        return `Not compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
+        return 'Not compatible with maintained versions of Laravel.'
 })
 
 // Star count is over 1k
@@ -104,16 +103,8 @@ const isHovering = ref(false)
 // The card DOM node to animate
 const card = ref<HTMLElement | null>(null)
 
-// The warning icon DOM node to animate
-const warningIcon = ref<HTMLElement | null>(null)
-
 // The card animation timeline
 let cardTimeline: gsap.core.Timeline | null = null
-
-// The warning icon animation timeline
-let warningIconTimeline: gsap.core.Timeline | null = null
-
-const dontPlayWarningAnimation = computed(() => isCompatible.value || compatible_versions.value.length === 0)
 
 onMounted(() => {
     cardTimeline = gsap.timeline({
@@ -129,30 +120,6 @@ onMounted(() => {
             ease: 'sine.out',
             duration: 0.25,
         })
-
-    // Skip the warning animation if the package is compatible
-    if (dontPlayWarningAnimation.value)
-        return
-
-    warningIconTimeline = gsap.timeline({
-        paused: true,
-    })
-        // Warning icon
-        .to(warningIcon.value, {
-            keyframes: [
-                { rotate: 0, scale: 1 },
-                { rotate: -30, scale: 1 },
-                { rotate: 30, scale: 1.5 },
-                { rotate: -20, scale: 1.5 },
-                { rotate: 20, scale: 1.3 },
-                { rotate: -10, scale: 1.2 },
-                { rotate: 10, scale: 1.1 },
-                { rotate: 0, scale: 1 },
-            ],
-            ease: 'power4.out',
-            duration: 3,
-        })
-
 })
 
 watch(
@@ -163,18 +130,6 @@ watch(
         // If not hovering and animation is done, reverse it
         else if (cardTimeline?.progress() === 1)
             cardTimeline?.reverse()
-
-        // Skip the warning animation if the package is compatible
-        if (dontPlayWarningAnimation.value)
-            return
-
-        // If hovering, play the animation from the beginning
-        if (value)
-            warningIconTimeline?.play(0)
-        // If not hovering, pause the animation at the beginning
-        else
-            warningIconTimeline?.pause(0)
-
     })
 </script>
 
@@ -261,40 +216,6 @@ watch(
                 </div>
                 <div class="flex-1 pt-6">
                     <div class="flex gap-2 items-center">
-                        <!-- Compatibility icons -->
-                        <ui-tooltip
-                            v-if="compatible_versions.length && !laravelPackage.php_only"
-                            :content="compatiblity_message"
-                            :theme="isCompatible ? 'emerald' : 'amber'"
-                            class="text-xs
-                            flex items-center gap-1
-                            "
-                            >
-                            <!-- Checkmark -->
-                            <div
-                                v-if="isCompatible"
-                                class="i-logos-laravel text-lg text-emerald-500"
-                                />
-                            <!-- Warning -->
-                            <div
-                                v-else
-                                ref="warningIcon"
-                                class="i-ph-warning-circle-duotone text-xl text-amber-500"
-                                />
-                        </ui-tooltip>
-                        <!-- PHP icon -->
-                        <ui-tooltip
-                            v-if="laravelPackage.php_only"
-                            content="This package is for PHP only <br> It does not require Laravel."
-                            theme="indigo"
-                            class="text-xs
-                            flex items-center gap-1
-                            "
-                            >
-                            <div
-                                class="i-svg-elephant text-lg"
-                                />
-                        </ui-tooltip>
                         <!-- Name -->
                         <div
                             class="font-semibold
@@ -302,7 +223,7 @@ watch(
                             dark:text-[#DEE4F1]
                             "
                             :class="{
-                                'text-sm': laravelPackage.name.length > 25,
+                                'text-sm': laravelPackage.name.length > 30,
                             }"
                             >
                             {{ laravelPackage.name }}
@@ -319,22 +240,101 @@ watch(
                         {{ laravelPackage.description }}
                     </div>
                 </div>
-                <!-- Repo name -->
                 <div
-                    class="flex items-center gap-2
-                    pt-2
+                    class="mt-2 relative
                     text-[#505878]
                     dark:text-[#BECDF2]
                     "
                     >
-                    <div class="i-carbon:logo-github text-xl" />
-                    <ui-tooltip
-                        class="text-xs font-medium truncate"
-                        :content="repositoryName"
-                        :condition="showRepositoryNameTooltip"
+                    <!-- Repo name -->
+                    <div
+                        class="flex items-center gap-2
+                        transition duration-300
+                        group-hover:opacity-0 group-hover:translate-x-2
+                        "
                         >
-                        {{ repositoryName }}
-                    </ui-tooltip>
+                        <div class="i-carbon:logo-github text-xl" />
+                        <ui-tooltip
+                            class="text-xs font-medium truncate"
+                            :content="repositoryName"
+                            :condition="showRepositoryNameTooltip"
+                            >
+                            {{ repositoryName }}
+                        </ui-tooltip>
+                    </div>
+                    <!-- Package type -->
+                    <div
+                        class="absolute top-0 left-0
+                        transition duration-300
+                        opacity-0 -translate-x-2
+                        group-hover:opacity-100 group-hover:translate-x-0
+                        "
+                        >
+                        <!-- Laravel package -->
+                        <ui-tooltip
+                            v-if="compatible_versions.length && !laravelPackage.php_only"
+                            :content="compatiblity_message"
+                            :theme="isCompatible ? 'emerald' : 'amber'"
+                            class="text-xs
+                            flex items-center gap-1
+                            "
+                            >
+                            <div
+                                v-if="isCompatible"
+                                class="flex items-center gap-2
+                                text-emerald-500"
+                                >
+                                <!-- Checkmark icon -->
+                                <div class="i-ph-check-circle-duotone text-xl" />
+                                <div class="text-xs truncate">
+                                    Laravel versions:
+                                    {{ compatible_versions.join(', ') }}
+                                </div>
+                            </div>
+                            <div
+                                v-else
+                                class="flex items-center gap-2
+                                text-amber-500"
+                                >
+                                <!-- Warning icon -->
+                                <div
+                                    class="i-ph-warning-circle-duotone text-xl"
+                                    />
+                                <div class="text-xs truncate">
+                                    Laravel versions:
+                                    {{ compatible_versions.join(', ') }}
+                                </div>
+                            </div>
+                        </ui-tooltip>
+                        <!-- PHP package -->
+                        <ui-tooltip
+                            v-if="laravelPackage.php_only && !compatible_versions.length"
+                            content="This is a general PHP package. <br> It does not require Laravel."
+                            theme="indigo"
+                            class="flex items-center gap-2"
+                            >
+                            <div
+                                class="i-svg-elephant text-lg"
+                                />
+                            <div class="text-xs truncate">
+                                PHP package
+                            </div>
+                        </ui-tooltip>
+                        <!-- NPM package -->
+                        <ui-tooltip
+                            v-if="laravelPackage.npm && !compatible_versions.length && !laravelPackage.php_only"
+                            content="This is a NPM package. <br> It doesn't rely on PHP."
+                            theme="indigo"
+                            class="flex items-center gap-2"
+                            >
+                            <div
+                                class="i-logos:npm-icon"
+                                />
+                            <div class="text-xs truncate">
+                                NPM package
+                            </div>
+                        </ui-tooltip>
+                    </div>
                 </div>
             </a>
         </div>
