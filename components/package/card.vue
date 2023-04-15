@@ -89,6 +89,9 @@ const compatiblity_message = computed(() => {
         return `Not compatible with maintained versions of Laravel:<br> ${compatible_versions.value.join(', ')}`
 })
 
+// Star count is over 1k
+const isStarCountOver1k = computed(() => formatStars($props.laravelPackage.stars).includes('k'))
+
 // Hover state
 const isHovering = ref(false)
 
@@ -110,7 +113,7 @@ onMounted(() => {
     cardTimeline = gsap.timeline({
         paused: true,
         onComplete: () => {
-            if(!isHovering.value)
+            if (!isHovering.value)
                 cardTimeline?.reverse()
         },
     })
@@ -122,7 +125,7 @@ onMounted(() => {
         })
 
     // Skip the warning animation if the package is compatible
-    if(dontPlayWarningAnimation.value)
+    if (dontPlayWarningAnimation.value)
         return
 
     warningIconTimeline = gsap.timeline({
@@ -152,11 +155,11 @@ watch(
         // If hovering, play the animation
         if (value) cardTimeline?.play()
         // If not hovering and animation is done, reverse it
-        else if(cardTimeline?.progress() === 1)
+        else if (cardTimeline?.progress() === 1)
             cardTimeline?.reverse()
 
         // Skip the warning animation if the package is compatible
-        if(dontPlayWarningAnimation.value)
+        if (dontPlayWarningAnimation.value)
             return
 
         // If hovering, play the animation from the beginning
@@ -179,7 +182,7 @@ watch(
             <a
                 :href="laravelPackage.github"
                 target="_blank"
-                class="rounded-3xl relative
+                class="rounded-3xl relative group
                 h-60
                 p-6
                 transition duration-300
@@ -215,16 +218,38 @@ watch(
                         @click.stop.prevent="selectedCategory = laravelPackage.category"
                         />
                     <!-- Stars -->
-                    <div class="flex items-center gap-2 group">
+                    <div
+                        class="flex items-center gap-1.5"
+                        :class="{
+                            'transition-transform duration-300 group-hover:-translate-x-1': isStarCountOver1k,
+                        }"
+                        >
                         <div
                             class="i-fluent-emoji-flat:star w-[1.15rem] h-[1.15rem]
                             transition duration-500 ease-out
-                            group-hover:rotate-[-75deg]
                             relative -top-px
                             "
+                            :class="{
+                                'group-hover:rotate-[-75deg]': isStarCountOver1k,
+                            }"
                             />
-                        <div class="text-sm">
-                            {{ formatStars(laravelPackage.stars) }}
+                        <div class="grid text-sm">
+                            <div
+                                class="[grid-area:1/-1] justify-self-center self-center"
+                                :class="{
+                                    'transition-opacity duration-300 group-hover:opacity-0': isStarCountOver1k,
+                                }"
+                                >
+                                {{ formatStars(laravelPackage.stars) }}
+                            </div>
+                            <div
+                                class="[grid-area:1/-1] justify-self-center self-center"
+                                :class="{
+                                    'transition-opacity duration-300 opacity-0 group-hover:opacity-100': isStarCountOver1k,
+                                }"
+                                >
+                                {{ laravelPackage.stars }}
+                            </div>
                         </div>
                     </div>
                 </div>

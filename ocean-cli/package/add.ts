@@ -93,9 +93,9 @@ export const addPackage = async function(){
             message: 'Github:',
             validate: async(value: string) => {
                 const result = z_github.safeParse(value)
-                if(!result.success)
+                if (!result.success)
                     return result.error.errors.map(error => error.message).join('\n')
-                if(find(laravelPackages, { github: value }))
+                if (find(laravelPackages, { github: value }))
                     return 'This package is already in the database'
 
                 try {
@@ -106,7 +106,7 @@ export const addPackage = async function(){
                     })
 
                     const health = github_is_healthy(githubData)
-                    if(typeof health === 'string')
+                    if (typeof health === 'string')
                         return health
 
                     return true
@@ -148,12 +148,12 @@ export const addPackage = async function(){
             name: 'composer',
             message: 'Composer(optional, default: null):',
             validate: (value: string) => {
-                if(isEmpty(value))
+                if (isEmpty(value))
                     return true
                 const result = z_composer.safeParse(value)
-                if(!result.success)
+                if (!result.success)
                     return result.error.errors.map(error => error.message).join('\n')
-                if(find(laravelPackages, { composer: value }))
+                if (find(laravelPackages, { composer: value }))
                     return 'This package is already in the database'
 
                 return true
@@ -164,11 +164,11 @@ export const addPackage = async function(){
             name: 'npm',
             message: 'Npm(optional, default: null):',
             validate: (value: string) => {
-                if(isEmpty(value)) return true
+                if (isEmpty(value)) return true
                 const result = z_npm.safeParse(value)
-                if(!result.success)
+                if (!result.success)
                     return result.error.errors.map(error => error.message).join('\n')
-                if(find(laravelPackages, { npm: value }))
+                if (find(laravelPackages, { npm: value }))
                     return 'This package is already in the database'
 
                 return true
@@ -179,12 +179,12 @@ export const addPackage = async function(){
             name: 'keywords',
             message: 'Keywords (optional, separate words with comma):',
             validate: (value: string) => {
-                if(isEmpty(value)) return true
+                if (isEmpty(value)) return true
 
                 const keywords = value.split(',').map(keyword => keyword.trim())
 
                 const result = z_keywords.safeParse(keywords)
-                if(!result.success)
+                if (!result.success)
                     return result.error.errors.map(error => error.message).join('\n')
 
                 return true
@@ -214,7 +214,7 @@ export const addPackage = async function(){
 
                 const spinner = ora('Fetching online information').start()
 
-                if(newPackage.composer){
+                if (newPackage.composer){
                     spinner.text = 'Getting packagist data'
 
                     const { data: packagistData }: { data: packagistData }
@@ -223,14 +223,14 @@ export const addPackage = async function(){
                     newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
                     newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
 
-                    if(!newPackage.php_only){
+                    if (!newPackage.php_only){
                         newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
 
                         if (newPackage.detected_compatible_versions.length === 0)
                             log(chalk.yellow('\n Could not detect any compatible versions \n'))
                     }
                 }
-                else if(newPackage.npm){
+                else if (newPackage.npm){
                     spinner.text = 'Getting npm data'
 
                     const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
@@ -254,11 +254,11 @@ export const addPackage = async function(){
 
                 const validationResult = laravelPackageSchema.safeParse(newPackage)
 
-                if(!validationResult.success) {
+                if (!validationResult.success) {
                     log(chalk.yellow('Validation failed \n'))
                     log(validationResult.error.errors.map(error => error.message).join('\n'))
                 }
-                else{
+                else {
                     // Add the new package to the array
                     laravelPackages.push(newPackage)
 

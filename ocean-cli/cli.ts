@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 import { writeActiveLaravelVersion } from './utils/laravel'
-import { validateJson } from './utils/health'
+import { runGithubChecks, validateJson } from './utils/health'
 import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
@@ -23,6 +23,8 @@ export const showMainMenu = function(){
                     'Laravel: Update Active Versions',
                     'Health: Validate JSON',
                     'Health: Validate JSON (Verbose)',
+                    'Health: Check Github',
+                    'Health: Check Composer',
                     'Exit',
                 ],
             },
@@ -44,6 +46,9 @@ export const showMainMenu = function(){
                 case 'Health: Validate JSON (Verbose)':
                     validateJson({ verbose: true })
                     break
+                case 'Health: Check Github':
+                    runGithubChecks()
+                    break
                 case 'Exit':
                     process.exit(0)
             }
@@ -58,10 +63,10 @@ const updateActiveLaravelVersionsFlag = process.argv.includes('--update-active-l
 if (validateJsonFlag) {
     validateJson({ verbose: verboseFlag })
 }
-else if(updateActiveLaravelVersionsFlag){
+else if (updateActiveLaravelVersionsFlag){
     writeActiveLaravelVersion({ noMenu: true })
 }
-else{
+else {
     // Clear the screen
     clearScreen()
 
