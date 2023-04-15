@@ -250,8 +250,10 @@ watch(
                     <div
                         class="flex items-center gap-2
                         transition duration-300
-                        group-hover:opacity-0 group-hover:translate-x-2
                         "
+                        :class="{
+                            'group-hover:opacity-0 group-hover:translate-x-2': laravelPackage.composer || laravelPackage.npm,
+                        }"
                         >
                         <div class="i-carbon:logo-github text-xl" />
                         <ui-tooltip
@@ -267,8 +269,10 @@ watch(
                         class="absolute top-0 left-0
                         transition duration-300
                         opacity-0 -translate-x-2
-                        group-hover:opacity-100 group-hover:translate-x-0
                         "
+                        :class="{
+                            'group-hover:opacity-100 group-hover:translate-x-0': laravelPackage.composer || laravelPackage.npm,
+                        }"
                         >
                         <!-- Laravel package -->
                         <ui-tooltip
