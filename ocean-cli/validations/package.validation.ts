@@ -155,7 +155,6 @@ export const latest_release_at = z.coerce
 export const laravel_dependency_versions = z
     .array(z
         .string()
-        // validate versions using semver.validate()
         .refine((value) => {
             if (value)
                 return semver.validRange(value) !== null

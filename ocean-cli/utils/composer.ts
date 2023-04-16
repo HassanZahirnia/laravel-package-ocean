@@ -56,5 +56,9 @@ export const extract_packagist_laravel_dependency_versions = (packagistData: pac
 
 function convertLegacySemver(version: string): string{
     // Replace all single | not followed by another | with ||
-    return version.replace(/\|(?!\|)/g, '||')
+    version = version.replace(/\|(?!\|)/g, '||')
+    // And remove any @dev from the version
+    version = version.replace(/@dev/g, '')
+
+    return version
 }

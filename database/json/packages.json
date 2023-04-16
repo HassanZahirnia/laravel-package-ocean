@@ -3166,25 +3166,6 @@
         "created_at": "2023-04-09T13:58:48.321Z"
     },
     {
-        "name": "Ziggy",
-        "description": "Use your named routes in JavaScript.",
-        "category": "Debugging & Dev Tools",
-        "github": "https://github.com/tighten/ziggy",
-        "author": "tightenco",
-        "composer": "tightenco/ziggy",
-        "npm": null,
-        "stars": 3217,
-        "keywords": [],
-        "first_release_at": "2017-08-04T17:53:35+00:00",
-        "latest_release_at": "2022-09-23T22:15:05+00:00",
-        "laravel_dependency_versions": [
-            ">=5.4@dev"
-        ],
-        "php_only": false,
-        "updated_at": "2023-04-06T20:58:06.744Z",
-        "created_at": "2023-04-09T13:58:48.324Z"
-    },
-    {
         "name": "Bladestan",
         "description": "PHPStan (static) analysis for Blade templates.",
         "category": "Debugging & Dev Tools",
@@ -6930,5 +6911,24 @@
         "php_only": false,
         "updated_at": "2023-04-16T21:48:28.281Z",
         "created_at": "2023-04-16T21:48:28.281Z"
+    },
+    {
+        "name": "Ziggy",
+        "description": "Use your named routes in JavaScript.",
+        "category": "Debugging & Dev Tools",
+        "github": "https://github.com/tighten/ziggy",
+        "author": "tightenco",
+        "composer": "tightenco/ziggy",
+        "npm": null,
+        "stars": 3228,
+        "keywords": [],
+        "first_release_at": "2017-08-04T17:53:35+00:00",
+        "latest_release_at": "2022-09-23T22:15:05+00:00",
+        "laravel_dependency_versions": [
+            ">=5.4"
+        ],
+        "php_only": false,
+        "updated_at": "2023-04-16T21:57:21.082Z",
+        "created_at": "2023-04-16T21:57:21.082Z"
     }
 ]
