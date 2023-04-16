@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import semver from 'semver'
 import { categories } from '~/database/categories'
 
 // Name
@@ -151,19 +152,22 @@ export const latest_release_at = z.coerce
     .date()
 
 // Detected Compatible Versions
-export const detected_compatible_versions = z
+export const laravel_dependency_versions = z
     .array(z
         .string()
-        .regex(/^(\d+|<=\d+|<\d+|>=\d+|>\d+)$/, {
-            message: 'Must be a valid version constraint, like: >=8 or 10',
+        // validate versions using semver.validate()
+        .refine((value) => {
+            if (value)
+                return semver.validRange(value) !== null
+
+            return true
+        }, {
+            message: 'Must be a valid semver version',
         }),
     )
     .refine(items => new Set(items.map(item => item)).size === items?.length, {
         message: 'Must be an array of unique strings',
     })
-
-// Compatible Versions
-export const compatible_versions = detected_compatible_versions
 
 // Php only
 export const php_only = z
@@ -190,8 +194,7 @@ export const laravelPackageSchema = z.object({
     keywords,
     first_release_at,
     latest_release_at,
-    detected_compatible_versions,
-    compatible_versions,
+    laravel_dependency_versions,
     php_only,
     created_at,
     updated_at,

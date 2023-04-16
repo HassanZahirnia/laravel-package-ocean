@@ -11,14 +11,9 @@
         "keywords": [],
         "first_release_at": "2020-12-24T22:39:38+00:00",
         "latest_release_at": "2023-02-15T23:07:40+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:53:51.161Z",
         "created_at": "2023-04-09T13:58:47.687Z"
@@ -37,10 +32,9 @@
         ],
         "first_release_at": "2019-12-15T11:58:25+00:00",
         "latest_release_at": "2023-03-26T18:00:04+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:53:53.163Z",
         "created_at": "2023-04-09T13:58:47.695Z"
@@ -60,38 +54,12 @@
         ],
         "first_release_at": "2015-03-16T14:04:03+00:00",
         "latest_release_at": "2023-02-15T07:29:49+00:00",
-        "detected_compatible_versions": [
-            "7",
-            ">=8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0 || ^9.0 || >=8.40.0 || ^7.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:53:54.841Z",
         "created_at": "2023-04-09T13:58:47.702Z"
-    },
-    {
-        "name": "Telegraph",
-        "description": "Fluently interacting with Telegram Bots.",
-        "category": "API",
-        "github": "https://github.com/defstudio/telegraph",
-        "author": "defstudio",
-        "composer": "defstudio/telegraph",
-        "npm": null,
-        "stars": 451,
-        "keywords": [],
-        "first_release_at": "2021-11-21T18:52:06+00:00",
-        "latest_release_at": "2023-04-02T20:33:57+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
-        ],
-        "compatible_versions": [],
-        "php_only": false,
-        "updated_at": "2023-04-06T20:53:56.756Z",
-        "created_at": "2023-04-09T13:58:47.707Z"
     },
     {
         "name": "Laravel API Response Helpers",
@@ -105,14 +73,9 @@
         "keywords": [],
         "first_release_at": "2021-09-02T13:37:07+00:00",
         "latest_release_at": "2023-01-31T18:16:26+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:53:58.537Z",
         "created_at": "2023-04-09T13:58:47.713Z"
@@ -129,12 +92,9 @@
         "keywords": [],
         "first_release_at": "2014-07-24T19:28:26+00:00",
         "latest_release_at": "2023-03-07T01:22:23+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.75 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:12.636Z",
         "created_at": "2023-04-09T13:58:47.716Z"
@@ -151,12 +111,9 @@
         "keywords": [],
         "first_release_at": "2014-07-26T16:32:17+00:00",
         "latest_release_at": "2023-03-10T12:03:39+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.75 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:14.391Z",
         "created_at": "2023-04-09T13:58:47.723Z"
@@ -173,11 +130,9 @@
         "keywords": [],
         "first_release_at": "2019-08-16T01:37:19+00:00",
         "latest_release_at": "2023-03-30T11:24:10+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:00.282Z",
         "created_at": "2023-04-09T13:58:47.726Z"
@@ -194,11 +149,9 @@
         "keywords": [],
         "first_release_at": "2021-09-12T05:09:28+00:00",
         "latest_release_at": "2023-03-28T20:03:21+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:02.152Z",
         "created_at": "2023-04-09T13:58:47.733Z"
@@ -218,11 +171,9 @@
         ],
         "first_release_at": "2022-12-26T22:26:43+00:00",
         "latest_release_at": "2023-03-24T11:47:10+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.46.0||^10.7.1"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:03.939Z",
         "created_at": "2023-04-09T13:58:47.738Z"
@@ -239,10 +190,9 @@
         "keywords": [],
         "first_release_at": "2020-03-27T10:14:47+00:00",
         "latest_release_at": "2022-02-08T12:08:50+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:18.010Z",
         "created_at": "2023-04-09T13:58:47.742Z"
@@ -259,8 +209,7 @@
         "keywords": [],
         "first_release_at": "2021-12-22T10:39:07+00:00",
         "latest_release_at": "2023-03-08T08:04:02+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:21:16.001Z",
         "created_at": "2023-04-09T13:58:47.746Z"
@@ -282,12 +231,9 @@
         ],
         "first_release_at": "2016-09-19T10:55:53+00:00",
         "latest_release_at": "2023-03-05T15:42:39+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:07.049Z",
         "created_at": "2023-04-09T13:58:47.753Z"
@@ -304,10 +250,9 @@
         "keywords": [],
         "first_release_at": "2022-01-14T18:32:47+00:00",
         "latest_release_at": "2023-03-25T16:47:08+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.39"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:09.044Z",
         "created_at": "2023-04-09T13:58:47.756Z"
@@ -324,12 +269,9 @@
         "keywords": [],
         "first_release_at": "2022-01-10T14:05:23+00:00",
         "latest_release_at": "2023-02-20T13:07:20+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.73||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:10.810Z",
         "created_at": "2023-04-09T13:58:47.761Z"
@@ -348,10 +290,9 @@
         ],
         "first_release_at": "2020-10-24T10:54:43+00:00",
         "latest_release_at": "2023-04-03T12:09:39+00:00",
-        "detected_compatible_versions": [
-            ">=5"
+        "laravel_dependency_versions": [
+            ">=5.7"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:12.724Z",
         "created_at": "2023-04-09T13:58:47.765Z"
@@ -368,10 +309,9 @@
         "keywords": [],
         "first_release_at": "2015-09-01T14:05:22+00:00",
         "latest_release_at": "2023-03-02T21:41:10+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:14.526Z",
         "created_at": "2023-04-09T13:58:47.771Z"
@@ -388,11 +328,9 @@
         "keywords": [],
         "first_release_at": "2014-04-22T01:48:17+00:00",
         "latest_release_at": "2023-04-04T20:58:39+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T19:21:23.005Z",
         "created_at": "2023-04-09T13:58:47.774Z"
@@ -413,11 +351,9 @@
         ],
         "first_release_at": "2022-12-15T23:26:51+00:00",
         "latest_release_at": "2023-02-24T20:08:19+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:16.303Z",
         "created_at": "2023-04-09T13:58:47.777Z"
@@ -437,10 +373,9 @@
         ],
         "first_release_at": "2015-06-24T13:25:15+00:00",
         "latest_release_at": "2023-02-23T10:10:57+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:18.162Z",
         "created_at": "2023-04-09T13:58:47.781Z"
@@ -462,11 +397,9 @@
         ],
         "first_release_at": "2017-03-05T16:25:25+00:00",
         "latest_release_at": "2023-02-24T08:18:49+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:19.938Z",
         "created_at": "2023-04-09T13:58:47.785Z"
@@ -483,14 +416,9 @@
         "keywords": [],
         "first_release_at": "2020-02-28T21:54:49+00:00",
         "latest_release_at": "2023-02-10T21:27:44+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:19.714Z",
         "created_at": "2023-04-09T13:58:47.788Z"
@@ -507,11 +435,9 @@
         "keywords": [],
         "first_release_at": "2020-12-26T18:44:58+00:00",
         "latest_release_at": "2023-03-08T12:50:42+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.21||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:21.346Z",
         "created_at": "2023-04-09T13:58:47.792Z"
@@ -531,14 +457,9 @@
         ],
         "first_release_at": "2017-02-10T17:40:02+00:00",
         "latest_release_at": "2023-01-25T16:56:05+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:21.724Z",
         "created_at": "2023-04-09T13:58:47.795Z"
@@ -555,10 +476,9 @@
         "keywords": [],
         "first_release_at": "2020-11-09T19:58:28+00:00",
         "latest_release_at": "2023-03-28T14:37:27+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:23.666Z",
         "created_at": "2023-04-09T13:58:47.799Z"
@@ -575,12 +495,9 @@
         "keywords": [],
         "first_release_at": "2020-08-31T19:27:09+00:00",
         "latest_release_at": "2023-01-06T15:57:08+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.82||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:25.457Z",
         "created_at": "2023-04-09T13:58:47.802Z"
@@ -597,11 +514,9 @@
         "keywords": [],
         "first_release_at": "2016-08-15T19:31:29+00:00",
         "latest_release_at": "2023-04-04T14:06:53+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:27.391Z",
         "created_at": "2023-04-09T13:58:47.806Z"
@@ -618,11 +533,9 @@
         "keywords": [],
         "first_release_at": "2020-03-20T19:48:13+00:00",
         "latest_release_at": "2023-01-13T15:41:49+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.21||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:29.269Z",
         "created_at": "2023-04-09T13:58:47.812Z"
@@ -639,14 +552,9 @@
         "keywords": [],
         "first_release_at": "2014-08-22T21:41:08+00:00",
         "latest_release_at": "2023-01-20T15:42:35+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:30.985Z",
         "created_at": "2023-04-09T13:58:47.816Z"
@@ -663,8 +571,7 @@
         "keywords": [],
         "first_release_at": "2023-02-11T20:02:42+00:00",
         "latest_release_at": "2023-03-02T17:28:01+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             "9",
             "10"
         ],
@@ -684,11 +591,9 @@
         "keywords": [],
         "first_release_at": "2015-07-07T21:58:18+00:00",
         "latest_release_at": "2023-03-24T21:16:47+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:34.667Z",
         "created_at": "2023-04-09T13:58:47.823Z"
@@ -707,8 +612,7 @@
         ],
         "first_release_at": "2021-01-24T04:05:04+00:00",
         "latest_release_at": "2023-02-28T02:55:59+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             "9",
             "10"
         ],
@@ -730,12 +634,9 @@
         ],
         "first_release_at": "2022-08-15T07:15:02+00:00",
         "latest_release_at": "2023-04-05T05:44:00+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:38.438Z",
         "created_at": "2023-04-09T13:58:47.830Z"
@@ -754,16 +655,9 @@
         ],
         "first_release_at": "2014-11-24T08:26:52+00:00",
         "latest_release_at": "2023-02-15T07:36:34+00:00",
-        "detected_compatible_versions": [
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "4.2.*||5.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:40.263Z",
         "created_at": "2023-04-09T13:58:47.834Z"
@@ -784,10 +678,9 @@
         ],
         "first_release_at": "2021-10-01T03:44:14+00:00",
         "latest_release_at": "2023-02-23T18:45:01+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:41.992Z",
         "created_at": "2023-04-09T13:58:47.837Z"
@@ -808,10 +701,9 @@
         ],
         "first_release_at": "2016-05-26T13:22:20+00:00",
         "latest_release_at": "2023-03-29T15:59:45+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:43.667Z",
         "created_at": "2023-04-09T13:58:47.842Z"
@@ -833,14 +725,9 @@
         ],
         "first_release_at": "2015-09-17T03:40:19+00:00",
         "latest_release_at": "2023-02-10T16:47:25+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:45.471Z",
         "created_at": "2023-04-09T13:58:47.846Z"
@@ -863,12 +750,10 @@
         ],
         "first_release_at": "2016-06-23T22:40:27+00:00",
         "latest_release_at": "2023-01-25T17:04:51+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0 || ^9.0 || ^10.0",
+            "^8.69 || ^9.27 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:47.168Z",
         "created_at": "2023-04-09T13:58:47.850Z"
@@ -891,13 +776,9 @@
         ],
         "first_release_at": "2015-09-15T15:36:13+00:00",
         "latest_release_at": "2023-03-22T02:57:36+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:49.188Z",
         "created_at": "2023-04-09T13:58:47.853Z"
@@ -914,11 +795,9 @@
         "keywords": [],
         "first_release_at": "2014-09-04T21:57:06+00:00",
         "latest_release_at": "2023-02-16T16:29:41+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:51.095Z",
         "created_at": "2023-04-09T13:58:47.856Z"
@@ -935,10 +814,9 @@
         "keywords": [],
         "first_release_at": "2018-07-02T13:24:02+00:00",
         "latest_release_at": "2023-02-10T12:34:41+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:53.408Z",
         "created_at": "2023-04-09T13:58:47.861Z"
@@ -955,14 +833,9 @@
         "keywords": [],
         "first_release_at": "2016-03-09T13:38:22+00:00",
         "latest_release_at": "2023-02-17T15:45:48+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T00:50:09.433Z",
         "created_at": "2023-04-09T13:58:47.864Z"
@@ -983,12 +856,9 @@
         ],
         "first_release_at": "2016-03-10T14:23:28+00:00",
         "latest_release_at": "2023-03-30T17:31:23+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0||^9.0||^8.69"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:55.735Z",
         "created_at": "2023-04-09T13:58:47.867Z"
@@ -1005,15 +875,9 @@
         "keywords": [],
         "first_release_at": "2018-09-02T11:39:24+00:00",
         "latest_release_at": "2023-02-21T19:12:38+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.4||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:57.391Z",
         "created_at": "2023-04-09T13:58:47.873Z"
@@ -1033,15 +897,9 @@
         ],
         "first_release_at": "2014-10-29T18:15:26+00:00",
         "latest_release_at": "2023-03-31T10:53:06+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.5||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:54:59.201Z",
         "created_at": "2023-04-09T13:58:47.876Z"
@@ -1058,12 +916,9 @@
         "keywords": [],
         "first_release_at": "2017-09-05T08:25:31+00:00",
         "latest_release_at": "2023-03-15T08:20:01+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.64||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:01.428Z",
         "created_at": "2023-04-09T13:58:47.881Z"
@@ -1094,12 +949,9 @@
         ],
         "first_release_at": "2020-04-28T19:14:44+00:00",
         "latest_release_at": "2023-03-31T12:33:27+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:03.505Z",
         "created_at": "2023-04-09T13:58:47.884Z"
@@ -1116,10 +968,9 @@
         "keywords": [],
         "first_release_at": "2019-11-06T06:49:36+00:00",
         "latest_release_at": "2023-03-02T14:27:41+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:05.463Z",
         "created_at": "2023-04-09T13:58:47.887Z"
@@ -1139,8 +990,7 @@
         ],
         "first_release_at": "2021-10-25T12:37:16+00:00",
         "latest_release_at": "2023-03-17T06:22:06+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=9"
         ],
         "php_only": false,
@@ -1159,8 +1009,7 @@
         "keywords": [],
         "first_release_at": "2019-12-30T10:34:25+00:00",
         "latest_release_at": "2023-03-03T17:15:45+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=7"
         ],
         "php_only": false,
@@ -1179,10 +1028,9 @@
         "keywords": [],
         "first_release_at": "2015-10-06T09:06:18+00:00",
         "latest_release_at": "2021-03-25T13:30:23+00:00",
-        "detected_compatible_versions": [
-            ">=5"
+        "laravel_dependency_versions": [
+            ">=5.1.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:10.955Z",
         "created_at": "2023-04-09T13:58:47.900Z"
@@ -1201,10 +1049,9 @@
         ],
         "first_release_at": "2016-11-23T14:26:02+00:00",
         "latest_release_at": "2023-03-29T02:53:46+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:13.020Z",
         "created_at": "2023-04-09T13:58:47.903Z"
@@ -1221,12 +1068,9 @@
         "keywords": [],
         "first_release_at": "2020-03-28T03:59:14+00:00",
         "latest_release_at": "2023-02-16T18:32:49+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:14.742Z",
         "created_at": "2023-04-09T13:58:47.906Z"
@@ -1243,10 +1087,9 @@
         "keywords": [],
         "first_release_at": "2015-01-30T21:48:05+00:00",
         "latest_release_at": "2023-02-24T22:19:53+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:16.935Z",
         "created_at": "2023-04-09T13:58:47.913Z"
@@ -1263,11 +1106,9 @@
         "keywords": [],
         "first_release_at": "2019-11-21T14:49:01+00:00",
         "latest_release_at": "2023-04-04T17:24:24+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.50.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:19.348Z",
         "created_at": "2023-04-09T13:58:47.916Z"
@@ -1287,11 +1128,9 @@
         ],
         "first_release_at": "2013-11-27T05:02:00+00:00",
         "latest_release_at": "2023-03-28T07:33:58+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:21.244Z",
         "created_at": "2023-04-09T13:58:47.921Z"
@@ -1308,11 +1147,9 @@
         "keywords": [],
         "first_release_at": "2017-09-07T21:42:48+00:00",
         "latest_release_at": "2023-02-13T14:09:29+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9 || ^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:22.918Z",
         "created_at": "2023-04-09T13:58:47.924Z"
@@ -1329,13 +1166,9 @@
         "keywords": [],
         "first_release_at": "2021-11-20T13:30:51+00:00",
         "latest_release_at": "2023-02-20T14:24:34+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.30.6 || ^8.75 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:25.861Z",
         "created_at": "2023-04-09T13:58:47.927Z"
@@ -1364,11 +1197,9 @@
         ],
         "first_release_at": "2022-10-12T17:20:19+00:00",
         "latest_release_at": "2023-04-03T13:06:24+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:27.811Z",
         "created_at": "2023-04-09T13:58:47.931Z"
@@ -1391,14 +1222,9 @@
         ],
         "first_release_at": "2019-04-01T16:36:44+00:00",
         "latest_release_at": "2023-01-17T01:02:51+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.74||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:29.680Z",
         "created_at": "2023-04-09T13:58:47.934Z"
@@ -1415,10 +1241,9 @@
         "keywords": [],
         "first_release_at": "2023-02-09T23:38:56+00:00",
         "latest_release_at": "2023-03-17T18:08:19+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:31.355Z",
         "created_at": "2023-04-09T13:58:47.938Z"
@@ -1435,8 +1260,7 @@
         "keywords": [],
         "first_release_at": "2017-09-03T14:54:16+00:00",
         "latest_release_at": "2023-02-16T11:57:28+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T10:04:31.396Z",
         "created_at": "2023-04-09T13:58:47.941Z"
@@ -1456,13 +1280,9 @@
         ],
         "first_release_at": "2019-09-20T03:22:45+00:00",
         "latest_release_at": "2023-03-03T20:12:38+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:33.400Z",
         "created_at": "2023-04-09T13:58:47.945Z"
@@ -1488,12 +1308,9 @@
         ],
         "first_release_at": "2019-05-19T19:19:13+00:00",
         "latest_release_at": "2023-02-22T10:37:59+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.15 || 9.0 - 9.34 || ^9.36 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:35.200Z",
         "created_at": "2023-04-09T13:58:47.948Z"
@@ -1510,10 +1327,9 @@
         "keywords": [],
         "first_release_at": "2016-06-28T11:03:54+00:00",
         "latest_release_at": "2023-02-16T11:08:15+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:36.796Z",
         "created_at": "2023-04-09T13:58:47.951Z"
@@ -1533,11 +1349,9 @@
         ],
         "first_release_at": "2022-07-22T10:25:49+00:00",
         "latest_release_at": "2023-03-30T23:11:49+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.41||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:38.652Z",
         "created_at": "2023-04-09T13:58:47.954Z"
@@ -1556,11 +1370,9 @@
         ],
         "first_release_at": "2020-10-10T06:12:55+00:00",
         "latest_release_at": "2023-03-10T14:06:50+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:40.909Z",
         "created_at": "2023-04-09T13:58:47.957Z"
@@ -1580,11 +1392,9 @@
         ],
         "first_release_at": "2021-07-08T15:53:32+00:00",
         "latest_release_at": "2023-04-03T07:27:59+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.30||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:42.760Z",
         "created_at": "2023-04-09T13:58:47.962Z"
@@ -1601,12 +1411,9 @@
         "keywords": [],
         "first_release_at": "2020-05-17T19:40:31+00:00",
         "latest_release_at": "2023-02-09T09:02:18+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:44.568Z",
         "created_at": "2023-04-09T13:58:47.965Z"
@@ -1623,12 +1430,9 @@
         "keywords": [],
         "first_release_at": "2018-09-12T08:22:53+00:00",
         "latest_release_at": "2023-02-01T08:39:40+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T01:10:26.496Z",
         "created_at": "2023-04-09T13:58:47.968Z"
@@ -1647,11 +1451,9 @@
         ],
         "first_release_at": "2019-01-18T16:05:15+00:00",
         "latest_release_at": "2023-02-16T16:21:06+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:46.423Z",
         "created_at": "2023-04-09T13:58:47.972Z"
@@ -1668,11 +1470,9 @@
         "keywords": [],
         "first_release_at": "2018-01-15T12:50:23+00:00",
         "latest_release_at": "2023-02-14T18:15:16+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T01:10:38.317Z",
         "created_at": "2023-04-09T13:58:47.975Z"
@@ -1689,11 +1489,9 @@
         "keywords": [],
         "first_release_at": "2022-12-09T17:43:52+00:00",
         "latest_release_at": "2023-04-05T12:24:21+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:48.131Z",
         "created_at": "2023-04-09T13:58:47.978Z"
@@ -1710,11 +1508,9 @@
         "keywords": [],
         "first_release_at": "2019-07-14T13:25:45+00:00",
         "latest_release_at": "2023-02-09T11:14:07+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "10.*||^9.6"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:50.044Z",
         "created_at": "2023-04-09T13:58:47.982Z"
@@ -1731,11 +1527,9 @@
         "keywords": [],
         "first_release_at": "2022-05-07T20:53:41+00:00",
         "latest_release_at": "2023-04-04T19:45:08+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:52.328Z",
         "created_at": "2023-04-09T13:58:47.985Z"
@@ -1752,14 +1546,9 @@
         "keywords": [],
         "first_release_at": "2020-12-07T19:52:14+00:00",
         "latest_release_at": "2023-01-31T14:51:16+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:23.196Z",
         "created_at": "2023-04-09T13:58:47.988Z"
@@ -1776,11 +1565,9 @@
         "keywords": [],
         "first_release_at": "2018-04-04T12:24:28+00:00",
         "latest_release_at": "2023-02-22T16:52:55+00:00",
-        "detected_compatible_versions": [
-            ">=5",
-            "<11"
+        "laravel_dependency_versions": [
+            ">=5.6 <11.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:54.098Z",
         "created_at": "2023-04-09T13:58:47.998Z"
@@ -1800,10 +1587,9 @@
         ],
         "first_release_at": "2021-08-24T11:22:54+00:00",
         "latest_release_at": "2022-06-10T17:26:17+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:55.783Z",
         "created_at": "2023-04-09T13:58:48.002Z"
@@ -1820,11 +1606,10 @@
         "keywords": [],
         "first_release_at": "2018-11-07T13:54:48+00:00",
         "latest_release_at": "2023-03-15T17:27:13+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0",
+            "^9.37||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:58.053Z",
         "created_at": "2023-04-09T13:58:48.005Z"
@@ -1841,15 +1626,9 @@
         "keywords": [],
         "first_release_at": "2020-01-28T13:58:43+00:00",
         "latest_release_at": "2023-01-11T16:19:01+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:55:59.830Z",
         "created_at": "2023-04-09T13:58:48.008Z"
@@ -1871,11 +1650,10 @@
         ],
         "first_release_at": "2023-01-04T16:55:18+00:00",
         "latest_release_at": "2023-03-28T13:19:13+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0",
+            "^9.28||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:01.633Z",
         "created_at": "2023-04-09T13:58:48.012Z"
@@ -1892,12 +1670,9 @@
         "keywords": [],
         "first_release_at": "2022-10-03T15:24:32+00:00",
         "latest_release_at": "2023-02-15T14:18:19+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:03.769Z",
         "created_at": "2023-04-09T13:58:48.015Z"
@@ -1914,10 +1689,9 @@
         "keywords": [],
         "first_release_at": "2013-06-11T16:19:46+00:00",
         "latest_release_at": "2023-02-16T23:01:35+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:05.512Z",
         "created_at": "2023-04-09T13:58:48.020Z"
@@ -1934,11 +1708,9 @@
         "keywords": [],
         "first_release_at": "2018-01-03T18:08:26+00:00",
         "latest_release_at": "2023-02-24T13:09:28+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.1.3"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:07.293Z",
         "created_at": "2023-04-09T13:58:48.023Z"
@@ -1955,13 +1727,9 @@
         "keywords": [],
         "first_release_at": "2018-05-28T14:01:43+00:00",
         "latest_release_at": "2022-02-28T15:14:45+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:09.147Z",
         "created_at": "2023-04-09T13:58:48.026Z"
@@ -1978,12 +1746,9 @@
         "keywords": [],
         "first_release_at": "2021-11-20T12:40:34+00:00",
         "latest_release_at": "2023-02-15T08:58:43+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:10.869Z",
         "created_at": "2023-04-09T13:58:48.030Z"
@@ -2002,12 +1767,9 @@
         ],
         "first_release_at": "2022-07-07T15:37:11+00:00",
         "latest_release_at": "2023-02-14T03:28:31+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.37||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:12.666Z",
         "created_at": "2023-04-09T13:58:48.034Z"
@@ -2024,10 +1786,9 @@
         "keywords": [],
         "first_release_at": "2013-03-31T14:36:15+00:00",
         "latest_release_at": "2023-02-16T12:20:36+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:24.907Z",
         "created_at": "2023-04-09T13:58:48.038Z"
@@ -2044,11 +1805,9 @@
         "keywords": [],
         "first_release_at": "2020-10-23T22:54:57+00:00",
         "latest_release_at": "2023-03-19T14:29:15+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:14.425Z",
         "created_at": "2023-04-09T13:58:48.043Z"
@@ -2065,12 +1824,9 @@
         "keywords": [],
         "first_release_at": "2020-03-25T00:30:01+00:00",
         "latest_release_at": "2023-03-16T14:41:20+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T01:10:35.509Z",
         "created_at": "2023-04-09T13:58:48.046Z"
@@ -2087,14 +1843,9 @@
         "keywords": [],
         "first_release_at": "2020-03-07T15:49:56+00:00",
         "latest_release_at": "2023-02-14T17:50:57+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:16.200Z",
         "created_at": "2023-04-09T13:58:48.052Z"
@@ -2111,15 +1862,9 @@
         "keywords": [],
         "first_release_at": "2020-03-20T12:26:27+00:00",
         "latest_release_at": "2023-03-26T07:37:00+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.6||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:17.947Z",
         "created_at": "2023-04-09T13:58:48.056Z"
@@ -2136,11 +1881,9 @@
         "keywords": [],
         "first_release_at": "2022-10-20T11:23:46+00:00",
         "latest_release_at": "2023-03-01T15:59:27+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:19.971Z",
         "created_at": "2023-04-09T13:58:48.059Z"
@@ -2157,15 +1900,9 @@
         "keywords": [],
         "first_release_at": "2015-03-01T22:36:17+00:00",
         "latest_release_at": "2023-02-17T09:46:34+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:21.639Z",
         "created_at": "2023-04-09T13:58:48.063Z"
@@ -2182,11 +1919,10 @@
         "keywords": [],
         "first_release_at": "2023-01-17T11:02:09+00:00",
         "latest_release_at": "2023-03-05T11:17:52+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0",
+            "^9.47||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:23.458Z",
         "created_at": "2023-04-09T13:58:48.066Z"
@@ -2203,11 +1939,9 @@
         "keywords": [],
         "first_release_at": "2016-08-13T16:40:26+00:00",
         "latest_release_at": "2023-03-07T17:54:37+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:25.322Z",
         "created_at": "2023-04-09T13:58:48.070Z"
@@ -2224,10 +1958,9 @@
         "keywords": [],
         "first_release_at": "2015-09-11T13:05:52+00:00",
         "latest_release_at": "2023-03-01T09:00:29+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:26.556Z",
         "created_at": "2023-04-09T13:58:48.073Z"
@@ -2244,12 +1977,9 @@
         "keywords": [],
         "first_release_at": "2019-02-28T05:20:26+00:00",
         "latest_release_at": "2023-04-06T05:59:26+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~8.0||~9.0||~10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:27.286Z",
         "created_at": "2023-04-09T13:58:48.076Z"
@@ -2266,8 +1996,7 @@
         "keywords": [],
         "first_release_at": "2020-04-04T18:31:25+00:00",
         "latest_release_at": "2023-03-22T20:36:30+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:28.591Z",
         "created_at": "2023-04-09T13:58:48.081Z"
@@ -2284,11 +2013,9 @@
         "keywords": [],
         "first_release_at": "2016-05-29T21:50:57+00:00",
         "latest_release_at": "2023-04-04T08:43:41+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9 || ^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:30.388Z",
         "created_at": "2023-04-09T13:58:48.084Z"
@@ -2305,11 +2032,9 @@
         "keywords": [],
         "first_release_at": "2022-06-27T15:16:08+00:00",
         "latest_release_at": "2023-02-28T06:36:45+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:29.310Z",
         "created_at": "2023-04-09T13:58:48.087Z"
@@ -2326,15 +2051,9 @@
         "keywords": [],
         "first_release_at": "2013-07-17T13:46:24+00:00",
         "latest_release_at": "2023-03-27T06:14:43+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:31.234Z",
         "created_at": "2023-04-09T13:58:48.091Z"
@@ -2356,13 +2075,9 @@
         ],
         "first_release_at": "2015-08-20T11:45:08+00:00",
         "latest_release_at": "2023-03-17T11:39:04+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:33.421Z",
         "created_at": "2023-04-09T13:58:48.094Z"
@@ -2379,11 +2094,9 @@
         "keywords": [],
         "first_release_at": "2019-10-16T18:15:11+00:00",
         "latest_release_at": "2023-02-16T18:23:03+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:35.194Z",
         "created_at": "2023-04-09T13:58:48.098Z"
@@ -2400,11 +2113,9 @@
         "keywords": [],
         "first_release_at": "2020-07-07T20:04:46+00:00",
         "latest_release_at": "2023-02-21T21:06:13+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:36.967Z",
         "created_at": "2023-04-09T13:58:48.102Z"
@@ -2421,10 +2132,9 @@
         "keywords": [],
         "first_release_at": "2016-10-16T22:22:30+00:00",
         "latest_release_at": "2023-04-04T11:47:25+00:00",
-        "detected_compatible_versions": [
-            ">=5"
+        "laravel_dependency_versions": [
+            ">=5.1"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:38.639Z",
         "created_at": "2023-04-09T13:58:48.106Z"
@@ -2441,13 +2151,9 @@
         "keywords": [],
         "first_release_at": "2014-06-28T01:41:28+00:00",
         "latest_release_at": "2023-02-19T06:06:15+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:40.296Z",
         "created_at": "2023-04-09T13:58:48.113Z"
@@ -2464,11 +2170,9 @@
         "keywords": [],
         "first_release_at": "2022-06-23T09:56:23+00:00",
         "latest_release_at": "2023-03-24T10:38:13+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:42.122Z",
         "created_at": "2023-04-09T13:58:48.116Z"
@@ -2485,11 +2189,9 @@
         "keywords": [],
         "first_release_at": "2021-03-21T17:34:41+00:00",
         "latest_release_at": "2023-02-15T13:57:28+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:43.807Z",
         "created_at": "2023-04-09T13:58:48.122Z"
@@ -2506,11 +2208,9 @@
         "keywords": [],
         "first_release_at": "2014-07-15T20:23:51+00:00",
         "latest_release_at": "2023-01-23T08:34:14+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:45.606Z",
         "created_at": "2023-04-09T13:58:48.128Z"
@@ -2527,13 +2227,9 @@
         "keywords": [],
         "first_release_at": "2017-03-22T19:27:28+00:00",
         "latest_release_at": "2023-03-27T13:24:34+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:47.383Z",
         "created_at": "2023-04-09T13:58:48.132Z"
@@ -2550,11 +2246,9 @@
         "keywords": [],
         "first_release_at": "2023-01-13T15:53:41+00:00",
         "latest_release_at": "2023-01-26T15:32:19+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:49.212Z",
         "created_at": "2023-04-09T13:58:48.135Z"
@@ -2571,11 +2265,9 @@
         "keywords": [],
         "first_release_at": "2022-10-20T20:59:27+00:00",
         "latest_release_at": "2023-02-10T10:04:50+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:50.938Z",
         "created_at": "2023-04-09T13:58:48.140Z"
@@ -2592,11 +2284,9 @@
         "keywords": [],
         "first_release_at": "2022-08-09T12:26:47+00:00",
         "latest_release_at": "2023-01-25T14:16:53+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.23||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:55.577Z",
         "created_at": "2023-04-09T13:58:48.144Z"
@@ -2613,12 +2303,9 @@
         "keywords": [],
         "first_release_at": "2019-09-27T07:22:53+00:00",
         "latest_release_at": "2023-02-20T06:41:50+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.73 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:57.799Z",
         "created_at": "2023-04-09T13:58:48.147Z"
@@ -2635,12 +2322,9 @@
         "keywords": [],
         "first_release_at": "2018-02-06T15:07:21+00:00",
         "latest_release_at": "2023-01-25T09:11:28+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.71||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:56:59.428Z",
         "created_at": "2023-04-09T13:58:48.152Z"
@@ -2657,12 +2341,9 @@
         "keywords": [],
         "first_release_at": "2021-02-24T11:23:57+00:00",
         "latest_release_at": "2023-01-24T23:44:03+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:01.739Z",
         "created_at": "2023-04-09T13:58:48.156Z"
@@ -2679,11 +2360,9 @@
         "keywords": [],
         "first_release_at": "2018-01-16T11:10:08+00:00",
         "latest_release_at": "2023-02-24T15:48:30+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:03.628Z",
         "created_at": "2023-04-09T13:58:48.162Z"
@@ -2702,13 +2381,9 @@
         ],
         "first_release_at": "2018-05-08T18:39:01+00:00",
         "latest_release_at": "2023-01-14T20:58:52+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:05.312Z",
         "created_at": "2023-04-09T13:58:48.166Z"
@@ -2725,12 +2400,9 @@
         "keywords": [],
         "first_release_at": "2018-12-07T13:32:42+00:00",
         "latest_release_at": "2023-01-24T23:15:11+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.78||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:07.089Z",
         "created_at": "2023-04-09T13:58:48.170Z"
@@ -2747,12 +2419,9 @@
         "keywords": [],
         "first_release_at": "2020-10-20T10:11:16+00:00",
         "latest_release_at": "2023-03-30T12:47:39+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.73||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:08.909Z",
         "created_at": "2023-04-09T13:58:48.173Z"
@@ -2769,12 +2438,9 @@
         "keywords": [],
         "first_release_at": "2015-12-24T14:51:56+00:00",
         "latest_release_at": "2023-01-23T14:29:54+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:10.594Z",
         "created_at": "2023-04-09T13:58:48.177Z"
@@ -2791,10 +2457,9 @@
         "keywords": [],
         "first_release_at": "2019-02-01T14:36:14+00:00",
         "latest_release_at": "2023-01-18T12:40:35+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T01:10:24.365Z",
         "created_at": "2023-04-09T13:58:48.183Z"
@@ -2811,10 +2476,9 @@
         "keywords": [],
         "first_release_at": "2018-06-26T01:28:12+00:00",
         "latest_release_at": "2023-02-07T20:48:26+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:12.172Z",
         "created_at": "2023-04-09T13:58:48.186Z"
@@ -2831,10 +2495,9 @@
         "keywords": [],
         "first_release_at": "2019-04-25T00:26:49+00:00",
         "latest_release_at": "2023-03-30T16:25:40+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:32.061Z",
         "created_at": "2023-04-09T13:58:48.190Z"
@@ -2851,15 +2514,9 @@
         "keywords": [],
         "first_release_at": "2016-08-15T21:48:47+00:00",
         "latest_release_at": "2023-03-07T08:53:45+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~5.4||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:33.857Z",
         "created_at": "2023-04-09T13:58:48.195Z"
@@ -2876,14 +2533,10 @@
         "keywords": [],
         "first_release_at": "2021-04-06T20:02:45+00:00",
         "latest_release_at": "2023-03-30T08:42:04+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0",
+            "^6.0||^7.0||^8.79||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:14.126Z",
         "created_at": "2023-04-09T13:58:48.198Z"
@@ -2900,10 +2553,9 @@
         "keywords": [],
         "first_release_at": "2023-02-17T17:30:41+00:00",
         "latest_release_at": "2023-03-16T15:24:12+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:15.835Z",
         "created_at": "2023-04-09T13:58:48.202Z"
@@ -2920,14 +2572,9 @@
         "keywords": [],
         "first_release_at": "2016-03-04T23:02:29+00:00",
         "latest_release_at": "2023-02-07T18:34:53+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~6.0||~7.0||~8.0||~9.0||~10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:17.650Z",
         "created_at": "2023-04-09T13:58:48.205Z"
@@ -2944,16 +2591,10 @@
         "keywords": [],
         "first_release_at": "2013-03-06T13:07:22+00:00",
         "latest_release_at": "2023-02-18T01:49:34+00:00",
-        "detected_compatible_versions": [
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~4.0||~5.0||~5.1||^6.0||^7.0||^8.0||^9.0||^10.0",
+            "~5.4||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:19.524Z",
         "created_at": "2023-04-09T13:58:48.209Z"
@@ -2970,15 +2611,9 @@
         "keywords": [],
         "first_release_at": "2016-03-10T19:05:45+00:00",
         "latest_release_at": "2023-02-15T09:35:24+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.2||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:21.296Z",
         "created_at": "2023-04-09T13:58:48.213Z"
@@ -2995,10 +2630,9 @@
         "keywords": [],
         "first_release_at": "2013-11-27T05:33:16+00:00",
         "latest_release_at": "2023-03-03T10:08:49+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:35.765Z",
         "created_at": "2023-04-09T13:58:48.216Z"
@@ -3015,8 +2649,7 @@
         "keywords": [],
         "first_release_at": "2022-12-26T22:09:27+00:00",
         "latest_release_at": "2023-03-07T19:31:53+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:21:37.511Z",
         "created_at": "2023-04-09T13:58:48.221Z"
@@ -3035,12 +2668,9 @@
         ],
         "first_release_at": "2013-03-10T09:39:50+00:00",
         "latest_release_at": "2023-02-04T13:56:40+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8 || ^9 || ^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:22.947Z",
         "created_at": "2023-04-09T13:58:48.224Z"
@@ -3065,11 +2695,9 @@
         ],
         "first_release_at": "2013-09-05T10:33:08+00:00",
         "latest_release_at": "2023-02-21T14:21:02+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:25.391Z",
         "created_at": "2023-04-09T13:58:48.227Z"
@@ -3089,11 +2717,9 @@
         ],
         "first_release_at": "2021-07-25T16:00:01+00:00",
         "latest_release_at": "2022-03-19T21:26:19+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "^8.37||^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:27.069Z",
         "created_at": "2023-04-09T13:58:48.231Z"
@@ -3112,15 +2738,9 @@
         ],
         "first_release_at": "2018-07-15T11:50:49+00:00",
         "latest_release_at": "2023-02-15T10:37:22+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:28.643Z",
         "created_at": "2023-04-09T13:58:48.234Z"
@@ -3137,8 +2757,7 @@
         "keywords": [],
         "first_release_at": "2016-05-27T11:44:48+00:00",
         "latest_release_at": "2023-04-02T19:30:06+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:21:39.497Z",
         "created_at": "2023-04-09T13:58:48.238Z"
@@ -3157,15 +2776,9 @@
         ],
         "first_release_at": "2020-04-06T02:19:28+00:00",
         "latest_release_at": "2023-04-05T14:28:10+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "5.*||6.*||7.*||8.*||9.*||10.*"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:31.419Z",
         "created_at": "2023-04-09T13:58:48.243Z"
@@ -3189,8 +2802,7 @@
         ],
         "first_release_at": "2013-06-22T00:10:46+00:00",
         "latest_release_at": "2022-12-13T00:04:12+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T20:57:33.068Z",
         "created_at": "2023-04-09T13:58:48.246Z"
@@ -3207,8 +2819,7 @@
         "keywords": [],
         "first_release_at": "2014-11-17T03:16:34+00:00",
         "latest_release_at": "2023-03-10T14:04:45+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:34.987Z",
         "created_at": "2023-04-09T13:58:48.253Z"
@@ -3225,12 +2836,9 @@
         "keywords": [],
         "first_release_at": "2017-07-26T13:48:50+00:00",
         "latest_release_at": "2023-03-07T17:45:21+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.17||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:36.738Z",
         "created_at": "2023-04-09T13:58:48.256Z"
@@ -3247,10 +2855,9 @@
         "keywords": [],
         "first_release_at": "2022-06-22T14:21:38+00:00",
         "latest_release_at": "2023-04-04T13:08:09+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.5.1"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:38.481Z",
         "created_at": "2023-04-09T13:58:48.262Z"
@@ -3267,12 +2874,9 @@
         "keywords": [],
         "first_release_at": "2020-12-04T15:37:35+00:00",
         "latest_release_at": "2023-03-30T12:28:55+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:40.203Z",
         "created_at": "2023-04-09T13:58:48.265Z"
@@ -3300,12 +2904,9 @@
         ],
         "first_release_at": "2018-10-23T14:27:56+00:00",
         "latest_release_at": "2023-03-17T18:13:19+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.37||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:41.948Z",
         "created_at": "2023-04-09T13:58:48.268Z"
@@ -3322,15 +2923,10 @@
         "keywords": [],
         "first_release_at": "2016-05-05T15:51:43+00:00",
         "latest_release_at": "2023-03-27T18:42:24+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0",
+            "~5.1||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:43.766Z",
         "created_at": "2023-04-09T13:58:48.271Z"
@@ -3349,8 +2945,7 @@
         ],
         "first_release_at": "2016-12-26T18:00:48.335Z",
         "latest_release_at": "2022-06-19T10:41:15.524Z",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:47.391Z",
         "created_at": "2023-04-09T13:58:48.275Z"
@@ -3369,11 +2964,9 @@
         ],
         "first_release_at": "2022-03-04T02:47:21+00:00",
         "latest_release_at": "2023-03-23T22:24:41+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:48.984Z",
         "created_at": "2023-04-09T13:58:48.278Z"
@@ -3390,8 +2983,7 @@
         "keywords": [],
         "first_release_at": "2019-07-08T08:52:39Z",
         "latest_release_at": "2023-03-29T16:32:07Z",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T10:06:56.741Z",
         "created_at": "2023-04-09T13:58:48.283Z"
@@ -3408,11 +3000,9 @@
         "keywords": [],
         "first_release_at": "2018-07-05T21:40:04+00:00",
         "latest_release_at": "2023-03-04T23:46:40+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.47.0 || ^10.0.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:50.652Z",
         "created_at": "2023-04-09T13:58:48.286Z"
@@ -3431,11 +3021,9 @@
         ],
         "first_release_at": "2022-08-01T06:38:55+00:00",
         "latest_release_at": "2023-03-03T17:59:51+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.33 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:52.669Z",
         "created_at": "2023-04-09T13:58:48.291Z"
@@ -3454,13 +3042,9 @@
         ],
         "first_release_at": "2016-02-25T09:11:49+00:00",
         "latest_release_at": "2023-01-19T17:12:44+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:54.468Z",
         "created_at": "2023-04-09T13:58:48.294Z"
@@ -3479,14 +3063,9 @@
         ],
         "first_release_at": "2018-01-18T09:14:03+00:00",
         "latest_release_at": "2023-02-01T08:51:32+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.18||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:56.065Z",
         "created_at": "2023-04-09T13:58:48.297Z"
@@ -3503,12 +3082,9 @@
         "keywords": [],
         "first_release_at": "2015-02-10T21:57:16+00:00",
         "latest_release_at": "2023-01-25T16:03:32+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:57:59.991Z",
         "created_at": "2023-04-09T13:58:48.303Z"
@@ -3525,15 +3101,9 @@
         "keywords": [],
         "first_release_at": "2019-02-08T18:37:46+00:00",
         "latest_release_at": "2023-03-01T07:21:54+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.8||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:02.891Z",
         "created_at": "2023-04-09T13:58:48.306Z"
@@ -3550,11 +3120,9 @@
         "keywords": [],
         "first_release_at": "2017-08-01T23:18:43+00:00",
         "latest_release_at": "2023-03-17T18:10:08+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T00:50:06.716Z",
         "created_at": "2023-04-09T13:58:48.312Z"
@@ -3571,10 +3139,9 @@
         "keywords": [],
         "first_release_at": "2022-05-24T03:44:17+00:00",
         "latest_release_at": "2023-04-02T18:55:39+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:04.820Z",
         "created_at": "2023-04-09T13:58:48.316Z"
@@ -3591,14 +3158,9 @@
         "keywords": [],
         "first_release_at": "2017-11-06T16:08:12+00:00",
         "latest_release_at": "2023-03-13T20:21:23+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "~5.4||~6.0||~7.0||~8.0||~9.0||~10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T00:50:12.135Z",
         "created_at": "2023-04-09T13:58:48.321Z"
@@ -3615,10 +3177,9 @@
         "keywords": [],
         "first_release_at": "2017-08-04T17:53:35+00:00",
         "latest_release_at": "2022-09-23T22:15:05+00:00",
-        "detected_compatible_versions": [
-            ">=5"
+        "laravel_dependency_versions": [
+            ">=5.4@dev"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:06.744Z",
         "created_at": "2023-04-09T13:58:48.324Z"
@@ -3635,12 +3196,10 @@
         "keywords": [],
         "first_release_at": "2023-03-05T10:04:26+00:00",
         "latest_release_at": "2023-03-26T11:00:30+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.8 || ^9.0 || ^10.0",
+            "^10.2"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:08.379Z",
         "created_at": "2023-04-09T13:58:48.327Z"
@@ -3657,11 +3216,9 @@
         "keywords": [],
         "first_release_at": "2017-09-26T19:40:02+00:00",
         "latest_release_at": "2023-03-18T12:53:36+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:41.196Z",
         "created_at": "2023-04-09T13:58:48.333Z"
@@ -3678,8 +3235,7 @@
         "keywords": [],
         "first_release_at": "2023-01-15T19:56:49+00:00",
         "latest_release_at": "2023-03-05T22:51:57+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:10.164Z",
         "created_at": "2023-04-09T13:58:48.336Z"
@@ -3696,14 +3252,9 @@
         "keywords": [],
         "first_release_at": "2018-12-04T21:24:47+00:00",
         "latest_release_at": "2023-02-15T10:40:49+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:12.076Z",
         "created_at": "2023-04-09T13:58:48.341Z"
@@ -3720,8 +3271,7 @@
         "keywords": [],
         "first_release_at": "2015-01-17T12:22:50+00:00",
         "latest_release_at": "2023-04-05T09:24:30+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:21:43.183Z",
         "created_at": "2023-04-09T13:58:48.344Z"
@@ -3738,14 +3288,9 @@
         "keywords": [],
         "first_release_at": "2014-03-01T02:21:50+00:00",
         "latest_release_at": "2023-01-10T19:27:26+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:13.956Z",
         "created_at": "2023-04-09T13:58:48.348Z"
@@ -3762,8 +3307,7 @@
         "keywords": [],
         "first_release_at": "2022-09-17T15:24:10+00:00",
         "latest_release_at": "2023-03-14T06:04:19+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=8"
         ],
         "php_only": false,
@@ -3789,11 +3333,9 @@
         ],
         "first_release_at": "2015-02-17T16:21:56+00:00",
         "latest_release_at": "2023-02-03T15:57:49+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:17.625Z",
         "created_at": "2023-04-09T13:58:48.355Z"
@@ -3810,11 +3352,10 @@
         "keywords": [],
         "first_release_at": "2022-08-27T00:30:28+00:00",
         "latest_release_at": "2023-01-25T23:08:56+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0",
+            "^9.26||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:19.292Z",
         "created_at": "2023-04-09T13:58:48.359Z"
@@ -3834,12 +3375,9 @@
         ],
         "first_release_at": "2021-11-23T20:23:07+00:00",
         "latest_release_at": "2023-03-29T07:39:16+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.75||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:21.128Z",
         "created_at": "2023-04-09T13:58:48.363Z"
@@ -3856,12 +3394,9 @@
         "keywords": [],
         "first_release_at": "2021-03-09T15:55:26+00:00",
         "latest_release_at": "2023-01-25T15:27:54+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:22.836Z",
         "created_at": "2023-04-09T13:58:48.366Z"
@@ -3878,11 +3413,9 @@
         "keywords": [],
         "first_release_at": "2020-07-08T15:45:48+00:00",
         "latest_release_at": "2023-02-01T19:24:32+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:24.516Z",
         "created_at": "2023-04-09T13:58:48.369Z"
@@ -3899,11 +3432,9 @@
         "keywords": [],
         "first_release_at": "2017-02-16T10:28:23+00:00",
         "latest_release_at": "2023-02-23T08:14:38+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:26.410Z",
         "created_at": "2023-04-09T13:58:48.373Z"
@@ -3920,12 +3451,9 @@
         "keywords": [],
         "first_release_at": "2016-09-09T07:14:28+00:00",
         "latest_release_at": "2023-02-17T08:44:52+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.73||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:28.255Z",
         "created_at": "2023-04-09T13:58:48.376Z"
@@ -3944,11 +3472,9 @@
         ],
         "first_release_at": "2023-03-11T00:05:55+00:00",
         "latest_release_at": "2023-03-31T15:45:22+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:30.019Z",
         "created_at": "2023-04-09T13:58:48.380Z"
@@ -3975,11 +3501,9 @@
         ],
         "first_release_at": "2015-03-06T14:24:42+00:00",
         "latest_release_at": "2023-04-06T09:55:53+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:32.025Z",
         "created_at": "2023-04-09T13:58:48.383Z"
@@ -3996,10 +3520,9 @@
         "keywords": [],
         "first_release_at": "2018-10-26T06:15:13+00:00",
         "latest_release_at": "2022-09-21T09:30:01+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:33.779Z",
         "created_at": "2023-04-09T13:58:48.386Z"
@@ -4025,15 +3548,9 @@
         ],
         "first_release_at": "2019-11-20T10:25:29+00:00",
         "latest_release_at": "2023-02-15T12:35:38+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.5||^6||^7||^8||^9||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:35.458Z",
         "created_at": "2023-04-09T13:58:48.392Z"
@@ -4055,11 +3572,9 @@
         ],
         "first_release_at": "2022-09-26T11:31:20+00:00",
         "latest_release_at": "2023-04-06T08:59:38+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:37.416Z",
         "created_at": "2023-04-09T13:58:48.396Z"
@@ -4084,11 +3599,9 @@
         ],
         "first_release_at": "2017-10-29T19:17:54+00:00",
         "latest_release_at": "2023-04-04T18:23:37+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.2||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:39.250Z",
         "created_at": "2023-04-09T13:58:48.402Z"
@@ -4105,14 +3618,9 @@
         "keywords": [],
         "first_release_at": "2013-06-23T11:38:00+00:00",
         "latest_release_at": "2023-01-12T15:12:49+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6||^7||^8||^9||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:40.909Z",
         "created_at": "2023-04-09T13:58:48.405Z"
@@ -4129,11 +3637,9 @@
         "keywords": [],
         "first_release_at": "2013-12-18T13:47:19+00:00",
         "latest_release_at": "2023-02-05T15:10:01+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:43.024Z",
         "created_at": "2023-04-09T13:58:48.408Z"
@@ -4154,8 +3660,7 @@
         ],
         "first_release_at": "2013-01-19T15:08:51+00:00",
         "latest_release_at": "2022-08-12T17:16:27+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T20:58:44.647Z",
         "created_at": "2023-04-09T13:58:48.412Z"
@@ -4172,15 +3677,9 @@
         "keywords": [],
         "first_release_at": "2013-11-09T15:46:05+00:00",
         "latest_release_at": "2023-02-22T21:01:38+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:46.491Z",
         "created_at": "2023-04-09T13:58:48.416Z"
@@ -4197,11 +3696,9 @@
         "keywords": [],
         "first_release_at": "2016-07-29T12:43:33+00:00",
         "latest_release_at": "2023-02-15T10:10:46+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:48.234Z",
         "created_at": "2023-04-09T13:58:48.420Z"
@@ -4220,14 +3717,10 @@
         ],
         "first_release_at": "2018-04-05T08:24:07+00:00",
         "latest_release_at": "2023-03-13T14:25:33+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0 || ^7.0 || ^8.0 || ^9.0||^10.0",
+            "^6.20.12 || ^7.30.4 || ^8.24.0 || ^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:49.853Z",
         "created_at": "2023-04-09T13:58:48.423Z"
@@ -4248,8 +3741,7 @@
         ],
         "first_release_at": "2014-05-02T19:56:12+00:00",
         "latest_release_at": "2023-01-03T19:12:47+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T20:58:51.633Z",
         "created_at": "2023-04-09T13:58:48.427Z"
@@ -4266,12 +3758,9 @@
         "keywords": [],
         "first_release_at": "2017-07-07T20:58:22+00:00",
         "latest_release_at": "2023-01-24T23:44:33+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:53.413Z",
         "created_at": "2023-04-09T13:58:48.432Z"
@@ -4298,11 +3787,9 @@
         ],
         "first_release_at": "2015-04-14T09:07:29+00:00",
         "latest_release_at": "2023-03-30T07:51:35+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.18||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:55.244Z",
         "created_at": "2023-04-09T13:58:48.435Z"
@@ -4322,8 +3809,7 @@
         ],
         "first_release_at": "2015-07-02T09:21:53+00:00",
         "latest_release_at": "2022-03-08T07:52:26+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T20:58:56.916Z",
         "created_at": "2023-04-09T13:58:48.441Z"
@@ -4340,12 +3826,9 @@
         "keywords": [],
         "first_release_at": "2020-11-06T19:44:44+00:00",
         "latest_release_at": "2023-01-16T12:10:38+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "^6.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:45.148Z",
         "created_at": "2023-04-09T13:58:48.444Z"
@@ -4362,12 +3845,9 @@
         "keywords": [],
         "first_release_at": "2019-06-17T11:38:15+00:00",
         "latest_release_at": "2023-02-27T10:27:10+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:58:58.752Z",
         "created_at": "2023-04-09T13:58:48.448Z"
@@ -4384,8 +3864,7 @@
         "keywords": [],
         "first_release_at": "2017-10-22T10:50:39+00:00",
         "latest_release_at": "2023-02-04T16:39:52+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:46.946Z",
         "created_at": "2023-04-09T13:58:48.451Z"
@@ -4402,12 +3881,9 @@
         "keywords": [],
         "first_release_at": "2022-02-16T14:23:56+00:00",
         "latest_release_at": "2023-03-30T08:30:37+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:00.525Z",
         "created_at": "2023-04-09T13:58:48.455Z"
@@ -4430,15 +3906,9 @@
         ],
         "first_release_at": "2013-09-01T19:17:57+00:00",
         "latest_release_at": "2023-02-18T15:43:23+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~5.2.0||~5.3.0||~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:02.099Z",
         "created_at": "2023-04-09T13:58:48.458Z"
@@ -4455,8 +3925,7 @@
         "keywords": [],
         "first_release_at": "2021-10-25T04:24:41+00:00",
         "latest_release_at": "2023-03-26T06:55:55+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:03.874Z",
         "created_at": "2023-04-09T13:58:48.462Z"
@@ -4473,8 +3942,7 @@
         "keywords": [],
         "first_release_at": "2022-11-13T00:33:00+00:00",
         "latest_release_at": "2023-02-19T07:11:46+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=8"
         ],
         "php_only": false,
@@ -4493,11 +3961,9 @@
         "keywords": [],
         "first_release_at": "2016-04-07T22:12:58+00:00",
         "latest_release_at": "2023-03-19T17:50:34+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:07.109Z",
         "created_at": "2023-04-09T13:58:48.470Z"
@@ -4514,14 +3980,9 @@
         "keywords": [],
         "first_release_at": "2016-10-07T12:23:41+00:00",
         "latest_release_at": "2023-02-07T10:08:04+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:08.997Z",
         "created_at": "2023-04-09T13:58:48.473Z"
@@ -4538,10 +3999,9 @@
         "keywords": [],
         "first_release_at": "2018-03-23T18:12:00+00:00",
         "latest_release_at": "2023-02-16T16:10:20+00:00",
-        "detected_compatible_versions": [
-            ">=5"
+        "laravel_dependency_versions": [
+            ">=5.5"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:10.675Z",
         "created_at": "2023-04-09T13:58:48.477Z"
@@ -4558,8 +4018,7 @@
         "keywords": [],
         "first_release_at": "2021-11-18T03:54:59.529Z",
         "latest_release_at": "2023-03-06T10:16:48.936Z",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=9"
         ],
         "php_only": false,
@@ -4578,14 +4037,9 @@
         "keywords": [],
         "first_release_at": "2019-01-22T14:34:13+00:00",
         "latest_release_at": "2023-02-21T09:49:26+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:16.485Z",
         "created_at": "2023-04-09T13:58:48.487Z"
@@ -4602,12 +4056,9 @@
         "keywords": [],
         "first_release_at": "2022-08-05T07:07:25+00:00",
         "latest_release_at": "2023-02-04T19:13:27+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:18.300Z",
         "created_at": "2023-04-09T13:58:48.491Z"
@@ -4629,11 +4080,9 @@
         ],
         "first_release_at": "2019-03-03T01:10:32+00:00",
         "latest_release_at": "2023-04-03T13:27:17+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:20.091Z",
         "created_at": "2023-04-09T13:58:48.495Z"
@@ -4654,11 +4103,9 @@
         ],
         "first_release_at": "2021-01-27T17:19:36+00:00",
         "latest_release_at": "2023-01-25T15:10:45+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:21.795Z",
         "created_at": "2023-04-09T13:58:48.499Z"
@@ -4675,8 +4122,7 @@
         "keywords": [],
         "first_release_at": "2015-05-04T13:39:03+00:00",
         "latest_release_at": "2023-02-09T13:52:08+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:48.733Z",
         "created_at": "2023-04-09T13:58:48.503Z"
@@ -4693,11 +4139,9 @@
         "keywords": [],
         "first_release_at": "2022-07-07T22:09:15+00:00",
         "latest_release_at": "2023-02-14T18:10:31+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:23.512Z",
         "created_at": "2023-04-09T13:58:48.507Z"
@@ -4718,15 +4162,9 @@
         ],
         "first_release_at": "2014-06-30T04:07:13+00:00",
         "latest_release_at": "2023-01-30T20:31:40+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:25.313Z",
         "created_at": "2023-04-09T13:58:48.511Z"
@@ -4743,8 +4181,7 @@
         "keywords": [],
         "first_release_at": "2016-04-30T01:29:09.450Z",
         "latest_release_at": "2023-01-17T15:07:27.173Z",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T01:10:32.993Z",
         "created_at": "2023-04-09T13:58:48.515Z"
@@ -4764,12 +4201,9 @@
         ],
         "first_release_at": "2019-11-05T02:38:22+00:00",
         "latest_release_at": "2023-03-28T05:01:47+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:26.889Z",
         "created_at": "2023-04-09T13:58:48.520Z"
@@ -4789,15 +4223,9 @@
         ],
         "first_release_at": "2017-11-26T19:07:05+00:00",
         "latest_release_at": "2023-02-15T07:13:11+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.6||^6.0||^7.0||^8.0||^9.0||^9.11||9.14.*||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:28.551Z",
         "created_at": "2023-04-09T13:58:48.523Z"
@@ -4814,12 +4242,9 @@
         "keywords": [],
         "first_release_at": "2019-03-14T10:37:31+00:00",
         "latest_release_at": "2023-01-23T14:53:09+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:30.429Z",
         "created_at": "2023-04-09T13:58:48.527Z"
@@ -4836,10 +4261,9 @@
         "keywords": [],
         "first_release_at": "2023-02-24T04:23:24+00:00",
         "latest_release_at": "2023-03-14T12:52:58+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:32.167Z",
         "created_at": "2023-04-09T13:58:48.533Z"
@@ -4859,12 +4283,9 @@
         ],
         "first_release_at": "2021-10-11T12:26:27+00:00",
         "latest_release_at": "2023-03-05T17:46:07+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.15 || 9.0 - 9.34 || ^9.36 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:33.721Z",
         "created_at": "2023-04-09T13:58:48.537Z"
@@ -4884,8 +4305,7 @@
         ],
         "first_release_at": "2018-01-08T13:38:42+00:00",
         "latest_release_at": "2023-01-14T02:38:08+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=4"
         ],
         "php_only": false,
@@ -4911,11 +4331,9 @@
         ],
         "first_release_at": "2014-03-04T03:21:19+00:00",
         "latest_release_at": "2023-04-04T14:56:25+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.21||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:37.207Z",
         "created_at": "2023-04-09T13:58:48.552Z"
@@ -4932,15 +4350,9 @@
         "keywords": [],
         "first_release_at": "2015-02-28T16:39:49+00:00",
         "latest_release_at": "2023-02-15T12:13:16+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:38.918Z",
         "created_at": "2023-04-09T13:58:48.557Z"
@@ -4970,11 +4382,9 @@
         ],
         "first_release_at": "2022-02-08T13:33:02+00:00",
         "latest_release_at": "2023-02-17T17:52:50+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:40.696Z",
         "created_at": "2023-04-09T13:58:48.563Z"
@@ -4991,12 +4401,9 @@
         "keywords": [],
         "first_release_at": "2016-08-15T18:03:49+00:00",
         "latest_release_at": "2023-01-26T13:07:05+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:42.615Z",
         "created_at": "2023-04-09T13:58:48.567Z"
@@ -5015,15 +4422,9 @@
         ],
         "first_release_at": "2014-12-03T23:39:19+00:00",
         "latest_release_at": "2023-02-15T16:07:08+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:44.278Z",
         "created_at": "2023-04-09T13:58:48.573Z"
@@ -5040,8 +4441,7 @@
         "keywords": [],
         "first_release_at": "2016-12-19T05:04:33+00:00",
         "latest_release_at": "2023-02-06T13:24:48+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:52.299Z",
         "created_at": "2023-04-09T13:58:48.576Z"
@@ -5058,11 +4458,9 @@
         "keywords": [],
         "first_release_at": "2020-11-27T16:45:11+00:00",
         "latest_release_at": "2023-02-03T12:49:21+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.49||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:54.022Z",
         "created_at": "2023-04-09T13:58:48.580Z"
@@ -5079,11 +4477,9 @@
         "keywords": [],
         "first_release_at": "2022-06-29T12:43:13+00:00",
         "latest_release_at": "2023-03-31T14:34:21+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.19||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:46.377Z",
         "created_at": "2023-04-09T13:58:48.584Z"
@@ -5104,12 +4500,9 @@
         ],
         "first_release_at": "2018-12-27T08:58:24+00:00",
         "latest_release_at": "2023-01-17T07:09:34+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:47.971Z",
         "created_at": "2023-04-09T13:58:48.587Z"
@@ -5126,11 +4519,9 @@
         "keywords": [],
         "first_release_at": "2022-08-16T20:49:53+00:00",
         "latest_release_at": "2023-04-06T19:18:28+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:49.606Z",
         "created_at": "2023-04-09T13:58:48.592Z"
@@ -5147,8 +4538,7 @@
         "keywords": [],
         "first_release_at": "2017-07-01T15:00:12+00:00",
         "latest_release_at": "2023-02-05T21:47:26+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T20:59:51.932Z",
         "created_at": "2023-04-09T13:58:48.596Z"
@@ -5165,11 +4555,9 @@
         "keywords": [],
         "first_release_at": "2017-01-13T15:41:16+00:00",
         "latest_release_at": "2023-02-21T11:38:10+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:53.837Z",
         "created_at": "2023-04-09T13:58:48.599Z"
@@ -5196,8 +4584,7 @@
         ],
         "first_release_at": "2020-05-19T23:10:29+00:00",
         "latest_release_at": "2023-04-02T20:12:31+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             ">=9"
         ],
         "php_only": false,
@@ -5216,10 +4603,9 @@
         "keywords": [],
         "first_release_at": "2022-05-19T11:52:55+00:00",
         "latest_release_at": "2023-03-22T14:31:02+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:56.067Z",
         "created_at": "2023-04-09T13:58:48.606Z"
@@ -5239,8 +4625,7 @@
         ],
         "first_release_at": "2023-01-22T00:08:41.323Z",
         "latest_release_at": "2023-01-22T00:08:41.656Z",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T20:59:58.294Z",
         "created_at": "2023-04-09T13:58:48.610Z"
@@ -5260,12 +4645,9 @@
         ],
         "first_release_at": "2022-06-27T20:07:51+00:00",
         "latest_release_at": "2023-01-22T22:30:39+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.24||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:00.126Z",
         "created_at": "2023-04-09T13:58:48.613Z"
@@ -5287,12 +4669,9 @@
         ],
         "first_release_at": "2020-06-17T18:38:25+00:00",
         "latest_release_at": "2023-02-15T16:30:12+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:01.918Z",
         "created_at": "2023-04-09T13:58:48.616Z"
@@ -5309,13 +4688,10 @@
         "keywords": [],
         "first_release_at": "2021-09-07T19:56:50+00:00",
         "latest_release_at": "2023-03-03T20:24:20+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7||^8||^9||^10.0",
+            "^7||^8||^9||^9||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:04.117Z",
         "created_at": "2023-04-09T13:58:48.622Z"
@@ -5335,10 +4711,9 @@
         ],
         "first_release_at": "2022-11-15T16:23:20+00:00",
         "latest_release_at": "2023-02-17T00:12:06+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:06.282Z",
         "created_at": "2023-04-09T13:58:48.626Z"
@@ -5357,12 +4732,9 @@
         ],
         "first_release_at": "2013-12-10T22:41:50+00:00",
         "latest_release_at": "2023-02-26T14:22:13+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.75 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:08.077Z",
         "created_at": "2023-04-09T13:58:48.630Z"
@@ -5379,10 +4751,9 @@
         "keywords": [],
         "first_release_at": "2020-08-31T19:27:38+00:00",
         "latest_release_at": "2023-03-20T11:33:10+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:10.229Z",
         "created_at": "2023-04-09T13:58:48.633Z"
@@ -5399,8 +4770,7 @@
         "keywords": [],
         "first_release_at": "2019-02-17T08:04:51+00:00",
         "latest_release_at": "2023-03-30T18:03:34+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:12.278Z",
         "created_at": "2023-04-09T13:58:48.636Z"
@@ -5421,12 +4791,9 @@
         ],
         "first_release_at": "2015-10-12T07:07:34+00:00",
         "latest_release_at": "2023-02-25T02:57:48+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:14.151Z",
         "created_at": "2023-04-09T13:58:48.643Z"
@@ -5443,12 +4810,9 @@
         "keywords": [],
         "first_release_at": "2022-09-21T19:55:06+00:00",
         "latest_release_at": "2023-02-19T06:54:54+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:16.071Z",
         "created_at": "2023-04-09T13:58:48.647Z"
@@ -5465,11 +4829,9 @@
         "keywords": [],
         "first_release_at": "2021-04-08T13:37:35+00:00",
         "latest_release_at": "2023-04-05T21:15:22+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:18.267Z",
         "created_at": "2023-04-09T13:58:48.652Z"
@@ -5490,11 +4852,9 @@
         ],
         "first_release_at": "2020-07-14T22:44:19+00:00",
         "latest_release_at": "2023-02-21T21:25:14+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:19.990Z",
         "created_at": "2023-04-09T13:58:48.656Z"
@@ -5511,11 +4871,9 @@
         "keywords": [],
         "first_release_at": "2021-01-02T14:04:00+00:00",
         "latest_release_at": "2023-02-14T12:31:27+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.19||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:21.846Z",
         "created_at": "2023-04-09T13:58:48.661Z"
@@ -5532,10 +4890,9 @@
         "keywords": [],
         "first_release_at": "2022-02-18T15:38:46+00:00",
         "latest_release_at": "2023-02-19T00:50:09+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:23.899Z",
         "created_at": "2023-04-09T13:58:48.664Z"
@@ -5552,12 +4909,9 @@
         "keywords": [],
         "first_release_at": "2016-05-28T15:08:40+00:00",
         "latest_release_at": "2023-01-12T16:59:59+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:25.897Z",
         "created_at": "2023-04-09T13:58:48.668Z"
@@ -5574,12 +4928,9 @@
         "keywords": [],
         "first_release_at": "2017-01-25T23:09:21+00:00",
         "latest_release_at": "2023-01-24T23:47:16+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^8.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:27.945Z",
         "created_at": "2023-04-09T13:58:48.672Z"
@@ -5596,11 +4947,9 @@
         "keywords": [],
         "first_release_at": "2022-05-27T18:05:55+00:00",
         "latest_release_at": "2023-02-15T08:10:21+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:29.697Z",
         "created_at": "2023-04-09T13:58:48.676Z"
@@ -5617,12 +4966,10 @@
         "keywords": [],
         "first_release_at": "2016-02-22T22:23:32+00:00",
         "latest_release_at": "2023-01-25T15:25:43+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0",
+            "^8.71||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:31.506Z",
         "created_at": "2023-04-09T13:58:48.682Z"
@@ -5639,8 +4986,7 @@
         "keywords": [],
         "first_release_at": "2020-05-14T13:56:45+00:00",
         "latest_release_at": "2023-02-10T15:07:41+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [
+        "laravel_dependency_versions": [
             "8",
             "9",
             "10"
@@ -5661,12 +5007,9 @@
         "keywords": [],
         "first_release_at": "2021-08-01T18:22:14+00:00",
         "latest_release_at": "2023-02-14T02:01:05+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.47||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:35.138Z",
         "created_at": "2023-04-09T13:58:48.692Z"
@@ -5683,13 +5026,9 @@
         "keywords": [],
         "first_release_at": "2021-05-23T02:39:44+00:00",
         "latest_release_at": "2023-02-14T02:49:05+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.26.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T10:46:56.330Z",
         "created_at": "2023-04-09T13:58:48.696Z"
@@ -5706,8 +5045,7 @@
         "keywords": [],
         "first_release_at": "2019-04-03T14:21:14+00:00",
         "latest_release_at": "2023-01-24T09:28:27+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T00:50:04.263Z",
         "created_at": "2023-04-09T13:58:48.702Z"
@@ -5724,12 +5062,9 @@
         "keywords": [],
         "first_release_at": "2021-12-03T14:27:53+00:00",
         "latest_release_at": "2023-02-01T05:47:14+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.83||^9.16||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:36.855Z",
         "created_at": "2023-04-09T13:58:48.706Z"
@@ -5746,8 +5081,7 @@
         "keywords": [],
         "first_release_at": "2023-01-10T11:15:27+00:00",
         "latest_release_at": "2023-03-04T10:32:53+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:38.738Z",
         "created_at": "2023-04-09T13:58:48.711Z"
@@ -5764,17 +5098,10 @@
         "keywords": [],
         "first_release_at": "2014-01-18T18:42:49+00:00",
         "latest_release_at": "2023-03-27T09:47:32+00:00",
-        "detected_compatible_versions": [
-            "4",
-            "5",
-            ">=5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^4.2||^5||^6||^7||^8||^9||^10",
+            ">=5.7"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:41.053Z",
         "created_at": "2023-04-09T13:58:48.714Z"
@@ -5791,12 +5118,9 @@
         "keywords": [],
         "first_release_at": "2019-12-30T21:24:52+00:00",
         "latest_release_at": "2023-03-21T11:44:18+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:42.948Z",
         "created_at": "2023-04-09T13:58:48.718Z"
@@ -5816,8 +5140,7 @@
         ],
         "first_release_at": "2022-06-09T04:23:32.662Z",
         "latest_release_at": "2023-01-03T11:05:52.140Z",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:46.086Z",
         "created_at": "2023-04-09T13:58:48.722Z"
@@ -5837,11 +5160,9 @@
         ],
         "first_release_at": "2022-10-18T09:02:30+00:00",
         "latest_release_at": "2022-10-15T19:31:58+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "^8.24||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:47.871Z",
         "created_at": "2023-04-09T13:58:48.726Z"
@@ -5862,12 +5183,9 @@
         ],
         "first_release_at": "2022-12-15T02:49:51+00:00",
         "latest_release_at": "2023-02-16T09:24:45+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.24||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:49.591Z",
         "created_at": "2023-04-09T13:58:48.731Z"
@@ -5884,12 +5202,9 @@
         "keywords": [],
         "first_release_at": "2021-06-16T07:56:33+00:00",
         "latest_release_at": "2023-02-16T10:08:18+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:51.434Z",
         "created_at": "2023-04-09T13:58:48.734Z"
@@ -5906,15 +5221,9 @@
         "keywords": [],
         "first_release_at": "2020-02-03T07:47:31+00:00",
         "latest_release_at": "2023-02-16T20:56:22+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:57.842Z",
         "created_at": "2023-04-09T13:58:48.738Z"
@@ -5931,10 +5240,9 @@
         "keywords": [],
         "first_release_at": "2017-04-08T14:25:24+00:00",
         "latest_release_at": "2023-02-25T19:57:20+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-05T01:10:28.731Z",
         "created_at": "2023-04-09T13:58:48.743Z"
@@ -5951,15 +5259,9 @@
         "keywords": [],
         "first_release_at": "2015-03-19T13:00:21+00:00",
         "latest_release_at": "2023-02-06T07:57:20+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5||^6||^7||^8||^9||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:53.269Z",
         "created_at": "2023-04-09T13:58:48.746Z"
@@ -5976,11 +5278,9 @@
         "keywords": [],
         "first_release_at": "2021-11-13T10:35:01+00:00",
         "latest_release_at": "2023-04-06T12:46:59+00:00",
-        "detected_compatible_versions": [
-            ">=6",
-            "<11"
+        "laravel_dependency_versions": [
+            ">=6.0 <11.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:55.140Z",
         "created_at": "2023-04-09T13:58:48.754Z"
@@ -5997,10 +5297,9 @@
         "keywords": [],
         "first_release_at": "2021-09-04T04:47:05+00:00",
         "latest_release_at": "2023-04-01T06:15:17+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:57.052Z",
         "created_at": "2023-04-09T13:58:48.757Z"
@@ -6020,10 +5319,10 @@
         ],
         "first_release_at": "2022-12-07T14:59:44+00:00",
         "latest_release_at": "2022-12-07T14:54:57+00:00",
-        "detected_compatible_versions": [
-            "9"
+        "laravel_dependency_versions": [
+            ">=v9.0.0",
+            "^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:00:59.015Z",
         "created_at": "2023-04-09T13:58:48.762Z"
@@ -6040,15 +5339,9 @@
         "keywords": [],
         "first_release_at": "2016-07-13T23:20:20+00:00",
         "latest_release_at": "2023-03-14T10:51:19+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.1||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:21:59.652Z",
         "created_at": "2023-04-09T13:58:48.765Z"
@@ -6065,12 +5358,9 @@
         "keywords": [],
         "first_release_at": "2023-03-03T20:45:05+00:00",
         "latest_release_at": "2023-03-11T19:04:33+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:00.820Z",
         "created_at": "2023-04-09T13:58:48.770Z"
@@ -6087,12 +5377,9 @@
         "keywords": [],
         "first_release_at": "2021-04-29T01:44:25+00:00",
         "latest_release_at": "2023-02-28T20:15:15+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:02.779Z",
         "created_at": "2023-04-09T13:58:48.774Z"
@@ -6109,8 +5396,7 @@
         "keywords": [],
         "first_release_at": "2020-07-19T18:31:07+00:00",
         "latest_release_at": "2021-07-01T05:48:59+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:01.581Z",
         "created_at": "2023-04-09T13:58:48.777Z"
@@ -6127,11 +5413,9 @@
         "keywords": [],
         "first_release_at": "2022-08-22T12:44:06+00:00",
         "latest_release_at": "2023-03-01T18:33:55+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:04.578Z",
         "created_at": "2023-04-09T13:58:48.783Z"
@@ -6148,12 +5432,9 @@
         "keywords": [],
         "first_release_at": "2023-02-01T11:23:17+00:00",
         "latest_release_at": "2023-03-29T01:56:11+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.47||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:03.472Z",
         "created_at": "2023-04-09T13:58:48.787Z"
@@ -6170,14 +5451,9 @@
         "keywords": [],
         "first_release_at": "2017-07-26T19:21:12+00:00",
         "latest_release_at": "2022-02-10T10:14:10+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "5.1.*||5.2.*||5.3.*||5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0||^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:05.142Z",
         "created_at": "2023-04-09T13:58:48.793Z"
@@ -6194,11 +5470,9 @@
         "keywords": [],
         "first_release_at": "2023-03-02T22:37:59+00:00",
         "latest_release_at": "2023-03-27T15:15:57+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:06.266Z",
         "created_at": "2023-04-09T13:58:48.796Z"
@@ -6215,10 +5489,9 @@
         "keywords": [],
         "first_release_at": "2021-05-27T20:39:52+00:00",
         "latest_release_at": "2023-02-18T18:18:22+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:08.258Z",
         "created_at": "2023-04-09T13:58:48.802Z"
@@ -6235,8 +5508,7 @@
         "keywords": [],
         "first_release_at": "2012-01-16T10:58:40+00:00",
         "latest_release_at": "2023-03-17T14:47:54+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:22:07.069Z",
         "created_at": "2023-04-09T13:58:48.806Z"
@@ -6253,11 +5525,9 @@
         "keywords": [],
         "first_release_at": "2022-01-02T19:29:33+00:00",
         "latest_release_at": "2023-02-11T20:01:12+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:09.913Z",
         "created_at": "2023-04-09T13:58:48.812Z"
@@ -6274,12 +5544,9 @@
         "keywords": [],
         "first_release_at": "2021-04-06T14:11:04+00:00",
         "latest_release_at": "2023-04-04T20:53:47+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.83.26||^9.38.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:12.034Z",
         "created_at": "2023-04-09T13:58:48.816Z"
@@ -6298,8 +5565,7 @@
         ],
         "first_release_at": "2022-07-23T16:38:00+00:00",
         "latest_release_at": "2023-03-27T18:22:36+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:13.826Z",
         "created_at": "2023-04-09T13:58:48.822Z"
@@ -6316,11 +5582,9 @@
         "keywords": [],
         "first_release_at": "2022-04-05T10:08:20+00:00",
         "latest_release_at": "2023-02-13T16:16:40+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:15.607Z",
         "created_at": "2023-04-09T13:58:48.825Z"
@@ -6337,11 +5601,9 @@
         "keywords": [],
         "first_release_at": "2020-02-15T18:47:55+00:00",
         "latest_release_at": "2023-02-03T11:24:36+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:08.649Z",
         "created_at": "2023-04-09T13:58:48.829Z"
@@ -6358,15 +5620,9 @@
         "keywords": [],
         "first_release_at": "2013-03-27T00:15:55+00:00",
         "latest_release_at": "2023-03-14T08:30:02+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~5||^6||^7||^8||^9||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:17.293Z",
         "created_at": "2023-04-09T13:58:48.833Z"
@@ -6383,15 +5639,9 @@
         "keywords": [],
         "first_release_at": "2013-03-22T15:15:04+00:00",
         "latest_release_at": "2023-03-14T08:28:28+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.8||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:19.097Z",
         "created_at": "2023-04-09T13:58:48.836Z"
@@ -6408,11 +5658,9 @@
         "keywords": [],
         "first_release_at": "2021-12-09T22:46:54+00:00",
         "latest_release_at": "2023-02-17T12:50:10+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:20.918Z",
         "created_at": "2023-04-09T13:58:48.842Z"
@@ -6429,14 +5677,9 @@
         "keywords": [],
         "first_release_at": "2015-08-31T22:47:37+00:00",
         "latest_release_at": "2023-01-11T08:51:32+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:22.537Z",
         "created_at": "2023-04-09T13:58:48.845Z"
@@ -6455,11 +5698,9 @@
         ],
         "first_release_at": "2017-06-14T20:33:19+00:00",
         "latest_release_at": "2023-01-11T15:22:19+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:10.373Z",
         "created_at": "2023-04-09T13:58:48.850Z"
@@ -6476,8 +5717,7 @@
         "keywords": [],
         "first_release_at": "2020-05-15T17:16:28+00:00",
         "latest_release_at": "2023-03-28T15:56:45+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T21:01:24.444Z",
         "created_at": "2023-04-09T13:58:48.853Z"
@@ -6496,8 +5736,7 @@
         ],
         "first_release_at": "2022-12-23T13:09:52+00:00",
         "latest_release_at": "2023-01-05T10:19:20+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:26.188Z",
         "created_at": "2023-04-09T13:58:48.857Z"
@@ -6514,8 +5753,7 @@
         "keywords": [],
         "first_release_at": "2022-06-08T20:28:39+00:00",
         "latest_release_at": "2023-03-25T17:51:32+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T21:01:27.952Z",
         "created_at": "2023-04-09T13:58:48.861Z"
@@ -6532,11 +5770,9 @@
         "keywords": [],
         "first_release_at": "2014-02-23T23:26:56+00:00",
         "latest_release_at": "2023-02-04T16:13:42+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:29.957Z",
         "created_at": "2023-04-09T13:58:48.865Z"
@@ -6553,14 +5789,9 @@
         "keywords": [],
         "first_release_at": "2018-10-04T17:09:35+00:00",
         "latest_release_at": "2023-03-06T01:27:14+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:31.678Z",
         "created_at": "2023-04-09T13:58:48.869Z"
@@ -6577,13 +5808,9 @@
         "keywords": [],
         "first_release_at": "2021-05-19T20:37:21+00:00",
         "latest_release_at": "2023-02-23T12:35:54+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:12.203Z",
         "created_at": "2023-04-09T13:58:48.873Z"
@@ -6600,12 +5827,9 @@
         "keywords": [],
         "first_release_at": "2020-06-27T02:29:14+00:00",
         "latest_release_at": "2023-03-20T17:22:27+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:13.937Z",
         "created_at": "2023-04-09T13:58:48.876Z"
@@ -6622,11 +5846,9 @@
         "keywords": [],
         "first_release_at": "2021-12-16T14:15:26+00:00",
         "latest_release_at": "2023-02-06T06:12:26+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.49 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:33.530Z",
         "created_at": "2023-04-09T13:58:48.881Z"
@@ -6643,15 +5865,9 @@
         "keywords": [],
         "first_release_at": "2016-07-20T03:04:18+00:00",
         "latest_release_at": "2023-02-08T03:24:09+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "5.0 - 5.8||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:35.480Z",
         "created_at": "2023-04-09T13:58:48.884Z"
@@ -6670,8 +5886,7 @@
         ],
         "first_release_at": "2014-06-09T22:37:43+00:00",
         "latest_release_at": "2021-02-08T20:43:55+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:37.260Z",
         "created_at": "2023-04-09T13:58:48.888Z"
@@ -6688,8 +5903,7 @@
         "keywords": [],
         "first_release_at": "2020-11-06T22:19:27+00:00",
         "latest_release_at": "2023-01-25T09:26:10+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:15.656Z",
         "created_at": "2023-04-09T13:58:48.891Z"
@@ -6706,11 +5920,9 @@
         "keywords": [],
         "first_release_at": "2022-10-13T09:30:57+00:00",
         "latest_release_at": "2023-03-27T09:05:00+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:39.098Z",
         "created_at": "2023-04-09T13:58:48.895Z"
@@ -6729,10 +5941,9 @@
         ],
         "first_release_at": "2015-03-12T12:34:28+00:00",
         "latest_release_at": "2023-04-06T09:36:14+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:40.959Z",
         "created_at": "2023-04-09T13:58:48.898Z"
@@ -6749,12 +5960,9 @@
         "keywords": [],
         "first_release_at": "2016-07-26T15:21:49+00:00",
         "latest_release_at": "2023-03-22T13:01:33+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.71||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:42.618Z",
         "created_at": "2023-04-09T13:58:48.902Z"
@@ -6771,12 +5979,9 @@
         "keywords": [],
         "first_release_at": "2016-06-28T09:16:14+00:00",
         "latest_release_at": "2023-01-25T09:18:22+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:44.520Z",
         "created_at": "2023-04-09T13:58:48.906Z"
@@ -6793,12 +5998,9 @@
         "keywords": [],
         "first_release_at": "2020-06-10T07:37:02+00:00",
         "latest_release_at": "2023-01-24T23:50:18+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:17.532Z",
         "created_at": "2023-04-09T13:58:48.912Z"
@@ -6815,12 +6017,9 @@
         "keywords": [],
         "first_release_at": "2016-03-03T08:59:21+00:00",
         "latest_release_at": "2023-01-25T09:39:38+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:46.410Z",
         "created_at": "2023-04-09T13:58:48.915Z"
@@ -6837,12 +6036,9 @@
         "keywords": [],
         "first_release_at": "2015-10-06T13:33:09+00:00",
         "latest_release_at": "2023-01-30T22:11:18+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:19.262Z",
         "created_at": "2023-04-09T13:58:48.918Z"
@@ -6859,14 +6055,9 @@
         "keywords": [],
         "first_release_at": "2016-05-08T16:52:12+00:00",
         "latest_release_at": "2023-01-24T23:20:59+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:48.126Z",
         "created_at": "2023-04-09T13:58:48.922Z"
@@ -6883,12 +6074,9 @@
         "keywords": [],
         "first_release_at": "2021-06-21T23:25:20+00:00",
         "latest_release_at": "2023-01-24T23:50:49+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.37||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:49.880Z",
         "created_at": "2023-04-09T13:58:48.926Z"
@@ -6905,11 +6093,9 @@
         "keywords": [],
         "first_release_at": "2022-06-17T08:01:00+00:00",
         "latest_release_at": "2023-01-25T23:05:09+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:51.850Z",
         "created_at": "2023-04-09T13:58:48.931Z"
@@ -6928,12 +6114,10 @@
         ],
         "first_release_at": "2015-07-16T14:28:16+00:00",
         "latest_release_at": "2023-01-23T14:22:08+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.71||^9.0||^10.0",
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:53.811Z",
         "created_at": "2023-04-09T13:58:48.935Z"
@@ -6950,12 +6134,10 @@
         "keywords": [],
         "first_release_at": "2022-01-03T16:50:46+00:00",
         "latest_release_at": "2023-02-15T07:47:59+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.67||^9.0||^10.0",
+            "^8.77||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:55.607Z",
         "created_at": "2023-04-09T13:58:48.938Z"
@@ -6972,12 +6154,9 @@
         "keywords": [],
         "first_release_at": "2020-06-05T21:29:25+00:00",
         "latest_release_at": "2023-01-23T15:08:13+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.71||^9.0||^10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:57.900Z",
         "created_at": "2023-04-09T13:58:48.942Z"
@@ -6994,12 +6173,10 @@
         "keywords": [],
         "first_release_at": "2021-09-17T22:46:41+00:00",
         "latest_release_at": "2023-02-09T08:33:52+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.37||^9.0||^10.0",
+            "^8.60||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:01:59.553Z",
         "created_at": "2023-04-09T13:58:48.947Z"
@@ -7016,12 +6193,9 @@
         "keywords": [],
         "first_release_at": "2021-03-29T18:26:32+00:00",
         "latest_release_at": "2023-02-10T15:33:25+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.73||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:01.542Z",
         "created_at": "2023-04-09T13:58:48.951Z"
@@ -7042,12 +6216,9 @@
         ],
         "first_release_at": "2016-10-19T08:47:17+00:00",
         "latest_release_at": "2023-01-25T09:12:48+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.67||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:05.229Z",
         "created_at": "2023-04-09T13:58:48.954Z"
@@ -7064,8 +6235,7 @@
         "keywords": [],
         "first_release_at": "2020-09-01T15:02:56+00:00",
         "latest_release_at": "2023-02-01T13:01:24+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:20.914Z",
         "created_at": "2023-04-09T13:58:48.958Z"
@@ -7082,11 +6252,9 @@
         "keywords": [],
         "first_release_at": "2015-08-14T14:34:59+00:00",
         "latest_release_at": "2023-01-17T16:50:32+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:22.733Z",
         "created_at": "2023-04-09T13:58:48.962Z"
@@ -7103,12 +6271,9 @@
         "keywords": [],
         "first_release_at": "2018-10-11T13:58:34+00:00",
         "latest_release_at": "2023-01-25T16:22:06+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:07.253Z",
         "created_at": "2023-04-09T13:58:48.966Z"
@@ -7125,12 +6290,9 @@
         "keywords": [],
         "first_release_at": "2019-06-13T22:41:33+00:00",
         "latest_release_at": "2023-01-17T10:35:34+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.50||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:09.330Z",
         "created_at": "2023-04-09T13:58:48.970Z"
@@ -7147,12 +6309,9 @@
         "keywords": [],
         "first_release_at": "2019-06-11T18:43:20+00:00",
         "latest_release_at": "2023-03-17T09:01:16+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.50||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:11.191Z",
         "created_at": "2023-04-09T13:58:48.973Z"
@@ -7169,8 +6328,7 @@
         "keywords": [],
         "first_release_at": "2016-11-06T21:39:24+00:00",
         "latest_release_at": "2022-04-21T12:23:20+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:22:24.398Z",
         "created_at": "2023-04-09T13:58:48.976Z"
@@ -7187,8 +6345,7 @@
         "keywords": [],
         "first_release_at": "2018-11-28T07:50:53+00:00",
         "latest_release_at": "2023-02-20T14:31:09+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-06T21:02:13.113Z",
         "created_at": "2023-04-09T13:58:48.982Z"
@@ -7205,8 +6362,7 @@
         "keywords": [],
         "first_release_at": "2016-12-06T11:21:43+00:00",
         "latest_release_at": "2023-02-14T16:46:30+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-07T00:22:26.323Z",
         "created_at": "2023-04-09T13:58:48.985Z"
@@ -7223,12 +6379,9 @@
         "keywords": [],
         "first_release_at": "2016-04-12T11:46:24+00:00",
         "latest_release_at": "2023-03-03T19:11:26+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0 || ^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:15.142Z",
         "created_at": "2023-04-09T13:58:48.988Z"
@@ -7245,11 +6398,9 @@
         "keywords": [],
         "first_release_at": "2020-04-11T09:10:13+00:00",
         "latest_release_at": "2023-02-17T04:00:11+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-07T00:22:28.123Z",
         "created_at": "2023-04-09T13:58:48.992Z"
@@ -7266,15 +6417,9 @@
         "keywords": [],
         "first_release_at": "2013-09-16T20:50:53+00:00",
         "latest_release_at": "2023-02-16T17:34:31+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:17.627Z",
         "created_at": "2023-04-09T13:58:48.995Z"
@@ -7291,12 +6436,9 @@
         "keywords": [],
         "first_release_at": "2013-12-11T22:28:05+00:00",
         "latest_release_at": "2023-02-21T14:02:27+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:20.102Z",
         "created_at": "2023-04-09T13:58:48.998Z"
@@ -7313,8 +6455,7 @@
         "keywords": [],
         "first_release_at": "2023-01-18T14:05:34+00:00",
         "latest_release_at": "2023-03-20T11:57:51+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:22.027Z",
         "created_at": "2023-04-09T13:58:49.002Z"
@@ -7331,10 +6472,9 @@
         "keywords": [],
         "first_release_at": "2015-02-03T10:22:12+00:00",
         "latest_release_at": "2023-02-26T18:30:57+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:23.986Z",
         "created_at": "2023-04-09T13:58:49.005Z"
@@ -7351,13 +6491,9 @@
         "keywords": [],
         "first_release_at": "2021-02-13T17:05:25+00:00",
         "latest_release_at": "2023-03-22T10:32:46+00:00",
-        "detected_compatible_versions": [
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "~7||~8||~9||~10"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-06T21:02:26.086Z",
         "created_at": "2023-04-09T13:58:49.010Z"
@@ -7377,11 +6513,9 @@
         "keywords": [],
         "first_release_at": "2023-04-08T20:33:57+00:00",
         "latest_release_at": "2023-04-08T20:46:06+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
-        ],
-        "compatible_versions": []
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
+        ]
     },
     {
         "name": "Laravel 5 Repositories",
@@ -7398,15 +6532,9 @@
         "keywords": [],
         "first_release_at": "2015-02-12T20:17:37+00:00",
         "latest_release_at": "2023-02-22T02:22:15+00:00",
-        "detected_compatible_versions": [
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
-        ],
-        "compatible_versions": []
+        "laravel_dependency_versions": [
+            "~5.0||~6.0||~7.0||^8.0||^9.0||^10.0"
+        ]
     },
     {
         "name": "Laravel Lang",
@@ -7423,8 +6551,7 @@
         "keywords": [],
         "first_release_at": "2023-02-12T11:08:30+00:00",
         "latest_release_at": "2023-02-17T12:46:13+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": []
+        "laravel_dependency_versions": []
     },
     {
         "name": "Number To Bangla",
@@ -7441,8 +6568,7 @@
         "keywords": [],
         "first_release_at": "2020-02-13T17:01:42+00:00",
         "latest_release_at": "2023-01-13T15:03:42+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": []
+        "laravel_dependency_versions": []
     },
     {
         "name": "Console Output",
@@ -7459,11 +6585,9 @@
         "keywords": [],
         "first_release_at": "2022-03-15T21:40:01+00:00",
         "latest_release_at": "2023-04-11T08:45:04+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
-        ],
-        "compatible_versions": []
+        "laravel_dependency_versions": [
+            "^9.0||^10"
+        ]
     },
     {
         "name": "Laravel Paperclip",
@@ -7477,8 +6601,7 @@
         "keywords": [],
         "first_release_at": "2017-08-14T17:58:05+00:00",
         "latest_release_at": "2023-04-10T08:37:45+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": false,
         "updated_at": "2023-04-12T13:40:32.500Z",
         "created_at": "2023-04-12T13:40:32.500Z"
@@ -7495,10 +6618,9 @@
         "keywords": [],
         "first_release_at": "2020-09-28T16:07:46+00:00",
         "latest_release_at": "2023-02-15T10:20:47+00:00",
-        "detected_compatible_versions": [
-            "10"
+        "laravel_dependency_versions": [
+            "^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-12T13:52:40.627Z",
         "created_at": "2023-04-12T13:52:40.627Z"
@@ -7515,11 +6637,9 @@
         "keywords": [],
         "first_release_at": "2019-11-21T18:29:36+00:00",
         "latest_release_at": "2023-04-01T12:26:34+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.35||^10.5"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-12T14:13:49.769Z",
         "created_at": "2023-04-12T14:13:49.769Z"
@@ -7536,8 +6656,7 @@
         "keywords": [],
         "first_release_at": "2023-04-07T13:42:26+00:00",
         "latest_release_at": "2023-04-11T07:57:20+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-12T14:21:21.440Z",
         "created_at": "2023-04-12T14:21:21.440Z"
@@ -7554,12 +6673,9 @@
         "keywords": [],
         "first_release_at": "2023-02-01T12:06:49+00:00",
         "latest_release_at": "2023-04-07T21:09:00+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.50||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-12T14:26:04.979Z",
         "created_at": "2023-04-12T14:26:04.979Z"
@@ -7576,12 +6692,9 @@
         "keywords": [],
         "first_release_at": "2022-08-22T17:52:28+00:00",
         "latest_release_at": "2023-04-12T15:11:03+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-12T15:29:46.961Z",
         "created_at": "2023-04-12T15:29:46.961Z"
@@ -7598,11 +6711,9 @@
         "keywords": [],
         "first_release_at": "2019-09-20T07:47:13+00:00",
         "latest_release_at": "2023-01-25T09:36:07+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-12T20:25:55.354Z",
         "created_at": "2023-04-12T20:25:55.354Z"
@@ -7619,11 +6730,9 @@
         "keywords": [],
         "first_release_at": "2018-10-10T16:34:36+00:00",
         "latest_release_at": "2022-05-06T04:13:36+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:03:46.628Z",
         "created_at": "2023-04-13T11:03:46.628Z"
@@ -7640,11 +6749,9 @@
         "keywords": [],
         "first_release_at": "2019-06-25T15:25:34+00:00",
         "latest_release_at": "2023-03-15T16:29:35+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:06:27.137Z",
         "created_at": "2023-04-13T11:06:27.137Z"
@@ -7661,12 +6768,9 @@
         "keywords": [],
         "first_release_at": "2018-02-12T15:24:19+00:00",
         "latest_release_at": "2023-02-01T12:22:53+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:10:07.138Z",
         "created_at": "2023-04-13T11:10:07.138Z"
@@ -7683,8 +6787,7 @@
         "keywords": [],
         "first_release_at": "2014-05-01T19:47:27+00:00",
         "latest_release_at": "2023-02-01T08:46:29+00:00",
-        "detected_compatible_versions": [],
-        "compatible_versions": [],
+        "laravel_dependency_versions": [],
         "php_only": true,
         "updated_at": "2023-04-13T11:15:15.210Z",
         "created_at": "2023-04-13T11:15:15.210Z"
@@ -7704,11 +6807,9 @@
         ],
         "first_release_at": "2023-04-05T10:28:34+00:00",
         "latest_release_at": "2023-04-12T17:25:16+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:21:51.972Z",
         "created_at": "2023-04-13T11:21:51.972Z"
@@ -7725,12 +6826,9 @@
         "keywords": [],
         "first_release_at": "2022-02-06T17:06:29+00:00",
         "latest_release_at": "2023-03-29T08:31:46+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:32:15.080Z",
         "created_at": "2023-04-13T11:32:15.080Z"
@@ -7747,11 +6845,9 @@
         "keywords": [],
         "first_release_at": "2021-12-03T19:41:46+00:00",
         "latest_release_at": "2023-01-25T19:13:15+00:00",
-        "detected_compatible_versions": [
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:35:17.746Z",
         "created_at": "2023-04-13T11:35:17.746Z"
@@ -7771,12 +6867,9 @@
         ],
         "first_release_at": "2021-05-24T16:14:33+00:00",
         "latest_release_at": "2023-03-03T13:19:18+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.24||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:47:33.834Z",
         "created_at": "2023-04-13T11:47:33.834Z"
@@ -7793,14 +6886,9 @@
         "keywords": [],
         "first_release_at": "2021-09-13T12:48:12+00:00",
         "latest_release_at": "2023-04-05T14:03:00+00:00",
-        "detected_compatible_versions": [
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T11:54:16.541Z",
         "created_at": "2023-04-13T11:54:16.541Z"
@@ -7817,14 +6905,30 @@
         "keywords": [],
         "first_release_at": "2021-05-14T21:09:04+00:00",
         "latest_release_at": "2023-04-10T08:21:30+00:00",
-        "detected_compatible_versions": [
-            "8",
-            "9",
-            "10"
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
         ],
-        "compatible_versions": [],
         "php_only": false,
         "updated_at": "2023-04-13T17:55:02.785Z",
         "created_at": "2023-04-13T17:55:02.785Z"
+    },
+    {
+        "name": "Telegraph",
+        "description": "Fluently interacting with Telegram Bots.",
+        "category": "API",
+        "github": "https://github.com/defstudio/telegraph",
+        "author": "defstudio",
+        "composer": "defstudio/telegraph",
+        "npm": null,
+        "stars": 457,
+        "keywords": [],
+        "first_release_at": "2021-11-21T18:52:06+00:00",
+        "latest_release_at": "2023-04-02T20:33:57+00:00",
+        "laravel_dependency_versions": [
+            "^8.37 || ^9.0 || ^10.0"
+        ],
+        "php_only": false,
+        "updated_at": "2023-04-16T21:48:28.281Z",
+        "created_at": "2023-04-16T21:48:28.281Z"
     }
 ]

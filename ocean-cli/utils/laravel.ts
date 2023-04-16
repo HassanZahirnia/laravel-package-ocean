@@ -23,18 +23,18 @@ export const writeActiveLaravelVersion = (
         writeLaravelDatabase(laravelDatabase)
 
         // Clear the screen
-        if(!noMenu)
+        if (!noMenu)
             clearScreen()
 
         // Show a success message
         log(chalk.magenta(`Laravel active versions has been updated to ${activeVersions}`), '\n')
 
         // Show the main menu
-        if(!noMenu)
+        if (!noMenu)
             showMainMenu()
     }).catch((error) => {
         // Clear the screen
-        if(!noMenu)
+        if (!noMenu)
             clearScreen()
 
         // Show an error message
@@ -42,7 +42,7 @@ export const writeActiveLaravelVersion = (
         log(chalk.red(error), '\n')
 
         // Show the main menu
-        if(!noMenu)
+        if (!noMenu)
             showMainMenu()
     })
 }

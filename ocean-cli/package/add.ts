@@ -8,7 +8,7 @@ import chalk from 'chalk'
 import ora from 'ora'
 import type { packagistData } from '../utils/composer'
 import {
-    extract_packagist_detected_compatible_versions,
+    extract_packagist_laravel_dependency_versions,
     extract_packagist_first_release_at,
     extract_packagist_latest_release_at,
 } from '../utils/composer'
@@ -205,8 +205,7 @@ export const addPackage = async function(){
                     keywords: isEmpty(answers.keywords) ? [] : answers.keywords.split(',').map(keyword => keyword.trim()),
                     first_release_at: '',
                     latest_release_at: '',
-                    detected_compatible_versions: [],
-                    compatible_versions: [],
+                    laravel_dependency_versions: [],
                     php_only: answers.php_only,
                     updated_at: new Date().toISOString(),
                     created_at: new Date().toISOString(),
@@ -225,9 +224,9 @@ export const addPackage = async function(){
                         newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
 
                         if (!newPackage.php_only){
-                            newPackage.detected_compatible_versions = extract_packagist_detected_compatible_versions(packagistData)
+                            newPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(packagistData)
 
-                            if (newPackage.detected_compatible_versions.length === 0)
+                            if (newPackage.laravel_dependency_versions.length === 0)
                                 log(chalk.yellow('\n Could not detect any compatible versions \n'))
                         }
                     }

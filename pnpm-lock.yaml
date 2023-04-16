@@ -145,6 +145,9 @@ devDependencies:
   postcss:
     specifier: ^8.4.21
     version: 8.4.21
+  semver:
+    specifier: ^7.4.0
+    version: 7.4.0
   sqlite3:
     specifier: ^5.1.6
     version: 5.1.6

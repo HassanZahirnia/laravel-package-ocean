@@ -42,12 +42,8 @@ export type Package = {
     latest_release_at: string
 
     // Laravel compatible versions, automatically detected from packagist.
-    detected_compatible_versions: string[]
-
-    // Manually set compatible versions,
-    // only should be used when the package is not on packagist, or it's a php only or npm package.
-    // If this is set, the `detected_compatible_versions` will be ignored.
-    compatible_versions: string[]
+    // You can manually set this if the compatibility is not detected correctly.
+    laravel_dependency_versions: string[]
 
     // Indicates that this is a php only package and is not directly related to Laravel.
     // We use this to skip some of the Laravel specific checks.

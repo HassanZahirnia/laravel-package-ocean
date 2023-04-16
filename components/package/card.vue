@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
+import semver from 'semver'
 import { active_laravel_versions } from '@/database/laravel'
 import type { Package } from '@/types/package'
 
@@ -13,11 +14,59 @@ const showOfficialPackages = useShowOfficialPackages()
 // Determines which category of packages should be displayed.
 const selectedCategory = useSelectedCategory()
 
-// If there are compatible versions, use those.
-// Otherwise, use the detected compatible versions.
-const compatible_versions = computed(() => $props.laravelPackage.compatible_versions.length
-    ? $props.laravelPackage.compatible_versions
-    : $props.laravelPackage.detected_compatible_versions)
+const minimum_compatible_version = computed(() => {
+    let lowestMinVersion = ''
+    const minVersions = new Set<string>()
+
+    // Go through each laravel_dependency_versions and find the minimum version
+    for (const version of $props.laravelPackage.laravel_dependency_versions) {
+        const min = semver.minVersion(version)?.version
+        if (min)
+            minVersions.add(min)
+    }
+
+    // Compare each minimum version with eachother, and get the lowest one
+    for (const version of minVersions) {
+        let isLowest = true
+        for (const otherVersion of minVersions) {
+            if (semver.gt(version, otherVersion)) {
+                isLowest = false
+                break
+            }
+        }
+        if (isLowest)
+            lowestMinVersion = version
+    }
+
+    // Remove any .0 or .0.0 from the end of the version
+    lowestMinVersion = lowestMinVersion.replace(/\.0+$/, '').replace(/\.0+$/, '')
+
+    return lowestMinVersion
+})
+
+const maximum_compatible_version = computed(() => {
+    let highestMaxVersion = ''
+
+    if (!minimum_compatible_version.value.length)
+        return highestMaxVersion
+
+    // Go through each active_laravel_versions starting from the highest
+    // and see if it satisfies any of the version ranges in the laravel_dependency_versions array
+    // and among those versions, find the highest one
+    for (let i = active_laravel_versions.length - 1; i >= 0; i--) {
+        for (const compatibleVersion of $props.laravelPackage.laravel_dependency_versions) {
+            if (semver.subset(active_laravel_versions[i], compatibleVersion)) {
+                highestMaxVersion = active_laravel_versions[i]
+                break
+            }
+        }
+    }
+
+    // Remove any .0 or .0.0 from the end of the version
+    highestMaxVersion = highestMaxVersion.replace(/\.0+$/, '').replace(/\.0+$/, '')
+
+    return highestMaxVersion
+})
 
 // A function to format large numbers
 // Example: 2600 -> 2.6k
@@ -50,38 +99,12 @@ const repositoryName = computed(() => {
 // Determines whether to show a tooltip for long repository names
 const showRepositoryNameTooltip = computed(() => repositoryName.value.length > 34 || window.innerWidth < 370)
 
-// Check whether compatible_versions includes the versions from the list active_laravel_versions
+// Check whether laravel_dependency_versions includes the versions from the list active_laravel_versions
 const isCompatible = computed(() => {
-    const compatibleVersions = compatible_versions.value
-
-    // Here we go through each version and make sure the package is compatible with the active versions.
-    // Example: If the package is compatible with Laravel >=9, but the active versions are 9 and 10, it will return true.
-    // Example: If the package is compatible with Laravel 8, but the active versions are 9 and 10, it will return false.
-    // And so on.
     return active_laravel_versions.some((activeVersion) => {
-        return compatibleVersions.some((compatibleVersion) => {
-            const match = compatibleVersion.match(/^([<>]=?|>=|<=)(\d+)$/)
-            if (!match)
-                return activeVersion === compatibleVersion
-
-            const operator = match[1]
-            const version = parseInt(match[2])
-            if (operator === '')
-                return activeVersion === compatibleVersion
-
-            else if (operator === '>=')
-                return parseInt(activeVersion) >= version
-
-            else if (operator === '<=')
-                return parseInt(activeVersion) <= version
-
-            else if (operator === '>')
-                return parseInt(activeVersion) > version
-
-            else if (operator === '<')
-                return parseInt(activeVersion) < version
-
-            return false
+        return $props.laravelPackage.laravel_dependency_versions.some((compatibleVersion) => {
+            const convertedActiveVersion = semver.valid(semver.coerce(activeVersion)) as string
+            return semver.satisfies(convertedActiveVersion, compatibleVersion)
         })
     })
 })
@@ -266,7 +289,7 @@ watch(
                     </div>
                     <!-- Package type -->
                     <div
-                        class="absolute top-0 left-0
+                        class="absolute top-0 left-0 w-full truncate
                         transition duration-300
                         opacity-0 -translate-x-2
                         "
@@ -276,7 +299,7 @@ watch(
                         >
                         <!-- Laravel package -->
                         <ui-tooltip
-                            v-if="compatible_versions.length && !laravelPackage.php_only"
+                            v-if="laravelPackage.laravel_dependency_versions.length && !laravelPackage.php_only"
                             :content="compatiblity_message"
                             :theme="isCompatible ? 'emerald' : 'amber'"
                             class="text-xs
@@ -290,9 +313,17 @@ watch(
                                 >
                                 <!-- Checkmark icon -->
                                 <div class="i-ph-check-circle-duotone text-xl" />
-                                <div class="text-xs truncate">
-                                    Laravel versions:
-                                    {{ compatible_versions.join(', ') }}
+                                <div class="text-xs">
+                                    <div v-if="minimum_compatible_version !== maximum_compatible_version">
+                                        From
+                                        {{ minimum_compatible_version }}
+                                        to
+                                        {{ maximum_compatible_version }}
+                                    </div>
+                                    <div v-else>
+                                        Laravel versions:
+                                        {{ minimum_compatible_version }}
+                                    </div>
                                 </div>
                             </div>
                             <div
@@ -304,15 +335,15 @@ watch(
                                 <div
                                     class="i-ph-warning-circle-duotone text-xl"
                                     />
-                                <div class="text-xs truncate">
+                                <div class="text-xs">
                                     Laravel versions:
-                                    {{ compatible_versions.join(', ') }}
+                                    {{ minimum_compatible_version }}
                                 </div>
                             </div>
                         </ui-tooltip>
                         <!-- PHP package -->
                         <ui-tooltip
-                            v-if="laravelPackage.php_only && !compatible_versions.length"
+                            v-if="laravelPackage.php_only && !laravelPackage.laravel_dependency_versions.length"
                             content="This is a general PHP package. <br> It does not require Laravel."
                             theme="indigo"
                             class="flex items-center gap-2"
@@ -326,7 +357,7 @@ watch(
                         </ui-tooltip>
                         <!-- NPM package -->
                         <ui-tooltip
-                            v-if="laravelPackage.npm && !compatible_versions.length && !laravelPackage.php_only"
+                            v-if="laravelPackage.npm && !laravelPackage.laravel_dependency_versions.length && !laravelPackage.php_only"
                             content="This is a NPM package. <br> It doesn't rely on PHP."
                             theme="indigo"
                             class="flex items-center gap-2"

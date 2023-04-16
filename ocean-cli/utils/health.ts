@@ -1,5 +1,6 @@
 import chalk from 'chalk'
 import dayjs from 'dayjs'
+import semver from 'semver'
 import ora from 'ora'
 import axios, { isAxiosError } from 'axios'
 import dotenv from 'dotenv'
@@ -172,39 +173,13 @@ Finished checking github health of ${chalk.cyan(totalPackages)} packages!
 ---------------------------------------------------------------------------
 
 */
-export const package_compatible_versions = (laravelPackage: Package): string[] => {
-    return laravelPackage.compatible_versions.length
-        ? laravelPackage.compatible_versions
-        : laravelPackage.detected_compatible_versions
-}
-
 export const is_compatible_with_active_laravel_versions = (laravelPackage: Package): boolean => {
     const { active_versions } = readLaravelDatabase()
 
     return active_versions.some((activeVersion) => {
-        return package_compatible_versions(laravelPackage).some((compatibleVersion) => {
-            const match = compatibleVersion.match(/^([<>]=?|>=|<=)(\d+)$/)
-            if (!match)
-                return activeVersion === compatibleVersion
-
-            const operator = match[1]
-            const version = parseInt(match[2])
-            if (operator === '')
-                return activeVersion === compatibleVersion
-
-            else if (operator === '>=')
-                return parseInt(activeVersion) >= version
-
-            else if (operator === '<=')
-                return parseInt(activeVersion) <= version
-
-            else if (operator === '>')
-                return parseInt(activeVersion) > version
-
-            else if (operator === '<')
-                return parseInt(activeVersion) < version
-
-            return false
+        return laravelPackage.laravel_dependency_versions.some((compatibleVersion) => {
+            const convertedActiveVersion = semver.valid(semver.coerce(activeVersion)) as string
+            return semver.satisfies(convertedActiveVersion, compatibleVersion)
         })
     })
 }
