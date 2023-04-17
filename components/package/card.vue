@@ -10,7 +10,7 @@ const $props = defineProps<{
 }>()
 
 // Sort active laravel versions from highest to lowest
-const sorted_active_laravel_versions = orderBy(active_laravel_versions, version => parseInt(version), 'desc')
+const sorted_active_laravel_versions = reactiveComputed(() => orderBy(active_laravel_versions, version => parseInt(version), 'desc'))
 
 // Determines whether only official packages should be displayed.
 const showOfficialPackages = useShowOfficialPackages()
@@ -318,7 +318,7 @@ watch(
                             <!-- PHP icon -->
                             <div
                                 v-if="laravelPackage.package_type === 'php-package'"
-                                class="i-svg-elephant text-2xl"
+                                class="i-svg-elephant text-[1.3rem]"
                                 />
                             <!-- NPM icon -->
                             <div
@@ -372,7 +372,7 @@ watch(
                             </div>
                             <div class="text-xs opacity-80">
                                 <div
-                                    v-if="laravelPackage.laravel_dependency_versions.length"
+                                    v-if="laravelPackage.laravel_dependency_versions.length && isCompatible"
                                     >
                                     <span>Versions: </span>
                                     <span
@@ -389,6 +389,12 @@ watch(
                                     <span v-else>
                                         {{ minimum_compatible_version }}
                                     </span>
+                                </div>
+                                <div
+                                    v-if="laravelPackage.laravel_dependency_versions.length && !isCompatible"
+                                    class="text-amber-600"
+                                    >
+                                    Incompatible with maintained versions!
                                 </div>
                             </div>
                         </div>
