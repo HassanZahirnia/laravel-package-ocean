@@ -170,7 +170,7 @@ watch(
             <a
                 :href="laravelPackage.github"
                 target="_blank"
-                class="rounded-3xl relative z-[1] group overflow-hidden
+                class="rounded-3xl relative z-[1] group
                 h-60
                 p-6
                 transition-all duration-300
