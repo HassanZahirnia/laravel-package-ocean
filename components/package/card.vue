@@ -143,7 +143,7 @@ onMounted(() => {
     })
         // Card
         .to(card.value, {
-            y: -4,
+            y: -1,
             ease: 'sine.out',
             duration: 0.25,
         })
@@ -170,19 +170,25 @@ watch(
             <a
                 :href="laravelPackage.github"
                 target="_blank"
-                class="rounded-3xl relative group
+                class="rounded-3xl relative z-[1] group overflow-hidden
                 h-60
                 p-6
-                transition duration-300
+                transition-all duration-300
                 flex flex-col
-                bg-white/50
+                bg-white/40
+                hover:bg-white/60
                 dark:bg-[#362B59]/20
+                dark:hover:bg-[#362B59]/30
                 ring-1 dark:ring-1
                 ring-slate-100
+                hover:ring-white
                 dark:ring-[#132447]
-                dark:hover:ring-indigo-900
+                dark:hover:ring-[#373060]
                 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
-                hover:shadow-2xl hover:shadow-slate-700/10
+                hover:shadow-2xl
+                hover:shadow-indigo-300/30
+                dark:hover:shadow-xl
+                dark:hover:shadow-[#1c164a]
                 "
                 >
                 <!-- Crown icon -->
@@ -276,8 +282,8 @@ watch(
                     <!-- Repo name -->
                     <div
                         class="flex items-center gap-2
-                        transition duration-300
-                        group-hover:opacity-0 group-hover:translate-x-5
+                        transition duration-300 ease-out
+                        group-hover:opacity-0 group-hover:translate-x-5 group-hover:translate-y-5
                         "
                         >
                         <div class="i-carbon:logo-github text-xl" />
@@ -292,10 +298,11 @@ watch(
                     <!-- Package type -->
                     <div
                         class="absolute left-0 w-full truncate
-                        transition duration-300
+                        transition duration-300 ease-out
                         flex gap-2 items-center
-                        opacity-0 -translate-x-5
-                        group-hover:opacity-100 group-hover:translate-x-0
+                        opacity-0 -translate-x-5 -translate-y-5
+                        group-hover:opacity-100
+                        group-hover:translate-x-0 group-hover:translate-y-0
                         "
                         :class="{
                             'top-0': !laravelPackage.laravel_dependency_versions.length,
