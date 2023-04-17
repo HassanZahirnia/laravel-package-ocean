@@ -2,6 +2,9 @@ import { categories } from '@/database/categories'
 import type { Category } from '@/types/category'
 
 export type Package = {
+    // Type of the package. Example: 'laravel-package'
+    package_type: PackageType
+
     // Name of the package. Example: 'Laravel Backup'
     name: string
     
@@ -45,10 +48,6 @@ export type Package = {
     // You can manually set this if the compatibility is not detected correctly.
     laravel_dependency_versions: string[]
 
-    // Indicates that this is a php only package and is not directly related to Laravel.
-    // We use this to skip some of the Laravel specific checks.
-    php_only: boolean
-
     // Date when the package was updated in the database. Example: '2023-03-29T02:57:36+00:00'
     updated_at: string | null
 
@@ -57,3 +56,12 @@ export type Package = {
 }
 
 export type PackageSortFields = 'first_release_at' | 'latest_release_at' | 'stars'
+
+export type PackageType =
+    'laravel-package'
+    | 'php-package'
+    | 'npm-package'
+    | 'mac-app'
+    | 'windows-app'
+    | 'all-operating-systems-app'
+    | 'ide-extension'

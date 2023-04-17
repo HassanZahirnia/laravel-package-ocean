@@ -273,10 +273,8 @@ watch(
                     <div
                         class="flex items-center gap-2
                         transition duration-300
+                        group-hover:opacity-0 group-hover:translate-x-2
                         "
-                        :class="{
-                            'group-hover:opacity-0 group-hover:translate-x-2': laravelPackage.composer || laravelPackage.npm,
-                        }"
                         >
                         <div class="i-carbon:logo-github text-xl" />
                         <ui-tooltip
@@ -289,86 +287,95 @@ watch(
                     </div>
                     <!-- Package type -->
                     <div
-                        class="absolute top-0 left-0 w-full truncate
+                        class="absolute left-0 w-full truncate
                         transition duration-300
+                        flex gap-2 items-center
                         opacity-0 -translate-x-2
+                        group-hover:opacity-100 group-hover:translate-x-0
                         "
                         :class="{
-                            'group-hover:opacity-100 group-hover:translate-x-0': laravelPackage.composer || laravelPackage.npm,
+                            'top-0': !laravelPackage.laravel_dependency_versions.length,
+                            '-top-2': laravelPackage.laravel_dependency_versions.length,
                         }"
                         >
-                        <!-- Laravel package -->
-                        <ui-tooltip
-                            v-if="laravelPackage.laravel_dependency_versions.length && !laravelPackage.php_only"
-                            :content="compatiblity_message"
-                            :theme="isCompatible ? 'emerald' : 'amber'"
-                            class="text-xs
-                            flex items-center gap-1
-                            "
-                            >
+                        <div class="leading-loose">
+                            <!-- Laravel icon -->
                             <div
-                                v-if="isCompatible"
-                                class="flex items-center gap-2
-                                text-emerald-500"
-                                >
-                                <!-- Checkmark icon -->
-                                <div class="i-ph-check-circle-duotone text-xl" />
-                                <div class="text-xs">
-                                    <div v-if="minimum_compatible_version !== maximum_compatible_version">
-                                        From
+                                v-if="laravelPackage.package_type === 'laravel-package'"
+                                class="i-logos:laravel text-[1.3rem]"
+                                />
+                            <!-- PHP icon -->
+                            <div
+                                v-if="laravelPackage.package_type === 'php-package'"
+                                class="i-svg-elephant text-2xl"
+                                />
+                            <!-- NPM icon -->
+                            <div
+                                v-if="laravelPackage.package_type === 'npm-package'"
+                                class="i-logos:npm-icon text-xl"
+                                />
+                            <!-- Mac icon -->
+                            <div
+                                v-if="laravelPackage.package_type === 'mac-app'"
+                                class="i-logos:apple?mask text-[1.35rem] dark:text-white"
+                                />
+                            <!-- Windows icon -->
+                            <div
+                                v-if="laravelPackage.package_type === 'windows-app'"
+                                class="i-logos:microsoft-windows text-lg"
+                                />
+                            <!-- All operating systems icon -->
+                            <div
+                                v-if="laravelPackage.package_type === 'all-operating-systems-app'"
+                                class="i-carbon:software-resource-cluster text-2xl"
+                                />
+                            <!-- IDE Extension icon -->
+                            <div
+                                v-if="laravelPackage.package_type === 'ide-extension'"
+                                class="i-ph:code text-2xl"
+                                />
+                        </div>
+                        <div class="">
+                            <div class="text-sm font-bold">
+                                <div v-if="laravelPackage.package_type === 'laravel-package'">
+                                    Laravel package
+                                </div>
+                                <div v-if="laravelPackage.package_type === 'php-package'">
+                                    PHP package
+                                </div>
+                                <div v-if="laravelPackage.package_type === 'npm-package'">
+                                    NPM package
+                                </div>
+                                <div v-if="laravelPackage.package_type === 'mac-app'">
+                                    Mac app
+                                </div>
+                                <div v-if="laravelPackage.package_type === 'windows-app'">
+                                    Windows app
+                                </div>
+                                <div v-if="laravelPackage.package_type === 'all-operating-systems-app'">
+                                    All operating systems app
+                                </div>
+                                <div v-if="laravelPackage.package_type === 'ide-extension'">
+                                    IDE Extension/Plugin
+                                </div>
+                            </div>
+                            <div class="text-xs opacity-80">
+                                <div
+                                    v-if="laravelPackage.laravel_dependency_versions.length"
+                                    >
+                                    <span>Versions: </span>
+                                    <span v-if="minimum_compatible_version !== maximum_compatible_version">
+                                        from
                                         {{ minimum_compatible_version }}
                                         to
                                         {{ maximum_compatible_version }}
-                                    </div>
-                                    <div v-else>
-                                        Laravel versions:
+                                    </span>
+                                    <span v-else>
                                         {{ minimum_compatible_version }}
-                                    </div>
+                                    </span>
                                 </div>
                             </div>
-                            <div
-                                v-else
-                                class="flex items-center gap-2
-                                text-amber-500"
-                                >
-                                <!-- Warning icon -->
-                                <div
-                                    class="i-ph-warning-circle-duotone text-xl"
-                                    />
-                                <div class="text-xs">
-                                    Laravel versions:
-                                    {{ minimum_compatible_version }}
-                                </div>
-                            </div>
-                        </ui-tooltip>
-                        <!-- PHP package -->
-                        <ui-tooltip
-                            v-if="laravelPackage.php_only && !laravelPackage.laravel_dependency_versions.length"
-                            content="This is a general PHP package. <br> It does not require Laravel."
-                            theme="indigo"
-                            class="flex items-center gap-2"
-                            >
-                            <div
-                                class="i-svg-elephant text-lg"
-                                />
-                            <div class="text-xs truncate">
-                                PHP package
-                            </div>
-                        </ui-tooltip>
-                        <!-- NPM package -->
-                        <ui-tooltip
-                            v-if="laravelPackage.npm && !laravelPackage.laravel_dependency_versions.length && !laravelPackage.php_only"
-                            content="This is a NPM package. <br> It doesn't rely on PHP."
-                            theme="indigo"
-                            class="flex items-center gap-2"
-                            >
-                            <div
-                                class="i-logos:npm-icon"
-                                />
-                            <div class="text-xs truncate">
-                                NPM package
-                            </div>
-                        </ui-tooltip>
+                        </div>
                     </div>
                 </div>
             </a>

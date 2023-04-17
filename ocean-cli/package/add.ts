@@ -25,13 +25,13 @@ import {
     author as z_author,
     composer as z_composer,
     npm as z_npm,
-    php_only as z_php_only,
     keywords as z_keywords,
     laravelPackageSchema,
 } from '~/ocean-cli/validations/package.validation'
 import { categories } from '~/database/categories'
 import type { Package } from '~/types/package'
 import type { GithubData } from '~/types/github'
+import { packageTypes } from '~/database/packages'
 
 dotenv.config()
 
@@ -39,7 +39,7 @@ dotenv.config()
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
 
 type Answers = Pick<Package,
-    'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github' | 'php_only'>
+    'package_type' | 'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github'>
     & { keywords: string }
 
 export const addPackage = async function(){
@@ -51,6 +51,12 @@ export const addPackage = async function(){
     })
 
     inquirer.prompt([
+        {
+            type: 'autocomplete',
+            name: 'package_type',
+            message: 'Package type:',
+            source: (answersSoFar: unknown, input = '') => input ? fuseCategories.search(input).map(result => result.item) : packageTypes,
+        },
         {
             type: 'input',
             name: 'name',
@@ -134,16 +140,6 @@ export const addPackage = async function(){
             },
         },
         {
-            type: 'confirm',
-            name: 'php_only',
-            message: 'Is this a PHP only package (does not require Laravel)?',
-            default: false,
-            validate: (value: boolean) => {
-                const result = z_php_only.safeParse(value)
-                return result.success ? true : result.error.errors.map(error => error.message).join('\n')
-            },
-        },
-        {
             type: 'input',
             name: 'composer',
             message: 'Composer(optional, default: null):',
@@ -194,6 +190,7 @@ export const addPackage = async function(){
         .then(
             async( answers: Answers) => {
                 const newPackage: Package = {
+                    package_type: answers.package_type,
                     name: answers.name,
                     description: answers.description,
                     category: answers.category,
@@ -206,7 +203,6 @@ export const addPackage = async function(){
                     first_release_at: '',
                     latest_release_at: '',
                     laravel_dependency_versions: [],
-                    php_only: answers.php_only,
                     updated_at: new Date().toISOString(),
                     created_at: new Date().toISOString(),
                 }
@@ -218,17 +214,15 @@ export const addPackage = async function(){
 
                     try {
                         const { data: packagistData }: { data: packagistData }
-                        = await axios.get(`https://packagist.org/packages/${newPackage.composer}.json`)
+                            = await axios.get(`https://packagist.org/packages/${newPackage.composer}.json`)
 
                         newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
                         newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
 
-                        if (!newPackage.php_only){
-                            newPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(packagistData)
+                        newPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(packagistData)
 
-                            if (newPackage.laravel_dependency_versions.length === 0)
-                                log(chalk.yellow('\n Could not detect any compatible versions \n'))
-                        }
+                        if (newPackage.laravel_dependency_versions.length === 0)
+                            log(chalk.yellow('\n Could not detect any compatible versions \n'))
                     }
                     catch (error) {
                         if (isAxiosError(error)) {
@@ -246,7 +240,8 @@ export const addPackage = async function(){
                     spinner.text = 'Getting npm data'
 
                     try {
-                        const { data: npmData }: { data: NpmData } = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
+                        const { data: npmData }: { data: NpmData }
+                            = await axios.get(`https://registry.npmjs.org/${newPackage.npm}`)
                         newPackage.first_release_at = extract_npm_first_release_at(npmData)
                         newPackage.latest_release_at = extract_npm_latest_release_at(npmData)
                     }
@@ -266,11 +261,12 @@ export const addPackage = async function(){
                 spinner.text = 'Getting github data'
 
                 try {
-                    const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${newPackage.github.substring(19)}`, {
-                        headers: {
-                            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-                        },
-                    })
+                    const { data: githubData }: { data: GithubData }
+                        = await axios.get(`https://api.github.com/repos/${newPackage.github.substring(19)}`, {
+                            headers: {
+                                Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+                            },
+                        })
                     newPackage.stars = extract_github_stars(githubData)
                 }
                 catch (error) {

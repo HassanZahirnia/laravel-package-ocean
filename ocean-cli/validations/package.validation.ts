@@ -1,6 +1,11 @@
 import { z } from 'zod'
 import semver from 'semver'
 import { categories } from '~/database/categories'
+import { packageTypes } from '~/database/packages'
+
+// Package type
+export const package_type = z
+    .enum(packageTypes as [string, ...string[]])
 
 // Name
 export const name = z
@@ -168,10 +173,6 @@ export const laravel_dependency_versions = z
         message: 'Must be an array of unique strings',
     })
 
-// Php only
-export const php_only = z
-    .boolean()
-
 // Created At
 export const created_at = z.coerce
     .date()
@@ -182,6 +183,7 @@ export const updated_at = z.coerce
 
 // Laravel Package
 export const laravelPackageSchema = z.object({
+    package_type,
     name,
     description,
     category,
@@ -194,7 +196,6 @@ export const laravelPackageSchema = z.object({
     first_release_at,
     latest_release_at,
     laravel_dependency_versions,
-    php_only,
     created_at,
     updated_at,
 })
@@ -217,6 +218,46 @@ export const laravelPackageSchema = z.object({
         },
         {
             message: 'Either composer or npm can be null or empty, but not both',
+        },
+    )
+    .refine(
+        (item) => {
+            const package_type = item.package_type
+            const composer = item.composer
+            return package_type !== 'npm-package' || composer === null
+        },
+        {
+            message: 'If package_type is "npm-package", then composer must be null',
+        },
+    )
+    .refine(
+        (item) => {
+            const package_type = item.package_type
+            const npm = item.npm
+            return package_type !== 'php-package' && package_type !== 'laravel-package' || npm === null
+        },
+        {
+            message: 'If package_type is "php-package" or "laravel-package", then npm must be null',
+        },
+    )
+    .refine(
+        (item) => {
+            const package_type = item.package_type
+            const npm = item.npm
+            return npm === null || package_type === 'npm-package'
+        },
+        {
+            message: 'If npm is not null, then package_type must be "npm-package"',
+        },
+    )
+    .refine(
+        (item) => {
+            const package_type = item.package_type
+            const composer = item.composer
+            return composer === null || package_type === 'php-package' || package_type === 'laravel-package'
+        },
+        {
+            message: 'If composer is not null, then package_type must be "php-package" or "laravel-package"',
         },
     )
 
