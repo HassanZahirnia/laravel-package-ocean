@@ -167,6 +167,15 @@ export const laravel_dependency_versions = z
             return true
         }, {
             message: 'Must be a valid semver version',
+        })
+        .refine((value) => {
+            if (value)
+                return value !== '*'
+
+            return true
+        }
+        , {
+            message: 'Must not be a wildcard (*)',
         }),
     )
     .refine(items => new Set(items.map(item => item)).size === items?.length, {
