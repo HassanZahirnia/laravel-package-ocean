@@ -1,5 +1,6 @@
 import axios from 'axios'
 import chalk from 'chalk'
+import { orderBy } from 'lodash'
 import { showMainMenu } from '../cli'
 import { readLaravelDatabase, writeLaravelDatabase } from '../database'
 import { clearScreen, log } from '../print'
@@ -18,7 +19,7 @@ export const writeActiveLaravelVersion = (
     fetch_active_laravel_versions().then((activeVersions) => {
         const laravelDatabase = readLaravelDatabase()
 
-        laravelDatabase.active_versions = activeVersions
+        laravelDatabase.active_versions = orderBy(activeVersions, version => parseInt(version), 'desc')
 
         writeLaravelDatabase(laravelDatabase)
 

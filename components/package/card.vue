@@ -1,12 +1,16 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 import semver from 'semver'
+import { orderBy } from 'lodash'
 import { active_laravel_versions } from '@/database/laravel'
 import type { Package } from '@/types/package'
 
 const $props = defineProps<{
     laravelPackage: Package
 }>()
+
+// Sort active laravel versions from highest to lowest
+const sorted_active_laravel_versions = orderBy(active_laravel_versions, version => parseInt(version), 'desc')
 
 // Determines whether only official packages should be displayed.
 const showOfficialPackages = useShowOfficialPackages()
@@ -50,13 +54,13 @@ const maximum_compatible_version = computed(() => {
     if (!minimum_compatible_version.value.length)
         return highestMaxVersion
 
-    // Go through each active_laravel_versions starting from the highest
+    // Go through each sorted_active_laravel_versions starting from the highest
     // and see if it satisfies any of the version ranges in the laravel_dependency_versions array
     // and among those versions, find the highest one
-    for (let i = active_laravel_versions.length - 1; i >= 0; i--) {
+    for (let i = sorted_active_laravel_versions.length - 1; i >= 0; i--) {
         for (const compatibleVersion of $props.laravelPackage.laravel_dependency_versions) {
-            if (semver.subset(active_laravel_versions[i], compatibleVersion)) {
-                highestMaxVersion = active_laravel_versions[i]
+            if (semver.subset(sorted_active_laravel_versions[i], compatibleVersion)) {
+                highestMaxVersion = sorted_active_laravel_versions[i]
                 break
             }
         }
@@ -99,9 +103,9 @@ const repositoryName = computed(() => {
 // Determines whether to show a tooltip for long repository names
 const showRepositoryNameTooltip = computed(() => repositoryName.value.length > 34 || window.innerWidth < 370)
 
-// Check whether laravel_dependency_versions includes the versions from the list active_laravel_versions
+// Check whether laravel_dependency_versions includes the versions from the list sorted_active_laravel_versions
 const isCompatible = computed(() => {
-    return active_laravel_versions.some((activeVersion) => {
+    return sorted_active_laravel_versions.some((activeVersion) => {
         return $props.laravelPackage.laravel_dependency_versions.some((compatibleVersion) => {
             const convertedActiveVersion = semver.valid(semver.coerce(activeVersion)) as string
             return semver.satisfies(convertedActiveVersion, compatibleVersion)
@@ -364,7 +368,12 @@ watch(
                                     v-if="laravelPackage.laravel_dependency_versions.length"
                                     >
                                     <span>Versions: </span>
-                                    <span v-if="minimum_compatible_version !== maximum_compatible_version">
+                                    <span
+                                        v-if="minimum_compatible_version
+                                            && maximum_compatible_version
+                                            && minimum_compatible_version !== maximum_compatible_version
+                                        "
+                                        >
                                         from
                                         {{ minimum_compatible_version }}
                                         to
