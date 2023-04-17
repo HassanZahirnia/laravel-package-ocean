@@ -277,7 +277,7 @@ watch(
                     <div
                         class="flex items-center gap-2
                         transition duration-300
-                        group-hover:opacity-0 group-hover:translate-x-2
+                        group-hover:opacity-0 group-hover:translate-x-5
                         "
                         >
                         <div class="i-carbon:logo-github text-xl" />
@@ -294,7 +294,7 @@ watch(
                         class="absolute left-0 w-full truncate
                         transition duration-300
                         flex gap-2 items-center
-                        opacity-0 -translate-x-2
+                        opacity-0 -translate-x-5
                         group-hover:opacity-100 group-hover:translate-x-0
                         "
                         :class="{
