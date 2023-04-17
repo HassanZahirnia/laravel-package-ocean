@@ -13,7 +13,7 @@
   <a aria-label="Hassan Zahirnia" href="https://github.com/HassanZahirnia">
      Hassan Zahirnia
   </a>
-  (available for work)
+  ( <span style="display:inline-block;width:10px;height:10px;background:#2ac19d;border-radius:50%"></span> <span style="color:#2ac19d">Available for work</span> )
 </h4>
 
 ## Contributing

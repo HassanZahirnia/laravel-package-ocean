@@ -62,23 +62,23 @@ watch(
     () => route.query,
     (newQuery, oldQuery) => {
         // Update the search
-        if(newQuery.search !== oldQuery?.search)
+        if (newQuery.search !== oldQuery?.search)
             search.value = newQuery.search?.toString() || ''
 
         // Update the page
-        if(newQuery.page !== oldQuery?.page)
+        if (newQuery.page !== oldQuery?.page)
             page.value = Number(newQuery.page) || 1
 
         // Update the sort field
-        if(newQuery.sort !== oldQuery?.sort)
+        if (newQuery.sort !== oldQuery?.sort)
             sortField.value = newQuery.sort?.toString() as PackageSortFields || 'first_release_at'
 
         // If the selectedCategory is not included in the categories array, set it to an empty string
-        if(newQuery.category !== oldQuery?.category)
+        if (newQuery.category !== oldQuery?.category)
             selectedCategory.value = newQuery.category && categories.includes(newQuery.category as typeof categories[number]) ? newQuery.category?.toString() : ''
 
         // Only use route.query.official if it's value is either '0' or '1', if not set it to '0'
-        if(newQuery.official !== oldQuery?.official)
+        if (newQuery.official !== oldQuery?.official)
             showOfficialPackages.value = newQuery.official && ['0', '1'].includes(newQuery.official?.toString()) ? newQuery.official?.toString() as '0' | '1' : '0'
     },
     { immediate: true },
@@ -93,28 +93,28 @@ watch(
         results.value = laravelPackages
 
         // if newPage is changed, scroll to #scroll-to-reference element
-        if(newPage !== oldPage) {
+        if (newPage !== oldPage) {
             nextTick(() => {
                 // If device width is less than 640px (mobile), scroll to #scroll-to-reference element
-                if(window.innerWidth < 640)
+                if (window.innerWidth < 640)
                     document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'smooth' })
             })
         }
 
         // If newSelectedCategory and oldSelectedCategory are not equal, set page to 1
-        if(newSelectedCategory !== oldSelectedCategory)
+        if (newSelectedCategory !== oldSelectedCategory)
             newPage = 1
 
         // If newShowOfficialPackages and oldShowOfficialPackages are not equal, set page to 1
-        if(newShowOfficialPackages !== oldShowOnlyOfficialPackages)
+        if (newShowOfficialPackages !== oldShowOnlyOfficialPackages)
             newPage = 1
 
         // Show only official packages if showOfficialPackages is true
-        if(newShowOfficialPackages === '1')
+        if (newShowOfficialPackages === '1')
             results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
 
         // Selected Category
-        if(newSelectedCategory)
+        if (newSelectedCategory)
             results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
 
         // Sort packages
@@ -138,7 +138,7 @@ watch(
         // If search is not empty, search packages using miniSearch,
         // If not return all packages
         if (search.value){
-            if(newSearch !== oldSearch)
+            if (newSearch !== oldSearch)
                 newPage = 1
 
             const searchResult = miniSearch.search(search.value)
@@ -154,7 +154,7 @@ watch(
         resultsPaginated.value = results.value.slice(start, end)
 
         // Update the route
-        if(
+        if (
             results.value.length === laravelPackages.length
             && newPage === 1 && newSearch === ''
             && newSortField === 'first_release_at'
@@ -167,7 +167,7 @@ watch(
                 query: {},
             })
         }
-        else{
+        else {
             // Push the new query
             navigateTo({
                 path: '/',
