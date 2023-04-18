@@ -113,14 +113,6 @@ const isCompatible = computed(() => {
     })
 })
 
-// Compatiblity and versions list message
-const compatiblity_message = computed(() => {
-    if (isCompatible.value)
-        return 'Compatible with maintained versions of Laravel.'
-    else
-        return 'Not compatible with maintained versions of Laravel.'
-})
-
 // Star count is over 1k
 const isStarCountOver1k = computed(() => formatStars($props.laravelPackage.stars).includes('k'))
 

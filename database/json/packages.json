@@ -6929,5 +6929,24 @@
         "package_type": "laravel-package",
         "updated_at": "2023-04-16T21:57:21.082Z",
         "created_at": "2023-04-16T21:57:21.082Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Validate",
+        "description": "Pre-built validation rules with support for a dozen of different languages.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/milwad-dev/laravel-validate",
+        "author": "milwad",
+        "composer": "milwad/laravel-validate",
+        "npm": null,
+        "stars": 75,
+        "keywords": [],
+        "first_release_at": "2022-07-16T18:48:08+00:00",
+        "latest_release_at": "2023-02-23T18:01:28+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "updated_at": "2023-04-18T14:53:06.258Z",
+        "created_at": "2023-04-18T14:53:06.258Z"
     }
 ]
