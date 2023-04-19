@@ -1,6 +1,7 @@
 import inquirer from 'inquirer'
 import { writeActiveLaravelVersion } from './utils/laravel'
 import { runComposerChecks, runGithubChecks, validateJson } from './utils/health'
+import { updateAllGithubStars } from './utils/github'
 import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
@@ -36,6 +37,9 @@ export const showMainMenu = function(){
                     break
                 case 'Package: Search':
                     showPackageSearch()
+                    break
+                case 'Package: Update Github Stars':
+                    updateAllGithubStars()
                     break
                 case 'Laravel: Update Active Versions':
                     writeActiveLaravelVersion()

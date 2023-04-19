@@ -14,7 +14,6 @@ import {
 } from '../utils/composer'
 import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../utils/npm'
 import type { NpmData } from '../utils/npm'
-import { extract_github_stars } from '../utils/github'
 import { log } from '../print'
 import { github_is_healthy, is_compatible_with_active_laravel_versions } from '../utils/health'
 import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
@@ -267,7 +266,7 @@ export const addPackage = async function(){
                                 Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
                             },
                         })
-                    newPackage.stars = extract_github_stars(githubData)
+                    newPackage.stars = githubData.stargazers_count
                 }
                 catch (error) {
                     if (isAxiosError(error)) {
