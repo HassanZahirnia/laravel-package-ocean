@@ -4,7 +4,6 @@ import semver from 'semver'
 import ora from 'ora'
 import axios, { isAxiosError } from 'axios'
 import dotenv from 'dotenv'
-import type { packagistData } from '../utils/composer'
 import { readLaravelDatabase, readPackagesDatabase } from '../database'
 import { laravelPackageArraySchema } from '../validations/package.validation'
 import { clearScreen, log } from '../print'
@@ -180,12 +179,14 @@ export const is_compatible_with_active_laravel_versions = (laravelPackage: Packa
     return active_versions.some((activeVersion) => {
         return laravelPackage.laravel_dependency_versions.some((compatibleVersion) => {
             const convertedActiveVersion = semver.valid(semver.coerce(activeVersion)) as string
+            const majorActiveVersion = semver.major(convertedActiveVersion)
             return semver.satisfies(convertedActiveVersion, compatibleVersion)
+                || semver.satisfies(`${majorActiveVersion}.0.0`, compatibleVersion)
         })
     })
 }
 
-export const composer_is_healthy = (laravelPackage: Package, packagistData?: packagistData): string | true => {
+export const composer_is_healthy = (laravelPackage: Package): string | true => {
     if (!is_compatible_with_active_laravel_versions(laravelPackage))
         return `${laravelPackage.composer} not compatible with active Laravel versions!!`
 
@@ -211,9 +212,6 @@ export const runComposerChecks = async function() {
 
         try {
             spinner.start(`${laravelPackage.name}`)
-
-            // const { data: packagistData }: { data: packagistData }
-            //     = await axios.get(`https://packagist.org/packages/${laravelPackage.composer}.json`)
 
             const health = composer_is_healthy(laravelPackage)
 

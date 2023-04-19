@@ -59,8 +59,11 @@ const maximum_compatible_version = computed(() => {
     // and among those versions, find the highest one
     for (let i = sorted_active_laravel_versions.length - 1; i >= 0; i--) {
         for (const compatibleVersion of $props.laravelPackage.laravel_dependency_versions) {
-            if (semver.subset(sorted_active_laravel_versions[i], compatibleVersion)) {
-                highestMaxVersion = sorted_active_laravel_versions[i]
+            const activeVersion = sorted_active_laravel_versions[i]
+            const majorActiveVersion = semver.major(activeVersion)
+            if (semver.subset(activeVersion, compatibleVersion)
+                || semver.satisfies(`${majorActiveVersion}.0.0`, compatibleVersion)) {
+                highestMaxVersion = activeVersion
                 break
             }
         }
@@ -108,7 +111,9 @@ const isCompatible = computed(() => {
     return sorted_active_laravel_versions.some((activeVersion) => {
         return $props.laravelPackage.laravel_dependency_versions.some((compatibleVersion) => {
             const convertedActiveVersion = semver.valid(semver.coerce(activeVersion)) as string
+            const majorActiveVersion = semver.major(convertedActiveVersion)
             return semver.satisfies(convertedActiveVersion, compatibleVersion)
+                || semver.satisfies(`${majorActiveVersion}.0.0`, compatibleVersion)
         })
     })
 })
