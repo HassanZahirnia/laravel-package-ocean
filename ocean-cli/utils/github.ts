@@ -38,7 +38,7 @@ export const updateAllGithubStars = async function(){
             const validationResult = laravelPackageSchema.safeParse(laravelPackage)
 
             if (!validationResult.success) {
-                log(spinner.fail('Validation failed!'))
+                spinner.fail('Validation failed!')
                 log(validationResult.error.errors.map(error => error.message).join('\n'))
             }
             else {
@@ -50,7 +50,7 @@ export const updateAllGithubStars = async function(){
         catch (error) {
             if (isAxiosError(error)) {
                 if (error.response && error.response.status === 404){
-                    const message = `\n ${laravelPackage.github} Does not exist anymore!`
+                    const message = `\n ${laravelPackage.github} does not exist anymore!`
                     notFoundPackages.push(message)
                     log(chalk.bgRed(message))
                 }

@@ -950,7 +950,7 @@
         "first_release_at": "2020-04-28T19:14:44+00:00",
         "latest_release_at": "2023-03-31T12:33:27+00:00",
         "laravel_dependency_versions": [
-            "^9.0||^10.0"
+            "^8.6||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
         "updated_at": "2023-04-06T20:55:03.505Z",
@@ -6342,7 +6342,9 @@
         "keywords": [],
         "first_release_at": "2016-12-06T11:21:43+00:00",
         "latest_release_at": "2023-02-14T16:46:30+00:00",
-        "laravel_dependency_versions": [],
+        "laravel_dependency_versions": [
+            "^8.62.0"
+        ],
         "package_type": "php-package",
         "updated_at": "2023-04-07T00:22:26.323Z",
         "created_at": "2023-04-09T13:58:48.985Z"
@@ -6767,7 +6769,9 @@
         "keywords": [],
         "first_release_at": "2014-05-01T19:47:27+00:00",
         "latest_release_at": "2023-02-01T08:46:29+00:00",
-        "laravel_dependency_versions": [],
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.67||^9.0||^10.0"
+        ],
         "package_type": "php-package",
         "updated_at": "2023-04-13T11:15:15.210Z",
         "created_at": "2023-04-13T11:15:15.210Z"

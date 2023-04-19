@@ -116,11 +116,12 @@ export const runGithubChecks = async function() {
         try {
             spinner.start(`${laravelPackage.name}`)
 
-            const { data: githubData }: { data: GithubData } = await axios.get(`https://api.github.com/repos/${laravelPackage.github.substring(19)}`, {
-                headers: {
-                    Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-                },
-            })
+            const { data: githubData }: { data: GithubData }
+                = await axios.get(`https://api.github.com/repos/${laravelPackage.github.substring(19)}`, {
+                    headers: {
+                        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+                    },
+                })
 
             const health = github_is_healthy(githubData)
 

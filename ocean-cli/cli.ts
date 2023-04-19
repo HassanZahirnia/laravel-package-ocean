@@ -2,6 +2,7 @@ import inquirer from 'inquirer'
 import { writeActiveLaravelVersion } from './utils/laravel'
 import { runComposerChecks, runGithubChecks, validateJson } from './utils/health'
 import { updateAllGithubStars } from './utils/github'
+import { updateAllCompatibleVersions } from './utils/composer'
 import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
@@ -37,6 +38,9 @@ export const showMainMenu = function(){
                     break
                 case 'Package: Search':
                     showPackageSearch()
+                    break
+                case 'Package: Update Compatible Versions':
+                    updateAllCompatibleVersions()
                     break
                 case 'Package: Update Github Stars':
                     updateAllGithubStars()
