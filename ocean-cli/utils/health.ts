@@ -4,6 +4,7 @@ import semver from 'semver'
 import ora from 'ora'
 import axios, { isAxiosError } from 'axios'
 import dotenv from 'dotenv'
+import type { packagistData } from '../utils/composer'
 import { readLaravelDatabase, readPackagesDatabase } from '../database'
 import { laravelPackageArraySchema } from '../validations/package.validation'
 import { clearScreen, log } from '../print'
@@ -182,4 +183,78 @@ export const is_compatible_with_active_laravel_versions = (laravelPackage: Packa
             return semver.satisfies(convertedActiveVersion, compatibleVersion)
         })
     })
+}
+
+export const composer_is_healthy = (laravelPackage: Package, packagistData?: packagistData): string | true => {
+    if (!is_compatible_with_active_laravel_versions(laravelPackage))
+        return `${laravelPackage.composer} not compatible with active Laravel versions!!`
+
+    return true
+}
+
+export const runComposerChecks = async function() {
+    clearScreen()
+
+    const laravelPackages = readPackagesDatabase()
+        .filter(laravelPackage => laravelPackage.composer && laravelPackage.laravel_dependency_versions.length)
+
+    const totalPackages = laravelPackages.length
+    let healthyPackages = 0
+    const unhealthyPackages: string[] = []
+    const notFoundPackages: string[] = []
+    const unknownErrors: string[] = []
+
+    const spinner = ora('Starting health check').start()
+
+    for (const laravelPackage of laravelPackages) {
+        spinner.prefixText = `${laravelPackages.indexOf(laravelPackage) + 1}/${totalPackages}`
+
+        try {
+            spinner.start(`${laravelPackage.name}`)
+
+            // const { data: packagistData }: { data: packagistData }
+            //     = await axios.get(`https://packagist.org/packages/${laravelPackage.composer}.json`)
+
+            const health = composer_is_healthy(laravelPackage)
+
+            if (typeof health === 'string'){
+                spinner.fail(health)
+                unhealthyPackages.push(health)
+            }
+            else {
+                spinner.succeed()
+                healthyPackages++
+            }
+        }
+        catch (error) {
+            if (isAxiosError(error)) {
+                if (error.response && error.response.status === 404){
+                    const message = `\n ${laravelPackage.composer} Does not exist anymore!`
+                    notFoundPackages.push(message)
+                    log(chalk.bgRed(message))
+                }
+            }
+            else {
+                unknownErrors.push(`\n ${laravelPackage.composer} Unknown error!`)
+                log(chalk.bgRed(error))
+            }
+        }
+    }
+
+    log(`
+Finished checking composer health of ${chalk.cyan(totalPackages)} packages!
+
+  Healthy: ${chalk.green(healthyPackages)}     Un-healthy: ${chalk.magenta(unhealthyPackages.length)}
+    `)
+
+    if (notFoundPackages.length || unknownErrors.length) {
+        log(`
+  Not Found: ${chalk.red(notFoundPackages.length)}    Unknown Errors: ${chalk.red(unknownErrors.length)}
+        `)
+    }
+
+    if (unhealthyPackages.length){
+        log(chalk.magenta('Un-healthy packages: \n'))
+        unhealthyPackages.forEach(unhealthyPackage => log(unhealthyPackage, '\n'))
+    }
 }

@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 import { writeActiveLaravelVersion } from './utils/laravel'
-import { runGithubChecks, validateJson } from './utils/health'
+import { runComposerChecks, runGithubChecks, validateJson } from './utils/health'
 import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
@@ -48,6 +48,9 @@ export const showMainMenu = function(){
                     break
                 case 'Health: Check Github':
                     runGithubChecks()
+                    break
+                case 'Health: Check Composer':
+                    runComposerChecks()
                     break
                 case 'Exit':
                     process.exit(0)

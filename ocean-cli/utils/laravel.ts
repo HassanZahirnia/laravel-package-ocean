@@ -8,7 +8,7 @@ import { clearScreen, log } from '../print'
 export const fetch_active_laravel_versions = async() => {
     const { data: laravelVersions } = await axios.get('https://laravelversions.com/api/versions')
     const activeVersions = laravelVersions.data.filter((version: { status: string }) => version.status === 'active')
-    const activeVersionNumbers = activeVersions.map((version: { major: { toString: () => unknown } }) => version.major.toString())
+    const activeVersionNumbers = activeVersions.map((version: { latest: { toString: () => unknown } }) => version.latest.toString())
 
     return activeVersionNumbers
 }
