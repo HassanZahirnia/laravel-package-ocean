@@ -137,8 +137,8 @@ devDependencies:
     specifier: ^0.5.7
     version: 0.5.7
   nuxt-simple-sitemap:
-    specifier: ^2.4.18
-    version: 2.4.18
+    specifier: ^2.4.22
+    version: 2.4.22
   ora:
     specifier: ^6.3.0
     version: 6.3.0
@@ -5546,8 +5546,8 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-simple-sitemap@2.4.18:
-    resolution: {integrity: sha512-DBWl2By3JYzk1IVX+fy2TlVmUSANWg/owd/PSRd1ule46ULSNICm/1c8c8ZCXbDRDmQIOsxxN0PguDAa/6BE9w==}
+  /nuxt-simple-sitemap@2.4.22:
+    resolution: {integrity: sha512-tf56ADZeZvUMMNahzRi4/bTD+pTsRIND2fhViGo21T9W05DZvebNBTaoeIOqdH3TwEsEht4XaEOXYqGuvKHKOg==}
     dependencies:
       '@nuxt/kit': 3.4.3
       chalk: 5.2.0
