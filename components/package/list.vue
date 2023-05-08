@@ -70,10 +70,6 @@ watch(
         if (newQuery.page !== oldQuery?.page)
             page.value = Number(newQuery.page) || 1
 
-        // Update the sort field
-        if (newQuery.sort !== oldQuery?.sort)
-            sortField.value = newQuery.sort?.toString() as PackageSortFields || 'first_release_at'
-
         // If the selectedCategory is not included in the categories array, set it to an empty string
         if (newQuery.category !== oldQuery?.category)
             selectedCategory.value = newQuery.category && categories.includes(newQuery.category as typeof categories[number]) ? newQuery.category?.toString() : ''
@@ -161,7 +157,6 @@ watch(
         if (
             results.value.length === laravelPackages.length
             && newPage === 1 && newSearch === ''
-            && newSortField === sortField.value
             && newSelectedCategory === ''
             && newShowOfficialPackages === '0'
         ){
@@ -179,7 +174,6 @@ watch(
                 query: {
                     ...(newSearch && { search: newSearch }),
                     ...(newPage && { page: newPage }),
-                    ...(newSortField && { sort: newSortField }),
                     ...(newSelectedCategory && { category: newSelectedCategory }),
                     ...(newShowOfficialPackages && { official: newShowOfficialPackages }),
                 },
