@@ -161,7 +161,7 @@ watch(
         if (
             results.value.length === laravelPackages.length
             && newPage === 1 && newSearch === ''
-            && newSortField === 'first_release_at'
+            && newSortField === sortField.value
             && newSelectedCategory === ''
             && newShowOfficialPackages === '0'
         ){
