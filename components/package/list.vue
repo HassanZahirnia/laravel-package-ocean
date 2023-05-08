@@ -6,6 +6,7 @@ import type { PackageSortFields } from '@/types/package'
 import { categories, categoriesWithPackagesCount } from '@/database/categories'
 import type { selectboxItem } from '@/types/selectbox'
 import type { CategoryWithPackagesCount } from '@/types/category'
+import { useStorage } from '@vueuse/core'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
@@ -44,7 +45,7 @@ const search = useSearch()
 const selectedCategory = useSelectedCategory()
 
 // Sort field
-const sortField = ref<PackageSortFields>('first_release_at')
+const sortField = useStorage<PackageSortFields>('sortField', 'first_release_at')
 
 // Only show official packages
 const showOfficialPackages = useShowOfficialPackages()
@@ -124,6 +125,9 @@ watch(
                 sortOrder = 'desc'
                 break
             case 'latest_release_at':
+                sortOrder = 'desc'
+                break
+            case 'created_at':
                 sortOrder = 'desc'
                 break
             case 'stars':
@@ -218,17 +222,22 @@ const orderItems: selectboxItem<PackageSortFields>[] = [
     {
         name: 'Newest',
         value: 'first_release_at',
-        detail: 'Freshly released',
-    },
-    {
-        name: 'Recently Updated',
-        value: 'latest_release_at',
-        detail: 'Recently updated',
+        detail: 'Freshly Released',
     },
     {
         name: 'Most Stars',
         value: 'stars',
         detail: 'Popular',
+    },
+    {
+        name: 'Recently Added',
+        value: 'created_at',
+        detail: 'Latest Additions',
+    },
+    {
+        name: 'Latest Release',
+        value: 'latest_release_at',
+        detail: 'Recent Versions',
     },
 ]
 

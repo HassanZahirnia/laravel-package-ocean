@@ -55,7 +55,7 @@ export type Package = {
     created_at: string | null
 }
 
-export type PackageSortFields = 'first_release_at' | 'latest_release_at' | 'stars'
+export type PackageSortFields = 'first_release_at' | 'latest_release_at' | 'stars' | 'created_at'
 
 export type PackageType =
     'laravel-package'
