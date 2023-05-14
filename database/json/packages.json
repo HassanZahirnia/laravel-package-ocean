@@ -950,7 +950,7 @@
         "first_release_at": "2020-04-28T19:14:44+00:00",
         "latest_release_at": "2023-03-31T12:33:27+00:00",
         "laravel_dependency_versions": [
-            "^9.0||^10.0"
+            "^8.6||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
         "updated_at": "2023-04-06T20:55:03.505Z",
