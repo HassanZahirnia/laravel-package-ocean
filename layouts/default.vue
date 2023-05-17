@@ -15,7 +15,7 @@ import '@fontsource/poppins/latin.css'
         <nav-bar />
         <slot />
         <ClientOnly>
-            <footer class="mt-40">
+            <footer class="mt-40 relative z-10">
                 <div
                     class="text-center py-20 sm:py-10
                 text-sm text-[#545D82]
