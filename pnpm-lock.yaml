@@ -128,8 +128,8 @@ devDependencies:
     specifier: ^4.17.21
     version: 4.17.21
   minisearch:
-    specifier: ^6.1.0
-    version: 6.1.0
+    specifier: ^6.0.1
+    version: 6.0.1
   nuxt:
     specifier: ^3.4.3
     version: 3.4.3(@types/node@20.2.3)(eslint@8.41.0)(stylus@0.59.0)(typescript@5.0.4)
@@ -4955,8 +4955,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /minisearch@6.1.0:
-    resolution: {integrity: sha512-PNxA/X8pWk+TiqPbsoIYH0GQ5Di7m6326/lwU/S4mlo4wGQddIcf/V//1f9TB0V4j59b57b+HZxt8h3iMROGvg==}
+  /minisearch@6.0.1:
+    resolution: {integrity: sha512-Ly1w0nHKnlhAAh6/BF/+9NgzXfoJxaJ8nhopFhQ3NcvFJrFIL+iCg9gw9e9UMBD+XIsp/RyznJ/o5UIe5Kw+kg==}
     dev: true
 
   /minizlib@2.1.2:

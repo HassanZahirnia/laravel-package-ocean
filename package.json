@@ -51,7 +51,7 @@
         "inquirer-autocomplete-prompt": "^3.0.0",
         "jsonc-eslint-parser": "^2.3.0",
         "lodash": "^4.17.21",
-        "minisearch": "^6.1.0",
+        "minisearch": "^6.0.1",
         "nuxt": "^3.4.3",
         "nuxt-gtag": "^0.5.7",
         "nuxt-simple-sitemap": "^2.5.0",
