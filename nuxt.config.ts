@@ -73,7 +73,10 @@ export default defineNuxtConfig({
             }),
         ],
     },
-    sourcemap: false,
+    sourcemap: {
+        server: true,
+        client: false,
+    },
     colorMode: {
         classSuffix: '',
     },
