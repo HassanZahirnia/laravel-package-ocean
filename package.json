@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "build": "nuxt build",
+        "build": "nuxt build --max_old_space_size=4096",
         "dev": "nuxt dev",
         "generate": "nuxt generate",
         "preview": "nuxt preview",
