@@ -9,7 +9,7 @@
         "ocean": "tsx ./ocean-cli/cli.ts"
     },
     "devDependencies": {
-        "@fontsource/poppins": "^4.5.10",
+        "@fontsource/poppins": "^5.0.0",
         "@formkit/auto-animate": "1.0.0-beta.6",
         "@headlessui/vue": "^1.7.13",
         "@iconify-json/bi": "^1.1.16",
@@ -25,7 +25,7 @@
         "@types/inquirer": "^9.0.3",
         "@types/inquirer-autocomplete-prompt": "^3.0.0",
         "@types/lodash": "^4.14.194",
-        "@types/node": "^18.16.14",
+        "@types/node": "^20.2.3",
         "@types/ua-parser-js": "^0.7.36",
         "@typescript-eslint/eslint-plugin": "^5.59.6",
         "@typescript-eslint/parser": "^5.59.6",
