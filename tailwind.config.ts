@@ -12,7 +12,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                poppins: '\'poppins\', Verdana, sans-serif',
+                poppins: '\'Poppins\', Verdana, sans-serif',
             },
         },
     },
