@@ -7050,5 +7050,81 @@
         ],
         "updated_at": "2023-05-15T09:16:33.470Z",
         "created_at": "2023-05-15T09:16:33.470Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Str Acronym",
+        "description": "A macro for generating acronyms from strings using the Str helper and supports the Stringable class.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/koenhendriks/laravel-str-acronym",
+        "author": "koenhendriks",
+        "composer": "koenhendriks/laravel-str-acronym",
+        "npm": null,
+        "stars": 28,
+        "keywords": [],
+        "first_release_at": "2023-03-30T13:05:47+00:00",
+        "latest_release_at": "2023-04-09T18:38:20+00:00",
+        "laravel_dependency_versions": [
+            "^10.5"
+        ],
+        "updated_at": "2023-05-22T11:13:26.881Z",
+        "created_at": "2023-05-22T11:13:26.881Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "LdapRecord",
+        "description": "A fully-featured Active Record ORM that makes working with LDAP directories a breeze.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/DirectoryTree/LdapRecord",
+        "author": "directorytree",
+        "composer": "directorytree/ldaprecord",
+        "npm": null,
+        "stars": 394,
+        "keywords": [],
+        "first_release_at": "2019-04-27T18:41:26+00:00",
+        "latest_release_at": "2023-05-01T00:48:01+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "updated_at": "2023-05-22T11:14:47.672Z",
+        "created_at": "2023-05-22T11:14:47.672Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Recurring Models",
+        "description": "Recurring functionality like daily, weekly, or every n days recurrence, or more complex patterns.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/mohammedmanssour/laravel-recurring-models",
+        "author": "mohammedmanssour",
+        "composer": "mohammedmanssour/laravel-recurring-models",
+        "npm": null,
+        "stars": 131,
+        "keywords": [],
+        "first_release_at": "2023-04-24T12:12:09+00:00",
+        "latest_release_at": "2023-05-13T10:25:41+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "updated_at": "2023-05-22T11:18:48.378Z",
+        "created_at": "2023-05-22T11:18:48.378Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Task Runner",
+        "description": "Write Shell scripts like Blade Components and run them locally or on a remote server.",
+        "category": "Dev Ops",
+        "github": "https://github.com/protonemedia/laravel-task-runner",
+        "author": "protonemedia",
+        "composer": "protonemedia/laravel-task-runner",
+        "npm": null,
+        "stars": 80,
+        "keywords": [],
+        "first_release_at": "2023-05-01T06:34:41+00:00",
+        "latest_release_at": "2023-05-02T08:09:15+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "updated_at": "2023-05-22T11:24:49.186Z",
+        "created_at": "2023-05-22T11:24:49.186Z"
     }
 ]
