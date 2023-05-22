@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 devDependencies:
   '@fontsource/poppins':
-    specifier: ^4.5.10
-    version: 4.5.10
+    specifier: ^5.0.0
+    version: 5.0.0
   '@formkit/auto-animate':
     specifier: 1.0.0-beta.6
     version: 1.0.0-beta.6
@@ -774,8 +774,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/poppins@4.5.10:
-    resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
+  /@fontsource/poppins@5.0.0:
+    resolution: {integrity: sha512-YdJlR5Q/XXvp1rd0668YtzBM/QQmR/1T/oMyatcn648wkLiAt4FOhi6CT1xxo6PeucqX/+w8gAhP5XvToeMg0Q==}
     dev: true
 
   /@formkit/auto-animate@1.0.0-beta.6:

@@ -9,7 +9,7 @@
         "ocean": "tsx ./ocean-cli/cli.ts"
     },
     "devDependencies": {
-        "@fontsource/poppins": "^4.5.10",
+        "@fontsource/poppins": "^5.0.0",
         "@formkit/auto-animate": "1.0.0-beta.6",
         "@headlessui/vue": "^1.7.13",
         "@iconify-json/bi": "^1.1.16",
