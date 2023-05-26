@@ -7,6 +7,14 @@ import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
 import { showPackageSearch } from '~/ocean-cli/package/search'
 import { addPackage } from '~/ocean-cli/package/add'
 
+const updateAll = async function() {
+    clearScreen()
+
+    await Promise.resolve(writeActiveLaravelVersion())
+    await Promise.resolve(updateAllCompatibleVersions())
+    await Promise.resolve(updateAllGithubStars())
+}
+
 export const showMainMenu = function(){
     inquirer
         .prompt([
@@ -40,9 +48,7 @@ export const showMainMenu = function(){
                     showPackageSearch()
                     break
                 case 'Package: Update All':
-                    writeActiveLaravelVersion()
-                    updateAllCompatibleVersions()
-                    updateAllGithubStars()
+                    updateAll()
                     break
                 case 'Package: Update Compatible Versions':
                     updateAllCompatibleVersions()

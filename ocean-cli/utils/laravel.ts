@@ -13,7 +13,7 @@ export const fetch_active_laravel_versions = async() => {
     return activeVersionNumbers
 }
 
-export const writeActiveLaravelVersion = (
+export const writeActiveLaravelVersion = async(
     { noMenu = false } = {},
 ) => {
     fetch_active_laravel_versions().then((activeVersions) => {
