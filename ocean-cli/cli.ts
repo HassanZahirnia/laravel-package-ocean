@@ -39,6 +39,11 @@ export const showMainMenu = function(){
                 case 'Package: Search':
                     showPackageSearch()
                     break
+                case 'Package: Update All':
+                    writeActiveLaravelVersion()
+                    updateAllCompatibleVersions()
+                    updateAllGithubStars()
+                    break
                 case 'Package: Update Compatible Versions':
                     updateAllCompatibleVersions()
                     break
