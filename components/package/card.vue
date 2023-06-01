@@ -246,9 +246,9 @@ watch(
                         <ui-tooltip
                             v-if="laravelPackage.paid_integration"
                             content="This package integrates with a paid service."
-                            theme="indigo"
+                            theme="yellow"
                             >
-                            <div class="i-svg-coin text-[1.2rem]" />
+                            <div class="i-bx:bxs-dollar-circle text-[1.3rem] text-yellow-500" />
                         </ui-tooltip>
                         <!-- Name -->
                         <div

@@ -6,7 +6,7 @@ import 'tippy.js/animations/shift-away.css'
 interface Props {
     content: string
     placement?: 'top' | 'bottom' | 'left' | 'right'
-    theme?: 'slate' | 'amber' | 'emerald' | 'indigo'
+    theme?: 'slate' | 'amber' | 'emerald' | 'indigo' | 'yellow'
     size?: 'small' | 'medium'
     condition?: boolean
 }
@@ -80,6 +80,22 @@ watch(() => $props.content, () => {
 }
 .tippy-box[data-theme~='amber'][data-placement^='right'] > .tippy-arrow::before{
     @apply border-r-amber-500 dark:border-r-amber-600;
+}
+
+.tippy-box[data-theme~='yellow']{
+    @apply bg-[#f5db00] text-black rounded-full py-1 px-2 shadow-lg shadow-black/5 text-xs font-poppins text-center;
+}
+.tippy-box[data-theme~='yellow'][data-placement^='top'] > .tippy-arrow::before{
+    @apply border-t-[#f5db00] dark:border-t-[#f5db00];
+}
+.tippy-box[data-theme~='yellow'][data-placement^='bottom'] > .tippy-arrow::before{
+    @apply border-b-[#f5db00] dark:border-b-[#f5db00];
+}
+.tippy-box[data-theme~='yellow'][data-placement^='left'] > .tippy-arrow::before{
+    @apply border-l-[#f5db00] dark:border-l-[#f5db00];
+}
+.tippy-box[data-theme~='yellow'][data-placement^='right'] > .tippy-arrow::before{
+    @apply border-r-[#f5db00] dark:border-r-[#f5db00];
 }
 
 .tippy-box[data-theme~='emerald']{
