@@ -103,9 +103,6 @@ const repositoryName = computed(() => {
     return `${author}/${repo}`
 })
 
-// Determines whether to show a tooltip for long repository names
-const showRepositoryNameTooltip = computed(() => repositoryName.value.length > 34 || window.innerWidth < 370)
-
 // Check whether laravel_dependency_versions includes the versions from the list sorted_active_laravel_versions
 const isCompatible = computed(() => {
     return sorted_active_laravel_versions.some((activeVersion) => {
@@ -246,6 +243,13 @@ watch(
                 </div>
                 <div class="flex-1 pt-6">
                     <div class="flex gap-2 items-center">
+                        <ui-tooltip
+                            v-if="laravelPackage.paid_integration"
+                            content="This package integrates with a paid service."
+                            theme="indigo"
+                            >
+                            <div class="i-svg-coin text-[1.2rem]" />
+                        </ui-tooltip>
                         <!-- Name -->
                         <div
                             class="font-semibold
@@ -284,13 +288,9 @@ watch(
                         "
                         >
                         <div class="i-carbon:logo-github text-xl" />
-                        <ui-tooltip
-                            class="text-xs font-medium truncate"
-                            :content="repositoryName"
-                            :condition="showRepositoryNameTooltip"
-                            >
+                        <div class="text-xs font-medium truncate">
                             {{ repositoryName }}
-                        </ui-tooltip>
+                        </div>
                     </div>
                     <!-- Package type -->
                     <div

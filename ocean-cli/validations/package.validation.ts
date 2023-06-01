@@ -182,6 +182,10 @@ export const laravel_dependency_versions = z
         message: 'Must be an array of unique strings',
     })
 
+// Paid Integration
+export const paid_integration = z
+    .boolean()
+
 // Created At
 export const created_at = z.coerce
     .date()
@@ -205,6 +209,7 @@ export const laravelPackageSchema = z.object({
     first_release_at,
     latest_release_at,
     laravel_dependency_versions,
+    paid_integration,
     created_at,
     updated_at,
 })

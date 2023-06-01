@@ -15,6 +15,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:53:51.161Z",
         "created_at": "2023-04-09T13:58:47.687Z"
     },
@@ -36,6 +37,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:53:53.163Z",
         "created_at": "2023-04-09T13:58:47.695Z"
     },
@@ -58,6 +60,7 @@
             "^10.0 || ^9.0 || >=8.40.0 || ^7.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:53:54.841Z",
         "created_at": "2023-04-09T13:58:47.702Z"
     },
@@ -77,6 +80,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:53:58.537Z",
         "created_at": "2023-04-09T13:58:47.713Z"
     },
@@ -96,6 +100,7 @@
             "^8.75 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:12.636Z",
         "created_at": "2023-04-09T13:58:47.716Z"
     },
@@ -115,6 +120,7 @@
             "^8.75 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:14.391Z",
         "created_at": "2023-04-09T13:58:47.723Z"
     },
@@ -134,6 +140,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:00.282Z",
         "created_at": "2023-04-09T13:58:47.726Z"
     },
@@ -153,6 +160,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:02.152Z",
         "created_at": "2023-04-09T13:58:47.733Z"
     },
@@ -175,6 +183,7 @@
             "^9.46.0||^10.9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:03.939Z",
         "created_at": "2023-04-09T13:58:47.738Z"
     },
@@ -194,6 +203,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:18.010Z",
         "created_at": "2023-04-09T13:58:47.742Z"
     },
@@ -211,6 +221,7 @@
         "latest_release_at": "2023-03-08T08:04:02+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:16.001Z",
         "created_at": "2023-04-09T13:58:47.746Z"
     },
@@ -235,6 +246,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:07.049Z",
         "created_at": "2023-04-09T13:58:47.753Z"
     },
@@ -254,6 +266,7 @@
             "^9.39"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:09.044Z",
         "created_at": "2023-04-09T13:58:47.756Z"
     },
@@ -273,6 +286,7 @@
             "^8.73||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:10.810Z",
         "created_at": "2023-04-09T13:58:47.761Z"
     },
@@ -294,6 +308,7 @@
             ">=5.7"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:12.724Z",
         "created_at": "2023-04-09T13:58:47.765Z"
     },
@@ -313,6 +328,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:14.526Z",
         "created_at": "2023-04-09T13:58:47.771Z"
     },
@@ -332,6 +348,7 @@
             "^9 || ^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T19:21:23.005Z",
         "created_at": "2023-04-09T13:58:47.774Z"
     },
@@ -355,6 +372,7 @@
             "^9.0||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:16.303Z",
         "created_at": "2023-04-09T13:58:47.777Z"
     },
@@ -377,6 +395,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:18.162Z",
         "created_at": "2023-04-09T13:58:47.781Z"
     },
@@ -401,6 +420,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:19.938Z",
         "created_at": "2023-04-09T13:58:47.785Z"
     },
@@ -420,6 +440,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:19.714Z",
         "created_at": "2023-04-09T13:58:47.788Z"
     },
@@ -439,6 +460,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:21.346Z",
         "created_at": "2023-04-09T13:58:47.792Z"
     },
@@ -461,6 +483,7 @@
             "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:21.724Z",
         "created_at": "2023-04-09T13:58:47.795Z"
     },
@@ -480,6 +503,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:23.666Z",
         "created_at": "2023-04-09T13:58:47.799Z"
     },
@@ -499,6 +523,7 @@
             "^8.82||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:25.457Z",
         "created_at": "2023-04-09T13:58:47.802Z"
     },
@@ -518,6 +543,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:27.391Z",
         "created_at": "2023-04-09T13:58:47.806Z"
     },
@@ -537,6 +563,7 @@
             "^9.21||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:29.269Z",
         "created_at": "2023-04-09T13:58:47.812Z"
     },
@@ -556,6 +583,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:30.985Z",
         "created_at": "2023-04-09T13:58:47.816Z"
     },
@@ -576,6 +604,7 @@
             "10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:32.775Z",
         "created_at": "2023-04-09T13:58:47.820Z"
     },
@@ -595,6 +624,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:34.667Z",
         "created_at": "2023-04-09T13:58:47.823Z"
     },
@@ -617,6 +647,7 @@
             "10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:36.471Z",
         "created_at": "2023-04-09T13:58:47.826Z"
     },
@@ -638,6 +669,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:38.438Z",
         "created_at": "2023-04-09T13:58:47.830Z"
     },
@@ -659,6 +691,7 @@
             "4.2.*||5.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:40.263Z",
         "created_at": "2023-04-09T13:58:47.834Z"
     },
@@ -682,6 +715,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:41.992Z",
         "created_at": "2023-04-09T13:58:47.837Z"
     },
@@ -705,6 +739,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:43.667Z",
         "created_at": "2023-04-09T13:58:47.842Z"
     },
@@ -729,6 +764,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:45.471Z",
         "created_at": "2023-04-09T13:58:47.846Z"
     },
@@ -755,6 +791,7 @@
             "^8.69 || ^9.27 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:47.168Z",
         "created_at": "2023-04-09T13:58:47.850Z"
     },
@@ -780,6 +817,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:49.188Z",
         "created_at": "2023-04-09T13:58:47.853Z"
     },
@@ -799,6 +837,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:51.095Z",
         "created_at": "2023-04-09T13:58:47.856Z"
     },
@@ -818,6 +857,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:53.408Z",
         "created_at": "2023-04-09T13:58:47.861Z"
     },
@@ -837,6 +877,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T00:50:09.433Z",
         "created_at": "2023-04-09T13:58:47.864Z"
     },
@@ -860,6 +901,7 @@
             "^10.0||^9.0||^8.69"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:55.735Z",
         "created_at": "2023-04-09T13:58:47.867Z"
     },
@@ -879,6 +921,7 @@
             "^5.4||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:57.391Z",
         "created_at": "2023-04-09T13:58:47.873Z"
     },
@@ -901,6 +944,7 @@
             "^5.5||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:54:59.201Z",
         "created_at": "2023-04-09T13:58:47.876Z"
     },
@@ -920,6 +964,7 @@
             "^8.64||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:01.428Z",
         "created_at": "2023-04-09T13:58:47.881Z"
     },
@@ -953,6 +998,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:03.505Z",
         "created_at": "2023-04-09T13:58:47.884Z"
     },
@@ -972,6 +1018,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:05.463Z",
         "created_at": "2023-04-09T13:58:47.887Z"
     },
@@ -994,6 +1041,7 @@
             ">=9"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:07.372Z",
         "created_at": "2023-04-09T13:58:47.892Z"
     },
@@ -1013,6 +1061,7 @@
             ">=7"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:09.097Z",
         "created_at": "2023-04-09T13:58:47.896Z"
     },
@@ -1032,6 +1081,7 @@
             ">=5.1.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:10.955Z",
         "created_at": "2023-04-09T13:58:47.900Z"
     },
@@ -1053,6 +1103,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:13.020Z",
         "created_at": "2023-04-09T13:58:47.903Z"
     },
@@ -1072,6 +1123,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:14.742Z",
         "created_at": "2023-04-09T13:58:47.906Z"
     },
@@ -1091,6 +1143,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:16.935Z",
         "created_at": "2023-04-09T13:58:47.913Z"
     },
@@ -1110,6 +1163,7 @@
             "^9.50.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:19.348Z",
         "created_at": "2023-04-09T13:58:47.916Z"
     },
@@ -1132,6 +1186,7 @@
             "^9||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:21.244Z",
         "created_at": "2023-04-09T13:58:47.921Z"
     },
@@ -1151,6 +1206,7 @@
             "^9 || ^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:22.918Z",
         "created_at": "2023-04-09T13:58:47.924Z"
     },
@@ -1170,6 +1226,7 @@
             "^7.30.6 || ^8.75 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:25.861Z",
         "created_at": "2023-04-09T13:58:47.927Z"
     },
@@ -1192,8 +1249,7 @@
             "autocompletion",
             "dialog",
             "modal",
-            "enzo",
-            "innocenzi"
+            "enzo innocenzi"
         ],
         "first_release_at": "2022-10-12T17:20:19+00:00",
         "latest_release_at": "2023-04-03T13:06:24+00:00",
@@ -1201,6 +1257,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:27.811Z",
         "created_at": "2023-04-09T13:58:47.931Z"
     },
@@ -1226,6 +1283,7 @@
             "^6.0||^7.0||^8.74||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:29.680Z",
         "created_at": "2023-04-09T13:58:47.934Z"
     },
@@ -1245,6 +1303,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:31.355Z",
         "created_at": "2023-04-09T13:58:47.938Z"
     },
@@ -1262,6 +1321,7 @@
         "latest_release_at": "2023-02-16T11:57:28+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T10:04:31.396Z",
         "created_at": "2023-04-09T13:58:47.941Z"
     },
@@ -1284,6 +1344,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:33.400Z",
         "created_at": "2023-04-09T13:58:47.945Z"
     },
@@ -1312,6 +1373,7 @@
             "^8.15 || 9.0 - 9.34 || ^9.36 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:35.200Z",
         "created_at": "2023-04-09T13:58:47.948Z"
     },
@@ -1331,6 +1393,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:36.796Z",
         "created_at": "2023-04-09T13:58:47.951Z"
     },
@@ -1353,6 +1416,7 @@
             "^9.41||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:38.652Z",
         "created_at": "2023-04-09T13:58:47.954Z"
     },
@@ -1374,6 +1438,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:40.909Z",
         "created_at": "2023-04-09T13:58:47.957Z"
     },
@@ -1396,6 +1461,7 @@
             "^9.30||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:42.760Z",
         "created_at": "2023-04-09T13:58:47.962Z"
     },
@@ -1415,6 +1481,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:44.568Z",
         "created_at": "2023-04-09T13:58:47.965Z"
     },
@@ -1434,6 +1501,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T01:10:26.496Z",
         "created_at": "2023-04-09T13:58:47.968Z"
     },
@@ -1455,6 +1523,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:46.423Z",
         "created_at": "2023-04-09T13:58:47.972Z"
     },
@@ -1474,6 +1543,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T01:10:38.317Z",
         "created_at": "2023-04-09T13:58:47.975Z"
     },
@@ -1493,6 +1563,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:48.131Z",
         "created_at": "2023-04-09T13:58:47.978Z"
     },
@@ -1512,6 +1583,7 @@
             "10.*||^9.6"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:50.044Z",
         "created_at": "2023-04-09T13:58:47.982Z"
     },
@@ -1531,6 +1603,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:52.328Z",
         "created_at": "2023-04-09T13:58:47.985Z"
     },
@@ -1550,6 +1623,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:23.196Z",
         "created_at": "2023-04-09T13:58:47.988Z"
     },
@@ -1569,6 +1643,7 @@
             ">=5.6 <11.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:54.098Z",
         "created_at": "2023-04-09T13:58:47.998Z"
     },
@@ -1591,6 +1666,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:55.783Z",
         "created_at": "2023-04-09T13:58:48.002Z"
     },
@@ -1611,6 +1687,7 @@
             "^9.37||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:58.053Z",
         "created_at": "2023-04-09T13:58:48.005Z"
     },
@@ -1630,6 +1707,7 @@
             "^5.8 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:55:59.830Z",
         "created_at": "2023-04-09T13:58:48.008Z"
     },
@@ -1655,6 +1733,7 @@
             "^9.28||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:01.633Z",
         "created_at": "2023-04-09T13:58:48.012Z"
     },
@@ -1674,6 +1753,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:03.769Z",
         "created_at": "2023-04-09T13:58:48.015Z"
     },
@@ -1693,6 +1773,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:05.512Z",
         "created_at": "2023-04-09T13:58:48.020Z"
     },
@@ -1712,6 +1793,7 @@
             "^9.0||^10.1.3"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:07.293Z",
         "created_at": "2023-04-09T13:58:48.023Z"
     },
@@ -1731,6 +1813,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:09.147Z",
         "created_at": "2023-04-09T13:58:48.026Z"
     },
@@ -1750,6 +1833,7 @@
             "^8.0 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:10.869Z",
         "created_at": "2023-04-09T13:58:48.030Z"
     },
@@ -1771,6 +1855,7 @@
             "^8.37||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:12.666Z",
         "created_at": "2023-04-09T13:58:48.034Z"
     },
@@ -1790,6 +1875,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:24.907Z",
         "created_at": "2023-04-09T13:58:48.038Z"
     },
@@ -1809,6 +1895,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:14.425Z",
         "created_at": "2023-04-09T13:58:48.043Z"
     },
@@ -1828,6 +1915,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T01:10:35.509Z",
         "created_at": "2023-04-09T13:58:48.046Z"
     },
@@ -1847,6 +1935,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:16.200Z",
         "created_at": "2023-04-09T13:58:48.052Z"
     },
@@ -1866,6 +1955,7 @@
             "^5.6||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:17.947Z",
         "created_at": "2023-04-09T13:58:48.056Z"
     },
@@ -1885,6 +1975,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:19.971Z",
         "created_at": "2023-04-09T13:58:48.059Z"
     },
@@ -1904,6 +1995,7 @@
             "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:21.639Z",
         "created_at": "2023-04-09T13:58:48.063Z"
     },
@@ -1924,6 +2016,7 @@
             "^9.47||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:23.458Z",
         "created_at": "2023-04-09T13:58:48.066Z"
     },
@@ -1943,6 +2036,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:25.322Z",
         "created_at": "2023-04-09T13:58:48.070Z"
     },
@@ -1962,6 +2056,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:26.556Z",
         "created_at": "2023-04-09T13:58:48.073Z"
     },
@@ -1981,6 +2076,7 @@
             "~8.0||~9.0||~10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:27.286Z",
         "created_at": "2023-04-09T13:58:48.076Z"
     },
@@ -1998,6 +2094,7 @@
         "latest_release_at": "2023-03-22T20:36:30+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:28.591Z",
         "created_at": "2023-04-09T13:58:48.081Z"
     },
@@ -2017,6 +2114,7 @@
             "^9 || ^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:30.388Z",
         "created_at": "2023-04-09T13:58:48.084Z"
     },
@@ -2036,6 +2134,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:29.310Z",
         "created_at": "2023-04-09T13:58:48.087Z"
     },
@@ -2055,6 +2154,7 @@
             "~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:31.234Z",
         "created_at": "2023-04-09T13:58:48.091Z"
     },
@@ -2079,6 +2179,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:33.421Z",
         "created_at": "2023-04-09T13:58:48.094Z"
     },
@@ -2098,6 +2199,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:35.194Z",
         "created_at": "2023-04-09T13:58:48.098Z"
     },
@@ -2117,6 +2219,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:36.967Z",
         "created_at": "2023-04-09T13:58:48.102Z"
     },
@@ -2136,6 +2239,7 @@
             ">=5.1"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:38.639Z",
         "created_at": "2023-04-09T13:58:48.106Z"
     },
@@ -2155,6 +2259,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:40.296Z",
         "created_at": "2023-04-09T13:58:48.113Z"
     },
@@ -2174,6 +2279,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:42.122Z",
         "created_at": "2023-04-09T13:58:48.116Z"
     },
@@ -2193,6 +2299,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:43.807Z",
         "created_at": "2023-04-09T13:58:48.122Z"
     },
@@ -2212,6 +2319,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:45.606Z",
         "created_at": "2023-04-09T13:58:48.128Z"
     },
@@ -2231,6 +2339,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:47.383Z",
         "created_at": "2023-04-09T13:58:48.132Z"
     },
@@ -2250,6 +2359,7 @@
             "^9.0||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:49.212Z",
         "created_at": "2023-04-09T13:58:48.135Z"
     },
@@ -2269,6 +2379,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:50.938Z",
         "created_at": "2023-04-09T13:58:48.140Z"
     },
@@ -2288,6 +2399,7 @@
             "^9.23||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:55.577Z",
         "created_at": "2023-04-09T13:58:48.144Z"
     },
@@ -2307,6 +2419,7 @@
             "^8.73 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:57.799Z",
         "created_at": "2023-04-09T13:58:48.147Z"
     },
@@ -2326,6 +2439,7 @@
             "^8.71||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:56:59.428Z",
         "created_at": "2023-04-09T13:58:48.152Z"
     },
@@ -2345,6 +2459,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:01.739Z",
         "created_at": "2023-04-09T13:58:48.156Z"
     },
@@ -2364,6 +2479,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:03.628Z",
         "created_at": "2023-04-09T13:58:48.162Z"
     },
@@ -2385,6 +2501,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:05.312Z",
         "created_at": "2023-04-09T13:58:48.166Z"
     },
@@ -2404,6 +2521,7 @@
             "^8.78||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:07.089Z",
         "created_at": "2023-04-09T13:58:48.170Z"
     },
@@ -2423,6 +2541,7 @@
             "^8.73||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:08.909Z",
         "created_at": "2023-04-09T13:58:48.173Z"
     },
@@ -2442,6 +2561,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:10.594Z",
         "created_at": "2023-04-09T13:58:48.177Z"
     },
@@ -2461,6 +2581,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T01:10:24.365Z",
         "created_at": "2023-04-09T13:58:48.183Z"
     },
@@ -2480,6 +2601,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:12.172Z",
         "created_at": "2023-04-09T13:58:48.186Z"
     },
@@ -2499,6 +2621,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:32.061Z",
         "created_at": "2023-04-09T13:58:48.190Z"
     },
@@ -2518,6 +2641,7 @@
             "~5.4||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:33.857Z",
         "created_at": "2023-04-09T13:58:48.195Z"
     },
@@ -2538,6 +2662,7 @@
             "^6.0||^7.0||^8.79||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:14.126Z",
         "created_at": "2023-04-09T13:58:48.198Z"
     },
@@ -2557,6 +2682,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:15.835Z",
         "created_at": "2023-04-09T13:58:48.202Z"
     },
@@ -2576,6 +2702,7 @@
             "~6.0||~7.0||~8.0||~9.0||~10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:17.650Z",
         "created_at": "2023-04-09T13:58:48.205Z"
     },
@@ -2596,6 +2723,7 @@
             "~5.4||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:19.524Z",
         "created_at": "2023-04-09T13:58:48.209Z"
     },
@@ -2615,6 +2743,7 @@
             "^5.2||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:21.296Z",
         "created_at": "2023-04-09T13:58:48.213Z"
     },
@@ -2634,6 +2763,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:35.765Z",
         "created_at": "2023-04-09T13:58:48.216Z"
     },
@@ -2651,6 +2781,7 @@
         "latest_release_at": "2023-03-07T19:31:53+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:37.511Z",
         "created_at": "2023-04-09T13:58:48.221Z"
     },
@@ -2672,6 +2803,7 @@
             "^8 || ^9 || ^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:22.947Z",
         "created_at": "2023-04-09T13:58:48.224Z"
     },
@@ -2699,6 +2831,7 @@
             "^9||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:25.391Z",
         "created_at": "2023-04-09T13:58:48.227Z"
     },
@@ -2721,6 +2854,7 @@
             "^8.37||^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:27.069Z",
         "created_at": "2023-04-09T13:58:48.231Z"
     },
@@ -2742,6 +2876,7 @@
             "^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:28.643Z",
         "created_at": "2023-04-09T13:58:48.234Z"
     },
@@ -2759,6 +2894,7 @@
         "latest_release_at": "2023-04-02T19:30:06+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:39.497Z",
         "created_at": "2023-04-09T13:58:48.238Z"
     },
@@ -2780,6 +2916,7 @@
             "5.*||6.*||7.*||8.*||9.*||10.*"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:31.419Z",
         "created_at": "2023-04-09T13:58:48.243Z"
     },
@@ -2804,6 +2941,7 @@
         "latest_release_at": "2022-12-13T00:04:12+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:33.068Z",
         "created_at": "2023-04-09T13:58:48.246Z"
     },
@@ -2821,6 +2959,7 @@
         "latest_release_at": "2023-03-10T14:04:45+00:00",
         "laravel_dependency_versions": [],
         "package_type": "all-operating-systems-app",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:34.987Z",
         "created_at": "2023-04-09T13:58:48.253Z"
     },
@@ -2840,6 +2979,7 @@
             "^8.17||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:36.738Z",
         "created_at": "2023-04-09T13:58:48.256Z"
     },
@@ -2859,6 +2999,7 @@
             "^10.5.1"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:38.481Z",
         "created_at": "2023-04-09T13:58:48.262Z"
     },
@@ -2878,6 +3019,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:40.203Z",
         "created_at": "2023-04-09T13:58:48.265Z"
     },
@@ -2908,6 +3050,7 @@
             "^8.37||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:41.948Z",
         "created_at": "2023-04-09T13:58:48.268Z"
     },
@@ -2925,6 +3068,7 @@
         "latest_release_at": "2023-03-27T18:42:24+00:00",
         "laravel_dependency_versions": [],
         "package_type": "mac-app",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:43.766Z",
         "created_at": "2023-04-09T13:58:48.271Z"
     },
@@ -2944,6 +3088,7 @@
         "latest_release_at": "2022-06-19T10:41:15.524Z",
         "laravel_dependency_versions": [],
         "package_type": "npm-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:47.391Z",
         "created_at": "2023-04-09T13:58:48.275Z"
     },
@@ -2965,6 +3110,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:48.984Z",
         "created_at": "2023-04-09T13:58:48.278Z"
     },
@@ -2982,6 +3128,7 @@
         "latest_release_at": "2023-03-29T16:32:07Z",
         "laravel_dependency_versions": [],
         "package_type": "mac-app",
+        "paid_integration": false,
         "updated_at": "2023-04-06T10:06:56.741Z",
         "created_at": "2023-04-09T13:58:48.283Z"
     },
@@ -3001,6 +3148,7 @@
             "^9.47.0 || ^10.0.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:50.652Z",
         "created_at": "2023-04-09T13:58:48.286Z"
     },
@@ -3022,6 +3170,7 @@
             "^9.33 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:52.669Z",
         "created_at": "2023-04-09T13:58:48.291Z"
     },
@@ -3043,6 +3192,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:54.468Z",
         "created_at": "2023-04-09T13:58:48.294Z"
     },
@@ -3064,6 +3214,7 @@
             "^6.18||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:56.065Z",
         "created_at": "2023-04-09T13:58:48.297Z"
     },
@@ -3083,6 +3234,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:57:59.991Z",
         "created_at": "2023-04-09T13:58:48.303Z"
     },
@@ -3102,6 +3254,7 @@
             "^5.8||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:02.891Z",
         "created_at": "2023-04-09T13:58:48.306Z"
     },
@@ -3121,6 +3274,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T00:50:06.716Z",
         "created_at": "2023-04-09T13:58:48.312Z"
     },
@@ -3140,6 +3294,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:04.820Z",
         "created_at": "2023-04-09T13:58:48.316Z"
     },
@@ -3159,6 +3314,7 @@
             "~5.4||~6.0||~7.0||~8.0||~9.0||~10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T00:50:12.135Z",
         "created_at": "2023-04-09T13:58:48.321Z"
     },
@@ -3179,6 +3335,7 @@
             "^10.2"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:08.379Z",
         "created_at": "2023-04-09T13:58:48.327Z"
     },
@@ -3198,6 +3355,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:41.196Z",
         "created_at": "2023-04-09T13:58:48.333Z"
     },
@@ -3215,6 +3373,7 @@
         "latest_release_at": "2023-03-05T22:51:57+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:10.164Z",
         "created_at": "2023-04-09T13:58:48.336Z"
     },
@@ -3234,6 +3393,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:12.076Z",
         "created_at": "2023-04-09T13:58:48.341Z"
     },
@@ -3251,6 +3411,7 @@
         "latest_release_at": "2023-04-05T09:24:30+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:43.183Z",
         "created_at": "2023-04-09T13:58:48.344Z"
     },
@@ -3270,6 +3431,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:13.956Z",
         "created_at": "2023-04-09T13:58:48.348Z"
     },
@@ -3289,6 +3451,7 @@
             ">=8"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:15.771Z",
         "created_at": "2023-04-09T13:58:48.352Z"
     },
@@ -3315,6 +3478,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:17.625Z",
         "created_at": "2023-04-09T13:58:48.355Z"
     },
@@ -3335,6 +3499,7 @@
             "^9.26||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:19.292Z",
         "created_at": "2023-04-09T13:58:48.359Z"
     },
@@ -3357,6 +3522,7 @@
             "^8.75||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:21.128Z",
         "created_at": "2023-04-09T13:58:48.363Z"
     },
@@ -3376,6 +3542,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:22.836Z",
         "created_at": "2023-04-09T13:58:48.366Z"
     },
@@ -3395,6 +3562,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:24.516Z",
         "created_at": "2023-04-09T13:58:48.369Z"
     },
@@ -3414,6 +3582,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:26.410Z",
         "created_at": "2023-04-09T13:58:48.373Z"
     },
@@ -3433,6 +3602,7 @@
             "^8.73||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:28.255Z",
         "created_at": "2023-04-09T13:58:48.376Z"
     },
@@ -3454,6 +3624,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:30.019Z",
         "created_at": "2023-04-09T13:58:48.380Z"
     },
@@ -3483,6 +3654,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:32.025Z",
         "created_at": "2023-04-09T13:58:48.383Z"
     },
@@ -3502,6 +3674,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:33.779Z",
         "created_at": "2023-04-09T13:58:48.386Z"
     },
@@ -3530,6 +3703,7 @@
             "^5.5||^6||^7||^8||^9||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:35.458Z",
         "created_at": "2023-04-09T13:58:48.392Z"
     },
@@ -3554,6 +3728,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:37.416Z",
         "created_at": "2023-04-09T13:58:48.396Z"
     },
@@ -3581,6 +3756,7 @@
             "^9.2||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:39.250Z",
         "created_at": "2023-04-09T13:58:48.402Z"
     },
@@ -3600,6 +3776,7 @@
             "^6||^7||^8||^9||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:40.909Z",
         "created_at": "2023-04-09T13:58:48.405Z"
     },
@@ -3619,6 +3796,7 @@
             "^9||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:43.024Z",
         "created_at": "2023-04-09T13:58:48.408Z"
     },
@@ -3640,6 +3818,7 @@
         "latest_release_at": "2022-08-12T17:16:27+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:44.647Z",
         "created_at": "2023-04-09T13:58:48.412Z"
     },
@@ -3659,6 +3838,7 @@
             "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:46.491Z",
         "created_at": "2023-04-09T13:58:48.416Z"
     },
@@ -3678,6 +3858,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:48.234Z",
         "created_at": "2023-04-09T13:58:48.420Z"
     },
@@ -3700,6 +3881,7 @@
             "^6.20.12 || ^7.30.4 || ^8.24.0 || ^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:49.853Z",
         "created_at": "2023-04-09T13:58:48.423Z"
     },
@@ -3721,6 +3903,7 @@
         "latest_release_at": "2023-01-03T19:12:47+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:51.633Z",
         "created_at": "2023-04-09T13:58:48.427Z"
     },
@@ -3740,6 +3923,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:53.413Z",
         "created_at": "2023-04-09T13:58:48.432Z"
     },
@@ -3769,6 +3953,7 @@
             "^9.18||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:55.244Z",
         "created_at": "2023-04-09T13:58:48.435Z"
     },
@@ -3789,6 +3974,7 @@
         "latest_release_at": "2022-03-08T07:52:26+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:56.916Z",
         "created_at": "2023-04-09T13:58:48.441Z"
     },
@@ -3808,6 +3994,7 @@
             "^6.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:45.148Z",
         "created_at": "2023-04-09T13:58:48.444Z"
     },
@@ -3827,6 +4014,7 @@
             "^8.0 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:58:58.752Z",
         "created_at": "2023-04-09T13:58:48.448Z"
     },
@@ -3844,6 +4032,7 @@
         "latest_release_at": "2023-02-04T16:39:52+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:46.946Z",
         "created_at": "2023-04-09T13:58:48.451Z"
     },
@@ -3863,6 +4052,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:00.525Z",
         "created_at": "2023-04-09T13:58:48.455Z"
     },
@@ -3888,6 +4078,7 @@
             "~5.2.0||~5.3.0||~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:02.099Z",
         "created_at": "2023-04-09T13:58:48.458Z"
     },
@@ -3905,6 +4096,7 @@
         "latest_release_at": "2023-03-26T06:55:55+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:03.874Z",
         "created_at": "2023-04-09T13:58:48.462Z"
     },
@@ -3924,6 +4116,7 @@
             ">=8"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:05.446Z",
         "created_at": "2023-04-09T13:58:48.466Z"
     },
@@ -3943,6 +4136,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:07.109Z",
         "created_at": "2023-04-09T13:58:48.470Z"
     },
@@ -3962,6 +4156,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:08.997Z",
         "created_at": "2023-04-09T13:58:48.473Z"
     },
@@ -3981,6 +4176,7 @@
             ">=5.5"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:10.675Z",
         "created_at": "2023-04-09T13:58:48.477Z"
     },
@@ -4000,6 +4196,7 @@
             ">=9"
         ],
         "package_type": "npm-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:14.572Z",
         "created_at": "2023-04-09T13:58:48.483Z"
     },
@@ -4019,6 +4216,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:16.485Z",
         "created_at": "2023-04-09T13:58:48.487Z"
     },
@@ -4038,6 +4236,7 @@
             "^8.0||^9.0||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:18.300Z",
         "created_at": "2023-04-09T13:58:48.491Z"
     },
@@ -4062,6 +4261,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:20.091Z",
         "created_at": "2023-04-09T13:58:48.495Z"
     },
@@ -4085,6 +4285,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:21.795Z",
         "created_at": "2023-04-09T13:58:48.499Z"
     },
@@ -4102,6 +4303,7 @@
         "latest_release_at": "2023-02-09T13:52:08+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:48.733Z",
         "created_at": "2023-04-09T13:58:48.503Z"
     },
@@ -4121,6 +4323,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:23.512Z",
         "created_at": "2023-04-09T13:58:48.507Z"
     },
@@ -4144,6 +4347,7 @@
             "~5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:25.313Z",
         "created_at": "2023-04-09T13:58:48.511Z"
     },
@@ -4161,6 +4365,7 @@
         "latest_release_at": "2023-01-17T15:07:27.173Z",
         "laravel_dependency_versions": [],
         "package_type": "npm-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T01:10:32.993Z",
         "created_at": "2023-04-09T13:58:48.515Z"
     },
@@ -4183,6 +4388,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:26.889Z",
         "created_at": "2023-04-09T13:58:48.520Z"
     },
@@ -4205,6 +4411,7 @@
             "^5.6||^6.0||^7.0||^8.0||^9.0||^9.11||9.14.*||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:28.551Z",
         "created_at": "2023-04-09T13:58:48.523Z"
     },
@@ -4224,6 +4431,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:30.429Z",
         "created_at": "2023-04-09T13:58:48.527Z"
     },
@@ -4243,6 +4451,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:32.167Z",
         "created_at": "2023-04-09T13:58:48.533Z"
     },
@@ -4265,6 +4474,7 @@
             "^8.15 || 9.0 - 9.34 || ^9.36 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:33.721Z",
         "created_at": "2023-04-09T13:58:48.537Z"
     },
@@ -4287,6 +4497,7 @@
             ">=4"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:35.448Z",
         "created_at": "2023-04-09T13:58:48.543Z"
     },
@@ -4313,6 +4524,7 @@
             "^9.21||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:37.207Z",
         "created_at": "2023-04-09T13:58:48.552Z"
     },
@@ -4332,6 +4544,7 @@
             "5.8.* || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:38.918Z",
         "created_at": "2023-04-09T13:58:48.557Z"
     },
@@ -4364,6 +4577,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:40.696Z",
         "created_at": "2023-04-09T13:58:48.563Z"
     },
@@ -4383,6 +4597,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:42.615Z",
         "created_at": "2023-04-09T13:58:48.567Z"
     },
@@ -4404,6 +4619,7 @@
             "^5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:44.278Z",
         "created_at": "2023-04-09T13:58:48.573Z"
     },
@@ -4423,6 +4639,7 @@
             ">=5.6 <=10"
         ],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:52.299Z",
         "created_at": "2023-04-09T13:58:48.576Z"
     },
@@ -4442,6 +4659,7 @@
             "^9.49||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:54.022Z",
         "created_at": "2023-04-09T13:58:48.580Z"
     },
@@ -4461,6 +4679,7 @@
             "^9.19||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:46.377Z",
         "created_at": "2023-04-09T13:58:48.584Z"
     },
@@ -4484,6 +4703,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:47.971Z",
         "created_at": "2023-04-09T13:58:48.587Z"
     },
@@ -4503,6 +4723,7 @@
             "^8.0||^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:49.606Z",
         "created_at": "2023-04-09T13:58:48.592Z"
     },
@@ -4520,6 +4741,7 @@
         "latest_release_at": "2023-02-05T21:47:26+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:51.932Z",
         "created_at": "2023-04-09T13:58:48.596Z"
     },
@@ -4539,6 +4761,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:53.837Z",
         "created_at": "2023-04-09T13:58:48.599Z"
     },
@@ -4568,6 +4791,7 @@
             ">=9"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:55.637Z",
         "created_at": "2023-04-09T13:58:48.603Z"
     },
@@ -4587,6 +4811,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:56.067Z",
         "created_at": "2023-04-09T13:58:48.606Z"
     },
@@ -4607,6 +4832,7 @@
         "latest_release_at": "2023-01-22T00:08:41.656Z",
         "laravel_dependency_versions": [],
         "package_type": "npm-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T20:59:58.294Z",
         "created_at": "2023-04-09T13:58:48.610Z"
     },
@@ -4629,6 +4855,7 @@
             "^8.24||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:00.126Z",
         "created_at": "2023-04-09T13:58:48.613Z"
     },
@@ -4653,6 +4880,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:01.918Z",
         "created_at": "2023-04-09T13:58:48.616Z"
     },
@@ -4673,6 +4901,7 @@
             "^7||^8||^9||^9||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:04.117Z",
         "created_at": "2023-04-09T13:58:48.622Z"
     },
@@ -4695,6 +4924,7 @@
             "^v10.6.2"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:06.282Z",
         "created_at": "2023-04-09T13:58:48.626Z"
     },
@@ -4716,6 +4946,7 @@
             "^8.75 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:08.077Z",
         "created_at": "2023-04-09T13:58:48.630Z"
     },
@@ -4735,6 +4966,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:10.229Z",
         "created_at": "2023-04-09T13:58:48.633Z"
     },
@@ -4752,6 +4984,7 @@
         "latest_release_at": "2023-03-30T18:03:34+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:12.278Z",
         "created_at": "2023-04-09T13:58:48.636Z"
     },
@@ -4775,6 +5008,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:14.151Z",
         "created_at": "2023-04-09T13:58:48.643Z"
     },
@@ -4794,6 +5028,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:16.071Z",
         "created_at": "2023-04-09T13:58:48.647Z"
     },
@@ -4813,6 +5048,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:18.267Z",
         "created_at": "2023-04-09T13:58:48.652Z"
     },
@@ -4836,6 +5072,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:19.990Z",
         "created_at": "2023-04-09T13:58:48.656Z"
     },
@@ -4855,6 +5092,7 @@
             "^9.19||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:21.846Z",
         "created_at": "2023-04-09T13:58:48.661Z"
     },
@@ -4874,6 +5112,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:23.899Z",
         "created_at": "2023-04-09T13:58:48.664Z"
     },
@@ -4893,6 +5132,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:25.897Z",
         "created_at": "2023-04-09T13:58:48.668Z"
     },
@@ -4912,6 +5152,7 @@
             "^9.0||^8.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:27.945Z",
         "created_at": "2023-04-09T13:58:48.672Z"
     },
@@ -4931,6 +5172,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:29.697Z",
         "created_at": "2023-04-09T13:58:48.676Z"
     },
@@ -4951,6 +5193,7 @@
             "^8.71||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:31.506Z",
         "created_at": "2023-04-09T13:58:48.682Z"
     },
@@ -4972,6 +5215,7 @@
             "10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:33.373Z",
         "created_at": "2023-04-09T13:58:48.686Z"
     },
@@ -4991,6 +5235,7 @@
             "^8.47||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:35.138Z",
         "created_at": "2023-04-09T13:58:48.692Z"
     },
@@ -5010,6 +5255,7 @@
             "^7.26.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T10:46:56.330Z",
         "created_at": "2023-04-09T13:58:48.696Z"
     },
@@ -5027,6 +5273,7 @@
         "latest_release_at": "2023-01-24T09:28:27+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T00:50:04.263Z",
         "created_at": "2023-04-09T13:58:48.702Z"
     },
@@ -5046,6 +5293,7 @@
             "^8.83||^9.16||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:36.855Z",
         "created_at": "2023-04-09T13:58:48.706Z"
     },
@@ -5063,6 +5311,7 @@
         "latest_release_at": "2023-03-04T10:32:53+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:38.738Z",
         "created_at": "2023-04-09T13:58:48.711Z"
     },
@@ -5083,6 +5332,7 @@
             ">=5.7"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:41.053Z",
         "created_at": "2023-04-09T13:58:48.714Z"
     },
@@ -5102,6 +5352,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:42.948Z",
         "created_at": "2023-04-09T13:58:48.718Z"
     },
@@ -5122,6 +5373,7 @@
         "latest_release_at": "2023-01-03T11:05:52.140Z",
         "laravel_dependency_versions": [],
         "package_type": "npm-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:46.086Z",
         "created_at": "2023-04-09T13:58:48.722Z"
     },
@@ -5144,6 +5396,7 @@
             "^8.24||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:47.871Z",
         "created_at": "2023-04-09T13:58:48.726Z"
     },
@@ -5167,6 +5420,7 @@
             "^8.24||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:49.591Z",
         "created_at": "2023-04-09T13:58:48.731Z"
     },
@@ -5186,6 +5440,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:51.434Z",
         "created_at": "2023-04-09T13:58:48.734Z"
     },
@@ -5205,6 +5460,7 @@
             "5.8.*||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:57.842Z",
         "created_at": "2023-04-09T13:58:48.738Z"
     },
@@ -5224,6 +5480,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-05T01:10:28.731Z",
         "created_at": "2023-04-09T13:58:48.743Z"
     },
@@ -5243,6 +5500,7 @@
             "^5||^6||^7||^8||^9||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:53.269Z",
         "created_at": "2023-04-09T13:58:48.746Z"
     },
@@ -5262,6 +5520,7 @@
             ">=6.0 <11.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:55.140Z",
         "created_at": "2023-04-09T13:58:48.754Z"
     },
@@ -5281,6 +5540,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:57.052Z",
         "created_at": "2023-04-09T13:58:48.757Z"
     },
@@ -5304,6 +5564,7 @@
             "^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:00:59.015Z",
         "created_at": "2023-04-09T13:58:48.762Z"
     },
@@ -5323,6 +5584,7 @@
             "^5.1||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:21:59.652Z",
         "created_at": "2023-04-09T13:58:48.765Z"
     },
@@ -5342,6 +5604,7 @@
             "^8.0||^9.0||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:00.820Z",
         "created_at": "2023-04-09T13:58:48.770Z"
     },
@@ -5361,6 +5624,7 @@
             "^8.0||^9.0||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:02.779Z",
         "created_at": "2023-04-09T13:58:48.774Z"
     },
@@ -5378,6 +5642,7 @@
         "latest_release_at": "2021-07-01T05:48:59+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:01.581Z",
         "created_at": "2023-04-09T13:58:48.777Z"
     },
@@ -5397,6 +5662,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:04.578Z",
         "created_at": "2023-04-09T13:58:48.783Z"
     },
@@ -5416,6 +5682,7 @@
             "^8.47||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:03.472Z",
         "created_at": "2023-04-09T13:58:48.787Z"
     },
@@ -5435,6 +5702,7 @@
             "5.1.*||5.2.*||5.3.*||5.4.*||5.5.*||5.6.*||5.7.*||5.8.*||^6.0||^7.0||^8.0||^9.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:05.142Z",
         "created_at": "2023-04-09T13:58:48.793Z"
     },
@@ -5454,6 +5722,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:06.266Z",
         "created_at": "2023-04-09T13:58:48.796Z"
     },
@@ -5473,6 +5742,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:08.258Z",
         "created_at": "2023-04-09T13:58:48.802Z"
     },
@@ -5490,6 +5760,7 @@
         "latest_release_at": "2023-03-17T14:47:54+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:07.069Z",
         "created_at": "2023-04-09T13:58:48.806Z"
     },
@@ -5509,6 +5780,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:09.913Z",
         "created_at": "2023-04-09T13:58:48.812Z"
     },
@@ -5528,6 +5800,7 @@
             "^10.10.1"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:12.034Z",
         "created_at": "2023-04-09T13:58:48.816Z"
     },
@@ -5547,6 +5820,7 @@
         "latest_release_at": "2023-03-27T18:22:36+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:13.826Z",
         "created_at": "2023-04-09T13:58:48.822Z"
     },
@@ -5566,6 +5840,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:15.607Z",
         "created_at": "2023-04-09T13:58:48.825Z"
     },
@@ -5585,6 +5860,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:08.649Z",
         "created_at": "2023-04-09T13:58:48.829Z"
     },
@@ -5604,6 +5880,7 @@
             "~5||^6||^7||^8||^9||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:17.293Z",
         "created_at": "2023-04-09T13:58:48.833Z"
     },
@@ -5623,6 +5900,7 @@
             "^5.8||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:19.097Z",
         "created_at": "2023-04-09T13:58:48.836Z"
     },
@@ -5642,6 +5920,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:20.918Z",
         "created_at": "2023-04-09T13:58:48.842Z"
     },
@@ -5661,6 +5940,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:22.537Z",
         "created_at": "2023-04-09T13:58:48.845Z"
     },
@@ -5682,6 +5962,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:10.373Z",
         "created_at": "2023-04-09T13:58:48.850Z"
     },
@@ -5699,6 +5980,7 @@
         "latest_release_at": "2023-03-28T15:56:45+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:24.444Z",
         "created_at": "2023-04-09T13:58:48.853Z"
     },
@@ -5718,6 +6000,7 @@
         "latest_release_at": "2023-01-05T10:19:20+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:26.188Z",
         "created_at": "2023-04-09T13:58:48.857Z"
     },
@@ -5735,6 +6018,7 @@
         "latest_release_at": "2023-03-25T17:51:32+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:27.952Z",
         "created_at": "2023-04-09T13:58:48.861Z"
     },
@@ -5754,6 +6038,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:29.957Z",
         "created_at": "2023-04-09T13:58:48.865Z"
     },
@@ -5773,6 +6058,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:31.678Z",
         "created_at": "2023-04-09T13:58:48.869Z"
     },
@@ -5792,6 +6078,7 @@
             "^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:12.203Z",
         "created_at": "2023-04-09T13:58:48.873Z"
     },
@@ -5811,6 +6098,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:13.937Z",
         "created_at": "2023-04-09T13:58:48.876Z"
     },
@@ -5830,6 +6118,7 @@
             "^9.49 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:33.530Z",
         "created_at": "2023-04-09T13:58:48.881Z"
     },
@@ -5849,6 +6138,7 @@
             "5.0 - 5.8||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:35.480Z",
         "created_at": "2023-04-09T13:58:48.884Z"
     },
@@ -5868,6 +6158,7 @@
         "latest_release_at": "2021-02-08T20:43:55+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:37.260Z",
         "created_at": "2023-04-09T13:58:48.888Z"
     },
@@ -5885,6 +6176,7 @@
         "latest_release_at": "2023-01-25T09:26:10+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:15.656Z",
         "created_at": "2023-04-09T13:58:48.891Z"
     },
@@ -5904,6 +6196,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:39.098Z",
         "created_at": "2023-04-09T13:58:48.895Z"
     },
@@ -5925,6 +6218,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:40.959Z",
         "created_at": "2023-04-09T13:58:48.898Z"
     },
@@ -5944,6 +6238,7 @@
             "^8.71||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:42.618Z",
         "created_at": "2023-04-09T13:58:48.902Z"
     },
@@ -5963,6 +6258,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:44.520Z",
         "created_at": "2023-04-09T13:58:48.906Z"
     },
@@ -5982,6 +6278,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:17.532Z",
         "created_at": "2023-04-09T13:58:48.912Z"
     },
@@ -6001,6 +6298,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:46.410Z",
         "created_at": "2023-04-09T13:58:48.915Z"
     },
@@ -6020,6 +6318,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:19.262Z",
         "created_at": "2023-04-09T13:58:48.918Z"
     },
@@ -6039,6 +6338,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:48.126Z",
         "created_at": "2023-04-09T13:58:48.922Z"
     },
@@ -6058,6 +6358,7 @@
             "^8.37||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:49.880Z",
         "created_at": "2023-04-09T13:58:48.926Z"
     },
@@ -6077,6 +6378,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:51.850Z",
         "created_at": "2023-04-09T13:58:48.931Z"
     },
@@ -6099,6 +6401,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:53.811Z",
         "created_at": "2023-04-09T13:58:48.935Z"
     },
@@ -6119,6 +6422,7 @@
             "^8.77||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:55.607Z",
         "created_at": "2023-04-09T13:58:48.938Z"
     },
@@ -6138,6 +6442,7 @@
             "^8.71||^9.0||^10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:57.900Z",
         "created_at": "2023-04-09T13:58:48.942Z"
     },
@@ -6158,6 +6463,7 @@
             "^8.60||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:01:59.553Z",
         "created_at": "2023-04-09T13:58:48.947Z"
     },
@@ -6177,6 +6483,7 @@
             "^8.73||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:01.542Z",
         "created_at": "2023-04-09T13:58:48.951Z"
     },
@@ -6200,6 +6507,7 @@
             "^8.67||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:05.229Z",
         "created_at": "2023-04-09T13:58:48.954Z"
     },
@@ -6217,6 +6525,7 @@
         "latest_release_at": "2023-02-01T13:01:24+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:20.914Z",
         "created_at": "2023-04-09T13:58:48.958Z"
     },
@@ -6236,6 +6545,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:22.733Z",
         "created_at": "2023-04-09T13:58:48.962Z"
     },
@@ -6255,6 +6565,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:07.253Z",
         "created_at": "2023-04-09T13:58:48.966Z"
     },
@@ -6274,6 +6585,7 @@
             "^8.50||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:09.330Z",
         "created_at": "2023-04-09T13:58:48.970Z"
     },
@@ -6293,6 +6605,7 @@
             "^8.50||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:11.191Z",
         "created_at": "2023-04-09T13:58:48.973Z"
     },
@@ -6310,6 +6623,7 @@
         "latest_release_at": "2022-04-21T12:23:20+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:24.398Z",
         "created_at": "2023-04-09T13:58:48.976Z"
     },
@@ -6327,6 +6641,7 @@
         "latest_release_at": "2023-02-20T14:31:09+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:13.113Z",
         "created_at": "2023-04-09T13:58:48.982Z"
     },
@@ -6346,6 +6661,7 @@
             "^8.62.0"
         ],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:26.323Z",
         "created_at": "2023-04-09T13:58:48.985Z"
     },
@@ -6365,6 +6681,7 @@
             "^8.0 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:15.142Z",
         "created_at": "2023-04-09T13:58:48.988Z"
     },
@@ -6384,6 +6701,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-07T00:22:28.123Z",
         "created_at": "2023-04-09T13:58:48.992Z"
     },
@@ -6403,6 +6721,7 @@
             "^5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:17.627Z",
         "created_at": "2023-04-09T13:58:48.995Z"
     },
@@ -6422,6 +6741,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:20.102Z",
         "created_at": "2023-04-09T13:58:48.998Z"
     },
@@ -6439,6 +6759,7 @@
         "latest_release_at": "2023-03-20T11:57:51+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:22.027Z",
         "created_at": "2023-04-09T13:58:49.002Z"
     },
@@ -6458,6 +6779,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:23.986Z",
         "created_at": "2023-04-09T13:58:49.005Z"
     },
@@ -6477,6 +6799,7 @@
             "~7||~8||~9||~10"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-06T21:02:26.086Z",
         "created_at": "2023-04-09T13:58:49.010Z"
     },
@@ -6489,6 +6812,7 @@
         "composer": "laracraft-tech/laravel-date-scopes",
         "npm": null,
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T00:55:15.324Z",
         "created_at": "2023-04-12T00:55:15.324Z",
         "stars": 344,
@@ -6508,6 +6832,7 @@
         "composer": "prettus/l5-repository",
         "npm": null,
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T01:37:59.307Z",
         "created_at": "2023-04-12T01:37:59.307Z",
         "stars": 4088,
@@ -6527,6 +6852,7 @@
         "composer": "laravel-lang/common",
         "npm": null,
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T01:45:40.795Z",
         "created_at": "2023-04-12T01:45:40.795Z",
         "stars": 7060,
@@ -6544,6 +6870,7 @@
         "composer": "rakibhstu/number-to-bangla",
         "npm": null,
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T01:52:13.929Z",
         "created_at": "2023-04-12T01:52:13.929Z",
         "stars": 61,
@@ -6561,6 +6888,7 @@
         "composer": "henzeb/laravel-console-facade",
         "npm": null,
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T01:59:48.491Z",
         "created_at": "2023-04-12T01:59:48.491Z",
         "stars": 2,
@@ -6585,6 +6913,7 @@
         "latest_release_at": "2023-04-10T08:37:45+00:00",
         "laravel_dependency_versions": [],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T13:40:32.500Z",
         "created_at": "2023-04-12T13:40:32.500Z"
     },
@@ -6604,6 +6933,7 @@
             "^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T13:52:40.627Z",
         "created_at": "2023-04-12T13:52:40.627Z"
     },
@@ -6623,6 +6953,7 @@
             "^9.35||^10.5"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T14:13:49.769Z",
         "created_at": "2023-04-12T14:13:49.769Z"
     },
@@ -6640,6 +6971,7 @@
         "latest_release_at": "2023-04-11T07:57:20+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T14:21:21.440Z",
         "created_at": "2023-04-12T14:21:21.440Z"
     },
@@ -6659,6 +6991,7 @@
             "^8.50||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T14:26:04.979Z",
         "created_at": "2023-04-12T14:26:04.979Z"
     },
@@ -6678,6 +7011,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T15:29:46.961Z",
         "created_at": "2023-04-12T15:29:46.961Z"
     },
@@ -6697,6 +7031,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-12T20:25:55.354Z",
         "created_at": "2023-04-12T20:25:55.354Z"
     },
@@ -6716,6 +7051,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:03:46.628Z",
         "created_at": "2023-04-13T11:03:46.628Z"
     },
@@ -6735,6 +7071,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:06:27.137Z",
         "created_at": "2023-04-13T11:06:27.137Z"
     },
@@ -6754,6 +7091,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:10:07.138Z",
         "created_at": "2023-04-13T11:10:07.138Z"
     },
@@ -6773,6 +7111,7 @@
             "^6.0||^7.0||^8.67||^9.0||^10.0"
         ],
         "package_type": "php-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:15:15.210Z",
         "created_at": "2023-04-13T11:15:15.210Z"
     },
@@ -6795,6 +7134,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:21:51.972Z",
         "created_at": "2023-04-13T11:21:51.972Z"
     },
@@ -6814,6 +7154,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:32:15.080Z",
         "created_at": "2023-04-13T11:32:15.080Z"
     },
@@ -6833,6 +7174,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:35:17.746Z",
         "created_at": "2023-04-13T11:35:17.746Z"
     },
@@ -6855,6 +7197,7 @@
             "^8.24||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:47:33.834Z",
         "created_at": "2023-04-13T11:47:33.834Z"
     },
@@ -6874,6 +7217,7 @@
             "^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T11:54:16.541Z",
         "created_at": "2023-04-13T11:54:16.541Z"
     },
@@ -6893,6 +7237,7 @@
             "^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-13T17:55:02.785Z",
         "created_at": "2023-04-13T17:55:02.785Z"
     },
@@ -6912,6 +7257,7 @@
             "^8.37 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-16T21:48:28.281Z",
         "created_at": "2023-04-16T21:48:28.281Z"
     },
@@ -6931,6 +7277,7 @@
             ">=5.4"
         ],
         "package_type": "laravel-package",
+        "paid_integration": false,
         "updated_at": "2023-04-16T21:57:21.082Z",
         "created_at": "2023-04-16T21:57:21.082Z"
     },
@@ -6950,6 +7297,7 @@
         "laravel_dependency_versions": [
             "9.*||10.*"
         ],
+        "paid_integration": false,
         "updated_at": "2023-04-18T14:53:06.258Z",
         "created_at": "2023-04-18T14:53:06.258Z"
     },
@@ -6969,6 +7317,7 @@
         "laravel_dependency_versions": [
             "^9.21||^10.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-04-27T18:47:45.733Z",
         "created_at": "2023-04-27T18:47:45.733Z"
     },
@@ -6988,6 +7337,7 @@
         "laravel_dependency_versions": [
             "~7||~8||~9||~10"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-04T09:35:31.512Z",
         "created_at": "2023-05-04T09:35:31.512Z"
     },
@@ -7009,6 +7359,7 @@
         "laravel_dependency_versions": [
             "^7.0||^8.0||^9.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-04T09:38:27.685Z",
         "created_at": "2023-05-04T09:38:27.685Z"
     },
@@ -7028,6 +7379,7 @@
         "laravel_dependency_versions": [
             "9.*||10.*"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-05T11:37:57.930Z",
         "created_at": "2023-05-05T11:37:57.930Z"
     },
@@ -7048,6 +7400,7 @@
             "^8.0||^9.0",
             "^8.6||^9.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-15T09:16:33.470Z",
         "created_at": "2023-05-15T09:16:33.470Z"
     },
@@ -7067,6 +7420,7 @@
         "laravel_dependency_versions": [
             "^10.5"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-22T11:13:26.881Z",
         "created_at": "2023-05-22T11:13:26.881Z"
     },
@@ -7086,6 +7440,7 @@
         "laravel_dependency_versions": [
             "^5.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-22T11:14:47.672Z",
         "created_at": "2023-05-22T11:14:47.672Z"
     },
@@ -7105,6 +7460,7 @@
         "laravel_dependency_versions": [
             "^10.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-22T11:18:48.378Z",
         "created_at": "2023-05-22T11:18:48.378Z"
     },
@@ -7124,6 +7480,7 @@
         "laravel_dependency_versions": [
             "^10.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-22T11:24:49.186Z",
         "created_at": "2023-05-22T11:24:49.186Z"
     },
@@ -7143,6 +7500,7 @@
         "laravel_dependency_versions": [
             "^9.0||^10.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-25T11:16:05.640Z",
         "created_at": "2023-05-25T11:16:05.640Z"
     },
@@ -7162,6 +7520,7 @@
         "laravel_dependency_versions": [
             "~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0"
         ],
+        "paid_integration": false,
         "updated_at": "2023-05-30T18:17:24.721Z",
         "created_at": "2023-05-30T18:17:24.721Z"
     }

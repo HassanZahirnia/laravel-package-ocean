@@ -23,7 +23,7 @@ const tooltipInstance = ref()
 
 onMounted(()=>{
     nextTick(() => {
-        if(tooltip.value && $props.condition){
+        if (tooltip.value && $props.condition){
             tooltipInstance.value = tippy(tooltip.value, {
                 content: $props.content,
                 theme: $props.theme,
@@ -37,7 +37,7 @@ onMounted(()=>{
     })
 })
 watch(() => $props.content, () => {
-    if(tooltipInstance.value)
+    if (tooltipInstance.value)
         tooltipInstance.value.setContent($props.content)
 
 })

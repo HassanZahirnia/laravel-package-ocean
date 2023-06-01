@@ -38,7 +38,7 @@ dotenv.config()
 inquirer.registerPrompt('autocomplete', inquirerPrompt)
 
 type Answers = Pick<Package,
-    'package_type' | 'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github'>
+    'package_type' | 'name' | 'author' | 'category' | 'description' | 'composer' | 'npm' | 'github' | 'paid_integration'>
     & { keywords: string }
 
 export const addPackage = async function(){
@@ -185,6 +185,12 @@ export const addPackage = async function(){
                 return true
             },
         },
+        {
+            type: 'confirm',
+            name: 'paid_integration',
+            message: 'Does this package integrate with a paid service?',
+            default: false,
+        },
     ])
         .then(
             async( answers: Answers) => {
@@ -202,6 +208,7 @@ export const addPackage = async function(){
                     first_release_at: '',
                     latest_release_at: '',
                     laravel_dependency_versions: [],
+                    paid_integration: answers.paid_integration,
                     updated_at: new Date().toISOString(),
                     created_at: new Date().toISOString(),
                 }

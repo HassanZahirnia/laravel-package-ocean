@@ -48,6 +48,9 @@ export type Package = {
     // You can manually set this if the compatibility is not detected correctly.
     laravel_dependency_versions: string[]
 
+    // Integrates with a paid service.
+    paid_integration: boolean
+
     // Date when the package was updated in the database. Example: '2023-03-29T02:57:36+00:00'
     updated_at: string | null
 
