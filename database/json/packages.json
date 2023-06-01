@@ -100,7 +100,7 @@
             "^8.75 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
-        "paid_integration": false,
+        "paid_integration": true,
         "updated_at": "2023-04-07T00:21:12.636Z",
         "created_at": "2023-04-09T13:58:47.716Z"
     },
@@ -120,7 +120,7 @@
             "^8.75 || ^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
-        "paid_integration": false,
+        "paid_integration": true,
         "updated_at": "2023-04-07T00:21:14.391Z",
         "created_at": "2023-04-09T13:58:47.723Z"
     },
@@ -140,7 +140,7 @@
             "^9.0 || ^10.0"
         ],
         "package_type": "laravel-package",
-        "paid_integration": false,
+        "paid_integration": true,
         "updated_at": "2023-04-06T20:54:00.282Z",
         "created_at": "2023-04-09T13:58:47.726Z"
     },
@@ -183,7 +183,7 @@
             "^9.46.0||^10.9.0"
         ],
         "package_type": "laravel-package",
-        "paid_integration": false,
+        "paid_integration": true,
         "updated_at": "2023-04-06T20:54:03.939Z",
         "created_at": "2023-04-09T13:58:47.738Z"
     },
@@ -221,7 +221,7 @@
         "latest_release_at": "2023-03-08T08:04:02+00:00",
         "laravel_dependency_versions": [],
         "package_type": "php-package",
-        "paid_integration": false,
+        "paid_integration": true,
         "updated_at": "2023-04-07T00:21:16.001Z",
         "created_at": "2023-04-09T13:58:47.746Z"
     },
@@ -7134,7 +7134,7 @@
             "^9.0||^10.0"
         ],
         "package_type": "laravel-package",
-        "paid_integration": false,
+        "paid_integration": true,
         "updated_at": "2023-04-13T11:21:51.972Z",
         "created_at": "2023-04-13T11:21:51.972Z"
     },
@@ -7523,5 +7523,25 @@
         "paid_integration": false,
         "updated_at": "2023-05-30T18:17:24.721Z",
         "created_at": "2023-05-30T18:17:24.721Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel IntelliDB",
+        "description": "An intelligent way to generate database-related components using OpenAI.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/salehhashemi1992/laravel-intelli-db",
+        "author": "salehhashemi",
+        "composer": "salehhashemi/laravel-intelli-db",
+        "npm": null,
+        "stars": 16,
+        "keywords": [],
+        "first_release_at": "2023-05-05T07:41:00+00:00",
+        "latest_release_at": "2023-05-31T13:26:53+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": true,
+        "updated_at": "2023-06-01T20:01:49.353Z",
+        "created_at": "2023-06-01T20:01:49.353Z"
     }
 ]
