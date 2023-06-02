@@ -196,6 +196,9 @@ function updatePageNumber(
     page.value = currentPage
 }
 
+// Total results length
+const totalResultsLength = computed(() => results.value.length)
+
 // Offset pagination
 const {
     currentPage,
@@ -205,7 +208,7 @@ const {
     prev,
     next,
 } = useOffsetPagination({
-    total: computed(() => results.value.length),
+    total: totalResultsLength,
     page,
     pageSize,
     onPageChange: updatePageNumber,
@@ -389,6 +392,7 @@ const categoriesForSelectboxWithAll = [
                 class="px-5 pt-8 flex justify-center"
                 >
                 <ui-pagination
+                    :total-results-length="totalResultsLength"
                     :page-count="pageCount"
                     :current-page="currentPage"
                     :is-first-page="isFirstPage"

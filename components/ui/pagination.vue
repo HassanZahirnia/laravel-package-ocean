@@ -4,6 +4,7 @@ defineProps<{
     pageCount: number
     isFirstPage: boolean
     isLastPage: boolean
+    totalResultsLength: number
 }>()
 
 const $emit = defineEmits<{
@@ -55,13 +56,21 @@ const $emit = defineEmits<{
         <div class="w-16 grid place-items-center">
             <div class="h-12 w-14 relative">
                 <div
+                    v-for="i in totalResultsLength"
+                    :key="i"
                     class="
-                    absolute top-0 right-[60%]
+                    absolute
                     text-xl
+                    transition-all duration-300
                     font-semibold
                     "
+                    :class="{
+                        'top-0 right-[60%]': i === currentPage,
+                        '-top-5 right-[20%] opacity-0': i > currentPage,
+                        'top-5 right-[90%] opacity-0': i < currentPage,
+                    }"
                     >
-                    {{ currentPage }}
+                    {{ i }}
                 </div>
                 <div
                     class="rounded-full
