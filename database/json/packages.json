@@ -7543,5 +7543,27 @@
         "paid_integration": true,
         "updated_at": "2023-06-01T20:01:49.353Z",
         "created_at": "2023-06-01T20:01:49.353Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Domain Expert",
+        "description": "Create and manage domain-driven directory structures using AI and automated processes.",
+        "category": "Code Architecture",
+        "github": "https://github.com/salehhashemi1992/laravel-domain-expert",
+        "author": "salehhashemi",
+        "composer": "salehhashemi/laravel-domain-expert",
+        "npm": null,
+        "stars": 12,
+        "keywords": [
+            "ddd"
+        ],
+        "first_release_at": "2023-04-09T20:02:53+00:00",
+        "latest_release_at": "2023-04-17T18:47:29+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-02T08:46:33.222Z",
+        "created_at": "2023-06-02T08:46:33.222Z"
     }
 ]
