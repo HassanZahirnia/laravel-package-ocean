@@ -9,11 +9,13 @@ defineProps<{
 const $emit = defineEmits<{
     (e: 'press:next'): void
     (e: 'press:prev'): void
+    (e: 'press:last'): void
+    (e: 'press:first'): void
 }>()
 </script>
 
 <template>
-    <div class="flex gap-4 items-center">
+    <div class="flex gap-3 items-center">
         <div
             class="rounded-full
             h-10 w-10
@@ -26,11 +28,29 @@ const $emit = defineEmits<{
             "
             :class="{
                 'cursor-not-allowed opacity-40': isFirstPage,
-                'cursor-pointer hover:bg-white dark:hover:bg-[#110E26]': !isFirstPage,
+                'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isFirstPage,
+            }"
+            @click="$emit('press:first')"
+            >
+            <div class="i-solar:double-alt-arrow-left-bold-duotone text-2xl" />
+        </div>
+        <div
+            class="rounded-full
+            h-10 w-10
+            backdrop-blur-xl
+            transition duration-300
+            grid place-items-center
+            bg-white/80
+            dark:bg-[#110E26]/50
+            shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+            "
+            :class="{
+                'cursor-not-allowed opacity-40': isFirstPage,
+                'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isFirstPage,
             }"
             @click="$emit('press:prev')"
             >
-            <div class="i-ph-caret-left-thin text-2xl" />
+            <div class="i-solar:alt-arrow-left-line-duotone text-2xl" />
         </div>
         <div class="w-16 grid place-items-center">
             <div class="h-12 w-14 relative">
@@ -74,11 +94,29 @@ const $emit = defineEmits<{
             "
             :class="{
                 'cursor-not-allowed opacity-40': isLastPage,
-                'cursor-pointer hover:bg-white dark:hover:bg-[#110E26]': !isLastPage,
+                'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isLastPage,
             }"
             @click="$emit('press:next')"
             >
-            <div class="i-ph-caret-right-thin text-2xl" />
+            <div class="i-solar:alt-arrow-right-line-duotone text-2xl" />
+        </div>
+        <div
+            class="rounded-full
+            h-10 w-10
+            backdrop-blur-xl
+            transition duration-300
+            grid place-items-center
+            bg-white/80
+            dark:bg-[#110E26]/50
+            shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
+            "
+            :class="{
+                'cursor-not-allowed opacity-40': isLastPage,
+                'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isLastPage,
+            }"
+            @click="$emit('press:last')"
+            >
+            <div class="i-solar:double-alt-arrow-right-bold-duotone text-2xl" />
         </div>
     </div>
 </template>

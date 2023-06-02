@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
+import { useStorage } from '@vueuse/core'
 import { laravelPackages } from '@/database/packages'
 import type { PackageSortFields } from '@/types/package'
 import { categories, categoriesWithPackagesCount } from '@/database/categories'
 import type { selectboxItem } from '@/types/selectbox'
 import type { CategoryWithPackagesCount } from '@/types/category'
-import { useStorage } from '@vueuse/core'
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({
@@ -395,6 +395,8 @@ const categoriesForSelectboxWithAll = [
                     :is-last-page="isLastPage"
                     @press:next="next"
                     @press:prev="prev"
+                    @press:first="currentPage = 1"
+                    @press:last="currentPage = pageCount"
                     />
             </div>
             <!-- No results message -->

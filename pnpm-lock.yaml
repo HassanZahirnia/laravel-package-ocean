@@ -35,6 +35,9 @@ devDependencies:
   '@iconify-json/ph':
     specifier: ^1.1.5
     version: 1.1.5
+  '@iconify-json/solar':
+    specifier: ^1.1.1
+    version: 1.1.1
   '@iconify/utils':
     specifier: ^2.1.5
     version: 2.1.5
@@ -857,6 +860,12 @@ packages:
 
   /@iconify-json/ph@1.1.5:
     resolution: {integrity: sha512-iLXq3nohfGge22gL2tZmQ2WHBKkKkIbGWrkuyC8arckS4PWaONyh4A+uDPtSek9QbYDvi9AE2+NxWkNZhANotA==}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: true
+
+  /@iconify-json/solar@1.1.1:
+    resolution: {integrity: sha512-VN7vPHaUW5cASnm2iN986bwTMGans5zAk1cVYB6nAGDhWjqaBMS6bmYmlpAYpuLk08uMAp2YtLkC23XFQd1zhg==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
