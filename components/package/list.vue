@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { orderBy } from 'lodash'
+import { isEmpty, orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { useStorage } from '@vueuse/core'
 import { laravelPackages } from '@/database/packages'
@@ -99,11 +99,21 @@ watch(
         }
 
         // If newSelectedCategory and oldSelectedCategory are not equal, set page to 1
-        if (newSelectedCategory !== oldSelectedCategory)
+        if (
+            (newSelectedCategory !== oldSelectedCategory)
+            && !(isEmpty(newSelectedCategory) && isEmpty(oldSelectedCategory))
+            && oldPage === newPage
+        )
             newPage = 1
 
+
+
         // If newShowOfficialPackages and oldShowOfficialPackages are not equal, set page to 1
-        if (newShowOfficialPackages !== oldShowOnlyOfficialPackages)
+        if (
+            (newShowOfficialPackages !== oldShowOnlyOfficialPackages)
+            && !(isEmpty(newShowOfficialPackages) && isEmpty(oldShowOnlyOfficialPackages))
+            && oldPage === newPage
+        )
             newPage = 1
 
         // Show only official packages if showOfficialPackages is true
@@ -156,9 +166,10 @@ watch(
         // Update the route
         if (
             results.value.length === laravelPackages.length
-            && newPage === 1 && newSearch === ''
-            && newSelectedCategory === ''
-            && newShowOfficialPackages === '0'
+            && newPage === 1
+            && isEmpty(newSearch)
+            && isEmpty(newSelectedCategory)
+            && isEmpty(newShowOfficialPackages)
         ){
             // Clear the query when page number is 1 and the search is empty
             navigateTo({
