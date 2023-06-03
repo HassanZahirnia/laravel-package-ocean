@@ -589,7 +589,7 @@
     },
     {
         "name": "Banhammer",
-        "description": "A simple way to ban any Model by ID and by IP. It also allows to block requests by IP addresses.",
+        "description": "A simple way to ban any Model by ID and by IP. It also allows blocking requests by IP addresses.",
         "category": "Auth & Permissions",
         "github": "https://github.com/mchev/banhammer",
         "author": "mchev",
@@ -697,7 +697,7 @@
     },
     {
         "name": "Laravel Authentication Log",
-        "description": "Tracks your users authentication information such as login/logout time, IP, Browser, Location, etc.",
+        "description": "Tracks your users' authentication information such as login/logout time, IP, Browser, Location, etc.",
         "category": "Auth & Permissions",
         "github": "https://github.com/rappasoft/laravel-authentication-log",
         "author": "rappasoft",
@@ -1024,7 +1024,7 @@
     },
     {
         "name": "Larastarters",
-        "description": "A regular Starter Kit and with a Design Theme.",
+        "description": "A regular Starter Kit with a Design Theme.",
         "category": "CMS & Admin Panels",
         "github": "https://github.com/LaravelDaily/Larastarters",
         "author": "laraveldaily",
@@ -1149,7 +1149,7 @@
     },
     {
         "name": "Statamic",
-        "description": "Flat-first, Git powered CMS designed for building beautiful, easy to manage websites.",
+        "description": "Flat-first, Git-powered CMS designed for building beautiful, easy-to-manage websites.",
         "category": "CMS & Admin Panels",
         "github": "https://github.com/statamic/cms",
         "author": "statamic",
@@ -1422,7 +1422,7 @@
     },
     {
         "name": "Venture",
-        "description": "Build and manage complex workflows of interdependent jobs using queueing system.",
+        "description": "Build and manage complex workflows of interdependent jobs using the queueing system.",
         "category": "Code Architecture",
         "github": "https://github.com/ksassnowski/venture",
         "author": "sassnowski",
@@ -1529,7 +1529,7 @@
     },
     {
         "name": "Tenancy",
-        "description": "Run multiple websites using the same installation while keeping tenant specific data separated.",
+        "description": "Run multiple websites using the same installation while keeping tenant-specific data separated.",
         "category": "Code Architecture",
         "github": "https://github.com/tenancy/tenancy",
         "author": "tenancy",
@@ -1861,7 +1861,7 @@
     },
     {
         "name": "Laravel MongoDB",
-        "description": "A MongoDB based Eloquent model and Query builder.",
+        "description": "A MongoDB-based Eloquent model and Query builder.",
         "category": "Database & Eloquent",
         "github": "https://github.com/jenssegers/laravel-mongodb",
         "author": "jenssegers",
@@ -1921,7 +1921,7 @@
     },
     {
         "name": "Laravel DynamoDB",
-        "description": "A DynamoDB based Eloquent model and Query builder.",
+        "description": "A DynamoDB-based Eloquent model and Query builder.",
         "category": "Database & Eloquent",
         "github": "https://github.com/kitar/laravel-dynamodb",
         "author": "kitar",
@@ -2001,7 +2001,7 @@
     },
     {
         "name": "Laravel Model Filter",
-        "description": "Offers an simple way to filter and search Eloquent models by array parameters and query strings.",
+        "description": "Offers a simple way to filter and search Eloquent models by array parameters and query strings.",
         "category": "Database & Eloquent",
         "github": "https://github.com/lacodix/laravel-model-filter",
         "author": "lacodix",
@@ -2022,7 +2022,7 @@
     },
     {
         "name": "Scout",
-        "description": "A driver based solution to searching your Eloquent models.",
+        "description": "A driver-based solution to searching your Eloquent models.",
         "category": "Database & Eloquent",
         "github": "https://github.com/laravel/scout",
         "author": "laravel",
@@ -2082,7 +2082,7 @@
     },
     {
         "name": "Laravel Acquaintances",
-        "description": "Manage friendships (with groups), followships along with Likes, favorites..",
+        "description": "Manage friendships (with groups), fellowships along with Likes, favorites..",
         "category": "Database & Eloquent",
         "github": "https://github.com/multicaret/laravel-acquaintances",
         "author": "multicaret",
@@ -2305,7 +2305,7 @@
     },
     {
         "name": "Eloquent Sortable",
-        "description": "Sortable behaviour for Eloquent models.",
+        "description": "Sortable behavior for Eloquent models.",
         "category": "Database & Eloquent",
         "github": "https://github.com/spatie/eloquent-sortable",
         "author": "spatie",
@@ -2647,7 +2647,7 @@
     },
     {
         "name": "Laravel Postgresql Enhanced",
-        "description": "Support for many missing PostgreSQL specific features.",
+        "description": "Support for many missing PostgreSQL-specific features.",
         "category": "Database & Eloquent",
         "github": "https://github.com/tpetry/laravel-postgresql-enhanced",
         "author": "tpetry",
@@ -3075,7 +3075,7 @@
     },
     {
         "name": "Mix",
-        "description": "The power of webpack, distilled for the rest of us.",
+        "description": "The power of Webpack, distilled for the rest of us.",
         "category": "Debugging & Dev Tools",
         "github": "https://github.com/laravel-mix/laravel-mix",
         "author": "laravel-mix",
@@ -3095,7 +3095,7 @@
     },
     {
         "name": "Laravel Workflow",
-        "description": "Track job status and write long running persistent distributed workflows (orchestrations).",
+        "description": "Track job status and write long-running persistent distributed workflows (orchestrations).",
         "category": "Debugging & Dev Tools",
         "github": "https://github.com/laravel-workflow/laravel-workflow",
         "author": "laravel-workflow",
@@ -3199,7 +3199,7 @@
     },
     {
         "name": "Laravel Server Side Rendering",
-        "description": "Server side rendering JavaScript in your application.",
+        "description": "Server-side rendering JavaScript in your application.",
         "category": "Debugging & Dev Tools",
         "github": "https://github.com/spatie/laravel-server-side-rendering",
         "author": "spatie",
@@ -3301,7 +3301,7 @@
     },
     {
         "name": "Laravel Swoole",
-        "description": "High performance HTTP server based on Swoole. Speed up your applications.",
+        "description": "High-performance HTTP server based on Swoole. Speed up your applications.",
         "category": "Debugging & Dev Tools",
         "github": "https://github.com/swooletw/laravel-swoole",
         "author": "swooletw",
@@ -3362,7 +3362,7 @@
     },
     {
         "name": "Fleet",
-        "description": "Run multiple Laravel Sail websites locally with custom domain names and https.",
+        "description": "Run multiple Laravel Sail websites locally with custom domain names and HTTPS.",
         "category": "Dev Ops",
         "github": "https://github.com/aschmelyun/fleet",
         "author": "aschmelyun",
@@ -3438,7 +3438,7 @@
     },
     {
         "name": "Stethoscope",
-        "description": "Monitor cpu, memory, hard disk, web server and network connection.",
+        "description": "Monitor CPU, memory, hard disk, web server and network connection.",
         "category": "Dev Ops",
         "github": "https://github.com/MohsenAbrishami/stethoscope",
         "author": "mohsenabrishami",
@@ -3589,7 +3589,7 @@
     },
     {
         "name": "Laravel Uptime Monitor",
-        "description": "A powerful and easy to configure uptime and SSL monitor.",
+        "description": "A powerful and easy-to-configure uptime and SSL monitor.",
         "category": "Dev Ops",
         "github": "https://github.com/spatie/laravel-uptime-monitor",
         "author": "spatie",
@@ -3661,7 +3661,7 @@
     },
     {
         "name": "Bagisto",
-        "description": "An easy to use, free and open source platform to build your online shop in no time.",
+        "description": "An easy-to use, free and open source platform to build your online shop in no time.",
         "category": "E-Commerce",
         "github": "https://github.com/bagisto/bagisto",
         "author": "bagisto",
@@ -3681,7 +3681,7 @@
     },
     {
         "name": "Laravel Invoices",
-        "description": "An easy to use interface to generate Invoice PDF files with your provided data.",
+        "description": "An easy-to-use interface to generate Invoice PDF files with your provided data.",
         "category": "E-Commerce",
         "github": "https://github.com/LaravelDaily/laravel-invoices",
         "author": "laraveldaily",
@@ -3981,7 +3981,7 @@
     },
     {
         "name": "Localizator",
-        "description": "Scan your project and generate language files ready to translate in language(s) of choosing.",
+        "description": "Scan your project and generate language files ready to translate in the language(s) of choosing.",
         "category": "Localization",
         "github": "https://github.com/amiranagram/localizator",
         "author": "amirami",
@@ -4059,7 +4059,7 @@
     },
     {
         "name": "Laravel Localization",
-        "description": "Easy i18n localization, an useful tool to combine with localization classes.",
+        "description": "Easy i18n localization, a useful tool to combine with localization classes.",
         "category": "Localization",
         "github": "https://github.com/mcamara/laravel-localization",
         "author": "mcamara",
@@ -4223,7 +4223,7 @@
     },
     {
         "name": "Mail SPF Checker",
-        "description": "Check if you can send e-mail through a given mailserver in name of a given e-mail address.",
+        "description": "Check if you can send e-mail through a given mail server based on a given e-mail address.",
         "category": "Mail",
         "github": "https://github.com/dietercoopman/mailspfchecker",
         "author": "dietercoopman",
@@ -4243,7 +4243,7 @@
     },
     {
         "name": "Laravel Mail Editor",
-        "description": "A mailable editor to create and manage mailables using a web UI.",
+        "description": "A mailable editor to create and manage mailable(s) using a web UI.",
         "category": "Mail",
         "github": "https://github.com/Qoraiche/laravel-mail-editor",
         "author": "qoraiche",
@@ -4372,7 +4372,7 @@
     },
     {
         "name": "Laravel Notify",
-        "description": "Add custom notifications to your project. A diverse range of notification design is available.",
+        "description": "Add custom notifications to your project. A diverse range of notification designs is available.",
         "category": "Notifications",
         "github": "https://github.com/mckenziearts/laravel-notify",
         "author": "mckenziearts",
@@ -4626,7 +4626,7 @@
     },
     {
         "name": "Secure Headers",
-        "description": "Add security related headers to HTTP response.",
+        "description": "Add security-related headers to HTTP response.",
         "category": "Security",
         "github": "https://github.com/BePsvPT/secure-headers",
         "author": "bepsvpt",
@@ -4646,7 +4646,7 @@
     },
     {
         "name": "Honey",
-        "description": "Anti-spam tool with honeypot, IP blocking, and easy Recaptcha integration.",
+        "description": "Anti-spam tool with a honeypot, IP blocking, and easy Recaptcha integration.",
         "category": "Security",
         "github": "https://github.com/lukeraymonddowning/honey",
         "author": "lukeraymonddowning",
@@ -4710,7 +4710,7 @@
     },
     {
         "name": "Laravel Scrubber",
-        "description": "Scrub sensitive information that breaks operational security policies from being leaked accidently.",
+        "description": "Scrub sensitive information that breaks operational security policies from being leaked accidentally.",
         "category": "Security",
         "github": "https://github.com/YorCreative/Laravel-Scrubber",
         "author": "yorcreative",
@@ -5139,7 +5139,7 @@
     },
     {
         "name": "Laravel Html",
-        "description": "Painless html generation.",
+        "description": "Painless HTML generation.",
         "category": "UI & Blade Components",
         "github": "https://github.com/spatie/laravel-html",
         "author": "spatie",
@@ -5159,7 +5159,7 @@
     },
     {
         "name": "Laravel Login Link",
-        "description": "Quickly login to your local environment.",
+        "description": "Quickly log in to your local environment.",
         "category": "UI & Blade Components",
         "github": "https://github.com/spatie/laravel-login-link",
         "author": "spatie",
@@ -5487,7 +5487,7 @@
     },
     {
         "name": "Gravatar",
-        "description": "Retrieve gravatar image URLs or check the existance of an image.",
+        "description": "Retrieve gravatar image URLs or check the existence of an image.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/creativeorange/gravatar",
         "author": "creativeorange",
@@ -5507,7 +5507,7 @@
     },
     {
         "name": "Laravel Cache",
-        "description": "An improved helper for working with cache.",
+        "description": "An improved helper for working with the cache.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/TheDragonCode/laravel-cache",
         "author": "dragon-code",
@@ -5547,7 +5547,7 @@
     },
     {
         "name": "Inertia Flash",
-        "description": "A Quick way to flash variables to InertiaJS that persist on session.",
+        "description": "A Quick way to flash variables to InertiaJS that persist on a session.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/flavorly/inertia-flash",
         "author": "flavorly",
@@ -5631,7 +5631,7 @@
     },
     {
         "name": "RandoPHP",
-        "description": "Random generators (Integer, Char, Byte, Sequences, Boolean) and take random sample from arrays.",
+        "description": "Random generators (Integer, Char, Byte, Sequences, Boolean) and take a random sample from arrays.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/Hi-Folks/rando-php",
         "author": "hi-folks",
@@ -5749,7 +5749,7 @@
     },
     {
         "name": "Snappy",
-        "description": "A PHP library allowing thumbnail, snapshot or PDF generation from a url or a html page.",
+        "description": "A PHP library allowing thumbnail, snapshot or PDF generation from a URL or a HTML page.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/KnpLabs/snappy",
         "author": "knplabs",
@@ -5827,7 +5827,7 @@
     },
     {
         "name": "Laravel Markable",
-        "description": "Integrate likes, bookmarks, favorites, reactions and custom made marks into your application.",
+        "description": "Integrate likes, bookmarks, favorites, reactions and custom-made marks into your application.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/maize-tech/laravel-markable",
         "author": "maize-tech",
@@ -6045,7 +6045,7 @@
     },
     {
         "name": "Laravel App Settings",
-        "description": "Store settings in database with a manager UI for your app.",
+        "description": "Store settings in a database with a manager UI for your app.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/qcod/laravel-app-settings",
         "author": "qcod",
@@ -6125,7 +6125,7 @@
     },
     {
         "name": "Laravel Page Cache",
-        "description": "Caches responses as static files on disk for lightning fast page loads.",
+        "description": "Caches responses as static files on disk for lightning-fast page loads.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/JosephSilber/page-cache",
         "author": "silber",
@@ -6490,7 +6490,7 @@
     },
     {
         "name": "Laravel Tags",
-        "description": "Add tags and taggable behaviour to your app.",
+        "description": "Add tags and taggable behavior to your app.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/spatie/laravel-tags",
         "author": "spatie",
@@ -7038,7 +7038,7 @@
     },
     {
         "name": "Laravel Settings",
-        "description": "Super simple key/value settings that comes with encryption and multi-tenancy out of the box.",
+        "description": "Super simple key/value settings that come with encryption and multi-tenancy out of the box.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/hackerESQ/laravel-settings",
         "author": "hackeresq",
@@ -7345,7 +7345,7 @@
     {
         "package_type": "laravel-package",
         "name": "Laravel Money",
-        "description": "Wrapper for MoneyPHP which provide tools for storing and using monetary values.",
+        "description": "Wrapper for MoneyPHP which provides tools for storing and using monetary values.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/cknow/laravel-money",
         "author": "cknow",
@@ -7387,7 +7387,7 @@
     {
         "package_type": "laravel-package",
         "name": "Laravel Shopper",
-        "description": "An eCommerce administration built to create and manage online shop with multi-vendor.",
+        "description": "An eCommerce administration built to create and manage the online shop with multi-vendor.",
         "category": "E-Commerce",
         "github": "https://github.com/shopperlabs/framework",
         "author": "shopper",
@@ -7448,7 +7448,7 @@
     {
         "package_type": "laravel-package",
         "name": "Laravel Recurring Models",
-        "description": "Recurring functionality like daily, weekly, or every n days recurrence, or more complex patterns.",
+        "description": "Recurring functionality like daily, weekly, or every n day's recurrence, or more complex patterns.",
         "category": "Database & Eloquent",
         "github": "https://github.com/mohammedmanssour/laravel-recurring-models",
         "author": "mohammedmanssour",
@@ -7488,7 +7488,7 @@
     {
         "package_type": "laravel-package",
         "name": "Laravel Javascript Validation",
-        "description": "Reuse validation rules, messages, FormRequest to validate forms automatically in client side.",
+        "description": "Reuse validation rules, messages, and FormRequest to validate forms automatically on client side.",
         "category": "Utilities & Helpers",
         "github": "https://github.com/proengsoft/laravel-jsvalidation",
         "author": "proengsoft",
