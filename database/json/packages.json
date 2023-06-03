@@ -1169,7 +1169,7 @@
     },
     {
         "name": "Laravel DataTables",
-        "description": "Handle server-side works of DataTables jQuery plugin via AJAX option by using eloquent.",
+        "description": "Handle server-side works of DataTables jQuery plugin via AJAX option by using Eloquent.",
         "category": "CMS & Admin Panels",
         "github": "https://github.com/yajra/laravel-datatables",
         "author": "yajra",
@@ -2001,7 +2001,7 @@
     },
     {
         "name": "Laravel Model Filter",
-        "description": "Offers an simple way to filter and search eloquent models by array parameters and query strings.",
+        "description": "Offers an simple way to filter and search Eloquent models by array parameters and query strings.",
         "category": "Database & Eloquent",
         "github": "https://github.com/lacodix/laravel-model-filter",
         "author": "lacodix",
@@ -2689,7 +2689,7 @@
     },
     {
         "name": "Eloquent Filter",
-        "description": "An eloquent way to filter models and their relationships.",
+        "description": "An Eloquent way to filter models and their relationships.",
         "category": "Database & Eloquent",
         "github": "https://github.com/Tucker-Eric/EloquentFilter",
         "author": "tucker-eric",
@@ -3930,7 +3930,7 @@
     },
     {
         "name": "Laravel Media Library",
-        "description": "Associate files with eloquent models.",
+        "description": "Associate files with Eloquent models.",
         "category": "File Management",
         "github": "https://github.com/spatie/laravel-medialibrary",
         "author": "spatie",
@@ -6806,7 +6806,7 @@
     },
     {
         "name": "Laravel Date Scopes",
-        "description": "A big range of useful date scopes for your eloquent models.",
+        "description": "A big range of useful date scopes for your Eloquent models.",
         "category": "Database & Eloquent",
         "github": "https://github.com/laracraft-tech/laravel-date-scopes",
         "author": "laracraft-tech",
@@ -6902,7 +6902,7 @@
     },
     {
         "name": "Laravel Paperclip",
-        "description": "Allows you to attach files to eloquent models.",
+        "description": "Allows you to attach files to Eloquent models.",
         "category": "File Management",
         "github": "https://github.com/czim/laravel-paperclip",
         "author": "czim",
@@ -6940,7 +6940,7 @@
     },
     {
         "name": "Laravel Eloquent Query Cache",
-        "description": "Adding cache on your eloquent queries' results is now a breeze.",
+        "description": "Adding cache on your Eloquent queries' results is now a breeze.",
         "category": "Database & Eloquent",
         "github": "https://github.com/renoki-co/laravel-eloquent-query-cache",
         "author": "rennokki",
@@ -7367,7 +7367,7 @@
     {
         "package_type": "laravel-package",
         "name": "Laravel Attributes",
-        "description": "Create and manage attributes for your eloquent models easily.",
+        "description": "Create and manage attributes for your Eloquent models easily.",
         "category": "Database & Eloquent",
         "github": "https://github.com/milwad-dev/laravel-attributes",
         "author": "milwad",
