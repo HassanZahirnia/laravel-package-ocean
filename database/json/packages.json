@@ -4710,7 +4710,7 @@
     },
     {
         "name": "Laravel Scrubber",
-        "description": "Scrub sensitive information that breaks operational security policies from being leaked accidentally.",
+        "description": "Scrub sensitive information that breaks security policies from being leaked accidentally.",
         "category": "Security",
         "github": "https://github.com/YorCreative/Laravel-Scrubber",
         "author": "yorcreative",
