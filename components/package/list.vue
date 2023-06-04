@@ -2,6 +2,7 @@
 import { isEmpty, orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { useStorage } from '@vueuse/core'
+import dayjs from 'dayjs'
 import { laravelPackages } from '@/database/packages'
 import type { PackageSortFields } from '@/types/package'
 import { categories, categoriesWithPackagesCount } from '@/database/categories'
@@ -47,6 +48,32 @@ const selectedCategory = useSelectedCategory()
 // Sort field
 const sortField = useStorage<PackageSortFields>('sortField', 'first_release_at')
 
+// Last visit date
+const lastVisitDate = useStorage<string | null>('lastVisitDate', null)
+const newVisitDate = useStorage<string | null>('newVisitDate', null)
+
+// If the lastVisitDate is empty, set current time
+if (!lastVisitDate.value){
+    lastVisitDate.value = new Date().toISOString()
+    newVisitDate.value = null
+}
+else {
+    if (!newVisitDate.value){
+        newVisitDate.value = new Date().toISOString()
+    }
+    else {
+        if (dayjs().diff(newVisitDate.value, 'minutes') > 15){
+            lastVisitDate.value = new Date().toISOString()
+            newVisitDate.value = null
+        }
+    }
+}
+
+const newPackagesSinceLastVisit = computed(() => laravelPackages.filter(laravelPackage => dayjs(laravelPackage.created_at).isAfter(lastVisitDate.value)))
+
+// Show new packages since last visit
+const showNewPackagesSinceLastVisit = ref(false)
+
 // Only show official packages
 const showOfficialPackages = useShowOfficialPackages()
 
@@ -82,12 +109,15 @@ watch(
 )
 
 watch(
-    [search, page, sortField, selectedCategory, showOfficialPackages],
+    [search, page, sortField, selectedCategory, showOfficialPackages, showNewPackagesSinceLastVisit],
     (
-        [newSearch, newPage, newSortField, newSelectedCategory, newShowOfficialPackages],
-        [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages],
+        [newSearch, newPage, newSortField, newSelectedCategory, newShowOfficialPackages, newShowNewPackagesSinceLastVisit],
+        [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages, oldShowNewPackagesSinceLastVisit],
     ) => {
         results.value = laravelPackages
+
+        if (newShowNewPackagesSinceLastVisit)
+            results.value = newPackagesSinceLastVisit.value
 
         // if newPage is changed, scroll to #scroll-to-reference element
         if (newPage !== oldPage) {
@@ -266,7 +296,7 @@ const categoriesForSelectboxWithAll = [
         <div class="flex gap-5 flex-wrap items-center justify-between">
             <div
                 id="scroll-to-reference"
-                class="flex gap-5 scroll-mt-5
+                class="flex gap-4 scroll-mt-5
                 items-center
                 flex-wrap sm:flex-nowrap
                 "
@@ -312,6 +342,37 @@ const categoriesForSelectboxWithAll = [
                         <div class="i-ph-x-bold" />
                     </div>
                 </transition>
+                <!-- New Since Last Visit Button -->
+                <div
+                    v-if="newPackagesSinceLastVisit.length"
+                    class="py-1.5 px-4 select-none
+                    rounded-full cursor-pointer
+                    transition-all duration-300
+                    flex gap-2 items-center
+                    font-medium
+                    hover:brightness-105
+                    "
+                    :class="{
+                        'bg-slate-300/50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-400': !showNewPackagesSinceLastVisit,
+                        'bg-teal-200/70 text-teal-600 dark:bg-teal-500/20': showNewPackagesSinceLastVisit,
+                    }"
+                    @click="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
+                    >
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400"
+                            :class="{
+                                'opacity-75': !showNewPackagesSinceLastVisit,
+                                'opacity-0': showNewPackagesSinceLastVisit,
+                            }"
+                            />
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500" />
+                    </span>
+                    <div class="">
+                        {{ newPackagesSinceLastVisit.length }}
+                        New Items
+                    </div>
+                </div>
             </div>
             <div
                 class="xl:flex-1

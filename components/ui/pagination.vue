@@ -28,7 +28,7 @@ const $emit = defineEmits<{
             shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
             "
             :class="{
-                'cursor-not-allowed opacity-40': isFirstPage,
+                'cursor-not-allowed opacity-20': isFirstPage,
                 'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isFirstPage,
             }"
             @click="$emit('press:first')"
@@ -46,7 +46,7 @@ const $emit = defineEmits<{
             shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
             "
             :class="{
-                'cursor-not-allowed opacity-40': isFirstPage,
+                'cursor-not-allowed opacity-20': isFirstPage,
                 'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isFirstPage,
             }"
             @click="$emit('press:prev')"
@@ -102,7 +102,7 @@ const $emit = defineEmits<{
             shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
             "
             :class="{
-                'cursor-not-allowed opacity-40': isLastPage,
+                'cursor-not-allowed opacity-20': isLastPage,
                 'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isLastPage,
             }"
             @click="$emit('press:next')"
@@ -120,7 +120,7 @@ const $emit = defineEmits<{
             shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)]
             "
             :class="{
-                'cursor-not-allowed opacity-40': isLastPage,
+                'cursor-not-allowed opacity-20': isLastPage,
                 'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]': !isLastPage,
             }"
             @click="$emit('press:last')"
