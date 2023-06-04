@@ -15,41 +15,7 @@ import '@fontsource/poppins/latin.css'
         <nav-bar />
         <slot />
         <ClientOnly>
-            <footer class="mt-40 relative z-10">
-                <div
-                    class="text-center py-20 sm:py-10
-                text-sm text-[#545D82]
-                "
-                    >
-                    <div class="">
-                        Made with
-                        <span class="i-fluent-emoji-purple-heart text-lg inline-block relative top-1" />
-                        by
-                        <a
-                            href="https://zahirnia.com"
-                            class="
-                        transition duration-300
-                        hover:text-black
-                        dark:hover:text-white
-                        underline
-                        "
-                            >
-                            Hassan Zahirnia
-                        </a>
-                    </div>
-                    <div class="pt-10">
-                        This site is powered by
-                        <a
-                            href="https://www.netlify.com/"
-                            class="transition duration-300
-                        hover:text-black
-                        dark:hover:text-white
-                        underline
-                        "
-                            >Netlify</a>
-                    </div>
-                </div>
-            </footer>
+            <footer-section />
         </ClientOnly>
     </section>
 </template>
