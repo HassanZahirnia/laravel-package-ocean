@@ -16,7 +16,7 @@
             "
             />
         <div
-            class="py-20 sm:py-10
+            class="pt-20 sm:pt-10 pb-5
             grid place-items-center
             "
             >
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="mt-6 bg-current opacity-20 dark:opacity-30 h-px w-full max-w-[22rem]" />
-            <div class="pt-20 text-sm text-center">
+            <div class="pt-20 text-xs text-center">
                 <div class="">
                     <a
                         href="https://laravel.com/"
@@ -133,7 +133,7 @@
                         underline
                         "
                         >Taylor Otwell</a>
-                    , and the usage of their trademark for this project has been approved by them.
+                    and the usage of their trademark for this project has been approved by them.
                 </div>
                 <div class="pt-5">
                     This site is powered by
