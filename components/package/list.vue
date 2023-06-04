@@ -360,7 +360,7 @@ const categoriesForSelectboxWithAll = [
                         "
                         :class="{
                             'bg-slate-300/50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-400': !showNewPackagesSinceLastVisit,
-                            'bg-teal-200/70 text-teal-600 dark:bg-teal-500/20': showNewPackagesSinceLastVisit,
+                            'bg-teal-200/70 text-teal-600 dark:text-teal-500 dark:bg-teal-500/20': showNewPackagesSinceLastVisit,
                         }"
                         >
                         <span class="relative flex h-2.5 w-2.5">
