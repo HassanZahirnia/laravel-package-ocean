@@ -50,18 +50,24 @@ const sortField = useStorage<PackageSortFields>('sortField', 'first_release_at')
 
 // Last visit date
 const lastVisitDate = useStorage<string | null>('lastVisitDate', null)
+
+// New visit date
 const newVisitDate = useStorage<string | null>('newVisitDate', null)
 
-// If the lastVisitDate is empty, set current time
+// If the lastVisitDate is empty, set the current time
 if (!lastVisitDate.value){
     lastVisitDate.value = new Date().toISOString()
     newVisitDate.value = null
 }
 else {
+    // If newVisitDate is empty, set it to the current time
+    // so that on the next visit, we have something to compare the 15 minutes difference with
     if (!newVisitDate.value){
         newVisitDate.value = new Date().toISOString()
     }
     else {
+        // If the difference between the lastVisitDate and newVisitDate is more than 15 minutes,
+        // set the lastVisitDate to the current time and newVisitDate to null
         if (dayjs().diff(newVisitDate.value, 'minutes') > 15){
             lastVisitDate.value = new Date().toISOString()
             newVisitDate.value = null
@@ -69,6 +75,7 @@ else {
     }
 }
 
+// New packages since last visit
 const newPackagesSinceLastVisit = computed(() => laravelPackages.filter(laravelPackage => dayjs(laravelPackage.created_at).isAfter(lastVisitDate.value)))
 
 // Show new packages since last visit
