@@ -12,8 +12,7 @@
             bg-gradient-to-r
             from-pink-300 to-cyan-300
             dark:from-pink-600 dark:to-cyan-600
-            opacity-20
-            dark:opacity-10
+            opacity-10
             "
             />
         <div
@@ -115,16 +114,38 @@
                 </div>
             </div>
             <div class="mt-6 bg-current opacity-20 dark:opacity-30 h-px w-full max-w-[22rem]" />
-            <div class="pt-20 text-sm">
-                This site is powered by
-                <a
-                    href="https://www.netlify.com/"
-                    class="transition duration-300
-                hover:text-black
-                dark:hover:text-white
-                underline
-                "
-                    >Netlify</a>
+            <div class="pt-20 text-sm text-center">
+                <div class="">
+                    <a
+                        href="https://laravel.com/"
+                        class="transition duration-300
+                        hover:text-black
+                        dark:hover:text-white
+                        underline
+                        "
+                        >Laravel</a>
+                    is a trademark of
+                    <a
+                        href="https://github.com/taylorotwell"
+                        class="transition duration-300
+                        hover:text-black
+                        dark:hover:text-white
+                        underline
+                        "
+                        >Taylor Otwell</a>
+                    , and the usage of their trademark for this project has been approved by them.
+                </div>
+                <div class="pt-5">
+                    This site is powered by
+                    <a
+                        href="https://www.netlify.com/"
+                        class="transition duration-300
+                        hover:text-black
+                        dark:hover:text-white
+                        underline
+                        "
+                        >Netlify</a>
+                </div>
             </div>
         </div>
     </footer>
