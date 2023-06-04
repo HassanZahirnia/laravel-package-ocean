@@ -343,36 +343,42 @@ const categoriesForSelectboxWithAll = [
                     </div>
                 </transition>
                 <!-- New Since Last Visit Button -->
-                <div
+                <ui-tooltip
                     v-if="newPackagesSinceLastVisit.length"
-                    class="py-1.5 px-4 select-none
-                    rounded-full cursor-pointer
-                    transition-all duration-300
-                    flex gap-2 items-center
-                    font-medium
-                    hover:brightness-105
-                    "
-                    :class="{
-                        'bg-slate-300/50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-400': !showNewPackagesSinceLastVisit,
-                        'bg-teal-200/70 text-teal-600 dark:bg-teal-500/20': showNewPackagesSinceLastVisit,
-                    }"
-                    @click="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
+                    :content="newPackagesSinceLastVisit.length + ' New packages were added since your last visit !'"
+                    theme="emerald"
+                    @click.stop.prevent="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
                     >
-                    <span class="relative flex h-2.5 w-2.5">
-                        <span
-                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400"
-                            :class="{
-                                'opacity-75': !showNewPackagesSinceLastVisit,
-                                'opacity-0': showNewPackagesSinceLastVisit,
-                            }"
-                            />
-                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500" />
-                    </span>
-                    <div class="">
-                        {{ newPackagesSinceLastVisit.length }}
-                        New Items
+                    <div
+
+                        class="py-1.5 px-4 select-none
+                        rounded-full cursor-pointer
+                        transition-all duration-300
+                        flex gap-2 items-center
+                        font-medium
+                        hover:brightness-105
+                        "
+                        :class="{
+                            'bg-slate-300/50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-400': !showNewPackagesSinceLastVisit,
+                            'bg-teal-200/70 text-teal-600 dark:bg-teal-500/20': showNewPackagesSinceLastVisit,
+                        }"
+                        >
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span
+                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400"
+                                :class="{
+                                    'opacity-75': !showNewPackagesSinceLastVisit,
+                                    'opacity-0': showNewPackagesSinceLastVisit,
+                                }"
+                                />
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500" />
+                        </span>
+                        <div class="">
+                            {{ newPackagesSinceLastVisit.length }}
+                            New Items
+                        </div>
                     </div>
-                </div>
+                </ui-tooltip>
             </div>
             <div
                 class="xl:flex-1
