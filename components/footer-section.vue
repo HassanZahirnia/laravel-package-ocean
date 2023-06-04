@@ -5,6 +5,18 @@
 <template>
     <footer class="mt-40 relative z-10 text-slate-600 dark:text-[#545D82]">
         <div
+            class="h-[30rem] w-[50rem] rounded-full
+            blur-[100px]
+            -z-10
+            absolute -bottom-1/2 right-1/2 translate-x-1/2
+            bg-gradient-to-r
+            from-pink-300 to-cyan-300
+            dark:from-pink-600 dark:to-cyan-600
+            opacity-20
+            dark:opacity-10
+            "
+            />
+        <div
             class="py-20 sm:py-10
             grid place-items-center
             "
