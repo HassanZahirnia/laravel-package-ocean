@@ -43,6 +43,7 @@ export default defineNuxtConfig({
                 { rel: 'manifest', href: '/favicon/site.webmanifest?v=tepFhZKP8' },
                 { rel: 'mask-icon', href: '/favicon/safari-pinned-tab.svg?v=tepFhZKP8', color: '#5bbad5' },
                 { rel: 'shortcut icon', href: '/favicon/favicon.ico?v=tepFhZKP8' },
+                { rel: 'alternate', type: 'application/rss+xml', title: 'Laravel Package Ocean - Discover new Laravel packages', href: '/rss.xml' },
             ],
         },
     },
