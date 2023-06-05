@@ -27,31 +27,52 @@ export type packagistData = {
     }
 }
 
+export type minimalPackagistData = {
+    packages: {
+        [key: string]: Array<{
+            name: string
+            time: string
+            version: string
+            require: {
+                [key: string]: string
+            }
+            'require-dev': {
+                [key: string]: string
+            }
+        }>
+    }
+}
+
 export const extract_packagist_first_release_at = (packagistData: packagistData) => packagistData.package.time
 
-export const extract_packagist_latest_release = (packagistData: packagistData): string => {
-    const releases = packagistData.package.versions
-    const releaseVersions = Object.keys(releases).filter(release => !releases[release].version.includes('dev'))
-    const latestRelease = releaseVersions.reduce((a, b) => {
-        const timeA = new Date(releases[a].time)
-        const timeB = new Date(releases[b].time)
-        return timeA > timeB ? a : b
-    })
+export const extract_packagist_latest_release_at = (
+    minimalPackagistData: minimalPackagistData,
+): string => {
+    const latestRelease = minimalPackagistData.packages[Object.keys(minimalPackagistData.packages)[0]].find(
+        release => !release.version.includes('dev') && !release.version.includes('alpha') && !release.version.includes('beta') && !release.version.includes('rc'),
+    )
 
-    return latestRelease
+    if (!latestRelease)
+        return ''
+
+    return latestRelease.time
 }
 
-export const extract_packagist_latest_release_at = (packagistData: packagistData): string => {
-    const latestRelease = extract_packagist_latest_release(packagistData)
-    return packagistData.package.versions[latestRelease].time
-}
+export const extract_packagist_laravel_dependency_versions = (
+    minimalPackagistData: minimalPackagistData,
+): string[] => {
+    const latestRelease = minimalPackagistData.packages[Object.keys(minimalPackagistData.packages)[0]].find(
+        release => !release.version.includes('dev') && !release.version.includes('alpha') && !release.version.includes('beta') && !release.version.includes('rc'),
+    )
 
-export const extract_packagist_laravel_dependency_versions = (packagistData: packagistData): string[] => {
-    const releases = packagistData.package.versions
-    const latestRelease = extract_packagist_latest_release(packagistData)
+    if (!latestRelease)
+        return []
 
     const supportedVersions = new Set<string>()
-    const dependencies = { ...releases[latestRelease].require, ...releases[latestRelease]['require-dev'] }
+    const dependencies = {
+        ...latestRelease.require,
+        ...latestRelease['require-dev'],
+    }
     for (const dependency in dependencies) {
         if (dependency.startsWith('illuminate/') || dependency === 'laravel/framework'){
             const convertedVersion = convertLegacySemver(dependencies[dependency])
@@ -95,11 +116,11 @@ export const updateAllCompatibleVersions = async function(){
 
             let updatedDependencies = false
 
-            const { data: packagistData }: { data: packagistData }
-                = await axios.get(`https://packagist.org/packages/${laravelPackage.composer}.json`)
+            const { data: minimalPackagistData }: { data: minimalPackagistData }
+                = await axios.get(`https://repo.packagist.org/p2/${laravelPackage.composer}.json`)
 
-            if (extract_packagist_laravel_dependency_versions(packagistData).length){
-                laravelPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(packagistData)
+            if (extract_packagist_laravel_dependency_versions(minimalPackagistData).length){
+                laravelPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(minimalPackagistData)
                 updatedDependencies = true
             }
             else if (!laravelPackage.laravel_dependency_versions.length) {

@@ -243,7 +243,7 @@
         "first_release_at": "2016-09-19T10:55:53+00:00",
         "latest_release_at": "2023-03-05T15:42:39+00:00",
         "laravel_dependency_versions": [
-            "^8.0||^9.0||^10.0"
+            "^6.0||^8.0||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
         "paid_integration": false,
@@ -995,7 +995,7 @@
         "first_release_at": "2020-04-28T19:14:44+00:00",
         "latest_release_at": "2023-03-31T12:33:27+00:00",
         "laravel_dependency_versions": [
-            "^9.0||^10.0"
+            "^8.6||^9.0||^10.0"
         ],
         "package_type": "laravel-package",
         "paid_integration": false,
@@ -2598,7 +2598,7 @@
         "first_release_at": "2018-06-26T01:28:12+00:00",
         "latest_release_at": "2023-02-07T20:48:26+00:00",
         "laravel_dependency_versions": [
-            "^9.0"
+            "^10.0"
         ],
         "package_type": "laravel-package",
         "paid_integration": false,
@@ -2761,7 +2761,7 @@
         "first_release_at": "2013-11-27T05:33:16+00:00",
         "latest_release_at": "2023-03-03T10:08:49+00:00",
         "laravel_dependency_versions": [
-            "^8"
+            "^10.0"
         ],
         "package_type": "laravel-package",
         "paid_integration": false,
@@ -4259,7 +4259,7 @@
         "first_release_at": "2019-03-03T01:10:32+00:00",
         "latest_release_at": "2023-04-03T13:27:17+00:00",
         "laravel_dependency_versions": [
-            "^9.0||^10.0"
+            "^9.0"
         ],
         "package_type": "laravel-package",
         "paid_integration": false,
@@ -7357,7 +7357,7 @@
         "first_release_at": "2015-07-31T18:07:31+00:00",
         "latest_release_at": "2023-02-18T17:08:05+00:00",
         "laravel_dependency_versions": [
-            "^7.0||^8.0||^9.0"
+            "^7.0||^8.0||^9.0||^10.0"
         ],
         "paid_integration": false,
         "updated_at": "2023-05-04T09:38:27.685Z",

@@ -6,7 +6,7 @@ import axios, { isAxiosError } from 'axios'
 import dotenv from 'dotenv'
 import chalk from 'chalk'
 import ora from 'ora'
-import type { packagistData } from '../utils/composer'
+import type { packagistData, minimalPackagistData } from '../utils/composer'
 import {
     extract_packagist_laravel_dependency_versions,
     extract_packagist_first_release_at,
@@ -222,10 +222,13 @@ export const addPackage = async function(){
                         const { data: packagistData }: { data: packagistData }
                             = await axios.get(`https://packagist.org/packages/${newPackage.composer}.json`)
 
-                        newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
-                        newPackage.latest_release_at = extract_packagist_latest_release_at(packagistData)
+                        const { data: minimalPackagistData }: { data: minimalPackagistData }
+                            = await axios.get(`https://repo.packagist.org/p2/${newPackage.composer}.json`)
 
-                        newPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(packagistData)
+                        newPackage.first_release_at = extract_packagist_first_release_at(packagistData)
+                        newPackage.latest_release_at = extract_packagist_latest_release_at(minimalPackagistData)
+
+                        newPackage.laravel_dependency_versions = extract_packagist_laravel_dependency_versions(minimalPackagistData)
 
                         if (newPackage.laravel_dependency_versions.length === 0)
                             log(chalk.yellow('\n Could not detect any compatible versions \n'))
