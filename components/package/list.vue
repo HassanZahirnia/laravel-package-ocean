@@ -384,8 +384,8 @@ const categoriesForSelectboxWithAll = [
                         </span>
                         <div class="">
                             {{ newPackagesSinceLastVisit.length }}
-                            New Item
-                            {{ newPackagesSinceLastVisit.length > 1 ? 's' : '' }}
+                            <span class="inline">New Item</span>
+                            <span class="inline">{{ newPackagesSinceLastVisit.length > 1 ? 's' : '' }}</span>
                         </div>
                     </div>
                 </ui-tooltip>
