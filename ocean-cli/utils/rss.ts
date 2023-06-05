@@ -13,6 +13,11 @@ export const generateRSSFeed = async() => {
         language: 'en',
     })
 
+    // Sort the packages by created_at date
+    packagesDatabase.sort((a, b) => {
+        return new Date(b.created_at as string).getTime() - new Date(a.created_at as string).getTime()
+    })
+
     packagesDatabase.forEach((item) => {
         feed.item({
             title: item.name,
