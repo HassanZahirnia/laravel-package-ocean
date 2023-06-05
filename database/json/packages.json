@@ -7625,5 +7625,25 @@
         "paid_integration": true,
         "updated_at": "2023-06-05T12:36:55.600Z",
         "created_at": "2023-06-05T12:36:55.600Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Mapbox",
+        "description": "Easily integrate Mapbox maps to your Laravel app using only Blade components.",
+        "category": "UI & Blade Components",
+        "github": "https://github.com/koossaayy/laravel-mapbox",
+        "author": "koossaayy",
+        "composer": "koossaayy/laravel-mapbox",
+        "npm": null,
+        "stars": 39,
+        "keywords": [],
+        "first_release_at": "2021-11-29T21:24:38+00:00",
+        "latest_release_at": "2023-02-14T20:12:06+00:00",
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10"
+        ],
+        "paid_integration": true,
+        "updated_at": "2023-06-05T12:42:35.116Z",
+        "created_at": "2023-06-05T12:42:35.116Z"
     }
 ]
