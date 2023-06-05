@@ -54,6 +54,8 @@ const lastVisitDate = useStorage<string | null>('lastVisitDate', null)
 // New visit date
 const newVisitDate = useStorage<string | null>('newVisitDate', null)
 
+const GRACE_PERIOD = 5
+
 // If the lastVisitDate is empty, set the current time
 if (!lastVisitDate.value){
     lastVisitDate.value = new Date().toISOString()
@@ -61,14 +63,14 @@ if (!lastVisitDate.value){
 }
 else {
     // If newVisitDate is empty, set it to the current time
-    // so that on the next visit, we have something to compare the 15 minutes difference with
+    // so that on the next visit, we have something to compare the GRACE_PERIOD minutes difference with
     if (!newVisitDate.value){
         newVisitDate.value = new Date().toISOString()
     }
     else {
-        // If the difference between the lastVisitDate and newVisitDate is more than 15 minutes,
+        // If the difference between the lastVisitDate and newVisitDate is more than GRACE_PERIOD minutes,
         // set the lastVisitDate to the current time and newVisitDate to null
-        if (dayjs().diff(newVisitDate.value, 'minutes') > 15){
+        if (dayjs().diff(newVisitDate.value, 'minutes') > GRACE_PERIOD){
             lastVisitDate.value = new Date().toISOString()
             newVisitDate.value = null
         }
@@ -382,7 +384,8 @@ const categoriesForSelectboxWithAll = [
                         </span>
                         <div class="">
                             {{ newPackagesSinceLastVisit.length }}
-                            New Items
+                            New Item
+                            {{ newPackagesSinceLastVisit.length > 1 ? 's' : '' }}
                         </div>
                     </div>
                 </ui-tooltip>
