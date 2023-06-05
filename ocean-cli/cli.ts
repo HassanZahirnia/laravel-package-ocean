@@ -26,15 +26,14 @@ export const showMainMenu = function(){
                 choices: [
                     'Package: Add',
                     'Package: Search',
-                    'Package: Run Health Check',
                     'Package: Update All',
                     'Package: Update Compatible Versions',
                     'Package: Update Github Stars',
                     'Laravel: Update Active Versions',
-                    'Health: Validate JSON',
-                    'Health: Validate JSON (Verbose)',
                     'Health: Check Github',
                     'Health: Check Composer',
+                    'Health: Validate JSON',
+                    'Health: Validate JSON (Verbose)',
                     'Exit',
                 ],
             },
@@ -59,17 +58,17 @@ export const showMainMenu = function(){
                 case 'Laravel: Update Active Versions':
                     writeActiveLaravelVersion()
                     break
-                case 'Health: Validate JSON':
-                    validateJson()
-                    break
-                case 'Health: Validate JSON (Verbose)':
-                    validateJson({ verbose: true })
-                    break
                 case 'Health: Check Github':
                     runGithubChecks()
                     break
                 case 'Health: Check Composer':
                     runComposerChecks()
+                    break
+                case 'Health: Validate JSON':
+                    validateJson()
+                    break
+                case 'Health: Validate JSON (Verbose)':
+                    validateJson({ verbose: true })
                     break
                 case 'Exit':
                     process.exit(0)
