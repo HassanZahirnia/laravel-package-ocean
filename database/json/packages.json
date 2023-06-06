@@ -7763,5 +7763,248 @@
         "paid_integration": false,
         "updated_at": "2023-06-06T13:43:00.583Z",
         "created_at": "2023-06-06T13:43:00.583Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Model Caching",
+        "description": "Eloquent model-caching made easy.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/GeneaLabs/laravel-model-caching",
+        "author": "genealabs",
+        "composer": "genealabs/laravel-model-caching",
+        "npm": null,
+        "stars": 2103,
+        "keywords": [],
+        "first_release_at": "2017-09-20T21:59:12+00:00",
+        "latest_release_at": "2023-03-27T13:53:10+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:14:15.119Z",
+        "created_at": "2023-06-06T20:14:15.119Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Jigsaw",
+        "description": "Simple static sites with Laravel’s Blade.",
+        "category": "UI & Blade Components",
+        "github": "https://github.com/tighten/jigsaw",
+        "author": "tightenco",
+        "composer": "tightenco/jigsaw",
+        "npm": null,
+        "stars": 2034,
+        "keywords": [],
+        "first_release_at": "2016-03-25T16:02:25+00:00",
+        "latest_release_at": "2023-06-02T15:03:46+00:00",
+        "laravel_dependency_versions": [
+            "^9.0",
+            "^9.21.1",
+            "^9.8"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:15:41.064Z",
+        "created_at": "2023-06-06T20:15:41.064Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Testbench",
+        "description": "Helps you write tests for your Laravel package.",
+        "category": "Testing",
+        "github": "https://github.com/orchestral/testbench",
+        "author": "orchestra",
+        "composer": "orchestra/testbench",
+        "npm": null,
+        "stars": 1950,
+        "keywords": [],
+        "first_release_at": "2013-06-08T15:05:34+00:00",
+        "latest_release_at": "2023-05-30T08:19:18+00:00",
+        "laravel_dependency_versions": [
+            ">=10.8.0 <10.14.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:17:21.306Z",
+        "created_at": "2023-06-06T20:17:21.306Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Health",
+        "description": "Checks if the application resources are running as they should and creates a service status panel.",
+        "category": "Dev Ops",
+        "github": "https://github.com/antonioribeiro/health",
+        "author": "pragmarx",
+        "composer": "pragmarx/health",
+        "npm": null,
+        "stars": 1881,
+        "keywords": [],
+        "first_release_at": "2016-11-28T21:36:11+00:00",
+        "latest_release_at": "2022-11-25T11:17:31+00:00",
+        "laravel_dependency_versions": [
+            ">=8.0",
+            "9.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:18:49.350Z",
+        "created_at": "2023-06-06T20:18:49.350Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Visits",
+        "description": "A counter that can be attached to any model to track its visits using Redis or Eloquent.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/awssat/laravel-visits",
+        "author": "awssat",
+        "composer": "awssat/laravel-visits",
+        "npm": null,
+        "stars": 833,
+        "keywords": [],
+        "first_release_at": "2018-06-15T15:47:59+00:00",
+        "latest_release_at": "2023-03-02T05:46:22+00:00",
+        "laravel_dependency_versions": [
+            "~5.5.0 || ~5.6.0 || ~5.7.0 || ~5.8.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:33:38.221Z",
+        "created_at": "2023-06-06T20:33:38.221Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Telegram",
+        "description": "Send Telegram notification using Telegram Bot API.",
+        "category": "API",
+        "github": "https://github.com/laravel-notification-channels/telegram",
+        "author": "laravel-notification-channels",
+        "composer": "laravel-notification-channels/telegram",
+        "npm": null,
+        "stars": 827,
+        "keywords": [],
+        "first_release_at": "2016-08-12T09:27:04+00:00",
+        "latest_release_at": "2023-02-14T18:21:03+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:34:36.685Z",
+        "created_at": "2023-06-06T20:34:36.685Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Cascade Soft Deletes",
+        "description": "Cascading deletes for Eloquent models that implement soft deletes.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/michaeldyrynda/laravel-cascade-soft-deletes",
+        "author": "dyrynda",
+        "composer": "dyrynda/laravel-cascade-soft-deletes",
+        "npm": null,
+        "stars": 808,
+        "keywords": [],
+        "first_release_at": "2020-09-08T03:59:23+00:00",
+        "latest_release_at": "2023-02-16T01:47:23+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:36:20.716Z",
+        "created_at": "2023-06-06T20:36:20.716Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Eloquent Json Relations",
+        "description": "Eloquent relationships with JSON keys.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/staudenmeir/eloquent-json-relations",
+        "author": "staudenmeir",
+        "composer": "staudenmeir/eloquent-json-relations",
+        "npm": null,
+        "stars": 801,
+        "keywords": [],
+        "first_release_at": "2018-10-19T21:50:55+00:00",
+        "latest_release_at": "2023-06-03T09:22:06+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:37:40.327Z",
+        "created_at": "2023-06-06T20:37:40.327Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Console Menu",
+        "description": "A php-school/cli-menu wrapper for Laravel Console Commands.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/nunomaduro/laravel-console-menu",
+        "author": "nunomaduro",
+        "composer": "nunomaduro/laravel-console-menu",
+        "npm": null,
+        "stars": 793,
+        "keywords": [],
+        "first_release_at": "2018-01-28T21:53:55+00:00",
+        "latest_release_at": "2023-01-11T14:14:56+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:38:57.009Z",
+        "created_at": "2023-06-06T20:38:57.009Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "JSON API",
+        "description": "Implement feature-rich JSON:API compliant APIs in your applications.",
+        "category": "API",
+        "github": "https://github.com/laravel-json-api/laravel",
+        "author": "laravel-json-api",
+        "composer": "laravel-json-api/laravel",
+        "npm": null,
+        "stars": 397,
+        "keywords": [],
+        "first_release_at": "2020-11-20T15:43:50+00:00",
+        "latest_release_at": "2023-02-14T19:54:10+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:42:09.147Z",
+        "created_at": "2023-06-06T20:42:09.147Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Snooze",
+        "description": "Schedule future notifications and reminders.",
+        "category": "Notifications",
+        "github": "https://github.com/thomasjohnkane/snooze",
+        "author": "thomasjohnkane",
+        "composer": "thomasjohnkane/snooze",
+        "npm": null,
+        "stars": 760,
+        "keywords": [],
+        "first_release_at": "2019-09-24T22:15:51+00:00",
+        "latest_release_at": "2023-02-28T22:01:28+00:00",
+        "laravel_dependency_versions": [
+            "^8.0 || ^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:43:24.309Z",
+        "created_at": "2023-06-06T20:43:24.309Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Telescope Toolbar",
+        "description": "A toolbar for Laravel Telescope, based on the Symfony Web Profiler.",
+        "category": "Debugging & Dev Tools",
+        "github": "https://github.com/fruitcake/laravel-telescope-toolbar",
+        "author": "fruitcake",
+        "composer": "fruitcake/laravel-telescope-toolbar",
+        "npm": null,
+        "stars": 739,
+        "keywords": [],
+        "first_release_at": "2019-08-09T08:29:35+00:00",
+        "latest_release_at": "2023-02-05T14:09:52+00:00",
+        "laravel_dependency_versions": [
+            "^9||^10"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T20:44:32.351Z",
+        "created_at": "2023-06-06T20:44:32.351Z"
     }
 ]
