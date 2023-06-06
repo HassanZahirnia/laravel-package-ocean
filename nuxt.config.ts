@@ -12,7 +12,9 @@ export default defineNuxtConfig({
                 lastmod: new Date().toISOString(),
             },
         },
-        '/api/**': { cors: false },
+        '/api/query': {
+            cors: false,
+        },
     },
     app: {
         head: {
