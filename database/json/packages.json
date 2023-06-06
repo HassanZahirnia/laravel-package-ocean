@@ -7788,7 +7788,7 @@
         "package_type": "laravel-package",
         "name": "Jigsaw",
         "description": "Simple static sites with Laravel’s Blade.",
-        "category": "UI & Blade Components",
+        "category": "Code Architecture",
         "github": "https://github.com/tighten/jigsaw",
         "author": "tightenco",
         "composer": "tightenco/jigsaw",
