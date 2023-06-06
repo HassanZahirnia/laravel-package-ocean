@@ -4,22 +4,30 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
     if (changeInfo && changeInfo.status === 'complete' && tab.url && tab.url.includes('github.com')) {
+        checkIfGithubExists(tab.url)
+            .then((isInDatabase) => {
+                if (isInDatabase)
+                    chrome.action.setIcon({ tabId, path: 'icons/icon-color.png' })
 
-        const isInDatabase = checkIfRepositoryExists(tab.url)
+                else
+                    chrome.action.setIcon({ tabId, path: 'icons/icon-gray.png' })
 
-        if (isInDatabase)
-            chrome.action.setIcon({ tabId, path: 'icons/icon-color.png' })
-
-        else
-            chrome.action.setIcon({ tabId, path: 'icons/icon-gray.png' })
-
+            })
+            .catch((error) => {
+                console.error('Error checking if repository exists:', error)
+                chrome.action.setIcon({ tabId, path: 'icons/icon-gray.png' })
+            })
     }
 })
 
-function checkIfRepositoryExists(url) {
-    const packages = []
 
-    const foundPackage = packages.find(package => package.github === url)
-
-    return !!foundPackage
+async function checkIfGithubExists(url) {
+    return fetch(`https://laravel-package-ocean.com/api/query?github=${url}`)
+        .then(response => response.json())
+        .then((data) => {
+            return data.exists
+        })
+        .catch(() => {
+            return false
+        })
 }
