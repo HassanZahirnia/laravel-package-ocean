@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Laravel Package Ocean",
+    "description": "An extension to Check if the current GitHub page is in the database.",
+    "version": "1.0",
+    "permissions": ["scripting", "storage", "activeTab"],
+    "action": {
+        "default_icon": {
+            "16": "icons/icon-gray.png",
+            "48": "icons/icon-gray.png",
+            "128": "icons/icon-gray.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "icons/icon-color.png",
+        "48": "icons/icon-color.png",
+        "128": "icons/icon-color.png"
+    },
+    "host_permissions": [
+        "https://github.com/*"
+    ]
+}
