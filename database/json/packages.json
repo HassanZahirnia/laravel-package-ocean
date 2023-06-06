@@ -1005,7 +1005,7 @@
     {
         "name": "Blueprint",
         "description": "A code generation tool for developers.",
-        "category": "CMS & Admin Panels",
+        "category": "Debugging & Dev Tools",
         "github": "https://github.com/laravel-shift/blueprint",
         "author": "laravel-shift",
         "composer": "laravel-shift/blueprint",
@@ -3076,7 +3076,7 @@
     {
         "name": "Mix",
         "description": "The power of Webpack, distilled for the rest of us.",
-        "category": "Debugging & Dev Tools",
+        "category": "Code Architecture",
         "github": "https://github.com/laravel-mix/laravel-mix",
         "author": "laravel-mix",
         "composer": null,
@@ -3200,7 +3200,7 @@
     {
         "name": "Laravel Server Side Rendering",
         "description": "Server-side rendering JavaScript in your application.",
-        "category": "Debugging & Dev Tools",
+        "category": "Dev Ops",
         "github": "https://github.com/spatie/laravel-server-side-rendering",
         "author": "spatie",
         "composer": "spatie/laravel-server-side-rendering",
@@ -3302,7 +3302,7 @@
     {
         "name": "Laravel Swoole",
         "description": "High-performance HTTP server based on Swoole. Speed up your applications.",
-        "category": "Debugging & Dev Tools",
+        "category": "Dev Ops",
         "github": "https://github.com/swooletw/laravel-swoole",
         "author": "swooletw",
         "composer": "swooletw/laravel-swoole",
@@ -4888,7 +4888,7 @@
     {
         "name": "Smart",
         "description": "Easy image manipulation and file downloads.",
-        "category": "UI & Blade Components",
+        "category": "File Management",
         "github": "https://github.com/dietercoopman/smart",
         "author": "dietercoopman",
         "composer": "dietercoopman/smart",
@@ -4932,7 +4932,7 @@
     {
         "name": "Laravel Markdown",
         "description": "A CommonMark wrapper.",
-        "category": "UI & Blade Components",
+        "category": "Utilities & Helpers",
         "github": "https://github.com/GrahamCampbell/Laravel-Markdown",
         "author": "graham-campbell",
         "composer": "graham-campbell/markdown",
@@ -5730,7 +5730,7 @@
     {
         "name": "Transporter",
         "description": "A futuristic way to send API requests in PHP. This is an OOP approach to handling API requests.",
-        "category": "Utilities & Helpers",
+        "category": "API",
         "github": "https://github.com/JustSteveKing/laravel-transporter",
         "author": "juststeveking",
         "composer": "juststeveking/laravel-transporter",
@@ -5788,7 +5788,7 @@
     {
         "name": "Octane",
         "description": "Supercharge your application performance.",
-        "category": "Utilities & Helpers",
+        "category": "Dev Ops",
         "github": "https://github.com/laravel/octane",
         "author": "laravel",
         "composer": "laravel/octane",
@@ -7244,7 +7244,7 @@
     {
         "name": "Ziggy",
         "description": "Use your named routes in JavaScript.",
-        "category": "Debugging & Dev Tools",
+        "category": "Code Architecture",
         "github": "https://github.com/tighten/ziggy",
         "author": "tightenco",
         "composer": "tightenco/ziggy",
@@ -7285,7 +7285,7 @@
         "package_type": "laravel-package",
         "name": "Laravel Wave",
         "description": "Real-time broadcasting with SSE (native HTTP) without any Websockets setup.",
-        "category": "Utilities & Helpers",
+        "category": "Notifications",
         "github": "https://github.com/qruto/laravel-wave",
         "author": "qruto",
         "composer": "qruto/laravel-wave",
@@ -7694,7 +7694,9 @@
         "composer": "stechstudio/laravel-zipstream",
         "npm": null,
         "stars": 295,
-        "keywords": [],
+        "keywords": [
+            "archive"
+        ],
         "first_release_at": "2019-04-12T18:20:20+00:00",
         "latest_release_at": "2023-02-23T20:57:15+00:00",
         "laravel_dependency_versions": [
@@ -8006,5 +8008,46 @@
         "paid_integration": false,
         "updated_at": "2023-06-06T20:44:32.351Z",
         "created_at": "2023-06-06T20:44:32.351Z"
+    },
+    {
+        "package_type": "php-package",
+        "name": "PHP Standard Library",
+        "description": "Modern, consistent, centralized, well-typed set of APIs for PHP developers.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/azjezz/psl",
+        "author": "azjezz",
+        "composer": "azjezz/psl",
+        "npm": null,
+        "stars": 1035,
+        "keywords": [],
+        "first_release_at": "2019-12-24T14:01:05+00:00",
+        "latest_release_at": "2023-05-18T10:12:44+00:00",
+        "laravel_dependency_versions": [],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T21:13:38.240Z",
+        "created_at": "2023-06-06T21:13:38.241Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Turnstile",
+        "description": "Integration with Cloudflare Turnstile.",
+        "category": "Security",
+        "github": "https://github.com/ryangjchandler/laravel-cloudflare-turnstile",
+        "author": "ryangjchandler",
+        "composer": "ryangjchandler/laravel-cloudflare-turnstile",
+        "npm": null,
+        "stars": 83,
+        "keywords": [
+            "cloudflare",
+            "captcha"
+        ],
+        "first_release_at": "2022-09-30T10:10:44+00:00",
+        "latest_release_at": "2023-04-14T10:20:16+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T21:14:43.192Z",
+        "created_at": "2023-06-06T21:14:43.192Z"
     }
 ]
