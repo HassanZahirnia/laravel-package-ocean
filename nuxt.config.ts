@@ -3,6 +3,11 @@ import presetIcons from '@unocss/preset-icons'
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 
 export default defineNuxtConfig({
+    vite: {
+        server: {
+            cors: false,
+        },
+    },
     routeRules: {
         '/': {
             sitemap: {
@@ -11,9 +16,6 @@ export default defineNuxtConfig({
                 priority: 1,
                 lastmod: new Date().toISOString(),
             },
-        },
-        '/api/query': {
-            cors: false,
         },
     },
     app: {
