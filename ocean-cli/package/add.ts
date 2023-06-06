@@ -300,7 +300,7 @@ export const addPackage = async function(){
                     log(chalk.yellow('Validation failed! \n'))
                     log(validationResult.error.errors.map(error => error.message).join('\n'))
                 }
-                else if (!is_compatible_with_active_laravel_versions(newPackage)){
+                else if (!is_compatible_with_active_laravel_versions(newPackage) && newPackage.package_type === 'laravel-package'){
                     log(chalk.yellow('Package is not compatible with active Laravel versions! \n'))
                 }
                 else {

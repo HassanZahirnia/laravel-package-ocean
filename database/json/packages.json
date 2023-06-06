@@ -7645,5 +7645,123 @@
         "paid_integration": true,
         "updated_at": "2023-06-05T12:42:35.116Z",
         "created_at": "2023-06-05T12:42:35.116Z"
+    },
+    {
+        "package_type": "php-package",
+        "name": "Strictus",
+        "description": "Adds strict typing on inline variables using a couple of different patterns.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/php-strictus/strictus",
+        "author": "strictus",
+        "composer": "strictus/strictus",
+        "npm": null,
+        "stars": 66,
+        "keywords": [],
+        "first_release_at": "2023-02-05T20:22:24+00:00",
+        "latest_release_at": "2023-02-05T20:18:08+00:00",
+        "laravel_dependency_versions": [],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T13:22:45.740Z",
+        "created_at": "2023-06-06T13:22:45.740Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Purity",
+        "description": "An elegant way to filter and sort Eloquent queries.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/abbasudo/laravel-purity",
+        "author": "abbasudo",
+        "composer": "abbasudo/laravel-purity",
+        "npm": null,
+        "stars": 122,
+        "keywords": [],
+        "first_release_at": "2023-02-28T12:54:53+00:00",
+        "latest_release_at": "2023-03-25T10:33:11+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T13:33:09.470Z",
+        "created_at": "2023-06-06T13:33:09.470Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Zipstream",
+        "description": "Easily create Zip files on-the-fly and provide a streaming downloader.",
+        "category": "File Management",
+        "github": "https://github.com/stechstudio/laravel-zipstream",
+        "author": "stechstudio",
+        "composer": "stechstudio/laravel-zipstream",
+        "npm": null,
+        "stars": 295,
+        "keywords": [],
+        "first_release_at": "2019-04-12T18:20:20+00:00",
+        "latest_release_at": "2023-02-23T20:57:15+00:00",
+        "laravel_dependency_versions": [
+            "^5.6||^6.0||^7.0||^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T13:34:57.485Z",
+        "created_at": "2023-06-06T13:34:57.485Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravisit",
+        "description": "Keep track of your pages & understand your audience.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/coderflexx/laravisit",
+        "author": "coderflexx",
+        "composer": "coderflexx/laravisit",
+        "npm": null,
+        "stars": 273,
+        "keywords": [],
+        "first_release_at": "2022-02-14T21:05:16+00:00",
+        "latest_release_at": "2023-02-23T22:19:41+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T13:38:18.880Z",
+        "created_at": "2023-06-06T13:38:18.880Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Locked",
+        "description": "Add locking features to Eloquent models.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/sfolador/laravel-locked",
+        "author": "sfolador",
+        "composer": "sfolador/laravel-locked",
+        "npm": null,
+        "stars": 28,
+        "keywords": [],
+        "first_release_at": "2022-11-13T08:29:03+00:00",
+        "latest_release_at": "2023-02-14T17:56:09+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T13:40:53.091Z",
+        "created_at": "2023-06-06T13:40:53.091Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Trix",
+        "description": "Configurable Basecamp Trix Editor (WYSIWYG) delivered to your application.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/amaelftah/laravel-trix",
+        "author": "te7a-houdini",
+        "composer": "te7a-houdini/laravel-trix",
+        "npm": null,
+        "stars": 492,
+        "keywords": [],
+        "first_release_at": "2019-10-26T12:16:09+00:00",
+        "latest_release_at": "2023-03-08T14:06:58+00:00",
+        "laravel_dependency_versions": [
+            "~5.8.0||~6.0||~7.0||~8.0||~9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-06T13:43:00.583Z",
+        "created_at": "2023-06-06T13:43:00.583Z"
     }
 ]
