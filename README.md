@@ -51,4 +51,4 @@ If you decide to suggest a package you can create a [new discussion](https://git
 - If for any reason you want to remove your package from the database, please open an issue or ask in discussions. We'll remove it as soon as possible.
 
 ## Contributors
-<img src=".github/assets/contributors.png" />
+<img src=".github/assets/contributors.png" width="320px" />
