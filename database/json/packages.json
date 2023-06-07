@@ -9111,5 +9111,265 @@
         "paid_integration": false,
         "updated_at": "2023-06-07T12:57:28.453Z",
         "created_at": "2023-06-07T12:57:28.453Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Webauthn",
+        "description": "An adapter to use Webauthn as 2FA (two-factor authentication) or as passwordless authentication.",
+        "category": "Auth & Permissions",
+        "github": "https://github.com/asbiin/laravel-webauthn",
+        "author": "asbiin",
+        "composer": "asbiin/laravel-webauthn",
+        "npm": null,
+        "stars": 186,
+        "keywords": [],
+        "first_release_at": "2019-03-30T15:22:42+00:00",
+        "latest_release_at": "2023-02-19T17:57:47+00:00",
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:03:55.694Z",
+        "created_at": "2023-06-07T13:03:55.694Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Postmark",
+        "description": "A Postmark adapter for Laravel.",
+        "category": "Mail",
+        "github": "https://github.com/craigpaul/laravel-postmark",
+        "author": "coconutcraig",
+        "composer": "coconutcraig/laravel-postmark",
+        "npm": null,
+        "stars": 185,
+        "keywords": [],
+        "first_release_at": "2017-01-29T17:11:21+00:00",
+        "latest_release_at": "2023-01-12T20:31:09+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": true,
+        "updated_at": "2023-06-07T13:04:52.957Z",
+        "created_at": "2023-06-07T13:04:52.957Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Multi Auth",
+        "description": "Gives you the ability to separate user areas in your application.",
+        "category": "Auth & Permissions",
+        "github": "https://github.com/mtvbrianking/multi-auth",
+        "author": "bmatovu",
+        "composer": "bmatovu/multi-auth",
+        "npm": null,
+        "stars": 176,
+        "keywords": [],
+        "first_release_at": "2017-09-22T09:30:56+00:00",
+        "latest_release_at": "2023-03-08T17:14:54+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:06:08.877Z",
+        "created_at": "2023-06-07T13:06:08.877Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Addresses",
+        "description": "Simple address and contact management.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/Lecturize/Laravel-Addresses",
+        "author": "lecturize",
+        "composer": "lecturize/laravel-addresses",
+        "npm": null,
+        "stars": 175,
+        "keywords": [],
+        "first_release_at": "2016-10-13T19:27:39+00:00",
+        "latest_release_at": "2023-02-21T16:39:43+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:06:47.529Z",
+        "created_at": "2023-06-07T13:06:47.529Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Littlegatekeeper",
+        "description": "Protect pages from access with a universal username/password combination (set by configuration).",
+        "category": "Security",
+        "github": "https://github.com/spatie/laravel-littlegatekeeper",
+        "author": "spatie",
+        "composer": "spatie/laravel-littlegatekeeper",
+        "npm": null,
+        "stars": 174,
+        "keywords": [],
+        "first_release_at": "2015-06-11T10:28:21+00:00",
+        "latest_release_at": "2023-05-05T07:46:50+00:00",
+        "laravel_dependency_versions": [
+            "^8.74||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:07:43.270Z",
+        "created_at": "2023-06-07T13:07:43.270Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Eloquent Filters",
+        "description": "Advanced Eloquent models filtering capabilities.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/pricecurrent/laravel-eloquent-filters",
+        "author": "pricecurrent",
+        "composer": "pricecurrent/laravel-eloquent-filters",
+        "npm": null,
+        "stars": 167,
+        "keywords": [],
+        "first_release_at": "2021-09-24T10:12:21+00:00",
+        "latest_release_at": "2023-05-22T16:22:06+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:10:02.332Z",
+        "created_at": "2023-06-07T13:10:02.332Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Airdrop",
+        "description": "Speed up deployment by skipping asset compilation whenever possible.",
+        "category": "Dev Ops",
+        "github": "https://github.com/hammerstonedev/airdrop",
+        "author": "hammerstone",
+        "composer": "hammerstone/airdrop",
+        "npm": null,
+        "stars": 166,
+        "keywords": [],
+        "first_release_at": "2021-02-23T02:55:05+00:00",
+        "latest_release_at": "2023-02-22T02:31:53+00:00",
+        "laravel_dependency_versions": [
+            "^7.0||^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:10:47.941Z",
+        "created_at": "2023-06-07T13:10:47.941Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Config Validator",
+        "description": "Allows you to validate your config values and environment.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/ash-jc-allen/laravel-config-validator",
+        "author": "ashallendesign",
+        "composer": "ashallendesign/laravel-config-validator",
+        "npm": null,
+        "stars": 165,
+        "keywords": [],
+        "first_release_at": "2020-10-11T00:59:29+00:00",
+        "latest_release_at": "2023-01-12T01:18:06+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:11:30.990Z",
+        "created_at": "2023-06-07T13:11:30.990Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Subscribable Notifications",
+        "description": "Adding unsubscribe links to notifications.",
+        "category": "Notifications",
+        "github": "https://github.com/ylsideas/subscribable-notifications",
+        "author": "ylsideas",
+        "composer": "ylsideas/subscribable-notifications",
+        "npm": null,
+        "stars": 164,
+        "keywords": [],
+        "first_release_at": "2019-06-19T21:28:14+00:00",
+        "latest_release_at": "2022-02-09T16:46:32+00:00",
+        "laravel_dependency_versions": [
+            "9.*||8.*||7.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:12:12.885Z",
+        "created_at": "2023-06-07T13:12:12.885Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Eloquent Sequencer",
+        "description": "Allows you to create and manage sequences for your Eloquent models.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/gurgentil/laravel-eloquent-sequencer",
+        "author": "gurgentil",
+        "composer": "gurgentil/laravel-eloquent-sequencer",
+        "npm": null,
+        "stars": 151,
+        "keywords": [],
+        "first_release_at": "2020-04-27T21:51:06+00:00",
+        "latest_release_at": "2023-04-23T22:30:47+00:00",
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:14:11.801Z",
+        "created_at": "2023-06-07T13:14:11.801Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Eloquent Status",
+        "description": "Add a status or state to your Eloquent models.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/makeabledk/laravel-eloquent-status",
+        "author": "makeabledk",
+        "composer": "makeabledk/laravel-eloquent-status",
+        "npm": null,
+        "stars": 150,
+        "keywords": [],
+        "first_release_at": "2017-09-05T11:48:53+00:00",
+        "latest_release_at": "2023-03-28T14:59:00+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:15:18.375Z",
+        "created_at": "2023-06-07T13:15:18.375Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Migration Views",
+        "description": "Adds support for SQL views in database migrations.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/staudenmeir/laravel-migration-views",
+        "author": "staudenmeir",
+        "composer": "staudenmeir/laravel-migration-views",
+        "npm": null,
+        "stars": 142,
+        "keywords": [],
+        "first_release_at": "2019-06-15T12:40:38+00:00",
+        "latest_release_at": "2023-01-18T12:58:23+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:17:27.392Z",
+        "created_at": "2023-06-07T13:17:27.392Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Tags",
+        "description": "Allows you to add tags to your Eloquent models.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/cartalyst/tags",
+        "author": "cartalyst",
+        "composer": "cartalyst/tags",
+        "npm": null,
+        "stars": 139,
+        "keywords": [],
+        "first_release_at": "2015-01-20T18:39:54+00:00",
+        "latest_release_at": "2023-02-17T14:39:46+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T13:18:26.896Z",
+        "created_at": "2023-06-07T13:18:26.896Z"
     }
 ]
