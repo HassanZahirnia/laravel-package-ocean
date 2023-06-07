@@ -9,7 +9,7 @@
         "ocean": "tsx ./ocean-cli/cli.ts"
     },
     "devDependencies": {
-        "@fontsource/poppins": "^4.5.10",
+        "@fontsource/poppins": "^5.0.2",
         "@formkit/auto-animate": "1.0.0-beta.6",
         "@headlessui/vue": "^1.7.14",
         "@iconify-json/bi": "^1.1.17",
@@ -57,7 +57,7 @@
         "minisearch": "^6.1.0",
         "nuxt": "^3.5.3",
         "nuxt-gtag": "^0.5.7",
-        "nuxt-simple-sitemap": "^2.6.1",
+        "nuxt-simple-sitemap": "^2.6.2",
         "ora": "^6.3.1",
         "postcss": "^8.4.24",
         "rss": "^1.2.2",

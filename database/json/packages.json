@@ -8049,5 +8049,343 @@
         "paid_integration": false,
         "updated_at": "2023-06-06T21:14:43.192Z",
         "created_at": "2023-06-06T21:14:43.192Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Eloquent Eager Limit",
+        "description": "Allows limiting the number of eager loading results per parent using window functions.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/staudenmeir/eloquent-eager-limit",
+        "author": "staudenmeir",
+        "composer": "staudenmeir/eloquent-eager-limit",
+        "npm": null,
+        "stars": 720,
+        "keywords": [],
+        "first_release_at": "2018-10-24T04:42:02+00:00",
+        "latest_release_at": "2023-05-01T21:17:01+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:39:20.481Z",
+        "created_at": "2023-06-07T10:39:20.481Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel ImageUp",
+        "description": "Auto image file upload, resize and crop for Eloquent models using Intervention image.",
+        "category": "File Management",
+        "github": "https://github.com/qcod/laravel-imageup",
+        "author": "qcod",
+        "composer": "qcod/laravel-imageup",
+        "npm": null,
+        "stars": 715,
+        "keywords": [],
+        "first_release_at": "2018-09-21T11:56:20+00:00",
+        "latest_release_at": "2023-03-06T01:31:34+00:00",
+        "laravel_dependency_versions": [
+            "~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:42:23.924Z",
+        "created_at": "2023-06-07T10:42:23.924Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Firewall",
+        "description": "Protect from different type of attacks such as XSS, SQLi, RFI, LFI, User Agent, and a lot more.",
+        "category": "Security",
+        "github": "https://github.com/akaunting/laravel-firewall",
+        "author": "akaunting",
+        "composer": "akaunting/laravel-firewall",
+        "npm": null,
+        "stars": 711,
+        "keywords": [],
+        "first_release_at": "2021-03-05T12:18:48+00:00",
+        "latest_release_at": "2023-03-30T07:45:04+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:44:16.237Z",
+        "created_at": "2023-06-07T10:44:16.237Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Multi Domain",
+        "description": "Allows a single Laravel installation to work with multiple HTTP domains.",
+        "category": "Code Architecture",
+        "github": "https://github.com/gecche/laravel-multidomain",
+        "author": "gecche",
+        "composer": "gecche/laravel-multidomain",
+        "npm": null,
+        "stars": 700,
+        "keywords": [],
+        "first_release_at": "2018-06-24T14:10:58+00:00",
+        "latest_release_at": "2023-02-20T11:01:33+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:46:36.297Z",
+        "created_at": "2023-06-07T10:46:36.297Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Vonage Notification Channel",
+        "description": "Sending SMS notifications in Laravel powered by Vonage.",
+        "category": "Notifications",
+        "github": "https://github.com/laravel/vonage-notification-channel",
+        "author": "laravel",
+        "composer": "laravel/vonage-notification-channel",
+        "npm": null,
+        "stars": 690,
+        "keywords": [],
+        "first_release_at": "2022-02-08T15:19:10+00:00",
+        "latest_release_at": "2023-05-01T15:47:10+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": true,
+        "updated_at": "2023-06-07T10:48:39.070Z",
+        "created_at": "2023-06-07T10:48:39.070Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Throttle",
+        "description": "A rate limiter for Laravel.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/GrahamCampbell/Laravel-Throttle",
+        "author": "graham-campbell",
+        "composer": "graham-campbell/throttle",
+        "npm": null,
+        "stars": 688,
+        "keywords": [],
+        "first_release_at": "2013-12-25T18:09:09+00:00",
+        "latest_release_at": "2023-03-07T01:12:54+00:00",
+        "laravel_dependency_versions": [
+            "^8.75 || ^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:50:07.375Z",
+        "created_at": "2023-06-07T10:50:07.375Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Breadcrumbs",
+        "description": "A simple Laravel-style way to create breadcrumbs.",
+        "category": "UI & Blade Components",
+        "github": "https://github.com/diglactic/laravel-breadcrumbs",
+        "author": "diglactic",
+        "composer": "diglactic/laravel-breadcrumbs",
+        "npm": null,
+        "stars": 679,
+        "keywords": [],
+        "first_release_at": "2020-04-23T18:45:59+00:00",
+        "latest_release_at": "2023-04-17T23:24:15+00:00",
+        "laravel_dependency_versions": [
+            "^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:50:57.040Z",
+        "created_at": "2023-06-07T10:50:57.040Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Model Settings",
+        "description": "Model settings for your app.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/glorand/laravel-model-settings",
+        "author": "glorand",
+        "composer": "glorand/laravel-model-settings",
+        "npm": null,
+        "stars": 651,
+        "keywords": [],
+        "first_release_at": "2019-01-08T14:24:10+00:00",
+        "latest_release_at": "2023-02-20T08:20:24+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:52:30.759Z",
+        "created_at": "2023-06-07T10:52:30.759Z"
+    },
+    {
+        "package_type": "php-package",
+        "name": "Php Snowflake",
+        "description": "An ID Generator for PHP based on Snowflake Algorithm.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/godruoyi/php-snowflake",
+        "author": "godruoyi",
+        "composer": "godruoyi/php-snowflake",
+        "npm": null,
+        "stars": 651,
+        "keywords": [],
+        "first_release_at": "2019-08-12T13:52:54+00:00",
+        "latest_release_at": "2023-04-11T04:13:46+00:00",
+        "laravel_dependency_versions": [],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T10:53:36.678Z",
+        "created_at": "2023-06-07T10:53:36.678Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Api Response Builder",
+        "description": "Helps you build a nice, normalized and easy-to-consume REST API JSON responses.",
+        "category": "API",
+        "github": "https://github.com/MarcinOrlowski/laravel-api-response-builder",
+        "author": "marcin-orlowski",
+        "composer": "marcin-orlowski/laravel-api-response-builder",
+        "npm": null,
+        "stars": 641,
+        "keywords": [],
+        "first_release_at": "2016-04-11T22:55:38+00:00",
+        "latest_release_at": "2023-02-20T16:25:50+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:07:35.342Z",
+        "created_at": "2023-06-07T11:07:35.342Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Envy",
+        "description": "Automate keeping your environment files in sync.",
+        "category": "Dev Ops",
+        "github": "https://github.com/worksome/envy",
+        "author": "worksome",
+        "composer": "worksome/envy",
+        "npm": null,
+        "stars": 609,
+        "keywords": [],
+        "first_release_at": "2022-02-02T12:13:33+00:00",
+        "latest_release_at": "2023-03-22T15:03:02+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:08:34.347Z",
+        "created_at": "2023-06-07T11:08:34.347Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Cypress",
+        "description": "Provides the necessary boilerplate to quickly begin testing your applications using Cypress.",
+        "category": "Testing",
+        "github": "https://github.com/laracasts/cypress",
+        "author": "laracasts",
+        "composer": "laracasts/cypress",
+        "npm": null,
+        "stars": 565,
+        "keywords": [],
+        "first_release_at": "2020-07-24T04:15:52+00:00",
+        "latest_release_at": "2023-02-16T20:00:16+00:00",
+        "laravel_dependency_versions": [
+            "^6.0||^7.0||^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": true,
+        "updated_at": "2023-06-07T11:14:07.549Z",
+        "created_at": "2023-06-07T11:14:07.549Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Money",
+        "description": "Provide tools for formatting and conversion monetary values in an easy, yet powerful way.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/akaunting/laravel-money",
+        "author": "akaunting",
+        "composer": "akaunting/laravel-money",
+        "npm": null,
+        "stars": 559,
+        "keywords": [],
+        "first_release_at": "2021-03-05T12:07:35+00:00",
+        "latest_release_at": "2023-03-16T14:39:27+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:15:47.461Z",
+        "created_at": "2023-06-07T11:15:47.461Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel ACL",
+        "description": "Allows you to manage user permissions and groups in a database.",
+        "category": "Auth & Permissions",
+        "github": "https://github.com/mateusjunges/laravel-acl",
+        "author": "mateusjunges",
+        "composer": "mateusjunges/laravel-acl",
+        "npm": null,
+        "stars": 551,
+        "keywords": [],
+        "first_release_at": "2019-03-25T01:30:00+00:00",
+        "latest_release_at": "2023-02-15T23:16:42+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:17:31.023Z",
+        "created_at": "2023-06-07T11:17:31.023Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel JS Localization",
+        "description": "Convert your messages and consume them in the front-end!.",
+        "category": "Localization",
+        "github": "https://github.com/rmariuzzo/Laravel-JS-Localization",
+        "author": "mariuzzo",
+        "composer": "mariuzzo/laravel-js-localization",
+        "npm": null,
+        "stars": 544,
+        "keywords": [],
+        "first_release_at": "2014-05-01T05:44:39+00:00",
+        "latest_release_at": "2023-02-16T13:57:04+00:00",
+        "laravel_dependency_versions": [
+            "^4.2 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:20:21.702Z",
+        "created_at": "2023-06-07T11:20:21.702Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Eloquent UUID",
+        "description": "A simple drop-in solution for providing UUID support for the IDs of your Eloquent models.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/goldspecdigital/laravel-eloquent-uuid",
+        "author": "goldspecdigital",
+        "composer": "goldspecdigital/laravel-eloquent-uuid",
+        "npm": null,
+        "stars": 515,
+        "keywords": [],
+        "first_release_at": "2019-06-08T17:06:09+00:00",
+        "latest_release_at": "2023-02-23T18:49:29+00:00",
+        "laravel_dependency_versions": [
+            "^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:23:26.466Z",
+        "created_at": "2023-06-07T11:23:26.466Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Personal Data Export",
+        "description": "Create zip files containing personal data.",
+        "category": "File Management",
+        "github": "https://github.com/spatie/laravel-personal-data-export",
+        "author": "spatie",
+        "composer": "spatie/laravel-personal-data-export",
+        "npm": null,
+        "stars": 515,
+        "keywords": [],
+        "first_release_at": "2019-03-10T15:36:38+00:00",
+        "latest_release_at": "2023-01-25T00:25:51+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-07T11:24:11.601Z",
+        "created_at": "2023-06-07T11:24:11.601Z"
     }
 ]

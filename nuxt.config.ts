@@ -89,6 +89,10 @@ export default defineNuxtConfig({
         plugins: {
             tailwindcss: {},
             autoprefixer: {},
+            // Temporary fix for the node-glob bug that fails the Netlify build on the fontsource/poppins upgrade to v5.0.0
+            cssnano: process.env.NODE_ENV === 'production'
+                ? { preset: ['default', { discardComments: { removeAll: true } }] }
+                : false, // disable cssnano when not in production
         },
     },
 })

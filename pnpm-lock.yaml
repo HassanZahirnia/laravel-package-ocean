@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@fontsource/poppins':
-    specifier: ^4.5.10
-    version: 4.5.10
+    specifier: ^5.0.2
+    version: 5.0.2
   '@formkit/auto-animate':
     specifier: 1.0.0-beta.6
     version: 1.0.0-beta.6
@@ -150,8 +150,8 @@ devDependencies:
     specifier: ^0.5.7
     version: 0.5.7
   nuxt-simple-sitemap:
-    specifier: ^2.6.1
-    version: 2.6.1
+    specifier: ^2.6.2
+    version: 2.6.2
   ora:
     specifier: ^6.3.1
     version: 6.3.1
@@ -786,8 +786,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/poppins@4.5.10:
-    resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
+  /@fontsource/poppins@5.0.2:
+    resolution: {integrity: sha512-504RESq2qbyVxxpjP2TyVQODOWakuBHBD3AtYurtmNHosC4x+mjyOlRSdW2QjsILezlwFCnLkYuGUzYiV44sEg==}
     dev: true
 
   /@formkit/auto-animate@1.0.0-beta.6:
@@ -1006,33 +1006,6 @@ packages:
     resolution: {integrity: sha512-GBzP8zOc7CGWyFQS6dv1lQz8VVpz5C2yRszbXufwG/9zhStTIH50EtD87NmWbTMwXDvZLNg8GIpb1UFdH93JCA==}
     dev: true
 
-  /@nuxt/kit@3.5.0:
-    resolution: {integrity: sha512-QqhOPTan5cpaYCksSWdmtpldCGfnsqTd55blztMSF+OPxfGav4GE4BrBD3ZSMn2/5MxieF3GU/w5/tgcDXE3bA==}
-    engines: {node: ^14.18.0 || >=16.10.0}
-    dependencies:
-      '@nuxt/schema': 3.5.0
-      c12: 1.4.1
-      consola: 3.1.0
-      defu: 6.1.2
-      globby: 13.1.4
-      hash-sum: 2.0.0
-      ignore: 5.2.4
-      jiti: 1.18.2
-      knitwork: 1.0.0
-      lodash.template: 4.5.0
-      mlly: 1.2.1
-      pathe: 1.1.0
-      pkg-types: 1.0.3
-      scule: 1.0.0
-      semver: 7.5.1
-      unctx: 2.3.0
-      unimport: 3.0.7(rollup@3.23.0)
-      untyped: 1.3.2
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
   /@nuxt/kit@3.5.1:
     resolution: {integrity: sha512-hC0apW02dSujoBuGQCxd8rvUyKIyfcPueIlYbO4d1SMQUifd/Tz+pYsbmpXX+kD/yXJ2yUaChbJ1IBLl6kep5A==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -1079,24 +1052,6 @@ packages:
       scule: 1.0.0
       semver: 7.5.1
       unctx: 2.3.1
-      unimport: 3.0.7(rollup@3.23.0)
-      untyped: 1.3.2
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
-  /@nuxt/schema@3.5.0:
-    resolution: {integrity: sha512-zz7S5RTCTGSCAyfNxO0R+TYvgk7WQdHUWJiAiTFQ+iFtqQkb/re1I86Ba9VKTJjZmm3fUI5kT5Y62emJcOLlXw==}
-    engines: {node: ^14.18.0 || >=16.10.0}
-    dependencies:
-      defu: 6.1.2
-      hookable: 5.5.3
-      pathe: 1.1.0
-      pkg-types: 1.0.3
-      postcss-import-resolver: 2.0.0
-      std-env: 3.3.3
-      ufo: 1.1.2
       unimport: 3.0.7(rollup@3.23.0)
       untyped: 1.3.2
     transitivePeerDependencies:
@@ -5404,16 +5359,16 @@ packages:
       - supports-color
     dev: true
 
-  /nuxt-simple-sitemap@2.6.1:
-    resolution: {integrity: sha512-V5PPYgUGNspKJ95Ihm1ZgIhLKTnSJ2v4PY99SVjZUikWpRJjPBi/1xb1BzkYHDE5PFEYc6QNUKWnaNDoLtxZpA==}
+  /nuxt-simple-sitemap@2.6.2:
+    resolution: {integrity: sha512-jM1uiIqRuVGiGOUtpq4ZveZjb2QbA9EyqxAeh87lOey+2CjvStIKqIwWmkAN77nYdDoYPMLnIgEkfatdBPoi6g==}
     dependencies:
-      '@nuxt/kit': 3.5.0
+      '@nuxt/kit': 3.5.3
       chalk: 5.2.0
       defu: 6.1.2
       escape-string-regexp: 5.0.0
       globby: 13.1.4
       knitwork: 1.0.0
-      pathe: 1.1.0
+      pathe: 1.1.1
       radix3: 1.0.1
       ufo: 1.1.2
     transitivePeerDependencies:
