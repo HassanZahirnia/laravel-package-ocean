@@ -4,7 +4,7 @@ import MiniSearch from 'minisearch'
 import { useStorage } from '@vueuse/core'
 import dayjs from 'dayjs'
 import { laravelPackages } from '@/database/packages'
-import type { PackageSortFields } from '@/types/package'
+import type { Package, PackageSortFields } from '@/types/package'
 import { categories, categoriesWithPackagesCount } from '@/database/categories'
 import type { selectboxItem } from '@/types/selectbox'
 import type { CategoryWithPackagesCount } from '@/types/category'
@@ -94,7 +94,7 @@ const pageSize = 9
 
 // Results
 const results = ref(laravelPackages)
-const resultsPaginated = ref(results.value)
+const resultsPaginated = ref<Package[]>([])
 
 onMounted(() => {
     // Update all relevant variables when the route.query changes
@@ -479,16 +479,11 @@ const categoriesForSelectboxWithAll = [
                     'min-h-[17rem]': resultsPaginated.length,
                 }"
                 >
-                <ClientOnly
-                    fallback-tag="span"
-                    fallback=""
-                    >
-                    <package-card
-                        v-for="laravelPackage in resultsPaginated"
-                        :key="laravelPackage.github"
-                        :laravel-package="laravelPackage"
-                        />
-                </ClientOnly>
+                <package-card
+                    v-for="laravelPackage in resultsPaginated"
+                    :key="laravelPackage.github"
+                    :laravel-package="laravelPackage"
+                    />
             </div>
             <!-- Pagination -->
             <div
@@ -507,26 +502,31 @@ const categoriesForSelectboxWithAll = [
                     @press:last="currentPage = pageCount"
                     />
             </div>
-            <!-- No results message -->
-            <transition
-                enter-active-class="duration-300 ease-out"
-                enter-from-class="opacity-0"
-                enter-to-class="opacity-100"
-                leave-active-class="duration-300 ease-in"
-                leave-from-class="opacity-100"
-                leave-to-class="opacity-0"
+            <ClientOnly
+                fallback-tag="span"
+                fallback=""
                 >
-                <div
-                    v-if="!resultsPaginated.length"
-                    class="w-full
+                <!-- No results message -->
+                <transition
+                    enter-active-class="duration-300 ease-out"
+                    enter-from-class="opacity-0"
+                    enter-to-class="opacity-100"
+                    leave-active-class="duration-300 ease-in"
+                    leave-from-class="opacity-100"
+                    leave-to-class="opacity-0"
+                    >
+                    <div
+                        v-if="!resultsPaginated.length"
+                        class="w-full
                     absolute
                     top-0 right-1/2
                     translate-x-1/2
                     "
-                    >
-                    <ui-search-result />
-                </div>
-            </transition>
+                        >
+                        <ui-search-result />
+                    </div>
+                </transition>
+            </ClientOnly>
         </div>
     </div>
 </template>
