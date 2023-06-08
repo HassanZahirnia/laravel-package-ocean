@@ -3,11 +3,15 @@ import { isEmpty, orderBy } from 'lodash'
 import MiniSearch from 'minisearch'
 import { useStorage } from '@vueuse/core'
 import dayjs from 'dayjs'
-import { laravelPackages } from '@/database/packages'
-import type { PackageSortFields } from '@/types/package'
+import type { Package, PackageSortFields } from '@/types/package'
 import { categories, categoriesWithPackagesCount } from '@/database/categories'
 import type { selectboxItem } from '@/types/selectbox'
 import type { CategoryWithPackagesCount } from '@/types/category'
+
+// eslint-disable-next-line vue/no-setup-props-destructure
+const { laravelPackages } = defineProps<{
+    laravelPackages: Package[]
+}>()
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({

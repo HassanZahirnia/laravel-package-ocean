@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
+import { laravelPackages } from '@/database/packages'
 
 // Color mode
 const colorMode = useColorMode()
@@ -63,7 +64,7 @@ onMounted(() => {
                 "
                 >
                 <category-list />
-                <package-list />
+                <package-list :laravel-packages="laravelPackages" />
             </div>
         </ClientOnly>
     </div>
