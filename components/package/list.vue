@@ -479,11 +479,16 @@ const categoriesForSelectboxWithAll = [
                     'min-h-[17rem]': resultsPaginated.length,
                 }"
                 >
-                <package-card
-                    v-for="laravelPackage in resultsPaginated"
-                    :key="laravelPackage.github"
-                    :laravel-package="laravelPackage"
-                    />
+                <ClientOnly
+                    fallback-tag="span"
+                    fallback=""
+                    >
+                    <package-card
+                        v-for="laravelPackage in resultsPaginated"
+                        :key="laravelPackage.github"
+                        :laravel-package="laravelPackage"
+                        />
+                </ClientOnly>
             </div>
             <!-- Pagination -->
             <div
