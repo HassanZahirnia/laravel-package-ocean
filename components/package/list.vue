@@ -424,7 +424,7 @@ const categoriesForSelectboxWithAll = [
                         lg:hover:w-40
                         "
                         :class="{
-                            'bg-white/50 dark:bg-[#362B59]/30 dark:hover:bg-[#362B59]/40': showOfficialPackages === '0',
+                            'bg-white/50 dark:bg-[#362B59]/30 dark:hover:bg-[#362B59]/40': showOfficialPackages !== '1',
                             'lg:w-40 bg-white hover:bg-white/80 dark:bg-indigo-500/20 dark:hover:bg-indigo-500/10': showOfficialPackages === '1',
                         }"
                         @click="showOfficialPackages = showOfficialPackages === '1' ? '0' : '1'"
