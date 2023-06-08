@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
-import { laravelPackages } from '@/database/packages'
 
 // Color mode
 const colorMode = useColorMode()
@@ -54,19 +53,14 @@ onMounted(() => {
                 />
         </div>
         <!-- Categories & Packages list -->
-        <ClientOnly
-            fallback-tag="span"
-            fallback=""
+        <div
+            class="fade-in relative
+            flex items-start gap-5
+            "
             >
-            <div
-                class="fade-in relative
-                flex items-start gap-5
-                "
-                >
-                <category-list />
-                <package-list :laravel-packages="laravelPackages" />
-            </div>
-        </ClientOnly>
+            <category-list />
+            <package-list />
+        </div>
     </div>
 </template>
 
