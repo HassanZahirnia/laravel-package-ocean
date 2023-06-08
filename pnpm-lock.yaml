@@ -126,8 +126,8 @@ devDependencies:
     specifier: ^2.0.2
     version: 2.0.2
   gsap:
-    specifier: ^3.12.0
-    version: 3.12.0
+    specifier: ^3.12.1
+    version: 3.12.1
   inquirer:
     specifier: ^9.2.7
     version: 9.2.7
@@ -4012,8 +4012,8 @@ packages:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
     dev: true
 
-  /gsap@3.12.0:
-    resolution: {integrity: sha512-sWSZ8OT91MHWNt7K9Cuj15spfXr94X2ZXscQQ0ZKKHKvru4jrbO70yjSCs6ZRtf3JplDHMQCII9YNWtEitWjYg==}
+  /gsap@3.12.1:
+    resolution: {integrity: sha512-FXtb2YbBE9l8I9Pl5DFLpCMedaiMPztRlr0Ln0CMSnJn+pbTaeKlzgth8cLNPc7PzNwIZe+SEQiBBAWaBKJdVA==}
     dev: true
 
   /gzip-size@6.0.0:

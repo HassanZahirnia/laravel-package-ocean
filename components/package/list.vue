@@ -50,8 +50,11 @@ const search = useSearch()
 // Selected Category
 const selectedCategory = useSelectedCategory()
 
+// Default sort field
+const DEFAULT_SORT_FIELD = 'first_release_at'
+
 // Sort field
-const sortField = useStorage<PackageSortFields>('sortField', 'first_release_at')
+const sortField = ref<PackageSortFields>(DEFAULT_SORT_FIELD)
 
 // Last visit date
 const lastVisitDate = useStorage<string | null>('lastVisitDate', null)
@@ -109,6 +112,10 @@ watch(
         // Update the page
         if (newQuery.page !== oldQuery?.page)
             page.value = Number(newQuery.page) || 1
+
+        // Update the sort field
+        if (newQuery.sort !== oldQuery?.sort)
+            sortField.value = newQuery.sort?.toString() as PackageSortFields || 'first_release_at'
 
         // If the selectedCategory is not included in the categories array, set it to an empty string
         if (newQuery.category !== oldQuery?.category)
@@ -210,6 +217,7 @@ watch(
         if (
             results.value.length === laravelPackages.length
             && newPage === 1
+            && newSortField === DEFAULT_SORT_FIELD
             && isEmpty(newSearch)
             && isEmpty(newSelectedCategory)
             && isEmpty(newShowOfficialPackages)
@@ -228,6 +236,7 @@ watch(
                 query: {
                     ...(newSearch && { search: newSearch }),
                     ...(newPage && { page: newPage }),
+                    ...(newSortField && { sort: newSortField }),
                     ...(newSelectedCategory && { category: newSelectedCategory }),
                     ...(newShowOfficialPackages && { official: newShowOfficialPackages }),
                 },
@@ -445,23 +454,18 @@ const categoriesForSelectboxWithAll = [
                 </div>
                 <!-- Search bar -->
                 <ui-search-input />
-                <ClientOnly
-                    fallback-tag="span"
-                    fallback=""
-                    >
-                    <!-- Sort -->
-                    <ui-selectbox
-                        v-model="sortField"
-                        class="shrink-0 w-full min-[920px]:w-[12.5rem] relative z-20"
-                        :items="orderItems"
-                        />
-                    <!-- Categories -->
-                    <ui-selectbox
-                        v-model="selectedCategory"
-                        class="shrink-0 w-full sm:hidden"
-                        :items="categoriesForSelectboxWithAll"
-                        />
-                </ClientOnly>
+                <!-- Sort -->
+                <ui-selectbox
+                    v-model="sortField"
+                    class="shrink-0 w-full min-[920px]:w-[12.5rem] relative z-20"
+                    :items="orderItems"
+                    />
+                <!-- Categories -->
+                <ui-selectbox
+                    v-model="selectedCategory"
+                    class="shrink-0 w-full sm:hidden"
+                    :items="categoriesForSelectboxWithAll"
+                    />
             </div>
         </div>
         <div class="relative min-h-[16rem]">
