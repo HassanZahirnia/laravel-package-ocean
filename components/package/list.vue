@@ -41,6 +41,9 @@ miniSearch.addAll(laravelPackages)
 // Route
 const route = useRoute()
 
+// Router
+const router = useRouter()
+
 // Search
 const search = useSearch()
 
@@ -94,153 +97,148 @@ const pageSize = 9
 
 // Results
 const results = ref(laravelPackages)
-const resultsPaginated = ref<Package[]>([])
+const resultsPaginated = ref(results.value)
 
-onMounted(() => {
-    // Update all relevant variables when the route.query changes
-    watch(
-        () => route.query,
-        (newQuery, oldQuery) => {
+watch(
+    () => route.query,
+    (newQuery, oldQuery) => {
         // Update the search
-            if (newQuery.search !== oldQuery?.search)
-                search.value = newQuery.search?.toString() || ''
+        if (newQuery.search !== oldQuery?.search)
+            search.value = newQuery.search?.toString() || ''
 
-            // Update the page
-            if (newQuery.page !== oldQuery?.page)
-                page.value = Number(newQuery.page) || 1
+        // Update the page
+        if (newQuery.page !== oldQuery?.page)
+            page.value = Number(newQuery.page) || 1
 
-            // If the selectedCategory is not included in the categories array, set it to an empty string
-            if (newQuery.category !== oldQuery?.category)
-                selectedCategory.value = newQuery.category && categories.includes(newQuery.category as typeof categories[number]) ? newQuery.category?.toString() : ''
+        // If the selectedCategory is not included in the categories array, set it to an empty string
+        if (newQuery.category !== oldQuery?.category)
+            selectedCategory.value = newQuery.category && categories.includes(newQuery.category as typeof categories[number]) ? newQuery.category?.toString() : ''
 
-            // Only use route.query.official if it's value is either '0' or '1', if not set it to '0'
-            if (newQuery.official !== oldQuery?.official)
-                showOfficialPackages.value = newQuery.official && ['0', '1'].includes(newQuery.official?.toString()) ? newQuery.official?.toString() as '0' | '1' : '0'
-        },
-        { immediate: true },
-    )
+        // Only use route.query.official if it's value is either '0' or '1', if not set it to '0'
+        if (newQuery.official !== oldQuery?.official)
+            showOfficialPackages.value = newQuery.official && ['0', '1'].includes(newQuery.official?.toString()) ? newQuery.official?.toString() as '0' | '1' : '0'
+    },
+    { immediate: true },
+)
 
-    watch(
-        [search, page, sortField, selectedCategory, showOfficialPackages, showNewPackagesSinceLastVisit],
-        (
-            [newSearch, newPage, newSortField, newSelectedCategory, newShowOfficialPackages, newShowNewPackagesSinceLastVisit],
-            [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages, oldShowNewPackagesSinceLastVisit],
-        ) => {
-            results.value = laravelPackages
+watch(
+    [search, page, sortField, selectedCategory, showOfficialPackages, showNewPackagesSinceLastVisit],
+    (
+        [newSearch, newPage, newSortField, newSelectedCategory, newShowOfficialPackages, newShowNewPackagesSinceLastVisit],
+        [oldSearch, oldPage, oldSortField, oldSelectedCategory, oldShowOnlyOfficialPackages, oldShowNewPackagesSinceLastVisit],
+    ) => {
+        results.value = laravelPackages
 
-            if (newShowNewPackagesSinceLastVisit)
-                results.value = newPackagesSinceLastVisit.value
+        if (newShowNewPackagesSinceLastVisit)
+            results.value = newPackagesSinceLastVisit.value
 
-            // if newPage is changed, scroll to #scroll-to-reference element
-            if (newPage !== oldPage) {
-                nextTick(() => {
+        // if newPage is changed, scroll to #scroll-to-reference element
+        if (newPage !== oldPage) {
+            nextTick(() => {
                 // If device width is less than 640px (mobile), scroll to #scroll-to-reference element
-                    if (window && window.innerWidth < 640)
-                        document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'smooth' })
-                })
-            }
+                if (process.client && window.innerWidth < 640)
+                    document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'smooth' })
+            })
+        }
 
-            // If newSelectedCategory and oldSelectedCategory are not equal, set page to 1
-            if (
-                (newSelectedCategory !== oldSelectedCategory)
+        // If newSelectedCategory and oldSelectedCategory are not equal, set page to 1
+        if (
+            (newSelectedCategory !== oldSelectedCategory)
             && !(isEmpty(newSelectedCategory) && isEmpty(oldSelectedCategory))
             && oldPage === newPage
-            )
-                newPage = 1
+        )
+            newPage = 1
 
 
 
-            // If newShowOfficialPackages and oldShowOfficialPackages are not equal, set page to 1
-            if (
-                (newShowOfficialPackages !== oldShowOnlyOfficialPackages)
+        // If newShowOfficialPackages and oldShowOfficialPackages are not equal, set page to 1
+        if (
+            (newShowOfficialPackages !== oldShowOnlyOfficialPackages)
             && !(isEmpty(newShowOfficialPackages) && isEmpty(oldShowOnlyOfficialPackages))
             && oldPage === newPage
-            )
+        )
+            newPage = 1
+
+        // Show only official packages if showOfficialPackages is true
+        if (newShowOfficialPackages === '1')
+            results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
+
+        // Selected Category
+        if (newSelectedCategory)
+            results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
+
+        // Sort packages
+        let sortOrder: 'asc' | 'desc' = 'desc'
+        switch (newSortField) {
+            case 'first_release_at':
+                sortOrder = 'desc'
+                break
+            case 'latest_release_at':
+                sortOrder = 'desc'
+                break
+            case 'created_at':
+                sortOrder = 'desc'
+                break
+            case 'stars':
+                sortOrder = 'desc'
+                break
+            default:
+                sortOrder = 'desc'
+                break
+        }
+        results.value = orderBy(results.value, newSortField, sortOrder)
+
+        // If search is not empty, search packages using miniSearch,
+        // If not return all packages
+        if (search.value){
+            if (newSearch !== oldSearch)
                 newPage = 1
 
-            // Show only official packages if showOfficialPackages is true
-            if (newShowOfficialPackages === '1')
-                results.value = laravelPackages.filter(laravelPackage => laravelPackage.author === 'laravel')
+            const searchResult = miniSearch.search(search.value)
 
-            // Selected Category
-            if (newSelectedCategory)
-                results.value = results.value.filter(laravelPackage => laravelPackage.category === newSelectedCategory)
+            // Filter packages that their `github` property are included in searchResults's `id` property
+            // But keep the order from searchResult's score (desc)
+            results.value = searchResult.map(searchResultItem => results.value.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
+        }
 
-            // Sort packages
-            let sortOrder: 'asc' | 'desc' = 'desc'
-            switch (newSortField) {
-                case 'first_release_at':
-                    sortOrder = 'desc'
-                    break
-                case 'latest_release_at':
-                    sortOrder = 'desc'
-                    break
-                case 'created_at':
-                    sortOrder = 'desc'
-                    break
-                case 'stars':
-                    sortOrder = 'desc'
-                    break
-                default:
-                    sortOrder = 'desc'
-                    break
-            }
-            results.value = orderBy(results.value, newSortField, sortOrder)
+        // Paginate results
+        const start = (newPage - 1) * pageSize
+        const end = start + pageSize
+        resultsPaginated.value = results.value.slice(start, end)
 
-            // If search is not empty, search packages using miniSearch,
-            // If not return all packages
-            if (search.value){
-                if (newSearch !== oldSearch)
-                    newPage = 1
-
-                const searchResult = miniSearch.search(search.value)
-
-                // Filter packages that their `github` property are included in searchResults's `id` property
-                // But keep the order from searchResult's score (desc)
-                results.value = searchResult.map(searchResultItem => results.value.find(laravelPackage => laravelPackage.github === searchResultItem.id)).filter(Boolean) as typeof laravelPackages
-            }
-
-            // Paginate results
-            const start = (newPage - 1) * pageSize
-            const end = start + pageSize
-            resultsPaginated.value = results.value.slice(start, end)
-
-            // Update the route
-            if (
-                results.value.length === laravelPackages.length
+        // Update the route
+        if (
+            results.value.length === laravelPackages.length
             && newPage === 1
             && isEmpty(newSearch)
             && isEmpty(newSelectedCategory)
             && isEmpty(newShowOfficialPackages)
-            ){
+        ){
             // Clear the query when page number is 1 and the search is empty
-                navigateTo({
-                    path: '/',
-                    query: {},
-                })
-            }
-            else {
+            router.replace({
+                path: '/',
+                query: {},
+            })
+        }
+        else {
             // Push the new query
-                navigateTo({
-                    path: '/',
-                    // Only include parameters that are not empty
-                    query: {
-                        ...(newSearch && { search: newSearch }),
-                        ...(newPage && { page: newPage }),
-                        ...(newSelectedCategory && { category: newSelectedCategory }),
-                        ...(newShowOfficialPackages && { official: newShowOfficialPackages }),
-                    },
-                })
-            }
+            router.replace({
+                path: '/',
+                // Only include parameters that are not empty
+                query: {
+                    ...(newSearch && { search: newSearch }),
+                    ...(newPage && { page: newPage }),
+                    ...(newSelectedCategory && { category: newSelectedCategory }),
+                    ...(newShowOfficialPackages && { official: newShowOfficialPackages }),
+                },
+            })
+        }
 
-            // Update the page number incase it was previously set to 1 because of the search difference
-            page.value = newPage
-        },
-        { immediate: true },
-    )
-
-})
-
+        // Update the page number incase it was previously set to 1 because of the search difference
+        page.value = newPage
+    },
+    { immediate: true },
+)
 
 // Callback function for the useOffsetPagination's onPageChange option
 function updatePageNumber(
@@ -502,31 +500,26 @@ const categoriesForSelectboxWithAll = [
                     @press:last="currentPage = pageCount"
                     />
             </div>
-            <ClientOnly
-                fallback-tag="span"
-                fallback=""
+            <!-- No results message -->
+            <transition
+                enter-active-class="duration-300 ease-out"
+                enter-from-class="opacity-0"
+                enter-to-class="opacity-100"
+                leave-active-class="duration-300 ease-in"
+                leave-from-class="opacity-100"
+                leave-to-class="opacity-0"
                 >
-                <!-- No results message -->
-                <transition
-                    enter-active-class="duration-300 ease-out"
-                    enter-from-class="opacity-0"
-                    enter-to-class="opacity-100"
-                    leave-active-class="duration-300 ease-in"
-                    leave-from-class="opacity-100"
-                    leave-to-class="opacity-0"
-                    >
-                    <div
-                        v-if="!resultsPaginated.length"
-                        class="w-full
+                <div
+                    v-if="!resultsPaginated.length"
+                    class="w-full
                     absolute
                     top-0 right-1/2
                     translate-x-1/2
                     "
-                        >
-                        <ui-search-result />
-                    </div>
-                </transition>
-            </ClientOnly>
+                    >
+                    <ui-search-result />
+                </div>
+            </transition>
         </div>
     </div>
 </template>

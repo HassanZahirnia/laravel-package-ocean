@@ -14,8 +14,6 @@ import '@fontsource/poppins/latin.css'
         >
         <nav-bar />
         <slot />
-        <ClientOnly>
-            <footer-section />
-        </ClientOnly>
+        <footer-section />
     </section>
 </template>
