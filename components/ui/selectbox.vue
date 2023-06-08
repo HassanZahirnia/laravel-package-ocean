@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '@headlessui/vue'
-import { find } from 'lodash'
+import lodash from 'lodash'
 import type { selectboxItem } from '@/types/selectbox'
+
+const { find } = lodash
 
 const $props = defineProps<{
     items: selectboxItem<unknown>[]

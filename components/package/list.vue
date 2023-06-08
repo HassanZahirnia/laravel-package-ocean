@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { isEmpty, orderBy } from 'lodash'
+import lodash from 'lodash'
 import MiniSearch from 'minisearch'
 import { useStorage } from '@vueuse/core'
 import dayjs from 'dayjs'
@@ -8,6 +8,8 @@ import type { PackageSortFields } from '@/types/package'
 import { categories, categoriesWithPackagesCount } from '@/database/categories'
 import type { selectboxItem } from '@/types/selectbox'
 import type { CategoryWithPackagesCount } from '@/types/category'
+
+const { isEmpty, orderBy } = lodash
 
 // Initialize the minisearch instance
 const miniSearch = new MiniSearch({

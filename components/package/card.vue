@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { gsap } from 'gsap'
 import semver from 'semver'
-import { orderBy } from 'lodash'
+import lodash from 'lodash'
 import { active_laravel_versions } from '@/database/laravel'
 import type { Package } from '@/types/package'
 
 const $props = defineProps<{
     laravelPackage: Package
 }>()
+
+const { orderBy } = lodash
 
 // Sort active laravel versions from highest to lowest
 const sorted_active_laravel_versions = reactiveComputed(() => orderBy(active_laravel_versions, version => parseInt(version), 'desc'))
