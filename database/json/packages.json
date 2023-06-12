@@ -9433,5 +9433,25 @@
         "paid_integration": false,
         "updated_at": "2023-06-12T12:38:15.050Z",
         "created_at": "2023-06-12T12:38:15.050Z"
+    },
+    {
+        "package_type": "npm-package",
+        "name": "Blade Prettier Plugin",
+        "description": "Provides a Prettier plugin that can parse and format Laravel Blade template files.",
+        "category": "UI & Blade Components",
+        "github": "https://github.com/stillat/blade-parser-typescript",
+        "author": "stillat",
+        "composer": null,
+        "npm": "prettier-plugin-blade",
+        "stars": 24,
+        "keywords": [
+            "john koster"
+        ],
+        "first_release_at": "2022-07-18T14:52:45.058Z",
+        "latest_release_at": "2023-06-10T17:53:10.434Z",
+        "laravel_dependency_versions": [],
+        "paid_integration": false,
+        "updated_at": "2023-06-12T18:57:12.496Z",
+        "created_at": "2023-06-12T18:57:12.496Z"
     }
 ]
