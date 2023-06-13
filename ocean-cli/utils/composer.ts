@@ -77,7 +77,8 @@ export const extract_packagist_laravel_dependency_versions = (
         if (dependency.startsWith('illuminate/') || dependency === 'laravel/framework'){
             const convertedVersion = convertLegacySemver(dependencies[dependency])
             const version = semver.validRange(convertedVersion)
-            if (version)
+            // Skip if the version is a wildcard
+            if (version && !version.includes('*'))
                 supportedVersions.add(convertedVersion)
         }
     }

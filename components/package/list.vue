@@ -223,14 +223,14 @@ watch(
             && isEmpty(newShowOfficialPackages)
         ){
             // Clear the query when page number is 1 and the search is empty
-            router.replace({
+            router.push({
                 path: '/',
                 query: {},
             })
         }
         else {
             // Push the new query
-            router.replace({
+            router.push({
                 path: '/',
                 // Only include parameters that are not empty
                 query: {
