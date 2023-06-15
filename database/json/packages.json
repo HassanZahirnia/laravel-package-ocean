@@ -9493,5 +9493,108 @@
         "paid_integration": false,
         "updated_at": "2023-06-14T17:45:52.318Z",
         "created_at": "2023-06-14T17:45:52.318Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Cookie Consent",
+        "description": "Register, configure and ask for cookies consent in a EU-compliant way.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/whitecube/laravel-cookie-consent",
+        "author": "whitecube",
+        "composer": "whitecube/laravel-cookie-consent",
+        "npm": null,
+        "stars": 1,
+        "keywords": [],
+        "first_release_at": "2023-06-13T13:31:03+00:00",
+        "latest_release_at": "2023-06-15T10:10:16+00:00",
+        "laravel_dependency_versions": [
+            "^9||^10"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-15T10:42:47.164Z",
+        "created_at": "2023-06-15T10:42:47.164Z"
+    },
+    {
+        "package_type": "php-package",
+        "name": "Money",
+        "description": "A money and currency library for PHP.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/brick/money",
+        "author": "brick",
+        "composer": "brick/money",
+        "npm": null,
+        "stars": 1365,
+        "keywords": [
+            "financial"
+        ],
+        "first_release_at": "2015-05-31T18:04:20+00:00",
+        "latest_release_at": "2023-01-15T23:59:01+00:00",
+        "laravel_dependency_versions": [],
+        "paid_integration": false,
+        "updated_at": "2023-06-15T10:45:50.242Z",
+        "created_at": "2023-06-15T10:45:50.242Z"
+    },
+    {
+        "package_type": "php-package",
+        "name": "PHP Prices",
+        "description": "Manage complex monetary prices in PHP.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/whitecube/php-prices",
+        "author": "whitecube",
+        "composer": "whitecube/php-prices",
+        "npm": null,
+        "stars": 142,
+        "keywords": [
+            "money",
+            "vat",
+            "tax",
+            "discount"
+        ],
+        "first_release_at": "2020-07-09T22:47:19+00:00",
+        "latest_release_at": "2023-03-06T10:41:54+00:00",
+        "laravel_dependency_versions": [],
+        "paid_integration": false,
+        "updated_at": "2023-06-15T10:47:57.717Z",
+        "created_at": "2023-06-15T10:47:57.717Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Timezones",
+        "description": "Store UTC dates in the database and work with custom timezones.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/whitecube/laravel-timezones",
+        "author": "whitecube",
+        "composer": "whitecube/laravel-timezones",
+        "npm": null,
+        "stars": 53,
+        "keywords": [],
+        "first_release_at": "2022-12-13T14:51:37+00:00",
+        "latest_release_at": "2023-04-28T15:09:29+00:00",
+        "laravel_dependency_versions": [
+            "^9||^10"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-15T10:52:30.285Z",
+        "created_at": "2023-06-15T10:52:30.285Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Search Builder",
+        "description": "Build multi-condition search queries with scores & make use of covering indexes to be super fast.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/whitecube/laravel-search-builder",
+        "author": "whitecube",
+        "composer": "whitecube/laravel-search-builder",
+        "npm": null,
+        "stars": 3,
+        "keywords": [],
+        "first_release_at": "2023-04-24T14:19:57+00:00",
+        "latest_release_at": "2023-04-25T08:04:38+00:00",
+        "laravel_dependency_versions": [
+            "^10.8"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-15T10:54:09.947Z",
+        "created_at": "2023-06-15T10:54:09.947Z"
     }
 ]
