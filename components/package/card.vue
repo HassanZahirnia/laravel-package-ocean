@@ -373,20 +373,31 @@ watch(
                                 <div
                                     v-if="laravelPackage.laravel_dependency_versions.length && isCompatible"
                                     >
-                                    <span>Versions: </span>
                                     <span
                                         v-if="minimum_compatible_version
                                             && maximum_compatible_version
                                             && minimum_compatible_version !== maximum_compatible_version
                                         "
+                                        class="inline-flex items-center gap-1"
                                         >
-                                        from
-                                        {{ minimum_compatible_version }}
-                                        to
-                                        {{ maximum_compatible_version }}
+                                        <span>
+                                            {{ 'v' + minimum_compatible_version }}
+                                        </span>
+                                        <span class="i-heroicons:arrow-long-right text-xl inline-block" />
+                                        <span>
+                                            {{ 'v' + maximum_compatible_version }}
+                                        </span>
+                                        <span>
+                                            supported
+                                        </span>
                                     </span>
                                     <span v-else>
-                                        {{ minimum_compatible_version }}
+                                        <span>
+                                            {{ 'v' + minimum_compatible_version }}
+                                        </span>
+                                        <span>
+                                            supported
+                                        </span>
                                     </span>
                                 </div>
                                 <div
