@@ -16,6 +16,7 @@ import { extract_npm_first_release_at, extract_npm_latest_release_at } from '../
 import type { NpmData } from '../utils/npm'
 import { log } from '../print'
 import { github_is_healthy, is_compatible_with_active_laravel_versions } from '../utils/health'
+import { generateRSSFeed } from '../utils/rss'
 import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
 import {
     name as z_name,
@@ -309,6 +310,9 @@ export const addPackage = async function(){
 
                     // Write the new package to the database
                     writePackagesDatabase(laravelPackages)
+
+                    // Update RSS
+                    generateRSSFeed()
 
                     // Show a success message
                     log(chalk.magenta('\n Package has been added! \n'))
