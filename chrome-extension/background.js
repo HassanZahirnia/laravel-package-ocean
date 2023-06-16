@@ -3,7 +3,12 @@ chrome.runtime.onInstalled.addListener(() => {
 })
 
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-    if (changeInfo && changeInfo.status === 'complete' && tab.url && tab.url.includes('github.com')) {
+    if (changeInfo
+        && changeInfo.status === 'complete'
+        && tab.url
+        && tab.url.includes('github.com')
+        && tab.url.match(/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i)
+    ) {
         checkIfGithubExists(tab.url)
             .then((isInDatabase) => {
                 if (isInDatabase)
