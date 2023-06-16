@@ -9656,5 +9656,25 @@
         "paid_integration": false,
         "updated_at": "2023-06-16T11:28:38.365Z",
         "created_at": "2023-06-16T11:28:38.365Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Backup Restore",
+        "description": "Restore database backups made with spatie/laravel-backup.",
+        "category": "Dev Ops",
+        "github": "https://github.com/stefanzweifel/laravel-backup-restore",
+        "author": "wnx",
+        "composer": "wnx/laravel-backup-restore",
+        "npm": null,
+        "stars": 27,
+        "keywords": [],
+        "first_release_at": "2023-03-10T16:02:57+00:00",
+        "latest_release_at": "2023-05-29T18:08:19+00:00",
+        "laravel_dependency_versions": [
+            "^9.0 || ^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-16T13:03:48.026Z",
+        "created_at": "2023-06-16T13:03:48.026Z"
     }
 ]
