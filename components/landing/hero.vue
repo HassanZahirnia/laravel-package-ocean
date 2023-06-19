@@ -7,19 +7,14 @@ import { categories } from '@/database/categories'
 
 const parser = new UAParser()
 const browserName = parser.getBrowser().name
-const showFox = ref(false)
 
 onMounted(() => {
-    console.log(document.referrer)
-    if (document.referrer.includes('wetfox.dev'))
-        showFox.value = true
-
     if (browserName && /firefox/i.test(browserName))
         return
 
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.to('#hero-section .gsap-fluid-shape', {
+    gsap.to('#hero-section .gsap-fox', {
         yPercent: 7,
         scrollTrigger: {
             trigger: 'body',
@@ -48,28 +43,10 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         id="hero-section"
         class="relative"
         >
-        <!-- Fluid shape -->
-        <div
-            v-if="!showFox"
-            class="absolute z-[-1]
-            top-0 sm:-top-10
-            right-1/2
-            translate-x-1/2
-            "
-            >
-            <img
-                src="@/assets/images/fluid-shape.webp"
-                width="240"
-                height="220"
-                alt=""
-                class="gsap-fluid-shape pointer-events-none select-none"
-                />
-        </div>
         <!-- Fox -->
         <div
-            v-else
             class="absolute z-[-1]
-            top-0 sm:-top-10
+            top-0 sm:-top-14
             right-1/2
             translate-x-1/2
             "
@@ -79,21 +56,17 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 width="150"
                 height="237"
                 alt=""
-                class="gsap-fluid-shape pointer-events-none select-none"
+                class="gsap-fox pointer-events-none select-none"
                 />
         </div>
         <!-- Hero text -->
         <div
-            class="gsap-hero-card px-5 sm:px-10"
-            :class="{
-                'pt-20': !showFox,
-                'pt-40': showFox,
-            }"
+            class="gsap-hero-card pt-36 px-5 sm:px-10"
             >
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10
-                sm:p-10 lg:p-14
+                sm:p-10
                 text-center
                 backdrop-blur-xl
                 dark:backdrop-blur-lg
