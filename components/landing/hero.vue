@@ -14,7 +14,7 @@ onMounted(() => {
 
     gsap.registerPlugin(ScrollTrigger)
 
-    gsap.to('#hero-section .gsap-fox', {
+    gsap.to('#hero-section .gsap-earth-planet', {
         yPercent: 7,
         scrollTrigger: {
             trigger: 'body',
@@ -43,30 +43,30 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         id="hero-section"
         class="relative"
         >
-        <!-- Fox -->
+        <!-- Earth -->
         <div
             class="absolute z-[-1]
-            top-0 sm:-top-14
+            top-0 sm:-top-5
             right-1/2
             translate-x-1/2
             "
             >
             <img
-                src="@/assets/images/fox.webp"
-                width="150"
+                src="@/assets/images/earth.webp"
+                width="250"
                 height="237"
                 alt=""
-                class="gsap-fox pointer-events-none select-none"
+                class="gsap-earth-planet pointer-events-none select-none"
                 />
         </div>
         <!-- Hero text -->
         <div
-            class="gsap-hero-card pt-36 px-5 sm:px-10"
+            class="gsap-hero-card pt-24 px-5 sm:px-10"
             >
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10
-                sm:p-10
+                sm:p-10 lg:p-14
                 text-center
                 backdrop-blur-xl
                 dark:backdrop-blur-lg
