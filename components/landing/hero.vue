@@ -10,6 +10,7 @@ const browserName = parser.getBrowser().name
 const showFox = ref(false)
 
 onMounted(() => {
+    console.log(document.referrer)
     if (document.referrer.includes('wetfox.dev'))
         showFox.value = true
 
