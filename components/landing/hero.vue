@@ -7,8 +7,12 @@ import { categories } from '@/database/categories'
 
 const parser = new UAParser()
 const browserName = parser.getBrowser().name
+const showFox = ref(false)
 
 onMounted(() => {
+    if (document.referrer.includes('wetfox.dev'))
+        showFox.value = true
+
     if (browserName && /firefox/i.test(browserName))
         return
 
@@ -45,6 +49,7 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         >
         <!-- Fluid shape -->
         <div
+            v-if="!showFox"
             class="absolute z-[-1]
             top-0 sm:-top-10
             right-1/2
@@ -59,8 +64,31 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
                 class="gsap-fluid-shape pointer-events-none select-none"
                 />
         </div>
+        <!-- Fox -->
+        <div
+            v-else
+            class="absolute z-[-1]
+            top-0 sm:-top-10
+            right-1/2
+            translate-x-1/2
+            "
+            >
+            <img
+                src="@/assets/images/fox.webp"
+                width="150"
+                height="237"
+                alt=""
+                class="gsap-fluid-shape pointer-events-none select-none"
+                />
+        </div>
         <!-- Hero text -->
-        <div class="gsap-hero-card px-5 pt-20 sm:px-10">
+        <div
+            class="gsap-hero-card px-5 sm:px-10"
+            :class="{
+                'pt-20': !showFox,
+                'pt-40': showFox,
+            }"
+            >
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10
