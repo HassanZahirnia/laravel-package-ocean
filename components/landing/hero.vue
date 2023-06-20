@@ -61,12 +61,12 @@ const authorsCount = new Set(laravelPackages.map(laravelPackage => laravelPackag
         </div>
         <!-- Hero text -->
         <div
-            class="gsap-hero-card pt-24 px-5 sm:px-10"
+            class="gsap-hero-card pt-32 px-5 sm:px-10"
             >
             <div
                 class="mx-auto w-full max-w-3xl rounded-3xl
                 px-5 py-10
-                sm:p-10 lg:p-14
+                sm:p-10 lg:p-11
                 text-center
                 backdrop-blur-xl
                 dark:backdrop-blur-lg
