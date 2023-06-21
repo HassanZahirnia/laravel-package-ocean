@@ -9696,5 +9696,45 @@
         "paid_integration": false,
         "updated_at": "2023-06-17T11:17:16.141Z",
         "created_at": "2023-06-17T11:17:16.141Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "TailwindMerge For Laravel",
+        "description": "Automatically resolves Tailwind CSS class conflicts.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/gehrisandro/tailwind-merge-laravel",
+        "author": "gehrisandro",
+        "composer": "gehrisandro/tailwind-merge-laravel",
+        "npm": null,
+        "stars": 51,
+        "keywords": [],
+        "first_release_at": "2023-06-16T08:19:30+00:00",
+        "latest_release_at": "2023-06-16T11:43:34+00:00",
+        "laravel_dependency_versions": [
+            "^10.9.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-21T18:23:19.217Z",
+        "created_at": "2023-06-21T18:23:19.217Z"
+    },
+    {
+        "package_type": "php-package",
+        "name": "Tailwind Merge Php",
+        "description": "Merge multiple Tailwind CSS classes and automatically resolves conflicts.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/YieldStudio/tailwind-merge-php",
+        "author": "yieldstudio",
+        "composer": "yieldstudio/tailwind-merge-php",
+        "npm": null,
+        "stars": 7,
+        "keywords": [],
+        "first_release_at": "2023-06-10T00:42:39+00:00",
+        "latest_release_at": "2023-06-20T01:57:30+00:00",
+        "laravel_dependency_versions": [
+            "^9||^10"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-06-21T18:24:38.747Z",
+        "created_at": "2023-06-21T18:24:38.747Z"
     }
 ]
