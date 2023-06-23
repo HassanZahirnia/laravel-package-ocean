@@ -56,7 +56,7 @@
         "jsonc-eslint-parser": "^2.3.0",
         "lodash": "^4.17.21",
         "minisearch": "^6.1.0",
-        "nuxt": "^3.6.0",
+        "nuxt": "^3.5.2",
         "nuxt-gtag": "^0.5.7",
         "nuxt-simple-sitemap": "^2.7.0",
         "ora": "^6.3.1",
