@@ -166,7 +166,7 @@ watch(
             <a
                 :href="laravelPackage.github"
                 target="_blank"
-                class="rounded-3xl relative z-[1] group
+                class="rounded-3xl relative z-[1] group/package-card
                 h-60
                 p-6
                 transition-all duration-300
@@ -211,7 +211,7 @@ watch(
                     <div
                         class="flex items-center gap-2"
                         :class="{
-                            'transition-transform duration-300 group-hover:-translate-x-2': isStarCountOver1k,
+                            'transition-transform duration-300 group-hover/package-card:-translate-x-2': isStarCountOver1k,
                         }"
                         >
                         <div
@@ -220,14 +220,13 @@ watch(
                             relative -top-px
                             "
                             :class="{
-                                'group-hover:rotate-[-75deg]': isStarCountOver1k,
+                                'group-hover/package-card:rotate-[-75deg]': isStarCountOver1k,
                             }"
                             />
                         <div class="relative text-sm">
                             <div
-                                class=""
                                 :class="{
-                                    'transition-opacity duration-300 group-hover:opacity-0': isStarCountOver1k,
+                                    'transition-opacity duration-300 group-hover/package-card:opacity-0': isStarCountOver1k,
                                 }"
                                 >
                                 {{ formatStars(laravelPackage.stars) }}
@@ -235,7 +234,7 @@ watch(
                             <div
                                 class="absolute top-0 left-0"
                                 :class="{
-                                    'transition-opacity duration-300 opacity-0 group-hover:opacity-100': isStarCountOver1k,
+                                    'transition-opacity duration-300 opacity-0 group-hover/package-card:opacity-100': isStarCountOver1k,
                                 }"
                                 >
                                 {{ numberWithCommas(laravelPackage.stars) }}
@@ -286,7 +285,7 @@ watch(
                     <div
                         class="flex items-center gap-2
                         transition duration-300 ease-out
-                        group-hover:opacity-0 group-hover:translate-x-5 group-hover:translate-y-5
+                        group-hover/package-card:opacity-0 group-hover/package-card:translate-x-5 group-hover/package-card:translate-y-5
                         "
                         >
                         <div class="i-carbon:logo-github text-xl" />
@@ -300,8 +299,8 @@ watch(
                         transition duration-300 ease-out
                         flex gap-2 items-center
                         opacity-0 -translate-x-5 -translate-y-5
-                        group-hover:opacity-100
-                        group-hover:translate-x-0 group-hover:translate-y-0
+                        group-hover/package-card:opacity-100
+                        group-hover/package-card:translate-x-0 group-hover/package-card:translate-y-0
                         "
                         :class="{
                             'top-0': !laravelPackage.laravel_dependency_versions.length,
