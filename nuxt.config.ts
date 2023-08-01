@@ -3,6 +3,9 @@ import presetIcons from '@unocss/preset-icons'
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 
 export default defineNuxtConfig({
+    site: {
+        url: 'https://laravel-package-ocean.com',
+    },
     routeRules: {
         '/': {
             sitemap: {
@@ -47,9 +50,6 @@ export default defineNuxtConfig({
                 { rel: 'alternate', type: 'application/rss+xml', title: 'Laravel Package Ocean - Discover new Laravel packages', href: '/rss.xml' },
             ],
         },
-    },
-    sitemap: {
-        hostname: 'https://laravel-package-ocean.com',
     },
     modules: [
         'nuxt-simple-sitemap',
