@@ -2,4 +2,5 @@
 
 
 ### Removed Packages
-- [**`flavorly/inertia-flash`**](https://github.com/flavorly/inertia-flash): Was removed due to inactivity on Github. If the maintainer wishes to continue maintaining this package, please contact me and I will add it back to the main database.
+If the maintainer wishes to continue maintaining these packages, please contact me and I will add them back to the main database.
+- [**`flavorly/inertia-flash`**](https://github.com/flavorly/inertia-flash): Was removed due to inactivity on Github.
