@@ -140,10 +140,9 @@ watch(
             results.value = newPackagesSinceLastVisit.value
 
         // if newPage is changed, scroll to #scroll-to-reference element
-        if (newPage !== oldPage) {
+        if (newPage !== oldPage && oldPage !== undefined) {
             nextTick(() => {
-                // If device width is less than 640px (mobile), scroll to #scroll-to-reference element
-                if (process.client && window.innerWidth < 640)
+                if (process.client)
                     document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'smooth' })
             })
         }
