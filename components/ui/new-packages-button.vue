@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
     newPackagesCount: number,
-    showNewPackagesSinceLastVisit: boolean
+    isActive: boolean
 }>()
 
 const $emit = defineEmits<{
@@ -24,14 +24,14 @@ const $emit = defineEmits<{
             hover:brightness-105
             "
             :class="{
-                'bg-slate-300/50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-400': !showNewPackagesSinceLastVisit,
-                'bg-teal-200/70 text-teal-600 dark:text-teal-500 dark:bg-teal-500/20': showNewPackagesSinceLastVisit,
+                'bg-slate-300/50 dark:bg-slate-700/50 text-slate-600 dark:text-slate-400': !isActive,
+                'bg-teal-200/70 text-teal-600 dark:text-teal-500 dark:bg-teal-500/20': isActive,
             }"
             >
             <span class="relative flex h-2.5 w-2.5">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400" :class="{
-                    'opacity-75': !showNewPackagesSinceLastVisit,
-                    'opacity-0': showNewPackagesSinceLastVisit,
+                    'opacity-75': !isActive,
+                    'opacity-0': isActive,
                 }" />
                 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500" />
             </span>

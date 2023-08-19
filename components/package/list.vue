@@ -367,7 +367,7 @@ const categoriesForSelectboxWithAll = [
                 <ui-new-packages-button
                     v-if="newPackagesSinceLastVisit.length"
                     :newPackagesCount="newPackagesSinceLastVisit.length"
-                    :showNewPackagesSinceLastVisit="showNewPackagesSinceLastVisit"
+                    :isActive="showNewPackagesSinceLastVisit"
                     @toggle="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
                     />
             </div>
