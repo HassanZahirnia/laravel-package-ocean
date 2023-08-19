@@ -11,10 +11,10 @@ const $emit = defineEmits<{
 
 <template>
     <ui-tooltip
-    :content="newPackagesCount + ' New packages were added since your last visit !'"
-    theme="emerald"
-    @click.stop.prevent="$emit('toggle')"
-    >
+        :content="newPackagesCount + ' New packages were added since your last visit !'"
+        theme="emerald"
+        @click.stop.prevent="$emit('toggle')"
+        >
         <div
             class="py-1.5 px-4 select-none
             rounded-full cursor-pointer
@@ -29,10 +29,13 @@ const $emit = defineEmits<{
             }"
             >
             <span class="relative flex h-2.5 w-2.5">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400" :class="{
-                    'opacity-75': !isActive,
-                    'opacity-0': isActive,
-                }" />
+                <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400"
+                    :class="{
+                        'opacity-75': !isActive,
+                        'opacity-0': isActive,
+                    }"
+                    />
                 <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-teal-500" />
             </span>
             <div class="">
