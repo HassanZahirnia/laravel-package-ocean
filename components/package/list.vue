@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import lodash from 'lodash'
 import MiniSearch from 'minisearch'
-import { useStorage } from '@vueuse/core'
 import dayjs from 'dayjs'
 import { laravelPackages } from '@/database/packages'
 import type { Package, PackageSortFields } from '@/types/package'
@@ -57,36 +56,10 @@ const DEFAULT_SORT_FIELD = 'first_release_at'
 const sortField = ref<PackageSortFields>(DEFAULT_SORT_FIELD)
 
 // Last visit date
-const lastVisitDate = useStorage<string | null>('lastVisitDate', null)
-
-// New visit date
-const newVisitDate = useStorage<string | null>('newVisitDate', null)
-
-const GRACE_PERIOD = 5
-
-// If the lastVisitDate is empty, set the current time
-if (!lastVisitDate.value){
-    lastVisitDate.value = new Date().toISOString()
-    newVisitDate.value = null
-}
-else {
-    // If newVisitDate is empty, set it to the current time
-    // so that on the next visit, we have something to compare the GRACE_PERIOD minutes difference with
-    if (!newVisitDate.value){
-        newVisitDate.value = new Date().toISOString()
-    }
-    else {
-        // If the difference between the lastVisitDate and newVisitDate is more than GRACE_PERIOD minutes,
-        // set the lastVisitDate to the current time and newVisitDate to null
-        if (dayjs().diff(newVisitDate.value, 'minutes') > GRACE_PERIOD){
-            lastVisitDate.value = new Date().toISOString()
-            newVisitDate.value = null
-        }
-    }
-}
+const { lastVisitDate } = useVisitTracker()
 
 // New packages since last visit
-const newPackagesSinceLastVisit = computed(() => laravelPackages.filter(laravelPackage => dayjs(laravelPackage.created_at).isAfter(lastVisitDate.value)))
+const newPackagesSinceLastVisit = computed(() => laravelPackages.filter(laravelPackage => dayjs(laravelPackage.created_at).isAfter(lastVisitDate)))
 
 // Show new packages since last visit
 const showNewPackagesSinceLastVisit = ref(false)
