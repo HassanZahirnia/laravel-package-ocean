@@ -49,6 +49,3 @@ If you decide to suggest a package you can create a [new discussion](https://git
 ## Notes for package creators/owners
 - If the information about your package is incorrect, please let us know and we'll fix it right away.
 - If for any reason you want to remove your package from the database, please open an issue or ask in discussions. We'll remove it as soon as possible.
-
-## Contributors
-<img src=".github/assets/contributors-avatars.png?v=5" width="320px" style="border-radius:5px;" />
