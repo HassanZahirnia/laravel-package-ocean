@@ -1,6 +1,6 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
-import type { LaravelDatabase } from '~/types/laravel'
-import type { Package } from '~/types/package'
+import type { LaravelDatabase } from '../types/laravel'
+import type { Package } from '../types/package'
 
 const packagesPath = 'database/json/packages.json'
 const laravelPath = 'database/json/laravel.json'

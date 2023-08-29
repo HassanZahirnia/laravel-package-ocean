@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import semver from 'semver'
-import { categories } from '~/database/categories'
-import { packageTypes } from '~/database/packages'
+import { categories } from '../../database/categories'
+import { packageTypes } from '../../database/packages'
 
 // Package type
 export const package_type = z

@@ -1,9 +1,9 @@
 import inquirer from 'inquirer'
 import chalk from 'chalk'
 import { removePackage } from './remove'
-import { clearScreen, log } from '~/ocean-cli/print'
-import { showMainMenu } from '~/ocean-cli/cli'
-import type { Package } from '~/types/package'
+import { clearScreen, log } from '../print'
+import { showMainMenu } from '../cli'
+import type { Package } from '../../types/package'
 
 export const showPackageMenu = function(laravelPackage: Package){
     inquirer

@@ -17,7 +17,7 @@ import type { NpmData } from '../utils/npm'
 import { log } from '../print'
 import { github_is_healthy, is_compatible_with_active_laravel_versions } from '../utils/health'
 import { generateRSSFeed } from '../utils/rss'
-import { readPackagesDatabase, writePackagesDatabase } from '~/ocean-cli/database'
+import { readPackagesDatabase, writePackagesDatabase } from '../database'
 import {
     name as z_name,
     description as z_description,
@@ -27,11 +27,11 @@ import {
     npm as z_npm,
     keywords as z_keywords,
     laravelPackageSchema,
-} from '~/ocean-cli/validations/package.validation'
-import { categories } from '~/database/categories'
-import type { Package } from '~/types/package'
-import type { GithubData } from '~/types/github'
-import { packageTypes } from '~/database/packages'
+} from '../validations/package.validation'
+import { categories } from '../../database/categories'
+import type { Package } from '../../types/package'
+import type { GithubData } from '../../types/github'
+import { packageTypes } from '../../database/packages'
 
 dotenv.config()
 

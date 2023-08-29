@@ -3,9 +3,9 @@ import inquirerPrompt from 'inquirer-autocomplete-prompt'
 import { find } from 'lodash'
 import MiniSearch from 'minisearch'
 import { readPackagesDatabase } from '../database'
-import { showPackageMenu } from '~/ocean-cli/package/menu'
-import { clearScreen, log } from '~/ocean-cli/print'
-import type { Package } from '~/types/package'
+import { showPackageMenu } from '../package/menu'
+import { clearScreen, log } from '../print'
+import type { Package } from '../../types/package'
 
 // Register the autocomplete prompt
 inquirer.registerPrompt('autocomplete', inquirerPrompt)

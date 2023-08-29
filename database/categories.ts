@@ -1,6 +1,6 @@
 import type { Category, CategoryWithPackagesCount } from '@/types/category'
 
-import { laravelPackages } from '@/database/packages'
+import { laravelPackages } from './packages'
 
 export const categories: Category[] = [
     'File Management',

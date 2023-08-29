@@ -5,7 +5,7 @@ import dotenv from 'dotenv'
 import { readPackagesDatabase, writePackagesDatabase } from '../database'
 import { clearScreen, log } from '../print'
 import { laravelPackageSchema } from '../validations/package.validation'
-import type { GithubData } from '~/types/github'
+import type { GithubData } from '../../types/github'
 
 dotenv.config()
 

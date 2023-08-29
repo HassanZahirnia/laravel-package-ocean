@@ -8,8 +8,8 @@ import { readLaravelDatabase, readPackagesDatabase } from '../database'
 import { laravelPackageArraySchema } from '../validations/package.validation'
 import { clearScreen, log } from '../print'
 import { laravelSchema } from '../validations/laravel.validation'
-import type { GithubData } from '~/types/github'
-import type { Package } from '~/types/package'
+import type { GithubData } from '../../types/github'
+import type { Package } from '../../types/package'
 
 dotenv.config()
 

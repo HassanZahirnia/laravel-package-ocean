@@ -1,5 +1,5 @@
 import { readPackagesDatabase, writePackagesDatabase } from '../database'
-import type { Package } from '~/types/package'
+import type { Package } from '../../types/package'
 
 export const removePackage = (laravelPackage: Package) => {
     const laravelPackages = readPackagesDatabase()

@@ -3,9 +3,9 @@ import { writeActiveLaravelVersion } from './utils/laravel'
 import { runComposerChecks, runGithubChecks, validateJson } from './utils/health'
 import { updateAllGithubStars } from './utils/github'
 import { updateAllCompatibleVersions } from './utils/composer'
-import { clearScreen, printLogo, showPackageStats } from '~/ocean-cli/print'
-import { showPackageSearch } from '~/ocean-cli/package/search'
-import { addPackage } from '~/ocean-cli/package/add'
+import { clearScreen, printLogo, showPackageStats } from './print'
+import { showPackageSearch } from './package/search'
+import { addPackage } from './package/add'
 
 const updateAll = async function() {
     clearScreen()
