@@ -79,7 +79,7 @@ onMounted(() => {
         <nuxt-link
             to="/"
             class="relative
-            grid h-[53px]
+            grid h-[53px] text-[#090959] dark:text-inherit
             "
             aria-label="Home"
             >
