@@ -1592,7 +1592,7 @@
         "description": "Approve new Model data before it is persisted.",
         "category": "Database & Eloquent",
         "github": "https://github.com/cjmellor/approval",
-        "author": "approval",
+        "author": "cjmellor",
         "composer": "cjmellor/approval",
         "npm": null,
         "stars": 254,
