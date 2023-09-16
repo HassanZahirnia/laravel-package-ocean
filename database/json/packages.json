@@ -10088,5 +10088,45 @@
         "paid_integration": false,
         "updated_at": "2023-08-29T22:35:45.777Z",
         "created_at": "2023-08-29T22:35:45.777Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel LogSnag",
+        "description": "Integrate the power of LogSnag's real-time event tracking into your application.",
+        "category": "Debugging & Dev Tools",
+        "github": "https://github.com/hosmelq/laravel-logsnag",
+        "author": "hosmelq",
+        "composer": "hosmelq/laravel-logsnag",
+        "npm": null,
+        "stars": 15,
+        "keywords": [],
+        "first_release_at": "2023-08-13T06:46:13+00:00",
+        "latest_release_at": "2023-09-12T18:25:40+00:00",
+        "laravel_dependency_versions": [
+            "^10.0.0"
+        ],
+        "paid_integration": true,
+        "updated_at": "2023-09-16T09:00:30.203Z",
+        "created_at": "2023-09-16T09:00:30.203Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Mary",
+        "description": "A set of gorgeous Blade components made for Livewire 3 and styled with DaisyUI and Tailwind.",
+        "category": "UI & Blade Components",
+        "github": "https://github.com/robsontenorio/mary",
+        "author": "robsontenorio",
+        "composer": "robsontenorio/mary",
+        "npm": null,
+        "stars": 158,
+        "keywords": [],
+        "first_release_at": "2023-07-30T06:43:19+00:00",
+        "latest_release_at": "2023-09-15T23:15:14+00:00",
+        "laravel_dependency_versions": [
+            "~10"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-09-16T09:19:27.817Z",
+        "created_at": "2023-09-16T09:19:27.817Z"
     }
 ]
