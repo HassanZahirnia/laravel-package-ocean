@@ -10128,5 +10128,25 @@
         "paid_integration": false,
         "updated_at": "2023-09-16T09:19:27.817Z",
         "created_at": "2023-09-16T09:19:27.817Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Mail Export",
+        "description": "A simple mailable trait and interface to export mails to a storage disk once being sent.",
+        "category": "Mail",
+        "github": "https://github.com/pod-point/laravel-mail-export",
+        "author": "pod-point",
+        "composer": "pod-point/laravel-mail-export",
+        "npm": null,
+        "stars": 84,
+        "keywords": [],
+        "first_release_at": "2021-03-30T16:23:41+00:00",
+        "latest_release_at": "2023-09-01T09:37:29+00:00",
+        "laravel_dependency_versions": [
+            "^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-09-16T13:41:08.552Z",
+        "created_at": "2023-09-16T13:41:08.552Z"
     }
 ]
