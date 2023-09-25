@@ -6,6 +6,7 @@ import { updateAllCompatibleVersions } from './utils/composer'
 import { clearScreen, printLogo, showPackageStats } from './print'
 import { showPackageSearch } from './package/search'
 import { addPackage } from './package/add'
+import { generateRSSFeed } from './utils/rss'
 
 const updateAll = async function() {
     clearScreen()
@@ -79,6 +80,7 @@ export const showMainMenu = function(){
 
 const verboseFlag = process.argv.includes('--verbose')
 const validateJsonFlag = process.argv.includes('--validate')
+const generateRSSFlag = process.argv.includes('--rss')
 const updateActiveLaravelVersionsFlag = process.argv.includes('--update-active-laravel-versions')
 
 if (validateJsonFlag) {
@@ -87,7 +89,9 @@ if (validateJsonFlag) {
 else if (updateActiveLaravelVersionsFlag){
     writeActiveLaravelVersion({ noMenu: true })
 }
-else {
+else if (generateRSSFlag){
+    generateRSSFeed()
+} else {
     // Clear the screen
     clearScreen()
 

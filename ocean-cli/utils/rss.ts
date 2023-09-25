@@ -33,5 +33,3 @@ export const generateRSSFeed = async() => {
     // Write the RSS feed to public/rss.xml
     fs.writeFileSync('public/rss.xml', rssXml)
 }
-
-generateRSSFeed()
