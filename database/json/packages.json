@@ -10467,5 +10467,246 @@
         "paid_integration": false,
         "updated_at": "2023-09-25T09:47:03.133Z",
         "created_at": "2023-09-25T09:47:03.133Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Laravel Soulbscription",
+        "description": "An interface to handle subscriptions and features consumption.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/lucasdotvin/laravel-soulbscription",
+        "author": "lucasdotvin",
+        "composer": "lucasdotvin/laravel-soulbscription",
+        "npm": null,
+        "stars": 416,
+        "keywords": [],
+        "first_release_at": "2022-04-08T03:17:04+00:00",
+        "latest_release_at": "2023-10-01T20:00:10+00:00",
+        "laravel_dependency_versions": [
+            "^8.0||^9.0||^10.0"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:07:23.575Z",
+        "created_at": "2023-10-04T09:07:23.575Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "WebAuthn",
+        "description": "Authenticate users with Passkeys: fingerprints, patterns and biometric data.",
+        "category": "Auth & Permissions",
+        "github": "https://github.com/Laragear/WebAuthn",
+        "author": "laragear",
+        "composer": "laragear/webauthn",
+        "npm": null,
+        "stars": 167,
+        "keywords": [],
+        "first_release_at": "2022-06-14T09:17:37+00:00",
+        "latest_release_at": "2023-03-09T18:38:16+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:13:38.622Z",
+        "created_at": "2023-10-04T09:13:38.622Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Two Factor",
+        "description": "On-premises Two-Factor Authentication for all your users out of the box.",
+        "category": "Auth & Permissions",
+        "github": "https://github.com/Laragear/TwoFactor",
+        "author": "laragear",
+        "composer": "laragear/two-factor",
+        "npm": null,
+        "stars": 195,
+        "keywords": [],
+        "first_release_at": "2022-02-16T04:07:25+00:00",
+        "latest_release_at": "2023-06-12T20:59:23+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:14:13.924Z",
+        "created_at": "2023-10-04T09:14:13.924Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Preload",
+        "description": "Effortlessly create a PHP Preload Script for your project.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/Laragear/Preload",
+        "author": "laragear",
+        "composer": "laragear/preload",
+        "npm": null,
+        "stars": 69,
+        "keywords": [],
+        "first_release_at": "2022-02-16T04:36:28+00:00",
+        "latest_release_at": "2023-02-21T00:41:22+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:15:33.270Z",
+        "created_at": "2023-10-04T09:15:33.270Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Cache Query",
+        "description": "Remember query results using only one method.",
+        "category": "Database & Eloquent",
+        "github": "https://github.com/Laragear/CacheQuery",
+        "author": "laragear",
+        "composer": "laragear/cache-query",
+        "npm": null,
+        "stars": 215,
+        "keywords": [],
+        "first_release_at": "2022-02-16T18:42:29+00:00",
+        "latest_release_at": "2023-05-21T05:20:28+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:44:24.451Z",
+        "created_at": "2023-10-04T09:44:24.451Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Rut",
+        "description": "Gracefully handle RUTs from within your application.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/Laragear/Rut",
+        "author": "laragear",
+        "composer": "laragear/rut",
+        "npm": null,
+        "stars": 2,
+        "keywords": [],
+        "first_release_at": "2022-02-16T05:18:54+00:00",
+        "latest_release_at": "2023-10-03T23:14:42+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:46:52.600Z",
+        "created_at": "2023-10-04T09:46:52.600Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "ReCaptcha",
+        "description": "Integrate reCAPTCHA using async HTTP/2, making your app fast with a few lines.",
+        "category": "Security",
+        "github": "https://github.com/Laragear/ReCaptcha",
+        "author": "laragear",
+        "composer": "laragear/recaptcha",
+        "npm": null,
+        "stars": 14,
+        "keywords": [],
+        "first_release_at": "2022-02-16T05:46:26+00:00",
+        "latest_release_at": "2023-02-21T05:32:49+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:48:06.314Z",
+        "created_at": "2023-10-04T09:48:06.314Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Poke",
+        "description": "Keep your forms alive, avoid `TokenMismatchException` by gently poking your app.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/Laragear/Poke",
+        "author": "laragear",
+        "composer": "laragear/poke",
+        "npm": null,
+        "stars": 15,
+        "keywords": [],
+        "first_release_at": "2022-02-16T04:59:48+00:00",
+        "latest_release_at": "2023-02-22T23:49:54+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:49:14.145Z",
+        "created_at": "2023-10-04T09:49:14.145Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "JSON Transport",
+        "description": "Easily retrieve and manipulate Json across your application.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/Laragear/Json",
+        "author": "laragear",
+        "composer": "laragear/json",
+        "npm": null,
+        "stars": 33,
+        "keywords": [],
+        "first_release_at": "2022-07-05T01:13:11+00:00",
+        "latest_release_at": "2023-02-20T06:55:29+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:49:52.711Z",
+        "created_at": "2023-10-04T09:49:52.711Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Api Manager",
+        "description": "Manage multiple REST servers to make requests in few lines and fluently.",
+        "category": "API",
+        "github": "https://github.com/Laragear/ApiManager",
+        "author": "laragear",
+        "composer": "laragear/api-manager",
+        "npm": null,
+        "stars": 8,
+        "keywords": [],
+        "first_release_at": "2023-02-21T05:27:38+00:00",
+        "latest_release_at": "2023-02-22T21:36:40+00:00",
+        "laravel_dependency_versions": [
+            "^9.51||10.*",
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:51:37.427Z",
+        "created_at": "2023-10-04T09:51:37.427Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Alerts",
+        "description": "Set multiple alerts from your backend, render them in the frontend with any HTML.",
+        "category": "UI & Blade Components",
+        "github": "https://github.com/Laragear/Alerts",
+        "author": "laragear",
+        "composer": "laragear/alerts",
+        "npm": null,
+        "stars": 30,
+        "keywords": [],
+        "first_release_at": "2022-02-16T05:35:08+00:00",
+        "latest_release_at": "2023-02-20T22:38:55+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:52:26.780Z",
+        "created_at": "2023-10-04T09:52:26.780Z"
+    },
+    {
+        "package_type": "laravel-package",
+        "name": "Comparable",
+        "description": "Small utility trait to fluently compare object values.",
+        "category": "Utilities & Helpers",
+        "github": "https://github.com/Laragear/Compare",
+        "author": "laragear",
+        "composer": "laragear/compare",
+        "npm": null,
+        "stars": 5,
+        "keywords": [],
+        "first_release_at": "2022-07-04T19:59:11+00:00",
+        "latest_release_at": "2023-02-20T06:31:14+00:00",
+        "laravel_dependency_versions": [
+            "9.*||10.*"
+        ],
+        "paid_integration": false,
+        "updated_at": "2023-10-04T09:54:27.706Z",
+        "created_at": "2023-10-04T09:54:27.706Z"
     }
 ]
