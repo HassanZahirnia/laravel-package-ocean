@@ -1,14 +1,9 @@
-import type { Config } from 'tailwindcss'
+/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 export default {
     darkMode: 'class',
-    content: [
-        './components/**/*.{js,vue,ts}',
-        './layouts/**/*.{js,vue,ts}',
-        './pages/**/*.{js,vue,ts}',
-        './plugins/**/*.{js,vue,ts}',
-        './app.vue',
-    ],
+    content: ['./resources/**/*.{js,blade.php}'],
     theme: {
         extend: {
             fontFamily: {
@@ -18,6 +13,6 @@ export default {
     },
     plugins: [
         require('@tailwindcss/forms'),
+        require('@tailwindcss/typography'),
     ],
-} satisfies Config
-
+}
