@@ -71,14 +71,7 @@
         "typescript": "^5.2.2",
         "ua-parser-js": "^1.0.36",
         "vue": "^3.3.4",
-        "zod": "^3.22.2"
-    },
-    "pnpm": {
-        "peerDependencyRules": {
-            "ignoreMissing": [
-                "vite",
-                "webpack"
-            ]
-        }
+        "laravel-vite-plugin": "^0.8.0",
+        "vite": "^4.0.0"
     }
 }

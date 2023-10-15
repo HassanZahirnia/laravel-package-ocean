@@ -1,18 +1,54 @@
-node_modules
-*.log*
-.nuxt
-.nitro
-.cache
-.output
-.env
-dist
-.DS_Store
+# php unit
+/.phpunit.cache
+.phpunit.result.cache
 
-# windows 
-*:Zone.Identifier
-Thumbs.db
+# auth
+auth.json
+
+# node_modules
+/node_modules
+
+# public
+/public/hot
+/public/storage
+/public/build
+
+# storage
+/storage/*.key
+
+# vendor
+/vendor
 
 # ide
 /.fleet
 /.idea
 /.vscode
+_ide_helper*
+.phpstorm.meta.php
+
+# .env
+.env*
+
+# cache
+*.cache
+
+# homestead
+Homestead.json
+Homestead.yaml
+
+# docker
+docker-compose.override.yml
+
+# package managers
+npm-debug.log
+yarn-error.log
+
+# logs
+worker.log
+
+# windows 
+*:Zone.Identifier
+Thumbs.db
+
+# infection report
+mutation-report.html
