@@ -22,7 +22,3 @@ window.reducedMotion = window.matchMedia(
 
 // Minisearch
 window.MiniSearch = MiniSearch
-
-// Alpine
-window.Alpine = Alpine
-Alpine.start()
