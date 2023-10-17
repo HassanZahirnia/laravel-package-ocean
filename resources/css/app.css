@@ -7,3 +7,18 @@
         -webkit-tap-highlight-color: transparent;
     }
 }
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

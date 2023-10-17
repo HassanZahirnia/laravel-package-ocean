@@ -10,7 +10,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^3.0"
+        "livewire/livewire": "^3.0",
+        "ryangjchandler/orbit": "^1.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
