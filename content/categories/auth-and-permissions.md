@@ -1,4 +1,5 @@
 ---
+order: 2
 name: Auth & Permissions
 activeClass: bg-cyan-100 text-cyan-500 dark:bg-cyan-400/20
 ---

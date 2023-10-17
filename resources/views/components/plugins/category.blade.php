@@ -1,7 +1,7 @@
 <div
     x-on:mouseenter="isHovering = true"
     x-on:mouseleave="isHovering = false"
-    wire:click="selectCategory('{{ $name }}')"
+    x-on:click="selectedCategory = category.name"
     x-data="{
         categoryTimeline: null,
         isHovering: false,
@@ -35,19 +35,15 @@
     {{-- Icon --}}
     <div
         class="grid h-8 w-8 place-items-center rounded-lg transition duration-300"
-        :class="{
-            'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50': $wire.selectedCategory !== '{{ $name }}',
-
-            '{{ $activeClass }}': $wire.selectedCategory === '{{ $name }}',
-        }"
-    >
-        {{ $icon }}
-    </div>
+        :class="selectedCategory === category.name ? category.activeClass : 'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50'"
+        x-html="category.content"
+    ></div>
     {{-- Category name and package count --}}
     <div>
-        <div class="text-sm font-medium dark:text-slate-300">
-            {{ $name }}
-        </div>
+        <div
+            class="text-sm font-medium dark:text-slate-300"
+            x-text="category.name"
+        ></div>
         <div class="text-xs text-slate-400 dark:text-slate-400">0 Packages</div>
     </div>
 </div>

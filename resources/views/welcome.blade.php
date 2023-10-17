@@ -79,6 +79,10 @@
     </head>
     <body
         x-cloak
+        x-data="{
+            categories: @js($categories),
+            selectedCategory: null,
+        }"
         class="bg-[#FAFCFF] selection:bg-stone-800/10 dark:bg-[#04041F] dark:text-[#EAEFFB] dark:selection:bg-indigo-100/10"
     >
         <section
