@@ -1,5 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html
+    lang="{{ str_replace('_', '-', app()->getLocale()) }}"
+    x-data="{
+        darkMode: $persist(
+            window.matchMedia('(prefers-color-scheme: dark)').matches,
+        ),
+    }"
+    x-bind:class="{ 'dark': darkMode === true }"
+>
     <head>
         <meta
             http-equiv="Content-Security-Policy"
@@ -70,6 +78,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body
+        x-cloak
         class="bg-[#FAFCFF] selection:bg-stone-800/10 dark:bg-[#04041F] dark:text-[#EAEFFB] dark:selection:bg-indigo-100/10"
     >
         <section
