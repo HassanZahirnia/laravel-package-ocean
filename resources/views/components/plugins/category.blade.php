@@ -1,7 +1,7 @@
 <div
     x-on:mouseenter="isHovering = true"
     x-on:mouseleave="isHovering = false"
-    x-on:click="selectedCategory = category.name"
+    wire:click="selectCategory('{{ $name }}')"
     x-data="{
         categoryTimeline: null,
         isHovering: false,
@@ -12,7 +12,7 @@
                     paused: true,
                     onComplete: () => {
                         // If not hovering, reverse the animation
-                        if (! this.isHovering) $data.categoryTimeline?.reverse()
+                        if (! $data.isHovering) $data.categoryTimeline?.reverse()
                     },
                 })
                 .to($el, {
@@ -35,6 +35,11 @@
     {{-- Icon --}}
     <div
         class="grid h-8 w-8 place-items-center rounded-lg transition duration-300"
+        :class="{
+            'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50': $wire.selectedCategory !== '{{ $name }}',
+
+            '{{ $activeClass }}': $wire.selectedCategory === '{{ $name }}',
+        }"
     >
         {{ $icon }}
     </div>

@@ -8,7 +8,10 @@
     {{-- Category list --}}
     <div class="w-full pt-4">
         @foreach ($categories as $category)
-            <x-plugins.category :name="$category->name">
+            <x-plugins.category
+                :name="$category->name"
+                :activeClass="$category->activeClass"
+            >
                 <x-slot name="icon">
                     {!! $category->getIcon() !!}
                 </x-slot>

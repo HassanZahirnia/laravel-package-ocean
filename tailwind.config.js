@@ -3,11 +3,14 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 
 export default {
     darkMode: 'class',
-    content: ['./resources/**/*.{js,blade.php}'],
+    content: [
+        './resources/**/*.{js,blade.php}',
+        './content/**/*.md',
+    ],
     theme: {
         extend: {
             fontFamily: {
-                poppins: '\'Poppins\', Verdana, sans-serif',
+                poppins: "'Poppins', Verdana, sans-serif",
             },
         },
     },

@@ -14,6 +14,7 @@ class Category extends Model
     public static function schema(Blueprint $table)
     {
         $table->string('name');
+        $table->string('activeClass');
     }
 
     public function getIcon(): ?string
