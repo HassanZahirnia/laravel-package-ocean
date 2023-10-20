@@ -15,7 +15,7 @@
             x-for="category in sortedCategories"
             :key="category.name"
         >
-            <x-plugins.category></x-plugins.category>
+            <x-packages.category></x-packages.category>
         </template>
     </div>
 </div>

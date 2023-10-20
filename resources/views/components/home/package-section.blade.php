@@ -35,7 +35,7 @@
     </div>
     {{-- Categories & Packages list --}}
     <div class="fade-in relative flex items-start gap-5">
-        <x-plugins.category-list />
-        <package-list />
+        <x-packages.category-list />
+        <livewire:package-list />
     </div>
 </div>
