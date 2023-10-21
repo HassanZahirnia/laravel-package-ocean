@@ -18,7 +18,7 @@
     >
         <div
             class="text-[#9095AE] transition duration-300 hover:scale-110 hover:text-black dark:text-[#ABB0DD] dark:hover:text-white"
-            wire:click="search = ''"
+            wire:click="resetSearch()"
         >
             <svg
                 xmlns="http://www.w3.org/2000/svg"

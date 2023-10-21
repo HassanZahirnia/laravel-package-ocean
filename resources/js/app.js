@@ -1,6 +1,7 @@
 import './fonts'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import tippy from 'tippy.js'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/animations/shift-away-subtle.css'
 import autoAnimate from '@formkit/auto-animate'
@@ -22,3 +23,6 @@ window.reducedMotion = window.matchMedia(
 
 // Minisearch
 window.MiniSearch = MiniSearch
+
+// Tippy
+window.tippy = tippy

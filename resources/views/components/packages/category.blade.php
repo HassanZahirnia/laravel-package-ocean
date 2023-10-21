@@ -1,7 +1,8 @@
 <div
     x-on:mouseenter="isHovering = true"
     x-on:mouseleave="isHovering = false"
-    x-on:click="selectedCategory = category.name"
+    wire:click="selectCategory('{{ $category->name }}')"
+    wire:ignore.self
     x-data="{
         categoryTimeline: null,
         isHovering: false,
@@ -34,16 +35,17 @@
 >
     {{-- Icon --}}
     <div
-        class="grid h-8 w-8 place-items-center rounded-lg transition duration-300"
-        :class="selectedCategory === category.name ? category.activeClass : 'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50'"
-        x-html="category.content"
-    ></div>
+        class="grid h-8 w-8 place-items-center rounded-lg transition duration-300 {{ $this->selectedCategory === $category->name ? $category->activeClass : 'bg-slate-300/50 text-slate-500 dark:bg-slate-800/50' }}"
+    >
+        {!! $category->content !!}
+    </div>
     {{-- Category name and package count --}}
     <div>
         <div
             class="text-sm font-medium dark:text-slate-300"
-            x-text="category.name"
-        ></div>
-        <div class="text-xs text-slate-400 dark:text-slate-400">0 Packages</div>
+        >
+            {{ $category->name }}
+        </div>
+        <div class="text-xs text-slate-400 dark:text-slate-400">{{ $category->packages_count }} Packages</div>
     </div>
 </div>

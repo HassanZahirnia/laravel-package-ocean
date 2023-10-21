@@ -7,7 +7,7 @@
             <div class="grid min-h-[3rem] place-items-center">
                 {{-- Title --}}
                 <div
-                    x-show="!selectedCategory"
+                    x-show="!$wire.selectedCategory"
                     x-transition:enter="transition duration-150 ease-out"
                     x-transition:enter-start="-translate-x-2 opacity-0"
                     x-transition:enter-end="translate-x-0 opacity-100"
@@ -20,8 +20,8 @@
                 </div>
                 {{-- Category selected --}}
                 <div
-                    x-on:click="selectedCategory = ''"
-                    x-show="selectedCategory"
+                    wire:click="selectCategory('')"
+                    x-show="$wire.selectedCategory"
                     x-transition:enter="transition delay-[50ms] duration-150 ease-out"
                     x-transition:enter-start="translate-x-2 opacity-0"
                     x-transition:enter-end="translate-x-0 opacity-100"
@@ -31,7 +31,7 @@
                     class="flex h-9 cursor-pointer items-center gap-2 truncate rounded-full bg-slate-300/50 px-4 font-medium text-slate-600 transition duration-300 [grid-area:1/-1] hover:bg-slate-300 dark:bg-slate-700/50 dark:text-slate-400 dark:hover:bg-slate-800/50"
                 >
                     <div
-                        x-text="selectedCategory"
+                        x-text="$wire.selectedCategory"
                         class="min-w-[5rem]"
                     ></div>
                     <svg
@@ -89,6 +89,24 @@
                 :items="categoriesForSelectboxWithAll"
                 />
             --}}
+        </div>
+    </div>
+    <div class="relative min-h-[16rem]">
+        {{-- Packages list --}}
+        <div
+            x-data="{
+                init() {
+                    autoAnimate($el)
+                }
+            }"
+            class="grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
+            :class="{
+                'min-h-[17rem]': $wire.packages.length,
+            }"
+        >
+            @foreach ($this->packages as $package)
+                <x-packages.package-card :$package />
+            @endforeach
         </div>
     </div>
 </div>

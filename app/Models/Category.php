@@ -23,8 +23,8 @@ class Category extends Model implements Orbit
         $table->text('content')->nullable();
     }
 
-    public function getIncrementing()
+    public function packages()
     {
-        return false;
+        return $this->hasMany(Package::class);
     }
 }

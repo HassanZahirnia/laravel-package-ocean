@@ -60,7 +60,7 @@
                     <div
                         class="text-3xl font-bold text-[#4B6CFF] transition duration-300"
                     >
-                        {{ $stats['packages'] }}
+                        {{ $this->stats['packages'] }}
                     </div>
                     <div
                         class="text-sm font-medium text-[#827F98] transition duration-300 dark:text-[#96A5BB]"
@@ -73,7 +73,7 @@
                     <div
                         class="text-3xl font-bold text-[#4B6CFF] transition duration-300"
                     >
-                        {{ $stats['authors'] }}
+                        {{ $this->stats['authors'] }}
                     </div>
                     <div
                         class="text-sm font-medium text-[#827F98] transition duration-300 dark:text-[#96A5BB]"
@@ -86,7 +86,7 @@
                     <div
                         class="text-3xl font-bold text-[#4B6CFF] transition duration-300"
                     >
-                        {{ $stats['categories'] }}
+                        {{ $this->stats['categories'] }}
                     </div>
                     <div
                         class="text-sm font-medium text-[#827F98] transition duration-300 dark:text-[#96A5BB]"

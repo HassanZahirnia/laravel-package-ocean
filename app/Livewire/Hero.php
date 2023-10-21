@@ -2,6 +2,8 @@
 
 namespace App\Livewire;
 
+use App\Models\Category;
+use App\Models\Package;
 use Livewire\Component;
 
 class Hero extends Component
@@ -9,9 +11,11 @@ class Hero extends Component
     public function render()
     {
         return view('livewire.hero', [
-            'laravelPackagesCount' => 0,
-            'authorsCount' => 0,
-            'categoriesCount' => 0,
+            'stats' => [
+                'packages' => Package::count(),
+                'authors' => Package::distinct('author')->count('author'),
+                'categories' => Category::count(),
+            ],
         ]);
     }
 }

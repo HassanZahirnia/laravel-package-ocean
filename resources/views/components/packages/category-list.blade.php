@@ -7,15 +7,10 @@
     </div>
     {{-- Category list --}}
     <div class="w-full pt-4">
-        <template
-            x-data="{
-                // Sort categories by order
-                sortedCategories: categories.sort((a, b) => a.order - b.order),
-            }"
-            x-for="category in sortedCategories"
-            :key="category.name"
-        >
-            <x-packages.category></x-packages.category>
-        </template>
+        @foreach ($this->categories as $category)
+            <div wire:key="{{ $category->name }}">
+                <x-packages.category :$category />
+            </div>
+        @endforeach
     </div>
 </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Home;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome', [
-        'categories' => \App\Models\Category::all(),
-    ]);
-})->name('home');
+Route::get('/', Home::class)->name('home');
