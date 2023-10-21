@@ -5,16 +5,26 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
+use Orbit\Concerns\Orbital;
+use Orbit\Contracts\Orbit;
 
-class Category extends Model
+class Category extends Model implements Orbit
 {
     use HasFactory;
-    use \Orbit\Concerns\Orbital;
+    use Orbital;
 
-    public static function schema(Blueprint $table)
+    public $timestamps = false;
+
+    public function schema(Blueprint $table): void
     {
-        $table->integer('order')->unique();
+        $table->id();
         $table->string('name')->unique();
         $table->string('activeClass')->unique();
+        $table->text('content')->nullable();
+    }
+
+    public function getIncrementing()
+    {
+        return false;
     }
 }
