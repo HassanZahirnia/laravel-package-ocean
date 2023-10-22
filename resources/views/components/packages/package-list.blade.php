@@ -4,16 +4,23 @@
             id="scroll-to-reference"
             class="flex scroll-mt-5 flex-wrap items-center gap-4 sm:flex-nowrap"
         >
-            <div class="grid min-h-[3rem] place-items-center">
+            <div
+                x-data="{
+                    titleAnimationEnd: $wire.selectedCategory === '' ? false : true,
+                    categoryAnimationEnd: $wire.selectedCategory === '' ? true : false,
+                }"
+                class="grid min-h-[3rem] items-center"
+            >
                 {{-- Title --}}
                 <div
-                    x-show="!$wire.selectedCategory"
+                    x-show="!$wire.selectedCategory && categoryAnimationEnd"
                     x-transition:enter="transition duration-150 ease-out"
                     x-transition:enter-start="-translate-x-2 opacity-0"
                     x-transition:enter-end="translate-x-0 opacity-100"
-                    x-transition:leave="transition duration-150 ease-in"
+                    x-transition:leave="transition duration-150 ease-out"
                     x-transition:leave-start="translate-x-0 opacity-100"
                     x-transition:leave-end="-translate-x-2 opacity-0"
+                    x-on:transitionend="titleAnimationEnd = true"
                     class="text-2xl font-semibold [grid-area:1/-1]"
                 >
                     {{ $this->packages->total() }}
@@ -22,17 +29,29 @@
                 {{-- Category selected --}}
                 <div
                     wire:click="selectCategory('')"
-                    x-show="$wire.selectedCategory"
+                    x-show="$wire.selectedCategory && titleAnimationEnd"
                     x-transition:enter="transition delay-[50ms] duration-150 ease-out"
                     x-transition:enter-start="translate-x-2 opacity-0"
                     x-transition:enter-end="translate-x-0 opacity-100"
-                    x-transition:leave="transition duration-150 ease-in"
+                    x-transition:leave="transition duration-150 ease-out"
                     x-transition:leave-start="translate-x-0 opacity-100"
                     x-transition:leave-end="translate-x-2 opacity-0"
-                    class="flex h-9 cursor-pointer items-center gap-2 truncate rounded-full bg-slate-300/50 px-4 font-medium text-slate-600 transition duration-300 [grid-area:1/-1] hover:bg-slate-300 dark:bg-slate-700/50 dark:text-slate-400 dark:hover:bg-slate-800/50"
+                    x-on:transitionend="categoryAnimationEnd = true"
+                    class="flex h-9 cursor-pointer select-none items-center gap-2 truncate rounded-full bg-slate-300/50 px-4 font-medium text-slate-600 transition duration-300 [grid-area:1/-1] hover:bg-slate-300 dark:bg-slate-700/50 dark:text-slate-400 dark:hover:bg-slate-800/50"
                 >
                     <div
-                        x-text="$wire.selectedCategory"
+                        x-data="{
+                            selectedCategoryCopy: $wire.selectedCategory,
+
+                            // When selectedCategory changes, update selectedCategoryCopy, unless it's empty
+                            init() {
+                                $watch('$wire.selectedCategory', (value) => {
+                                    console.log('selectedCategory changed', value)
+                                    if (value) $data.selectedCategoryCopy = value
+                                })
+                            },
+                        }"
+                        x-text="selectedCategoryCopy"
                     ></div>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +116,7 @@
             x-data="{
                 init() {
                     autoAnimate($el)
-                }
+                },
             }"
             class="grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
             :class="{
