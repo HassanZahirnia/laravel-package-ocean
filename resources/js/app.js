@@ -1,11 +1,15 @@
+import {
+    Livewire,
+    Alpine,
+} from '../../vendor/livewire/livewire/dist/livewire.esm'
 import './fonts'
 import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import tippy from 'tippy.js'
 import 'tippy.js/dist/tippy.css'
 import 'tippy.js/animations/shift-away-subtle.css'
 import autoAnimate from '@formkit/auto-animate'
 import MiniSearch from 'minisearch'
+import Tooltip from '@ryangjchandler/alpine-tooltip'
 
 // AutoAnimate
 window.autoAnimate = autoAnimate
@@ -24,5 +28,6 @@ window.reducedMotion = window.matchMedia(
 // Minisearch
 window.MiniSearch = MiniSearch
 
-// Tippy
-window.tippy = tippy
+Alpine.plugin(Tooltip)
+
+Livewire.start()

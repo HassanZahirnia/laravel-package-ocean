@@ -16,7 +16,8 @@
                     x-transition:leave-end="-translate-x-2 opacity-0"
                     class="text-2xl font-semibold [grid-area:1/-1]"
                 >
-                    0 Packages
+                    {{ $this->packages->total() }}
+                    Packages
                 </div>
                 {{-- Category selected --}}
                 <div
@@ -32,7 +33,6 @@
                 >
                     <div
                         x-text="$wire.selectedCategory"
-                        class="min-w-[5rem]"
                     ></div>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

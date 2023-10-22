@@ -74,6 +74,9 @@
             }
         </style>
 
+        {{-- Livewire --}}
+        @livewireStyles
+
         {{-- Vite --}}
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
@@ -82,5 +85,7 @@
         class="bg-[#FAFCFF] selection:bg-stone-800/10 dark:bg-[#04041F] dark:text-[#EAEFFB] dark:selection:bg-indigo-100/10"
     >
         {{ $slot }}
+
+        @livewireScriptConfig
     </body>
 </html>

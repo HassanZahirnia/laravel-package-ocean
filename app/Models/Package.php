@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
+use NumberFormatter;
 use Orbit\Concerns\Orbital;
 use Orbit\Contracts\Orbit;
 
@@ -54,5 +55,41 @@ class Package extends Model implements Orbit
         return Attribute::make(
             get: fn (): bool => $this->author === 'laravel',
         );
+    }
+
+    // A function to format large numbers
+    // Example: 2600 -> 2.6k
+    public function getStarsFormatted(): string
+    {
+        $number = $this->stars;
+
+        $formatter = new NumberFormatter('en_US', NumberFormatter::PADDING_POSITION);
+
+        return $formatter->format($number);
+    }
+
+    // Laravel active versions
+    public function getLaravelActiveVersions(): array
+    {
+        return collect([
+            '10.26.2',
+        ])
+            ->sort()
+            ->toArray();
+    }
+
+    public function isCompatibleWithLaravelActiveVersions(): bool
+    {
+        return true;
+    }
+
+    public function minimumCompatibleLaravelVersion(): string
+    {
+        return '10.0';
+    }
+
+    public function maximumCompatibleLaravelVersion(): string
+    {
+        return '10.23';
     }
 }

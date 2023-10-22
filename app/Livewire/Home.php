@@ -33,7 +33,7 @@ class Home extends Component
             ->when($this->showOfficialPackages, function (Builder $query) {
                 $query->where('author', 'laravel');
             })
-            ->simplePaginate();
+            ->paginate(9);
     }
 
     #[Computed()]
