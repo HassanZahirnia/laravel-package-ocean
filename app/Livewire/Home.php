@@ -33,6 +33,11 @@ class Home extends Component
             ->when($this->showOfficialPackages, function (Builder $query) {
                 $query->where('author', 'laravel');
             })
+            ->when($this->selectedCategory, function (Builder $query, string $category) {
+                $query->whereHas('category', function (Builder $query) use ($category) {
+                    $query->where('name', $category);
+                });
+            })
             ->paginate(9);
     }
 
