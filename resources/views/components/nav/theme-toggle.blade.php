@@ -1,4 +1,5 @@
 <div
+    wire:ignore
     class="gsap-theme-toggle relative h-11 w-11 cursor-pointer select-none hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
     x-on:click="darkMode = !darkMode"
     x-data="{

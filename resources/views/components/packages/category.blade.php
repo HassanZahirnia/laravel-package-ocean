@@ -18,8 +18,8 @@
                 })
                 .to($el, {
                     x: 10,
-                    ease: 'sine.out',
-                    duration: 0.2,
+                    ease: 'sine.inOut',
+                    duration: 0.3,
                 })
 
             $watch('isHovering', (value) => {
