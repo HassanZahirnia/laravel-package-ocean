@@ -1,0 +1,17 @@
+id: 53
+name: "Laravel Forum"
+description: "A slim, lean forum package."
+category_id: 14
+github: "https://github.com/Team-Tea-Time/laravel-forum"
+author: "riari"
+composer: "riari/laravel-forum"
+npm: 
+stars: 537
+keywords: []
+first_release_at: "2015-01-30T21:48:05+00:00"
+latest_release_at: "2023-02-24T22:19:53+00:00"
+laravel_dependency_versions: ["^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:47.913Z
+updated_at: 2023-04-06T20:55:16.935Z

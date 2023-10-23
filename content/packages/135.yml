@@ -1,0 +1,17 @@
+id: 135
+name: "Laravel TypeScript"
+description: "Generate TypeScript interfaces from your models."
+category_id: 18
+github: "https://github.com/lepikhinb/laravel-typescript"
+author: "based"
+composer: "based/laravel-typescript"
+npm: 
+stars: 350
+keywords: ["boris", "lepikhinb"]
+first_release_at: "2021-07-25T16:00:01+00:00"
+latest_release_at: "2022-03-19T21:26:19+00:00"
+laravel_dependency_versions: ["^8.37||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.231Z
+updated_at: 2023-04-06T20:57:27.069Z

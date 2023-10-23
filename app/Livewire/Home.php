@@ -38,7 +38,13 @@ class Home extends Component
                     $query->where('name', $category);
                 });
             })
+            ->orderBy('first_release_at', 'desc')
             ->paginate(9);
+    }
+
+    public function totalPackagesCount()
+    {
+        return Package::query()->count();
     }
 
     #[Computed()]

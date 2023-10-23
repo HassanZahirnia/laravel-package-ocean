@@ -1,0 +1,17 @@
+id: 502
+name: "Laravel Shortcodes"
+description: "Implements the WordPress Shortcode API in a modern & object-oriented way."
+category_id: 18
+github: "https://github.com/tehwave/laravel-shortcodes"
+author: "tehwave"
+composer: "tehwave/laravel-shortcodes"
+npm: 
+stars: 11
+keywords: []
+first_release_at: "2019-12-21T23:17:38+00:00"
+latest_release_at: "2023-03-26T20:12:55+00:00"
+laravel_dependency_versions: ["^6.0||^7.0||^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-09-22T11:00:42.624Z
+updated_at: 2023-09-22T11:00:42.624Z

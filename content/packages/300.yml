@@ -1,0 +1,17 @@
+id: 300
+name: "Laravel Google Fonts"
+description: "Cache & serve Google Fonts from your application."
+category_id: 18
+github: "https://github.com/spatie/laravel-google-fonts"
+author: "spatie"
+composer: "spatie/laravel-google-fonts"
+npm: 
+stars: 413
+keywords: []
+first_release_at: "2021-06-21T23:25:20+00:00"
+latest_release_at: "2023-01-24T23:50:49+00:00"
+laravel_dependency_versions: ["^8.37||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.926Z
+updated_at: 2023-04-06T21:01:49.880Z

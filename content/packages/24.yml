@@ -1,0 +1,17 @@
+id: 24
+name: "Breeze"
+description: "Minimal authentication scaffolding with Blade, Vue, or React + Tailwind."
+category_id: 2
+github: "https://github.com/laravel/breeze"
+author: "laravel"
+composer: "laravel/breeze"
+npm: 
+stars: 2387
+keywords: []
+first_release_at: "2020-11-09T19:58:28+00:00"
+latest_release_at: "2023-03-28T14:37:27+00:00"
+laravel_dependency_versions: ["^10.17"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:47.799Z
+updated_at: 2023-04-06T20:54:23.666Z

@@ -1,0 +1,17 @@
+id: 222
+name: "Laravel Scrubber"
+description: "Scrub sensitive information that breaks security policies from being leaked accidentally."
+category_id: 11
+github: "https://github.com/YorCreative/Laravel-Scrubber"
+author: "yorcreative"
+composer: "yorcreative/laravel-scrubber"
+npm: 
+stars: 125
+keywords: []
+first_release_at: "2022-08-16T20:49:53+00:00"
+latest_release_at: "2023-04-06T19:18:28+00:00"
+laravel_dependency_versions: ["^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.592Z
+updated_at: 2023-04-06T20:59:49.606Z

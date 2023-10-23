@@ -1,0 +1,17 @@
+id: 497
+name: "Laravel API Tool Kit"
+description: "All-in-one solution for building efficient APIs with Laravel."
+category_id: 7
+github: "https://github.com/ahmedesa/laravel-api-tool-kit"
+author: "essa"
+composer: "essa/api-tool-kit"
+npm: 
+stars: 360
+keywords: []
+first_release_at: "2021-10-17T18:47:29+00:00"
+latest_release_at: "2023-09-04T12:20:44+00:00"
+laravel_dependency_versions: ["^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-09-21T09:35:27.853Z
+updated_at: 2023-09-21T09:35:27.853Z

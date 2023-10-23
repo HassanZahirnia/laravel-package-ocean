@@ -1,0 +1,17 @@
+id: 227
+name: "Momentum Layout"
+description: "A Vue 3 compiler macro to define persistent layouts for Inertia.js apps."
+category_id: 17
+github: "https://github.com/lepikhinb/momentum-layout"
+author: "based"
+composer: 
+npm: "momentum-layout"
+stars: 31
+keywords: ["boris", "lepikhinb"]
+first_release_at: "2023-01-22T00:08:41.323Z"
+latest_release_at: "2023-01-22T00:08:41.656Z"
+laravel_dependency_versions: []
+package_type: "npm-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.610Z
+updated_at: 2023-04-06T20:59:58.294Z

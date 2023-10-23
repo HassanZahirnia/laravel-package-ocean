@@ -1,0 +1,17 @@
+id: 83
+name: "Laravel Love"
+description: "Add Social Reactions to let people express how they feel about the content."
+category_id: 3
+github: "https://github.com/cybercog/laravel-love"
+author: "cybercog"
+composer: "cybercog/laravel-love"
+npm: 
+stars: 1084
+keywords: []
+first_release_at: "2018-01-03T18:08:26+00:00"
+latest_release_at: "2023-02-24T13:09:28+00:00"
+laravel_dependency_versions: ["^9.0||^10.1.3"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.023Z
+updated_at: 2023-04-06T20:56:07.293Z

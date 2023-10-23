@@ -1,0 +1,17 @@
+id: 108
+name: "Orbit"
+description: "A flat-file database driver for Eloquent."
+category_id: 3
+github: "https://github.com/ryangjchandler/orbit"
+author: "ryangjchandler"
+composer: "ryangjchandler/orbit"
+npm: 
+stars: 758
+keywords: []
+first_release_at: "2021-03-21T17:34:41+00:00"
+latest_release_at: "2023-02-15T13:57:28+00:00"
+laravel_dependency_versions: ["^9.0 || ^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.122Z
+updated_at: 2023-04-06T20:56:43.807Z

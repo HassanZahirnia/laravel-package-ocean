@@ -1,0 +1,17 @@
+id: 41
+name: "Canvas"
+description: "A blog publishing platform."
+category_id: 14
+github: "https://github.com/austintoddj/canvas"
+author: "austintoddj"
+composer: "austintoddj/canvas"
+npm: 
+stars: 3194
+keywords: []
+first_release_at: "2016-03-09T13:38:22+00:00"
+latest_release_at: "2023-02-17T15:45:48+00:00"
+laravel_dependency_versions: ["^6.0||^7.0||^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:47.864Z
+updated_at: 2023-04-05T00:50:09.433Z

@@ -1,0 +1,17 @@
+id: 147
+name: "Laravel Workflow"
+description: "Track job status and write long-running persistent distributed workflows (orchestrations)."
+category_id: 4
+github: "https://github.com/laravel-workflow/laravel-workflow"
+author: "laravel-workflow"
+composer: "laravel-workflow/laravel-workflow"
+npm: 
+stars: 608
+keywords: ["queue"]
+first_release_at: "2022-03-04T02:47:21+00:00"
+latest_release_at: "2023-03-23T22:24:41+00:00"
+laravel_dependency_versions: ["^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.278Z
+updated_at: 2023-04-06T20:57:48.984Z

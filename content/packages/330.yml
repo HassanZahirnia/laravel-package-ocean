@@ -1,0 +1,17 @@
+id: 330
+name: "Laravel Eloquent Query Cache"
+description: "Adding cache on your Eloquent queries' results is now a breeze."
+category_id: 3
+github: "https://github.com/renoki-co/laravel-eloquent-query-cache"
+author: "rennokki"
+composer: "rennokki/laravel-eloquent-query-cache"
+npm: 
+stars: 954
+keywords: []
+first_release_at: "2019-11-21T18:29:36+00:00"
+latest_release_at: "2023-04-01T12:26:34+00:00"
+laravel_dependency_versions: ["^9.35||^10.5"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-12T14:13:49.769Z
+updated_at: 2023-04-12T14:13:49.769Z

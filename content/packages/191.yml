@@ -1,0 +1,17 @@
+id: 191
+name: "Laravel Translations Checker"
+description: "Never worry about missing translations again! Use the translations checker."
+category_id: 6
+github: "https://github.com/LarsWiegers/laravel-translations-checker"
+author: "larswiegers"
+composer: "larswiegers/laravel-translations-checker"
+npm: 
+stars: 196
+keywords: []
+first_release_at: "2022-02-16T14:23:56+00:00"
+latest_release_at: "2023-03-30T08:30:37+00:00"
+laravel_dependency_versions: ["^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.455Z
+updated_at: 2023-04-06T20:59:00.525Z

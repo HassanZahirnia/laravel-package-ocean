@@ -1,0 +1,17 @@
+id: 488
+name: "Laravel Lift"
+description: "Create public properties in Eloquent models that match your table schema which improves IDE support."
+category_id: 3
+github: "https://github.com/WendellAdriel/laravel-lift"
+author: "wendelladriel"
+composer: "wendelladriel/laravel-lift"
+npm: 
+stars: 539
+keywords: []
+first_release_at: "2023-08-24T17:15:18+00:00"
+latest_release_at: "2023-08-29T13:17:41+00:00"
+laravel_dependency_versions: ["^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-08-29T22:35:45.777Z
+updated_at: 2023-08-29T22:35:45.777Z

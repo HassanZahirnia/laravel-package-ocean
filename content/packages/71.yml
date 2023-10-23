@@ -1,0 +1,17 @@
+id: 71
+name: "Tenancy"
+description: "Run multiple websites using the same installation while keeping tenant-specific data separated."
+category_id: 15
+github: "https://github.com/tenancy/tenancy"
+author: "tenancy"
+composer: "tenancy/tenancy"
+npm: 
+stars: 1104
+keywords: []
+first_release_at: "2018-01-15T12:50:23+00:00"
+latest_release_at: "2023-02-14T18:15:16+00:00"
+laravel_dependency_versions: ["^9.0 || ^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:47.975Z
+updated_at: 2023-04-05T01:10:38.317Z

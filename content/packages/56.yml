@@ -1,0 +1,17 @@
+id: 56
+name: "Laravel Enum"
+description: "Simple, extensible and powerful enumeration implementation."
+category_id: 15
+github: "https://github.com/BenSampo/laravel-enum"
+author: "bensampo"
+composer: "bensampo/laravel-enum"
+npm: 
+stars: 1908
+keywords: []
+first_release_at: "2017-09-07T21:42:48+00:00"
+latest_release_at: "2023-02-13T14:09:29+00:00"
+laravel_dependency_versions: ["^9 || ^10"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:47.924Z
+updated_at: 2023-04-06T20:55:22.918Z

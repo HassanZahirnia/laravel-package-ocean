@@ -1,0 +1,17 @@
+id: 458
+name: "Laravel Cookie Consent"
+description: "Register, configure and ask for cookies consent in a EU-compliant way."
+category_id: 18
+github: "https://github.com/whitecube/laravel-cookie-consent"
+author: "whitecube"
+composer: "whitecube/laravel-cookie-consent"
+npm: 
+stars: 177
+keywords: []
+first_release_at: "2023-06-13T13:31:03+00:00"
+latest_release_at: "2023-06-15T10:10:16+00:00"
+laravel_dependency_versions: ["^9||^10"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-15T10:42:47.164Z
+updated_at: 2023-06-15T10:42:47.164Z

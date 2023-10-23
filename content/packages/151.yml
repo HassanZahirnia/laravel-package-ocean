@@ -1,0 +1,17 @@
+id: 151
+name: "Laravel Failed Job Monitor"
+description: "Get notified when a queued job fails."
+category_id: 4
+github: "https://github.com/spatie/laravel-failed-job-monitor"
+author: "spatie"
+composer: "spatie/laravel-failed-job-monitor"
+npm: 
+stars: 824
+keywords: ["guzzle"]
+first_release_at: "2016-02-25T09:11:49+00:00"
+latest_release_at: "2023-01-19T17:12:44+00:00"
+laravel_dependency_versions: ["^7.0||^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.294Z
+updated_at: 2023-04-06T20:57:54.468Z

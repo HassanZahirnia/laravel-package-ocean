@@ -23,7 +23,7 @@
                     x-on:transitionend="titleAnimationEnd = true"
                     class="text-2xl font-semibold [grid-area:1/-1]"
                 >
-                    {{ $this->packages->total() }}
+                    {{ $this->totalPackagesCount() }}
                     Packages
                 </div>
                 {{-- Category selected --}}

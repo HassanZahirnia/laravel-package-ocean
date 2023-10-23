@@ -1,0 +1,17 @@
+id: 86
+name: "Fast Paginate"
+description: "A fast implementation of offset/limit pagination."
+category_id: 3
+github: "https://github.com/hammerstonedev/fast-paginate"
+author: "hammerstone"
+composer: "hammerstone/fast-paginate"
+npm: 
+stars: 1050
+keywords: ["sql"]
+first_release_at: "2022-07-07T15:37:11+00:00"
+latest_release_at: "2023-02-14T03:28:31+00:00"
+laravel_dependency_versions: ["^8.37||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.034Z
+updated_at: 2023-04-06T20:56:12.666Z

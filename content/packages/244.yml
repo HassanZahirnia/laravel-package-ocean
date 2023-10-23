@@ -1,0 +1,17 @@
+id: 244
+name: "Laravel Menu"
+description: "Html Menu generator."
+category_id: 17
+github: "https://github.com/spatie/laravel-menu"
+author: "spatie"
+composer: "spatie/laravel-menu"
+npm: 
+stars: 852
+keywords: []
+first_release_at: "2016-02-22T22:23:32+00:00"
+latest_release_at: "2023-01-25T15:25:43+00:00"
+laravel_dependency_versions: ["^8.0||^9.0||^10.0", "^8.71||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.682Z
+updated_at: 2023-04-06T21:00:31.506Z

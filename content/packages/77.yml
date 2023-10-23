@@ -1,0 +1,17 @@
+id: 77
+name: "Laravel Fluent"
+description: "An expressive fluent way to define model attributes."
+category_id: 3
+github: "https://github.com/lepikhinb/laravel-fluent"
+author: "based"
+composer: "based/laravel-fluent"
+npm: 
+stars: 531
+keywords: ["boris", "lepikhinb"]
+first_release_at: "2021-08-24T11:22:54+00:00"
+latest_release_at: "2022-06-10T17:26:17+00:00"
+laravel_dependency_versions: ["^9.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.002Z
+updated_at: 2023-04-06T20:55:55.783Z

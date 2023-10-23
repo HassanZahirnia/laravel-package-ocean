@@ -1,0 +1,17 @@
+id: 469
+name: "Tailwind Merge Php"
+description: "Merge multiple Tailwind CSS classes and automatically resolves conflicts."
+category_id: 18
+github: "https://github.com/YieldStudio/tailwind-merge-php"
+author: "yieldstudio"
+composer: "yieldstudio/tailwind-merge-php"
+npm: 
+stars: 35
+keywords: []
+first_release_at: "2023-06-10T00:42:39+00:00"
+latest_release_at: "2023-06-20T01:57:30+00:00"
+laravel_dependency_versions: ["^9||^10"]
+package_type: "php-package"
+paid_integration: false
+created_at: 2023-06-21T18:24:38.747Z
+updated_at: 2023-06-21T18:24:38.747Z

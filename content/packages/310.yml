@@ -1,0 +1,17 @@
+id: 310
+name: "Laravel Validation Rules"
+description: "A set of useful validation rules."
+category_id: 18
+github: "https://github.com/spatie/laravel-validation-rules"
+author: "spatie"
+composer: "spatie/laravel-validation-rules"
+npm: 
+stars: 682
+keywords: []
+first_release_at: "2018-10-11T13:58:34+00:00"
+latest_release_at: "2023-01-25T16:22:06+00:00"
+laravel_dependency_versions: ["^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.966Z
+updated_at: 2023-04-06T21:02:07.253Z

@@ -1,0 +1,17 @@
+id: 155
+name: "Laravel Totem"
+description: "Manage your schedule from a web dashboard."
+category_id: 4
+github: "https://github.com/codestudiohq/laravel-totem"
+author: "studio"
+composer: "studio/laravel-totem"
+npm: 
+stars: 1689
+keywords: []
+first_release_at: "2017-08-01T23:18:43+00:00"
+latest_release_at: "2023-03-17T18:10:08+00:00"
+laravel_dependency_versions: ["^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.312Z
+updated_at: 2023-04-05T00:50:06.716Z

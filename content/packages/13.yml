@@ -1,0 +1,17 @@
+id: 13
+name: "Saloon"
+description: "Build beautiful API integrations and SDKs with Saloon."
+category_id: 7
+github: "https://github.com/sammyjo20/Saloon"
+author: "sammyjo20"
+composer: "sammyjo20/saloon"
+npm: 
+stars: 1604
+keywords: []
+first_release_at: "2022-01-14T18:32:47+00:00"
+latest_release_at: "2023-03-25T16:47:08+00:00"
+laravel_dependency_versions: ["^9.39 || ^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:47.756Z
+updated_at: 2023-04-06T20:54:09.044Z

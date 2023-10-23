@@ -1,0 +1,17 @@
+id: 378
+name: "Laravel Cascade Soft Deletes"
+description: "Cascading deletes for Eloquent models that implement soft deletes."
+category_id: 3
+github: "https://github.com/michaeldyrynda/laravel-cascade-soft-deletes"
+author: "dyrynda"
+composer: "dyrynda/laravel-cascade-soft-deletes"
+npm: 
+stars: 846
+keywords: []
+first_release_at: "2020-09-08T03:59:23+00:00"
+latest_release_at: "2023-02-16T01:47:23+00:00"
+laravel_dependency_versions: ["^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-06T20:36:20.716Z
+updated_at: 2023-06-06T20:36:20.716Z

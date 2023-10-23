@@ -1,0 +1,17 @@
+id: 219
+name: "Honey"
+description: "Anti-spam tool with a honeypot, IP blocking, and easy Recaptcha integration."
+category_id: 11
+github: "https://github.com/lukeraymonddowning/honey"
+author: "lukeraymonddowning"
+composer: "lukeraymonddowning/honey"
+npm: 
+stars: 372
+keywords: []
+first_release_at: "2020-11-27T16:45:11+00:00"
+latest_release_at: "2023-02-03T12:49:21+00:00"
+laravel_dependency_versions: ["^9.49||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.580Z
+updated_at: 2023-04-07T00:21:54.022Z

@@ -1,0 +1,17 @@
+id: 130
+name: "Laravel Userstamps"
+description: "An Eloquent trait which automatically maintains created_by and updated_by columns on your model."
+category_id: 3
+github: "https://github.com/WildsideUK/Laravel-Userstamps"
+author: "wildside"
+composer: "wildside/userstamps"
+npm: 
+stars: 449
+keywords: []
+first_release_at: "2016-03-10T19:05:45+00:00"
+latest_release_at: "2023-02-15T09:35:24+00:00"
+laravel_dependency_versions: ["^5.2||^6.0||^7.0||^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.213Z
+updated_at: 2023-04-06T20:57:21.296Z

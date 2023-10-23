@@ -1,0 +1,17 @@
+id: 398
+name: "Laravel Money"
+description: "Provide tools for formatting and conversion monetary values in an easy, yet powerful way."
+category_id: 18
+github: "https://github.com/akaunting/laravel-money"
+author: "akaunting"
+composer: "akaunting/laravel-money"
+npm: 
+stars: 615
+keywords: []
+first_release_at: "2021-03-05T12:07:35+00:00"
+latest_release_at: "2023-03-16T14:39:27+00:00"
+laravel_dependency_versions: ["^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-07T11:15:47.461Z
+updated_at: 2023-06-07T11:15:47.461Z

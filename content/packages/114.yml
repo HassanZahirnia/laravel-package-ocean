@@ -1,0 +1,17 @@
+id: 114
+name: "Laravel Model States"
+description: "Adds state support to models. It combines concepts from the state pattern and state machines."
+category_id: 3
+github: "https://github.com/spatie/laravel-model-states"
+author: "spatie"
+composer: "spatie/laravel-model-states"
+npm: 
+stars: 1005
+keywords: []
+first_release_at: "2019-09-27T07:22:53+00:00"
+latest_release_at: "2023-02-20T06:41:50+00:00"
+laravel_dependency_versions: ["^8.73 || ^9.0 || ^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.147Z
+updated_at: 2023-04-06T20:56:57.799Z

@@ -1,0 +1,17 @@
+id: 208
+name: "Sweet Alert"
+description: "Beautiful, responsive, customizable, accessible (wai-aria) popup boxes."
+category_id: 16
+github: "https://github.com/realrashid/sweet-alert"
+author: "realrashid"
+composer: "realrashid/sweet-alert"
+npm: 
+stars: 1045
+keywords: ["toast", "message"]
+first_release_at: "2017-11-26T19:07:05+00:00"
+latest_release_at: "2023-02-15T07:13:11+00:00"
+laravel_dependency_versions: ["^5.6||^6.0||^7.0||^8.0||^9.0||^9.11||9.14.*||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.523Z
+updated_at: 2023-04-06T20:59:28.551Z

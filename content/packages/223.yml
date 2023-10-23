@@ -1,0 +1,17 @@
+id: 223
+name: "Infection"
+description: "Mutation testing framework."
+category_id: 9
+github: "https://github.com/infection/infection"
+author: "infection"
+composer: "infection/infection"
+npm: 
+stars: 1920
+keywords: []
+first_release_at: "2017-07-01T15:00:12+00:00"
+latest_release_at: "2023-02-05T21:47:26+00:00"
+laravel_dependency_versions: []
+package_type: "php-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.596Z
+updated_at: 2023-04-06T20:59:51.932Z

@@ -1,0 +1,17 @@
+id: 456
+name: "Laravel Prometheus"
+description: "Export key metrics of your app to Prometheus."
+category_id: 5
+github: "https://github.com/spatie/laravel-prometheus"
+author: "spatie"
+composer: "spatie/laravel-prometheus"
+npm: 
+stars: 83
+keywords: []
+first_release_at: "2023-06-01T07:27:07+00:00"
+latest_release_at: "2023-06-03T10:46:27+00:00"
+laravel_dependency_versions: ["^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-13T15:15:28.051Z
+updated_at: 2023-06-13T15:15:28.051Z

@@ -1,0 +1,17 @@
+id: 385
+name: "Turnstile"
+description: "Integration with Cloudflare Turnstile."
+category_id: 11
+github: "https://github.com/ryangjchandler/laravel-cloudflare-turnstile"
+author: "ryangjchandler"
+composer: "ryangjchandler/laravel-cloudflare-turnstile"
+npm: 
+stars: 98
+keywords: ["cloudflare", "captcha"]
+first_release_at: "2022-09-30T10:10:44+00:00"
+latest_release_at: "2023-04-14T10:20:16+00:00"
+laravel_dependency_versions: ["^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-06T21:14:43.192Z
+updated_at: 2023-06-06T21:14:43.192Z

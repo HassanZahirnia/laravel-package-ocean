@@ -1,0 +1,17 @@
+id: 457
+name: "Laravel Envicon"
+description: "Display a custom favicon depending on your runtime environment."
+category_id: 17
+github: "https://github.com/nhedger/laravel-envicon"
+author: "hedger"
+composer: "hedger/laravel-envicon"
+npm: 
+stars: 20
+keywords: []
+first_release_at: "2020-06-10T20:37:11+00:00"
+latest_release_at: "2023-06-13T19:19:22+00:00"
+laravel_dependency_versions: ["^9.0 || ^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-14T17:45:52.318Z
+updated_at: 2023-06-14T17:45:52.318Z

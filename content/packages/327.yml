@@ -1,0 +1,17 @@
+id: 327
+name: "Console Output"
+description: "A convenient facade for interacting with the console."
+category_id: 18
+github: "https://github.com/henzeb/laravel-console-facade"
+author: "henzeb"
+composer: "henzeb/laravel-console-facade"
+npm: 
+stars: 5
+keywords: []
+first_release_at: "2022-03-15T21:40:01+00:00"
+latest_release_at: "2023-04-11T08:45:04+00:00"
+laravel_dependency_versions: ["^9.0||^10"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-12T01:59:48.491Z
+updated_at: 2023-04-12T01:59:48.491Z

@@ -1,0 +1,17 @@
+id: 368
+name: "Laravel Zipstream"
+description: "Easily create Zip files on-the-fly and provide a streaming downloader."
+category_id: 1
+github: "https://github.com/stechstudio/laravel-zipstream"
+author: "stechstudio"
+composer: "stechstudio/laravel-zipstream"
+npm: 
+stars: 315
+keywords: ["archive"]
+first_release_at: "2019-04-12T18:20:20+00:00"
+latest_release_at: "2023-02-23T20:57:15+00:00"
+laravel_dependency_versions: ["^5.6||^6.0||^7.0||^8.0||^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-06-06T13:34:57.485Z
+updated_at: 2023-06-06T13:34:57.485Z

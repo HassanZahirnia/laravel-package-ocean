@@ -9,6 +9,7 @@ use Illuminate\Database\Schema\Blueprint;
 use NumberFormatter;
 use Orbit\Concerns\Orbital;
 use Orbit\Contracts\Orbit;
+use Orbit\Drivers\Yaml;
 
 class Package extends Model implements Orbit
 {
@@ -42,7 +43,6 @@ class Package extends Model implements Orbit
         $table->json('laravel_dependency_versions');
         $table->string('package_type');
         $table->boolean('paid_integration')->default(false);
-        $table->text('content')->nullable();
     }
 
     public function category()
@@ -91,5 +91,10 @@ class Package extends Model implements Orbit
     public function maximumCompatibleLaravelVersion(): string
     {
         return '10.23';
+    }
+
+    public function getOrbitDriver(): string
+    {
+        return Yaml::class;
     }
 }

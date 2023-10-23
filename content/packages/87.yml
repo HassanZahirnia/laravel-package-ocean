@@ -1,0 +1,17 @@
+id: 87
+name: "Laravel MongoDB"
+description: "A MongoDB-based Eloquent model and Query builder."
+category_id: 3
+github: "https://github.com/jenssegers/laravel-mongodb"
+author: "jenssegers"
+composer: "jenssegers/mongodb"
+npm: 
+stars: 6631
+keywords: []
+first_release_at: "2013-03-31T14:36:15+00:00"
+latest_release_at: "2023-02-16T12:20:36+00:00"
+laravel_dependency_versions: ["^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.038Z
+updated_at: 2023-04-07T00:21:24.907Z

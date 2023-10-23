@@ -1,0 +1,17 @@
+id: 170
+name: "Laravel Server Monitor"
+description: "An easy to use powerful server monitor."
+category_id: 5
+github: "https://github.com/spatie/laravel-server-monitor"
+author: "spatie"
+composer: "spatie/laravel-server-monitor"
+npm: 
+stars: 771
+keywords: []
+first_release_at: "2017-02-16T10:28:23+00:00"
+latest_release_at: "2023-02-23T08:14:38+00:00"
+laravel_dependency_versions: ["^9.0||^10.0"]
+package_type: "laravel-package"
+paid_integration: false
+created_at: 2023-04-09T13:58:48.373Z
+updated_at: 2023-04-06T20:58:26.410Z
