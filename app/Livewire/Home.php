@@ -18,7 +18,7 @@ class Home extends Component
     public $selectedCategory = '';
 
     #[Url(as: 'official', history: true)]
-    public $showOfficialPackages = 0;
+    public $showOfficialPackages = false;
 
     #[Url(history: true)]
     public $search = '';
@@ -65,6 +65,12 @@ class Home extends Component
     public function setShowOfficialPackages($value)
     {
         $this->showOfficialPackages = $value;
+    }
+
+    // Toggle showOfficialPackages
+    public function toggleShowOfficialPackages()
+    {
+        $this->showOfficialPackages = ! $this->showOfficialPackages;
     }
 
     public function updatedSearch()

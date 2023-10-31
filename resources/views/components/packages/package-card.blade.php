@@ -42,7 +42,7 @@
             <div class="absolute -left-3 -top-3">
                 <div
                     class="-rotate-45"
-                    wire:click.prevent="setShowOfficialPackages(1)"
+                    wire:click.prevent="setShowOfficialPackages(true)"
                     x-tooltip.raw.theme.amber="Official Laravel Package"
                 >
                     <x-icons.crown />

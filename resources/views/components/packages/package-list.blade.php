@@ -76,17 +76,21 @@
                 @toggle="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
                 />
             --}}
+
+            {{--
+                <ui-new-packages-button
+                v-if="newPackagesSinceLastVisit.length"
+                :new-packages-count="newPackagesSinceLastVisit.length"
+                :is-active="showNewPackagesSinceLastVisit"
+                @toggle="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
+                />
+            --}}
         </div>
         <div
             class="flex w-full flex-wrap items-center justify-center gap-3 lg:justify-end xl:w-auto xl:flex-1 xl:flex-nowrap"
         >
             {{-- Crown/Official package toggle --}}
-            {{--
-                <ui-official-package-toggle
-                :is-active="showOfficialPackages"
-                @toggle="showOfficialPackages = showOfficialPackages === '1' ? '0' : '1'"
-                />
-            --}}
+            <x-packages.official-package-toggle />
 
             {{-- Search bar --}}
             <x-packages.search-input />
