@@ -144,53 +144,37 @@
                         d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z"
                     />
                 </svg>
-                <div class="truncate text-xs font-medium">Repo Name</div>
+                <div class="truncate text-xs font-medium">
+                    {{ $package->getAuthorAndNameFromGithub() }}
+                </div>
             </div>
             {{-- Package type --}}
             <div
                 class="{{ count($package->laravel_dependency_versions) === 0 ? 'top-0' : '-top-2' }} absolute left-0 flex w-full -translate-x-5 -translate-y-5 items-center gap-2 truncate opacity-0 transition duration-300 ease-out group-hover/package-card:translate-x-0 group-hover/package-card:translate-y-0 group-hover/package-card:opacity-100"
             >
                 <div class="leading-loose">
-                    {{-- Laravel icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'laravel-package'"
-                        class="i-logos:laravel text-[1.3rem]"
-                    ></div>
-                    {{-- PHP icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'php-package'"
-                        class="i-svg-elephant text-[1.3rem]"
-                    ></div>
-                    {{-- NPM icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'npm-package'"
-                        class="i-logos:npm-icon text-xl"
-                    ></div>
-                    {{-- Mac icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'mac-app'"
-                        class="i-logos:apple?mask text-[1.35rem] dark:text-white"
-                    ></div>
-                    {{-- Windows icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'windows-app'"
-                        class="i-logos:microsoft-windows text-lg"
-                    ></div>
-                    {{-- All operating systems icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'all-operating-systems-app'"
-                        class="i-carbon:software-resource-cluster text-2xl"
-                    ></div>
-                    {{-- IDE Extension icon --}}
-                    <div
-                        v-if="laravelPackage.package_type === 'ide-extension'"
-                        class="i-ph:code text-2xl"
-                    ></div>
+                    @if ($package->package_type === 'laravel-package')
+                        <x-icons.laravel />
+                    @elseif ($package->package_type === 'php-package')
+                        <x-icons.elephant />
+                    @elseif ($package->package_type === 'npm-package')
+                        <x-icons.npm />
+                    @elseif ($package->package_type === 'mac-app')
+                        <x-icons.apple />
+                    @elseif ($package->package_type === 'windows-app')
+                        <x-icons.microsoft-windows />
+                    @elseif ($package->package_type === 'all-operating-systems-app')
+                        <x-icons.software-resource-cluster />
+                    @elseif ($package->package_type === 'ide-extension')
+                        <x-icons.code />
+                    @endif
                 </div>
-                <div class="">
+                <div>
                     <div class="text-sm font-bold">
                         @if ($package->package_type === 'laravel-package')
                             Laravel package
+                        @elseif ($package->package_type === 'npm-package')
+                            NPM package
                         @elseif ($package->package_type === 'php-package')
                             PHP package
                         @elseif ($package->package_type === 'mac-app')

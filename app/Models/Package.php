@@ -97,4 +97,21 @@ class Package extends Model implements Orbit
     {
         return Yaml::class;
     }
+
+    // Get author and name of repo from the github link
+    // Example: https://github.com/spatie/once -> spatie/once
+    public function getAuthorAndNameFromGithub(): string
+    {
+        // Use regular expression to match the GitHub URL pattern
+        $pattern = '/https?:\/\/github\.com\/([^\/]+)\/([^\/]+)/i';
+
+        // Execute the regular expression match
+        if (preg_match($pattern, $this->github, $matches)) {
+            // If a match is found, return the author and repo name in the desired format
+            return $matches[1].'/'.$matches[2];
+        }
+
+        // Return null if no match is found
+        return null;
+    }
 }
