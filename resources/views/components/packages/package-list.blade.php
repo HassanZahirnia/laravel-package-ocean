@@ -23,7 +23,7 @@
                     x-on:transitionend="titleAnimationEnd = true"
                     class="text-2xl font-semibold [grid-area:1/-1]"
                 >
-                    {{ $this->totalPackagesCount() }}
+                    {{ $this->packages->total() }}
                     Packages
                 </div>
                 {{-- Category selected --}}
@@ -133,7 +133,7 @@
                     autoAnimate($el)
                 },
             }"
-            class="grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
+            class="relative grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
             :class="{
                 'min-h-[17rem]': $wire.packages.length,
             }"
@@ -142,5 +142,12 @@
                 <x-packages.package-card :$package />
             @endforeach
         </div>
+
+        {{-- No results message --}}
+        @if ($this->packages->total() === 0)
+            <div class="absolute right-1/2 top-0 w-full translate-x-1/2">
+                <x-search-result />
+            </div>
+        @endif
     </div>
 </div>
