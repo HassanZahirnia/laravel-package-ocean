@@ -154,4 +154,9 @@ class Home extends Component
     {
         return view('livewire.home');
     }
+
+    public function updatingPage($page)
+    {
+        $this->js("document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'auto' })");
+    }
 }
