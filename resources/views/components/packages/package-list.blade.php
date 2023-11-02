@@ -143,6 +143,13 @@
             @endforeach
         </div>
 
+        {{-- Pagination --}}
+        @if ($this->packages->total() !== 0)
+            <div class="px-5 pt-8 flex justify-center">
+                <x-pagination />
+            </div>
+        @endif
+
         {{-- No results message --}}
         @if ($this->packages->total() === 0)
             <div class="absolute right-1/2 top-0 w-full translate-x-1/2">
