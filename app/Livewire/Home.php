@@ -26,6 +26,10 @@ class Home extends Component
     #[Url(as: 'sort', history: true)]
     public $sortSelectValue = 'first_release_at';
 
+    public $lastVisitDate = null;
+
+    public $showNewPackagesSinceLastVisit = false;
+
     #[Computed()]
     public function packages()
     {
@@ -60,13 +64,31 @@ class Home extends Component
                     $query->where('name', $category);
                 });
             })
+            // If lastVisitDate isn't null, then only show packages that have been released since lastVisitDate (created_at)
+            ->when($this->showNewPackagesSinceLastVisit && $this->lastVisitDate, function (Builder $query) {
+                $query->where('created_at', '>=', $this->lastVisitDate);
+            })
             ->orderBy($this->sortSelectValue, 'desc')
             ->paginate(9);
     }
 
-    public function totalPackagesCount()
+    public function totalPackagesCount(): int
     {
         return Package::query()->count();
+    }
+
+    // Show number of new packages since the last visit if lastVisitDate is not null, and if it's null, show 0
+    public function newPackagesCountSinceLastVisit(): int
+    {
+        if ($this->lastVisitDate === null) {
+            return 0;
+        }
+
+        return Package::query()
+            ->when($this->lastVisitDate, function (Builder $query) {
+                $query->where('created_at', '>=', $this->lastVisitDate);
+            })
+            ->count();
     }
 
     public function sortSelectItems(): array
@@ -138,6 +160,12 @@ class Home extends Component
     public function toggleShowOfficialPackages()
     {
         $this->showOfficialPackages = ! $this->showOfficialPackages;
+    }
+
+    // Toggle showNewPackagesSinceLastVisit
+    public function toggleShowNewPackagesSinceLastVisit()
+    {
+        $this->showNewPackagesSinceLastVisit = ! $this->showNewPackagesSinceLastVisit;
     }
 
     public function updatedSearch()

@@ -68,14 +68,7 @@
             </div>
 
             {{-- New Since Last Visit Button --}}
-            {{--
-                <ui-new-packages-button
-                v-if="newPackagesSinceLastVisit.length"
-                :new-packages-count="newPackagesSinceLastVisit.length"
-                :is-active="showNewPackagesSinceLastVisit"
-                @toggle="showNewPackagesSinceLastVisit = !showNewPackagesSinceLastVisit"
-                />
-            --}}
+            <x-packages.new-packages-badge />
         </div>
         <div
             class="flex w-full flex-wrap items-center justify-center gap-3 lg:justify-end xl:w-auto xl:flex-1 xl:flex-nowrap"
@@ -128,11 +121,7 @@
     <div class="relative min-h-[16rem]">
         {{-- Packages list --}}
         <div
-            x-data="{
-                init() {
-                    autoAnimate($el)
-                },
-            }"
+            x-init="autoAnimate($el)"
             class="relative grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
             :class="{
                 'min-h-[17rem]': $wire.packages.length,
@@ -145,7 +134,7 @@
 
         {{-- Pagination --}}
         @if ($this->packages->total() !== 0)
-            <div class="px-5 pt-8 flex justify-center">
+            <div class="flex justify-center px-5 pt-8">
                 <x-pagination />
             </div>
         @endif
