@@ -48,7 +48,7 @@
             <div class="relative flex items-center justify-center gap-5">
                 <!-- Github link -->
                 <a
-                    class="block select-none p-2 transition duration-300 hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
+                    class="block select-none p-2 hover:text-slate-600 hover:transition hover:duration-300 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
                     href="https://github.com/HassanZahirnia/laravel-package-ocean"
                     target="_blank"
                     aria-label="Github"

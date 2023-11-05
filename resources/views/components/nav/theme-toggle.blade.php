@@ -1,12 +1,12 @@
 <div
     wire:ignore
-    class="relative h-11 w-11 cursor-pointer select-none hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
+    class="gsap-theme-toggle relative h-11 w-11 cursor-pointer select-none hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
     x-on:click="darkMode = !darkMode"
     x-data="{
         timeline: null,
 
         init() {
-            gsap.to($el, {
+            gsap.to('.gsap-theme-toggle', {
                 scale: 1,
                 duration: 0.1,
             })
@@ -15,13 +15,13 @@
                 .timeline({
                     paused: true,
                 })
-                .to($refs.moon, {
+                .to('.gsap-theme-toggle-moon', {
                     rotate: 70,
                     ease: 'sine.out',
                     duration: 0.3,
                 })
                 .to(
-                    $refs.miniStar,
+                    '.gsap-theme-toggle-mini-star',
                     {
                         autoAlpha: 0,
                         scale: 0,
@@ -31,7 +31,7 @@
                     '>-0.3',
                 )
                 .to(
-                    $refs.microStar,
+                    '.gsap-theme-toggle-micro-star',
                     {
                         autoAlpha: 0,
                         scale: 0,
@@ -41,7 +41,7 @@
                     '<',
                 )
                 .to(
-                    $refs.moon,
+                    '.gsap-theme-toggle-moon',
                     {
                         scale: 0.6,
                         ease: 'sine.out',
@@ -50,7 +50,7 @@
                     '<',
                 )
                 .fromTo(
-                    $refs.sunBall,
+                    '.gsap-theme-toggle-sunball',
                     {
                         scale: 0,
                         x: -5,
@@ -66,7 +66,7 @@
                     '>-0.15',
                 )
                 .fromTo(
-                    $refs.sunShine,
+                    '.gsap-theme-toggle-sunshine',
                     {
                         // autoAlpha: 0,
                         scale: 0,
@@ -96,8 +96,7 @@
 >
     {{-- Moon --}}
     <div
-        x-ref="moon"
-        class="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+        class="gsap-theme-toggle-moon absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
     >
         <div class="scale-x-[-1] transition duration-300">
             <svg
@@ -114,10 +113,7 @@
         </div>
     </div>
     {{-- Mini star --}}
-    <div
-        x-ref="miniStar"
-        class="absolute left-[.6rem] top-[.6rem]"
-    >
+    <div class="gsap-theme-toggle-mini-star absolute left-[.6rem] top-[.6rem]">
         <div class="transition duration-300">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,10 +129,7 @@
         </div>
     </div>
     {{-- Micro star --}}
-    <div
-        x-ref="microStar"
-        class="absolute left-[1rem] top-[1rem]"
-    >
+    <div class="gsap-theme-toggle-micro-star absolute left-[1rem] top-[1rem]">
         <div class="transition duration-300">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -153,17 +146,14 @@
     </div>
     {{-- Sun ball --}}
     <div class="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2">
-        <div x-ref="sunBall">
+        <div class="gsap-theme-toggle-sunball">
             <div
                 class="h-4 w-4 rounded-full bg-current transition duration-300"
             ></div>
         </div>
     </div>
     {{-- sunShine --}}
-    <div
-        x-ref="sunShine"
-        class="absolute inset-0 grid h-full w-full"
-    >
+    <div class="gsap-theme-toggle-sunshine absolute inset-0 grid h-full w-full">
         <div class="relative h-full w-full">
             {{-- Top --}}
             <div
