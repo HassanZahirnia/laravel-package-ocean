@@ -24,6 +24,7 @@
 
     <div
         x-show="openMobileMenu"
+        x-on:click.outside="openMobileMenu = false"
         x-transition
         x-anchor.offset.20="$refs.mobile_menu_button"
         class="w-full max-w-xs transform overflow-hidden rounded-2xl bg-[#f2f3fb] px-6 py-5 text-left align-middle shadow-xl transition duration-300 dark:bg-[#04041F] dark:text-[#EAEFFB]"
