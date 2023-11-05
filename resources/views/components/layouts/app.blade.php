@@ -27,6 +27,9 @@
             content="A place where you can find any Laravel package that you may need for your next project."
         />
 
+        {{-- SEO --}}
+        {!! seo($SEOData ?? null) !!}
+
         {{-- Favicon --}}
         <meta
             name="msapplication-TileColor"

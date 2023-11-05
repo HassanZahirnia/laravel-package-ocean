@@ -9,6 +9,7 @@ use Livewire\Attributes\Computed;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
+use RalphJSmit\Laravel\SEO\Support\SEOData;
 
 class Home extends Component
 {
@@ -180,6 +181,13 @@ class Home extends Component
 
     public function render()
     {
+        view()->share('SEOData', new SEOData(
+            title: 'Laravel Package Ocean - Discover new Laravel packages',
+            description: 'A place where you can find any Laravel package that you may need for your next project.',
+            url: route('home'),
+            image: route('home').'/laravel-package-ocean-opengraph.webp',
+        ));
+
         return view('livewire.home');
     }
 
