@@ -6,7 +6,7 @@
         <x-nav.logo />
 
         {{-- Navigation menu modal --}}
-        <nav-menu-modal />
+        <x-nav.mobile-menu />
 
         {{-- Navigation menu --}}
         <div class="hidden items-center gap-1 sm:flex">
@@ -14,7 +14,7 @@
             <a
                 href="https://github.com/HassanZahirnia/laravel-package-ocean/discussions/categories/package-suggestions"
                 target="_blank"
-                class="mr-1 select-none rounded-xl bg-white/30 px-5 py-3 text-sm font-medium text-[#404a6b] shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20 backdrop-blur-xl transition duration-300 hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40"
+                class="mr-1 select-none truncate rounded-xl bg-white/30 px-5 py-3 text-sm font-medium text-[#404a6b] shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20 backdrop-blur-xl transition duration-300 hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40"
             >
                 Suggest a new package
             </a>
