@@ -1,7 +1,7 @@
 <div
     x-data="{
-        lastVisitDate: $persist(null),
-        newVisitDate: $persist(null),
+        lastVisitDate: $persist(null).as('lastVisitDate'),
+        newVisitDate: $persist(null).as('newVisitDate'),
         GRACE_PERIOD: 5, // minutes,
         newPackagesCount: 0,
 
