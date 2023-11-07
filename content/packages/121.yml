@@ -1,17 +1,18 @@
 id: 121
-name: "Laravel Sluggable"
-description: "An opinionated package to create slugs for Eloquent models."
-category_id: 3
-github: "https://github.com/spatie/laravel-sluggable"
-author: "spatie"
-composer: "spatie/laravel-sluggable"
-npm: 
+name: 'Laravel Sluggable'
+description: 'An opinionated package to create slugs for Eloquent models.'
+category_id: '3'
+github: 'https://github.com/spatie/laravel-sluggable'
+author: spatie
+composer: spatie/laravel-sluggable
+npm: null
 stars: 1249
-keywords: []
-first_release_at: "2015-12-24T14:51:56+00:00"
-latest_release_at: "2023-01-23T14:29:54+00:00"
-laravel_dependency_versions: ["^8.0||^9.0||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2015-12-24 14:51:56'
+latest_release_at: '2023-01-23 14:29:54'
+laravel_dependency_versions:
+    - ^8.0||^9.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.177Z
-updated_at: 2023-04-06T20:57:10.594Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

@@ -1,17 +1,18 @@
 id: 305
-name: "Laravel Site Search"
-description: "Create a full-text search index by crawling your site."
-category_id: 18
-github: "https://github.com/spatie/laravel-site-search"
-author: "spatie"
-composer: "spatie/laravel-site-search"
-npm: 
+name: 'Laravel Site Search'
+description: 'Create a full-text search index by crawling your site.'
+category_id: '18'
+github: 'https://github.com/spatie/laravel-site-search'
+author: spatie
+composer: spatie/laravel-site-search
+npm: null
 stars: 250
-keywords: []
-first_release_at: "2021-09-17T22:46:41+00:00"
-latest_release_at: "2023-02-09T08:33:52+00:00"
-laravel_dependency_versions: ["^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2021-09-17 22:46:41'
+latest_release_at: '2023-02-09 08:33:52'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.947Z
-updated_at: 2023-04-06T21:01:59.553Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

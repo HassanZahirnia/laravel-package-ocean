@@ -1,17 +1,18 @@
 id: 348
-name: "Laravel Wave"
-description: "Real-time broadcasting with SSE (native HTTP) without any Websockets setup."
-category_id: 16
-github: "https://github.com/qruto/laravel-wave"
-author: "qruto"
-composer: "qruto/laravel-wave"
-npm: 
+name: 'Laravel Wave'
+description: 'Real-time broadcasting with SSE (native HTTP) without any Websockets setup.'
+category_id: '16'
+github: 'https://github.com/qruto/laravel-wave'
+author: qruto
+composer: qruto/laravel-wave
+npm: null
 stars: 524
-keywords: []
-first_release_at: "2022-08-01T20:36:37+00:00"
-latest_release_at: "2023-04-27T15:45:22+00:00"
-laravel_dependency_versions: ["^9.21||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2022-08-01 20:36:37'
+latest_release_at: '2023-04-27 15:45:22'
+laravel_dependency_versions:
+    - ^9.21||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-27T18:47:45.733Z
-updated_at: 2023-04-27T18:47:45.733Z
+created_at: 2023-04-27T18:47:45+00:00
+updated_at: 2023-11-07T12:18:57+00:00

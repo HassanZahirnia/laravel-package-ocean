@@ -1,17 +1,19 @@
 id: 15
-name: "Laravel Orion"
-description: "The simplest way to create REST API."
-category_id: 7
-github: "https://github.com/tailflow/laravel-orion"
-author: "tailflow"
-composer: "tailflow/laravel-orion"
-npm: 
+name: 'Laravel Orion'
+description: 'The simplest way to create REST API.'
+category_id: '7'
+github: 'https://github.com/tailflow/laravel-orion'
+author: tailflow
+composer: tailflow/laravel-orion
+npm: null
 stars: 1308
-keywords: ["crud"]
-first_release_at: "2020-10-24T10:54:43+00:00"
-latest_release_at: "2023-04-03T12:09:39+00:00"
-laravel_dependency_versions: [">=5.7"]
-package_type: "laravel-package"
+keywords:
+    - crud
+first_release_at: '2020-10-24 10:54:43'
+latest_release_at: '2023-04-03 12:09:39'
+laravel_dependency_versions:
+    - '>=5.7'
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:47.765Z
-updated_at: 2023-04-06T20:54:12.724Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

@@ -1,17 +1,18 @@
 id: 403
-name: "Laravel Welcome Notification"
-description: "Send a welcome notification to new users."
-category_id: 16
-github: "https://github.com/spatie/laravel-welcome-notification"
-author: "spatie"
-composer: "spatie/laravel-welcome-notification"
-npm: 
+name: 'Laravel Welcome Notification'
+description: 'Send a welcome notification to new users.'
+category_id: '16'
+github: 'https://github.com/spatie/laravel-welcome-notification'
+author: spatie
+composer: spatie/laravel-welcome-notification
+npm: null
 stars: 526
-keywords: []
-first_release_at: "2019-11-12T11:49:41+00:00"
-latest_release_at: "2023-02-06T15:43:11+00:00"
-laravel_dependency_versions: ["^7.0||^8.0||^9.0||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2019-11-12 11:49:41'
+latest_release_at: '2023-02-06 15:43:11'
+laravel_dependency_versions:
+    - ^7.0||^8.0||^9.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-06-07T11:37:46.156Z
-updated_at: 2023-06-07T11:37:46.156Z
+created_at: 2023-06-07T11:37:46+00:00
+updated_at: 2023-11-07T12:18:57+00:00

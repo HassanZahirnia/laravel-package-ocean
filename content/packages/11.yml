@@ -1,17 +1,17 @@
 id: 11
-name: "OpenAI PHP SDK"
-description: "SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming."
-category_id: 7
-github: "https://github.com/orhanerday/open-ai"
-author: "orhanerday"
-composer: "orhanerday/open-ai"
-npm: 
+name: 'OpenAI PHP SDK'
+description: 'SDK for OpenAI GPT-3 and DALL-E. It also supports chatGPT-like streaming.'
+category_id: '7'
+github: 'https://github.com/orhanerday/open-ai'
+author: orhanerday
+composer: orhanerday/open-ai
+npm: null
 stars: 1886
-keywords: []
-first_release_at: "2021-12-22T10:39:07+00:00"
-latest_release_at: "2023-03-08T08:04:02+00:00"
-laravel_dependency_versions: []
-package_type: "php-package"
+keywords: {  }
+first_release_at: '2021-12-22 10:39:07'
+latest_release_at: '2023-03-08 08:04:02'
+laravel_dependency_versions: {  }
+package_type: php-package
 paid_integration: true
-created_at: 2023-04-09T13:58:47.746Z
-updated_at: 2023-04-07T00:21:16.001Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

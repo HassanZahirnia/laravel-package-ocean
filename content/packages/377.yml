@@ -1,17 +1,18 @@
 id: 377
-name: "Telegram"
-description: "Send Telegram notification using Telegram Bot API."
-category_id: 7
-github: "https://github.com/laravel-notification-channels/telegram"
-author: "laravel-notification-channels"
-composer: "laravel-notification-channels/telegram"
-npm: 
+name: Telegram
+description: 'Send Telegram notification using Telegram Bot API.'
+category_id: '7'
+github: 'https://github.com/laravel-notification-channels/telegram'
+author: laravel-notification-channels
+composer: laravel-notification-channels/telegram
+npm: null
 stars: 853
-keywords: []
-first_release_at: "2016-08-12T09:27:04+00:00"
-latest_release_at: "2023-02-14T18:21:03+00:00"
-laravel_dependency_versions: ["^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2016-08-12 09:27:04'
+latest_release_at: '2023-02-14 18:21:03'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-06-06T20:34:36.685Z
-updated_at: 2023-06-06T20:34:36.685Z
+created_at: 2023-06-06T20:34:36+00:00
+updated_at: 2023-11-07T12:18:57+00:00

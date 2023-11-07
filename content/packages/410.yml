@@ -1,17 +1,19 @@
 id: 410
-name: "Cloner"
+name: Cloner
 description: "Lets you clone a model and it's relationships, including files. Even to another database."
-category_id: 3
-github: "https://github.com/BKWLD/cloner"
-author: "bkwld"
-composer: "bkwld/cloner"
-npm: 
+category_id: '3'
+github: 'https://github.com/BKWLD/cloner'
+author: bkwld
+composer: bkwld/cloner
+npm: null
 stars: 429
-keywords: []
-first_release_at: "2015-07-28T18:15:05+00:00"
-latest_release_at: "2023-04-20T00:19:55+00:00"
-laravel_dependency_versions: ["^5.5||^6.0||^7.0||^8.0||^9.0||^10.0", "^5.5||^6.0||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2015-07-28 18:15:05'
+latest_release_at: '2023-04-20 00:19:55'
+laravel_dependency_versions:
+    - ^5.5||^6.0||^7.0||^8.0||^9.0||^10.0
+    - ^5.5||^6.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-06-07T11:54:04.541Z
-updated_at: 2023-06-07T11:54:04.541Z
+created_at: 2023-06-07T11:54:04+00:00
+updated_at: 2023-11-07T12:18:57+00:00

@@ -1,17 +1,18 @@
 id: 346
-name: "Ziggy"
-description: "Use your named routes in JavaScript."
-category_id: 15
-github: "https://github.com/tighten/ziggy"
-author: "tightenco"
-composer: "tightenco/ziggy"
-npm: 
+name: Ziggy
+description: 'Use your named routes in JavaScript.'
+category_id: '15'
+github: 'https://github.com/tighten/ziggy'
+author: tightenco
+composer: tightenco/ziggy
+npm: null
 stars: 3417
-keywords: []
-first_release_at: "2017-08-04T17:53:35+00:00"
-latest_release_at: "2022-09-23T22:15:05+00:00"
-laravel_dependency_versions: [">=5.4"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2017-08-04 17:53:35'
+latest_release_at: '2022-09-23 22:15:05'
+laravel_dependency_versions:
+    - '>=5.4'
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-16T21:57:21.082Z
-updated_at: 2023-04-16T21:57:21.082Z
+created_at: 2023-04-16T21:57:21+00:00
+updated_at: 2023-11-07T12:18:57+00:00

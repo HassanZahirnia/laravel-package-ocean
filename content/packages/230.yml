@@ -1,17 +1,19 @@
 id: 230
-name: "Smart"
-description: "Easy image manipulation and file downloads."
-category_id: 1
-github: "https://github.com/dietercoopman/smart"
-author: "dietercoopman"
-composer: "dietercoopman/smart"
-npm: 
+name: Smart
+description: 'Easy image manipulation and file downloads.'
+category_id: '1'
+github: 'https://github.com/dietercoopman/smart'
+author: dietercoopman
+composer: dietercoopman/smart
+npm: null
 stars: 218
-keywords: []
-first_release_at: "2021-09-07T19:56:50+00:00"
-latest_release_at: "2023-03-03T20:24:20+00:00"
-laravel_dependency_versions: ["^7||^8||^9||^10.0", "^7||^8||^9||^9||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2021-09-07 19:56:50'
+latest_release_at: '2023-03-03 20:24:20'
+laravel_dependency_versions:
+    - ^7||^8||^9||^10.0
+    - ^7||^8||^9||^9||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.622Z
-updated_at: 2023-04-06T21:00:04.117Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

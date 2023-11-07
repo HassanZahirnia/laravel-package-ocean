@@ -1,17 +1,20 @@
 id: 183
-name: "Fast Excel"
-description: "Fast Excel import/export."
-category_id: 1
-github: "https://github.com/rap2hpoutre/fast-excel"
-author: "rap2hpoutre"
-composer: "rap2hpoutre/fast-excel"
-npm: 
+name: 'Fast Excel'
+description: 'Fast Excel import/export.'
+category_id: '1'
+github: 'https://github.com/rap2hpoutre/fast-excel'
+author: rap2hpoutre
+composer: rap2hpoutre/fast-excel
+npm: null
 stars: 1898
-keywords: ["xlsx"]
-first_release_at: "2018-04-05T08:24:07+00:00"
-latest_release_at: "2023-03-13T14:25:33+00:00"
-laravel_dependency_versions: ["^6.0 || ^7.0 || ^8.0 || ^9.0||^10.0", "^6.20.12 || ^7.30.4 || ^8.24.0 || ^9.0||^10.0"]
-package_type: "laravel-package"
+keywords:
+    - xlsx
+first_release_at: '2018-04-05 08:24:07'
+latest_release_at: '2023-03-13 14:25:33'
+laravel_dependency_versions:
+    - '^6.0 || ^7.0 || ^8.0 || ^9.0||^10.0'
+    - '^6.20.12 || ^7.30.4 || ^8.24.0 || ^9.0||^10.0'
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.423Z
-updated_at: 2023-04-06T20:58:49.853Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

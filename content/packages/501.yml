@@ -1,17 +1,18 @@
 id: 501
-name: "Laravel Extended Relationships"
-description: "Reduces the number of database queries, improves performance, and minimizes duplicate code."
-category_id: 3
-github: "https://github.com/mr-punyapal/laravel-extended-relationships"
-author: "mr-punyapal"
-composer: "mr-punyapal/laravel-extended-relationships"
-npm: 
+name: 'Laravel Extended Relationships'
+description: 'Reduces the number of database queries, improves performance, and minimizes duplicate code.'
+category_id: '3'
+github: 'https://github.com/mr-punyapal/laravel-extended-relationships'
+author: mr-punyapal
+composer: mr-punyapal/laravel-extended-relationships
+npm: null
 stars: 53
-keywords: []
-first_release_at: "2023-04-02T05:43:59+00:00"
-latest_release_at: "2023-06-20T16:31:28+00:00"
-laravel_dependency_versions: ["^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2023-04-02 05:43:59'
+latest_release_at: '2023-06-20 16:31:28'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-09-21T12:34:32.211Z
-updated_at: 2023-09-21T12:34:32.211Z
+created_at: 2023-09-21T12:34:32+00:00
+updated_at: 2023-11-07T12:18:57+00:00

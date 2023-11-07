@@ -1,17 +1,20 @@
 id: 302
-name: "Laravel Response Cache"
-description: "Speed up your app by caching the entire response."
-category_id: 18
-github: "https://github.com/spatie/laravel-responsecache"
-author: "spatie"
-composer: "spatie/laravel-responsecache"
-npm: 
+name: 'Laravel Response Cache'
+description: 'Speed up your app by caching the entire response.'
+category_id: '18'
+github: 'https://github.com/spatie/laravel-responsecache'
+author: spatie
+composer: spatie/laravel-responsecache
+npm: null
 stars: 2216
-keywords: ["optimize"]
-first_release_at: "2015-07-16T14:28:16+00:00"
-latest_release_at: "2023-01-23T14:22:08+00:00"
-laravel_dependency_versions: ["^8.71||^9.0||^10.0", "^9.0||^10.0"]
-package_type: "laravel-package"
+keywords:
+    - optimize
+first_release_at: '2015-07-16 14:28:16'
+latest_release_at: '2023-01-23 14:22:08'
+laravel_dependency_versions:
+    - ^8.71||^9.0||^10.0
+    - ^9.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.935Z
-updated_at: 2023-04-06T21:01:53.811Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

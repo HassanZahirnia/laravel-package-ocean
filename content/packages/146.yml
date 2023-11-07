@@ -1,17 +1,18 @@
 id: 146
-name: "Mix"
-description: "The power of Webpack, distilled for the rest of us."
-category_id: 15
-github: "https://github.com/laravel-mix/laravel-mix"
-author: "laravel-mix"
-composer: 
-npm: "laravel-mix"
+name: Mix
+description: 'The power of Webpack, distilled for the rest of us.'
+category_id: '15'
+github: 'https://github.com/laravel-mix/laravel-mix'
+author: laravel-mix
+composer: null
+npm: laravel-mix
 stars: 5208
-keywords: ["jeffrey way"]
-first_release_at: "2016-12-26T18:00:48.335Z"
-latest_release_at: "2022-06-19T10:41:15.524Z"
-laravel_dependency_versions: []
-package_type: "npm-package"
+keywords:
+    - 'jeffrey way'
+first_release_at: '2016-12-26 18:00:48'
+latest_release_at: '2022-06-19 10:41:15'
+laravel_dependency_versions: {  }
+package_type: npm-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.275Z
-updated_at: 2023-04-06T20:57:47.391Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

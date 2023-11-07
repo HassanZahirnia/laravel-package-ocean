@@ -1,17 +1,19 @@
 id: 133
-name: "IDE Helper Generator"
-description: "Complete PHPDocs, directly from the source."
-category_id: 4
-github: "https://github.com/barryvdh/laravel-ide-helper"
-author: "barryvdh"
-composer: "barryvdh/laravel-ide-helper"
-npm: 
+name: 'IDE Helper Generator'
+description: 'Complete PHPDocs, directly from the source.'
+category_id: '4'
+github: 'https://github.com/barryvdh/laravel-ide-helper'
+author: barryvdh
+composer: barryvdh/laravel-ide-helper
+npm: null
 stars: 13406
-keywords: ["autocompletion"]
-first_release_at: "2013-03-10T09:39:50+00:00"
-latest_release_at: "2023-02-04T13:56:40+00:00"
-laravel_dependency_versions: ["^8 || ^9 || ^10"]
-package_type: "laravel-package"
+keywords:
+    - autocompletion
+first_release_at: '2013-03-10 09:39:50'
+latest_release_at: '2023-02-04 13:56:40'
+laravel_dependency_versions:
+    - '^8 || ^9 || ^10'
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.224Z
-updated_at: 2023-04-06T20:57:22.947Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

@@ -1,17 +1,17 @@
 id: 160
-name: "Fleet"
-description: "Run multiple Laravel Sail websites locally with custom domain names and HTTPS."
-category_id: 5
-github: "https://github.com/aschmelyun/fleet"
-author: "aschmelyun"
-composer: "aschmelyun/fleet"
-npm: 
+name: Fleet
+description: 'Run multiple Laravel Sail websites locally with custom domain names and HTTPS.'
+category_id: '5'
+github: 'https://github.com/aschmelyun/fleet'
+author: aschmelyun
+composer: aschmelyun/fleet
+npm: null
 stars: 267
-keywords: []
-first_release_at: "2023-01-15T19:56:49+00:00"
-latest_release_at: "2023-03-05T22:51:57+00:00"
-laravel_dependency_versions: []
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2023-01-15 19:56:49'
+latest_release_at: '2023-03-05 22:51:57'
+laravel_dependency_versions: {  }
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.336Z
-updated_at: 2023-04-06T20:58:10.164Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

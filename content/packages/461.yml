@@ -1,17 +1,18 @@
 id: 461
-name: "Laravel Timezones"
-description: "Store UTC dates in the database and work with custom timezones."
-category_id: 18
-github: "https://github.com/whitecube/laravel-timezones"
-author: "whitecube"
-composer: "whitecube/laravel-timezones"
-npm: 
+name: 'Laravel Timezones'
+description: 'Store UTC dates in the database and work with custom timezones.'
+category_id: '18'
+github: 'https://github.com/whitecube/laravel-timezones'
+author: whitecube
+composer: whitecube/laravel-timezones
+npm: null
 stars: 68
-keywords: []
-first_release_at: "2022-12-13T14:51:37+00:00"
-latest_release_at: "2023-04-28T15:09:29+00:00"
-laravel_dependency_versions: ["^9||^10"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2022-12-13 14:51:37'
+latest_release_at: '2023-04-28 15:09:29'
+laravel_dependency_versions:
+    - ^9||^10
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-06-15T10:52:30.285Z
-updated_at: 2023-06-15T10:52:30.285Z
+created_at: 2023-06-15T10:52:30+00:00
+updated_at: 2023-11-07T12:18:57+00:00

@@ -1,17 +1,18 @@
 id: 336
-name: "Laravel Test Assertions"
-description: "A set of helpful assertions."
-category_id: 9
-github: "https://github.com/jasonmccreary/laravel-test-assertions"
-author: "jasonmccreary"
-composer: "jasonmccreary/laravel-test-assertions"
-npm: 
+name: 'Laravel Test Assertions'
+description: 'A set of helpful assertions.'
+category_id: '9'
+github: 'https://github.com/jasonmccreary/laravel-test-assertions'
+author: jasonmccreary
+composer: jasonmccreary/laravel-test-assertions
+npm: null
 stars: 304
-keywords: []
-first_release_at: "2019-06-25T15:25:34+00:00"
-latest_release_at: "2023-03-15T16:29:35+00:00"
-laravel_dependency_versions: ["^9.0||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2019-06-25 15:25:34'
+latest_release_at: '2023-03-15 16:29:35'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-13T11:06:27.137Z
-updated_at: 2023-04-13T11:06:27.137Z
+created_at: 2023-04-13T11:06:27+00:00
+updated_at: 2023-11-07T12:18:56+00:00

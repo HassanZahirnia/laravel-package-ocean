@@ -1,17 +1,17 @@
 id: 308
-name: "Laravel Typescript Transformer"
-description: "Transform PHP types to Typescript."
-category_id: 18
-github: "https://github.com/spatie/laravel-typescript-transformer"
-author: "spatie"
-composer: "spatie/typescript-transformer"
-npm: 
+name: 'Laravel Typescript Transformer'
+description: 'Transform PHP types to Typescript.'
+category_id: '18'
+github: 'https://github.com/spatie/laravel-typescript-transformer'
+author: spatie
+composer: spatie/typescript-transformer
+npm: null
 stars: 168
-keywords: []
-first_release_at: "2020-09-01T15:02:56+00:00"
-latest_release_at: "2023-02-01T13:01:24+00:00"
-laravel_dependency_versions: []
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2020-09-01 15:02:56'
+latest_release_at: '2023-02-01 13:01:24'
+laravel_dependency_versions: {  }
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.958Z
-updated_at: 2023-04-07T00:22:20.914Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

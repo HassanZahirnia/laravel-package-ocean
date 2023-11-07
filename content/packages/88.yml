@@ -1,17 +1,18 @@
 id: 88
-name: "Explorer"
-description: "Next-gen Elasticsearch driver for Laravel Scout."
-category_id: 3
-github: "https://github.com/Jeroen-G/Explorer"
-author: "jeroen-g"
-composer: "jeroen-g/explorer"
-npm: 
+name: Explorer
+description: 'Next-gen Elasticsearch driver for Laravel Scout.'
+category_id: '3'
+github: 'https://github.com/Jeroen-G/Explorer'
+author: jeroen-g
+composer: jeroen-g/explorer
+npm: null
 stars: 325
-keywords: []
-first_release_at: "2020-10-23T22:54:57+00:00"
-latest_release_at: "2023-03-19T14:29:15+00:00"
-laravel_dependency_versions: ["^9.0||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2020-10-23 22:54:57'
+latest_release_at: '2023-03-19 14:29:15'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.043Z
-updated_at: 2023-04-06T20:56:14.425Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

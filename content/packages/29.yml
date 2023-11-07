@@ -1,17 +1,19 @@
 id: 29
-name: "Banhammer"
-description: "A simple way to ban any Model by ID and by IP. It also allows blocking requests by IP addresses."
-category_id: 2
-github: "https://github.com/mchev/banhammer"
-author: "mchev"
-composer: "mchev/banhammer"
-npm: 
+name: Banhammer
+description: 'A simple way to ban any Model by ID and by IP. It also allows blocking requests by IP addresses.'
+category_id: '2'
+github: 'https://github.com/mchev/banhammer'
+author: mchev
+composer: mchev/banhammer
+npm: null
 stars: 271
-keywords: []
-first_release_at: "2023-02-11T20:02:42+00:00"
-latest_release_at: "2023-03-02T17:28:01+00:00"
-laravel_dependency_versions: ["9", "10"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2023-02-11 20:02:42'
+latest_release_at: '2023-03-02 17:28:01'
+laravel_dependency_versions:
+    - '9'
+    - '10'
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:47.820Z
-updated_at: 2023-04-06T20:54:32.775Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

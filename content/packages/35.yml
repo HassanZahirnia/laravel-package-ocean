@@ -1,17 +1,21 @@
 id: 35
-name: "Laratrust"
-description: "An easy and flexible way to add roles, permissions and teams authorization."
-category_id: 2
-github: "https://github.com/santigarcor/laratrust"
-author: "santigarcor"
-composer: "santigarcor/laratrust"
-npm: 
+name: Laratrust
+description: 'An easy and flexible way to add roles, permissions and teams authorization.'
+category_id: '2'
+github: 'https://github.com/santigarcor/laratrust'
+author: santigarcor
+composer: santigarcor/laratrust
+npm: null
 stars: 2071
-keywords: ["gate", "policies", "guard"]
-first_release_at: "2016-05-26T13:22:20+00:00"
-latest_release_at: "2023-03-29T15:59:45+00:00"
-laravel_dependency_versions: ["^10.0"]
-package_type: "laravel-package"
+keywords:
+    - gate
+    - policies
+    - guard
+first_release_at: '2016-05-26 13:22:20'
+latest_release_at: '2023-03-29 15:59:45'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:47.842Z
-updated_at: 2023-04-06T20:54:43.667Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

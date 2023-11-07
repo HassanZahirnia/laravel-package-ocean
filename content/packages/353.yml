@@ -1,17 +1,18 @@
 id: 353
-name: "Laravel Str Acronym"
-description: "A macro for generating acronyms from strings using the Str helper and supports the Stringable class."
-category_id: 18
-github: "https://github.com/koenhendriks/laravel-str-acronym"
-author: "koenhendriks"
-composer: "koenhendriks/laravel-str-acronym"
-npm: 
+name: 'Laravel Str Acronym'
+description: 'A macro for generating acronyms from strings using the Str helper and supports the Stringable class.'
+category_id: '18'
+github: 'https://github.com/koenhendriks/laravel-str-acronym'
+author: koenhendriks
+composer: koenhendriks/laravel-str-acronym
+npm: null
 stars: 34
-keywords: []
-first_release_at: "2023-03-30T13:05:47+00:00"
-latest_release_at: "2023-04-09T18:38:20+00:00"
-laravel_dependency_versions: ["^10.5"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2023-03-30 13:05:47'
+latest_release_at: '2023-04-09 18:38:20'
+laravel_dependency_versions:
+    - ^10.5
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-05-22T11:13:26.881Z
-updated_at: 2023-05-22T11:13:26.881Z
+created_at: 2023-05-22T11:13:26+00:00
+updated_at: 2023-11-07T12:18:57+00:00

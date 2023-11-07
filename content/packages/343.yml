@@ -1,17 +1,18 @@
 id: 343
-name: "Migrator"
-description: "A GUI migration manager which you can create, manage and delete your migration."
-category_id: 18
-github: "https://github.com/rezaamini-ir/migrator"
-author: "rezaamini-ir"
-composer: "rezaamini-ir/migrator"
-npm: 
+name: Migrator
+description: 'A GUI migration manager which you can create, manage and delete your migration.'
+category_id: '18'
+github: 'https://github.com/rezaamini-ir/migrator'
+author: rezaamini-ir
+composer: rezaamini-ir/migrator
+npm: null
 stars: 496
-keywords: []
-first_release_at: "2021-09-13T12:48:12+00:00"
-latest_release_at: "2023-04-05T14:03:00+00:00"
-laravel_dependency_versions: ["^6.0||^7.0||^8.0||^9.0||^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2021-09-13 12:48:12'
+latest_release_at: '2023-04-05 14:03:00'
+laravel_dependency_versions:
+    - ^6.0||^7.0||^8.0||^9.0||^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-13T11:54:16.541Z
-updated_at: 2023-04-13T11:54:16.541Z
+created_at: 2023-04-13T11:54:16+00:00
+updated_at: 2023-11-07T12:18:57+00:00

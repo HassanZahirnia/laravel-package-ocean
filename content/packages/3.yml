@@ -1,17 +1,20 @@
 id: 3
-name: "L5 Swagger"
-description: "OpenApi or Swagger Specification for your project made easy."
-category_id: 7
-github: "https://github.com/DarkaOnLine/L5-Swagger"
-author: "darkaonline"
-composer: "darkaonline/l5-swagger"
-npm: 
+name: 'L5 Swagger'
+description: 'OpenApi or Swagger Specification for your project made easy.'
+category_id: '7'
+github: 'https://github.com/DarkaOnLine/L5-Swagger'
+author: darkaonline
+composer: darkaonline/l5-swagger
+npm: null
 stars: 2343
-keywords: ["swagger-php", "swagger-ui"]
-first_release_at: "2015-03-16T14:04:03+00:00"
-latest_release_at: "2023-02-15T07:29:49+00:00"
-laravel_dependency_versions: ["^10.0 || ^9.0 || >=8.40.0 || ^7.0"]
-package_type: "laravel-package"
+keywords:
+    - swagger-php
+    - swagger-ui
+first_release_at: '2015-03-16 14:04:03'
+latest_release_at: '2023-02-15 07:29:49'
+laravel_dependency_versions:
+    - '^10.0 || ^9.0 || >=8.40.0 || ^7.0'
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:47.702Z
-updated_at: 2023-04-06T20:53:54.841Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

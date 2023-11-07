@@ -1,17 +1,18 @@
 id: 401
-name: "Laravel Eloquent UUID"
-description: "A simple drop-in solution for providing UUID support for the IDs of your Eloquent models."
-category_id: 3
-github: "https://github.com/goldspecdigital/laravel-eloquent-uuid"
-author: "goldspecdigital"
-composer: "goldspecdigital/laravel-eloquent-uuid"
-npm: 
+name: 'Laravel Eloquent UUID'
+description: 'A simple drop-in solution for providing UUID support for the IDs of your Eloquent models.'
+category_id: '3'
+github: 'https://github.com/goldspecdigital/laravel-eloquent-uuid'
+author: goldspecdigital
+composer: goldspecdigital/laravel-eloquent-uuid
+npm: null
 stars: 516
-keywords: []
-first_release_at: "2019-06-08T17:06:09+00:00"
-latest_release_at: "2023-02-23T18:49:29+00:00"
-laravel_dependency_versions: ["^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2019-06-08 17:06:09'
+latest_release_at: '2023-02-23 18:49:29'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-06-07T11:23:26.466Z
-updated_at: 2023-06-07T11:23:26.466Z
+created_at: 2023-06-07T11:23:26+00:00
+updated_at: 2023-11-07T12:18:57+00:00

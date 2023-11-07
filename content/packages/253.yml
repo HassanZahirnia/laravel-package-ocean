@@ -1,17 +1,19 @@
 id: 253
-name: "Momentum Paginator"
-description: "A framework-agnostic headless wrapper around Pagination meta data."
-category_id: 18
-github: "https://github.com/lepikhinb/momentum-paginator"
-author: "based"
-composer: 
-npm: "momentum-paginator"
+name: 'Momentum Paginator'
+description: 'A framework-agnostic headless wrapper around Pagination meta data.'
+category_id: '18'
+github: 'https://github.com/lepikhinb/momentum-paginator'
+author: based
+composer: null
+npm: momentum-paginator
 stars: 97
-keywords: ["boris", "lepikhinb"]
-first_release_at: "2022-06-09T04:23:32.662Z"
-latest_release_at: "2023-01-03T11:05:52.140Z"
-laravel_dependency_versions: []
-package_type: "npm-package"
+keywords:
+    - boris
+    - lepikhinb
+first_release_at: '2022-06-09 04:23:32'
+latest_release_at: '2023-01-03 11:05:52'
+laravel_dependency_versions: {  }
+package_type: npm-package
 paid_integration: false
-created_at: 2023-04-09T13:58:48.722Z
-updated_at: 2023-04-06T21:00:46.086Z
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

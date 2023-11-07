@@ -1,17 +1,18 @@
 id: 47
-name: "Blueprint"
-description: "A code generation tool for developers."
-category_id: 4
-github: "https://github.com/laravel-shift/blueprint"
-author: "laravel-shift"
-composer: "laravel-shift/blueprint"
-npm: 
+name: Blueprint
+description: 'A code generation tool for developers.'
+category_id: '4'
+github: 'https://github.com/laravel-shift/blueprint'
+author: laravel-shift
+composer: laravel-shift/blueprint
+npm: null
 stars: 2533
-keywords: []
-first_release_at: "2019-11-06T06:49:36+00:00"
-latest_release_at: "2023-03-02T14:27:41+00:00"
-laravel_dependency_versions: ["^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2019-11-06 06:49:36'
+latest_release_at: '2023-03-02 14:27:41'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
 paid_integration: false
-created_at: 2023-04-09T13:58:47.887Z
-updated_at: 2023-04-06T20:55:05.463Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:56+00:00

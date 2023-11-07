@@ -1,17 +1,18 @@
 id: 5
-name: "Laravel DigitalOcean"
-description: "A DigitalOcean API bridge."
-category_id: 7
-github: "https://github.com/GrahamCampbell/Laravel-DigitalOcean"
-author: "graham-campbell"
-composer: "graham-campbell/digitalocean"
-npm: 
+name: 'Laravel DigitalOcean'
+description: 'A DigitalOcean API bridge.'
+category_id: '7'
+github: 'https://github.com/GrahamCampbell/Laravel-DigitalOcean'
+author: graham-campbell
+composer: graham-campbell/digitalocean
+npm: null
 stars: 441
-keywords: []
-first_release_at: "2014-07-24T19:28:26+00:00"
-latest_release_at: "2023-03-07T01:22:23+00:00"
-laravel_dependency_versions: ["^8.75 || ^9.0 || ^10.0"]
-package_type: "laravel-package"
+keywords: {  }
+first_release_at: '2014-07-24 19:28:26'
+latest_release_at: '2023-03-07 01:22:23'
+laravel_dependency_versions:
+    - '^8.75 || ^9.0 || ^10.0'
+package_type: laravel-package
 paid_integration: true
-created_at: 2023-04-09T13:58:47.716Z
-updated_at: 2023-04-07T00:21:12.636Z
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00
