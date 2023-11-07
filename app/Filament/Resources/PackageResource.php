@@ -117,10 +117,15 @@ class PackageResource extends Resource
                     ->minLength(2)
                     ->unique(ignoreRecord: true)
                     ->rules([
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
                             // Must be a valid composer package name: /^[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*$/i
                             if (! preg_match('/^[a-z0-9]+(?:-[a-z0-9]+)*\/[a-z0-9]+(?:-[a-z0-9]+)*$/i', $value)) {
                                 $fail('The :attribute must be a valid composer package name.');
+                            }
+
+                            // If package_type is "npm-package", then composer must be null
+                            if ($get('package_type') === 'npm-package') {
+                                $fail('The :attribute must be null if package_type is "npm-package".');
                             }
                         },
                     ]),
@@ -131,10 +136,15 @@ class PackageResource extends Resource
                     ->required(fn (Get $get): bool => empty($get('composer')))
                     ->unique(ignoreRecord: true)
                     ->rules([
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
                             // Must be a valid npm package name: /^(?!-)(?!.*--)[a-zA-Z0-9_.-]+$/
                             if (! preg_match('/^(?!-)(?!.*--)[a-zA-Z0-9_.-]+$/', $value)) {
                                 $fail('The :attribute must be a valid npm package name.');
+                            }
+
+                            // If package_type is "php-package" or "laravel-package", then npm must be null
+                            if (in_array($get('package_type'), ['php-package', 'laravel-package'])) {
+                                $fail('The :attribute must be null if package_type is "php-package" or "laravel-package".');
                             }
                         },
                     ]),
@@ -147,10 +157,17 @@ class PackageResource extends Resource
                     ->nestedRecursiveRules([
                         'string',
                         'distinct',
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
                             // Must be alphanumeric and single spaces and the following characters: - / .
                             if (! preg_match('/^(?!.* {2})[a-zA-Z0-9]+([ -\/\.]?[a-zA-Z0-9]+)*$/', $value)) {
                                 $fail('The :attribute must contain only letters, numbers, single spaces, and the following characters: - / .');
+                            }
+
+                            // Keywords must not be used in name and description
+                            $name = $get('name');
+                            $description = $get('description');
+                            if (preg_match("/\b{$value}\b/i", $name) || preg_match("/\b{$value}\b/i", $description)) {
+                                $fail('The :attribute must not be used in name and description.');
                             }
                         },
                     ]),
@@ -158,9 +175,46 @@ class PackageResource extends Resource
                 Forms\Components\DateTimePicker::make('latest_release_at'),
                 Forms\Components\TagsInput::make('laravel_dependency_versions')
                     ->required()
-                    ->columnSpanFull(),
-                Forms\Components\TextInput::make('package_type')
-                    ->required(),
+                    ->columnSpanFull()
+                    ->nestedRecursiveRules([
+                        'string',
+                        'distinct',
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
+                            // Must not be a wildcard (*)
+                            if (preg_match('/\*/', $value)) {
+                                $fail('The :attribute must not be a wildcard (*).');
+                            }
+
+                            // Must be a valid laravel version
+                            if (! isValidVersionConstraint($value)) {
+                                $fail('The :attribute constraint is not valid');
+                            }
+                        },
+                    ]),
+                Forms\Components\Select::make('package_type')
+                    ->required()
+                    ->options([
+                        'laravel-package' => 'Laravel Package',
+                        'php-package' => 'PHP Package',
+                        'npm-package' => 'NPM Package',
+                        'mac-app' => 'Mac App',
+                        'windows-app' => 'Windows App',
+                        'all-operating-systems-app' => 'All Operating Systems App',
+                        'ide-extension' => 'IDE Extension',
+                    ])
+                    ->rules([
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
+                            // If npm is not null, then package_type must be "npm-package"
+                            if (! empty($get('npm')) && $value !== 'npm-package') {
+                                $fail('The :attribute must be "npm-package" if npm is not null.');
+                            }
+
+                            // If composer is not null, then package_type must be "php-package" or "laravel-package"
+                            if (! empty($get('composer')) && ! in_array($value, ['php-package', 'laravel-package'])) {
+                                $fail('The :attribute must be "php-package" or "laravel-package" if composer is not null.');
+                            }
+                        },
+                    ]),
                 Forms\Components\Toggle::make('paid_integration')
                     ->required(),
             ]);
