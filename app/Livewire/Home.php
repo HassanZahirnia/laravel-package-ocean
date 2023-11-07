@@ -55,7 +55,9 @@ class Home extends Component
 
         return Package::query()
             ->when($this->search, function (Builder $query, string $search) {
-                $query->where('name', 'LIKE', "%{$search}%");
+                $query
+                    ->where('name', 'LIKE', "%{$search}%")
+                    ->orWhere('keywords', 'LIKE', "%{$search}%");
             })
             ->when($this->showOfficialPackages, function (Builder $query) {
                 $query->where('author', 'laravel');

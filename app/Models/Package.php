@@ -26,6 +26,8 @@ class Package extends Model implements Orbit
         'is_official_laravel_package',
     ];
 
+    protected $guarded = [];
+
     public function schema(Blueprint $table): void
     {
         $table->id();
