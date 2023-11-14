@@ -110,21 +110,25 @@ class Package extends Model implements Orbit
     public function maximumCompatibleLaravelVersion(): string
     {
         $versionParser = new VersionParser();
-        $highestVersion = null;
+        $activeVersions = $this->getLaravelActiveVersions();
+
+        // Sort the active versions in descending order to start from the highest
+        rsort($activeVersions);
 
         foreach ($this->laravel_dependency_versions as $versionConstraint) {
             $constraints = $versionParser->parseConstraints($versionConstraint);
 
-            foreach ($constraints->getConstraints() as $constraint) {
-                $version = $this->formatVersion($constraint->getVersion());
+            foreach ($activeVersions as $activeVersion) {
+                $formattedVersion = $this->formatVersion($activeVersion);
 
-                if (is_null($highestVersion) || Semver::satisfies($version, '>'.$highestVersion)) {
-                    $highestVersion = $version;
+                // Check if the active version satisfies the constraint
+                if (Semver::satisfies($formattedVersion, $versionConstraint)) {
+                    return $formattedVersion;
                 }
             }
         }
 
-        return $highestVersion;
+        return null; // Or handle cases when no version satisfies the constraint
     }
 
     private function formatVersion($version)
