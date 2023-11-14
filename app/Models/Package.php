@@ -100,7 +100,7 @@ class Package extends Model implements Orbit
     public function maximumCompatibleLaravelVersion(): string
     {
         $versionParser = new VersionParser();
-        $activeVersions = cache()->get('active_laravel_versions');
+        $activeVersions = fetchActiveLaravelVersions();
 
         // Sort the active versions in descending order to start from the highest
         rsort($activeVersions);
