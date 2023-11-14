@@ -12,7 +12,7 @@ class FetchLaravelVersions extends Command
 
     public function handle()
     {
-        fetchActiveLaravelVersions();
-        $this->info('Laravel versions updated successfully!');
+        $activeVersions = fetchActiveLaravelVersions();
+        $this->info('Laravel versions updated to '.implode(', ', $activeVersions));
     }
 }
