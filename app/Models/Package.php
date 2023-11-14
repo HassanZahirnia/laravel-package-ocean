@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Composer\Semver\Semver;
+use Composer\Semver\VersionParser;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -74,7 +76,7 @@ class Package extends Model implements Orbit
     public function getLaravelActiveVersions(): array
     {
         return collect([
-            '10.26.2',
+            '10.32.0',
         ])
             ->sort()
             ->toArray();
@@ -87,12 +89,56 @@ class Package extends Model implements Orbit
 
     public function minimumCompatibleLaravelVersion(): string
     {
-        return '10.0';
+        $versionParser = new VersionParser();
+        $lowestVersion = null;
+
+        foreach ($this->laravel_dependency_versions as $versionConstraint) {
+            $constraints = $versionParser->parseConstraints($versionConstraint);
+
+            foreach ($constraints->getConstraints() as $constraint) {
+                $version = $this->formatVersion($constraint->getVersion());
+
+                if (is_null($lowestVersion) || Semver::satisfies($version, '<'.$lowestVersion)) {
+                    $lowestVersion = $version;
+                }
+            }
+        }
+
+        return $lowestVersion;
     }
 
     public function maximumCompatibleLaravelVersion(): string
     {
-        return '10.23';
+        $versionParser = new VersionParser();
+        $highestVersion = null;
+
+        foreach ($this->laravel_dependency_versions as $versionConstraint) {
+            $constraints = $versionParser->parseConstraints($versionConstraint);
+
+            foreach ($constraints->getConstraints() as $constraint) {
+                $version = $this->formatVersion($constraint->getVersion());
+
+                if (is_null($highestVersion) || Semver::satisfies($version, '>'.$highestVersion)) {
+                    $highestVersion = $version;
+                }
+            }
+        }
+
+        return $highestVersion;
+    }
+
+    private function formatVersion($version)
+    {
+        // Remove -dev suffix
+        $version = str_replace('-dev', '', $version);
+
+        // Keep only the first three parts of the version
+        $parts = explode('.', $version);
+        if (count($parts) > 3) {
+            $version = implode('.', array_slice($parts, 0, 3));
+        }
+
+        return $version;
     }
 
     public function getOrbitDriver(): string
