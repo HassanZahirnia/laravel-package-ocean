@@ -72,16 +72,6 @@ class Package extends Model implements Orbit
         return $formatter->format($number);
     }
 
-    // Laravel active versions
-    public function getLaravelActiveVersions(): array
-    {
-        return collect([
-            '10.32.0',
-        ])
-            ->sort()
-            ->toArray();
-    }
-
     public function isCompatibleWithLaravelActiveVersions(): bool
     {
         return true;
@@ -110,7 +100,7 @@ class Package extends Model implements Orbit
     public function maximumCompatibleLaravelVersion(): string
     {
         $versionParser = new VersionParser();
-        $activeVersions = $this->getLaravelActiveVersions();
+        $activeVersions = cache()->get('active_laravel_versions');
 
         // Sort the active versions in descending order to start from the highest
         rsort($activeVersions);
