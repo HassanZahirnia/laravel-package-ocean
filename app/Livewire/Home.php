@@ -157,16 +157,16 @@ class Home extends Component
 
     public function setShowOfficialPackages($value)
     {
+        $this->resetPage();
         $this->showOfficialPackages = $value;
     }
 
-    // Toggle showOfficialPackages
     public function toggleShowOfficialPackages()
     {
+        $this->resetPage();
         $this->showOfficialPackages = ! $this->showOfficialPackages;
     }
 
-    // Toggle showNewPackagesSinceLastVisit
     public function toggleShowNewPackagesSinceLastVisit()
     {
         $this->showNewPackagesSinceLastVisit = ! $this->showNewPackagesSinceLastVisit;
