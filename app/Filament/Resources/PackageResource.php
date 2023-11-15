@@ -93,6 +93,11 @@ class PackageResource extends Resource
                                 if (! preg_match('/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i', $value)) {
                                     $fail('The :attribute must be a valid Github URL.');
                                 }
+
+                                // Must be healthy Github repository
+                                if (! isGithubRepositoryHealthy(extractRepoFromGithubUrl($value))) {
+                                    $fail('The :attribute must be a healthy Github repository.');
+                                }
                             };
                         },
                     ]),
@@ -153,7 +158,7 @@ class PackageResource extends Resource
                     ->minValue(0)
                     ->numeric(),
                 Forms\Components\TagsInput::make('keywords')
-                    ->required()
+                    ->nullable()
                     ->nestedRecursiveRules([
                         'string',
                         'distinct',
@@ -174,7 +179,6 @@ class PackageResource extends Resource
                 Forms\Components\DateTimePicker::make('first_release_at'),
                 Forms\Components\DateTimePicker::make('latest_release_at'),
                 Forms\Components\TagsInput::make('laravel_dependency_versions')
-                    ->required()
                     ->columnSpanFull()
                     ->nestedRecursiveRules([
                         'string',
