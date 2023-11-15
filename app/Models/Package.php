@@ -101,14 +101,12 @@ class Package extends Model implements Feedable, Orbit
 
     public function maximumCompatibleLaravelVersion(): string
     {
-        $versionParser = new VersionParser();
         $activeVersions = fetchActiveLaravelVersions();
 
         // Sort the active versions in descending order to start from the highest
         rsort($activeVersions);
 
         foreach ($this->laravel_dependency_versions as $versionConstraint) {
-            $constraints = $versionParser->parseConstraints($versionConstraint);
 
             foreach ($activeVersions as $activeVersion) {
                 $formattedVersion = $this->formatVersion($activeVersion);
