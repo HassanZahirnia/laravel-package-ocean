@@ -13,11 +13,13 @@
         "filament/filament": "^3.0-stable",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
+        "laravel/pail": "^1.0",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
         "ralphjsmit/laravel-seo": "^1.4",
-        "ryangjchandler/orbit": "2.x-dev"
+        "ryangjchandler/orbit": "2.x-dev",
+        "spatie/laravel-feed": "^4.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.9",

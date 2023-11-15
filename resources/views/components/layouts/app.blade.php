@@ -30,6 +30,9 @@
         {{-- SEO --}}
         {!! seo($SEOData ?? null) !!}
 
+        {{-- RSS --}}
+        @include('feed::links')
+
         {{-- Favicon --}}
         <meta
             name="msapplication-TileColor"

@@ -12,8 +12,10 @@ use NumberFormatter;
 use Orbit\Concerns\Orbital;
 use Orbit\Contracts\Orbit;
 use Orbit\Drivers\Yaml;
+use Spatie\Feed\Feedable;
+use Spatie\Feed\FeedItem;
 
-class Package extends Model implements Orbit
+class Package extends Model implements Feedable, Orbit
 {
     use HasFactory;
     use Orbital;
@@ -155,5 +157,21 @@ class Package extends Model implements Orbit
 
         // Return null if no match is found
         return null;
+    }
+
+    public function toFeedItem(): FeedItem
+    {
+        return FeedItem::create()
+            ->id($this->id)
+            ->title($this->name)
+            ->summary($this->description)
+            ->updated($this->created_at)
+            ->link($this->github)
+            ->authorName($this->author);
+    }
+
+    public static function getFeedItems()
+    {
+        return Package::all();
     }
 }

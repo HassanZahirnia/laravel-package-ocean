@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "289bb41f1c55a701f6562efcbac6dfd6",
+    "content-hash": "0b95f4de81ab10b23a7bc979ea6f3f96",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -2341,6 +2341,83 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2023-11-01T13:52:17+00:00"
+        },
+        {
+            "name": "laravel/pail",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/pail.git",
+                "reference": "8e78f279fa91e525ec98e983b6aca951f9cc5a16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/pail/zipball/8e78f279fa91e525ec98e983b6aca951f9cc5a16",
+                "reference": "8e78f279fa91e525ec98e983b6aca951f9cc5a16",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "ext-pcntl": "*",
+                "illuminate/console": "^10.24",
+                "illuminate/contracts": "^10.24",
+                "illuminate/log": "^10.24",
+                "illuminate/process": "^10.24",
+                "illuminate/support": "^10.24",
+                "nunomaduro/termwind": "^1.15",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.13",
+                "orchestra/testbench": "^8.12",
+                "pestphp/pest": "^2.20",
+                "pestphp/pest-plugin-type-coverage": "^2.3",
+                "phpstan/phpstan": "^1.10",
+                "symfony/var-dumper": "^6.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Pail\\PailServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Pail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "enunomaduro@gmail.com"
+                }
+            ],
+            "description": "Easily delve into your Laravel application's log files directly from the command line.",
+            "homepage": "https://github.com/laravel/pail",
+            "keywords": [
+                "laravel",
+                "logs",
+                "php",
+                "tail"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/pail/issues",
+                "source": "https://github.com/laravel/pail"
+            },
+            "time": "2023-11-07T13:09:49+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -5070,6 +5147,98 @@
                 }
             ],
             "time": "2022-07-05T09:31:00+00:00"
+        },
+        {
+            "name": "spatie/laravel-feed",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-feed.git",
+                "reference": "1cf06a43b4ee0fdeb919983a76de68467ccdb844"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-feed/zipball/1cf06a43b4ee0fdeb919983a76de68467ccdb844",
+                "reference": "1cf06a43b4ee0fdeb919983a76de68467ccdb844",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^10.0",
+                "illuminate/http": "^10.0",
+                "illuminate/support": "^10.0",
+                "php": "^8.0",
+                "spatie/laravel-package-tools": "^1.15"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "spatie/pest-plugin-snapshots": "^2.0",
+                "spatie/test-time": "^1.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Feed\\FeedServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Feed\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jolita Grazyte",
+                    "email": "jolita@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Patrick Organ",
+                    "homepage": "https://github.com/patinthehat",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Generate rss feeds",
+            "homepage": "https://github.com/spatie/laravel-feed",
+            "keywords": [
+                "laravel",
+                "laravel-feed",
+                "rss",
+                "spatie"
+            ],
+            "support": {
+                "source": "https://github.com/spatie/laravel-feed/tree/4.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://spatie.be/open-source/support-us",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-08-07T14:46:53+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
