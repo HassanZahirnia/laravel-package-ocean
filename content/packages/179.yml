@@ -1,0 +1,18 @@
+id: 179
+name: 'Laravel Snappy'
+description: 'Snappy PDF/Image Wrapper.'
+category_id: '1'
+github: 'https://github.com/barryvdh/laravel-snappy'
+author: barryvdh
+composer: barryvdh/laravel-snappy
+npm: null
+stars: 2455
+keywords: {  }
+first_release_at: '2013-12-18 13:47:19'
+latest_release_at: '2023-02-05 15:10:01'
+laravel_dependency_versions:
+    - ^9||^10
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

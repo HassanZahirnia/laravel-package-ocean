@@ -1,0 +1,20 @@
+id: 254
+name: 'Momentum Preflight'
+description: 'Realtime backend-driven request validation for Inertia apps.'
+category_id: '18'
+github: 'https://github.com/lepikhinb/momentum-preflight'
+author: based
+composer: based/momentum-preflight
+npm: null
+stars: 69
+keywords:
+    - boris
+    - lepikhinb
+first_release_at: '2022-10-18 09:02:30'
+latest_release_at: '2022-10-15 19:31:58'
+laravel_dependency_versions:
+    - ^8.24||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

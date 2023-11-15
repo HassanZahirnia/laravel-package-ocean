@@ -1,0 +1,18 @@
+id: 17
+name: 'Laravel Auth0'
+description: 'SDK for Auth0 Authentication and Management APIs.'
+category_id: '2'
+github: 'https://github.com/auth0/laravel-auth0'
+author: auth0
+composer: auth0/login
+npm: null
+stars: 224
+keywords: {  }
+first_release_at: '2014-04-22 01:48:17'
+latest_release_at: '2023-04-04 20:58:39'
+laravel_dependency_versions:
+    - '^9 || ^10'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

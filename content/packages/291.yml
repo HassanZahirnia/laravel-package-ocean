@@ -1,0 +1,17 @@
+id: 291
+name: Crypto
+description: 'Encrypt and decrypt data using private/public keys.'
+category_id: '18'
+github: 'https://github.com/spatie/crypto'
+author: spatie
+composer: spatie/crypto
+npm: null
+stars: 417
+keywords: {  }
+first_release_at: '2020-11-06 22:19:27'
+latest_release_at: '2023-01-25 09:26:10'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

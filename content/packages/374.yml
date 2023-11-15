@@ -1,0 +1,18 @@
+id: 374
+name: Testbench
+description: 'Helps you write tests for your Laravel package.'
+category_id: '9'
+github: 'https://github.com/orchestral/testbench'
+author: orchestra
+composer: orchestra/testbench
+npm: null
+stars: 2000
+keywords: {  }
+first_release_at: '2013-06-08 15:05:34'
+latest_release_at: '2023-05-30 08:19:18'
+laravel_dependency_versions:
+    - '>=10.23.1 <10.26.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-06T20:17:21+00:00
+updated_at: 2023-11-07T12:18:57+00:00

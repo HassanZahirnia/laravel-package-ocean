@@ -1,0 +1,18 @@
+id: 492
+name: Sheets
+description: 'Store & retrieve your static content in plain text files.'
+category_id: '1'
+github: 'https://github.com/spatie/sheets'
+author: spatie
+composer: spatie/sheets
+npm: null
+stars: 236
+keywords: {  }
+first_release_at: '2018-05-08 08:29:07'
+latest_release_at: '2023-02-16 07:29:52'
+laravel_dependency_versions:
+    - ^8.71||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-09-17T12:19:50+00:00
+updated_at: 2023-11-07T12:18:57+00:00

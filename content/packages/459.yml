@@ -1,0 +1,18 @@
+id: 459
+name: Money
+description: 'A money and currency library for PHP.'
+category_id: '18'
+github: 'https://github.com/brick/money'
+author: brick
+composer: brick/money
+npm: null
+stars: 1424
+keywords:
+    - financial
+first_release_at: '2015-05-31 18:04:20'
+latest_release_at: '2023-01-15 23:59:01'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-06-15T10:45:50+00:00
+updated_at: 2023-11-07T12:18:57+00:00

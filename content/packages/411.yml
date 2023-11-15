@@ -1,0 +1,18 @@
+id: 411
+name: 'Laravel Multilingual Routes'
+description: 'Registers multilingual routes for your application.'
+category_id: '6'
+github: 'https://github.com/chinleung/laravel-multilingual-routes'
+author: chinleung
+composer: chinleung/laravel-multilingual-routes
+npm: null
+stars: 384
+keywords: {  }
+first_release_at: '2019-07-30 12:10:37'
+latest_release_at: '2023-02-20 16:30:34'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-07T11:57:55+00:00
+updated_at: 2023-11-07T12:18:57+00:00

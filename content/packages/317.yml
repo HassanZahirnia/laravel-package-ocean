@@ -1,0 +1,18 @@
+id: 317
+name: 'Has Parameters'
+description: 'A trait that allows you to pass arguments to Laravel middleware in a more PHP-ish way.'
+category_id: '18'
+github: 'https://github.com/timacdonald/has-parameters'
+author: timacdonald
+composer: timacdonald/has-parameters
+npm: null
+stars: 210
+keywords: {  }
+first_release_at: '2020-04-11 09:10:13'
+latest_release_at: '2023-02-17 04:00:11'
+laravel_dependency_versions:
+    - '^9.0 || ^10.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

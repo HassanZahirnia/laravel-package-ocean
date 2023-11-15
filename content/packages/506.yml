@@ -1,0 +1,18 @@
+id: 506
+name: 'Browser Sessions'
+description: 'Enable users to manage and monitor their active browser sessions.'
+category_id: '11'
+github: 'https://github.com/cjmellor/browser-sessions'
+author: cjmellor
+composer: cjmellor/browser-sessions
+npm: null
+stars: 155
+keywords: {  }
+first_release_at: '2023-09-12 23:48:15'
+latest_release_at: '2023-09-20 00:20:20'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-09-25T09:18:38+00:00
+updated_at: 2023-11-07T12:18:57+00:00

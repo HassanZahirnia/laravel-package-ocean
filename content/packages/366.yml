@@ -1,0 +1,17 @@
+id: 366
+name: Strictus
+description: 'Adds strict typing on inline variables using a couple of different patterns.'
+category_id: '18'
+github: 'https://github.com/php-strictus/strictus'
+author: strictus
+composer: strictus/strictus
+npm: null
+stars: 151
+keywords: {  }
+first_release_at: '2023-02-05 20:22:24'
+latest_release_at: '2023-02-05 20:18:08'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-06-06T13:22:45+00:00
+updated_at: 2023-11-07T12:18:57+00:00

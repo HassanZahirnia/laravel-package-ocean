@@ -1,0 +1,27 @@
+id: 225
+name: Pest
+description: 'An elegant PHP testing Framework with a focus on simplicity.'
+category_id: '9'
+github: 'https://github.com/pestphp/pest'
+author: pestphp
+composer: pestphp/pest
+npm: null
+stars: 7783
+keywords:
+    - expectations
+    - assert
+    - phpunit
+    - mocking
+    - optimize
+    - coverage
+    - 'higher order testing'
+    - architecture
+    - dataset
+first_release_at: '2020-05-19 23:10:29'
+latest_release_at: '2023-04-02 20:12:31'
+laravel_dependency_versions:
+    - '>=9'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

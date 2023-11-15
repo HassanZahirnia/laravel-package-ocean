@@ -1,0 +1,18 @@
+id: 345
+name: Telegraph
+description: 'Fluently interacting with Telegram Bots.'
+category_id: '7'
+github: 'https://github.com/defstudio/telegraph'
+author: defstudio
+composer: defstudio/telegraph
+npm: null
+stars: 526
+keywords: {  }
+first_release_at: '2021-11-21 18:52:06'
+latest_release_at: '2023-04-02 20:33:57'
+laravel_dependency_versions:
+    - '^8.37 || ^9.0 || ^10.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-16T21:48:28+00:00
+updated_at: 2023-11-07T12:18:57+00:00

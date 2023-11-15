@@ -1,0 +1,18 @@
+id: 476
+name: 'Laravel ChatGPT Mock API Generator'
+description: 'Generate smart API mocks using ChatGPT prompts.'
+category_id: '18'
+github: 'https://github.com/yllw-digital/laravel-chatgpt-mock-api'
+author: yllw-digital
+composer: yllw-digital/laravel-chatgpt-mock-api
+npm: null
+stars: 120
+keywords: {  }
+first_release_at: '2023-06-21 22:36:30'
+latest_release_at: '2023-06-21 22:35:11'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-07-17T20:01:42+00:00
+updated_at: 2023-11-07T12:18:57+00:00

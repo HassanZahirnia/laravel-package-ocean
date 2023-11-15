@@ -1,0 +1,18 @@
+id: 282
+name: 'Laravel Fast Refresh Database'
+description: 'Refresh your test databases faster during testing.'
+category_id: '18'
+github: 'https://github.com/PlannrCrm/laravel-fast-refresh-database'
+author: plannr
+composer: plannr/laravel-fast-refresh-database
+npm: null
+stars: 358
+keywords:
+    - migration
+first_release_at: '2022-12-23 13:09:52'
+latest_release_at: '2023-01-05 10:19:20'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

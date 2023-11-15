@@ -1,0 +1,18 @@
+id: 262
+name: 'Laravel Responder'
+description: 'A package for building API responses, integrating Fractal.'
+category_id: '18'
+github: 'https://github.com/flugg/laravel-responder'
+author: flugger
+composer: flugger/laravel-responder
+npm: null
+stars: 817
+keywords: {  }
+first_release_at: '2016-07-13 23:20:20'
+latest_release_at: '2023-03-14 10:51:19'
+laravel_dependency_versions:
+    - ^5.1||^6.0||^7.0||^8.0||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

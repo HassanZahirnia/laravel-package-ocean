@@ -1,0 +1,17 @@
+id: 250
+name: 'Laravel Smart Ads'
+description: 'Ads, Banners, Callout Manager and Auto Ad Inserter.'
+category_id: '18'
+github: 'https://github.com/5balloons/laravel-smart-ads'
+author: 5balloons
+composer: 5balloons/laravel-smart-ads
+npm: null
+stars: 248
+keywords: {  }
+first_release_at: '2023-01-10 11:15:27'
+latest_release_at: '2023-03-04 10:32:53'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

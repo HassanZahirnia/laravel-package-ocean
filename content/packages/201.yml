@@ -1,0 +1,22 @@
+id: 201
+name: 'Laravel Mail Editor'
+description: 'A mailable editor to create and manage mailable(s) using a web UI.'
+category_id: '12'
+github: 'https://github.com/Qoraiche/laravel-mail-editor'
+author: qoraiche
+composer: qoraiche/laravel-mail-editor
+npm: null
+stars: 1994
+keywords:
+    - maileclipse
+    - WYSIWYG
+    - template
+    - markdown
+first_release_at: '2019-03-03 01:10:32'
+latest_release_at: '2023-04-03 13:27:17'
+laravel_dependency_versions:
+    - ^9.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

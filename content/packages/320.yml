@@ -1,0 +1,17 @@
+id: 320
+name: 'Laravel Model Json'
+description: 'Easily export data from specific models to JSON format.'
+category_id: '18'
+github: 'https://github.com/vildanbina/laravel-model-json'
+author: vildanbina
+composer: vildanbina/laravel-model-json
+npm: null
+stars: 99
+keywords: {  }
+first_release_at: '2023-01-18 14:05:34'
+latest_release_at: '2023-03-20 11:57:51'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:49+00:00
+updated_at: 2023-11-07T12:18:56+00:00

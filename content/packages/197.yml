@@ -1,0 +1,18 @@
+id: 197
+name: 'Laravel Localization'
+description: 'Translation.io client.'
+category_id: '6'
+github: 'https://github.com/translation/laravel'
+author: tio
+composer: tio/laravel
+npm: null
+stars: 155
+keywords: {  }
+first_release_at: '2018-03-23 18:12:00'
+latest_release_at: '2023-02-16 16:10:20'
+laravel_dependency_versions:
+    - '>=5.5'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

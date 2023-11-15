@@ -1,0 +1,18 @@
+id: 383
+name: 'Laravel Telescope Toolbar'
+description: 'A toolbar for Laravel Telescope, based on the Symfony Web Profiler.'
+category_id: '4'
+github: 'https://github.com/fruitcake/laravel-telescope-toolbar'
+author: fruitcake
+composer: fruitcake/laravel-telescope-toolbar
+npm: null
+stars: 745
+keywords: {  }
+first_release_at: '2019-08-09 08:29:35'
+latest_release_at: '2023-02-05 14:09:52'
+laravel_dependency_versions:
+    - ^9||^10
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-06T20:44:32+00:00
+updated_at: 2023-11-07T12:18:57+00:00

@@ -1,0 +1,18 @@
+id: 417
+name: 'Laravel Currency'
+description: 'Provides currency functions using up-to-date exchange rates.'
+category_id: '18'
+github: 'https://github.com/Torann/laravel-currency'
+author: torann
+composer: torann/currency
+npm: null
+stars: 382
+keywords: {  }
+first_release_at: '2013-12-09 15:20:27'
+latest_release_at: '2023-03-09 17:48:58'
+laravel_dependency_versions:
+    - ^6.0||^7.0||^8.0||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-07T12:16:42+00:00
+updated_at: 2023-11-07T12:18:57+00:00

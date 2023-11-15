@@ -1,0 +1,17 @@
+id: 265
+name: RandoPHP
+description: 'Random generators (Integer, Char, Byte, Sequences, Boolean) and take a random sample from arrays.'
+category_id: '18'
+github: 'https://github.com/Hi-Folks/rando-php'
+author: hi-folks
+composer: hi-folks/rando-php
+npm: null
+stars: 123
+keywords: {  }
+first_release_at: '2020-07-19 18:31:07'
+latest_release_at: '2021-07-01 05:48:59'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

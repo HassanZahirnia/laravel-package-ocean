@@ -1,0 +1,18 @@
+id: 468
+name: 'TailwindMerge For Laravel'
+description: 'Automatically resolves Tailwind CSS class conflicts.'
+category_id: '18'
+github: 'https://github.com/gehrisandro/tailwind-merge-laravel'
+author: gehrisandro
+composer: gehrisandro/tailwind-merge-laravel
+npm: null
+stars: 124
+keywords: {  }
+first_release_at: '2023-06-16 08:19:30'
+latest_release_at: '2023-06-16 11:43:34'
+laravel_dependency_versions:
+    - ^10.9.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-21T18:23:19+00:00
+updated_at: 2023-11-07T12:18:57+00:00

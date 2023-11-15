@@ -1,0 +1,20 @@
+id: 245
+name: 'Laravel Navigation'
+description: 'Manage menus, breadcrumbs, and other navigational elements.'
+category_id: '17'
+github: 'https://github.com/spatie/laravel-navigation'
+author: spatie
+composer: spatie/laravel-navigation
+npm: null
+stars: 410
+keywords: {  }
+first_release_at: '2020-05-14 13:56:45'
+latest_release_at: '2023-02-10 15:07:41'
+laravel_dependency_versions:
+    - '8'
+    - '9'
+    - '10'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

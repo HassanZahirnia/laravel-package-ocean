@@ -1,0 +1,28 @@
+id: 144
+name: Telescope
+description: 'An elegant debug assistant.'
+category_id: '4'
+github: 'https://github.com/laravel/telescope'
+author: laravel
+composer: laravel/telescope
+npm: null
+stars: 4587
+keywords:
+    - request
+    - exceptions
+    - 'log entries'
+    - 'database queries'
+    - query
+    - 'queued jobs'
+    - notifications
+    - schedule
+    - dump
+    - cache
+first_release_at: '2018-10-23 14:27:56'
+latest_release_at: '2023-03-17 18:13:19'
+laravel_dependency_versions:
+    - ^8.37||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

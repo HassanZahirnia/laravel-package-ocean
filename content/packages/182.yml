@@ -1,0 +1,18 @@
+id: 182
+name: 'Laravel FFMpeg'
+description: 'Integration with FFmpeg.'
+category_id: '1'
+github: 'https://github.com/protonemedia/laravel-ffmpeg'
+author: pbmedia
+composer: pbmedia/laravel-ffmpeg
+npm: null
+stars: 1455
+keywords: {  }
+first_release_at: '2016-07-29 12:43:33'
+latest_release_at: '2023-02-15 10:10:46'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

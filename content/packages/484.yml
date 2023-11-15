@@ -1,0 +1,18 @@
+id: 484
+name: 'Laravel Ar-PHP'
+description: 'Provides a set of tools to serve professional search, present and process Arabic content.'
+category_id: '18'
+github: 'https://github.com/still-code/ar-php-laravel'
+author: still-code
+composer: still-code/ar-php-laravel
+npm: null
+stars: 25
+keywords: {  }
+first_release_at: '2023-04-15 01:24:00'
+latest_release_at: '2023-04-15 03:06:00'
+laravel_dependency_versions:
+    - ^8.0||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-08-17T10:39:53+00:00
+updated_at: 2023-11-07T12:18:57+00:00

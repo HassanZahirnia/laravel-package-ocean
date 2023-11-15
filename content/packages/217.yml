@@ -1,0 +1,19 @@
+id: 217
+name: 'No Captcha'
+description: 'Integration for reCAPTCHA.'
+category_id: '11'
+github: 'https://github.com/anhskohbo/no-captcha'
+author: anhskohbo
+composer: anhskohbo/no-captcha
+npm: null
+stars: 1712
+keywords:
+    - google
+first_release_at: '2014-12-03 23:39:19'
+latest_release_at: '2023-02-15 16:07:08'
+laravel_dependency_versions:
+    - ^5.0||^6.0||^7.0||^8.0||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

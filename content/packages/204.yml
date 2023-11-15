@@ -1,0 +1,18 @@
+id: 204
+name: Mailbook
+description: 'Lets you easily inspect your mails without having to actually trigger it in your application.'
+category_id: '12'
+github: 'https://github.com/Xammie/mailbook'
+author: xammie
+composer: xammie/mailbook
+npm: null
+stars: 363
+keywords: {  }
+first_release_at: '2022-07-07 22:09:15'
+latest_release_at: '2023-02-14 18:10:31'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

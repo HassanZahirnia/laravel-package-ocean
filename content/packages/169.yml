@@ -1,0 +1,18 @@
+id: 169
+name: 'Laravel Schedule Monitor'
+description: 'Monitor scheduled tasks.'
+category_id: '5'
+github: 'https://github.com/spatie/laravel-schedule-monitor'
+author: spatie
+composer: spatie/laravel-schedule-monitor
+npm: null
+stars: 750
+keywords: {  }
+first_release_at: '2020-07-08 15:45:48'
+latest_release_at: '2023-02-01 19:24:32'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

@@ -1,0 +1,20 @@
+id: 65
+name: 'Laravel Splade'
+description: 'The magic of Inertia.js with the simplicity of Blade.'
+category_id: '15'
+github: 'https://github.com/protonemedia/laravel-splade'
+author: protonemedia
+composer: protonemedia/laravel-splade
+npm: null
+stars: 1263
+keywords:
+    - spa
+    - vue
+first_release_at: '2022-07-22 10:25:49'
+latest_release_at: '2023-03-30 23:11:49'
+laravel_dependency_versions:
+    - ^9.41||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:56+00:00

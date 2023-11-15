@@ -1,0 +1,21 @@
+id: 255
+name: 'Momentum Trail'
+description: 'Easily use named routes in TypeScript with auto-completion and type-safety.'
+category_id: '18'
+github: 'https://github.com/lepikhinb/momentum-trail'
+author: based
+composer: based/momentum-trail
+npm: null
+stars: 58
+keywords:
+    - boris
+    - lepikhinb
+    - ziggy
+first_release_at: '2022-12-15 02:49:51'
+latest_release_at: '2023-02-16 09:24:45'
+laravel_dependency_versions:
+    - ^8.24||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

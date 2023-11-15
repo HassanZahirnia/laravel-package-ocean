@@ -1,0 +1,21 @@
+id: 34
+name: 'Laravel Authentication Log'
+description: "Tracks your users' authentication information such as login/logout time, IP, Browser, Location, etc."
+category_id: '2'
+github: 'https://github.com/rappasoft/laravel-authentication-log'
+author: rappasoft
+composer: rappasoft/laravel-authentication-log
+npm: null
+stars: 651
+keywords:
+    - device
+    - tracking
+    - security
+first_release_at: '2021-10-01 03:44:14'
+latest_release_at: '2023-02-23 18:45:01'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:55+00:00

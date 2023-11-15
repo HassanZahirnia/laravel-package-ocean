@@ -1,0 +1,7 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "single_trait_insert_per_statement": true,
+        "psr_autoloading": true
+    }
+}

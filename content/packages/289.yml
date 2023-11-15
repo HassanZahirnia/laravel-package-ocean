@@ -1,0 +1,18 @@
+id: 289
+name: 'Laravel Page Cache'
+description: 'Caches responses as static files on disk for lightning-fast page loads.'
+category_id: '18'
+github: 'https://github.com/JosephSilber/page-cache'
+author: silber
+composer: silber/page-cache
+npm: null
+stars: 1128
+keywords: {  }
+first_release_at: '2016-07-20 03:04:18'
+latest_release_at: '2023-02-08 03:24:09'
+laravel_dependency_versions:
+    - '5.0 - 5.8||^6.0||^7.0||^8.0||^9.0||^10.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

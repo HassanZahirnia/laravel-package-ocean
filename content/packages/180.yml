@@ -1,0 +1,20 @@
+id: 180
+name: 'Intervention Image'
+description: 'Image handling and manipulation.'
+category_id: '1'
+github: 'https://github.com/Intervention/image'
+author: intervention
+composer: intervention/image
+npm: null
+stars: 13433
+keywords:
+    - gd
+    - imagick
+    - watermark
+first_release_at: '2013-01-19 15:08:51'
+latest_release_at: '2022-08-12 17:16:27'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

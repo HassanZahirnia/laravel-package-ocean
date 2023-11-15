@@ -1,0 +1,18 @@
+id: 85
+name: 'Migrate DB'
+description: 'Easy data transfer from one database to another.'
+category_id: '3'
+github: 'https://github.com/TheDragonCode/migrate-db'
+author: dragon-code
+composer: dragon-code/migrate-db
+npm: null
+stars: 141
+keywords: {  }
+first_release_at: '2021-11-20 12:40:34'
+latest_release_at: '2023-02-15 08:58:43'
+laravel_dependency_versions:
+    - '^8.0 || ^9.0 || ^10.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

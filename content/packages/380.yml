@@ -1,0 +1,18 @@
+id: 380
+name: 'Laravel Console Menu'
+description: 'A php-school/cli-menu wrapper for Laravel Console Commands.'
+category_id: '18'
+github: 'https://github.com/nunomaduro/laravel-console-menu'
+author: nunomaduro
+composer: nunomaduro/laravel-console-menu
+npm: null
+stars: 793
+keywords: {  }
+first_release_at: '2018-01-28 21:53:55'
+latest_release_at: '2023-01-11 14:14:56'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-06T20:38:57+00:00
+updated_at: 2023-11-07T12:18:57+00:00

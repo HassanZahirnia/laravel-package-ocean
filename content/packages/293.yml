@@ -1,0 +1,19 @@
+id: 293
+name: 'Laravel Analytics'
+description: 'Retrieve pageviews and other data from Google Analytics.'
+category_id: '18'
+github: 'https://github.com/spatie/laravel-analytics'
+author: spatie
+composer: spatie/laravel-analytics
+npm: null
+stars: 2948
+keywords:
+    - statistics
+first_release_at: '2015-03-12 12:34:28'
+latest_release_at: '2023-04-06 09:36:14'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

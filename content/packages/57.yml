@@ -1,0 +1,18 @@
+id: 57
+name: 'Laravel Deploy Actions'
+description: 'Performing actions with saving the list of called files.'
+category_id: '15'
+github: 'https://github.com/TheDragonCode/laravel-actions'
+author: dragon-code
+composer: dragon-code/laravel-actions
+npm: null
+stars: 179
+keywords: {  }
+first_release_at: '2021-11-20 13:30:51'
+latest_release_at: '2023-02-20 14:24:34'
+laravel_dependency_versions:
+    - '^7.30.6 || ^8.75 || ^9.0 || ^10.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:56+00:00

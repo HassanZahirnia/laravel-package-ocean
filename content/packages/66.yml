@@ -1,0 +1,19 @@
+id: 66
+name: Venture
+description: 'Build and manage complex workflows of interdependent jobs using the queueing system.'
+category_id: '15'
+github: 'https://github.com/ksassnowski/venture'
+author: sassnowski
+composer: sassnowski/venture
+npm: null
+stars: 753
+keywords:
+    - directed-acyclic-graph
+first_release_at: '2020-10-10 06:12:55'
+latest_release_at: '2023-03-10 14:06:50'
+laravel_dependency_versions:
+    - '^9.0 || ^10.0'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:56+00:00

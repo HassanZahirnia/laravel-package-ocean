@@ -1,0 +1,18 @@
+id: 422
+name: 'Laravel Hyrule'
+description: 'Object-oriented, composable, fluent API for writing validations.'
+category_id: '18'
+github: 'https://github.com/square/laravel-hyrule'
+author: square
+composer: square/laravel-hyrule
+npm: null
+stars: 338
+keywords: {  }
+first_release_at: '2022-05-03 19:29:24'
+latest_release_at: '2022-06-25 01:36:18'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-07T12:27:44+00:00
+updated_at: 2023-11-07T12:18:57+00:00

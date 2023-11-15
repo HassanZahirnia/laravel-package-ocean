@@ -1,0 +1,18 @@
+id: 141
+name: Horizon
+description: 'Dashboard and code-driven configuration for queues.'
+category_id: '4'
+github: 'https://github.com/laravel/horizon'
+author: laravel
+composer: laravel/horizon
+npm: null
+stars: 3685
+keywords: {  }
+first_release_at: '2017-07-26 13:48:50'
+latest_release_at: '2023-03-07 17:45:21'
+laravel_dependency_versions:
+    - ^8.17||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

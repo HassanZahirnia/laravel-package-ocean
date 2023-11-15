@@ -1,0 +1,18 @@
+id: 477
+name: NativePHP
+description: 'Build rich native applications using PHP.'
+category_id: '15'
+github: 'https://github.com/NativePHP/laravel'
+author: nativephp
+composer: nativephp/electron
+npm: null
+stars: 2478
+keywords: {  }
+first_release_at: '2023-07-20 19:02:43'
+latest_release_at: '2023-07-22 20:40:58'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-07-23T09:26:56+00:00
+updated_at: 2023-11-07T12:18:57+00:00

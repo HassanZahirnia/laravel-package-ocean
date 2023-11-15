@@ -1,0 +1,17 @@
+id: 325
+name: 'Laravel Lang'
+description: 'List of 78 languages for Laravel framework, Jetstream, Fortify, Breeze, Cashier, etc.'
+category_id: '6'
+github: 'https://github.com/Laravel-Lang/lang'
+author: laravel-lang
+composer: laravel-lang/common
+npm: null
+stars: 7193
+keywords: {  }
+first_release_at: '2023-02-12 11:08:30'
+latest_release_at: '2023-02-17 12:46:13'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-12T01:45:40+00:00
+updated_at: 2023-11-07T12:18:56+00:00

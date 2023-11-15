@@ -1,0 +1,21 @@
+id: 307
+name: 'Laravel Tags'
+description: 'Add tags and taggable behavior to your app.'
+category_id: '18'
+github: 'https://github.com/spatie/laravel-tags'
+author: spatie
+composer: spatie/laravel-tags
+npm: null
+stars: 1492
+keywords:
+    - model
+    - eloquent
+    - sort
+first_release_at: '2016-10-19 08:47:17'
+latest_release_at: '2023-01-25 09:12:48'
+laravel_dependency_versions:
+    - ^8.67||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

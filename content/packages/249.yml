@@ -1,0 +1,18 @@
+id: 249
+name: WireUI
+description: 'A library of components and resources to empower your Laravel and Livewire application development.'
+category_id: '17'
+github: 'https://github.com/wireui/wireui'
+author: wireui
+composer: wireui/wireui
+npm: null
+stars: 1149
+keywords: {  }
+first_release_at: '2021-12-03 14:27:53'
+latest_release_at: '2023-02-01 05:47:14'
+laravel_dependency_versions:
+    - '10.*'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

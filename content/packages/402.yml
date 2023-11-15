@@ -1,0 +1,18 @@
+id: 402
+name: 'Laravel Personal Data Export'
+description: 'Create zip files containing personal data.'
+category_id: '1'
+github: 'https://github.com/spatie/laravel-personal-data-export'
+author: spatie
+composer: spatie/laravel-personal-data-export
+npm: null
+stars: 531
+keywords: {  }
+first_release_at: '2019-03-10 15:36:38'
+latest_release_at: '2023-01-25 00:25:51'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-07T11:24:11+00:00
+updated_at: 2023-11-07T12:18:57+00:00

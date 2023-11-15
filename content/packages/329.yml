@@ -1,0 +1,18 @@
+id: 329
+name: Laravel-Model-TS-Type
+description: 'Generate TypeScript types based on your models.'
+category_id: '18'
+github: 'https://github.com/scrumble-nl/laravel-model-ts-type'
+author: scrumble-nl
+composer: scrumble-nl/laravel-model-ts-type
+npm: null
+stars: 50
+keywords: {  }
+first_release_at: '2020-09-28 16:07:46'
+latest_release_at: '2023-02-15 10:20:47'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-12T13:52:40+00:00
+updated_at: 2023-11-07T12:18:56+00:00

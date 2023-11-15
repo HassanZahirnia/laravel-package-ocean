@@ -1,0 +1,18 @@
+id: 103
+name: Parental
+description: 'Use single table inheritance in your app.'
+category_id: '3'
+github: 'https://github.com/tighten/parental'
+author: parental
+composer: calebporzio/parental
+npm: null
+stars: 1210
+keywords: {  }
+first_release_at: '2019-10-16 18:15:11'
+latest_release_at: '2023-02-16 18:23:03'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

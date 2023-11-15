@@ -1,0 +1,18 @@
+id: 269
+name: 'Require PIN'
+description: 'Pin confirmation and validation before processing requests to a specified route.'
+category_id: '18'
+github: 'https://github.com/ikechukwukalu/requirepin'
+author: ikechukwukalu
+composer: ikechukwukalu/requirepin
+npm: null
+stars: 206
+keywords: {  }
+first_release_at: '2023-03-02 22:37:59'
+latest_release_at: '2023-03-27 15:15:57'
+laravel_dependency_versions:
+    - ^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

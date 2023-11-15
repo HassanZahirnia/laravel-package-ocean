@@ -1,0 +1,18 @@
+id: 462
+name: 'Laravel Search Builder'
+description: 'Build multi-condition search queries with scores & make use of covering indexes to be super fast.'
+category_id: '3'
+github: 'https://github.com/whitecube/laravel-search-builder'
+author: whitecube
+composer: whitecube/laravel-search-builder
+npm: null
+stars: 17
+keywords: {  }
+first_release_at: '2023-04-24 14:19:57'
+latest_release_at: '2023-04-25 08:04:38'
+laravel_dependency_versions:
+    - ^10.8
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-06-15T10:54:09+00:00
+updated_at: 2023-11-07T12:18:57+00:00

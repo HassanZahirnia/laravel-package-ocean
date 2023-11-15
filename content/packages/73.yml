@@ -1,0 +1,18 @@
+id: 73
+name: 'Feature Flags'
+description: 'A strategy used along with source control to make it easier to continuously integrate and deploy.'
+category_id: '15'
+github: 'https://github.com/ylsideas/feature-flags'
+author: ylsideas
+composer: ylsideas/feature-flags
+npm: null
+stars: 579
+keywords: {  }
+first_release_at: '2019-07-14 13:25:45'
+latest_release_at: '2023-02-09 11:14:07'
+laravel_dependency_versions:
+    - '10.*||^9.6'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:56+00:00

@@ -1,0 +1,17 @@
+id: 61
+name: 'Laravel Zero'
+description: 'A micro-framework built on top of Laravel components for building command-line applications.'
+category_id: '15'
+github: 'https://github.com/laravel-zero/laravel-zero'
+author: laravel-zero
+composer: laravel-zero/laravel-zero
+npm: null
+stars: 3412
+keywords: {  }
+first_release_at: '2017-09-03 14:54:16'
+latest_release_at: '2023-02-16 11:57:28'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:47+00:00
+updated_at: 2023-11-07T12:18:56+00:00

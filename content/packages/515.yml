@@ -1,0 +1,18 @@
+id: 515
+name: Poke
+description: 'Keep your forms alive, avoid `TokenMismatchException` by gently poking your app.'
+category_id: '18'
+github: 'https://github.com/Laragear/Poke'
+author: laragear
+composer: laragear/poke
+npm: null
+stars: 15
+keywords: {  }
+first_release_at: '2022-02-16 04:59:48'
+latest_release_at: '2023-02-22 23:49:54'
+laravel_dependency_versions:
+    - '9.*||10.*'
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-10-04T09:49:14+00:00
+updated_at: 2023-11-07T12:18:57+00:00

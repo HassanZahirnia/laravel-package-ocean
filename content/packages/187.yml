@@ -1,0 +1,19 @@
+id: 187
+name: 'PDF To Image'
+description: 'Convert a pdf to an image.'
+category_id: '1'
+github: 'https://github.com/spatie/pdf-to-image'
+author: spatie
+composer: spatie/pdf-to-image
+npm: null
+stars: 1198
+keywords:
+    - imagick
+    - ghostscript
+first_release_at: '2015-07-02 09:21:53'
+latest_release_at: '2022-03-08 07:52:26'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00

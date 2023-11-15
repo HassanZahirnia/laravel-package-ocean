@@ -1,0 +1,18 @@
+id: 89
+name: 'Eloquent Power Joins'
+description: 'Eloquent joins made more Laravel-like with relationship definitions and model scopes.'
+category_id: '3'
+github: 'https://github.com/kirschbaum-development/eloquent-power-joins'
+author: kirschbaum-development
+composer: kirschbaum-development/eloquent-power-joins
+npm: null
+stars: 1188
+keywords: {  }
+first_release_at: '2020-03-25 00:30:01'
+latest_release_at: '2023-03-16 14:41:20'
+laravel_dependency_versions:
+    - ^8.0||^9.0||^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-04-09T13:58:48+00:00
+updated_at: 2023-11-07T12:18:56+00:00
