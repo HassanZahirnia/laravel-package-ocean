@@ -151,6 +151,7 @@ class Home extends Component
 
     public function selectCategory($category)
     {
+        $this->resetPage();
         $this->selectedCategory = $category;
     }
 
