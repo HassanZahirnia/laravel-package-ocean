@@ -22,9 +22,10 @@
     https://github.com/HassanZahirnia/laravel-package-ocean/discussions/categories/package-suggestions
 ). You'll get a reply when we add your suggested package to the database.
 ### Adding a new package
-- If you want to PR a new package, you can do it via the `ocean` cli:
+- If you want to PR a new package, you can clone the repo locally and visit the `/admin` with these credentials:
     ```bash
-    pnpm run ocean
+    Email: admin@admin.com
+    Password: admin
     ```
 - If you decide to PR a package to be added, please include as many packages as you can in a single PR. Don't open a PR for each package.
 - Make sure none of the information provided use any foul language.
