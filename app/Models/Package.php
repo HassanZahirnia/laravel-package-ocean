@@ -2,6 +2,9 @@
 
 namespace App\Models;
 
+use Composer\Semver\Constraint\Constraint;
+use Composer\Semver\Constraint\ConstraintInterface;
+use Composer\Semver\Constraint\MultiConstraint;
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 use Illuminate\Database\Eloquent\Casts\Attribute;
@@ -87,19 +90,37 @@ class Package extends Model implements Feedable, Orbit
         foreach ($this->laravel_dependency_versions as $versionConstraint) {
             $constraints = $versionParser->parseConstraints($versionConstraint);
 
-            foreach ($constraints->getConstraints() as $constraint) {
-                $version = $this->formatVersion($constraint->getVersion());
-
-                if (is_null($lowestVersion) || Semver::satisfies($version, '<'.$lowestVersion)) {
-                    $lowestVersion = $version;
+            if ($constraints instanceof MultiConstraint) {
+                foreach ($constraints->getConstraints() as $constraint) {
+                    $this->processConstraint($constraint, $lowestVersion);
                 }
+            } elseif ($constraints instanceof Constraint) {
+                $this->processConstraint($constraints, $lowestVersion);
             }
         }
 
         return $lowestVersion;
     }
 
-    public function maximumCompatibleLaravelVersion(): string
+    private function processConstraint(ConstraintInterface $constraint, ?string &$lowestVersion)
+    {
+        if ($constraint instanceof MultiConstraint) {
+            // For MultiConstraint, recursively process each sub-constraint
+            foreach ($constraint->getConstraints() as $subConstraint) {
+                $this->processConstraint($subConstraint, $lowestVersion);
+            }
+        } elseif ($constraint instanceof Constraint) {
+            // For a regular Constraint, get its version and process it
+            $version = $this->formatVersion($constraint->getVersion());
+
+            if (is_null($lowestVersion) || Semver::satisfies($version, '<'.$lowestVersion)) {
+                $lowestVersion = $version;
+            }
+        }
+        // Add additional else/if branches here if there are other types of ConstraintInterface that need handling
+    }
+
+    public function maximumCompatibleLaravelVersion(): ?string
     {
         $activeVersions = fetchActiveLaravelVersions();
 
