@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Composer\Semver\Intervals;
 use Composer\Semver\VersionParser;
 use Illuminate\Support\Facades\Http;
@@ -92,5 +93,43 @@ function extractRepoFromGithubUrl($url): ?string
     }
 
     // Return null if no match is found
+    return null;
+}
+
+function getPackagistData($composer): array
+{
+    $packagistData = Http::get('https://packagist.org/packages/'.$composer.'.json');
+    $minimalPackagistData = Http::get('https://repo.packagist.org/p2/'.$composer.'.json');
+    if ($packagistData->failed() || $minimalPackagistData->failed()) {
+        return [];
+    }
+
+    $first_release_at = $packagistData->json('package.time');
+    $latest_release_at = extractLatestReleaseFromPackagistData($minimalPackagistData->json());
+    $laravel_dependency_versions = null;
+
+    return [
+        'first_release_at' => $first_release_at ? Carbon::parse($first_release_at)->format('Y-m-d H:i:s') : null,
+        'latest_release_at' => $latest_release_at ? Carbon::parse($latest_release_at)->format('Y-m-d H:i:s') : null,
+        'laravel_dependency_versions' => $laravel_dependency_versions,
+    ];
+}
+
+function extractLatestReleaseFromPackagistData($minimalPackagistData): ?string
+{
+    if (! isset($minimalPackagistData['packages']) || empty($minimalPackagistData['packages'])) {
+        return null;
+    }
+
+    $packages = array_values($minimalPackagistData['packages'])[0];
+    foreach ($packages as $release) {
+        if (strpos($release['version'], 'dev') === false &&
+            strpos($release['version'], 'alpha') === false &&
+            strpos($release['version'], 'beta') === false &&
+            strpos($release['version'], 'rc') === false) {
+            return $release['time'];
+        }
+    }
+
     return null;
 }

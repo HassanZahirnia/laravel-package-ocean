@@ -6,8 +6,11 @@ use App\Filament\Resources\PackageResource\Pages;
 use App\Models\Package;
 use Closure;
 use Filament\Forms;
+use Filament\Forms\Components\Actions;
+use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Support\Enums\FontWeight;
 use Filament\Tables;
@@ -221,6 +224,16 @@ class PackageResource extends Resource
                     ]),
                 Forms\Components\Toggle::make('paid_integration')
                     ->required(),
+                Actions::make([
+                    Action::make('Fetch All Data')
+                        ->icon('heroicon-m-arrow-path')
+                        ->color('info')
+                        ->action(function (Set $set, $state) {
+                            $packagistData = getPackagistData($state['composer']);
+                            $set('first_release_at', $packagistData['first_release_at']);
+                            $set('latest_release_at', $packagistData['latest_release_at']);
+                        }),
+                ]),
             ]);
     }
 
