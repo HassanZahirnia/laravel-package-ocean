@@ -1,0 +1,17 @@
+id: 528
+name: Hypertext
+description: 'A PHP HTML to pure text transformer that beautifully handles various and malformed HTML.'
+category_id: '18'
+github: 'https://github.com/stevebauman/hypertext'
+author: stevebauman
+composer: stevebauman/hypertext
+npm: null
+stars: 98
+keywords: {  }
+first_release_at: '2023-10-22 04:19:52'
+latest_release_at: '2023-10-22 16:35:22'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2023-11-24T20:25:16+00:00
+updated_at: 2023-11-24T20:25:16+00:00
