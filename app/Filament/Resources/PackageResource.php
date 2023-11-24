@@ -85,7 +85,47 @@ class PackageResource extends Resource
                     ->searchable(['name'])
                     ->relationship(name: 'category', titleAttribute: 'name')
                     ->preload(),
+                Forms\Components\Select::make('package_type')
+                    ->required()
+                    ->options([
+                        'laravel-package' => 'Laravel Package',
+                        'php-package' => 'PHP Package',
+                        'npm-package' => 'NPM Package',
+                        'mac-app' => 'Mac App',
+                        'windows-app' => 'Windows App',
+                        'all-operating-systems-app' => 'All Operating Systems App',
+                        'ide-extension' => 'IDE Extension',
+                    ])
+                    ->default('laravel-package')
+                    ->rules([
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
+                            // If npm is not null, then package_type must be "npm-package"
+                            if (! empty($get('npm')) && $value !== 'npm-package') {
+                                $fail('The :attribute must be "npm-package" if npm is not null.');
+                            }
+
+                            // If composer is not null, then package_type must be "php-package" or "laravel-package"
+                            if (! empty($get('composer')) && ! in_array($value, ['php-package', 'laravel-package'])) {
+                                $fail('The :attribute must be "php-package" or "laravel-package" if composer is not null.');
+                            }
+                        },
+                    ]),
+                Forms\Components\TextInput::make('author')
+                    ->required()
+                    ->string()
+                    ->minLength(2)
+                    ->rules([
+                        function () {
+                            return function (string $attribute, $value, Closure $fail) {
+                                // Must contain only letters, numbers, and the following characters: -
+                                if (! preg_match('/^[0-9a-zA-Z\-]+$/i', $value)) {
+                                    $fail('The :attribute must contain only letters, numbers, and the following characters: -.');
+                                }
+                            };
+                        },
+                    ]),
                 Forms\Components\TextInput::make('github')
+                    ->columnSpan(2)
                     ->required()
                     ->unique(ignoreRecord: true)
                     ->minLength(19)
@@ -106,20 +146,6 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
-                Forms\Components\TextInput::make('author')
-                    ->required()
-                    ->string()
-                    ->minLength(2)
-                    ->rules([
-                        function () {
-                            return function (string $attribute, $value, Closure $fail) {
-                                // Must contain only letters, numbers, and the following characters: -
-                                if (! preg_match('/^[0-9a-zA-Z\-]+$/i', $value)) {
-                                    $fail('The :attribute must contain only letters, numbers, and the following characters: -.');
-                                }
-                            };
-                        },
-                    ]),
                 Forms\Components\TagsInput::make('keywords')
                     ->nullable()
                     ->nestedRecursiveRules([
@@ -136,30 +162,6 @@ class PackageResource extends Resource
                             $description = $get('description');
                             if (preg_match("/\b{$value}\b/i", $name) || preg_match("/\b{$value}\b/i", $description)) {
                                 $fail('The :attribute must not be used in name and description.');
-                            }
-                        },
-                    ]),
-                Forms\Components\Select::make('package_type')
-                    ->required()
-                    ->options([
-                        'laravel-package' => 'Laravel Package',
-                        'php-package' => 'PHP Package',
-                        'npm-package' => 'NPM Package',
-                        'mac-app' => 'Mac App',
-                        'windows-app' => 'Windows App',
-                        'all-operating-systems-app' => 'All Operating Systems App',
-                        'ide-extension' => 'IDE Extension',
-                    ])
-                    ->rules([
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
-                            // If npm is not null, then package_type must be "npm-package"
-                            if (! empty($get('npm')) && $value !== 'npm-package') {
-                                $fail('The :attribute must be "npm-package" if npm is not null.');
-                            }
-
-                            // If composer is not null, then package_type must be "php-package" or "laravel-package"
-                            if (! empty($get('composer')) && ! in_array($value, ['php-package', 'laravel-package'])) {
-                                $fail('The :attribute must be "php-package" or "laravel-package" if composer is not null.');
                             }
                         },
                     ]),
@@ -202,12 +204,12 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\Toggle::make('paid_integration')
+                    ->inline(false)
+                    ->onIcon('heroicon-o-currency-dollar')
                     ->required(),
                 Section::make('Data')
                     ->columns(3)
                     ->schema([
-                        Forms\Components\DateTimePicker::make('first_release_at'),
-                        Forms\Components\DateTimePicker::make('latest_release_at'),
                         Forms\Components\TagsInput::make('laravel_dependency_versions')
                             ->columnSpanFull()
                             ->nestedRecursiveRules([
@@ -230,6 +232,8 @@ class PackageResource extends Resource
                             ->minValue(0)
                             ->default(0)
                             ->numeric(),
+                        Forms\Components\DateTimePicker::make('first_release_at'),
+                        Forms\Components\DateTimePicker::make('latest_release_at'),
                         Actions::make([
                             Action::make('Fetch All Data')
                                 ->icon('heroicon-m-arrow-path')
