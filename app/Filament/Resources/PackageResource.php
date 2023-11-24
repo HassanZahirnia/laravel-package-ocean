@@ -232,6 +232,7 @@ class PackageResource extends Resource
                             $packagistData = getPackagistData($state['composer']);
                             $set('first_release_at', $packagistData['first_release_at']);
                             $set('latest_release_at', $packagistData['latest_release_at']);
+                            $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
                         }),
                 ]),
             ]);

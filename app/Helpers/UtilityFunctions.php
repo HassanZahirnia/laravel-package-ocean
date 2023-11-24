@@ -68,7 +68,7 @@ function isGithubRepositoryHealthy($repository): bool
         return false;
     }
 
-    if ($data['message'] === 'Not Found') {
+    if (data_get($data, 'message') === 'Not Found') {
         return false;
     }
 
@@ -106,7 +106,7 @@ function getPackagistData($composer): array
 
     $first_release_at = $packagistData->json('package.time');
     $latest_release_at = extractLatestReleaseFromPackagistData($minimalPackagistData->json());
-    $laravel_dependency_versions = null;
+    $laravel_dependency_versions = extractLaravelDependencyVersions($minimalPackagistData->json());
 
     return [
         'first_release_at' => $first_release_at ? Carbon::parse($first_release_at)->format('Y-m-d H:i:s') : null,
@@ -128,6 +128,47 @@ function extractLatestReleaseFromPackagistData($minimalPackagistData): ?string
             strpos($release['version'], 'beta') === false &&
             strpos($release['version'], 'rc') === false) {
             return $release['time'];
+        }
+    }
+
+    return null;
+}
+
+function extractLaravelDependencyVersions($minimalPackagistData): array
+{
+    $latestRelease = extractLatestReleaseForDependencies($minimalPackagistData);
+    if (! $latestRelease) {
+        return [];
+    }
+
+    $supportedVersions = [];
+    $dependencies = array_merge(
+        $latestRelease['require'] ?? [],
+        $latestRelease['require-dev'] ?? []
+    );
+
+    foreach ($dependencies as $dependency => $version) {
+        if (strpos($dependency, 'illuminate/') === 0 || $dependency === 'laravel/framework') {
+            $supportedVersions[] = $version;
+        }
+    }
+
+    return array_values(array_unique($supportedVersions));
+}
+
+function extractLatestReleaseForDependencies($minimalPackagistData): ?array
+{
+    if (! isset($minimalPackagistData['packages']) || empty($minimalPackagistData['packages'])) {
+        return null;
+    }
+
+    $packages = array_values($minimalPackagistData['packages'])[0];
+    foreach ($packages as $release) {
+        if (strpos($release['version'], 'dev') === false &&
+            strpos($release['version'], 'alpha') === false &&
+            strpos($release['version'], 'beta') === false &&
+            strpos($release['version'], 'rc') === false) {
+            return $release;
         }
     }
 
