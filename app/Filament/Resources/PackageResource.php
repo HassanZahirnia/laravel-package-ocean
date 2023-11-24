@@ -28,11 +28,10 @@ class PackageResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
-                    ->live()
-                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('name', str($state)->trim()->ucfirst()))
+                    ->live(debounce: 500)
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('name', str($state)->headline()))
                     ->autocomplete(false)
                     ->required()
-                    ->string()
                     ->minLength(2)
                     ->maxLength(40)
                     ->rules([
@@ -57,12 +56,15 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('description')
-                    ->live()
-                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('description', str($state)->trim()->ucfirst()))
+                    ->live(debounce: 500)
+                    ->afterStateUpdated(function (Set $set, ?string $state) {
+                        $description = $set('description', str($state)->ucfirst()->trim());
+
+                        return $set('description', str($description)->endsWith('.') ? $description : $description.'.');
+                    })
                     ->autocomplete(false)
                     ->columnSpan(2)
                     ->required()
-                    ->string()
                     ->minLength(5)
                     ->maxLength(100)
                     ->endsWith('.')
@@ -119,7 +121,6 @@ class PackageResource extends Resource
                 Forms\Components\TextInput::make('author')
                     ->autocomplete(false)
                     ->required()
-                    ->string()
                     ->minLength(2)
                     ->rules([
                         function () {
@@ -175,8 +176,9 @@ class PackageResource extends Resource
                     ]),
                 Forms\Components\TextInput::make('composer')
                     ->autocomplete(false)
-                    ->string()
-                    ->live()
+                    ->live(debounce: 500)
+                    // When composer changes, extract the author from it and set it on the author field
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('author', str($state)->between('/', '/')->trim()))
                     ->required(fn (Get $get): bool => empty($get('npm')))
                     ->minLength(2)
                     ->unique(ignoreRecord: true)
@@ -200,8 +202,7 @@ class PackageResource extends Resource
                     ]),
                 Forms\Components\TextInput::make('npm')
                     ->autocomplete(false)
-                    ->string()
-                    ->live()
+                    ->live(debounce: 500)
                     ->minLength(2)
                     ->required(fn (Get $get): bool => empty($get('composer')))
                     ->unique(ignoreRecord: true)
@@ -282,7 +283,9 @@ class PackageResource extends Resource
                                         $set('latest_release_at', $npmData['latest_release_at']);
                                     }
 
-                                    $set('stars', fetchGithubStars($state['github']));
+                                    if (! empty($state['github'])) {
+                                        $set('stars', fetchGithubStars($state['github']));
+                                    }
                                 }),
                         ])->columnSpanFull(),
                     ]),
