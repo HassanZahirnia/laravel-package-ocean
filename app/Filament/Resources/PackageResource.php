@@ -248,6 +248,7 @@ class PackageResource extends Resource
                             Action::make('Fetch All Data')
                                 ->icon('heroicon-m-arrow-path')
                                 ->color('success')
+                                ->disabled(fn (Get $get): bool => (empty($get('composer')) && empty($get('npm'))) || empty($get('github')))
                                 ->action(function (Set $set, $state) {
                                     if (! empty($state['composer'])) {
                                         $packagistData = getPackagistData($state['composer']);
