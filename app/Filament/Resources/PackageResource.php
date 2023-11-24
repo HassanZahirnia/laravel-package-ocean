@@ -245,11 +245,16 @@ class PackageResource extends Resource
                                     if (! isValidVersionConstraint($value)) {
                                         $fail('The :attribute constraint is not valid');
                                     }
-
-                                    // Must be compatible with laravel active versions
-                                    if (! isCompatibleWithLaravelActiveVersions([$value])) {
+                                },
+                            ])
+                            ->rules([
+                                fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
+                                    // At least one of the dependencies must be compatible with laravel active versions
+                                    $dependencies = $value;
+                                    if (! isCompatibleWithLaravelActiveVersions($dependencies)) {
                                         $fail('The dependencies must be compatible with laravel active versions ('.implode(', ', fetchActiveLaravelVersions()).').');
                                     }
+
                                 },
                             ]),
                         Forms\Components\TextInput::make('stars')
