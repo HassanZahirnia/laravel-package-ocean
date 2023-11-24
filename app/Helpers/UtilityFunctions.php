@@ -96,6 +96,22 @@ function extractRepoFromGithubUrl($url): ?string
     return null;
 }
 
+function getNpmData($npm): array
+{
+    $npmData = Http::get('https://registry.npmjs.org/'.$npm);
+    if ($npmData->failed()) {
+        return [];
+    }
+
+    $first_release_at = $npmData->json('time.created');
+    $latest_release_at = $npmData->json('time.modified');
+
+    return [
+        'first_release_at' => $first_release_at ? Carbon::parse($first_release_at)->format('Y-m-d H:i:s') : null,
+        'latest_release_at' => $latest_release_at ? Carbon::parse($latest_release_at)->format('Y-m-d H:i:s') : null,
+    ];
+}
+
 function getPackagistData($composer): array
 {
     $packagistData = Http::get('https://packagist.org/packages/'.$composer.'.json');
@@ -148,7 +164,8 @@ function extractLaravelDependencyVersions($minimalPackagistData): array
     );
 
     foreach ($dependencies as $dependency => $version) {
-        if (strpos($dependency, 'illuminate/') === 0 || $dependency === 'laravel/framework') {
+        if ((strpos($dependency, 'illuminate/') === 0 || $dependency === 'laravel/framework') &&
+            $version !== '*' && isValidVersionConstraint($version)) {
             $supportedVersions[] = $version;
         }
     }

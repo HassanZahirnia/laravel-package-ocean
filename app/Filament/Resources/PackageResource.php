@@ -227,12 +227,18 @@ class PackageResource extends Resource
                 Actions::make([
                     Action::make('Fetch All Data')
                         ->icon('heroicon-m-arrow-path')
-                        ->color('info')
+                        ->color('success')
                         ->action(function (Set $set, $state) {
-                            $packagistData = getPackagistData($state['composer']);
-                            $set('first_release_at', $packagistData['first_release_at']);
-                            $set('latest_release_at', $packagistData['latest_release_at']);
-                            $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
+                            if (! empty($state['composer'])) {
+                                $packagistData = getPackagistData($state['composer']);
+                                $set('first_release_at', $packagistData['first_release_at']);
+                                $set('latest_release_at', $packagistData['latest_release_at']);
+                                $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
+                            } elseif (! empty($state['npm'])) {
+                                $npmData = getNpmData($state['npm']);
+                                $set('first_release_at', $npmData['first_release_at']);
+                                $set('latest_release_at', $npmData['latest_release_at']);
+                            }
                         }),
                 ]),
             ]);
@@ -270,7 +276,7 @@ class PackageResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('package_type')
                     ->searchable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                    ->formatStateUsing(fn (string $state): string => str($state)->headline()),
                 Tables\Columns\IconColumn::make('paid_integration')
                     ->boolean()
                     ->toggleable(isToggledHiddenByDefault: true),
