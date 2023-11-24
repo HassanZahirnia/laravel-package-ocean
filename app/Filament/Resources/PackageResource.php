@@ -182,6 +182,11 @@ class PackageResource extends Resource
                             if ($get('package_type') === 'npm-package') {
                                 $fail('The :attribute must be null if package_type is "npm-package".');
                             }
+
+                            // If package_type is "php-package" or "laravel-package", then composer must not be null
+                            if (in_array($get('package_type'), ['php-package', 'laravel-package']) && empty($value)) {
+                                $fail('The :attribute must not be null if package_type is "php-package" or "laravel-package".');
+                            }
                         },
                     ]),
                 Forms\Components\TextInput::make('npm')
@@ -200,6 +205,11 @@ class PackageResource extends Resource
                             // If package_type is "php-package" or "laravel-package", then npm must be null
                             if (in_array($get('package_type'), ['php-package', 'laravel-package'])) {
                                 $fail('The :attribute must be null if package_type is "php-package" or "laravel-package".');
+                            }
+
+                            // If package_type is "npm-package", then npm must not be null
+                            if ($get('package_type') === 'npm-package' && empty($value)) {
+                                $fail('The :attribute must not be null if package_type is "npm-package".');
                             }
                         },
                     ]),
