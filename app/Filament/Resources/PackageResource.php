@@ -28,6 +28,8 @@ class PackageResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->live()
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('name', str($state)->trim()->ucfirst()))
                     ->autocomplete(false)
                     ->required()
                     ->string()
@@ -55,6 +57,8 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('description')
+                    ->live()
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('description', str($state)->trim()->ucfirst()))
                     ->autocomplete(false)
                     ->columnSpan(2)
                     ->required()
