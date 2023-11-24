@@ -28,6 +28,7 @@ class PackageResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->autocomplete(false)
                     ->required()
                     ->string()
                     ->minLength(2)
@@ -54,6 +55,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('description')
+                    ->autocomplete(false)
                     ->columnSpan(2)
                     ->required()
                     ->string()
@@ -111,6 +113,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('author')
+                    ->autocomplete(false)
                     ->required()
                     ->string()
                     ->minLength(2)
@@ -125,6 +128,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('github')
+                    ->autocomplete(false)
                     ->columnSpan(2)
                     ->required()
                     ->unique(ignoreRecord: true)
@@ -166,6 +170,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('composer')
+                    ->autocomplete(false)
                     ->string()
                     ->live()
                     ->required(fn (Get $get): bool => empty($get('npm')))
@@ -190,6 +195,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('npm')
+                    ->autocomplete(false)
                     ->string()
                     ->live()
                     ->minLength(2)
@@ -238,6 +244,7 @@ class PackageResource extends Resource
                                 },
                             ]),
                         Forms\Components\TextInput::make('stars')
+                            ->autocomplete(false)
                             ->required()
                             ->minValue(0)
                             ->default(0)
