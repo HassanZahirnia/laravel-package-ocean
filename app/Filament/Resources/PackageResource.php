@@ -178,7 +178,8 @@ class PackageResource extends Resource
                     ->autocomplete(false)
                     ->live(debounce: 500)
                     // When composer changes, extract the author from it and set it on the author field
-                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('author', str($state)->between('/', '/')->trim()))
+                    // So for example spatie/opening-hours will set spatie on the author field
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('author', str($state)->before('/')->trim()))
                     ->required(fn (Get $get): bool => empty($get('npm')))
                     ->minLength(2)
                     ->unique(ignoreRecord: true)
@@ -250,10 +251,10 @@ class PackageResource extends Resource
                             ])
                             ->rules([
                                 fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
-                                    // At least one of the dependencies must be compatible with laravel active versions
+                                    // At least one of the dependencies must be compatible with laravel active versions unless the value is empty
                                     $dependencies = $value;
-                                    if (! isCompatibleWithLaravelActiveVersions($dependencies)) {
-                                        $fail('The dependencies must be compatible with laravel active versions ('.implode(', ', fetchActiveLaravelVersions()).').');
+                                    if (! empty($dependencies) && ! isCompatibleWithLaravelActiveVersions($dependencies)) {
+                                        $fail('At least one of the dependencies must be compatible with laravel active versions.');
                                     }
 
                                 },
