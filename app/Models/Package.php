@@ -79,7 +79,39 @@ class Package extends Model implements Feedable, Orbit
 
     public function isCompatibleWithLaravelActiveVersions(): bool
     {
-        return true;
+        $versionParser = new VersionParser();
+        $activeVersions = fetchActiveLaravelVersions();
+
+        foreach ($this->laravel_dependency_versions as $versionConstraint) {
+            $constraints = $versionParser->parseConstraints($versionConstraint);
+
+            foreach ($activeVersions as $activeVersion) {
+                $formattedVersion = $this->formatVersion($activeVersion);
+
+                if ($this->isVersionSatisfiedByConstraint($formattedVersion, $constraints)) {
+                    return true; // Found a compatible version
+                }
+            }
+        }
+
+        return false; // No compatible versions found
+    }
+
+    private function isVersionSatisfiedByConstraint($version, ConstraintInterface $constraint)
+    {
+        if ($constraint instanceof MultiConstraint) {
+            // For MultiConstraint, check if any sub-constraint is satisfied
+            foreach ($constraint->getConstraints() as $subConstraint) {
+                if ($this->isVersionSatisfiedByConstraint($version, $subConstraint)) {
+                    return true;
+                }
+            }
+
+            return false;
+        } else {
+            // For a regular Constraint, directly check for satisfaction
+            return Semver::satisfies($version, $constraint);
+        }
     }
 
     public function minimumCompatibleLaravelVersion(): string
@@ -117,7 +149,6 @@ class Package extends Model implements Feedable, Orbit
                 $lowestVersion = $version;
             }
         }
-        // Add additional else/if branches here if there are other types of ConstraintInterface that need handling
     }
 
     public function maximumCompatibleLaravelVersion(): ?string

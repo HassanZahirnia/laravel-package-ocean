@@ -46,6 +46,11 @@ function fetchActiveLaravelVersions()
     });
 }
 
+function latestActiveLaravelVersion()
+{
+    return collect(fetchActiveLaravelVersions())->last();
+}
+
 function isGithubRepositoryHealthy($repository): bool
 {
     $response = Http::get('https://api.github.com/repos/'.$repository);

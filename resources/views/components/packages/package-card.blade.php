@@ -211,7 +211,11 @@
                                         />
                                     </svg>
                                     <span>
+                                        @if ($package->isCompatibleWithLaravelActiveVersions() === true)
+                                        {{ 'v' . latestActiveLaravelVersion() }}
+                                        @else
                                         {{ 'v' . $package->maximumCompatibleLaravelVersion() }}
+                                        @endif
                                     </span>
                                     <span>supported</span>
                                 </span>
