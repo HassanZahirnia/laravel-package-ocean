@@ -56,16 +56,12 @@ function latestActiveLaravelVersion()
 
 function isCompatibleWithLaravelActiveVersions($dependencies): bool
 {
-    $versionParser = new VersionParser();
     $activeVersions = fetchActiveLaravelVersions();
 
     foreach ($dependencies as $versionConstraint) {
-        $constraints = $versionParser->parseConstraints($versionConstraint);
-
         foreach ($activeVersions as $activeVersion) {
-            $formattedVersion = formatSemverVersion($activeVersion);
-
-            if (isVersionSatisfiedByConstraint($formattedVersion, $constraints)) {
+            // Use Semver::satisfies to check if the constraint is satisfied
+            if (Semver::satisfies($activeVersion, $versionConstraint)) {
                 return true; // Found a compatible version
             }
         }
@@ -93,8 +89,8 @@ function isVersionSatisfiedByConstraint($version, ConstraintInterface $constrain
 
 function formatSemverVersion($version)
 {
-    // Remove -dev suffix
-    $version = str_replace('-dev', '', $version);
+    // Remove any pre-release suffixes
+    $version = preg_replace('/\-dev|\-alpha|\-beta|\-RC/', '', $version);
 
     // Keep only the first three parts of the version
     $parts = explode('.', $version);
