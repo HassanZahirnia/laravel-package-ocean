@@ -8,6 +8,7 @@ use Closure;
 use Filament\Forms;
 use Filament\Forms\Components\Actions;
 use Filament\Forms\Components\Actions\Action;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Forms\Set;
@@ -53,6 +54,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('description')
+                    ->columnSpan(2)
                     ->required()
                     ->string()
                     ->minLength(5)
@@ -118,6 +120,49 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
+                Forms\Components\TagsInput::make('keywords')
+                    ->nullable()
+                    ->nestedRecursiveRules([
+                        'string',
+                        'distinct',
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
+                            // Must be alphanumeric and single spaces and the following characters: - / .
+                            if (! preg_match('/^(?!.* {2})[a-zA-Z0-9]+([ -\/\.]?[a-zA-Z0-9]+)*$/', $value)) {
+                                $fail('The :attribute must contain only letters, numbers, single spaces, and the following characters: - / .');
+                            }
+
+                            // Keywords must not be used in name and description
+                            $name = $get('name');
+                            $description = $get('description');
+                            if (preg_match("/\b{$value}\b/i", $name) || preg_match("/\b{$value}\b/i", $description)) {
+                                $fail('The :attribute must not be used in name and description.');
+                            }
+                        },
+                    ]),
+                Forms\Components\Select::make('package_type')
+                    ->required()
+                    ->options([
+                        'laravel-package' => 'Laravel Package',
+                        'php-package' => 'PHP Package',
+                        'npm-package' => 'NPM Package',
+                        'mac-app' => 'Mac App',
+                        'windows-app' => 'Windows App',
+                        'all-operating-systems-app' => 'All Operating Systems App',
+                        'ide-extension' => 'IDE Extension',
+                    ])
+                    ->rules([
+                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
+                            // If npm is not null, then package_type must be "npm-package"
+                            if (! empty($get('npm')) && $value !== 'npm-package') {
+                                $fail('The :attribute must be "npm-package" if npm is not null.');
+                            }
+
+                            // If composer is not null, then package_type must be "php-package" or "laravel-package"
+                            if (! empty($get('composer')) && ! in_array($value, ['php-package', 'laravel-package'])) {
+                                $fail('The :attribute must be "php-package" or "laravel-package" if composer is not null.');
+                            }
+                        },
+                    ]),
                 Forms\Components\TextInput::make('composer')
                     ->string()
                     ->live()
@@ -156,94 +201,56 @@ class PackageResource extends Resource
                             }
                         },
                     ]),
-                Forms\Components\TextInput::make('stars')
-                    ->required()
-                    ->minValue(0)
-                    ->numeric(),
-                Forms\Components\TagsInput::make('keywords')
-                    ->nullable()
-                    ->nestedRecursiveRules([
-                        'string',
-                        'distinct',
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
-                            // Must be alphanumeric and single spaces and the following characters: - / .
-                            if (! preg_match('/^(?!.* {2})[a-zA-Z0-9]+([ -\/\.]?[a-zA-Z0-9]+)*$/', $value)) {
-                                $fail('The :attribute must contain only letters, numbers, single spaces, and the following characters: - / .');
-                            }
-
-                            // Keywords must not be used in name and description
-                            $name = $get('name');
-                            $description = $get('description');
-                            if (preg_match("/\b{$value}\b/i", $name) || preg_match("/\b{$value}\b/i", $description)) {
-                                $fail('The :attribute must not be used in name and description.');
-                            }
-                        },
-                    ]),
-                Forms\Components\DateTimePicker::make('first_release_at'),
-                Forms\Components\DateTimePicker::make('latest_release_at'),
-                Forms\Components\TagsInput::make('laravel_dependency_versions')
-                    ->columnSpanFull()
-                    ->nestedRecursiveRules([
-                        'string',
-                        'distinct',
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
-                            // Must not be a wildcard (*)
-                            if (preg_match('/\*/', $value)) {
-                                $fail('The :attribute must not be a wildcard (*).');
-                            }
-
-                            // Must be a valid laravel version
-                            if (! isValidVersionConstraint($value)) {
-                                $fail('The :attribute constraint is not valid');
-                            }
-                        },
-                    ]),
-                Forms\Components\Select::make('package_type')
-                    ->required()
-                    ->options([
-                        'laravel-package' => 'Laravel Package',
-                        'php-package' => 'PHP Package',
-                        'npm-package' => 'NPM Package',
-                        'mac-app' => 'Mac App',
-                        'windows-app' => 'Windows App',
-                        'all-operating-systems-app' => 'All Operating Systems App',
-                        'ide-extension' => 'IDE Extension',
-                    ])
-                    ->rules([
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
-                            // If npm is not null, then package_type must be "npm-package"
-                            if (! empty($get('npm')) && $value !== 'npm-package') {
-                                $fail('The :attribute must be "npm-package" if npm is not null.');
-                            }
-
-                            // If composer is not null, then package_type must be "php-package" or "laravel-package"
-                            if (! empty($get('composer')) && ! in_array($value, ['php-package', 'laravel-package'])) {
-                                $fail('The :attribute must be "php-package" or "laravel-package" if composer is not null.');
-                            }
-                        },
-                    ]),
                 Forms\Components\Toggle::make('paid_integration')
                     ->required(),
-                Actions::make([
-                    Action::make('Fetch All Data')
-                        ->icon('heroicon-m-arrow-path')
-                        ->color('success')
-                        ->action(function (Set $set, $state) {
-                            if (! empty($state['composer'])) {
-                                $packagistData = getPackagistData($state['composer']);
-                                $set('first_release_at', $packagistData['first_release_at']);
-                                $set('latest_release_at', $packagistData['latest_release_at']);
-                                $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
-                            } elseif (! empty($state['npm'])) {
-                                $npmData = getNpmData($state['npm']);
-                                $set('first_release_at', $npmData['first_release_at']);
-                                $set('latest_release_at', $npmData['latest_release_at']);
-                            }
+                Section::make('Data')
+                    ->columns(3)
+                    ->schema([
+                        Forms\Components\DateTimePicker::make('first_release_at'),
+                        Forms\Components\DateTimePicker::make('latest_release_at'),
+                        Forms\Components\TagsInput::make('laravel_dependency_versions')
+                            ->columnSpanFull()
+                            ->nestedRecursiveRules([
+                                'string',
+                                'distinct',
+                                fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
+                                    // Must not be a wildcard (*)
+                                    if (preg_match('/\*/', $value)) {
+                                        $fail('The :attribute must not be a wildcard (*).');
+                                    }
 
-                            $set('stars', fetchGithubStars($state['github']));
-                        }),
-                ]),
-            ]);
+                                    // Must be a valid laravel version
+                                    if (! isValidVersionConstraint($value)) {
+                                        $fail('The :attribute constraint is not valid');
+                                    }
+                                },
+                            ]),
+                        Forms\Components\TextInput::make('stars')
+                            ->required()
+                            ->minValue(0)
+                            ->default(0)
+                            ->numeric(),
+                        Actions::make([
+                            Action::make('Fetch All Data')
+                                ->icon('heroicon-m-arrow-path')
+                                ->color('success')
+                                ->action(function (Set $set, $state) {
+                                    if (! empty($state['composer'])) {
+                                        $packagistData = getPackagistData($state['composer']);
+                                        $set('first_release_at', $packagistData['first_release_at']);
+                                        $set('latest_release_at', $packagistData['latest_release_at']);
+                                        $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
+                                    } elseif (! empty($state['npm'])) {
+                                        $npmData = getNpmData($state['npm']);
+                                        $set('first_release_at', $npmData['first_release_at']);
+                                        $set('latest_release_at', $npmData['latest_release_at']);
+                                    }
+
+                                    $set('stars', fetchGithubStars($state['github']));
+                                }),
+                        ])->columnSpanFull(),
+                    ]),
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table
