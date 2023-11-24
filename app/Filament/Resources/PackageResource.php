@@ -118,43 +118,6 @@ class PackageResource extends Resource
                             }
                         },
                     ]),
-                Forms\Components\TextInput::make('author')
-                    ->autocomplete(false)
-                    ->required()
-                    ->minLength(2)
-                    ->rules([
-                        function () {
-                            return function (string $attribute, $value, Closure $fail) {
-                                // Must contain only letters, numbers, and the following characters: -
-                                if (! preg_match('/^[0-9a-zA-Z\-]+$/i', $value)) {
-                                    $fail('The :attribute must contain only letters, numbers, and the following characters: -.');
-                                }
-                            };
-                        },
-                    ]),
-                Forms\Components\TextInput::make('github')
-                    ->autocomplete(false)
-                    ->columnSpan(2)
-                    ->required()
-                    ->unique(ignoreRecord: true)
-                    ->minLength(19)
-                    ->startsWith('https://github.com/')
-                    ->url()
-                    ->rules([
-                        function () {
-                            return function (string $attribute, $value, Closure $fail) {
-                                // Must be a valid Github URL
-                                if (! preg_match('/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i', $value)) {
-                                    $fail('The :attribute must be a valid Github URL.');
-                                }
-
-                                // Must be healthy Github repository
-                                if (! isGithubRepositoryHealthy(extractRepoFromGithubUrl($value))) {
-                                    $fail('The :attribute must be a healthy Github repository.');
-                                }
-                            };
-                        },
-                    ]),
                 Forms\Components\TagsInput::make('keywords')
                     ->nullable()
                     ->nestedRecursiveRules([
@@ -223,6 +186,43 @@ class PackageResource extends Resource
                             if ($get('package_type') === 'npm-package' && empty($value)) {
                                 $fail('The :attribute must not be null if package_type is "npm-package".');
                             }
+                        },
+                    ]),
+                Forms\Components\TextInput::make('author')
+                    ->autocomplete(false)
+                    ->required()
+                    ->minLength(2)
+                    ->rules([
+                        function () {
+                            return function (string $attribute, $value, Closure $fail) {
+                                // Must contain only letters, numbers, and the following characters: -
+                                if (! preg_match('/^[0-9a-zA-Z\-]+$/i', $value)) {
+                                    $fail('The :attribute must contain only letters, numbers, and the following characters: -.');
+                                }
+                            };
+                        },
+                    ]),
+                Forms\Components\TextInput::make('github')
+                    ->autocomplete(false)
+                    ->columnSpan(2)
+                    ->required()
+                    ->unique(ignoreRecord: true)
+                    ->minLength(19)
+                    ->startsWith('https://github.com/')
+                    ->url()
+                    ->rules([
+                        function () {
+                            return function (string $attribute, $value, Closure $fail) {
+                                // Must be a valid Github URL
+                                if (! preg_match('/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i', $value)) {
+                                    $fail('The :attribute must be a valid Github URL.');
+                                }
+
+                                // Must be healthy Github repository
+                                if (! isGithubRepositoryHealthy(extractRepoFromGithubUrl($value))) {
+                                    $fail('The :attribute must be a healthy Github repository.');
+                                }
+                            };
                         },
                     ]),
                 Forms\Components\Toggle::make('paid_integration')
