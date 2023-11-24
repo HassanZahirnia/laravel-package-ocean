@@ -59,15 +59,33 @@ function isCompatibleWithLaravelActiveVersions($dependencies): bool
     $activeVersions = fetchActiveLaravelVersions();
 
     foreach ($dependencies as $versionConstraint) {
+        // Preprocess the version constraint
+        $preprocessedConstraint = preprocessVersionConstraint($versionConstraint);
+
         foreach ($activeVersions as $activeVersion) {
-            // Use Semver::satisfies to check if the constraint is satisfied
-            if (Semver::satisfies($activeVersion, $versionConstraint)) {
+            if (Semver::satisfies($activeVersion, $preprocessedConstraint)) {
                 return true; // Found a compatible version
             }
         }
     }
 
     return false; // No compatible versions found
+}
+
+function preprocessVersionConstraint($constraint)
+{
+    // Handle wildcard constraints like ^10.*
+    $constraint = str_replace('.*', '', $constraint);
+
+    // Split the constraint on '||', add comparator if missing, then join back
+    return implode(' || ', array_map(function ($part) {
+        $part = trim($part);
+        if (! preg_match('/^[><=~^]/', $part)) {
+            return '^'.$part; // Add '^' if no comparator is present
+        }
+
+        return $part;
+    }, explode('||', $constraint)));
 }
 
 function isVersionSatisfiedByConstraint($version, ConstraintInterface $constraint)
