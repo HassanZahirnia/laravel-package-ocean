@@ -239,6 +239,8 @@ class PackageResource extends Resource
                                 $set('first_release_at', $npmData['first_release_at']);
                                 $set('latest_release_at', $npmData['latest_release_at']);
                             }
+
+                            $set('stars', fetchGithubStars($state['github']));
                         }),
                 ]),
             ]);

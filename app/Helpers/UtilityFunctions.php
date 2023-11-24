@@ -96,6 +96,17 @@ function extractRepoFromGithubUrl($url): ?string
     return null;
 }
 
+function fetchGithubStars($url): int
+{
+    $githubData = Http::get('https://api.github.com/repos/'.extractRepoFromGithubUrl($url));
+
+    if ($githubData->failed()) {
+        return 0;
+    }
+
+    return $githubData->json('stargazers_count');
+}
+
 function getNpmData($npm): array
 {
     $npmData = Http::get('https://registry.npmjs.org/'.$npm);
