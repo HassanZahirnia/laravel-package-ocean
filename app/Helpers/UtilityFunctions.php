@@ -1,7 +1,10 @@
 <?php
 
 use Carbon\Carbon;
+use Composer\Semver\Constraint\ConstraintInterface;
+use Composer\Semver\Constraint\MultiConstraint;
 use Composer\Semver\Intervals;
+use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 use Illuminate\Support\Facades\Http;
 
@@ -49,6 +52,57 @@ function fetchActiveLaravelVersions()
 function latestActiveLaravelVersion()
 {
     return collect(fetchActiveLaravelVersions())->last();
+}
+
+function isCompatibleWithLaravelActiveVersions($dependencies): bool
+{
+    $versionParser = new VersionParser();
+    $activeVersions = fetchActiveLaravelVersions();
+
+    foreach ($dependencies as $versionConstraint) {
+        $constraints = $versionParser->parseConstraints($versionConstraint);
+
+        foreach ($activeVersions as $activeVersion) {
+            $formattedVersion = formatSemverVersion($activeVersion);
+
+            if (isVersionSatisfiedByConstraint($formattedVersion, $constraints)) {
+                return true; // Found a compatible version
+            }
+        }
+    }
+
+    return false; // No compatible versions found
+}
+
+function isVersionSatisfiedByConstraint($version, ConstraintInterface $constraint)
+{
+    if ($constraint instanceof MultiConstraint) {
+        // For MultiConstraint, check if any sub-constraint is satisfied
+        foreach ($constraint->getConstraints() as $subConstraint) {
+            if (isVersionSatisfiedByConstraint($version, $subConstraint)) {
+                return true;
+            }
+        }
+
+        return false;
+    } else {
+        // For a regular Constraint, directly check for satisfaction
+        return Semver::satisfies($version, $constraint);
+    }
+}
+
+function formatSemverVersion($version)
+{
+    // Remove -dev suffix
+    $version = str_replace('-dev', '', $version);
+
+    // Keep only the first three parts of the version
+    $parts = explode('.', $version);
+    if (count($parts) > 3) {
+        $version = implode('.', array_slice($parts, 0, 3));
+    }
+
+    return $version;
 }
 
 function isGithubRepositoryHealthy($repository): bool

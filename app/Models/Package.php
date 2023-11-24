@@ -79,39 +79,7 @@ class Package extends Model implements Feedable, Orbit
 
     public function isCompatibleWithLaravelActiveVersions(): bool
     {
-        $versionParser = new VersionParser();
-        $activeVersions = fetchActiveLaravelVersions();
-
-        foreach ($this->laravel_dependency_versions as $versionConstraint) {
-            $constraints = $versionParser->parseConstraints($versionConstraint);
-
-            foreach ($activeVersions as $activeVersion) {
-                $formattedVersion = $this->formatVersion($activeVersion);
-
-                if ($this->isVersionSatisfiedByConstraint($formattedVersion, $constraints)) {
-                    return true; // Found a compatible version
-                }
-            }
-        }
-
-        return false; // No compatible versions found
-    }
-
-    private function isVersionSatisfiedByConstraint($version, ConstraintInterface $constraint)
-    {
-        if ($constraint instanceof MultiConstraint) {
-            // For MultiConstraint, check if any sub-constraint is satisfied
-            foreach ($constraint->getConstraints() as $subConstraint) {
-                if ($this->isVersionSatisfiedByConstraint($version, $subConstraint)) {
-                    return true;
-                }
-            }
-
-            return false;
-        } else {
-            // For a regular Constraint, directly check for satisfaction
-            return Semver::satisfies($version, $constraint);
-        }
+        return isCompatibleWithLaravelActiveVersions($this->laravel_dependency_versions);
     }
 
     public function minimumCompatibleLaravelVersion(): string
@@ -143,7 +111,7 @@ class Package extends Model implements Feedable, Orbit
             }
         } elseif ($constraint instanceof Constraint) {
             // For a regular Constraint, get its version and process it
-            $version = $this->formatVersion($constraint->getVersion());
+            $version = formatSemverVersion($constraint->getVersion());
 
             if (is_null($lowestVersion) || Semver::satisfies($version, '<'.$lowestVersion)) {
                 $lowestVersion = $version;
@@ -161,7 +129,7 @@ class Package extends Model implements Feedable, Orbit
         foreach ($this->laravel_dependency_versions as $versionConstraint) {
 
             foreach ($activeVersions as $activeVersion) {
-                $formattedVersion = $this->formatVersion($activeVersion);
+                $formattedVersion = formatSemverVersion($activeVersion);
 
                 // Check if the active version satisfies the constraint
                 if (Semver::satisfies($formattedVersion, $versionConstraint)) {
@@ -171,20 +139,6 @@ class Package extends Model implements Feedable, Orbit
         }
 
         return null; // Or handle cases when no version satisfies the constraint
-    }
-
-    private function formatVersion($version)
-    {
-        // Remove -dev suffix
-        $version = str_replace('-dev', '', $version);
-
-        // Keep only the first three parts of the version
-        $parts = explode('.', $version);
-        if (count($parts) > 3) {
-            $version = implode('.', array_slice($parts, 0, 3));
-        }
-
-        return $version;
     }
 
     public function getOrbitDriver(): string
