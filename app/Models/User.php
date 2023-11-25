@@ -3,8 +3,6 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Filament\Models\Contracts\FilamentUser;
-use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -14,7 +12,7 @@ use Orbit\Concerns\Orbital;
 use Orbit\Contracts\Orbit;
 use Orbit\Drivers\Yaml;
 
-class User extends Authenticatable implements FilamentUser, Orbit
+class User extends Authenticatable implements Orbit
 {
     use HasApiTokens;
     use HasFactory;
@@ -50,10 +48,5 @@ class User extends Authenticatable implements FilamentUser, Orbit
     public function getOrbitDriver(): string
     {
         return Yaml::class;
-    }
-
-    public function canAccessPanel(Panel $panel): bool
-    {
-        return false;
     }
 }
