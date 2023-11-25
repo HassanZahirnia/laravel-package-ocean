@@ -54,10 +54,6 @@ class User extends Authenticatable implements FilamentUser, Orbit
 
     public function canAccessPanel(Panel $panel): bool
     {
-        if (app()->environment('local')) {
-            return true;
-        }
-
         return false;
     }
 }
