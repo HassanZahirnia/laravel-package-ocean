@@ -80,6 +80,36 @@
             }
         </style>
 
+        <script>
+            // Function to check and correct date format in localStorage
+            function checkAndCorrectDateFormat(key) {
+                let value = localStorage.getItem(key)
+
+                // Check if the value exists and is not in double quotes
+                if (value && !value.startsWith('"')) {
+                    // Correct the format by adding double quotes
+                    value = '"' + value + '"'
+                    localStorage.setItem(key, value)
+                }
+
+                // Now check if the value is a valid ISO date
+                if (value) {
+                    // Remove the double quotes for validation
+                    value = value.replace(/"/g, '')
+
+                    // Check if the date is valid
+                    if (isNaN(Date.parse(value))) {
+                        // If not a valid date, remove the item from localStorage
+                        localStorage.removeItem(key)
+                    }
+                }
+            }
+
+            // Check and correct the date formats
+            checkAndCorrectDateFormat('lastVisitDate')
+            checkAndCorrectDateFormat('newVisitDate')
+        </script>
+
         {{-- Livewire --}}
         @livewireStyles
 
