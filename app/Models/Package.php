@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\ClearsResponseCache;
 use Composer\Semver\Constraint\Constraint;
 use Composer\Semver\Constraint\ConstraintInterface;
 use Composer\Semver\Constraint\MultiConstraint;
@@ -20,6 +21,7 @@ use Spatie\Feed\FeedItem;
 
 class Package extends Model implements Feedable, Orbit
 {
+    use ClearsResponseCache;
     use HasFactory;
     use Orbital;
 
