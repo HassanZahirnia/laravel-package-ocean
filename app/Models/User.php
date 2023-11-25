@@ -57,5 +57,7 @@ class User extends Authenticatable implements FilamentUser, Orbit
         if (app()->environment('local')) {
             return true;
         }
+
+        return false;
     }
 }
