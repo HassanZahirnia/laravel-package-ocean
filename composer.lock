@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b95f4de81ab10b23a7bc979ea6f3f96",
+    "content-hash": "a2d8c660d3e624cfe590cd20bba20fbc",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -9254,6 +9254,80 @@
                 }
             ],
             "time": "2023-08-10T15:37:09+00:00"
+        },
+        {
+            "name": "pestphp/pest-plugin-stressless",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pestphp/pest-plugin-stressless.git",
+                "reference": "e79b5399ef4490cc0e5305d5147fab53c1c8cc16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pestphp/pest-plugin-stressless/zipball/e79b5399ef4490cc0e5305d5147fab53c1c8cc16",
+                "reference": "e79b5399ef4490cc0e5305d5147fab53c1c8cc16",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-zip": "*",
+                "pestphp/pest": "^2.24.3",
+                "pestphp/pest-plugin": "^2.1.1",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "pestphp/pest-dev-tools": "^2.16"
+            },
+            "type": "library",
+            "extra": {
+                "pest": {
+                    "plugins": [
+                        "Pest\\Stressless\\Plugin"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Autoload.php"
+                ],
+                "psr-4": {
+                    "Pest\\Stressless\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Stressless plugin for Pest",
+            "keywords": [
+                "framework",
+                "pest",
+                "php",
+                "plugin",
+                "test",
+                "testing",
+                "unit"
+            ],
+            "support": {
+                "issues": "https://github.com/pestphp/pest-plugin-stressless/issues",
+                "source": "https://github.com/pestphp/pest-plugin-stressless/tree/v2.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/nunomaduro",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/nunomaduro",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2023-11-14T22:00:47+00:00"
         },
         {
             "name": "phar-io/manifest",
