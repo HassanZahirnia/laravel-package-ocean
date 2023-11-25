@@ -32,7 +32,7 @@
             'cursor-not-allowed opacity-20' => $this->packages->onFirstPage(),
             'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]' => ! $this->packages->onFirstPage(),
         ])
-        wire:click="previousPage()"
+        wire:click="previousPage"
     >
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,9 @@
             'cursor-not-allowed opacity-20' => $this->packages->onLastPage(),
             'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]' => ! $this->packages->onLastPage(),
         ])
-        wire:click="nextPage()"
+        @if (!$this->packages->onLastPage())
+        wire:click="nextPage"
+        @endif
     >
         <svg
             xmlns="http://www.w3.org/2000/svg"
