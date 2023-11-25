@@ -35,6 +35,6 @@
         <livewire:hero-background />
         <livewire:hero />
         <x-home.package-section />
-        <x-home.footer />
+        <livewire:footer />
     </div>
 </section>
