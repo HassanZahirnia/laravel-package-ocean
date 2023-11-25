@@ -29,7 +29,7 @@
     </div>
     <div class="pt-2 text-2xl font-semibold">Oops!</div>
     <div class="inline-flex items-center gap-2 pt-1 font-medium">
-        <span class="">
+        <span>
             No packages found
             @if ($this->search)
                 <span>for</span>
@@ -40,7 +40,7 @@
                 class="inline-flex cursor-pointer items-center gap-1 rounded-full bg-cyan-200 pb-0.5 pl-3.5 pr-3 pt-px text-cyan-600 transition duration-300 hover:bg-cyan-200/50 dark:bg-cyan-900/50 dark:text-cyan-500 dark:hover:bg-cyan-800"
                 wire:click="resetSearch()"
             >
-                <span class="">
+                <span>
                     {{ $this->search }}
                 </span>
                 <svg

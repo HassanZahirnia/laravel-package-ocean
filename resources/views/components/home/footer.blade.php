@@ -92,7 +92,7 @@
             class="mt-6 h-px w-full max-w-[22rem] bg-current opacity-20 dark:opacity-30"
         ></div>
         <div class="pt-20 text-center text-xs">
-            <div class="">
+            <div>
                 <a
                     href="https://laravel.com/"
                     class="underline transition duration-300 hover:text-black dark:hover:text-white"
@@ -108,15 +108,6 @@
                 </a>
                 and the usage of their trademark for this project has been
                 approved by them.
-            </div>
-            <div class="pt-5">
-                This site is hosted by
-                <a
-                    href="https://twitter.com/ryangjchandler"
-                    class="underline transition duration-300 hover:text-black dark:hover:text-white"
-                >
-                    Ryan Chandler
-                </a>
             </div>
         </div>
     </div>
