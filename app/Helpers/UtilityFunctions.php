@@ -74,6 +74,15 @@ function isCompatibleWithLaravelActiveVersions($dependencies): bool
 
 function preprocessVersionConstraint($constraint)
 {
+    // Handle range constraints like '5.0 - 5.8' and convert them into '>=5.0 <5.9'
+    $constraint = preg_replace_callback('/(\d+\.\d+) - (\d+\.\d+)/', function ($matches) {
+        // Increment the minor version of the upper bound
+        $upperBound = explode('.', $matches[2]);
+        $upperBound[1] = strval(intval($upperBound[1]) + 1);
+
+        return '>= '.$matches[1].' < '.implode('.', $upperBound);
+    }, $constraint);
+
     // Handle wildcard constraints like ^10.*
     $constraint = str_replace('.*', '', $constraint);
 
