@@ -31,6 +31,10 @@ class Home extends Component
 
     public $showNewPackagesSinceLastVisit = false;
 
+    public $alpinePackagesTotal = 0;
+
+    public $alpineCurrentPage = 0;
+
     #[Computed()]
     public function packages()
     {
@@ -53,7 +57,7 @@ class Home extends Component
             ? $this->showOfficialPackages
             : false;
 
-        return Package::query()
+        $result = Package::query()
             ->when($this->search, function (Builder $query, string $search) {
                 $query
                     ->where('name', 'LIKE', "%{$search}%")
@@ -73,6 +77,11 @@ class Home extends Component
             })
             ->orderBy($this->sortSelectValue, 'desc')
             ->paginate(9);
+
+        $this->alpinePackagesTotal = $result->total();
+        $this->alpineCurrentPage = $result->currentPage();
+
+        return $result;
     }
 
     public function totalPackagesCount(): int

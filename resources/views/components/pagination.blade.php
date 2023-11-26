@@ -1,9 +1,9 @@
 <div class="flex select-none items-center gap-3">
     <div
         @class([
-            'grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50',
-            'cursor-not-allowed opacity-20' => $this->packages->onFirstPage(),
-            'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]' => ! $this->packages->onFirstPage(),
+            "grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50",
+            "cursor-not-allowed opacity-20" => $this->packages->onFirstPage(),
+            "cursor-pointer hover:bg-white dark:hover:bg-[#15112e]" => ! $this->packages->onFirstPage(),
         ])
         wire:click="setPage(1)"
     >
@@ -28,9 +28,9 @@
     </div>
     <div
         @class([
-            'grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50',
-            'cursor-not-allowed opacity-20' => $this->packages->onFirstPage(),
-            'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]' => ! $this->packages->onFirstPage(),
+            "grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50",
+            "cursor-not-allowed opacity-20" => $this->packages->onFirstPage(),
+            "cursor-pointer hover:bg-white dark:hover:bg-[#15112e]" => ! $this->packages->onFirstPage(),
         ])
         wire:click="previousPage"
     >
@@ -51,19 +51,28 @@
         </svg>
     </div>
     <div class="grid w-16 place-items-center">
-        <div class="relative h-12 w-14">
-            @for ($i = 1; $i <= $this->packages->total(); $i++)
+        <div
+            class="relative h-12 w-14"
+            x-data="{
+                totalPages: @entangle("alpinePackagesTotal"),
+                currentPage: @entangle("alpineCurrentPage"),
+            }"
+        >
+            <template
+                x-for="i in totalPages"
+                :key="i"
+            >
                 <div
-                    @class([
-                        'absolute text-xl font-semibold transition-all duration-300',
-                        'right-[60%] top-0' => $i === $this->packages->currentPage(),
-                        '-top-5 right-[20%] opacity-0' => $i > $this->packages->currentPage(),
-                        'right-[90%] top-5 opacity-0' => $i < $this->packages->currentPage(),
-                    ])
+                    :class="{
+                'absolute text-xl font-semibold transition-all duration-300': true,
+                'right-[60%] top-0': i === currentPage,
+                '-top-5 right-[20%] opacity-0': i > currentPage,
+                'right-[90%] top-5 opacity-0': i < currentPage
+            }"
                 >
-                    {{ $i }}
+                    <span x-text="i"></span>
                 </div>
-            @endfor
+            </template>
 
             <div
                 class="absolute right-1/2 top-1/2 h-[0.5px] w-10 -translate-y-1/2 translate-x-1/2 -rotate-45 rounded-full bg-current"
@@ -76,12 +85,12 @@
     </div>
     <div
         @class([
-            'grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50',
-            'cursor-not-allowed opacity-20' => $this->packages->onLastPage(),
-            'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]' => ! $this->packages->onLastPage(),
+            "grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50",
+            "cursor-not-allowed opacity-20" => $this->packages->onLastPage(),
+            "cursor-pointer hover:bg-white dark:hover:bg-[#15112e]" => ! $this->packages->onLastPage(),
         ])
-        @if (!$this->packages->onLastPage())
-        wire:click="nextPage"
+        @if (! $this->packages->onLastPage())
+            wire:click="nextPage"
         @endif
     >
         <svg
@@ -102,9 +111,9 @@
     </div>
     <div
         @class([
-            'grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50',
-            'cursor-not-allowed opacity-20' => $this->packages->onLastPage(),
-            'cursor-pointer hover:bg-white dark:hover:bg-[#15112e]' => ! $this->packages->onLastPage(),
+            "grid h-10 w-10 place-items-center rounded-full bg-white/80 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition duration-300 dark:bg-[#110E26]/50",
+            "cursor-not-allowed opacity-20" => $this->packages->onLastPage(),
+            "cursor-pointer hover:bg-white dark:hover:bg-[#15112e]" => ! $this->packages->onLastPage(),
         ])
         wire:click="setPage({{ $this->packages->lastPage() }})"
     >
