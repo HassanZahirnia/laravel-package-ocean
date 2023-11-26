@@ -12,6 +12,7 @@
         "composer/semver": "^3.4",
         "filament/filament": "^3.0-stable",
         "guzzlehttp/guzzle": "^7.2",
+        "itsgoingd/clockwork": "^5.1",
         "laravel/framework": "^10.10",
         "laravel/pail": "^1.0",
         "laravel/sanctum": "^3.2",
