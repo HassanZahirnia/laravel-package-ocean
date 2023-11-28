@@ -29,7 +29,7 @@
                 this.newVisitDate = null
             }
 
-            if (!initialLastVisitDate) {
+            if (initialLastVisitDate !== null) {
                 await $wire.newPackagesCountSinceLastVisit().then((response) => {
                     $data.newPackagesCount = response
                 })
