@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b268296827e4224076f1b0e92d09db4",
+    "content-hash": "de4259dc599bb79069b507beaf417553",
     "packages": [
         {
             "name": "blade-ui-kit/blade-heroicons",
@@ -4936,6 +4936,72 @@
                 }
             ],
             "time": "2023-11-08T05:53:05+00:00"
+        },
+        {
+            "name": "rennokki/laravel-eloquent-query-cache",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/renoki-co/laravel-eloquent-query-cache.git",
+                "reference": "abd7235617206dbf82af8e3177616d7bfb5fed84"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/renoki-co/laravel-eloquent-query-cache/zipball/abd7235617206dbf82af8e3177616d7bfb5fed84",
+                "reference": "abd7235617206dbf82af8e3177616d7bfb5fed84",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^9.35|^10.5",
+                "illuminate/support": "^9.35|^10.5"
+            },
+            "require-dev": {
+                "chelout/laravel-relationship-events": "^1.5|^2.0",
+                "laravel/legacy-factories": "^1.3",
+                "livewire/livewire": "dev-master",
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.23|^8.1.1",
+                "phpunit/phpunit": "^9.5.25"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rennokki\\QueryCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Renoki",
+                    "email": "alex@renoki.org",
+                    "homepage": "https://github.com/rennokki",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adding cache on your Laravel Eloquent queries' results is now a breeze.",
+            "homepage": "https://github.com/renoki-co/laravel-eloquent-query-cache",
+            "keywords": [
+                "caching",
+                "eloquent",
+                "laravel",
+                "query",
+                "remember",
+                "sql"
+            ],
+            "support": {
+                "issues": "https://github.com/renoki-co/laravel-eloquent-query-cache/issues",
+                "source": "https://github.com/renoki-co/laravel-eloquent-query-cache/tree/3.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/rennokki",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-04-01T12:26:34+00:00"
         },
         {
             "name": "ryangjchandler/blade-capture-directive",

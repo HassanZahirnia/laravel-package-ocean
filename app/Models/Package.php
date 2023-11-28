@@ -15,6 +15,7 @@ use NumberFormatter;
 use Orbit\Concerns\Orbital;
 use Orbit\Contracts\Orbit;
 use Orbit\Drivers\Yaml;
+use Rennokki\QueryCache\Traits\QueryCacheable;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 
@@ -22,6 +23,11 @@ class Package extends Model implements Feedable, Orbit
 {
     use HasFactory;
     use Orbital;
+    use QueryCacheable;
+
+    public $cacheFor = 3600; // In seconds
+
+    protected static $flushCacheOnUpdate = true;
 
     protected $casts = [
         'keywords' => 'array',
