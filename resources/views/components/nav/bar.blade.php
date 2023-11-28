@@ -41,7 +41,7 @@
             </a>
 
             {{-- Theme toggle --}}
-            <x-nav.theme-toggle />
+            <x-nav.theme-toggle name="gsap-nav-theme-toggle" />
         </div>
     </header>
 </nav>

@@ -45,7 +45,7 @@
                 Suggest a new package
             </a>
             <!-- Icons -->
-            <div class="relative flex items-center justify-center gap-5">
+            <div wire:ignore class="relative flex items-center justify-center gap-5">
                 <!-- Github link -->
                 <a
                     class="block select-none p-2 hover:text-slate-600 hover:transition hover:duration-300 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
@@ -66,8 +66,9 @@
                         />
                     </svg>
                 </a>
+
                 <!-- Theme toggle  -->
-                <x-nav.theme-toggle />
+                <x-nav.theme-toggle name="gsap-mobile-theme-toggle" />
             </div>
         </div>
     </div>

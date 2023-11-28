@@ -1,12 +1,16 @@
+@props([
+    'name',
+])
+
 <div
     wire:ignore
-    class="gsap-theme-toggle relative h-11 w-11 cursor-pointer select-none hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
+    class="{{ $name }} relative h-11 w-11 cursor-pointer select-none hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
     x-on:click="darkMode = !darkMode"
     x-data="{
         timeline: null,
 
         init() {
-            gsap.to('.gsap-theme-toggle', {
+            gsap.to('.{{ $name }}', {
                 scale: 1,
                 duration: 0.1,
             })
@@ -15,13 +19,13 @@
                 .timeline({
                     paused: true,
                 })
-                .to('.gsap-theme-toggle-moon', {
+                .to('.{{ $name }}-moon', {
                     rotate: 70,
                     ease: 'sine.out',
                     duration: 0.3,
                 })
                 .to(
-                    '.gsap-theme-toggle-mini-star',
+                    '.{{ $name }}-mini-star',
                     {
                         autoAlpha: 0,
                         scale: 0,
@@ -31,7 +35,7 @@
                     '>-0.3',
                 )
                 .to(
-                    '.gsap-theme-toggle-micro-star',
+                    '.{{ $name }}-micro-star',
                     {
                         autoAlpha: 0,
                         scale: 0,
@@ -41,7 +45,7 @@
                     '<',
                 )
                 .to(
-                    '.gsap-theme-toggle-moon',
+                    '.{{ $name }}-moon',
                     {
                         scale: 0.6,
                         ease: 'sine.out',
@@ -50,7 +54,7 @@
                     '<',
                 )
                 .fromTo(
-                    '.gsap-theme-toggle-sunball',
+                    '.{{ $name }}-sunball',
                     {
                         scale: 0,
                         x: -5,
@@ -66,14 +70,12 @@
                     '>-0.15',
                 )
                 .fromTo(
-                    '.gsap-theme-toggle-sunshine',
+                    '.{{ $name }}-sunshine',
                     {
-                        // autoAlpha: 0,
                         scale: 0,
                         rotate: -180,
                     },
                     {
-                        // autoAlpha: 1,
                         scale: 1,
                         rotate: 0,
                         ease: 'expo.out',
@@ -96,7 +98,7 @@
 >
     {{-- Moon --}}
     <div
-        class="gsap-theme-toggle-moon absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
+        class="{{ $name }}-moon absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2"
     >
         <div class="scale-x-[-1] transition duration-300">
             <svg
@@ -113,7 +115,7 @@
         </div>
     </div>
     {{-- Mini star --}}
-    <div class="gsap-theme-toggle-mini-star absolute left-[.6rem] top-[.6rem]">
+    <div class="{{ $name }}-mini-star absolute left-[.6rem] top-[.6rem]">
         <div class="transition duration-300">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +131,7 @@
         </div>
     </div>
     {{-- Micro star --}}
-    <div class="gsap-theme-toggle-micro-star absolute left-[1rem] top-[1rem]">
+    <div class="{{ $name }}-micro-star absolute left-[1rem] top-[1rem]">
         <div class="transition duration-300">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,14 +148,14 @@
     </div>
     {{-- Sun ball --}}
     <div class="absolute right-1/2 top-1/2 -translate-y-1/2 translate-x-1/2">
-        <div class="gsap-theme-toggle-sunball">
+        <div class="{{ $name }}-sunball">
             <div
                 class="h-4 w-4 rounded-full bg-current transition duration-300"
             ></div>
         </div>
     </div>
     {{-- sunShine --}}
-    <div class="gsap-theme-toggle-sunshine absolute inset-0 grid h-full w-full">
+    <div class="{{ $name }}-sunshine absolute inset-0 grid h-full w-full">
         <div class="relative h-full w-full">
             {{-- Top --}}
             <div
