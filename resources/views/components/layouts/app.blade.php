@@ -115,6 +115,21 @@
 
         {{-- Vite --}}
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        {{-- Google Analytics --}}
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-S0ENKYYZTV"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || []
+            function gtag() {
+                dataLayer.push(arguments)
+            }
+            gtag('js', new Date())
+
+            gtag('config', 'G-S0ENKYYZTV')
+        </script>
     </head>
     <body
         x-cloak
