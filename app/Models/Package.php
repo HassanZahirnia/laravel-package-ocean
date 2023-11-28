@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Traits\ClearsResponseCache;
 use Composer\Semver\Constraint\Constraint;
 use Composer\Semver\Constraint\ConstraintInterface;
 use Composer\Semver\Constraint\MultiConstraint;
@@ -22,12 +21,11 @@ use Spatie\Feed\FeedItem;
 
 class Package extends Model implements Feedable, Orbit
 {
-    use ClearsResponseCache;
     use HasFactory;
     use Orbital;
     use QueryCacheable;
 
-    public $cacheFor = 3600; // In seconds
+    public $cacheFor = 3600 * 24; // In seconds
 
     protected static $flushCacheOnUpdate = true;
 

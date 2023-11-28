@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use App\Traits\ClearsResponseCache;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
@@ -12,14 +11,13 @@ use Rennokki\QueryCache\Traits\QueryCacheable;
 
 class Category extends Model implements Orbit
 {
-    use ClearsResponseCache;
     use HasFactory;
     use Orbital;
     use QueryCacheable;
 
     public $timestamps = false;
 
-    public $cacheFor = 3600; // In seconds
+    public $cacheFor = 3600 * 24; // In seconds
 
     protected static $flushCacheOnUpdate = true;
 
