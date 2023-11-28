@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Traits\ClearsResponseCache;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -14,6 +15,7 @@ use Orbit\Drivers\Yaml;
 
 class User extends Authenticatable implements Orbit
 {
+    use ClearsResponseCache;
     use HasApiTokens;
     use HasFactory;
     use Notifiable;

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Traits\ClearsResponseCache;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Schema\Blueprint;
@@ -11,6 +12,7 @@ use Rennokki\QueryCache\Traits\QueryCacheable;
 
 class Category extends Model implements Orbit
 {
+    use ClearsResponseCache;
     use HasFactory;
     use Orbital;
     use QueryCacheable;
