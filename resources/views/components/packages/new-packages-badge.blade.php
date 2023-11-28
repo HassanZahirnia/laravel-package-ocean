@@ -6,16 +6,20 @@
         newPackagesCount: 0,
 
         async init() {
+            const initialLastVisitDate = this.lastVisitDate
+
             // If the lastVisitDate is empty, set the current time
             if (! this.lastVisitDate) {
                 this.lastVisitDate = new Date().toISOString()
                 this.newVisitDate = null
             }
+
             // If newVisitDate is empty, set it to the current time
             // so that on the next visit, we have something to compare the GRACE_PERIOD minutes difference with
             else if (! this.newVisitDate) {
                 this.newVisitDate = new Date().toISOString()
             }
+
             // If the difference between the lastVisitDate and newVisitDate is more than GRACE_PERIOD minutes,
             // set the lastVisitDate to the current time and newVisitDate to null
             else if (
@@ -25,9 +29,11 @@
                 this.newVisitDate = null
             }
 
-            await $wire.newPackagesCountSinceLastVisit().then((response) => {
-                $data.newPackagesCount = response
-            })
+            if (!initialLastVisitDate) {
+                await $wire.newPackagesCountSinceLastVisit().then((response) => {
+                    $data.newPackagesCount = response
+                })
+            }
         },
     }"
     x-show="newPackagesCount > 0"
