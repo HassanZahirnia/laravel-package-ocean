@@ -1,6 +1,6 @@
 <div
     x-data="{
-        lastVisitDate: $persist(null).as('lastVisitDate'),
+        lastVisitDate: $persist(@entangle('lastVisitDate')).as('lastVisitDate'),
         newVisitDate: $persist(null).as('newVisitDate'),
         GRACE_PERIOD: 5, // minutes,
         newPackagesCount: 0,
@@ -24,8 +24,6 @@
                 this.lastVisitDate = new Date().toISOString()
                 this.newVisitDate = null
             }
-
-            $wire.lastVisitDate = this.lastVisitDate
 
             await $wire.newPackagesCountSinceLastVisit().then((response) => {
                 $data.newPackagesCount = response
