@@ -46,7 +46,6 @@
                             // When selectedCategory changes, update selectedCategoryCopy, unless it's empty
                             init() {
                                 $watch('$wire.selectedCategory', (value) => {
-                                    console.log('selectedCategory changed', value)
                                     if (value) $data.selectedCategoryCopy = value
                                 })
                             },
