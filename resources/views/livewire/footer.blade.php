@@ -19,7 +19,7 @@
                 <img
                     src="{{ Vite::asset('resources/images/hassan-zahirnia.webp') }}"
                     alt="Hassan Zahirnia"
-                    class="h-full w-full object-cover transition duration-300 group-hover:scale-110"
+                    class="h-full w-full object-cover transition duration-300 will-change-transform group-hover:scale-110"
                     width="auto"
                     height="auto"
                 />
@@ -27,7 +27,7 @@
             <div class="text-left">
                 <div
                     href="https://zahirnia.com"
-                    class="bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-xl font-extrabold text-transparent transition duration-300 group-hover:translate-x-0.5 dark:from-pink-300 dark:to-cyan-300"
+                    class="bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-xl font-extrabold text-transparent transition duration-300 will-change-transform group-hover:translate-x-1 dark:from-pink-300 dark:to-cyan-300"
                 >
                     Hassan Zahirnia
                 </div>
@@ -35,7 +35,7 @@
                 <div class="flex flex-wrap justify-start gap-5 pt-3">
                     <a
                         href="https://github.com/HassanZahirnia"
-                        class="flex items-center gap-2 transition duration-300 hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
+                        class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
                     </a>
                     <a
                         href="https://twitter.com/HassanZahirnia"
-                        class="flex items-center gap-2 transition duration-300 hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
+                        class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@
                     </a>
                     <a
                         href="https://zahirnia.com"
-                        class="flex items-center gap-2 transition duration-300 hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
+                        class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -95,14 +95,14 @@
             <div>
                 <a
                     href="https://laravel.com/"
-                    class="underline transition duration-300 hover:text-black dark:hover:text-white"
+                    class="underline transition duration-300 will-change-transform hover:text-black dark:hover:text-white"
                 >
                     Laravel
                 </a>
                 is a trademark of
                 <a
                     href="https://github.com/taylorotwell"
-                    class="underline transition duration-300 hover:text-black dark:hover:text-white"
+                    class="underline transition duration-300 will-change-transform hover:text-black dark:hover:text-white"
                 >
                     Taylor Otwell
                 </a>
