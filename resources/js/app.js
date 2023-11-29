@@ -36,7 +36,7 @@ Livewire.start()
 // Nprogress
 NProgress.configure({
     showSpinner: false,
-    minimum: 0.1,
+    minimum: 0.2,
     trickleSpeed: 200
 })
 
