@@ -10,7 +10,6 @@ import 'tippy.js/animations/shift-away-subtle.css'
 import autoAnimate from '@formkit/auto-animate'
 import Tooltip from '@ryangjchandler/alpine-tooltip'
 import dayjs from 'dayjs'
-import NProgress from 'nprogress'
 
 // Day.js
 window.dayjs = dayjs
@@ -32,21 +31,3 @@ window.reducedMotion = window.matchMedia(
 Alpine.plugin(Tooltip)
 
 Livewire.start()
-
-// Nprogress
-NProgress.configure({
-    showSpinner: false,
-    minimum: 0.2,
-    trickleSpeed: 200,
-})
-
-Livewire.hook('commit', ({ component, commit, respond, succeed, fail }) => {
-    NProgress.start()
-
-    succeed(({ snapshot, effect }) => {
-        queueMicrotask(() => {
-            NProgress.done(true)
-            NProgress.remove()
-        })
-    })
-})
