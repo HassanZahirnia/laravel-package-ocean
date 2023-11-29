@@ -37,7 +37,7 @@ Livewire.start()
 NProgress.configure({
     showSpinner: false,
     minimum: 0.2,
-    trickleSpeed: 200
+    trickleSpeed: 200,
 })
 
 Livewire.hook('commit', ({ component, commit, respond, succeed, fail }) => {
