@@ -6,7 +6,7 @@ github: 'https://github.com/vanilophp/framework'
 author: vanilo
 composer: vanilo/framework
 npm: null
-stars: 742
+stars: 763
 keywords:
     - customer
     - product
@@ -16,10 +16,10 @@ keywords:
     - shippping
     - taxes
 first_release_at: '2017-10-29 19:17:54'
-latest_release_at: '2023-04-04 18:23:37'
+latest_release_at: '2023-11-17 12:07:35'
 laravel_dependency_versions:
-    - ^9.2||^10.0
+    - ^9.2|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:51:07+00:00

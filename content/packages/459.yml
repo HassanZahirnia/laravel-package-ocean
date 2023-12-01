@@ -6,13 +6,13 @@ github: 'https://github.com/brick/money'
 author: brick
 composer: brick/money
 npm: null
-stars: 1424
+stars: 1457
 keywords:
     - financial
 first_release_at: '2015-05-31 18:04:20'
-latest_release_at: '2023-01-15 23:59:01'
+latest_release_at: '2023-11-26 16:51:39'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-06-15T10:45:50+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T18:01:49+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-collection-macros'
 author: spatie
 composer: spatie/laravel-collection-macros
 npm: null
-stars: 1609
+stars: 1635
 keywords: {  }
 first_release_at: '2016-07-26 15:21:49'
-latest_release_at: '2023-03-22 13:01:33'
+latest_release_at: '2023-10-17 15:12:13'
 laravel_dependency_versions:
     - ^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:55:34+00:00

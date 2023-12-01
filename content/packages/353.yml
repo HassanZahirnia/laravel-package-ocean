@@ -6,7 +6,7 @@ github: 'https://github.com/koenhendriks/laravel-str-acronym'
 author: koenhendriks
 composer: koenhendriks/laravel-str-acronym
 npm: null
-stars: 34
+stars: 35
 keywords: {  }
 first_release_at: '2023-03-30 13:05:47'
 latest_release_at: '2023-04-09 18:38:20'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-22T11:13:26+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T17:57:45+00:00

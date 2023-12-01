@@ -6,15 +6,14 @@ github: 'https://github.com/yoeunes/toastr'
 author: yoeunes
 composer: yoeunes/toastr
 npm: null
-stars: 300
+stars: 320
 keywords:
     - jquery
     - 'flash messages'
 first_release_at: '2018-01-08 13:38:42'
 latest_release_at: '2023-01-14 02:38:08'
-laravel_dependency_versions:
-    - '>=4'
+laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:52:28+00:00

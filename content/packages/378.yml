@@ -6,7 +6,7 @@ github: 'https://github.com/michaeldyrynda/laravel-cascade-soft-deletes'
 author: dyrynda
 composer: dyrynda/laravel-cascade-soft-deletes
 npm: null
-stars: 846
+stars: 856
 keywords: {  }
 first_release_at: '2020-09-08 03:59:23'
 latest_release_at: '2023-02-16 01:47:23'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:36:20+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T17:58:43+00:00

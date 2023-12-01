@@ -6,13 +6,13 @@ github: 'https://github.com/TheDragonCode/laravel-cache'
 author: dragon-code
 composer: dragon-code/laravel-cache
 npm: null
-stars: 67
+stars: 68
 keywords: {  }
 first_release_at: '2021-11-13 10:35:01'
-latest_release_at: '2023-04-06 12:46:59'
+latest_release_at: '2023-11-14 20:20:53'
 laravel_dependency_versions:
     - '>=6.0 <11.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:54:18+00:00

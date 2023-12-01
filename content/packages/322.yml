@@ -11,8 +11,8 @@ keywords: {  }
 first_release_at: '2021-02-13 17:05:25'
 latest_release_at: '2023-03-22 10:32:46'
 laravel_dependency_versions:
-    - ~7||~8||~9||~10
+    - ~7|~8|~9|~10
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:49+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:56:37+00:00

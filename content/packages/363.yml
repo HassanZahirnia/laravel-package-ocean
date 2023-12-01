@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-blade-comments'
 author: spatie
 composer: spatie/laravel-blade-comments
 npm: null
-stars: 129
+stars: 133
 keywords: {  }
 first_release_at: '2023-05-29 13:08:33'
-latest_release_at: '2023-05-31 15:51:39'
+latest_release_at: '2023-10-17 16:03:38'
 laravel_dependency_versions:
-    - ^9.28||^10
+    - ^9.28|^10
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-05T11:22:04+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T17:58:09+00:00

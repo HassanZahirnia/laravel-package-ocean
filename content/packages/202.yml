@@ -6,16 +6,16 @@ github: 'https://github.com/spatie/laravel-mail-preview'
 author: spatie
 composer: spatie/laravel-mail-preview
 npm: null
-stars: 1082
+stars: 1103
 keywords:
     - smtp
     - transport
     - post
 first_release_at: '2021-01-27 17:19:36'
-latest_release_at: '2023-01-25 15:10:45'
+latest_release_at: '2023-09-14 16:44:53'
 laravel_dependency_versions:
-    - ^9.0||^10.0
+    - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:52:06+00:00

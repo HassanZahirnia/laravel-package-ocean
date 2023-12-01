@@ -6,7 +6,7 @@ github: 'https://github.com/lepikhinb/momentum-lock'
 author: based
 composer: based/momentum-lock
 npm: null
-stars: 37
+stars: 38
 keywords:
     - boris
     - lepikhinb
@@ -14,8 +14,8 @@ keywords:
 first_release_at: '2022-12-15 23:26:51'
 latest_release_at: '2023-02-24 20:08:19'
 laravel_dependency_versions:
-    - ^9.0||^10
+    - ^9.0|^10
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-11-07T12:18:55+00:00
+updated_at: 2023-12-01T17:31:46+00:00

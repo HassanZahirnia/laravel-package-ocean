@@ -6,7 +6,7 @@ github: 'https://github.com/nahid/talk'
 author: nahid
 composer: nahid/talk
 npm: null
-stars: 1569
+stars: 1570
 keywords: {  }
 first_release_at: '2015-10-06 09:06:18'
 latest_release_at: '2021-03-25 13:30:23'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:46:04+00:00

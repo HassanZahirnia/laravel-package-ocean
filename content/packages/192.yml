@@ -6,7 +6,7 @@ github: 'https://github.com/mcamara/laravel-localization'
 author: mcamara
 composer: mcamara/laravel-localization
 npm: null
-stars: 3217
+stars: 3246
 keywords:
     - language
     - locale
@@ -16,8 +16,8 @@ keywords:
 first_release_at: '2013-09-01 19:17:57'
 latest_release_at: '2023-02-18 15:43:23'
 laravel_dependency_versions:
-    - ~5.2.0||~5.3.0||~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0||^10.0
+    - ~5.2.0||~5.3.0||~5.4.0||~5.5.0||~5.6.0||~5.7.0||~5.8.0||^6.0||^7.0||^8.0||^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:51:42+00:00

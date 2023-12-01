@@ -6,13 +6,13 @@ github: 'https://github.com/DirectoryTree/LdapRecord'
 author: directorytree
 composer: directorytree/ldaprecord
 npm: null
-stars: 430
+stars: 445
 keywords: {  }
 first_release_at: '2019-04-27 18:41:26'
-latest_release_at: '2023-05-01 00:48:01'
+latest_release_at: '2023-11-08 20:58:22'
 laravel_dependency_versions:
-    - ^8.0||^9.0||^10.0
+    - ^8.0|^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-22T11:14:47+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T17:57:49+00:00

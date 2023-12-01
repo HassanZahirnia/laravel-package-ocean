@@ -6,13 +6,13 @@ github: 'https://github.com/sfolador/laravel-locked'
 author: sfolador
 composer: sfolador/laravel-locked
 npm: null
-stars: 35
+stars: 37
 keywords: {  }
 first_release_at: '2022-11-13 08:29:03'
 latest_release_at: '2023-02-14 17:56:09'
 laravel_dependency_versions:
-    - ^9.0||^10
+    - ^9.0|^10
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T13:40:53+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T17:58:24+00:00

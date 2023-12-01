@@ -6,13 +6,13 @@ github: 'https://github.com/rappasoft/laravel-livewire-tables'
 author: rappasoft
 composer: rappasoft/laravel-livewire-tables
 npm: null
-stars: 1497
+stars: 1547
 keywords: {  }
 first_release_at: '2020-03-28 03:59:14'
-latest_release_at: '2023-02-16 18:32:49'
+latest_release_at: '2023-11-19 01:25:49'
 laravel_dependency_versions:
-    - ^8.0||^9.0||^10.0
+    - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:46:11+00:00

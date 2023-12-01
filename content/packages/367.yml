@@ -6,13 +6,13 @@ github: 'https://github.com/abbasudo/laravel-purity'
 author: abbasudo
 composer: abbasudo/laravel-purity
 npm: null
-stars: 142
+stars: 295
 keywords: {  }
 first_release_at: '2023-02-28 12:54:53'
-latest_release_at: '2023-03-25 10:33:11'
+latest_release_at: '2023-10-20 09:45:49'
 laravel_dependency_versions:
-    - ^10.0||^9.0||^8.0
+    - ^10.0|^9.0|^8.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T13:33:09+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T17:58:17+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/tymondesigns/jwt-auth'
 author: tymon
 composer: tymon/jwt-auth
 npm: null
-stars: 11015
+stars: 11070
 keywords: {  }
 first_release_at: '2014-09-04 21:57:06'
 latest_release_at: '2023-02-16 16:29:41'
 laravel_dependency_versions:
-    - ^9.0||^10.0
+    - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-11-07T12:18:55+00:00
+updated_at: 2023-12-01T17:45:35+00:00

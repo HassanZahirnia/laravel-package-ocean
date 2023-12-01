@@ -6,15 +6,15 @@ github: 'https://github.com/lepikhinb/laravel-typescript'
 author: based
 composer: based/laravel-typescript
 npm: null
-stars: 350
+stars: 355
 keywords:
     - boris
     - lepikhinb
 first_release_at: '2021-07-25 16:00:01'
-latest_release_at: '2022-03-19 21:26:19'
+latest_release_at: '2023-07-06 21:24:22'
 laravel_dependency_versions:
-    - ^8.37||^9.0||^10.0
+    - ^8.37|^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:49:30+00:00

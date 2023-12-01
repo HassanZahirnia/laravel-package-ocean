@@ -6,13 +6,13 @@ github: 'https://github.com/jenssegers/laravel-mongodb'
 author: jenssegers
 composer: jenssegers/mongodb
 npm: null
-stars: 6631
+stars: 6836
 keywords: {  }
 first_release_at: '2013-03-31 14:36:15'
-latest_release_at: '2023-02-16 12:20:36'
+latest_release_at: '2023-11-02 20:30:11'
 laravel_dependency_versions:
     - ^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:47:35+00:00

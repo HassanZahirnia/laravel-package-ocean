@@ -6,13 +6,13 @@ github: 'https://github.com/ahmedesa/laravel-api-tool-kit'
 author: essa
 composer: essa/api-tool-kit
 npm: null
-stars: 360
+stars: 379
 keywords: {  }
 first_release_at: '2021-10-17 18:47:29'
-latest_release_at: '2023-09-04 12:20:44'
+latest_release_at: '2023-12-01 08:06:29'
 laravel_dependency_versions:
-    - ^8.0||^9.0||^10.0
+    - ^8.0|^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-21T09:35:27+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T18:03:08+00:00

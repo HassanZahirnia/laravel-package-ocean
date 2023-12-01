@@ -6,14 +6,14 @@ github: 'https://github.com/hammerstonedev/fast-paginate'
 author: hammerstone
 composer: hammerstone/fast-paginate
 npm: null
-stars: 1050
+stars: 1071
 keywords:
     - sql
 first_release_at: '2022-07-07 15:37:11'
-latest_release_at: '2023-02-14 03:28:31'
+latest_release_at: '2023-04-29 18:13:05'
 laravel_dependency_versions:
-    - ^8.37||^9.0||^10.0
+    - ^8.37|^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:47:32+00:00

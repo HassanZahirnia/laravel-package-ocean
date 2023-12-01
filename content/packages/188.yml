@@ -6,13 +6,12 @@ github: 'https://github.com/amiranagram/localizator'
 author: amirami
 composer: amirami/localizator
 npm: null
-stars: 203
+stars: 209
 keywords: {  }
 first_release_at: '2020-11-06 19:44:44'
-latest_release_at: '2023-01-16 12:10:38'
-laravel_dependency_versions:
-    - ^6.0||^8.0||^9.0||^10.0
+latest_release_at: null
+laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:51:34+00:00

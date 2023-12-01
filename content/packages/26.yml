@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/passport'
 author: laravel
 composer: laravel/passport
 npm: null
-stars: 3166
+stars: 3182
 keywords: {  }
 first_release_at: '2016-08-15 19:31:29'
-latest_release_at: '2023-04-04 14:06:53'
+latest_release_at: '2023-11-02 17:16:12'
 laravel_dependency_versions:
-    - ^9.0||^10.0
+    - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-11-07T12:18:55+00:00
+updated_at: 2023-12-01T17:32:14+00:00

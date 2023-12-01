@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-query-builder'
 author: spatie
 composer: spatie/laravel-query-builder
 npm: null
-stars: 3749
+stars: 3793
 keywords: {  }
 first_release_at: '2018-01-16 11:10:08'
-latest_release_at: '2023-02-24 15:48:30'
+latest_release_at: '2023-10-05 10:21:47'
 laravel_dependency_versions:
-    - ^9.0||^10.0
+    - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:48:49+00:00

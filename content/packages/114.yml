@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-model-states'
 author: spatie
 composer: spatie/laravel-model-states
 npm: null
-stars: 1005
+stars: 1018
 keywords: {  }
 first_release_at: '2019-09-27 07:22:53'
-latest_release_at: '2023-02-20 06:41:50'
+latest_release_at: '2023-09-27 06:55:57'
 laravel_dependency_versions:
-    - '^8.73 || ^9.0 || ^10.0'
+    - '^8.73 | ^9.0 | ^10.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-11-07T12:18:56+00:00
+updated_at: 2023-12-01T17:48:42+00:00

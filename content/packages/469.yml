@@ -6,13 +6,13 @@ github: 'https://github.com/YieldStudio/tailwind-merge-php'
 author: yieldstudio
 composer: yieldstudio/tailwind-merge-php
 npm: null
-stars: 35
+stars: 36
 keywords: {  }
 first_release_at: '2023-06-10 00:42:39'
-latest_release_at: '2023-06-20 01:57:30'
+latest_release_at: '2023-07-19 12:28:31'
 laravel_dependency_versions:
-    - ^9||^10
+    - ^9|^10
 package_type: php-package
 paid_integration: false
 created_at: 2023-06-21T18:24:38+00:00
-updated_at: 2023-11-07T12:18:57+00:00
+updated_at: 2023-12-01T18:02:10+00:00
