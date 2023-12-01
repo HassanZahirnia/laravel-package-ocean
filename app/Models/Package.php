@@ -147,6 +147,35 @@ class Package extends Model implements Feedable, Orbit
         return null; // Or handle cases when no version satisfies the constraint
     }
 
+    public function updateStars(): void
+    {
+        if (! empty($this->github)) {
+            $this->update([
+                'stars' => fetchGithubStars($this->github),
+            ]);
+        }
+    }
+
+    public function updateReleaseDatesAndDependencies(): void
+    {
+        if (! empty($this->composer)) {
+            $packagistData = getPackagistData($this->composer);
+
+            $this->update([
+                'first_release_at' => $packagistData['first_release_at'],
+                'latest_release_at' => $packagistData['latest_release_at'],
+                'laravel_dependency_versions' => $packagistData['laravel_dependency_versions'],
+            ]);
+        } elseif (! empty($this->npm)) {
+            $npmData = getNpmData($this->npm);
+
+            $this->update([
+                'first_release_at' => $npmData['first_release_at'],
+                'latest_release_at' => $npmData['latest_release_at'],
+            ]);
+        }
+    }
+
     public function getOrbitDriver(): string
     {
         return Yaml::class;

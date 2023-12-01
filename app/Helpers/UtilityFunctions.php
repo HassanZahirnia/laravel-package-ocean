@@ -130,7 +130,9 @@ function formatSemverVersion($version)
 
 function isGithubRepositoryHealthy($repository): bool
 {
-    $response = Http::get('https://api.github.com/repos/'.$repository);
+    $response = Http::withHeaders([
+        'Authorization' => 'Bearer '.config('services.github.token'),
+    ])->get('https://api.github.com/repos/'.$repository);
 
     if ($response->failed()) {
         return false;
@@ -180,7 +182,9 @@ function extractRepoFromGithubUrl($url): ?string
 
 function fetchGithubStars($url): int
 {
-    $githubData = Http::get('https://api.github.com/repos/'.extractRepoFromGithubUrl($url));
+    $githubData = Http::withHeaders([
+        'Authorization' => 'Bearer '.config('services.github.token'),
+    ])->get('https://api.github.com/repos/'.extractRepoFromGithubUrl($url));
 
     if ($githubData->failed()) {
         return 0;
