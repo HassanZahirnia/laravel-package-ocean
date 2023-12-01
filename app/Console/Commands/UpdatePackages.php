@@ -15,7 +15,7 @@ class UpdatePackages extends Command
 
     public function handle()
     {
-        $packages = progress(
+        progress(
             label: 'Updating packages',
             steps: Package::all(),
             callback: function ($package, $progress) {
