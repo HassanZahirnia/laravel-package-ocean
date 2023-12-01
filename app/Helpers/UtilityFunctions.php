@@ -130,7 +130,7 @@ function formatSemverVersion($version)
 
 function isGithubRepositoryHealthy($repository): bool
 {
-    $response = Http::withHeaders([
+    $response = Http::timeout(10)->withHeaders([
         'Authorization' => 'Bearer '.config('services.github.token'),
     ])->get('https://api.github.com/repos/'.$repository);
 
@@ -182,7 +182,7 @@ function extractRepoFromGithubUrl($url): ?string
 
 function fetchGithubStars($url): int
 {
-    $githubData = Http::withHeaders([
+    $githubData = Http::timeout(10)->withHeaders([
         'Authorization' => 'Bearer '.config('services.github.token'),
     ])->get('https://api.github.com/repos/'.extractRepoFromGithubUrl($url));
 
@@ -195,7 +195,7 @@ function fetchGithubStars($url): int
 
 function getNpmData($npm): array
 {
-    $npmData = Http::get('https://registry.npmjs.org/'.$npm);
+    $npmData = Http::timeout(10)->get('https://registry.npmjs.org/'.$npm);
     if ($npmData->failed()) {
         return [];
     }
@@ -211,8 +211,8 @@ function getNpmData($npm): array
 
 function getPackagistData($composer): array
 {
-    $packagistData = Http::get('https://packagist.org/packages/'.$composer.'.json');
-    $minimalPackagistData = Http::get('https://repo.packagist.org/p2/'.$composer.'.json');
+    $packagistData = Http::timeout(10)->get('https://packagist.org/packages/'.$composer.'.json');
+    $minimalPackagistData = Http::timeout(10)->get('https://repo.packagist.org/p2/'.$composer.'.json');
     if ($packagistData->failed() || $minimalPackagistData->failed()) {
         return [];
     }
