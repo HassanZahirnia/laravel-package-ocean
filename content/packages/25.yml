@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/fortify'
 author: laravel
 composer: laravel/fortify
 npm: null
-stars: 1493
+stars: 1496
 keywords: {  }
 first_release_at: '2020-08-31 19:27:09'
 latest_release_at: '2023-11-27 22:01:18'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-12-01T17:32:10+00:00
+updated_at: 2023-12-05T10:37:01+00:00

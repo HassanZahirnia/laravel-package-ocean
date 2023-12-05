@@ -6,7 +6,7 @@ github: 'https://github.com/Laravel-Lang/lang'
 author: laravel-lang
 composer: laravel-lang/common
 npm: null
-stars: 7245
+stars: 7247
 keywords: {  }
 first_release_at: '2023-02-12 11:08:30'
 latest_release_at: '2023-11-11 10:29:16'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T01:45:40+00:00
-updated_at: 2023-12-01T17:56:44+00:00
+updated_at: 2023-12-05T10:53:31+00:00

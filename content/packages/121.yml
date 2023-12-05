@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-sluggable'
 author: spatie
 composer: spatie/laravel-sluggable
 npm: null
-stars: 1265
+stars: 1266
 keywords: {  }
 first_release_at: '2015-12-24 14:51:56'
 latest_release_at: '2023-05-29 09:42:35'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-01T17:48:57+00:00
+updated_at: 2023-12-05T10:42:34+00:00

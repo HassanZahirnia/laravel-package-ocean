@@ -6,7 +6,7 @@ github: 'https://github.com/nuwave/lighthouse'
 author: nuwave
 composer: nuwave/lighthouse
 npm: null
-stars: 3257
+stars: 3258
 keywords: {  }
 first_release_at: '2016-05-29 21:50:57'
 latest_release_at: '2023-11-30 14:04:52'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-01T17:48:05+00:00
+updated_at: 2023-12-05T10:41:22+00:00

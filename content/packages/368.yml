@@ -6,7 +6,7 @@ github: 'https://github.com/stechstudio/laravel-zipstream'
 author: stechstudio
 composer: stechstudio/laravel-zipstream
 npm: null
-stars: 331
+stars: 332
 keywords:
     - archive
 first_release_at: '2019-04-12 18:20:20'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T13:34:57+00:00
-updated_at: 2023-12-01T17:58:20+00:00
+updated_at: 2023-12-05T10:55:45+00:00

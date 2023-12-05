@@ -6,7 +6,7 @@ github: 'https://github.com/calebporzio/sushi'
 author: calebporzio
 composer: calebporzio/sushi
 npm: null
-stars: 2190
+stars: 2192
 keywords: {  }
 first_release_at: '2020-01-28 13:58:43'
 latest_release_at: '2023-10-17 14:42:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-01T17:47:17+00:00
+updated_at: 2023-12-05T10:40:14+00:00

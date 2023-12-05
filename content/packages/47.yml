@@ -6,7 +6,7 @@ github: 'https://github.com/laravel-shift/blueprint'
 author: laravel-shift
 composer: laravel-shift/blueprint
 npm: null
-stars: 2567
+stars: 2574
 keywords: {  }
 first_release_at: '2019-11-06 06:49:36'
 latest_release_at: '2023-11-25 00:37:40'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2023-12-01T17:45:59+00:00
+updated_at: 2023-12-05T10:38:21+00:00

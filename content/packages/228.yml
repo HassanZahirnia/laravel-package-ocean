@@ -6,7 +6,7 @@ github: 'https://github.com/lepikhinb/momentum-modal'
 author: based
 composer: based/momentum-modal
 npm: null
-stars: 399
+stars: 400
 keywords:
     - boris
     - lepikhinb
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-01T17:53:06+00:00
+updated_at: 2023-12-05T10:48:29+00:00

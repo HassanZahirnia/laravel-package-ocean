@@ -6,7 +6,7 @@ github: 'https://github.com/Label84/laravel-hours-helper'
 author: label84
 composer: label84/laravel-hours-helper
 npm: null
-stars: 249
+stars: 250
 keywords: {  }
 first_release_at: '2022-01-02 19:29:33'
 latest_release_at: '2023-02-11 20:01:12'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-01T17:54:45+00:00
+updated_at: 2023-12-05T10:50:44+00:00
