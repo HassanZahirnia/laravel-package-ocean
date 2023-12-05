@@ -15,15 +15,15 @@
         "autoprefixer": "^10.4.16",
         "axios": "^1.6.2",
         "dayjs": "^1.11.10",
-        "gsap": "^3.12.2",
+        "gsap": "^3.12.3",
         "laravel-vite-plugin": "^0.8.1",
         "lodash": "^4.17.21",
-        "postcss": "^8.4.31",
+        "postcss": "^8.4.32",
         "prettier": "^2.8.8",
         "prettier-plugin-blade": "^1.6.16",
         "prettier-plugin-tailwindcss": "^0.3.0",
-        "tailwindcss": "^3.3.5",
+        "tailwindcss": "^3.3.6",
         "tippy.js": "^6.3.7",
-        "vite": "^4.5.0"
+        "vite": "^4.5.1"
     }
 }

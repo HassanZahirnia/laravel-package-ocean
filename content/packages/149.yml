@@ -2,17 +2,17 @@ id: 149
 name: Larastan
 description: 'Adds code analysis to improve developer productivity and code quality.'
 category_id: '4'
-github: 'https://github.com/nunomaduro/larastan'
-author: nunomaduro
-composer: nunomaduro/larastan
+github: 'https://github.com/larastan/larastan'
+author: larastan
+composer: larastan/larastan
 npm: null
-stars: 4921
+stars: 4930
 keywords: {  }
-first_release_at: '2018-07-05 21:40:04'
-latest_release_at: '2023-07-29 12:13:13'
+first_release_at: '2023-12-04 21:47:15'
+latest_release_at: '2023-12-04 19:21:38'
 laravel_dependency_versions:
-    - '^9.47.0 || ^10.0.0'
+    - '^9.52.16 || ^10.28.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-01T17:50:01+00:00
+updated_at: 2023-12-05T10:03:09+00:00
