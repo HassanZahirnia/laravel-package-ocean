@@ -238,14 +238,16 @@ class PackageResource extends Resource
                                 'string',
                                 'distinct',
                                 fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) {
-                                    // Must not be a wildcard (*)
-                                    if (preg_match('/\*/', $value)) {
-                                        $fail('The :attribute must not be a wildcard (*).');
-                                    }
+                                    $isValidVersionConstraint = isValidVersionConstraint($value);
 
                                     // Must be a valid laravel version
-                                    if (! isValidVersionConstraint($value)) {
+                                    if (! $isValidVersionConstraint) {
                                         $fail('The :attribute constraint is not valid');
+                                    }
+
+                                    // Must not be a wildcard (*)
+                                    if (preg_match('/\*/', $value) && ! $isValidVersionConstraint) {
+                                        $fail('The :attribute must not be a wildcard (*).');
                                     }
                                 },
                             ])
@@ -324,7 +326,8 @@ class PackageResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('package_type')
-                    ->searchable()
+                    ->searchable(isIndividual: true)
+                    ->sortable()
                     ->formatStateUsing(fn (string $state): string => str($state)->headline()),
                 Tables\Columns\IconColumn::make('paid_integration')
                     ->boolean()
