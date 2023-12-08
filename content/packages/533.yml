@@ -1,0 +1,18 @@
+id: 533
+name: 'Laravel Microsoft Graph Mail'
+description: 'Provides a Microsoft Graph mail driver for Laravel.'
+category_id: '12'
+github: 'https://github.com/InnoGE/laravel-msgraph-mail'
+author: innoge
+composer: innoge/laravel-msgraph-mail
+npm: null
+stars: 9
+keywords: {  }
+first_release_at: '2023-02-13 10:01:19'
+latest_release_at: '2023-11-28 11:10:34'
+laravel_dependency_versions:
+    - ^9.38|^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2023-12-08T08:32:23+00:00
+updated_at: 2023-12-08T08:32:23+00:00
