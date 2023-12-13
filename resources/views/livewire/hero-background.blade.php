@@ -6,7 +6,7 @@
     {{-- Purple blur --}}
     <img
         x-show="!darkMode"
-        src="{{ Vite::asset('resources/images/pink-blur.webp') }}"
+        src="@viteAsset('resources/images/pink-blur.webp')"
         width="auto"
         height="auto"
         alt=""
@@ -15,7 +15,7 @@
     {{-- Purple blur for dark theme --}}
     <img
         x-show="darkMode"
-        src="{{ Vite::asset('resources/images/pink-blur-dark.webp') }}"
+        src="@viteAsset('resources/images/pink-blur-dark.webp')"
         width="auto"
         height="auto"
         alt=""
@@ -24,7 +24,7 @@
     {{-- Blue blur --}}
     <img
         x-show="!darkMode"
-        src="{{ Vite::asset('resources/images/blue-blur.webp') }}"
+        src="@viteAsset('resources/images/blue-blur.webp')"
         width="auto"
         height="auto"
         alt=""
@@ -33,7 +33,7 @@
     {{-- Blue blur for dark theme --}}
     <img
         x-show="darkMode"
-        src="{{ Vite::asset('resources/images/blue-blur-dark.webp') }}"
+        src="@viteAsset('resources/images/blue-blur-dark.webp')"
         width="auto"
         height="auto"
         alt=""

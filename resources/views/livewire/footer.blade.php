@@ -17,7 +17,7 @@
                 class="h-14 w-14 shrink-0 overflow-hidden rounded-full bg-slate-800"
             >
                 <img
-                    src="{{ Vite::asset('resources/images/hassan-zahirnia.webp') }}"
+                    src="@viteAsset('resources/images/hassan-zahirnia.webp')"
                     alt="Hassan Zahirnia"
                     class="h-full w-full object-cover transition duration-300 will-change-transform group-hover:scale-110"
                     width="auto"

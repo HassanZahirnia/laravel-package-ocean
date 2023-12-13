@@ -27,7 +27,7 @@
     {{-- Earth --}}
     <div class="absolute right-1/2 top-0 z-[-1] translate-x-1/2 sm:-top-5">
         <img
-            src="{{ Vite::asset('resources/images/earth.webp') }}"
+            src="@viteAsset('resources/images/earth.webp')"
             width="250"
             height="237"
             alt=""
