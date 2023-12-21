@@ -6,13 +6,13 @@ github: 'https://github.com/stillat/blade-parser-typescript'
 author: stillat
 composer: null
 npm: prettier-plugin-blade
-stars: 53
+stars: 56
 keywords:
     - 'john koster'
 first_release_at: '2022-07-18 14:52:45'
-latest_release_at: '2023-11-14 23:56:40'
+latest_release_at: '2023-12-14 19:08:08'
 laravel_dependency_versions: {  }
 package_type: npm-package
 paid_integration: false
 created_at: 2023-06-12T18:57:12+00:00
-updated_at: 2023-12-01T18:01:40+00:00
+updated_at: 2023-12-20T12:10:44+00:00

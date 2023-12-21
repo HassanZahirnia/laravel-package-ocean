@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/vonage-notification-channel'
 author: laravel
 composer: laravel/vonage-notification-channel
 npm: null
-stars: 706
+stars: 710
 keywords: {  }
 first_release_at: '2022-02-08 15:19:10'
 latest_release_at: '2023-05-01 15:47:10'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-07T10:48:39+00:00
-updated_at: 2023-12-01T17:59:11+00:00
+updated_at: 2023-12-20T12:07:46+00:00

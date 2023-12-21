@@ -6,7 +6,7 @@ github: 'https://github.com/asbiin/laravel-webauthn'
 author: asbiin
 composer: asbiin/laravel-webauthn
 npm: null
-stars: 220
+stars: 223
 keywords: {  }
 first_release_at: '2019-03-30 15:22:42'
 latest_release_at: '2023-10-01 12:00:29'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T13:03:55+00:00
-updated_at: 2023-12-05T10:59:31+00:00
+updated_at: 2023-12-20T12:09:58+00:00

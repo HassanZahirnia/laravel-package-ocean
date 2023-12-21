@@ -6,7 +6,7 @@ github: 'https://github.com/beyondcode/laravel-mailbox'
 author: beyondcode
 composer: beyondcode/laravel-mailbox
 npm: null
-stars: 990
+stars: 993
 keywords: {  }
 first_release_at: '2019-01-22 14:34:13'
 latest_release_at: '2023-02-21 09:49:26'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2023-12-05T10:46:55+00:00
+updated_at: 2023-12-20T09:51:34+00:00

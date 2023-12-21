@@ -6,7 +6,7 @@ github: 'https://github.com/goldspecdigital/laravel-eloquent-uuid'
 author: goldspecdigital
 composer: goldspecdigital/laravel-eloquent-uuid
 npm: null
-stars: 519
+stars: 518
 keywords: {  }
 first_release_at: '2019-06-08 17:06:09'
 latest_release_at: '2023-02-23 18:49:29'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T11:23:26+00:00
-updated_at: 2023-12-05T10:57:33+00:00
+updated_at: 2023-12-20T12:08:17+00:00

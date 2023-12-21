@@ -6,6 +6,7 @@ use App\Models\Package;
 use Illuminate\Console\Command;
 
 use function Laravel\Prompts\progress;
+use function Laravel\Prompts\text;
 
 class UpdatePackages extends Command
 {
@@ -15,9 +16,21 @@ class UpdatePackages extends Command
 
     public function handle()
     {
+        $id = text(
+            label: 'Do you want to start from a specific package ID? (leave empty to start from the beginning)',
+            validate: fn ($id) => is_numeric($id),
+        );
+
+        $packages = Package::query()
+            ->when($id, function ($query, $id) {
+                return $query->where('id', '>=', $id);
+            })
+            ->orderBy('id')
+            ->get();
+
         progress(
             label: 'Updating packages',
-            steps: Package::all(),
+            steps: $packages,
             callback: function ($package, $progress) {
                 $progress
                     ->label("{$package->name}")
