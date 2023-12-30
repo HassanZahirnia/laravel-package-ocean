@@ -13,7 +13,7 @@
         "@tailwindcss/typography": "^0.5.10",
         "alpinejs": "^3.13.3",
         "autoprefixer": "^10.4.16",
-        "axios": "^1.6.2",
+        "axios": "^1.6.3",
         "dayjs": "^1.11.10",
         "gsap": "^3.12.4",
         "laravel-vite-plugin": "^0.8.1",
