@@ -18,7 +18,13 @@ class UpdatePackages extends Command
     {
         $id = text(
             label: 'Do you want to start from a specific package ID? (leave empty to start from the beginning)',
-            validate: fn ($id) => is_numeric($id),
+            validate: function ($id) {
+                if ($id === '') { // Allow empty input to pass validation
+                    return null;
+                }
+
+                return is_numeric($id) ? null : 'Please enter a valid numeric ID.';
+            }
         );
 
         $packages = Package::query()
