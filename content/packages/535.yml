@@ -1,0 +1,18 @@
+id: 535
+name: Aire
+description: 'Form builder with a focus on expressive and beautiful code.'
+category_id: '17'
+github: 'https://github.com/glhd/aire'
+author: inxilpro
+composer: glhd/aire
+npm: null
+stars: 523
+keywords: {  }
+first_release_at: '2018-10-30 04:14:58'
+latest_release_at: '2024-01-02 20:18:45'
+laravel_dependency_versions:
+    - ~5.8.28|^6|^7|^8|^9|^10|11.x-dev|dev-master
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-01-03T20:01:25+00:00
+updated_at: 2024-01-03T20:26:05+00:00
