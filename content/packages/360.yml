@@ -6,7 +6,7 @@ github: 'https://github.com/salehhashemi1992/laravel-domain-expert'
 author: salehhashemi
 composer: salehhashemi/laravel-domain-expert
 npm: null
-stars: 33
+stars: 34
 keywords:
     - ddd
 first_release_at: '2023-04-09 20:02:53'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-02T08:46:33+00:00
-updated_at: 2023-12-20T12:06:25+00:00
+updated_at: 2024-01-03T13:56:42+00:00
