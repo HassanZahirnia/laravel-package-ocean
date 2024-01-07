@@ -1,0 +1,18 @@
+id: 535
+name: 'Laravel Pdf'
+description: 'Create beautiful PDFs from Blade views, powered by modern CSS features.'
+category_id: '18'
+github: 'https://github.com/spatie/laravel-pdf'
+author: spatie
+composer: spatie/laravel-pdf
+npm: null
+stars: 373
+keywords: {  }
+first_release_at: '2023-12-26 20:38:16'
+latest_release_at: '2024-01-02 14:21:13'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-01-07T09:14:56+00:00
+updated_at: 2024-01-07T09:14:56+00:00
