@@ -205,6 +205,12 @@ class Home extends Component
 
     public function updatingPage($page)
     {
-        $this->js("document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'auto' })");
+        $this->js(<<<JS
+            if (window.innerWidth > 1280) {
+                return
+            }
+
+            document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'auto' });
+        JS);
     }
 }
