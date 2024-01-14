@@ -30,33 +30,55 @@ function fetchActiveLaravelVersions()
             $response = Http::get('https://laravelversions.com/api/versions');
 
             if ($response->successful()) {
-                $data = $response->json('data');
-
-                $activeVersions = collect($data)
-                    ->where('status', 'active') // Filter for active versions
-                    ->pluck('latest') // Extract the 'latest' property
-                    ->sort() // Sort the versions
-                    ->values()
-                    ->toArray();
-
-                // If active versions is empty, we'll default to '10.0.0' as a fallback
-                if (empty($activeVersions)) {
-                    $activeVersions = ['10.0.0'];
-                }
-
-                return $activeVersions;
+                return extractActiveVersionsFromLaravelVersions($response);
+            } else {
+                // If the primary source fails, try the fallback source
+                return fetchVersionsFromEndOfLife();
             }
-
-            return ['10.0.0'];
-
         } catch (\Exception $e) {
-            // Log the error for debugging
+            // If there's an exception, try the fallback source
             Log::error('Error fetching active Laravel versions: '.$e->getMessage());
 
-            // Return a default value to ensure the application continues to work
-            return ['10.0.0']; // You might want to return a default or cached value here
+            return fetchVersionsFromEndOfLife();
         }
     });
+}
+
+function extractActiveVersionsFromLaravelVersions($response)
+{
+    $data = $response->json('data');
+    $activeVersions = collect($data)
+        ->where('status', 'active')
+        ->pluck('latest')
+        ->sort()
+        ->values()
+        ->toArray();
+
+    return empty($activeVersions) ? ['10.0.0'] : $activeVersions;
+}
+
+function fetchVersionsFromEndOfLife()
+{
+    $response = Http::get('https://endoflife.date/api/laravel.json');
+
+    if ($response->successful()) {
+        $data = $response->json();
+        $today = now();
+
+        $activeVersions = collect($data)
+            ->filter(function ($version) use ($today) {
+                // Check if the support date is still valid
+                return $today->lessThan($version['support']);
+            })
+            ->pluck('latest')
+            ->sort()
+            ->values()
+            ->toArray();
+
+        return empty($activeVersions) ? ['10.0.0'] : $activeVersions;
+    }
+
+    return ['10.0.0']; // Default fallback if both sources fail
 }
 
 function latestActiveLaravelVersion()
