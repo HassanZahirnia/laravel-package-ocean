@@ -7,6 +7,7 @@ use Composer\Semver\Intervals;
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 function isValidVersionConstraint($constraintString): bool
 {
@@ -25,27 +26,36 @@ function isValidVersionConstraint($constraintString): bool
 function fetchActiveLaravelVersions()
 {
     return cache()->remember('active_laravel_versions', now()->addDay(), function () {
-        $response = Http::get('https://laravelversions.com/api/versions');
+        try {
+            $response = Http::get('https://laravelversions.com/api/versions');
 
-        if ($response->successful()) {
-            $data = $response->json('data');
+            if ($response->successful()) {
+                $data = $response->json('data');
 
-            $activeVersions = collect($data)
-                ->where('status', 'active') // Filter for active versions
-                ->pluck('latest') // Extract the 'latest' property
-                ->sort() // Sort the versions
-                ->values()
-                ->toArray();
+                $activeVersions = collect($data)
+                    ->where('status', 'active') // Filter for active versions
+                    ->pluck('latest') // Extract the 'latest' property
+                    ->sort() // Sort the versions
+                    ->values()
+                    ->toArray();
 
-            // If active versions is empty, we'll default to '10.0.0' as a fallback
-            if (empty($activeVersions)) {
-                $activeVersions = ['10.0.0'];
+                // If active versions is empty, we'll default to '10.0.0' as a fallback
+                if (empty($activeVersions)) {
+                    $activeVersions = ['10.0.0'];
+                }
+
+                return $activeVersions;
             }
 
-            return $activeVersions;
-        }
+            return ['10.0.0'];
 
-        return ['10.0.0'];
+        } catch (\Exception $e) {
+            // Log the error for debugging
+            Log::error('Error fetching active Laravel versions: '.$e->getMessage());
+
+            // Return a default value to ensure the application continues to work
+            return ['10.0.0']; // You might want to return a default or cached value here
+        }
     });
 }
 
