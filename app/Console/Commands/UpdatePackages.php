@@ -5,8 +5,8 @@ namespace App\Console\Commands;
 use App\Models\Package;
 use Illuminate\Console\Command;
 
+use function Laravel\Prompts\confirm;
 use function Laravel\Prompts\progress;
-use function Laravel\Prompts\text;
 
 class UpdatePackages extends Command
 {
@@ -16,20 +16,18 @@ class UpdatePackages extends Command
 
     public function handle()
     {
-        $id = text(
-            label: 'Do you want to start from a specific package ID? (leave empty to start from the beginning)',
-            validate: function ($id) {
-                if ($id === '') { // Allow empty input to pass validation
-                    return null;
-                }
-
-                return is_numeric($id) ? null : 'Please enter a valid numeric ID.';
-            }
+        $updateAll = confirm(
+            label: 'Do you want to update all packages (or only those not updated in the past day?)',
+            default: false,
+            yes: 'All packages',
+            no: 'Not updated in past day',
         );
 
         $packages = Package::query()
-            ->when($id, function ($query, $id) {
-                return $query->where('id', '>=', $id);
+            ->when($updateAll === false, function ($query) {
+                $yesterday = now()->subDay();
+
+                return $query->where('updated_at', '<', $yesterday);
             })
             ->orderBy('id')
             ->get();
