@@ -6,7 +6,7 @@ github: 'https://github.com/codebyray/laravel-review-rateable'
 author: codebyray
 composer: codebyray/laravel-review-rateable
 npm: null
-stars: 268
+stars: 271
 keywords: {  }
 first_release_at: '2018-10-24 09:07:37'
 latest_release_at: '2023-05-09 15:27:50'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-30T18:17:24+00:00
-updated_at: 2024-01-03T13:56:35+00:00
+updated_at: 2024-01-16T12:36:53+00:00

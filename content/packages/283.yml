@@ -6,7 +6,7 @@ github: 'https://github.com/PrinsFrank/standards'
 author: prinsfrank
 composer: prinsfrank/standards
 npm: null
-stars: 340
+stars: 343
 keywords: {  }
 first_release_at: '2022-06-08 20:28:39'
 latest_release_at: '2024-01-01 13:45:13'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-01-03T13:52:23+00:00
+updated_at: 2024-01-16T11:49:53+00:00

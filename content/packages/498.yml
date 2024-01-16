@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-stripe-webhooks'
 author: spatie
 composer: spatie/laravel-stripe-webhooks
 npm: null
-stars: 463
+stars: 466
 keywords: {  }
 first_release_at: '2017-10-05 19:36:13'
 latest_release_at: '2023-10-18 06:55:50'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-09-21T09:45:15+00:00
-updated_at: 2024-01-03T14:04:21+00:00
+updated_at: 2024-01-16T12:44:42+00:00

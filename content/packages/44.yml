@@ -6,7 +6,7 @@ github: 'https://github.com/cmgmyr/laravel-messenger'
 author: cmgmyr
 composer: cmgmyr/messenger
 npm: null
-stars: 2385
+stars: 2389
 keywords:
     - thread
     - conversation
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-01-03T12:06:59+00:00
+updated_at: 2024-01-16T11:14:09+00:00
