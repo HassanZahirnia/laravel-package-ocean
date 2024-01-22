@@ -1,0 +1,18 @@
+id: 540
+name: 'Self Healing Urls'
+description: 'Allows you to define self-healing URLs for Eloquent models.'
+category_id: '18'
+github: 'https://github.com/lukeraymonddowning/self-healing-urls'
+author: lukeraymonddowning
+composer: lukeraymonddowning/self-healing-urls
+npm: null
+stars: 115
+keywords: {  }
+first_release_at: '2023-11-25 20:42:00'
+latest_release_at: '2024-01-14 15:27:16'
+laravel_dependency_versions:
+    - ^10.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-01-22T10:52:36+00:00
+updated_at: 2024-01-22T10:52:36+00:00
