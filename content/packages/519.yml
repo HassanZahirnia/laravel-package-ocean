@@ -6,7 +6,7 @@ github: 'https://github.com/Laragear/Compare'
 author: laragear
 composer: laragear/compare
 npm: null
-stars: 5
+stars: 6
 keywords: {  }
 first_release_at: '2022-07-04 19:59:11'
 latest_release_at: '2023-02-20 06:31:14'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-04T09:54:27+00:00
-updated_at: 2023-12-01T18:03:56+00:00
+updated_at: 2024-02-01T17:05:27+00:00

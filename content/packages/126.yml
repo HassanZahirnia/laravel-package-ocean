@@ -6,14 +6,14 @@ github: 'https://github.com/tpetry/laravel-postgresql-enhanced'
 author: tpetry
 composer: tpetry/laravel-postgresql-enhanced
 npm: null
-stars: 580
+stars: 583
 keywords: {  }
 first_release_at: '2021-04-06 20:02:45'
-latest_release_at: '2023-10-23 15:36:21'
+latest_release_at: '2024-01-26 16:33:42'
 laravel_dependency_versions:
     - ^6.0|^7.0|^8.0|^9.0|^10.0
     - ^6.0|^7.0|^8.79|^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-01-03T12:11:47+00:00
+updated_at: 2024-02-01T18:42:57+00:00

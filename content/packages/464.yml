@@ -6,7 +6,7 @@ github: 'https://github.com/biiiiiigmonster/hasin'
 author: biiiiiigmonster
 composer: biiiiiigmonster/hasin
 npm: null
-stars: 103
+stars: 104
 keywords: {  }
 first_release_at: '2020-12-21 05:55:58'
 latest_release_at: '2023-05-15 08:42:27'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-16T10:12:41+00:00
-updated_at: 2024-01-16T12:42:49+00:00
+updated_at: 2024-02-01T17:02:42+00:00

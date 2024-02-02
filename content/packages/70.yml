@@ -6,14 +6,14 @@ github: 'https://github.com/archtechx/tenancy'
 author: stancl
 composer: stancl/tenancy
 npm: null
-stars: 3228
+stars: 3246
 keywords:
     - 'multi database'
 first_release_at: '2019-01-18 16:05:15'
-latest_release_at: '2023-09-02 01:20:42'
+latest_release_at: '2024-01-27 21:55:59'
 laravel_dependency_versions:
     - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-01-16T11:17:11+00:00
+updated_at: 2024-02-01T18:40:03+00:00

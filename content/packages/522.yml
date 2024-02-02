@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/pail'
 author: laravel
 composer: laravel/pail
 npm: null
-stars: 578
+stars: 582
 keywords: {  }
 first_release_at: '2023-09-25 16:13:51'
-latest_release_at: '2023-11-23 14:45:16'
+latest_release_at: '2024-01-26 15:26:25'
 laravel_dependency_versions:
-    - ^10.24
+    - ^10.24|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-11-24T19:17:43+00:00
-updated_at: 2024-01-16T12:46:01+00:00
+updated_at: 2024-02-01T17:05:38+00:00

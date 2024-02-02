@@ -6,7 +6,7 @@ github: 'https://github.com/mchev/banhammer'
 author: mchev
 composer: mchev/banhammer
 npm: null
-stars: 288
+stars: 292
 keywords: {  }
 first_release_at: '2023-02-11 20:02:42'
 latest_release_at: '2024-01-07 12:27:35'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-01-16T11:12:44+00:00
+updated_at: 2024-02-01T18:37:47+00:00

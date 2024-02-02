@@ -6,7 +6,7 @@ github: 'https://github.com/Lecturize/Laravel-Addresses'
 author: lecturize
 composer: lecturize/laravel-addresses
 npm: null
-stars: 188
+stars: 189
 keywords: {  }
 first_release_at: '2016-10-13 19:27:39'
 latest_release_at: '2023-09-21 15:43:24'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T13:06:47+00:00
-updated_at: 2023-12-05T10:59:42+00:00
+updated_at: 2024-02-01T17:01:37+00:00
