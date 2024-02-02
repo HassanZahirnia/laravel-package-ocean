@@ -25,9 +25,7 @@ class UpdatePackages extends Command
 
         $packages = Package::query()
             ->when($updateAll === false, function ($query) {
-                $yesterday = now()->subDay();
-
-                return $query->where('updated_at', '<', $yesterday);
+                return $query->where('updated_at', '<', now()->subDay());
             })
             ->orderBy('id')
             ->get();
@@ -43,6 +41,8 @@ class UpdatePackages extends Command
                 $package->updateStars();
 
                 $package->updateReleaseDatesAndDependencies();
+
+                $package->touch();
 
                 return true;
             },
