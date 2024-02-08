@@ -6,7 +6,7 @@ github: 'https://github.com/clickbar/laravel-magellan'
 author: clickbar
 composer: clickbar/laravel-magellan
 npm: null
-stars: 154
+stars: 155
 keywords:
     - geo
     - geojson
@@ -20,4 +20,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-01T18:40:35+00:00
+updated_at: 2024-02-08T12:51:13+00:00

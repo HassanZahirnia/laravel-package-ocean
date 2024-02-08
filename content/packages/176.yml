@@ -6,7 +6,7 @@ github: 'https://github.com/lunarphp/lunar'
 author: lunarphp
 composer: lunarphp/lunar
 npm: null
-stars: 2025
+stars: 2045
 keywords:
     - carts
     - payment
@@ -19,4 +19,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-01T16:44:07+00:00
+updated_at: 2024-02-08T12:53:51+00:00

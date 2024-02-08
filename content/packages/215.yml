@@ -6,7 +6,7 @@ github: 'https://github.com/ralphjsmit/laravel-seo'
 author: ralphjsmit
 composer: ralphjsmit/laravel-seo
 npm: null
-stars: 492
+stars: 496
 keywords:
     - opengraph
     - twitter
@@ -21,10 +21,10 @@ keywords:
     - favicon
     - breadcrumbs
 first_release_at: '2022-02-08 13:33:02'
-latest_release_at: '2023-12-20 19:24:48'
+latest_release_at: '2024-02-07 12:21:49'
 laravel_dependency_versions:
     - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-01T16:47:11+00:00
+updated_at: 2024-02-08T12:54:59+00:00

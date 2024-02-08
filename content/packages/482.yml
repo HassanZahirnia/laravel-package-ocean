@@ -6,7 +6,7 @@ github: 'https://github.com/rmunate/SpellNumber'
 author: rmunate
 composer: rmunate/spell-number
 npm: null
-stars: 268
+stars: 269
 keywords: {  }
 first_release_at: '2023-01-11 18:31:19'
 latest_release_at: '2023-11-28 11:25:24'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-08-11T13:05:18+00:00
-updated_at: 2024-02-01T17:03:36+00:00
+updated_at: 2024-02-08T13:02:10+00:00

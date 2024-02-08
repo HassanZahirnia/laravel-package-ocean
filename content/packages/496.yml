@@ -6,7 +6,7 @@ github: 'https://github.com/Lomkit/laravel-rest-api'
 author: lomkit
 composer: lomkit/laravel-rest-api
 npm: null
-stars: 259
+stars: 261
 keywords: {  }
 first_release_at: '2023-07-30 18:56:29'
 latest_release_at: '2024-01-26 18:14:37'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-21T09:32:24+00:00
-updated_at: 2024-02-01T17:04:20+00:00
+updated_at: 2024-02-08T13:02:31+00:00

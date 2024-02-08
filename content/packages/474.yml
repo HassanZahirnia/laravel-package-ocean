@@ -6,7 +6,7 @@ github: 'https://github.com/basement-chat/basement-chat'
 author: basement-chat
 composer: basement-chat/basement-chat
 npm: null
-stars: 420
+stars: 426
 keywords: {  }
 first_release_at: '2023-05-27 04:10:12'
 latest_release_at: '2023-06-03 09:37:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-07-17T19:59:52+00:00
-updated_at: 2024-02-01T17:03:12+00:00
+updated_at: 2024-02-08T13:01:58+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/MohmmedAshraf/laravel-translations'
 author: outhebox
 composer: outhebox/laravel-translations
 npm: null
-stars: 474
+stars: 485
 keywords: {  }
 first_release_at: '2022-11-13 00:33:00'
-latest_release_at: '2024-01-24 12:51:55'
+latest_release_at: '2024-02-02 11:18:06'
 laravel_dependency_versions:
     - ^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-01T16:46:08+00:00
+updated_at: 2024-02-08T12:54:25+00:00
