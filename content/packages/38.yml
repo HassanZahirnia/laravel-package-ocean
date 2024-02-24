@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-permission'
 author: spatie
 composer: spatie/laravel-permission
 npm: null
-stars: 11682
+stars: 11711
 keywords:
     - gate
     - authorization
@@ -20,4 +20,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-08T12:50:00+00:00
+updated_at: 2024-02-24T08:56:34+00:00

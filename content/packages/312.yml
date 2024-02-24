@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-webhook-server'
 author: spatie
 composer: spatie/laravel-webhook-server
 npm: null
-stars: 850
+stars: 856
 keywords: {  }
 first_release_at: '2019-06-11 18:43:20'
-latest_release_at: '2023-11-27 11:46:04'
+latest_release_at: '2024-02-12 08:18:25'
 laravel_dependency_versions:
-    - ^8.50|^9.0|^10.0
+    - ^8.50|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-08T12:57:33+00:00
+updated_at: 2024-02-24T09:03:38+00:00

@@ -6,15 +6,15 @@ github: 'https://github.com/livewire/livewire'
 author: livewire
 composer: livewire/livewire
 npm: null
-stars: 21404
+stars: 21457
 keywords:
     - alpine
     - calebporzio
 first_release_at: '2019-09-20 03:22:45'
-latest_release_at: '2024-01-28 19:07:11'
+latest_release_at: '2024-02-20 14:04:25'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-08T12:50:41+00:00
+updated_at: 2024-02-24T08:57:12+00:00

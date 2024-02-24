@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/dusk'
 author: laravel
 composer: laravel/dusk
 npm: null
-stars: 1798
+stars: 1806
 keywords: {  }
 first_release_at: '2017-01-13 15:41:16'
-latest_release_at: '2024-01-03 22:54:48'
+latest_release_at: '2024-02-15 13:38:58'
 laravel_dependency_versions:
     - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-08T12:55:13+00:00
+updated_at: 2024-02-24T09:01:26+00:00

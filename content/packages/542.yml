@@ -6,13 +6,13 @@ github: 'https://github.com/safemood/discountify'
 author: safemood
 composer: safemood/discountify
 npm: null
-stars: 109
+stars: 119
 keywords: {  }
 first_release_at: '2024-01-14 20:44:33'
-latest_release_at: '2024-01-26 17:58:50'
+latest_release_at: '2024-02-11 15:25:36'
 laravel_dependency_versions:
     - ^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-02-08T12:30:10+00:00
-updated_at: 2024-02-08T12:30:10+00:00
+updated_at: 2024-02-24T09:09:18+00:00

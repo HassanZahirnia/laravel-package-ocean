@@ -6,7 +6,7 @@ github: 'https://github.com/YorCreative/Laravel-Scrubber'
 author: yorcreative
 composer: yorcreative/laravel-scrubber
 npm: null
-stars: 131
+stars: 130
 keywords: {  }
 first_release_at: '2022-08-16 20:49:53'
 latest_release_at: '2023-11-06 23:44:53'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-08T12:55:10+00:00
+updated_at: 2024-02-24T09:01:23+00:00

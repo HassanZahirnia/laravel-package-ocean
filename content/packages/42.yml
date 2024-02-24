@@ -6,16 +6,16 @@ github: 'https://github.com/Laravel-Backpack/CRUD'
 author: backpack
 composer: backpack/crud
 npm: null
-stars: 2872
+stars: 2885
 keywords:
     - widget
     - alert
     - breadcrumbs
 first_release_at: '2016-03-10 14:23:28'
-latest_release_at: '2024-01-30 16:40:07'
+latest_release_at: '2024-02-22 21:06:12'
 laravel_dependency_versions:
     - ^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-08T12:50:07+00:00
+updated_at: 2024-02-24T08:56:40+00:00

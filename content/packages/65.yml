@@ -6,7 +6,7 @@ github: 'https://github.com/protonemedia/laravel-splade'
 author: protonemedia
 composer: protonemedia/laravel-splade
 npm: null
-stars: 1391
+stars: 1398
 keywords:
     - spa
     - vue
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-08T12:50:46+00:00
+updated_at: 2024-02-24T08:57:17+00:00
