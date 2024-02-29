@@ -6,7 +6,7 @@ github: 'https://github.com/squirephp/squire'
 author: danharrin
 composer: squirephp/repository
 npm: null
-stars: 920
+stars: 926
 keywords: {  }
 first_release_at: '2021-01-11 10:00:17'
 latest_release_at: '2023-02-18 12:44:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-03T12:16:20+00:00
-updated_at: 2024-02-24T09:04:51+00:00
+updated_at: 2024-02-29T11:07:29+00:00

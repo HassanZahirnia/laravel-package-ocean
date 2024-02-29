@@ -6,7 +6,7 @@ github: 'https://github.com/tomasVotruba/bladestan'
 author: tomasvotruba
 composer: tomasvotruba/bladestan
 npm: null
-stars: 261
+stars: 265
 keywords: {  }
 first_release_at: '2023-03-05 10:04:26'
 latest_release_at: '2024-01-10 21:54:16'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-24T08:59:39+00:00
+updated_at: 2024-02-29T11:01:55+00:00

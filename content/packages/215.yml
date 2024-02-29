@@ -6,7 +6,7 @@ github: 'https://github.com/ralphjsmit/laravel-seo'
 author: ralphjsmit
 composer: ralphjsmit/laravel-seo
 npm: null
-stars: 506
+stars: 507
 keywords:
     - opengraph
     - twitter
@@ -27,4 +27,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-24T09:01:12+00:00
+updated_at: 2024-02-29T11:03:31+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/ikechukwukalu/requirepin'
 author: ikechukwukalu
 composer: ikechukwukalu/requirepin
 npm: null
-stars: 225
+stars: 226
 keywords: {  }
 first_release_at: '2023-03-02 22:37:59'
 latest_release_at: '2023-11-21 21:04:02'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-24T09:02:35+00:00
+updated_at: 2024-02-29T11:04:59+00:00

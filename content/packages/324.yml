@@ -6,7 +6,7 @@ github: 'https://github.com/andersao/l5-repository'
 author: prettus
 composer: prettus/l5-repository
 npm: null
-stars: 4136
+stars: 4138
 keywords: {  }
 first_release_at: '2015-02-12 20:17:37'
 latest_release_at: '2023-02-22 02:22:15'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T01:37:59+00:00
-updated_at: 2024-02-24T09:03:55+00:00
+updated_at: 2024-02-29T11:06:28+00:00

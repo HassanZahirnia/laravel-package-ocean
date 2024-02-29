@@ -6,7 +6,7 @@ github: 'https://github.com/LaravelDaily/Larastarters'
 author: laraveldaily
 composer: laraveldaily/larastarters
 npm: null
-stars: 725
+stars: 724
 keywords:
     - tailwind
     - breeze
@@ -16,4 +16,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-24T08:56:50+00:00
+updated_at: 2024-02-29T10:58:53+00:00

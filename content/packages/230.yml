@@ -6,7 +6,7 @@ github: 'https://github.com/dietercoopman/smart'
 author: dietercoopman
 composer: dietercoopman/smart
 npm: null
-stars: 223
+stars: 221
 keywords: {  }
 first_release_at: '2021-09-07 19:56:50'
 latest_release_at: '2023-03-03 20:24:20'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-24T09:01:36+00:00
+updated_at: 2024-02-29T11:03:56+00:00

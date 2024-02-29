@@ -6,7 +6,7 @@ github: 'https://github.com/tailflow/laravel-orion'
 author: tailflow
 composer: tailflow/laravel-orion
 npm: null
-stars: 1377
+stars: 1379
 keywords:
     - crud
 first_release_at: '2020-10-24 10:54:43'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-24T08:55:58+00:00
+updated_at: 2024-02-29T10:57:54+00:00

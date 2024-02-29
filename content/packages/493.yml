@@ -6,13 +6,13 @@ github: 'https://github.com/takielias/tablar'
 author: takielias
 composer: takielias/tablar
 npm: null
-stars: 221
+stars: 222
 keywords: {  }
 first_release_at: '2022-10-09 05:47:42'
-latest_release_at: '2023-12-10 01:55:27'
+latest_release_at: '2024-02-26 03:28:45'
 laravel_dependency_versions:
     - ~10
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-18T11:33:14+00:00
-updated_at: 2024-02-24T09:08:09+00:00
+updated_at: 2024-02-29T11:10:56+00:00
