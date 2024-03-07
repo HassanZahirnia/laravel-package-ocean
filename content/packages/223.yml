@@ -6,7 +6,7 @@ github: 'https://github.com/infection/infection'
 author: infection
 composer: infection/infection
 npm: null
-stars: 1962
+stars: 1965
 keywords: {  }
 first_release_at: '2017-07-01 15:00:12'
 latest_release_at: '2024-02-20 00:08:52'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:03:44+00:00
+updated_at: 2024-03-07T18:33:02+00:00

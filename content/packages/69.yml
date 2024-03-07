@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-view-models'
 author: spatie
 composer: spatie/laravel-view-models
 npm: null
-stars: 983
+stars: 984
 keywords: {  }
 first_release_at: '2018-09-12 08:22:53'
 latest_release_at: '2023-02-01 08:39:40'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-29T10:59:31+00:00
+updated_at: 2024-03-07T18:28:29+00:00

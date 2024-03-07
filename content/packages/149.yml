@@ -6,13 +6,13 @@ github: 'https://github.com/larastan/larastan'
 author: larastan
 composer: larastan/larastan
 npm: null
-stars: 5099
+stars: 5113
 keywords: {  }
 first_release_at: '2023-12-04 21:47:15'
-latest_release_at: '2024-02-26 14:10:20'
+latest_release_at: '2024-02-27 03:16:03'
 laravel_dependency_versions:
     - '^9.52.16 || ^10.28.0 || ^11.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:01:40+00:00
+updated_at: 2024-03-07T18:31:01+00:00

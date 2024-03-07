@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/sail'
 author: laravel
 composer: laravel/sail
 npm: null
-stars: 1523
+stars: 1529
 keywords: {  }
 first_release_at: '2020-12-04 15:37:35'
-latest_release_at: '2024-02-23 00:24:47'
+latest_release_at: '2024-03-04 14:58:29'
 laravel_dependency_versions:
     - ^9.52.16|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:01:32+00:00
+updated_at: 2024-03-07T18:30:42+00:00

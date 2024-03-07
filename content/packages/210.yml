@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-notification-log'
 author: spatie
 composer: spatie/laravel-notification-log
 npm: null
-stars: 156
+stars: 158
 keywords: {  }
 first_release_at: '2023-02-24 04:23:24'
-latest_release_at: '2024-01-18 15:49:13'
+latest_release_at: '2024-03-01 10:22:03'
 laravel_dependency_versions:
     - ^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:03:23+00:00
+updated_at: 2024-03-07T18:32:41+00:00

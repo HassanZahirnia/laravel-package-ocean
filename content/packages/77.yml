@@ -6,7 +6,7 @@ github: 'https://github.com/lepikhinb/laravel-fluent'
 author: based
 composer: based/laravel-fluent
 npm: null
-stars: 533
+stars: 534
 keywords:
     - boris
     - lepikhinb
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T10:59:44+00:00
+updated_at: 2024-03-07T18:28:41+00:00

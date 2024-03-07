@@ -6,7 +6,7 @@ github: 'https://github.com/protonemedia/laravel-ffmpeg'
 author: pbmedia
 composer: pbmedia/laravel-ffmpeg
 npm: null
-stars: 1530
+stars: 1536
 keywords: {  }
 first_release_at: '2016-07-29 12:43:33'
 latest_release_at: '2024-01-02 23:13:28'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:02:35+00:00
+updated_at: 2024-03-07T18:31:57+00:00

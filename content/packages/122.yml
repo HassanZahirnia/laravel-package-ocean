@@ -6,7 +6,7 @@ github: 'https://github.com/staudenmeir/belongs-to-through'
 author: staudenmeir
 composer: staudenmeir/belongs-to-through
 npm: null
-stars: 1008
+stars: 1010
 keywords: {  }
 first_release_at: '2019-02-01 14:36:14'
 latest_release_at: '2023-12-19 11:58:06'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:00:58+00:00
+updated_at: 2024-03-07T18:30:03+00:00

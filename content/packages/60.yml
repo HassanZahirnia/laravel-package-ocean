@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/pennant'
 author: laravel
 composer: laravel/pennant
 npm: null
-stars: 434
+stars: 437
 keywords: {  }
 first_release_at: '2023-02-09 23:38:56'
-latest_release_at: '2024-01-15 16:44:04'
+latest_release_at: '2024-03-04 22:18:21'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-02-29T10:59:15+00:00
+updated_at: 2024-03-07T18:28:13+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/tehwave/laravel-shortcodes'
 author: tehwave
 composer: tehwave/laravel-shortcodes
 npm: null
-stars: 11
+stars: 12
 keywords: {  }
 first_release_at: '2019-12-21 23:17:38'
 latest_release_at: '2023-03-26 20:12:55'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-22T11:00:42+00:00
-updated_at: 2024-02-29T11:11:10+00:00
+updated_at: 2024-03-07T18:40:41+00:00

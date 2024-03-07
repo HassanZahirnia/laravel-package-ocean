@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/jetstream'
 author: laravel
 composer: laravel/jetstream
 npm: null
-stars: 3850
+stars: 3857
 keywords: {  }
 first_release_at: '2020-08-31 19:27:38'
-latest_release_at: '2024-02-23 15:35:22'
+latest_release_at: '2024-02-29 17:10:06'
 laravel_dependency_versions:
     - ^10.17
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-02-29T11:04:01+00:00
+updated_at: 2024-03-07T18:33:19+00:00

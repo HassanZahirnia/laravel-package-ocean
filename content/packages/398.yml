@@ -6,7 +6,7 @@ github: 'https://github.com/akaunting/laravel-money'
 author: akaunting
 composer: akaunting/laravel-money
 npm: null
-stars: 650
+stars: 651
 keywords: {  }
 first_release_at: '2021-03-05 12:07:35'
 latest_release_at: '2023-12-10 14:47:48'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T11:15:47+00:00
-updated_at: 2024-02-29T11:08:27+00:00
+updated_at: 2024-03-07T18:38:01+00:00

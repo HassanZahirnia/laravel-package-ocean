@@ -6,7 +6,7 @@ github: 'https://github.com/021-projects/laravel-wallet'
 author: '021'
 composer: 021/laravel-wallet
 npm: null
-stars: 168
+stars: 186
 keywords: {  }
 first_release_at: '2024-01-03 08:16:20'
 latest_release_at: '2024-02-21 10:11:11'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-02-20T14:39:03+00:00
-updated_at: 2024-02-29T11:12:14+00:00
+updated_at: 2024-03-07T18:41:44+00:00
