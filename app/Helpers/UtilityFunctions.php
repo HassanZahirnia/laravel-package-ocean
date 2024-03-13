@@ -54,7 +54,7 @@ function extractActiveVersionsFromLaravelVersions($response)
         ->values()
         ->toArray();
 
-    return empty($activeVersions) ? ['10.0.0'] : $activeVersions;
+    return empty($activeVersions) ? ['11.0.0'] : $activeVersions;
 }
 
 function fetchVersionsFromEndOfLife()
@@ -75,10 +75,10 @@ function fetchVersionsFromEndOfLife()
             ->values()
             ->toArray();
 
-        return empty($activeVersions) ? ['10.0.0'] : $activeVersions;
+        return empty($activeVersions) ? ['11.0.0'] : $activeVersions;
     }
 
-    return ['10.0.0']; // Default fallback if both sources fail
+    return ['11.0.0']; // Default fallback if both sources fail
 }
 
 function latestActiveLaravelVersion()
