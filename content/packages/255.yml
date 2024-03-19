@@ -6,16 +6,16 @@ github: 'https://github.com/lepikhinb/momentum-trail'
 author: based
 composer: based/momentum-trail
 npm: null
-stars: 67
+stars: 69
 keywords:
     - boris
     - lepikhinb
     - ziggy
 first_release_at: '2022-12-15 02:49:51'
-latest_release_at: '2023-02-16 09:24:45'
+latest_release_at: '2024-03-18 00:15:16'
 laravel_dependency_versions:
-    - ^8.24|^9.0|^10.0
+    - ^8.24|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-07T18:34:15+00:00
+updated_at: 2024-03-19T12:32:03+00:00

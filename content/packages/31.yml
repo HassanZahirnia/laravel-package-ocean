@@ -6,13 +6,13 @@ github: 'https://github.com/OctopyID/LaraPersonate'
 author: octopyid
 composer: octopyid/laravel-impersonate
 npm: null
-stars: 269
+stars: 270
 keywords:
     - admin
 first_release_at: '2021-01-24 04:05:04'
-latest_release_at: '2023-11-09 07:51:04'
+latest_release_at: '2024-03-10 00:23:05'
 laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-03-07T18:26:45+00:00
+updated_at: 2024-03-19T12:25:30+00:00

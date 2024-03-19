@@ -6,14 +6,14 @@ github: 'https://github.com/imanghafoori1/laravel-microscope'
 author: imanghafoori
 composer: imanghafoori/laravel-microscope
 npm: null
-stars: 1385
+stars: 1412
 keywords:
     - performance
 first_release_at: '2020-04-06 02:19:28'
-latest_release_at: '2024-03-07 01:28:00'
+latest_release_at: '2024-03-13 18:10:15'
 laravel_dependency_versions:
     - '5.*|6.*|7.*|8.*|9.*|10.*|11.*'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-07T18:30:29+00:00
+updated_at: 2024-03-19T12:28:38+00:00

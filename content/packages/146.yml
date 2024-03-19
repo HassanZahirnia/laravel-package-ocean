@@ -6,7 +6,7 @@ github: 'https://github.com/laravel-mix/laravel-mix'
 author: laravel-mix
 composer: null
 npm: laravel-mix
-stars: 5233
+stars: 5232
 keywords:
     - 'jeffrey way'
 first_release_at: '2016-12-26 18:00:48'
@@ -15,4 +15,4 @@ laravel_dependency_versions: {  }
 package_type: npm-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-07T18:30:57+00:00
+updated_at: 2024-03-19T12:28:52+00:00

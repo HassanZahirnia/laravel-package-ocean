@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/sanctum'
 author: laravel
 composer: laravel/sanctum
 npm: null
-stars: 2658
+stars: 2667
 keywords: {  }
 first_release_at: '2020-03-20 19:48:13'
-latest_release_at: '2023-12-19 18:44:48'
+latest_release_at: '2024-03-12 14:07:05'
 laravel_dependency_versions:
-    - ^9.21|^10.0
+    - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-03-07T18:26:38+00:00
+updated_at: 2024-03-19T12:25:23+00:00

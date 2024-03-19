@@ -6,13 +6,13 @@ github: 'https://github.com/ylsideas/feature-flags'
 author: ylsideas
 composer: ylsideas/feature-flags
 npm: null
-stars: 591
+stars: 592
 keywords: {  }
 first_release_at: '2019-07-14 13:25:45'
-latest_release_at: '2023-12-01 18:56:48'
+latest_release_at: '2024-03-19 08:19:51'
 laravel_dependency_versions:
-    - '10.*|^9.6'
+    - '11.*|10.*'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-03-07T18:28:35+00:00
+updated_at: 2024-03-19T12:26:44+00:00

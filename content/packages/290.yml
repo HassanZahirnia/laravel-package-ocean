@@ -6,7 +6,7 @@ github: 'https://github.com/SimpleSoftwareIO/simple-qrcode'
 author: simplesoftwareio
 composer: simplesoftwareio/simple-qrcode
 npm: null
-stars: 2569
+stars: 2591
 keywords:
     - qr-code
 first_release_at: '2014-06-09 22:37:43'
@@ -15,4 +15,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-07T18:35:08+00:00
+updated_at: 2024-03-19T12:33:02+00:00

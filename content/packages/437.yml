@@ -6,13 +6,13 @@ github: 'https://github.com/singlestore-labs/singlestoredb-laravel-driver'
 author: singlestoredb
 composer: singlestoredb/singlestoredb-laravel
 npm: null
-stars: 219
+stars: 220
 keywords: {  }
 first_release_at: '2022-06-30 19:14:31'
-latest_release_at: '2024-01-02 14:22:22'
+latest_release_at: '2024-03-15 13:30:22'
 laravel_dependency_versions:
-    - ^8.0|^9.0|^10.0
+    - ^8.0|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:56:27+00:00
-updated_at: 2024-03-07T18:39:01+00:00
+updated_at: 2024-03-19T12:37:10+00:00

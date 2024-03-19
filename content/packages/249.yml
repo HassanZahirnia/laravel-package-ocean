@@ -6,13 +6,13 @@ github: 'https://github.com/wireui/wireui'
 author: wireui
 composer: wireui/wireui
 npm: null
-stars: 1341
+stars: 1346
 keywords: {  }
 first_release_at: '2021-12-03 14:27:53'
-latest_release_at: '2023-10-25 05:18:54'
+latest_release_at: '2024-03-13 13:34:59'
 laravel_dependency_versions:
-    - '10.*'
+    - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-07T18:34:04+00:00
+updated_at: 2024-03-19T12:31:53+00:00

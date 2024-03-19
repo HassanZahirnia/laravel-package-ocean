@@ -6,15 +6,15 @@ github: 'https://github.com/ryangjchandler/laravel-cloudflare-turnstile'
 author: ryangjchandler
 composer: ryangjchandler/laravel-cloudflare-turnstile
 npm: null
-stars: 120
+stars: 173
 keywords:
     - cloudflare
     - captcha
 first_release_at: '2022-09-30 10:10:44'
-latest_release_at: '2023-04-14 10:20:16'
+latest_release_at: '2024-03-12 21:17:13'
 laravel_dependency_versions:
-    - ^10.0
+    - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T21:14:43+00:00
-updated_at: 2024-03-07T18:37:40+00:00
+updated_at: 2024-03-19T12:35:45+00:00
