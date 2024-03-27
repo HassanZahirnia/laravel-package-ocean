@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-activitylog'
 author: spatie
 composer: spatie/laravel-activitylog
 npm: null
-stars: 5109
+stars: 5119
 keywords:
     - tracking
     - model
@@ -21,4 +21,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-03-19T12:25:40+00:00
+updated_at: 2024-03-27T11:40:32+00:00

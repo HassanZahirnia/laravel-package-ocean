@@ -6,7 +6,7 @@ github: 'https://github.com/lepikhinb/momentum-paginator'
 author: based
 composer: null
 npm: momentum-paginator
-stars: 99
+stars: 100
 keywords:
     - boris
     - lepikhinb
@@ -16,4 +16,4 @@ laravel_dependency_versions: {  }
 package_type: npm-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-19T12:32:00+00:00
+updated_at: 2024-03-27T11:45:55+00:00

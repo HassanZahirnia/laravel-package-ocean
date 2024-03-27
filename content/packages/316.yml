@@ -6,7 +6,7 @@ github: 'https://github.com/svenluijten/artisan-view'
 author: sven
 composer: sven/artisan-view
 npm: null
-stars: 871
+stars: 870
 keywords: {  }
 first_release_at: '2016-04-12 11:46:24'
 latest_release_at: '2023-09-15 09:48:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-19T12:33:46+00:00
+updated_at: 2024-03-27T11:47:27+00:00

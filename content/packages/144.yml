@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/telescope'
 author: laravel
 composer: laravel/telescope
 npm: null
-stars: 4710
+stars: 4720
 keywords:
     - request
     - exceptions
@@ -19,10 +19,10 @@ keywords:
     - dump
     - cache
 first_release_at: '2018-10-23 14:27:56'
-latest_release_at: '2024-03-12 14:17:54'
+latest_release_at: '2024-03-23 20:41:11'
 laravel_dependency_versions:
     - ^8.37|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-19T12:28:48+00:00
+updated_at: 2024-03-27T11:43:13+00:00

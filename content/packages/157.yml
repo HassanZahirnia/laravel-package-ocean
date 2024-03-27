@@ -6,7 +6,7 @@ github: 'https://github.com/swooletw/laravel-swoole'
 author: swooletw
 composer: swooletw/laravel-swoole
 npm: null
-stars: 4014
+stars: 4015
 keywords: {  }
 first_release_at: '2017-11-06 16:08:12'
 latest_release_at: '2023-04-13 18:00:02'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-19T12:29:09+00:00
+updated_at: 2024-03-27T11:43:30+00:00
