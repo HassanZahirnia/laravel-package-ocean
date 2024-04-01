@@ -6,7 +6,7 @@ github: 'https://github.com/asanikovich/laravel-roadrunner-cache'
 author: asanikovich
 composer: asanikovich/laravel-roadrunner-cache
 npm: null
-stars: 35
+stars: 36
 keywords: {  }
 first_release_at: '2023-06-30 01:26:52'
 latest_release_at: '2023-06-30 11:48:38'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-07-17T20:00:59+00:00
-updated_at: 2024-03-27T11:51:23+00:00
+updated_at: 2024-04-01T13:13:16+00:00

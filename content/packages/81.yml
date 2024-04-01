@@ -6,7 +6,7 @@ github: 'https://github.com/creagia/laravel-sign-pad'
 author: creagia
 composer: creagia/laravel-sign-pad
 npm: null
-stars: 425
+stars: 426
 keywords: {  }
 first_release_at: '2022-10-03 15:24:32'
 latest_release_at: '2024-03-04 12:19:33'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-27T11:41:39+00:00
+updated_at: 2024-04-01T13:01:05+00:00

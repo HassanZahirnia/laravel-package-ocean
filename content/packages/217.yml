@@ -6,7 +6,7 @@ github: 'https://github.com/anhskohbo/no-captcha'
 author: anhskohbo
 composer: anhskohbo/no-captcha
 npm: null
-stars: 1735
+stars: 1738
 keywords:
     - google
 first_release_at: '2014-12-03 23:39:19'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-27T11:44:59+00:00
+updated_at: 2024-04-01T13:05:22+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/whitecube/laravel-cookie-consent'
 author: whitecube
 composer: whitecube/laravel-cookie-consent
 npm: null
-stars: 245
+stars: 247
 keywords: {  }
 first_release_at: '2023-06-13 13:31:03'
-latest_release_at: '2023-12-21 14:29:54'
+latest_release_at: '2024-03-28 18:02:22'
 laravel_dependency_versions:
-    - ^9|^10
+    - ^9|^10|^11
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-15T10:42:47+00:00
-updated_at: 2024-03-27T11:50:58+00:00
+updated_at: 2024-04-01T13:12:41+00:00

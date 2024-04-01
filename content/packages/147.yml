@@ -6,7 +6,7 @@ github: 'https://github.com/laravel-workflow/laravel-workflow'
 author: laravel-workflow
 composer: laravel-workflow/laravel-workflow
 npm: null
-stars: 752
+stars: 754
 keywords:
     - queue
 first_release_at: '2022-03-04 02:47:21'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-03-27T11:43:16+00:00
+updated_at: 2024-04-01T13:03:19+00:00
