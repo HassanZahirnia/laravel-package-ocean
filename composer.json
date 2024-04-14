@@ -13,14 +13,14 @@
         "filament/filament": "^3.0-stable",
         "guzzlehttp/guzzle": "^7.2",
         "itsgoingd/clockwork": "^5.1",
-        "laravel/framework": "^10.10",
+        "laravel/framework": "^11.0",
         "laravel/pail": "^1.0",
         "laravel/prompts": "^0.1.13",
-        "laravel/sanctum": "^3.2",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
         "ralphjsmit/laravel-seo": "^1.4",
-        "rennokki/laravel-eloquent-query-cache": "^3.4",
+        "rennokki/laravel-eloquent-query-cache": "dev-l11-compatibility",
         "ryangjchandler/orbit": "2.x-dev",
         "spatie/laravel-feed": "^4.3"
     },
@@ -30,7 +30,7 @@
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^7.0",
+        "nunomaduro/collision": "^8.1",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
         "pestphp/pest-plugin-stressless": "^2.0",
@@ -82,5 +82,11 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/laravel-shift/laravel-eloquent-query-cache.git"
+        }
+    ]
 }
