@@ -6,7 +6,7 @@ github: 'https://github.com/LaravelDaily/laravel-invoices'
 author: laraveldaily
 composer: laraveldaily/laravel-invoices
 npm: null
-stars: 1237
+stars: 1252
 keywords:
     - taxes
     - discount
@@ -23,4 +23,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:04:08+00:00
+updated_at: 2024-04-14T21:14:27+00:00

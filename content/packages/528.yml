@@ -6,12 +6,12 @@ github: 'https://github.com/stevebauman/hypertext'
 author: stevebauman
 composer: stevebauman/hypertext
 npm: null
-stars: 129
+stars: 131
 keywords: {  }
 first_release_at: '2023-10-22 04:19:52'
-latest_release_at: '2023-12-21 12:23:33'
+latest_release_at: '2024-04-04 20:02:57'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-11-24T20:25:16+00:00
-updated_at: 2024-04-01T13:14:49+00:00
+updated_at: 2024-04-14T21:23:14+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/salehhashemi1992/laravel-otp-manager'
 author: salehhashemi
 composer: salehhashemi/laravel-otp-manager
 npm: null
-stars: 33
+stars: 34
 keywords: {  }
 first_release_at: '2023-09-20 10:25:17'
-latest_release_at: '2024-03-30 12:18:09'
+latest_release_at: '2024-04-03 11:52:43'
 laravel_dependency_versions:
     - ^9.0|^10.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-09T09:15:04+00:00
-updated_at: 2024-04-01T13:14:38+00:00
+updated_at: 2024-04-14T21:23:04+00:00

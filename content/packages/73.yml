@@ -6,7 +6,7 @@ github: 'https://github.com/ylsideas/feature-flags'
 author: ylsideas
 composer: ylsideas/feature-flags
 npm: null
-stars: 592
+stars: 593
 keywords: {  }
 first_release_at: '2019-07-14 13:25:45'
 latest_release_at: '2024-03-19 08:19:51'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-01T13:00:52+00:00
+updated_at: 2024-04-14T21:11:44+00:00

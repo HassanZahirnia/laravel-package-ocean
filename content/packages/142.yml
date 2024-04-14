@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/pint'
 author: laravel
 composer: laravel/pint
 npm: null
-stars: 2658
+stars: 2670
 keywords: {  }
 first_release_at: '2022-06-22 14:21:38'
-latest_release_at: '2024-03-26 16:40:24'
+latest_release_at: '2024-04-02 14:28:47'
 laravel_dependency_versions:
-    - ^10.43.0
+    - ^10.48.4
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:03:11+00:00
+updated_at: 2024-04-14T21:13:37+00:00

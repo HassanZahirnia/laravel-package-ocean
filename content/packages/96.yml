@@ -6,7 +6,7 @@ github: 'https://github.com/laravel-doctrine/orm'
 author: laravel-doctrine
 composer: laravel-doctrine/orm
 npm: null
-stars: 817
+stars: 816
 keywords: {  }
 first_release_at: '2015-09-11 13:05:52'
 latest_release_at: '2023-11-06 16:06:45'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:01:33+00:00
+updated_at: 2024-04-14T21:12:22+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/robersonfaria/laravel-database-schedule'
 author: robersonfaria
 composer: robersonfaria/laravel-database-schedule
 npm: null
-stars: 311
+stars: 313
 keywords: {  }
 first_release_at: '2021-03-10 14:56:58'
-latest_release_at: '2023-02-15 12:23:47'
+latest_release_at: '2024-04-04 17:43:12'
 laravel_dependency_versions:
-    - '^5.8|6.*|7.*|8.*|9.*|^10.0'
+    - '^5.8|6.*|7.*|8.*|9.*|^10.0|^11.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:36:13+00:00
-updated_at: 2024-04-01T13:11:46+00:00
+updated_at: 2024-04-14T21:20:48+00:00

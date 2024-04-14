@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-validation-rules'
 author: spatie
 composer: spatie/laravel-validation-rules
 npm: null
-stars: 711
+stars: 713
 keywords: {  }
 first_release_at: '2018-10-11 13:58:34'
 latest_release_at: '2024-03-02 05:57:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:08:10+00:00
+updated_at: 2024-04-14T21:17:53+00:00

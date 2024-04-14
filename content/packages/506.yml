@@ -6,7 +6,7 @@ github: 'https://github.com/cjmellor/browser-sessions'
 author: cjmellor
 composer: cjmellor/browser-sessions
 npm: null
-stars: 221
+stars: 222
 keywords: {  }
 first_release_at: '2023-09-12 23:48:15'
 latest_release_at: '2024-03-24 00:16:50'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-25T09:18:38+00:00
-updated_at: 2024-04-01T13:14:10+00:00
+updated_at: 2024-04-14T21:22:43+00:00

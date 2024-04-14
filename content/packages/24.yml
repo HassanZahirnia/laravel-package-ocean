@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/breeze'
 author: laravel
 composer: laravel/breeze
 npm: null
-stars: 2584
+stars: 2594
 keywords: {  }
 first_release_at: '2020-11-09 19:58:28'
-latest_release_at: '2024-03-21 18:15:33'
+latest_release_at: '2024-04-01 15:17:09'
 laravel_dependency_versions:
     - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-01T12:59:19+00:00
+updated_at: 2024-04-14T21:10:19+00:00

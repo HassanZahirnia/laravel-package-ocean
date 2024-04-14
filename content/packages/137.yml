@@ -6,12 +6,12 @@ github: 'https://github.com/PHP-CS-Fixer/PHP-CS-Fixer'
 author: friendsofphp
 composer: friendsofphp/php-cs-fixer
 npm: null
-stars: 12522
+stars: 12529
 keywords: {  }
 first_release_at: '2016-05-27 11:44:48'
-latest_release_at: '2024-03-19 21:02:43'
+latest_release_at: '2024-04-08 15:03:00'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:03:02+00:00
+updated_at: 2024-04-14T21:13:29+00:00

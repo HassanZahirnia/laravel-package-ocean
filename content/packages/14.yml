@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-slack-alerts'
 author: spatie
 composer: spatie/laravel-slack-alerts
 npm: null
-stars: 245
+stars: 244
 keywords: {  }
 first_release_at: '2022-01-10 14:05:23'
 latest_release_at: '2024-02-09 09:36:31'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-01T12:59:02+00:00
+updated_at: 2024-04-14T21:10:03+00:00

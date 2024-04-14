@@ -6,13 +6,13 @@ github: 'https://github.com/defstudio/telegraph'
 author: defstudio
 composer: defstudio/telegraph
 npm: null
-stars: 609
+stars: 619
 keywords: {  }
 first_release_at: '2021-11-21 18:52:06'
-latest_release_at: '2024-03-14 11:44:50'
+latest_release_at: '2024-04-11 15:43:08'
 laravel_dependency_versions:
     - '^10.0 | ^11.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-16T21:48:28+00:00
-updated_at: 2024-04-01T13:09:09+00:00
+updated_at: 2024-04-14T21:18:45+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-onboard'
 author: spatie
 composer: spatie/laravel-onboard
 npm: null
-stars: 581
+stars: 583
 keywords: {  }
 first_release_at: '2022-06-17 08:01:00'
 latest_release_at: '2024-02-14 13:09:56'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:07:55+00:00
+updated_at: 2024-04-14T21:17:38+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/sheets'
 author: spatie
 composer: spatie/sheets
 npm: null
-stars: 262
+stars: 265
 keywords: {  }
 first_release_at: '2018-05-08 08:29:07'
 latest_release_at: '2024-03-02 05:56:48'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-17T12:19:50+00:00
-updated_at: 2024-04-01T13:13:46+00:00
+updated_at: 2024-04-14T21:22:22+00:00

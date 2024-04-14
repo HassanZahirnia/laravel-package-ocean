@@ -6,7 +6,7 @@ github: 'https://github.com/cartalyst/sentinel'
 author: cartalyst
 composer: cartalyst/sentinel
 npm: null
-stars: 1499
+stars: 1500
 keywords:
     - cartalyst
     - security
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-01T12:59:10+00:00
+updated_at: 2024-04-14T21:10:11+00:00

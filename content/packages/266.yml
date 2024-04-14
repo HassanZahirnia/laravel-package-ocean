@@ -6,7 +6,7 @@ github: 'https://github.com/hotmeteor/receiver'
 author: hotmeteor
 composer: hotmeteor/receiver
 npm: null
-stars: 350
+stars: 357
 keywords: {  }
 first_release_at: '2022-08-22 12:44:06'
 latest_release_at: '2024-03-19 14:51:38'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-01T13:06:54+00:00
+updated_at: 2024-04-14T21:16:46+00:00
