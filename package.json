@@ -20,7 +20,7 @@
         "lodash": "^4.17.21",
         "postcss": "^8.4.38",
         "prettier": "^3.2.5",
-        "prettier-plugin-blade": "^2.1.11",
+        "prettier-plugin-blade": "^2.1.12",
         "prettier-plugin-tailwindcss": "^0.5.13",
         "tailwindcss": "^3.4.3",
         "tippy.js": "^6.3.7",
