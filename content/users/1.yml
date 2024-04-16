@@ -2,7 +2,7 @@ id: 1
 name: admin
 email: admin@admin.com
 email_verified_at: null
-password: $2y$10$gNLKC9Xnrkf3VIwAeIJ4zuOsb/j9QJUaAjBdQ4I.r956hKMBWAY6K
+password: $2y$12$WJCYAIpmVcxkER.jxGnoNe15xXPwJuPkS1FRh7Csw.yGUWcoLqRQK
 remember_token: null
 created_at: 2023-11-05T17:38:45+00:00
-updated_at: 2023-11-05T17:38:45+00:00
+updated_at: 2024-04-16T10:09:13+00:00
