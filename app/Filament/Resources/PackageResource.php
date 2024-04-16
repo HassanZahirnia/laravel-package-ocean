@@ -6,7 +6,6 @@ use App\Filament\Resources\PackageResource\Pages;
 use App\Models\Package;
 use Closure;
 use Filament\Forms;
-use Filament\Forms\Components\Actions;
 use Filament\Forms\Components\Actions\Action;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
@@ -28,6 +27,7 @@ class PackageResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->prefixIcon('icon-name')
                     ->live(debounce: 500)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('name', str($state)->headline()))
                     ->autocomplete(false)
@@ -56,6 +56,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('description')
+                    ->prefixIcon('heroicon-o-chat-bubble-bottom-center-text')
                     ->live(debounce: 500)
                     ->afterStateUpdated(function (Set $set, ?string $state) {
                         $description = $set('description', str($state)->ucfirst()->trim());
@@ -89,12 +90,14 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\Select::make('category_id')
+                    ->prefixIcon('icon-category')
                     ->required()
                     ->searchable(['name'])
                     ->relationship(name: 'category', titleAttribute: 'name')
                     ->preload(),
                 Forms\Components\Select::make('package_type')
                     ->required()
+                    ->live(debounce: 500)
                     ->options([
                         'laravel-package' => 'Laravel Package',
                         'php-package' => 'PHP Package',
@@ -104,21 +107,9 @@ class PackageResource extends Resource
                         'all-operating-systems-app' => 'All Operating Systems App',
                         'ide-extension' => 'IDE Extension',
                     ])
-                    ->default('laravel-package')
-                    ->rules([
-                        fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
-                            // If npm is not null, then package_type must be "npm-package"
-                            if (! empty($get('npm')) && $value !== 'npm-package') {
-                                $fail('The :attribute must be "npm-package" if npm is not null.');
-                            }
-
-                            // If composer is not null, then package_type must be "php-package" or "laravel-package"
-                            if (! empty($get('composer')) && ! in_array($value, ['php-package', 'laravel-package'])) {
-                                $fail('The :attribute must be "php-package" or "laravel-package" if composer is not null.');
-                            }
-                        },
-                    ]),
+                    ->default('laravel-package'),
                 Forms\Components\TagsInput::make('keywords')
+                    ->prefixIcon('heroicon-o-tag')
                     ->nullable()
                     ->nestedRecursiveRules([
                         'string',
@@ -138,12 +129,13 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('composer')
+                    ->prefixIcon('icon-composer')
                     ->autocomplete(false)
                     ->live(debounce: 500)
                     // When composer changes, extract the author from it and set it on the author field
                     // So for example spatie/opening-hours will set spatie on the author field
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('author', str($state)->before('/')->trim()))
-                    ->required(fn (Get $get): bool => empty($get('npm')))
+                    ->required(fn (Get $get): bool => in_array($get('package_type'), ['php-package', 'laravel-package']))
                     ->minLength(2)
                     ->unique(ignoreRecord: true)
                     ->rules([
@@ -165,10 +157,11 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('npm')
+                    ->prefixIcon('icon-npm')
                     ->autocomplete(false)
                     ->live(debounce: 500)
                     ->minLength(2)
-                    ->required(fn (Get $get): bool => empty($get('composer')))
+                    ->required(fn (Get $get): bool => $get('package_type') === 'npm-package')
                     ->unique(ignoreRecord: true)
                     ->rules([
                         fn (Get $get): Closure => function (string $attribute, $value, Closure $fail) use ($get) {
@@ -189,6 +182,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('author')
+                    ->prefixIcon('icon-programmer')
                     ->autocomplete(false)
                     ->required()
                     ->minLength(2)
@@ -203,6 +197,7 @@ class PackageResource extends Resource
                         },
                     ]),
                 Forms\Components\TextInput::make('github')
+                    ->prefixIcon('icon-github')
                     ->autocomplete(false)
                     ->columnSpan(2)
                     ->required()
@@ -229,10 +224,34 @@ class PackageResource extends Resource
                     ->inline(false)
                     ->onIcon('heroicon-o-currency-dollar')
                     ->required(),
-                Section::make('Data')
+                Section::make('Composer & NPM & Github Data')
+                    ->description('This section is automatically filled when you click the "Fetch All Data" button.')
                     ->columns(3)
+                    ->headerActions([
+                        Action::make('Fetch All Data')
+                            ->icon('heroicon-m-arrow-path')
+                            ->color('success')
+                            ->disabled(fn (Get $get): bool => (empty($get('composer')) && empty($get('npm'))) || empty($get('github')))
+                            ->action(function (Set $set, $state) {
+                                if (! empty($state['composer'])) {
+                                    $packagistData = getPackagistData($state['composer']);
+                                    $set('first_release_at', $packagistData['first_release_at']);
+                                    $set('latest_release_at', $packagistData['latest_release_at']);
+                                    $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
+                                } elseif (! empty($state['npm'])) {
+                                    $npmData = getNpmData($state['npm']);
+                                    $set('first_release_at', $npmData['first_release_at']);
+                                    $set('latest_release_at', $npmData['latest_release_at']);
+                                }
+
+                                if (! empty($state['github'])) {
+                                    $set('stars', fetchGithubStars($state['github']));
+                                }
+                            }),
+                    ])
                     ->schema([
                         Forms\Components\TagsInput::make('laravel_dependency_versions')
+                            ->prefixIcon('icon-laravel')
                             ->columnSpanFull()
                             ->nestedRecursiveRules([
                                 'string',
@@ -262,6 +281,7 @@ class PackageResource extends Resource
                                 },
                             ]),
                         Forms\Components\TextInput::make('stars')
+                            ->prefixIcon('heroicon-o-star')
                             ->autocomplete(false)
                             ->required()
                             ->minValue(0)
@@ -269,28 +289,6 @@ class PackageResource extends Resource
                             ->numeric(),
                         Forms\Components\DateTimePicker::make('first_release_at'),
                         Forms\Components\DateTimePicker::make('latest_release_at'),
-                        Actions::make([
-                            Action::make('Fetch All Data')
-                                ->icon('heroicon-m-arrow-path')
-                                ->color('success')
-                                ->disabled(fn (Get $get): bool => (empty($get('composer')) && empty($get('npm'))) || empty($get('github')))
-                                ->action(function (Set $set, $state) {
-                                    if (! empty($state['composer'])) {
-                                        $packagistData = getPackagistData($state['composer']);
-                                        $set('first_release_at', $packagistData['first_release_at']);
-                                        $set('latest_release_at', $packagistData['latest_release_at']);
-                                        $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
-                                    } elseif (! empty($state['npm'])) {
-                                        $npmData = getNpmData($state['npm']);
-                                        $set('first_release_at', $npmData['first_release_at']);
-                                        $set('latest_release_at', $npmData['latest_release_at']);
-                                    }
-
-                                    if (! empty($state['github'])) {
-                                        $set('stars', fetchGithubStars($state['github']));
-                                    }
-                                }),
-                        ])->columnSpanFull(),
                     ]),
             ])->columns(3);
     }
