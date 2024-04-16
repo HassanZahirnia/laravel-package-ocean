@@ -1,9 +1,9 @@
 id: 553
-name: 'Lara Dumps'
+name: 'LaraDumps'
 description: 'A desktop app that provides various debugging tools for your app.'
 category_id: '4'
 github: 'https://github.com/laradumps/laradumps'
-author: laradumps
+author: luanfreitasdev
 composer: laradumps/laradumps
 npm: null
 stars: 632
