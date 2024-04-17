@@ -1,0 +1,18 @@
+id: 554
+name: Basset
+description: 'A helper to import assets from any external or internal source and use them locally.'
+category_id: '18'
+github: 'https://github.com/Laravel-Backpack/basset'
+author: backpack
+composer: backpack/basset
+npm: null
+stars: 46
+keywords: {  }
+first_release_at: '2023-03-27 14:53:52'
+latest_release_at: '2024-04-17 08:32:26'
+laravel_dependency_versions:
+    - ^10.15|^11
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-04-17T13:37:51+00:00
+updated_at: 2024-04-17T13:37:51+00:00
