@@ -12,6 +12,7 @@ auth.json
 /public/hot
 /public/storage
 /public/build
+/public/sitemap.xml
 
 # storage
 /storage/*.key

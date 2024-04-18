@@ -22,7 +22,8 @@
         "ralphjsmit/laravel-seo": "^1.4",
         "rennokki/laravel-eloquent-query-cache": "dev-l11-compatibility",
         "ryangjchandler/orbit": "2.x-dev",
-        "spatie/laravel-feed": "^4.3"
+        "spatie/laravel-feed": "^4.3",
+        "spatie/laravel-sitemap": "^7.2"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.9",
