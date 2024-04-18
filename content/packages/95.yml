@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/scout'
 author: laravel
 composer: laravel/scout
 npm: null
-stars: 1502
+stars: 1501
 keywords: {  }
 first_release_at: '2016-08-13 16:40:26'
-latest_release_at: '2024-04-02 14:33:18'
+latest_release_at: '2024-04-16 15:30:07'
 laravel_dependency_versions:
     - ^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-14T21:12:20+00:00
+updated_at: 2024-04-18T13:09:27+00:00

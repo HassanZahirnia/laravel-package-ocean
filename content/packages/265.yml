@@ -6,7 +6,7 @@ github: 'https://github.com/Hi-Folks/rando-php'
 author: hi-folks
 composer: hi-folks/rando-php
 npm: null
-stars: 124
+stars: 125
 keywords: {  }
 first_release_at: '2020-07-19 18:31:07'
 latest_release_at: '2021-07-01 05:48:59'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-14T21:16:45+00:00
+updated_at: 2024-04-18T13:14:07+00:00

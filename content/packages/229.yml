@@ -6,7 +6,7 @@ github: 'https://github.com/blade-ui-kit/blade-icons'
 author: blade-ui-kit
 composer: blade-ui-kit/blade-icons
 npm: null
-stars: 2038
+stars: 2040
 keywords:
     - css
     - html
@@ -19,4 +19,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-14T21:15:49+00:00
+updated_at: 2024-04-18T13:13:13+00:00

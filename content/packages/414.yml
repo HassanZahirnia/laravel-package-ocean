@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-export'
 author: spatie
 composer: spatie/laravel-export
 npm: null
-stars: 505
+stars: 510
 keywords: {  }
 first_release_at: '2019-03-20 17:09:41'
-latest_release_at: '2024-03-13 23:13:22'
+latest_release_at: '2024-04-16 07:59:59'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:03:25+00:00
-updated_at: 2024-04-14T21:20:28+00:00
+updated_at: 2024-04-18T13:18:07+00:00

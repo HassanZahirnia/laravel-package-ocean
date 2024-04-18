@@ -6,7 +6,7 @@ github: 'https://github.com/ash-jc-allen/short-url'
 author: ashallendesign
 composer: ashallendesign/short-url
 npm: null
-stars: 1159
+stars: 1160
 keywords: {  }
 first_release_at: '2019-12-30 21:24:52'
 latest_release_at: '2024-03-19 10:57:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-14T21:16:24+00:00
+updated_at: 2024-04-18T13:13:48+00:00

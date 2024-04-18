@@ -6,7 +6,7 @@ github: 'https://github.com/HPWebdeveloper/laravel-pay-pocket'
 author: hpwebdeveloper
 composer: hpwebdeveloper/laravel-pay-pocket
 npm: null
-stars: 249
+stars: 250
 keywords: {  }
 first_release_at: '2023-12-01 02:32:22'
 latest_release_at: '2024-04-12 16:23:49'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-01-22T10:50:59+00:00
-updated_at: 2024-04-14T21:23:30+00:00
+updated_at: 2024-04-18T13:21:46+00:00

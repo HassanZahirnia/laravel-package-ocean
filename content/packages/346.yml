@@ -6,7 +6,7 @@ github: 'https://github.com/tighten/ziggy'
 author: tightenco
 composer: tightenco/ziggy
 npm: null
-stars: 3695
+stars: 3698
 keywords: {  }
 first_release_at: '2017-08-04 17:53:35'
 latest_release_at: '2024-03-26 16:04:23'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-16T21:57:21+00:00
-updated_at: 2024-04-14T21:18:47+00:00
+updated_at: 2024-04-18T13:16:19+00:00

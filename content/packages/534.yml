@@ -6,13 +6,13 @@ github: 'https://github.com/InnoGE/laravel-policy-soft-cache'
 author: innoge
 composer: innoge/laravel-policy-soft-cache
 npm: null
-stars: 18
+stars: 19
 keywords: {  }
 first_release_at: '2022-11-02 09:15:52'
-latest_release_at: '2024-02-25 10:48:41'
+latest_release_at: '2024-04-17 11:27:52'
 laravel_dependency_versions:
     - ^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-12-08T08:35:05+00:00
-updated_at: 2024-04-14T21:23:23+00:00
+updated_at: 2024-04-18T13:21:38+00:00

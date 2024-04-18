@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-pdf'
 author: spatie
 composer: spatie/laravel-pdf
 npm: null
-stars: 580
+stars: 582
 keywords: {  }
 first_release_at: '2023-12-26 20:38:16'
 latest_release_at: '2024-04-08 11:11:24'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-01-07T09:14:56+00:00
-updated_at: 2024-04-14T21:23:24+00:00
+updated_at: 2024-04-18T13:21:39+00:00
