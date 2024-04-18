@@ -1,5 +1,5 @@
 id: 522
-name: 'Laravel Pail'
+name: Pail
 description: "Dive into your Laravel application's log files directly from the console."
 category_id: '4'
 github: 'https://github.com/laravel/pail'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-11-24T19:17:43+00:00
-updated_at: 2024-04-14T21:23:06+00:00
+updated_at: 2024-04-18T13:00:30+00:00
