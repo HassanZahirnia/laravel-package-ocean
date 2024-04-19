@@ -6,7 +6,7 @@ github: 'https://github.com/filamentphp/filament'
 author: filamentphp
 composer: filament/filament
 npm: null
-stars: 13864
+stars: 13897
 keywords:
     - dashboard
     - livewire
@@ -28,4 +28,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-18T13:07:45+00:00
+updated_at: 2024-04-19T14:40:12+00:00

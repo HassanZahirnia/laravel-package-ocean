@@ -6,7 +6,7 @@ github: 'https://github.com/hybridly/hybridly'
 author: hybridly
 composer: hybridly/laravel
 npm: null
-stars: 394
+stars: 395
 keywords:
     - spa
     - vue
@@ -25,4 +25,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-18T13:08:14+00:00
+updated_at: 2024-04-19T14:40:37+00:00

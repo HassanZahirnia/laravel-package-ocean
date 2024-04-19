@@ -6,7 +6,7 @@ github: 'https://github.com/nicoverbruggen/phpmon'
 author: nicoverbruggen
 composer: null
 npm: null
-stars: 3013
+stars: 3012
 keywords: {  }
 first_release_at: '2019-07-08 08:52:39'
 latest_release_at: '2023-03-29 16:32:07'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: mac-app
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-18T13:10:54+00:00
+updated_at: 2024-04-19T14:43:36+00:00

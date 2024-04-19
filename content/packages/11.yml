@@ -6,7 +6,7 @@ github: 'https://github.com/orhanerday/open-ai'
 author: orhanerday
 composer: orhanerday/open-ai
 npm: null
-stars: 2131
+stars: 2133
 keywords: {  }
 first_release_at: '2021-12-22 10:39:07'
 latest_release_at: '2024-01-25 06:43:19'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: true
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-18T13:06:31+00:00
+updated_at: 2024-04-19T14:38:59+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/NativePHP/laravel'
 author: nativephp
 composer: nativephp/electron
 npm: null
-stars: 2810
+stars: 2813
 keywords: {  }
 first_release_at: '2023-07-20 19:02:43'
 latest_release_at: '2024-04-01 16:29:10'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-07-23T09:26:56+00:00
-updated_at: 2024-04-18T13:19:48+00:00
+updated_at: 2024-04-19T14:55:38+00:00
