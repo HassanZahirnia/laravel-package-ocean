@@ -1,5 +1,6 @@
 <div>
     <a
+        wire:navigate.hover
         href="{{ route('home') }}"
         class="relative grid h-[53px] text-[#090959] dark:text-inherit"
         aria-label="Home"

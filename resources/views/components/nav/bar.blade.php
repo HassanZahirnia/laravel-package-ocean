@@ -12,6 +12,7 @@
         <div class="hidden items-center gap-1 min-[850px]:flex">
             {{-- Top Packages --}}
             <a
+                wire:navigate.hover
                 href="{{ route('leaderboard') }}"
                 class="mr-2 flex h-11 select-none items-center justify-center gap-2 truncate rounded-xl bg-white/30 pl-4 pr-5 text-sm font-medium text-[#404a6b] shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20 backdrop-blur-xl transition duration-300 hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40 dark:hover:text-[#ABB0DD] dark:hover:shadow-none"
             >
