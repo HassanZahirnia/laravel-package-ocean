@@ -22,7 +22,8 @@
         <div
             class="pt-3 font-medium text-[#6A7789] transition duration-300 dark:text-[#96A5BB] sm:text-lg"
         >
-            The most popular Laravel packages with the highest stars on Github.
+            Discover the most popular Laravel packages with the highest stars on
+            Github.
         </div>
     </div>
 

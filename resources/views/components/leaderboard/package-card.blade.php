@@ -79,8 +79,13 @@
         </div>
 
         {{-- Name --}}
-        <div class="flex-1 font-semibold text-[#545D82] dark:text-[#DEE4F1]">
-            {{ $package->name }}
+        <div class="flex-1">
+            <div class="font-semibold text-[#545D82] dark:text-[#DEE4F1]">
+                {{ $package->name }}
+            </div>
+            <div class="truncate text-xs font-medium opacity-50">
+                {{ $package->getAuthorAndNameFromGithub() }}
+            </div>
         </div>
 
         {{-- Stars --}}
