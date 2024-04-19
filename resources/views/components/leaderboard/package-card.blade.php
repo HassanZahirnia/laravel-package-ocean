@@ -35,10 +35,10 @@
     <a
         href="{{ $package->github }}"
         target="_blank"
-        class="group/package-card relative z-[1] flex items-center gap-5 rounded-xl bg-white/40 p-5 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] ring-1 ring-slate-100 transition-all duration-300 hover:bg-white/60 hover:shadow-2xl hover:shadow-indigo-300/30 hover:ring-white dark:bg-[#362B59]/20 dark:ring-1 dark:ring-[#132447] dark:hover:bg-[#362B59]/30 dark:hover:shadow-xl dark:hover:shadow-[#1c164a] dark:hover:ring-[#373060]"
+        class="group/package-card relative z-[1] flex items-center gap-x-10 gap-y-5 rounded-xl bg-white/40 p-5 text-sm shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] ring-1 ring-slate-100 transition-all duration-300 hover:bg-white/60 hover:shadow-2xl hover:shadow-indigo-300/30 hover:ring-white dark:bg-[#362B59]/20 dark:ring-1 dark:ring-[#132447] dark:hover:bg-[#362B59]/30 dark:hover:shadow-xl dark:hover:shadow-[#1c164a] dark:hover:ring-[#373060]"
     >
         {{-- Rank --}}
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2">
             <svg
                 width="26"
                 height="25"
@@ -72,12 +72,14 @@
                     fill="currentColor"
                 />
             </svg>
+
+            <div class="font-semibold text-[#545D82] dark:text-[#DEE4F1]">
+                {{ $package->getRankAttribute() }}
+            </div>
         </div>
 
         {{-- Name --}}
-        <div
-            class="flex-1 text-sm font-semibold text-[#545D82] dark:text-[#DEE4F1]"
-        >
+        <div class="flex-1 font-semibold text-[#545D82] dark:text-[#DEE4F1]">
             {{ $package->name }}
         </div>
 
@@ -104,7 +106,7 @@
                     d="m18.7 4.627l2.247 4.31a2.27 2.27 0 0 0 1.686 1.189l4.746.65c2.538.35 3.522 3.479 1.645 5.219l-3.25 2.999a2.225 2.225 0 0 0-.683 2.04l.793 4.398c.441 2.45-2.108 4.36-4.345 3.24l-4.536-2.25a2.282 2.282 0 0 0-2.006 0l-4.536 2.25c-2.238 1.11-4.786-.79-4.345-3.24l.793-4.399c.14-.75-.12-1.52-.682-2.04l-3.251-2.998c-1.877-1.73-.893-4.87 1.645-5.22l4.746-.65a2.23 2.23 0 0 0 1.686-1.189l2.248-4.309c1.144-2.17 4.264-2.17 5.398 0Z"
                 />
             </svg>
-            <div class="relative text-sm">
+            <div class="relative">
                 {{ number_format($package->stars) }}
             </div>
         </div>

@@ -2,7 +2,7 @@
     {{-- Emerald background --}}
     <livewire:emerald />
 
-    <div class="mx-auto w-full max-w-xl">
+    <div class="mx-auto w-full max-w-xl px-5">
         {{-- Search bar --}}
         <div class="group relative w-full overflow-hidden rounded-xl">
             {{-- X icon --}}

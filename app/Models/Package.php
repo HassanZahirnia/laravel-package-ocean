@@ -72,6 +72,15 @@ class Package extends Model implements Feedable, Orbit
         );
     }
 
+    // Get package rank number by number of stars, and where the package_type is laravel-package
+    public function getRankAttribute(): int
+    {
+        return Package::query()
+            ->where('package_type', 'laravel-package')
+            ->where('stars', '>', $this->stars)
+            ->count() + 1;
+    }
+
     // A function to format large numbers
     // Example: 2600 -> 2.6k
     public function getStarsFormatted(): string
