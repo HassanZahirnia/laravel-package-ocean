@@ -70,11 +70,8 @@ class TopLaravelPackages extends Component
                     $query->where('name', $category);
                 });
             })
-            // If lastVisitDate isn't null, then only show packages that have been released since lastVisitDate (created_at)
-            ->when($this->showNewPackagesSinceLastVisit && $this->lastVisitDate, function (Builder $query) {
-                $query->where('created_at', '>=', $this->lastVisitDate);
-            })
-            ->orderBy($this->sortSelectValue, 'desc')
+            ->orderBy('stars', 'desc')
+            ->skip(3)
             ->paginate(9);
 
         $this->alpinePackagesTotal = $result->total();

@@ -61,13 +61,13 @@
             </div>
         </div>
         <div
-            class="flex flex-wrap items-end justify-center gap-x-20 gap-y-40 pt-20"
+            class="flex flex-col items-center justify-center gap-x-20 gap-y-28 px-5 pt-20 min-[920px]:flex-row min-[920px]:items-end"
         >
             {{-- Second Place --}}
             <a
                 href="{{ $this->secondPlace->github }}"
                 target="_blank"
-                class="order-2 transition duration-500 ease-out hover:-translate-y-2 lg:order-1"
+                class="order-2 transition duration-500 ease-out hover:-translate-y-2 min-[920px]:order-1"
             >
                 {{-- Badge --}}
                 <div class="flex justify-center">
@@ -312,7 +312,7 @@
 
                 {{-- Stars Count --}}
                 <div
-                    class="relative z-50 flex items-center justify-center gap-2 pt-1"
+                    class="relative z-50 flex items-center justify-center gap-2 pr-1 pt-1"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +390,7 @@
             <a
                 href="{{ $this->firstPlace->github }}"
                 target="_blank"
-                class="order-1 transition duration-500 ease-out hover:-translate-y-2 lg:order-2"
+                class="order-1 transition duration-500 ease-out hover:-translate-y-2 min-[920px]:order-2"
             >
                 {{-- Badge --}}
                 <div class="flex justify-center">
@@ -635,7 +635,7 @@
 
                 {{-- Stars Count --}}
                 <div
-                    class="relative z-50 flex items-center justify-center gap-2 pt-1"
+                    class="relative z-50 flex items-center justify-center gap-2 pr-1 pt-1"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -958,7 +958,7 @@
 
                 {{-- Stars Count --}}
                 <div
-                    class="relative z-50 flex items-center justify-center gap-2 pt-1"
+                    class="relative z-50 flex items-center justify-center gap-2 pr-1 pt-1"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
