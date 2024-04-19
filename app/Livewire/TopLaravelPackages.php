@@ -29,7 +29,28 @@ class TopLaravelPackages extends Component
             ->where('package_type', 'laravel-package')
             ->orderBy('stars', 'desc')
             ->first();
+    }
 
+    #[Computed()]
+    public function secondPlace()
+    {
+        // Return the second Laravel package that has the highest number of github stars.
+        return Package::query()
+            ->where('package_type', 'laravel-package')
+            ->orderBy('stars', 'desc')
+            ->skip(1)
+            ->first();
+    }
+
+    #[Computed()]
+    public function thirdPlace()
+    {
+        // Return the third Laravel package that has the highest number of github stars.
+        return Package::query()
+            ->where('package_type', 'laravel-package')
+            ->orderBy('stars', 'desc')
+            ->skip(2)
+            ->first();
     }
 
     #[Computed()]
