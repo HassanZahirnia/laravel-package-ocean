@@ -1,4 +1,41 @@
-<div>
+<div x-data="{
+    animateStarCount($el, to) {
+        gsap.fromTo(
+            $el,
+            {
+                textContent: 0,
+            },
+            {
+                textContent: to,
+                duration: 1.5,
+                snap: {
+                    textContent: 1,
+                },
+                stagger: {
+                    each: 1.0,
+                    onUpdate: () => {
+                        $el.textContent = $el.textContent.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                    }
+                }
+            }
+        )
+    },
+    moveBarUp($el) {
+        gsap.fromTo(
+            $el,
+            {
+                y: 150,
+                opacity: 0,
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 2,
+                ease: 'back.out(1.1)',
+            }
+        )
+    },
+}">
     <div class="mx-auto w-full max-w-3xl px-5 text-center">
         {{-- Star Cup --}}
         <div class="flex justify-center">
@@ -35,6 +72,7 @@
             href="{{ $this->secondPlace->github }}"
             target="_blank"
             class="order-2 transition duration-500 ease-out hover:-translate-y-2 min-[920px]:order-1"
+            x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
             <div class="flex justify-center">
@@ -293,7 +331,7 @@
                         d="m18.7 4.627l2.247 4.31a2.27 2.27 0 0 0 1.686 1.189l4.746.65c2.538.35 3.522 3.479 1.645 5.219l-3.25 2.999a2.225 2.225 0 0 0-.683 2.04l.793 4.398c.441 2.45-2.108 4.36-4.345 3.24l-4.536-2.25a2.282 2.282 0 0 0-2.006 0l-4.536 2.25c-2.238 1.11-4.786-.79-4.345-3.24l.793-4.399c.14-.75-.12-1.52-.682-2.04l-3.251-2.998c-1.877-1.73-.893-4.87 1.645-5.22l4.746-.65a2.23 2.23 0 0 0 1.686-1.189l2.248-4.309c1.144-2.17 4.264-2.17 5.398 0Z"
                     />
                 </svg>
-                <div class="text-lg font-semibold opacity-70">
+                <div x-init="animateStarCount($el, @js($this->secondPlace->stars))" class="text-lg font-semibold opacity-70">
                     {{ number_format($this->secondPlace->stars) }}
                 </div>
             </div>
@@ -358,6 +396,7 @@
             href="{{ $this->firstPlace->github }}"
             target="_blank"
             class="order-1 transition duration-500 ease-out hover:-translate-y-2 min-[920px]:order-2"
+            x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
             <div class="flex justify-center">
@@ -616,7 +655,7 @@
                         d="m18.7 4.627l2.247 4.31a2.27 2.27 0 0 0 1.686 1.189l4.746.65c2.538.35 3.522 3.479 1.645 5.219l-3.25 2.999a2.225 2.225 0 0 0-.683 2.04l.793 4.398c.441 2.45-2.108 4.36-4.345 3.24l-4.536-2.25a2.282 2.282 0 0 0-2.006 0l-4.536 2.25c-2.238 1.11-4.786-.79-4.345-3.24l.793-4.399c.14-.75-.12-1.52-.682-2.04l-3.251-2.998c-1.877-1.73-.893-4.87 1.645-5.22l4.746-.65a2.23 2.23 0 0 0 1.686-1.189l2.248-4.309c1.144-2.17 4.264-2.17 5.398 0Z"
                     />
                 </svg>
-                <div class="text-lg font-semibold opacity-70">
+                <div x-init="animateStarCount($el, @js($this->firstPlace->stars))" class="text-lg font-semibold opacity-70">
                     {{ number_format($this->firstPlace->stars) }}
                 </div>
             </div>
@@ -681,6 +720,7 @@
             href="{{ $this->thirdPlace->github }}"
             target="_blank"
             class="order-3 transition duration-500 ease-out hover:-translate-y-2"
+            x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
             <div class="flex justify-center">
@@ -939,7 +979,7 @@
                         d="m18.7 4.627l2.247 4.31a2.27 2.27 0 0 0 1.686 1.189l4.746.65c2.538.35 3.522 3.479 1.645 5.219l-3.25 2.999a2.225 2.225 0 0 0-.683 2.04l.793 4.398c.441 2.45-2.108 4.36-4.345 3.24l-4.536-2.25a2.282 2.282 0 0 0-2.006 0l-4.536 2.25c-2.238 1.11-4.786-.79-4.345-3.24l.793-4.399c.14-.75-.12-1.52-.682-2.04l-3.251-2.998c-1.877-1.73-.893-4.87 1.645-5.22l4.746-.65a2.23 2.23 0 0 0 1.686-1.189l2.248-4.309c1.144-2.17 4.264-2.17 5.398 0Z"
                     />
                 </svg>
-                <div class="text-lg font-semibold opacity-70">
+                <div x-init="animateStarCount($el, @js($this->thirdPlace->stars))" class="text-lg font-semibold opacity-70">
                     {{ number_format($this->thirdPlace->stars) }}
                 </div>
             </div>
