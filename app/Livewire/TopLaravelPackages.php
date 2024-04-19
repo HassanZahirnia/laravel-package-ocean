@@ -22,38 +22,6 @@ class TopLaravelPackages extends Component
     public $alpineCurrentPage = 0;
 
     #[Computed()]
-    public function firstPlace()
-    {
-        // Return the first Laravel package that has the highest number of github stars.
-        return Package::query()
-            ->where('package_type', 'laravel-package')
-            ->orderBy('stars', 'desc')
-            ->first();
-    }
-
-    #[Computed()]
-    public function secondPlace()
-    {
-        // Return the second Laravel package that has the highest number of github stars.
-        return Package::query()
-            ->where('package_type', 'laravel-package')
-            ->orderBy('stars', 'desc')
-            ->skip(1)
-            ->first();
-    }
-
-    #[Computed()]
-    public function thirdPlace()
-    {
-        // Return the third Laravel package that has the highest number of github stars.
-        return Package::query()
-            ->where('package_type', 'laravel-package')
-            ->orderBy('stars', 'desc')
-            ->skip(2)
-            ->first();
-    }
-
-    #[Computed()]
     public function packages()
     {
         $result = Package::query()

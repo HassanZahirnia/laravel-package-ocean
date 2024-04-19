@@ -6,11 +6,11 @@ use App\Models\Category;
 use App\Models\Package;
 use Livewire\Component;
 
-class Hero extends Component
+class HomeHero extends Component
 {
     public function render()
     {
-        return view('livewire.hero', [
+        return view('livewire.home-hero', [
             'stats' => [
                 'packages' => Package::count(),
                 'authors' => Package::distinct('author')->count('author'),

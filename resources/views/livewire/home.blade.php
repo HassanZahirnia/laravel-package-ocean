@@ -33,7 +33,7 @@
         }"
     >
         <livewire:hero-background />
-        <livewire:hero />
+        <livewire:home-hero />
         <x-home.package-section />
         <livewire:footer />
     </div>
