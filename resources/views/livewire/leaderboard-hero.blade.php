@@ -71,7 +71,7 @@
         <a
             href="{{ $this->secondPlace->github }}"
             target="_blank"
-            class="order-2 transition duration-500 ease-out hover:-translate-y-2 min-[920px]:order-1"
+            class="order-2 transition duration-500 ease-out hover:!-translate-y-2 min-[920px]:order-1"
             x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
@@ -395,7 +395,7 @@
         <a
             href="{{ $this->firstPlace->github }}"
             target="_blank"
-            class="order-1 transition duration-500 ease-out hover:-translate-y-2 min-[920px]:order-2"
+            class="order-1 transition duration-500 ease-out hover:!-translate-y-2 min-[920px]:order-2"
             x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
@@ -719,7 +719,7 @@
         <a
             href="{{ $this->thirdPlace->github }}"
             target="_blank"
-            class="order-3 transition duration-500 ease-out hover:-translate-y-2"
+            class="order-3 transition duration-500 ease-out hover:!-translate-y-2"
             x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
