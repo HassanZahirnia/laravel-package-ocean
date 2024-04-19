@@ -6035,16 +6035,16 @@
         },
         {
             "name": "spatie/robots-txt",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/robots-txt.git",
-                "reference": "dacba2ba159364987392aa1b0002e196c5923970"
+                "reference": "d44c05859c3e6f6a6602bcf27ee653b60a4e8764"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/robots-txt/zipball/dacba2ba159364987392aa1b0002e196c5923970",
-                "reference": "dacba2ba159364987392aa1b0002e196c5923970",
+                "url": "https://api.github.com/repos/spatie/robots-txt/zipball/d44c05859c3e6f6a6602bcf27ee653b60a4e8764",
+                "reference": "d44c05859c3e6f6a6602bcf27ee653b60a4e8764",
                 "shasum": ""
             },
             "require": {
@@ -6080,7 +6080,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/robots-txt/issues",
-                "source": "https://github.com/spatie/robots-txt/tree/2.0.3"
+                "source": "https://github.com/spatie/robots-txt/tree/2.1.0"
             },
             "funding": [
                 {
@@ -6092,7 +6092,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-11-22T12:57:35+00:00"
+            "time": "2024-04-19T11:44:41+00:00"
         },
         {
             "name": "spatie/temporary-directory",
