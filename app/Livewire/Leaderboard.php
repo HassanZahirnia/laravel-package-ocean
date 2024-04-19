@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Models\Package;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\Attributes\Computed;
+use Livewire\Attributes\Title;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -13,6 +14,8 @@ use RalphJSmit\Laravel\SEO\Support\SEOData;
 class Leaderboard extends Component
 {
     use WithPagination;
+
+    #[Title('Top Best Laravel Packages')]
 
     #[Url(history: true)]
     public $search = '';
@@ -24,22 +27,21 @@ class Leaderboard extends Component
     #[Computed()]
     public function packages()
     {
+        $firstThreePackages = Package::query()
+            ->where('package_type', 'laravel-package')
+            ->orderBy('stars', 'desc')
+            ->limit(3)
+            ->get();
+
         $result = Package::query()
+            ->where('package_type', 'laravel-package')
             ->when($this->search, function (Builder $query, string $search) {
                 $query
                     ->where('name', 'LIKE', "%{$search}%")
                     ->orWhere('keywords', 'LIKE', "%{$search}%");
             })
-            ->when($this->showOfficialPackages, function (Builder $query) {
-                $query->where('author', 'laravel');
-            })
-            ->when($this->selectedCategory, function (Builder $query, string $category) {
-                $query->whereHas('category', function (Builder $query) use ($category) {
-                    $query->where('name', $category);
-                });
-            })
             ->orderBy('stars', 'desc')
-            ->skip(3)
+            ->whereNotIn('id', $firstThreePackages->pluck('id'))
             ->paginate(9);
 
         $this->alpinePackagesTotal = $result->total();
@@ -61,7 +63,7 @@ class Leaderboard extends Component
     public function render()
     {
         view()->share('SEOData', new SEOData(
-            title: 'Laravel Package Ocean - Top Laravel packages',
+            title: 'Laravel Package Ocean - Top Best Laravel packages',
             description: 'The most popular Laravel packages with the highest stars on Github.',
             url: route('leaderboard'),
             image: route('home').'/laravel-package-ocean-opengraph.webp',

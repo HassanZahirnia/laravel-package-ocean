@@ -20,8 +20,9 @@
         />
 
         <title>
-            Laravel Package Ocean - Discover new & useful Laravel packages
+            {{ $title ?? 'Laravel Package Ocean - Discover new & useful Laravel packages' }}
         </title>
+
         <meta
             name="description"
             content="A place where you can find any Laravel package that you may need for your next project."
