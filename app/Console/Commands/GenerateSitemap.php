@@ -34,6 +34,12 @@ class GenerateSitemap extends Command
                     ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
                     ->setPriority(1),
             )
+            ->add(
+                Url::create('/top-laravel-packages')
+                    ->setLastModificationDate(now())
+                    ->setChangeFrequency(Url::CHANGE_FREQUENCY_DAILY)
+                    ->setPriority(0.9),
+            )
             ->writeToFile(public_path('sitemap.xml'));
     }
 }
