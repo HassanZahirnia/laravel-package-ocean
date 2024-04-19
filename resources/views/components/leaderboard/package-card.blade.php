@@ -79,7 +79,7 @@
         </div>
 
         {{-- Name --}}
-        <div class="flex-1">
+        <div class="flex-1 truncate">
             <div class="font-semibold text-[#545D82] dark:text-[#DEE4F1]">
                 {{ $package->name }}
             </div>
