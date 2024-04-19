@@ -10,7 +10,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 use RalphJSmit\Laravel\SEO\Support\SEOData;
 
-class TopLaravelPackages extends Component
+class Leaderboard extends Component
 {
     use WithPagination;
 
@@ -63,10 +63,10 @@ class TopLaravelPackages extends Component
         view()->share('SEOData', new SEOData(
             title: 'Laravel Package Ocean - Top Laravel packages',
             description: 'The most popular Laravel packages with the highest stars on Github.',
-            url: route('top-laravel-packages'),
+            url: route('leaderboard'),
             image: route('home').'/laravel-package-ocean-opengraph.webp',
         ));
 
-        return view('livewire.top-laravel-packages');
+        return view('livewire.leaderboard');
     }
 }

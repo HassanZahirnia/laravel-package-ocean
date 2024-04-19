@@ -6,7 +6,7 @@ use App\Models\Package;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
 
-class TopLaravelPackagesHero extends Component
+class LeaderboardHero extends Component
 {
     #[Computed()]
     public function firstPlace()
@@ -42,6 +42,6 @@ class TopLaravelPackagesHero extends Component
 
     public function render()
     {
-        return view('livewire.top-laravel-packages-hero');
+        return view('livewire.leaderboard-hero');
     }
 }

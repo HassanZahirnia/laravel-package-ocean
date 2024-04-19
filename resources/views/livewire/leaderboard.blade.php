@@ -33,7 +33,7 @@
         }"
     >
         <livewire:hero-background />
-        <livewire:top-laravel-packages-hero />
+        <livewire:leaderboard-hero />
         <x-leaderboard.package-section />
         <livewire:footer />
     </div>
