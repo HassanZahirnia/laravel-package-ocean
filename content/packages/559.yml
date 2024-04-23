@@ -1,0 +1,17 @@
+id: 559
+name: Laracord
+description: 'Quickly build functional & elegant bots using DiscordPHP.'
+category_id: '15'
+github: 'https://github.com/laracord/laracord'
+author: laracord
+composer: laracord/laracord
+npm: null
+stars: 197
+keywords: {  }
+first_release_at: '2024-01-14 17:48:48'
+latest_release_at: '2024-03-27 11:45:43'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-04-23T11:34:06+00:00
+updated_at: 2024-04-23T11:35:07+00:00
