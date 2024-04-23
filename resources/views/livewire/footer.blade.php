@@ -34,6 +34,7 @@
                 <div class="pt-0.5">Web designer & developer</div>
                 <div class="flex flex-wrap justify-start gap-5 pt-3">
                     <a
+                        target="_blank"
                         href="https://github.com/HassanZahirnia"
                         class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
@@ -52,6 +53,7 @@
                         <div class="text-sm">Github</div>
                     </a>
                     <a
+                        target="_blank"
                         href="https://twitter.com/HassanZahirnia"
                         class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
@@ -69,6 +71,7 @@
                         <div class="text-sm">Twitter</div>
                     </a>
                     <a
+                        target="_blank"
                         href="https://zahirnia.com"
                         class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
