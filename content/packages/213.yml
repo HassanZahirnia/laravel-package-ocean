@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/cashier-stripe'
 author: laravel
 composer: laravel/cashier
 npm: null
-stars: 2324
+stars: 2325
 keywords:
     - invoice
     - card
@@ -21,4 +21,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-19T14:45:42+00:00
+updated_at: 2024-04-23T11:53:53+00:00

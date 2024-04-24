@@ -6,7 +6,7 @@ github: 'https://github.com/Astrotomic/laravel-translatable'
 author: astrotomic
 composer: astrotomic/laravel-translatable
 npm: null
-stars: 1188
+stars: 1191
 keywords: {  }
 first_release_at: '2019-06-17 11:38:15'
 latest_release_at: '2024-04-17 11:57:21'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-19T14:44:57+00:00
+updated_at: 2024-04-23T11:53:14+00:00

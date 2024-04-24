@@ -6,7 +6,7 @@ github: 'https://github.com/opcodesio/log-viewer'
 author: opcodesio
 composer: opcodesio/log-viewer
 npm: null
-stars: 3241
+stars: 3253
 keywords:
     - horizon
 first_release_at: '2022-08-15 07:15:02'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-19T14:39:42+00:00
+updated_at: 2024-04-23T11:47:53+00:00
