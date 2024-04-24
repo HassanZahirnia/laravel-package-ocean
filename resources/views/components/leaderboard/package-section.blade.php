@@ -56,7 +56,10 @@
         </div>
 
         {{-- Package List --}}
-        <div class="relative">
+        <div
+            id="scroll-to-reference"
+            class="relative scroll-mt-10"
+        >
             <div
                 x-init="autoAnimate($el)"
                 class="relative space-y-5 pt-6"

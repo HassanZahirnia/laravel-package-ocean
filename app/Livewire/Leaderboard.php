@@ -71,4 +71,11 @@ class Leaderboard extends Component
 
         return view('livewire.leaderboard');
     }
+
+    public function updatingPage($page)
+    {
+        $this->js(<<<'JS'
+            document.querySelector('#scroll-to-reference')?.scrollIntoView({ behavior: 'auto' });
+        JS);
+    }
 }
