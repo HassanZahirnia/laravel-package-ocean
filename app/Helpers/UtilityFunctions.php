@@ -195,6 +195,41 @@ function isGithubRepositoryHealthy($repository): bool
     return true;
 }
 
+function reportGithubRepositoryHealthStatus($repository): string|bool
+{
+    $response = Http::timeout(20)->withHeaders([
+        'Authorization' => 'Bearer '.config('services.github.token'),
+    ])->get('https://api.github.com/repos/'.$repository);
+
+    if ($response->failed()) {
+        return 'The repository could not be accessed.';
+    }
+
+    $data = $response->json();
+
+    if ($data['archived']) {
+        return 'The repository is archived.';
+    }
+
+    if ($data['disabled']) {
+        return 'The repository is disabled.';
+    }
+
+    if ($data['private']) {
+        return 'The repository is private.';
+    }
+
+    if (data_get($data, 'message') === 'Not Found') {
+        return 'The repository was not found.';
+    }
+
+    if (now()->subMonths(8)->greaterThan($data['pushed_at'])) {
+        return 'The repository has not been updated in the last 8 months.';
+    }
+
+    return true;
+}
+
 // Get author and name of repo from the github link
 // Example: https://github.com/spatie/once -> spatie/once
 function extractRepoFromGithubUrl($url): ?string
