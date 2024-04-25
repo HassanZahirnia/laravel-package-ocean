@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-prometheus'
 author: spatie
 composer: spatie/laravel-prometheus
 npm: null
-stars: 116
+stars: 118
 keywords: {  }
 first_release_at: '2023-06-01 07:27:07'
 latest_release_at: '2024-03-08 11:34:26'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-13T15:15:28+00:00
-updated_at: 2024-04-23T17:26:35+00:00
+updated_at: 2024-04-25T14:50:24+00:00

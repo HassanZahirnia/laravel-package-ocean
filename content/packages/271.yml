@@ -6,7 +6,7 @@ github: 'https://github.com/KnpLabs/snappy'
 author: knplabs
 composer: knplabs/knp-snappy
 npm: null
-stars: 4336
+stars: 4339
 keywords: {  }
 first_release_at: '2012-01-16 10:58:40'
 latest_release_at: '2023-12-18 09:12:11'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-23T11:55:28+00:00
+updated_at: 2024-04-25T13:35:44+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/crypto'
 author: spatie
 composer: spatie/crypto
 npm: null
-stars: 433
+stars: 432
 keywords: {  }
 first_release_at: '2020-11-06 22:19:27'
 latest_release_at: '2023-01-25 09:26:10'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-23T11:56:02+00:00
+updated_at: 2024-04-25T13:36:21+00:00

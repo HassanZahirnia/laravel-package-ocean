@@ -9,10 +9,10 @@ npm: null
 stars: 3238
 keywords: {  }
 first_release_at: '2016-08-15 19:31:29'
-latest_release_at: '2024-04-15 18:49:04'
+latest_release_at: '2024-04-17 17:56:14'
 laravel_dependency_versions:
     - ^9.21|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-23T11:47:42+00:00
+updated_at: 2024-04-25T13:27:37+00:00
