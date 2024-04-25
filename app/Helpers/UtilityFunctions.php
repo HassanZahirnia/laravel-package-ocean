@@ -188,7 +188,7 @@ function isGithubRepositoryHealthy($repository): bool
         return false;
     }
 
-    if (now()->subMonths(8)->greaterThan($data['pushed_at'])) {
+    if (now()->subYear()->greaterThan($data['pushed_at'])) {
         return false;
     }
 
@@ -223,8 +223,8 @@ function reportGithubRepositoryHealthStatus($repository): string|bool
         return 'The repository was not found.';
     }
 
-    if (now()->subMonths(8)->greaterThan($data['pushed_at'])) {
-        return 'The repository has not been updated in the last 8 months.';
+    if (now()->subYear()->greaterThan($data['pushed_at'])) {
+        return 'The repository has not been updated in the last year.';
     }
 
     return true;
