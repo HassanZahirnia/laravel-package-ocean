@@ -6,7 +6,7 @@ github: 'https://github.com/anlutro/laravel-settings'
 author: anlutro
 composer: anlutro/l4-settings
 npm: null
-stars: 929
+stars: 931
 keywords: {  }
 first_release_at: '2014-01-18 18:42:49'
 latest_release_at: '2024-03-13 08:59:39'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-25T13:35:10+00:00
+updated_at: 2024-04-29T08:49:17+00:00

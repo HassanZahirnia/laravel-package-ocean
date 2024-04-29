@@ -6,7 +6,7 @@ github: 'https://github.com/barryvdh/laravel-dompdf'
 author: barryvdh
 composer: barryvdh/laravel-dompdf
 npm: null
-stars: 6445
+stars: 6447
 keywords: {  }
 first_release_at: '2013-06-23 11:38:00'
 latest_release_at: '2024-03-15 12:48:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-04-25T13:32:41+00:00
+updated_at: 2024-04-29T08:47:05+00:00

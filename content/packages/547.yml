@@ -6,7 +6,7 @@ github: 'https://github.com/livewire/volt'
 author: livewire
 composer: livewire/volt
 npm: null
-stars: 274
+stars: 275
 keywords: {  }
 first_release_at: '2023-07-26 16:42:45'
 latest_release_at: '2024-03-06 20:38:22'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-03-19T12:23:50+00:00
-updated_at: 2024-04-25T14:53:21+00:00
+updated_at: 2024-04-29T08:57:42+00:00

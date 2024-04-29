@@ -6,7 +6,7 @@ github: 'https://github.com/milwad-dev/laravel-validate'
 author: milwad
 composer: milwad/laravel-validate
 npm: null
-stars: 431
+stars: 432
 keywords: {  }
 first_release_at: '2022-07-16 18:48:08'
 latest_release_at: '2024-04-21 14:06:35'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-18T14:53:06+00:00
-updated_at: 2024-04-25T13:38:07+00:00
+updated_at: 2024-04-29T08:51:54+00:00
