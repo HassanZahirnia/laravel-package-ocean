@@ -6,7 +6,7 @@ github: 'https://github.com/code16/sharp'
 author: code16
 composer: code16/sharp
 npm: null
-stars: 689
+stars: 691
 keywords: {  }
 first_release_at: '2017-09-05 08:25:31'
 latest_release_at: '2024-03-15 16:00:53'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-04-29T08:40:19+00:00
+updated_at: 2024-05-03T16:37:46+00:00

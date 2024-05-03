@@ -6,7 +6,7 @@ github: 'https://github.com/glhd/aire'
 author: inxilpro
 composer: glhd/aire
 npm: null
-stars: 530
+stars: 531
 keywords: {  }
 first_release_at: '2018-10-30 04:14:58'
 latest_release_at: '2024-03-12 16:40:23'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-01-03T20:01:25+00:00
-updated_at: 2024-04-29T08:57:23+00:00
+updated_at: 2024-05-03T16:55:41+00:00
