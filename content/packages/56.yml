@@ -6,7 +6,7 @@ github: 'https://github.com/BenSampo/laravel-enum'
 author: bensampo
 composer: bensampo/laravel-enum
 npm: null
-stars: 1971
+stars: 1974
 keywords: {  }
 first_release_at: '2017-09-07 21:42:48'
 latest_release_at: '2024-03-19 21:53:15'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-03T16:39:03+00:00
+updated_at: 2024-05-08T18:52:47+00:00

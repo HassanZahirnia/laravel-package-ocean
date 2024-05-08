@@ -6,16 +6,16 @@ github: 'https://github.com/lunarphp/lunar'
 author: lunarphp
 composer: lunarphp/lunar
 npm: null
-stars: 2271
+stars: 2277
 keywords:
     - carts
     - payment
     - taxation
     - currency
 first_release_at: '2022-09-26 11:31:20'
-latest_release_at: '2024-01-31 16:42:04'
+latest_release_at: '2024-05-06 20:55:04'
 laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-03T16:44:00+00:00
+updated_at: 2024-05-08T20:53:26+00:00
