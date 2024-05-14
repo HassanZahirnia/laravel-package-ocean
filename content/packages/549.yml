@@ -6,7 +6,7 @@ github: 'https://github.com/SiavashBamshadnia/Laravel-Query-Enrich'
 author: sbamtr
 composer: sbamtr/laravel-query-enrich
 npm: null
-stars: 117
+stars: 118
 keywords: {  }
 first_release_at: '2024-01-24 12:34:18'
 latest_release_at: '2024-03-17 18:44:08'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-01T12:54:38+00:00
-updated_at: 2024-05-08T21:06:02+00:00
+updated_at: 2024-05-14T09:32:41+00:00

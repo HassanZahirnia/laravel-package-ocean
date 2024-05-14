@@ -6,7 +6,7 @@ github: 'https://github.com/404labfr/laravel-impersonate'
 author: lab404
 composer: lab404/laravel-impersonate
 npm: null
-stars: 1912
+stars: 1915
 keywords:
     - management
     - admin
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-08T18:51:34+00:00
+updated_at: 2024-05-14T09:09:39+00:00

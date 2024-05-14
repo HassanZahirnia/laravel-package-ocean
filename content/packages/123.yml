@@ -6,7 +6,7 @@ github: 'https://github.com/staudenmeir/eloquent-has-many-deep'
 author: staudenmeir
 composer: staudenmeir/eloquent-has-many-deep
 npm: null
-stars: 2566
+stars: 2568
 keywords: {  }
 first_release_at: '2018-06-26 01:28:12'
 latest_release_at: '2024-03-09 09:59:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-08T20:51:30+00:00
+updated_at: 2024-05-14T09:14:21+00:00

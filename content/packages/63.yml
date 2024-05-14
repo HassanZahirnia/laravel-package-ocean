@@ -6,7 +6,7 @@ github: 'https://github.com/lorisleiva/laravel-actions'
 author: lorisleiva
 composer: lorisleiva/laravel-actions
 npm: null
-stars: 2336
+stars: 2341
 keywords:
     - controller
     - jobs
@@ -23,4 +23,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-08T18:53:07+00:00
+updated_at: 2024-05-14T09:11:35+00:00

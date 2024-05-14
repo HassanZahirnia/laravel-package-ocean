@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/filament-markdown-editor'
 author: spatie
 composer: spatie/filament-markdown-editor
 npm: null
-stars: 122
+stars: 123
 keywords: {  }
 first_release_at: '2022-10-13 09:30:57'
 latest_release_at: '2024-04-01 07:45:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-08T20:57:18+00:00
+updated_at: 2024-05-14T09:21:35+00:00

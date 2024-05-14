@@ -6,7 +6,7 @@ github: 'https://github.com/lukeraymonddowning/self-healing-urls'
 author: lukeraymonddowning
 composer: lukeraymonddowning/self-healing-urls
 npm: null
-stars: 137
+stars: 139
 keywords: {  }
 first_release_at: '2023-11-25 20:42:00'
 latest_release_at: '2024-05-07 08:46:43'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-01-22T10:52:36+00:00
-updated_at: 2024-05-08T21:05:45+00:00
+updated_at: 2024-05-14T09:32:17+00:00

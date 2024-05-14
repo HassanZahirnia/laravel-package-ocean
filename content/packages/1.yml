@@ -6,13 +6,13 @@ github: 'https://github.com/AndreasElia/laravel-api-to-postman'
 author: andreaselia
 composer: andreaselia/laravel-api-to-postman
 npm: null
-stars: 903
+stars: 906
 keywords: {  }
 first_release_at: '2020-12-24 22:39:38'
-latest_release_at: '2024-05-07 11:29:54'
+latest_release_at: '2024-05-09 16:11:32'
 laravel_dependency_versions:
     - ^6.0|^7.0|^8.0|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-08T18:50:40+00:00
+updated_at: 2024-05-14T09:08:38+00:00
