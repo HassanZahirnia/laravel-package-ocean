@@ -112,7 +112,7 @@
             class="group/sponsor-card mx-auto grid w-full max-w-3xl place-items-center transition duration-300 will-change-transform hover:translate-x-0.5"
         >
             <div
-                class="h-full w-full rounded-[1.6rem] bg-gradient-to-br transition-colors duration-300 [grid-area:1/-1] dark:from-fuchsia-600/5 dark:via-fuchsia-600/5 dark:to-fuchsia-600/40"
+                class="h-full w-full rounded-[1.6rem] bg-gradient-to-br transition-colors duration-300 [grid-area:1/-1] dark:from-fuchsia-500/5 dark:via-fuchsia-500/5 dark:to-fuchsia-500/40"
             ></div>
             <a
                 href="https://github.com/sponsors/HassanZahirnia"
