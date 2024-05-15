@@ -117,18 +117,21 @@
             <a
                 href="https://github.com/sponsors/HassanZahirnia"
                 target="_blank"
-                class="flex h-[calc(100%-0.2rem)] w-[calc(100%-0.2rem)] items-center justify-between gap-10 overflow-hidden rounded-3xl bg-[#edf0fd] px-10 py-5 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition-colors duration-300 [grid-area:1/-1] hover:bg-[#f1f3fe] dark:bg-[#101332] dark:backdrop-blur-lg hover:dark:bg-[#110E26]/40"
+                class="grid h-[calc(100%-0.2rem)] w-[calc(100%-0.2rem)] place-items-center gap-5 overflow-hidden rounded-3xl bg-[#edf0fd] px-5 py-5 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition-colors duration-300 [grid-area:1/-1] hover:bg-[#f1f3fe] dark:bg-[#101332] dark:backdrop-blur-lg hover:dark:bg-[#110E26]/40 min-[550px]:flex min-[550px]:items-center min-[550px]:justify-between min-[550px]:px-10 min-[550px]:text-left"
             >
                 <div class="space-y-1.5">
-                    {{-- Title --}}
+                    {{-- Header --}}
                     <div class="flex items-center gap-2">
+                        {{-- Title --}}
                         <div
-                            class="text-xl font-bold text-[#040404] transition duration-300 dark:text-white"
+                            class="text-lg font-bold text-[#040404] transition duration-300 dark:text-white min-[550px]:text-xl"
                         >
                             Sponsor me on GitHub
                         </div>
+
+                        {{-- Arrow --}}
                         <div
-                            class="-translate-x-1 scale-x-90 opacity-0 transition duration-300 group-hover/sponsor-card:translate-x-0 group-hover/sponsor-card:scale-x-100 group-hover/sponsor-card:opacity-100 motion-reduce:transition-none"
+                            class="hidden -translate-x-1 scale-x-90 opacity-0 transition duration-300 group-hover/sponsor-card:translate-x-0 group-hover/sponsor-card:scale-x-100 group-hover/sponsor-card:opacity-100 motion-reduce:transition-none min-[550px]:block"
                         >
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -147,14 +150,17 @@
                             </svg>
                         </div>
                     </div>
-                    {{-- Description --}}
+                    {{-- Caption --}}
                     <div
-                        class="font-medium text-[#6A7789] transition duration-300 dark:text-[#96A5BB] sm:max-w-md"
+                        class="font-medium text-[#6A7789] transition duration-300 dark:text-[#96A5BB] min-[550px]:max-w-md"
                     >
                         To support this project!
                     </div>
                 </div>
-                <div class="relative grid w-20 place-items-center">
+                <div
+                    class="relative grid w-14 shrink-0 place-items-center min-[550px]:w-20"
+                >
+                    {{-- Heart Bottle --}}
                     <img
                         src="@viteAsset('resources/images/heart-bottle.webp')"
                         width="50"
@@ -162,6 +168,8 @@
                         alt=""
                         class="pointer-events-none select-none mix-blend-hard-light dark:mix-blend-normal"
                     />
+
+                    {{-- Blur --}}
                     <div
                         class="absolute right-1/2 top-1/2 -z-10 size-20 -translate-y-1/2 translate-x-1/2 bg-fuchsia-500 opacity-30 blur-xl dark:bg-rose-500 dark:opacity-50"
                     ></div>
