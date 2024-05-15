@@ -125,7 +125,7 @@
                         <div
                             class="text-xl font-bold text-[#040404] transition duration-300 dark:text-white"
                         >
-                            Sponsor me on Github
+                            Sponsor me on GitHub
                         </div>
                         <div
                             class="-translate-x-1 scale-x-90 opacity-0 transition duration-300 group-hover/sponsor-card:translate-x-0 group-hover/sponsor-card:scale-x-100 group-hover/sponsor-card:opacity-100 motion-reduce:transition-none"
