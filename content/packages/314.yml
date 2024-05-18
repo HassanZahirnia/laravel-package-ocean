@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/period'
 author: spatie
 composer: spatie/period
 npm: null
-stars: 1538
+stars: 1540
 keywords: {  }
 first_release_at: '2018-11-28 07:50:53'
 latest_release_at: '2023-02-20 14:31:09'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-14T09:22:34+00:00
+updated_at: 2024-05-18T18:36:40+00:00

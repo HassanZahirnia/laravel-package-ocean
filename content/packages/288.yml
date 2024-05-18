@@ -6,7 +6,7 @@ github: 'https://github.com/roach-php/core'
 author: roach-php
 composer: roach-php/laravel
 npm: null
-stars: 1321
+stars: 1325
 keywords: {  }
 first_release_at: '2021-12-16 14:15:26'
 latest_release_at: '2024-03-22 21:23:00'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-14T09:21:25+00:00
+updated_at: 2024-05-18T18:35:10+00:00

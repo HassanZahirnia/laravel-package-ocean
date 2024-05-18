@@ -6,7 +6,7 @@ github: 'https://github.com/rinvex/laravel-categories'
 author: rinvex
 composer: rinvex/laravel-categories
 npm: null
-stars: 447
+stars: 448
 keywords: {  }
 first_release_at: '2018-10-05 11:59:18'
 latest_release_at: '2023-07-03 13:28:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T11:51:40+00:00
-updated_at: 2024-05-14T09:26:37+00:00
+updated_at: 2024-05-18T18:41:01+00:00

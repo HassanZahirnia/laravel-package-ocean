@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-schedule-monitor'
 author: spatie
 composer: spatie/laravel-schedule-monitor
 npm: null
-stars: 820
+stars: 819
 keywords: {  }
 first_release_at: '2020-07-08 15:45:48'
 latest_release_at: '2024-03-28 08:11:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-14T09:16:21+00:00
+updated_at: 2024-05-18T18:29:20+00:00

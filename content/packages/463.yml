@@ -6,7 +6,7 @@ github: 'https://github.com/resendlabs/resend-laravel'
 author: resend
 composer: resend/resend-laravel
 npm: null
-stars: 68
+stars: 69
 keywords: {  }
 first_release_at: '2023-04-05 04:49:03'
 latest_release_at: '2024-03-15 20:00:57'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-15T13:05:31+00:00
-updated_at: 2024-05-14T09:29:00+00:00
+updated_at: 2024-05-18T18:43:42+00:00

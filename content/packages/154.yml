@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-web-tinker'
 author: spatie
 composer: spatie/laravel-web-tinker
 npm: null
-stars: 998
+stars: 999
 keywords: {  }
 first_release_at: '2019-02-08 18:37:46'
 latest_release_at: '2024-03-02 05:41:00'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-14T09:15:45+00:00
+updated_at: 2024-05-18T18:28:32+00:00
