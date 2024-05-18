@@ -16,7 +16,7 @@
         "axios": "^1.6.8",
         "dayjs": "^1.11.11",
         "gsap": "^3.12.5",
-        "laravel-vite-plugin": "^1.0.2",
+        "laravel-vite-plugin": "^1.0.4",
         "lodash": "^4.17.21",
         "postcss": "^8.4.38",
         "prettier": "^3.2.5",
