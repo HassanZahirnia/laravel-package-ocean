@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/socialite'
 author: laravel
 composer: laravel/socialite
 npm: null
-stars: 5474
+stars: 5478
 keywords: {  }
 first_release_at: '2014-08-22 21:41:08'
 latest_release_at: '2024-05-03 20:31:38'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-18T18:21:50+00:00
+updated_at: 2024-05-25T11:56:50+00:00

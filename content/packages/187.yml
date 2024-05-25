@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/pdf-to-image'
 author: spatie
 composer: spatie/pdf-to-image
 npm: null
-stars: 1252
+stars: 1255
 keywords:
     - imagick
     - ghostscript
@@ -16,4 +16,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-18T18:30:20+00:00
+updated_at: 2024-05-25T12:04:28+00:00

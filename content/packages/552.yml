@@ -6,7 +6,7 @@ github: 'https://github.com/DirectoryTree/Bartender'
 author: directorytree
 composer: directorytree/bartender
 npm: null
-stars: 225
+stars: 227
 keywords: {  }
 first_release_at: '2024-04-03 17:30:21'
 latest_release_at: '2024-04-25 20:00:15'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-10T20:21:20+00:00
-updated_at: 2024-05-18T20:58:48+00:00
+updated_at: 2024-05-25T20:20:47+00:00

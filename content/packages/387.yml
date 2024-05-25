@@ -6,7 +6,7 @@ github: 'https://github.com/qcod/laravel-imageup'
 author: qcod
 composer: qcod/laravel-imageup
 npm: null
-stars: 730
+stars: 732
 keywords: {  }
 first_release_at: '2018-09-21 11:56:20'
 latest_release_at: '2024-05-15 01:39:10'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T10:42:23+00:00
-updated_at: 2024-05-18T18:40:03+00:00
+updated_at: 2024-05-25T12:12:41+00:00

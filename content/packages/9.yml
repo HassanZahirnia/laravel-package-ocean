@@ -6,15 +6,15 @@ github: 'https://github.com/openai-php/laravel'
 author: openai-php
 composer: openai-php/laravel
 npm: null
-stars: 2226
+stars: 2244
 keywords:
     - 'nuno maduro'
     - 'sandro gehri'
 first_release_at: '2022-12-26 22:26:43'
-latest_release_at: '2023-12-05 14:08:09'
+latest_release_at: '2024-05-21 19:26:09'
 laravel_dependency_versions:
     - ^9.46.0|^10.34.2|^11.0
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-18T18:20:53+00:00
+updated_at: 2024-05-25T11:56:00+00:00

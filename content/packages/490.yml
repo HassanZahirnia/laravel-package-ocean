@@ -6,7 +6,7 @@ github: 'https://github.com/robsontenorio/mary'
 author: robsontenorio
 composer: robsontenorio/mary
 npm: null
-stars: 718
+stars: 727
 keywords: {  }
 first_release_at: '2023-07-30 06:43:19'
 latest_release_at: '2024-05-11 17:51:14'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-16T09:19:27+00:00
-updated_at: 2024-05-18T18:44:59+00:00
+updated_at: 2024-05-25T13:11:58+00:00

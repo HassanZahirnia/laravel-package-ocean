@@ -6,7 +6,7 @@ github: 'https://github.com/mateusjunges/laravel-invite-codes'
 author: mateusjunges
 composer: mateusjunges/laravel-invite-codes
 npm: null
-stars: 284
+stars: 285
 keywords: {  }
 first_release_at: '2020-02-15 18:47:55'
 latest_release_at: '2024-01-28 22:44:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-18T18:34:39+00:00
+updated_at: 2024-05-25T12:08:06+00:00
