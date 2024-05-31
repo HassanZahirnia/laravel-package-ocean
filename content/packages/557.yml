@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/cashier-paddle'
 author: laravel
 composer: laravel/cashier-paddle
 npm: null
-stars: 231
+stars: 232
 keywords: {  }
 first_release_at: '2020-06-05 13:33:57'
-latest_release_at: '2024-04-23 15:37:52'
+latest_release_at: '2024-05-28 15:53:28'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-18T13:01:48+00:00
-updated_at: 2024-05-25T20:21:00+00:00
+updated_at: 2024-05-31T19:06:02+00:00
