@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-data'
 author: spatie
 composer: spatie/laravel-data
 npm: null
-stars: 1143
+stars: 1147
 keywords:
     - typescript
     - dto
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-05-31T18:39:25+00:00
+updated_at: 2024-06-09T17:38:51+00:00

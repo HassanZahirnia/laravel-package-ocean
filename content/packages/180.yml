@@ -6,15 +6,15 @@ github: 'https://github.com/Intervention/image'
 author: intervention
 composer: intervention/image
 npm: null
-stars: 13744
+stars: 13745
 keywords:
     - gd
     - imagick
     - watermark
 first_release_at: '2013-01-19 15:08:51'
-latest_release_at: '2024-05-08 13:53:15'
+latest_release_at: '2024-06-06 17:15:24'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-31T18:44:49+00:00
+updated_at: 2024-06-09T17:44:30+00:00

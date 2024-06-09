@@ -10,9 +10,9 @@ stars: 76
 keywords:
     - 'john koster'
 first_release_at: '2022-07-18 14:52:45'
-latest_release_at: '2024-05-25 20:03:11'
+latest_release_at: '2024-06-04 14:44:56'
 laravel_dependency_versions: {  }
 package_type: npm-package
 paid_integration: false
 created_at: 2023-06-12T18:57:12+00:00
-updated_at: 2024-05-31T18:56:59+00:00
+updated_at: 2024-06-09T17:58:18+00:00

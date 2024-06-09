@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-event-sourcing'
 author: spatie
 composer: spatie/laravel-event-sourcing
 npm: null
-stars: 727
+stars: 728
 keywords: {  }
 first_release_at: '2019-09-20 07:47:13'
 latest_release_at: '2024-05-28 12:19:11'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T20:25:55+00:00
-updated_at: 2024-05-31T18:51:48+00:00
+updated_at: 2024-06-09T17:52:15+00:00

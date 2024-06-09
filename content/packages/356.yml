@@ -6,7 +6,7 @@ github: 'https://github.com/protonemedia/laravel-task-runner'
 author: protonemedia
 composer: protonemedia/laravel-task-runner
 npm: null
-stars: 123
+stars: 124
 keywords: {  }
 first_release_at: '2023-05-01 06:34:41'
 latest_release_at: '2024-03-06 16:19:05'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-22T11:24:49+00:00
-updated_at: 2024-05-31T18:52:39+00:00
+updated_at: 2024-06-09T17:53:18+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/eloquent-sortable'
 author: spatie
 composer: spatie/eloquent-sortable
 npm: null
-stars: 1356
+stars: 1361
 keywords: {  }
 first_release_at: '2014-07-15 20:23:51'
-latest_release_at: '2024-05-02 09:49:34'
+latest_release_at: '2024-06-04 11:09:54'
 laravel_dependency_versions:
     - ^9.31|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-05-31T18:41:27+00:00
+updated_at: 2024-06-09T17:41:00+00:00
