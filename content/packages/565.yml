@@ -6,12 +6,12 @@ github: 'https://github.com/tomloprod/time-warden'
 author: tomloprod
 composer: tomloprod/time-warden
 npm: null
-stars: 124
+stars: 138
 keywords: {  }
 first_release_at: '2024-05-20 10:25:25'
-latest_release_at: '2024-05-20 17:20:04'
+latest_release_at: '2024-06-20 18:00:19'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2024-06-04T14:21:50+00:00
-updated_at: 2024-06-09T18:18:12+00:00
+updated_at: 2024-06-27T11:21:59+00:00

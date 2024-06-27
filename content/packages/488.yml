@@ -6,7 +6,7 @@ github: 'https://github.com/WendellAdriel/laravel-lift'
 author: wendelladriel
 composer: wendelladriel/laravel-lift
 npm: null
-stars: 625
+stars: 631
 keywords: {  }
 first_release_at: '2023-08-24 17:15:18'
 latest_release_at: '2024-05-28 16:16:12'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-08-29T22:35:45+00:00
-updated_at: 2024-06-09T17:59:59+00:00
+updated_at: 2024-06-27T11:18:16+00:00

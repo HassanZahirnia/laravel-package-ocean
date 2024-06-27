@@ -6,13 +6,13 @@ github: 'https://github.com/sammyjo20/Saloon'
 author: sammyjo20
 composer: sammyjo20/saloon
 npm: null
-stars: 1945
+stars: 1975
 keywords: {  }
 first_release_at: '2022-01-14 18:32:47'
-latest_release_at: '2024-06-09 10:46:38'
+latest_release_at: '2024-06-26 06:26:47'
 laravel_dependency_versions:
     - '^9.39 || ^10.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-06-09T12:28:34+00:00
+updated_at: 2024-06-27T08:59:20+00:00

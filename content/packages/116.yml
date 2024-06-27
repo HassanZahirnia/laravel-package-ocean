@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-prefixed-ids'
 author: spatie
 composer: spatie/laravel-prefixed-ids
 npm: null
-stars: 160
+stars: 161
 keywords: {  }
 first_release_at: '2021-02-24 11:23:57'
 latest_release_at: '2024-03-06 16:03:42'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-06-09T17:41:20+00:00
+updated_at: 2024-06-27T09:25:42+00:00

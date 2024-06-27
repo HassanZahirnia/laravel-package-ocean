@@ -6,7 +6,7 @@ github: 'https://github.com/usernotnull/tall-toasts'
 author: usernotnull
 composer: usernotnull/tall-toasts
 npm: null
-stars: 524
+stars: 535
 keywords:
     - livewire
     - alpinejs
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-06-09T17:46:04+00:00
+updated_at: 2024-06-27T10:20:15+00:00

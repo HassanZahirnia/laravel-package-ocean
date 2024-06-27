@@ -6,15 +6,15 @@ github: 'https://github.com/spatie/laravel-data'
 author: spatie
 composer: spatie/laravel-data
 npm: null
-stars: 1147
+stars: 1176
 keywords:
     - typescript
     - dto
 first_release_at: '2021-07-08 15:53:32'
-latest_release_at: '2024-05-03 15:01:04'
+latest_release_at: '2024-06-25 11:01:36'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-06-09T17:38:51+00:00
+updated_at: 2024-06-27T09:23:10+00:00
