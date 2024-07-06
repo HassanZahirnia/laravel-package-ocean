@@ -6,7 +6,7 @@ github: 'https://github.com/godruoyi/php-snowflake'
 author: godruoyi
 composer: godruoyi/php-snowflake
 npm: null
-stars: 756
+stars: 757
 keywords: {  }
 first_release_at: '2019-08-12 13:52:54'
 latest_release_at: '2024-04-08 07:08:02'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: php-package
 paid_integration: false
 created_at: 2023-06-07T10:53:36+00:00
-updated_at: 2024-06-27T10:28:33+00:00
+updated_at: 2024-07-06T10:21:59+00:00

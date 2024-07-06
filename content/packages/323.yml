@@ -6,13 +6,13 @@ github: 'https://github.com/laracraft-tech/laravel-date-scopes'
 author: laracraft-tech
 composer: laracraft-tech/laravel-date-scopes
 npm: null
-stars: 466
+stars: 469
 keywords: {  }
 first_release_at: '2023-04-08 20:33:57'
-latest_release_at: '2024-03-07 19:23:24'
+latest_release_at: '2024-07-02 11:22:35'
 laravel_dependency_versions:
     - '^9.0 || ^10.0 || ^11.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T00:55:15+00:00
-updated_at: 2024-06-27T10:25:15+00:00
+updated_at: 2024-07-06T10:18:40+00:00

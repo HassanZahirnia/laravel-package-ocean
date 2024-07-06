@@ -6,7 +6,7 @@ github: 'https://github.com/LaravelDaily/laravel-charts'
 author: laraveldaily
 composer: laraveldaily/laravel-charts
 npm: null
-stars: 515
+stars: 516
 keywords: {  }
 first_release_at: '2019-02-17 08:04:51'
 latest_release_at: '2023-06-28 10:36:53'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-06-27T10:21:21+00:00
+updated_at: 2024-07-06T09:28:35+00:00
