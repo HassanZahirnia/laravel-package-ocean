@@ -6,14 +6,14 @@ github: 'https://github.com/tpetry/laravel-mysql-explain'
 author: tpetry
 composer: tpetry/laravel-mysql-explain
 npm: null
-stars: 125
+stars: 148
 keywords:
     - 'tobias petry'
 first_release_at: '2023-06-12 11:55:55'
-latest_release_at: '2024-03-13 09:30:04'
+latest_release_at: '2024-07-13 10:09:23'
 laravel_dependency_versions:
     - ^6.0|^7.0|^8.0|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-12T12:38:15+00:00
-updated_at: 2024-07-06T10:24:50+00:00
+updated_at: 2024-07-18T11:35:20+00:00

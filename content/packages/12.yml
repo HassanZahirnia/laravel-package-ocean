@@ -6,7 +6,7 @@ github: 'https://github.com/rebing/graphql-laravel'
 author: rebing
 composer: rebing/graphql-laravel
 npm: null
-stars: 2111
+stars: 2112
 keywords:
     - facebook
     - query
@@ -19,4 +19,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-07-06T09:16:59+00:00
+updated_at: 2024-07-18T09:38:27+00:00

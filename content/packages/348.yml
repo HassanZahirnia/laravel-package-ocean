@@ -6,7 +6,7 @@ github: 'https://github.com/qruto/laravel-wave'
 author: qruto
 composer: qruto/laravel-wave
 npm: null
-stars: 708
+stars: 713
 keywords: {  }
 first_release_at: '2022-08-01 20:36:37'
 latest_release_at: '2024-04-13 04:52:31'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-27T18:47:45+00:00
-updated_at: 2024-07-06T10:19:46+00:00
+updated_at: 2024-07-18T11:29:29+00:00

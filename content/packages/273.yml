@@ -6,13 +6,13 @@ github: 'https://github.com/laravel/octane'
 author: laravel
 composer: laravel/octane
 npm: null
-stars: 3702
+stars: 3714
 keywords: {  }
 first_release_at: '2021-04-06 14:11:04'
-latest_release_at: '2024-07-01 20:50:27'
+latest_release_at: '2024-07-08 14:44:19'
 laravel_dependency_versions:
     - ^10.10.1|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-06T10:16:12+00:00
+updated_at: 2024-07-18T11:25:48+00:00

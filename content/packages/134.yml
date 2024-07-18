@@ -6,7 +6,7 @@ github: 'https://github.com/barryvdh/laravel-debugbar'
 author: barryvdh
 composer: barryvdh/laravel-debugbar
 npm: null
-stars: 16530
+stars: 16608
 keywords:
     - profiling
     - profiler
@@ -22,4 +22,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-06T09:23:31+00:00
+updated_at: 2024-07-18T09:45:20+00:00

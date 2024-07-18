@@ -6,15 +6,15 @@ github: 'https://github.com/spatie/browsershot'
 author: spatie
 composer: spatie/browsershot
 npm: null
-stars: 4739
+stars: 4748
 keywords:
     - html
     - puppeteer
     - chromium
 first_release_at: '2014-05-02 19:56:12'
-latest_release_at: '2024-07-03 08:45:08'
+latest_release_at: '2024-07-15 14:25:51'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-06T09:26:12+00:00
+updated_at: 2024-07-18T09:47:46+00:00

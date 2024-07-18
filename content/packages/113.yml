@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-model-info'
 author: spatie
 composer: spatie/laravel-model-info
 npm: null
-stars: 168
+stars: 167
 keywords: {  }
 first_release_at: '2022-08-09 12:26:47'
-latest_release_at: '2024-06-21 08:21:54'
+latest_release_at: '2024-07-16 08:11:00'
 laravel_dependency_versions:
     - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-06T09:22:29+00:00
+updated_at: 2024-07-18T09:44:12+00:00

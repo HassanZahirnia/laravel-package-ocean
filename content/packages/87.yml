@@ -6,10 +6,10 @@ github: 'https://github.com/mongodb/laravel-mongodb'
 author: mongodb
 composer: mongodb/laravel-mongodb
 npm: null
-stars: 6958
+stars: 6965
 keywords: {  }
 first_release_at: '2023-08-30 10:44:11'
-latest_release_at: '2024-06-20 13:52:34'
+latest_release_at: '2024-07-09 13:14:18'
 laravel_dependency_versions:
     - ^10.36|^11
     - ^10.0|^11
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-06T09:21:10+00:00
+updated_at: 2024-07-18T09:42:54+00:00
