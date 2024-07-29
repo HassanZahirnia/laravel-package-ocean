@@ -6,12 +6,13 @@ github: 'https://github.com/spatie/laravel-newsletter'
 author: spatie
 composer: spatie/laravel-newsletter
 npm: null
-stars: 1595
+stars: 1597
 keywords: {  }
 first_release_at: '2015-05-04 13:39:03'
-latest_release_at: '2023-02-09 13:52:08'
-laravel_dependency_versions: {  }
+latest_release_at: '2024-07-18 15:02:03'
+laravel_dependency_versions:
+    - ^9|^10|^11
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-18T09:48:45+00:00
+updated_at: 2024-07-29T18:39:41+00:00

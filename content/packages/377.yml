@@ -6,7 +6,7 @@ github: 'https://github.com/laravel-notification-channels/telegram'
 author: laravel-notification-channels
 composer: laravel-notification-channels/telegram
 npm: null
-stars: 945
+stars: 949
 keywords: {  }
 first_release_at: '2016-08-12 09:27:04'
 latest_release_at: '2024-03-12 05:47:13'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:34:36+00:00
-updated_at: 2024-07-18T11:31:05+00:00
+updated_at: 2024-07-29T18:49:01+00:00

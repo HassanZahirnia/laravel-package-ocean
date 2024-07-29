@@ -6,7 +6,7 @@ github: 'https://github.com/mohammedmanssour/laravel-recurring-models'
 author: mohammedmanssour
 composer: mohammedmanssour/laravel-recurring-models
 npm: null
-stars: 234
+stars: 236
 keywords: {  }
 first_release_at: '2023-04-24 12:12:09'
 latest_release_at: '2024-05-10 20:03:56'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-22T11:18:48+00:00
-updated_at: 2024-07-18T11:29:50+00:00
+updated_at: 2024-07-29T18:47:41+00:00

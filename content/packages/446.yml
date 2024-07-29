@@ -6,7 +6,7 @@ github: 'https://github.com/ash-jc-allen/laravel-config-validator'
 author: ashallendesign
 composer: ashallendesign/laravel-config-validator
 npm: null
-stars: 193
+stars: 194
 keywords: {  }
 first_release_at: '2020-10-11 00:59:29'
 latest_release_at: '2024-04-26 16:16:42'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T13:11:30+00:00
-updated_at: 2024-07-18T11:34:54+00:00
+updated_at: 2024-07-29T18:52:46+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/Thavarshan/filterable'
 author: jerome
 composer: jerome/filterable
 npm: null
-stars: 126
+stars: 128
 keywords: {  }
 first_release_at: '2024-04-09 12:34:28'
 latest_release_at: '2024-07-14 01:28:09'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-05-15T13:32:39+00:00
-updated_at: 2024-07-18T11:46:25+00:00
+updated_at: 2024-07-29T18:59:13+00:00

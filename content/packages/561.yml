@@ -6,7 +6,7 @@ github: 'https://github.com/halilcosdu/laravel-slower'
 author: halilcosdu
 composer: halilcosdu/laravel-slower
 npm: null
-stars: 244
+stars: 269
 keywords: {  }
 first_release_at: '2024-05-03 14:31:05'
 latest_release_at: '2024-05-10 15:45:25'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-05-15T13:25:04+00:00
-updated_at: 2024-07-18T11:46:22+00:00
+updated_at: 2024-07-29T18:59:10+00:00
