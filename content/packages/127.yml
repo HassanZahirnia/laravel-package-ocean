@@ -6,7 +6,7 @@ github: 'https://github.com/tpetry/laravel-query-expressions'
 author: tpetry
 composer: tpetry/laravel-query-expressions
 npm: null
-stars: 302
+stars: 303
 keywords: {  }
 first_release_at: '2023-02-17 17:30:41'
 latest_release_at: '2024-05-31 12:00:08'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-29T18:35:33+00:00
+updated_at: 2024-08-07T10:53:53+00:00

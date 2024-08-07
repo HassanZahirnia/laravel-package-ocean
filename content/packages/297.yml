@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-feed'
 author: spatie
 composer: spatie/laravel-feed
 npm: null
-stars: 879
+stars: 882
 keywords: {  }
 first_release_at: '2016-03-03 08:59:21'
 latest_release_at: '2024-03-01 10:20:32'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-29T18:44:37+00:00
+updated_at: 2024-08-07T12:55:55+00:00

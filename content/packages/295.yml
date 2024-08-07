@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-cookie-consent'
 author: spatie
 composer: spatie/laravel-cookie-consent
 npm: null
-stars: 1373
+stars: 1374
 keywords: {  }
 first_release_at: '2016-06-28 09:16:14'
-latest_release_at: '2024-07-15 09:38:44'
+latest_release_at: '2024-08-07 11:06:59'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-29T18:44:30+00:00
+updated_at: 2024-08-07T12:55:50+00:00

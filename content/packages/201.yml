@@ -6,7 +6,7 @@ github: 'https://github.com/Qoraiche/laravel-mail-editor'
 author: qoraiche
 composer: qoraiche/laravel-mail-editor
 npm: null
-stars: 2080
+stars: 2081
 keywords:
     - maileclipse
     - WYSIWYG
@@ -19,4 +19,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-29T18:39:34+00:00
+updated_at: 2024-08-07T12:51:41+00:00

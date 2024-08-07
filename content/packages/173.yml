@@ -6,7 +6,7 @@ github: 'https://github.com/aimeos/aimeos-laravel'
 author: aimeos
 composer: aimeos/aimeos-laravel
 npm: null
-stars: 7027
+stars: 7044
 keywords:
     - warehouse
     - 'multi tentant'
@@ -24,4 +24,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-29T18:38:02+00:00
+updated_at: 2024-08-07T12:50:23+00:00

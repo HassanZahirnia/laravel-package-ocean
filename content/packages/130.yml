@@ -6,7 +6,7 @@ github: 'https://github.com/WildsideUK/Laravel-Userstamps'
 author: wildside
 composer: wildside/userstamps
 npm: null
-stars: 549
+stars: 548
 keywords: {  }
 first_release_at: '2016-03-10 19:05:45'
 latest_release_at: '2024-03-13 08:55:57'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-07-29T18:35:43+00:00
+updated_at: 2024-08-07T10:54:01+00:00
