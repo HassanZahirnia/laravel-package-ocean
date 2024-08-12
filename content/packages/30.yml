@@ -6,7 +6,7 @@ github: 'https://github.com/mpociot/teamwork'
 author: mpociot
 composer: mpociot/teamwork
 npm: null
-stars: 1066
+stars: 1067
 keywords: {  }
 first_release_at: '2015-07-07 21:58:18'
 latest_release_at: '2024-06-18 11:45:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-08-07T10:48:56+00:00
+updated_at: 2024-08-12T09:14:39+00:00
