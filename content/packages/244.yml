@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-menu'
 author: spatie
 composer: spatie/laravel-menu
 npm: null
-stars: 906
+stars: 908
 keywords: {  }
 first_release_at: '2016-02-22 22:23:32'
 latest_release_at: '2024-02-27 12:08:53'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-08-12T09:21:49+00:00
+updated_at: 2024-08-23T16:45:23+00:00

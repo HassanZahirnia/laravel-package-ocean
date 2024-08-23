@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-url-signer'
 author: spatie
 composer: spatie/laravel-url-signer
 npm: null
-stars: 706
+stars: 709
 keywords: {  }
 first_release_at: '2015-08-14 14:34:59'
 latest_release_at: '2024-05-14 11:37:01'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-08-12T09:23:52+00:00
+updated_at: 2024-08-23T16:48:27+00:00
