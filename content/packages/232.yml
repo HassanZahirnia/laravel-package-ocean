@@ -6,7 +6,7 @@ github: 'https://github.com/GrahamCampbell/Laravel-Markdown'
 author: graham-campbell
 composer: graham-campbell/markdown
 npm: null
-stars: 1315
+stars: 1314
 keywords:
     - blade
 first_release_at: '2013-12-10 22:41:50'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-08-23T16:44:48+00:00
+updated_at: 2024-09-04T11:16:11+00:00

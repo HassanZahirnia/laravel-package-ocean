@@ -6,7 +6,7 @@ github: 'https://github.com/boxfrommars/rutorika-sortable'
 author: rutorika
 composer: rutorika/sortable
 npm: null
-stars: 288
+stars: 289
 keywords: {  }
 first_release_at: '2014-06-28 01:41:28'
 latest_release_at: '2024-03-20 11:01:43'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-08-23T16:02:11+00:00
+updated_at: 2024-09-04T11:09:59+00:00
