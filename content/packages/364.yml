@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-ray'
 author: spatie
 composer: spatie/laravel-ray
 npm: null
-stars: 284
+stars: 286
 keywords: {  }
 first_release_at: '2021-01-07 14:20:30'
 latest_release_at: '2024-07-12 12:35:17'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-05T12:36:55+00:00
-updated_at: 2024-09-04T11:22:18+00:00
+updated_at: 2024-09-15T11:27:37+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/staudenmeir/eloquent-json-relations'
 author: staudenmeir
 composer: staudenmeir/eloquent-json-relations
 npm: null
-stars: 978
+stars: 982
 keywords: {  }
 first_release_at: '2018-10-19 21:50:55'
 latest_release_at: '2024-07-21 12:43:15'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:37:40+00:00
-updated_at: 2024-09-04T11:23:02+00:00
+updated_at: 2024-09-15T11:28:25+00:00

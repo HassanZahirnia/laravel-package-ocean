@@ -6,7 +6,7 @@ github: 'https://github.com/mauricius/laravel-htmx'
 author: mauricius
 composer: mauricius/laravel-htmx
 npm: null
-stars: 300
+stars: 302
 keywords: {  }
 first_release_at: '2022-11-02 20:41:34'
 latest_release_at: '2024-03-19 15:23:55'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-11-24T20:28:58+00:00
-updated_at: 2024-09-04T11:43:14+00:00
+updated_at: 2024-09-15T11:36:21+00:00

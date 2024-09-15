@@ -6,7 +6,7 @@ github: 'https://github.com/Honeystone/laravel-seo'
 author: honeystone
 composer: honeystone/laravel-seo
 npm: null
-stars: 197
+stars: 206
 keywords: {  }
 first_release_at: '2024-07-25 22:28:23'
 latest_release_at: '2024-08-26 00:25:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-08-23T15:26:49+00:00
-updated_at: 2024-09-04T11:45:16+00:00
+updated_at: 2024-09-15T11:38:45+00:00

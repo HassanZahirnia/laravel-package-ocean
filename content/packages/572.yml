@@ -6,7 +6,7 @@ github: 'https://github.com/rahulalam31/Laravel-Abuse-IP'
 author: rahulalam31
 composer: rahulalam31/laravel-abuse-ip
 npm: null
-stars: 134
+stars: 147
 keywords: {  }
 first_release_at: '2024-07-19 16:36:35'
 latest_release_at: '2024-08-21 07:15:01'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-08-23T15:28:58+00:00
-updated_at: 2024-09-04T11:45:18+00:00
+updated_at: 2024-09-15T11:38:48+00:00
