@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Models\Package;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Log;
 
 use function Laravel\Prompts\confirm;
 use function Laravel\Prompts\progress;
@@ -38,11 +39,18 @@ class UpdatePackages extends Command
                     ->label("{$package->name}")
                     ->hint("{$package->github}");
 
-                $package->updateStars();
+                try {
+                    $package->updateStars();
 
-                $package->updateReleaseDatesAndDependencies();
+                    $package->updateReleaseDatesAndDependencies();
 
-                $package->touch();
+                    $package->touch();
+                } catch (\Exception $e) {
+                    $this->error("Failed to update package {$package->name}: {$e->getMessage()}");
+                    Log::error("Failed to update package {$package->name}", ['exception' => $e]);
+
+                    return false;
+                }
 
                 return true;
             },

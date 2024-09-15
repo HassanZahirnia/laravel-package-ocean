@@ -6,12 +6,13 @@ use Composer\Semver\Constraint\MultiConstraint;
 use Composer\Semver\Intervals;
 use Composer\Semver\Semver;
 use Composer\Semver\VersionParser;
+use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
 
 function isValidVersionConstraint($constraintString): bool
 {
-    $versionParser = new VersionParser();
+    $versionParser = new VersionParser;
 
     try {
         $constraint = $versionParser->parseConstraints($constraintString);
@@ -27,7 +28,10 @@ function fetchActiveLaravelVersions()
 {
     return cache()->remember('active_laravel_versions', now()->addDay(), function () {
         try {
-            $response = Http::get('https://laravelversions.com/api/versions');
+            $response = Http::retry(3, 100, function ($exception) {
+                return $exception instanceof ConnectionException;
+            })
+                ->get('https://laravelversions.com/api/versions');
 
             if ($response->successful()) {
                 return extractActiveVersionsFromLaravelVersions($response);
@@ -249,9 +253,15 @@ function extractRepoFromGithubUrl($url): ?string
 
 function fetchGithubStars($url): int
 {
-    $githubData = Http::timeout(60)->connectTimeout(60)->withHeaders([
-        'Authorization' => 'Bearer '.config('services.github.token'),
-    ])->get('https://api.github.com/repos/'.extractRepoFromGithubUrl($url));
+    $githubData = Http::retry(3, 100, function ($exception) {
+        return $exception instanceof ConnectionException;
+    })
+        ->timeout(60)
+        ->connectTimeout(60)
+        ->withHeaders([
+            'Authorization' => 'Bearer '.config('services.github.token'),
+        ])
+        ->get('https://api.github.com/repos/'.extractRepoFromGithubUrl($url));
 
     if ($githubData->failed()) {
         return 0;
@@ -262,7 +272,13 @@ function fetchGithubStars($url): int
 
 function getNpmData($npm): array
 {
-    $npmData = Http::timeout(60)->connectTimeout(60)->get('https://registry.npmjs.org/'.$npm);
+    $npmData = Http::retry(3, 100, function ($exception) {
+        return $exception instanceof ConnectionException;
+    })
+        ->timeout(60)
+        ->connectTimeout(60)
+        ->get('https://registry.npmjs.org/'.$npm);
+
     if ($npmData->failed()) {
         return [];
     }
@@ -278,8 +294,20 @@ function getNpmData($npm): array
 
 function getPackagistData($composer): array
 {
-    $packagistData = Http::timeout(60)->connectTimeout(60)->get('https://packagist.org/packages/'.$composer.'.json');
-    $minimalPackagistData = Http::timeout(60)->connectTimeout(60)->get('https://repo.packagist.org/p2/'.$composer.'.json');
+    $packagistData = Http::retry(3, 100, function ($exception) {
+        return $exception instanceof ConnectionException;
+    })
+        ->timeout(60)
+        ->connectTimeout(60)
+        ->get('https://packagist.org/packages/'.$composer.'.json');
+
+    $minimalPackagistData = Http::retry(3, 100, function ($exception) {
+        return $exception instanceof ConnectionException;
+    })
+        ->timeout(60)
+        ->connectTimeout(60)
+        ->get('https://repo.packagist.org/p2/'.$composer.'.json');
+
     if ($packagistData->failed() || $minimalPackagistData->failed()) {
         return [];
     }
