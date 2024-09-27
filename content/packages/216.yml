@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-sitemap'
 author: spatie
 composer: spatie/laravel-sitemap
 npm: null
-stars: 2273
+stars: 2278
 keywords: {  }
 first_release_at: '2016-08-15 18:03:49'
 latest_release_at: '2024-05-21 12:31:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-09-15T11:20:09+00:00
+updated_at: 2024-09-27T13:08:26+00:00

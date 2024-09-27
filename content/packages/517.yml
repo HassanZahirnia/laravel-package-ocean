@@ -6,7 +6,7 @@ github: 'https://github.com/Laragear/ApiManager'
 author: laragear
 composer: laragear/api-manager
 npm: null
-stars: 14
+stars: 15
 keywords: {  }
 first_release_at: '2023-02-21 05:27:38'
 latest_release_at: '2024-03-14 05:18:44'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-04T09:51:37+00:00
-updated_at: 2024-09-15T11:35:44+00:00
+updated_at: 2024-09-27T13:23:36+00:00

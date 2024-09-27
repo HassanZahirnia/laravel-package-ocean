@@ -6,7 +6,7 @@ github: 'https://github.com/hammerstonedev/sidecar'
 author: hammerstone
 composer: hammerstone/sidecar
 npm: null
-stars: 804
+stars: 823
 keywords: {  }
 first_release_at: '2021-04-29 01:44:25'
 latest_release_at: '2024-05-15 22:19:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-09-15T11:22:32+00:00
+updated_at: 2024-09-27T13:10:47+00:00
