@@ -1,0 +1,18 @@
+id: 581
+name: Prezet
+description: 'Transform markdown files into SEO-friendly blogs, articles, and documentation.'
+category_id: '18'
+github: 'https://github.com/benbjurstrom/prezet'
+author: benbjurstrom
+composer: benbjurstrom/prezet
+npm: null
+stars: 145
+keywords: {  }
+first_release_at: '2024-05-14 03:57:39'
+latest_release_at: '2024-09-27 14:20:28'
+laravel_dependency_versions:
+    - ^10.0||^11.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-10-07T12:34:45+00:00
+updated_at: 2024-10-07T12:34:45+00:00

@@ -1,0 +1,18 @@
+id: 578
+name: Flux
+description: 'The official Livewire UI component library.'
+category_id: '17'
+github: 'https://github.com/livewire/flux'
+author: livewire
+composer: livewire/flux
+npm: null
+stars: 396
+keywords: {  }
+first_release_at: '2024-09-19 13:03:47'
+latest_release_at: '2024-10-03 23:36:00'
+laravel_dependency_versions:
+    - ^10.0|^11.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-10-07T12:20:22+00:00
+updated_at: 2024-10-07T12:20:22+00:00
