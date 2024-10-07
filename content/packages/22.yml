@@ -6,13 +6,13 @@ github: 'https://github.com/joelbutcher/socialstream'
 author: joelbutcher
 composer: joelbutcher/socialstream
 npm: null
-stars: 426
+stars: 429
 keywords: {  }
 first_release_at: '2020-12-26 18:44:58'
-latest_release_at: '2024-09-19 13:57:13'
+latest_release_at: '2024-10-03 16:11:40'
 laravel_dependency_versions:
     - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-09-27T12:58:47+00:00
+updated_at: 2024-10-07T12:40:56+00:00

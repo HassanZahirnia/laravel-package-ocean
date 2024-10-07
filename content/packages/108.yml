@@ -6,7 +6,7 @@ github: 'https://github.com/ryangjchandler/orbit'
 author: ryangjchandler
 composer: ryangjchandler/orbit
 npm: null
-stars: 849
+stars: 852
 keywords: {  }
 first_release_at: '2021-03-21 17:34:41'
 latest_release_at: '2024-03-12 23:58:53'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-09-27T13:03:16+00:00
+updated_at: 2024-10-07T12:46:53+00:00

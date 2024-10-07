@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/valet'
 author: laravel
 composer: null
 npm: null
-stars: 2505
+stars: 2507
 keywords: {  }
 first_release_at: '2016-05-05 15:51:43'
 latest_release_at: '2023-03-27 18:42:24'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: mac-app
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-09-27T13:05:08+00:00
+updated_at: 2024-10-07T12:49:42+00:00
