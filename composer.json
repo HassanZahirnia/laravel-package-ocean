@@ -35,7 +35,8 @@
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
         "pestphp/pest-plugin-stressless": "^2.0",
-        "spatie/laravel-ignition": "^2.0"
+        "spatie/laravel-ignition": "^2.0",
+        "wire-elements/wire-spy": "^0.0.4"
     },
     "autoload": {
         "psr-4": {
