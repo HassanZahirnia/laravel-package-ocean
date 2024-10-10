@@ -1,0 +1,17 @@
+id: 585
+name: 'Wire Spy'
+description: 'A debug bar for Livewire to interact with your components—inspect their state, modify it on the fly.'
+category_id: '4'
+github: 'https://github.com/wire-elements/wire-spy'
+author: wire-elements
+composer: wire-elements/wire-spy
+npm: null
+stars: 149
+keywords: {  }
+first_release_at: '2024-10-09 09:45:53'
+latest_release_at: '2024-10-10 08:13:03'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-10-10T11:25:07+00:00
+updated_at: 2024-10-10T11:25:07+00:00
