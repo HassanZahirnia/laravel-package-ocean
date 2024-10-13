@@ -6,12 +6,12 @@ github: 'https://github.com/Power-Components/livewire-powergrid'
 author: power-components
 composer: power-components/livewire-powergrid
 npm: null
-stars: 1481
+stars: 1484
 keywords: {  }
 first_release_at: '2021-04-08 13:37:35'
-latest_release_at: '2024-10-02 20:43:55'
+latest_release_at: '2024-10-10 15:53:53'
 laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-07T12:54:20+00:00
+updated_at: 2024-10-13T18:40:39+00:00

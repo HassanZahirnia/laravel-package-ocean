@@ -6,7 +6,7 @@ github: 'https://github.com/bagisto/bagisto'
 author: bagisto
 composer: bagisto/bagisto
 npm: null
-stars: 14764
+stars: 14863
 keywords: {  }
 first_release_at: '2018-10-26 06:15:13'
 latest_release_at: '2024-09-27 05:14:21'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-07T12:51:08+00:00
+updated_at: 2024-10-13T18:35:50+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/jeremykenedy/laravel2step'
 author: jeremykenedy
 composer: jeremykenedy/laravel2step
 npm: null
-stars: 274
+stars: 275
 keywords: {  }
 first_release_at: '2018-01-19 05:00:20'
 latest_release_at: '2023-06-08 13:03:38'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:54:54+00:00
-updated_at: 2024-10-07T13:04:07+00:00
+updated_at: 2024-10-13T18:53:49+00:00

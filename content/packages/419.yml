@@ -6,7 +6,7 @@ github: 'https://github.com/s-ichikawa/laravel-sendgrid-driver'
 author: s-ichikawa
 composer: s-ichikawa/laravel-sendgrid-driver
 npm: null
-stars: 391
+stars: 390
 keywords: {  }
 first_release_at: '2016-02-24 07:26:50'
 latest_release_at: '2024-03-15 01:27:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-07T12:23:51+00:00
-updated_at: 2024-10-07T13:03:09+00:00
+updated_at: 2024-10-13T18:52:44+00:00

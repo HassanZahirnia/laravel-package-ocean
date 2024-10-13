@@ -6,7 +6,7 @@ github: 'https://github.com/kreait/laravel-firebase'
 author: kreait
 composer: kreait/laravel-firebase
 npm: null
-stars: 1056
+stars: 1061
 keywords: {  }
 first_release_at: '2019-08-16 01:37:19'
 latest_release_at: '2024-06-23 20:49:35'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-10-07T12:40:11+00:00
+updated_at: 2024-10-13T18:22:52+00:00

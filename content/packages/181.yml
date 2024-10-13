@@ -6,7 +6,7 @@ github: 'https://github.com/SpartnerNL/Laravel-Excel'
 author: maatwebsite
 composer: maatwebsite/excel
 npm: null
-stars: 12258
+stars: 12262
 keywords: {  }
 first_release_at: '2013-11-09 15:46:05'
 latest_release_at: '2024-09-07 13:53:36'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-07T12:51:31+00:00
+updated_at: 2024-10-13T18:36:42+00:00
