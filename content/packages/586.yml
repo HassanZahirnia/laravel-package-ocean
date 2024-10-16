@@ -1,0 +1,17 @@
+id: 586
+name: Pan
+description: 'A simple, lightweight, and privacy-focused product analytics.'
+category_id: '18'
+github: 'https://github.com/panphp/pan'
+author: panphp
+composer: panphp/pan
+npm: null
+stars: 649
+keywords: {  }
+first_release_at: '2024-10-13 23:17:19'
+latest_release_at: '2024-10-16 09:33:22'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2024-10-16T10:15:28+00:00
+updated_at: 2024-10-16T10:15:28+00:00
