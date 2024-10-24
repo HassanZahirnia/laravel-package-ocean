@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-short-schedule'
 author: spatie
 composer: spatie/laravel-short-schedule
 npm: null
-stars: 612
+stars: 611
 keywords: {  }
 first_release_at: '2020-06-05 21:29:25'
-latest_release_at: '2024-05-16 11:06:04'
+latest_release_at: '2024-10-18 13:13:01'
 laravel_dependency_versions:
     - ^10|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-13T18:45:07+00:00
+updated_at: 2024-10-24T14:15:54+00:00

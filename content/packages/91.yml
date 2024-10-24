@@ -6,7 +6,7 @@ github: 'https://github.com/kitloong/laravel-migrations-generator'
 author: kitloong
 composer: kitloong/laravel-migrations-generator
 npm: null
-stars: 2476
+stars: 2485
 keywords: {  }
 first_release_at: '2020-03-20 12:26:27'
 latest_release_at: '2024-08-06 13:18:32'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-13T18:29:49+00:00
+updated_at: 2024-10-24T14:06:21+00:00

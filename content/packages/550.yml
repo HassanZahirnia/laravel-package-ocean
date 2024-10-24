@@ -6,7 +6,7 @@ github: 'https://github.com/yediyuz/laravel-cloudflare-cache'
 author: yediyuz
 composer: yediyuz/laravel-cloudflare-cache
 npm: null
-stars: 234
+stars: 237
 keywords: {  }
 first_release_at: '2023-12-21 21:42:51'
 latest_release_at: '2024-03-14 21:58:18'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-01T12:57:10+00:00
-updated_at: 2024-10-13T19:02:43+00:00
+updated_at: 2024-10-24T14:26:59+00:00

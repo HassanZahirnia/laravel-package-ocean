@@ -6,7 +6,7 @@ github: 'https://github.com/staudenmeir/laravel-cte'
 author: staudenmeir
 composer: staudenmeir/laravel-cte
 npm: null
-stars: 529
+stars: 530
 keywords: {  }
 first_release_at: '2019-03-16 06:50:28'
 latest_release_at: '2024-07-11 09:07:56'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-16T11:28:38+00:00
-updated_at: 2024-10-13T18:56:28+00:00
+updated_at: 2024-10-24T14:23:18+00:00

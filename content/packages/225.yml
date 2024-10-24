@@ -6,7 +6,7 @@ github: 'https://github.com/pestphp/pest'
 author: pestphp
 composer: pestphp/pest
 npm: null
-stars: 9516
+stars: 9553
 keywords:
     - expectations
     - assert
@@ -18,9 +18,9 @@ keywords:
     - architecture
     - dataset
 first_release_at: '2020-05-19 23:10:29'
-latest_release_at: '2024-10-12 11:36:44'
+latest_release_at: '2024-10-22 14:33:27'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-13T18:39:52+00:00
+updated_at: 2024-10-24T14:12:37+00:00

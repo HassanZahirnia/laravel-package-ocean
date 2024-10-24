@@ -6,13 +6,13 @@ github: 'https://github.com/stefro/laravel-lang-country'
 author: stefro
 composer: stefro/laravel-lang-country
 npm: null
-stars: 274
+stars: 278
 keywords: {  }
 first_release_at: '2023-09-28 18:45:42'
-latest_release_at: '2024-09-26 11:45:22'
+latest_release_at: '2024-10-23 06:03:02'
 laravel_dependency_versions:
     - ^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-11-24T20:04:41+00:00
-updated_at: 2024-10-13T19:01:06+00:00
+updated_at: 2024-10-24T14:26:00+00:00
