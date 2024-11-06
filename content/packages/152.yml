@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-server-side-rendering'
 author: spatie
 composer: spatie/laravel-server-side-rendering
 npm: null
-stars: 663
+stars: 662
 keywords:
     - ssr
 first_release_at: '2018-01-18 09:14:03'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-24T14:09:24+00:00
+updated_at: 2024-11-06T09:22:03+00:00

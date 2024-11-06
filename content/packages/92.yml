@@ -6,7 +6,7 @@ github: 'https://github.com/kolossal-io/laravel-multiplex'
 author: kolossal-io
 composer: kolossal-io/laravel-multiplex
 npm: null
-stars: 272
+stars: 273
 keywords: {  }
 first_release_at: '2022-10-20 11:23:46'
 latest_release_at: '2024-10-10 07:38:30'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-24T14:06:24+00:00
+updated_at: 2024-11-06T09:19:06+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-markdown'
 author: spatie
 composer: spatie/laravel-markdown
 npm: null
-stars: 334
+stars: 335
 keywords: {  }
 first_release_at: '2021-07-12 10:53:56'
 latest_release_at: '2024-04-22 14:16:23'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-21T09:53:01+00:00
-updated_at: 2024-10-24T14:24:53+00:00
+updated_at: 2024-11-06T09:40:24+00:00

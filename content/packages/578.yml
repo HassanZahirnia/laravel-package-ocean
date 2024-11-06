@@ -6,13 +6,13 @@ github: 'https://github.com/livewire/flux'
 author: livewire
 composer: livewire/flux
 npm: null
-stars: 449
+stars: 462
 keywords: {  }
 first_release_at: '2024-09-19 13:03:47'
-latest_release_at: '2024-10-24 01:34:27'
+latest_release_at: '2024-11-03 22:16:58'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-07T12:20:22+00:00
-updated_at: 2024-10-24T14:28:13+00:00
+updated_at: 2024-11-06T09:44:53+00:00

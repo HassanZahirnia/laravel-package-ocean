@@ -6,7 +6,7 @@ github: 'https://github.com/renoki-co/laravel-eloquent-query-cache'
 author: rennokki
 composer: rennokki/laravel-eloquent-query-cache
 npm: null
-stars: 1053
+stars: 1055
 keywords: {  }
 first_release_at: '2019-11-21 18:29:36'
 latest_release_at: '2023-04-01 12:26:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T14:13:49+00:00
-updated_at: 2024-10-24T14:17:00+00:00
+updated_at: 2024-11-06T09:31:05+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/WatheqAlshowaiter/backup-tables'
 author: watheqalshowaiter
 composer: watheqalshowaiter/backup-tables
 npm: null
-stars: 21
+stars: 22
 keywords: {  }
 first_release_at: '2024-08-22 23:04:43'
 latest_release_at: '2024-08-26 19:02:52'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-29T11:00:45+00:00
-updated_at: 2024-10-29T11:00:45+00:00
+updated_at: 2024-11-06T09:45:31+00:00

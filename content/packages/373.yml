@@ -6,7 +6,7 @@ github: 'https://github.com/tighten/jigsaw'
 author: tightenco
 composer: tightenco/jigsaw
 npm: null
-stars: 2131
+stars: 2133
 keywords: {  }
 first_release_at: '2016-03-25 16:02:25'
 latest_release_at: '2024-06-27 19:18:14'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:15:41+00:00
-updated_at: 2024-10-24T14:19:02+00:00
+updated_at: 2024-11-06T09:33:16+00:00

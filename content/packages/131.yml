@@ -6,7 +6,7 @@ github: 'https://github.com/yajra/laravel-oci8'
 author: yajra
 composer: yajra/laravel-oci8
 npm: null
-stars: 833
+stars: 834
 keywords: {  }
 first_release_at: '2013-11-27 05:33:16'
 latest_release_at: '2024-09-09 14:01:58'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-24T14:08:19+00:00
+updated_at: 2024-11-06T09:21:05+00:00

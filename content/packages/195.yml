@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-translatable'
 author: spatie
 composer: spatie/laravel-translatable
 npm: null
-stars: 2242
+stars: 2249
 keywords: {  }
 first_release_at: '2016-04-07 22:12:58'
 latest_release_at: '2024-07-24 14:26:27'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-10-24T14:11:20+00:00
+updated_at: 2024-11-06T09:23:59+00:00
