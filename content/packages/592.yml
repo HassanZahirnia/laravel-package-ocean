@@ -1,0 +1,17 @@
+id: 592
+name: 'Translation Checker'
+description: 'Find missing translations in your language files and also helps in maintaining them.'
+category_id: '6'
+github: 'https://github.com/Bottelet/translation-checker'
+author: bottelet
+composer: bottelet/translation-checker
+npm: null
+stars: 92
+keywords: {  }
+first_release_at: '2024-09-17 18:32:05'
+latest_release_at: '2024-10-26 07:13:52'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-11-06T09:06:02+00:00
+updated_at: 2024-11-06T09:06:02+00:00

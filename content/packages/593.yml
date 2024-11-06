@@ -1,0 +1,17 @@
+id: 593
+name: Charts
+description: 'Easy creation of SVG-based charts directly with no additional dependencies required.'
+category_id: '18'
+github: 'https://github.com/maantje/charts'
+author: maantje
+composer: maantje/charts
+npm: null
+stars: 245
+keywords: {  }
+first_release_at: '2024-09-04 17:05:56'
+latest_release_at: '2024-09-04 22:35:46'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2024-11-06T09:08:21+00:00
+updated_at: 2024-11-06T09:08:21+00:00

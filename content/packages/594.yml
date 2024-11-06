@@ -1,0 +1,17 @@
+id: 594
+name: 'Laravel Solr'
+description: 'Seamless integration with Apache Solr.'
+category_id: '7'
+github: 'https://github.com/haiderjabbar/laravelsolr'
+author: haiderjabbar
+composer: haiderjabbar/laravelsolr
+npm: null
+stars: 19
+keywords: {  }
+first_release_at: '2024-10-29 07:12:42'
+latest_release_at: null
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-11-06T09:09:41+00:00
+updated_at: 2024-11-06T09:09:41+00:00
