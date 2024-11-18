@@ -1,0 +1,18 @@
+id: 596
+name: 'Unicon'
+description: 'Seamless & on-demand integration of Iconify API with caching for optimized performance.'
+category_id: '17'
+github: 'https://github.com/nhedger/unicon'
+author: hedger
+composer: hedger/unicon
+npm: null
+stars: 4
+keywords: {  }
+first_release_at: '2024-11-17 19:56:01'
+latest_release_at: '2024-11-17 20:53:31'
+laravel_dependency_versions:
+    - ^11|^10
+package_type: laravel-package
+paid_integration: false
+created_at: 2024-11-18T10:19:55+00:00
+updated_at: 2024-11-18T10:19:55+00:00
