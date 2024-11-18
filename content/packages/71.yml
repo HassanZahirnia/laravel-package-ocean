@@ -6,7 +6,7 @@ github: 'https://github.com/tenancy/tenancy'
 author: tenancy
 composer: tenancy/tenancy
 npm: null
-stars: 1175
+stars: 1179
 keywords: {  }
 first_release_at: '2018-01-15 12:50:23'
 latest_release_at: '2024-05-12 13:31:21'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-06T09:18:07+00:00
+updated_at: 2024-11-18T12:55:30+00:00

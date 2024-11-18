@@ -6,7 +6,7 @@ github: 'https://github.com/Laravel-Backpack/basset'
 author: backpack
 composer: backpack/basset
 npm: null
-stars: 157
+stars: 161
 keywords: {  }
 first_release_at: '2023-03-27 14:53:52'
 latest_release_at: '2024-08-28 10:12:55'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-17T13:37:51+00:00
-updated_at: 2024-11-06T09:43:45+00:00
+updated_at: 2024-11-18T13:18:23+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/sebastiaanluca/php-pipe-operator'
 author: sebastiaanluca
 composer: sebastiaanluca/php-pipe-operator
 npm: null
-stars: 283
+stars: 284
 keywords: {  }
 first_release_at: '2018-02-24 13:33:07'
 latest_release_at: '2023-02-06 02:54:48'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-09-23T12:22:34+00:00
-updated_at: 2024-11-06T09:40:35+00:00
+updated_at: 2024-11-18T13:16:07+00:00

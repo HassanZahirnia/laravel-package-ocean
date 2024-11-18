@@ -6,7 +6,7 @@ github: 'https://github.com/stechstudio/laravel-jwt'
 author: stechstudio
 composer: stechstudio/laravel-jwt
 npm: null
-stars: 123
+stars: 124
 keywords: {  }
 first_release_at: '2019-04-16 18:18:21'
 latest_release_at: '2024-03-12 23:18:06'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-01T12:51:20+00:00
-updated_at: 2024-11-06T09:43:29+00:00
+updated_at: 2024-11-18T13:18:08+00:00

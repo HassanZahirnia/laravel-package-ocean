@@ -6,7 +6,7 @@ github: 'https://github.com/austintoddj/canvas'
 author: austintoddj
 composer: austintoddj/canvas
 npm: null
-stars: 3258
+stars: 3259
 keywords: {  }
 first_release_at: '2016-03-09 13:38:22'
 latest_release_at: '2024-03-12 19:37:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-06T09:16:34+00:00
+updated_at: 2024-11-18T12:54:00+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/barryvdh/laravel-ide-helper'
 author: barryvdh
 composer: barryvdh/laravel-ide-helper
 npm: null
-stars: 14207
+stars: 14233
 keywords:
     - autocompletion
 first_release_at: '2013-03-10 09:39:50'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-11-06T09:21:10+00:00
+updated_at: 2024-11-18T12:58:26+00:00

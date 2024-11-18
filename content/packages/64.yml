@@ -6,13 +6,13 @@ github: 'https://github.com/nWidart/laravel-modules'
 author: nwidart
 composer: nwidart/laravel-modules
 npm: null
-stars: 5537
+stars: 5559
 keywords: {  }
 first_release_at: '2016-06-28 11:03:54'
-latest_release_at: '2024-09-22 20:04:49'
+latest_release_at: '2024-11-16 20:27:06'
 laravel_dependency_versions:
     - ^v11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-06T09:17:44+00:00
+updated_at: 2024-11-18T12:55:10+00:00

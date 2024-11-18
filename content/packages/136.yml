@@ -6,7 +6,7 @@ github: 'https://github.com/beyondcode/laravel-query-detector'
 author: beyondcode
 composer: beyondcode/laravel-query-detector
 npm: null
-stars: 1985
+stars: 1991
 keywords:
     - optimize
 first_release_at: '2018-07-15 11:50:49'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-11-06T09:21:18+00:00
+updated_at: 2024-11-18T12:58:33+00:00
