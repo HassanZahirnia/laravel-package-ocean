@@ -21,7 +21,7 @@
         "livewire/livewire": "^3.0",
         "ralphjsmit/laravel-seo": "^1.4",
         "rennokki/laravel-eloquent-query-cache": "dev-l11-compatibility",
-        "ryangjchandler/orbit": "2.x-dev",
+        "ryangjchandler/orbit": "2.0.0-beta5",
         "spatie/laravel-feed": "^4.3",
         "spatie/laravel-sitemap": "^7.2"
     },
