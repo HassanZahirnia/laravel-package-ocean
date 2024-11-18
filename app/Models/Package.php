@@ -99,7 +99,7 @@ class Package extends Model implements Feedable, Orbit
 
     public function minimumCompatibleLaravelVersion(): string
     {
-        $versionParser = new VersionParser();
+        $versionParser = new VersionParser;
         $lowestVersion = null;
 
         foreach ($this->laravel_dependency_versions as $versionConstraint) {
