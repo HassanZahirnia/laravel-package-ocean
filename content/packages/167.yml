@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-health'
 author: spatie
 composer: spatie/laravel-health
 npm: null
-stars: 740
+stars: 746
 keywords:
     - monitor
     - ssl
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-11-18T12:59:49+00:00
+updated_at: 2024-12-03T10:13:16+00:00

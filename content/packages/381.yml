@@ -6,13 +6,13 @@ github: 'https://github.com/laravel-json-api/laravel'
 author: laravel-json-api
 composer: laravel-json-api/laravel
 npm: null
-stars: 550
+stars: 555
 keywords: {  }
 first_release_at: '2020-11-20 15:43:50'
-latest_release_at: '2024-06-26 19:47:07'
+latest_release_at: '2024-12-02 17:28:34'
 laravel_dependency_versions:
     - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:42:09+00:00
-updated_at: 2024-11-18T13:10:12+00:00
+updated_at: 2024-12-03T10:21:03+00:00

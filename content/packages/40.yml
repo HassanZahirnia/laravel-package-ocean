@@ -6,7 +6,7 @@ github: 'https://github.com/area17/twill'
 author: area17
 composer: area17/twill
 npm: null
-stars: 3786
+stars: 3801
 keywords: {  }
 first_release_at: '2018-07-02 13:24:02'
 latest_release_at: '2024-10-21 20:52:06'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-18T12:53:54+00:00
+updated_at: 2024-12-03T10:08:19+00:00

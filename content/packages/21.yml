@@ -6,7 +6,7 @@ github: 'https://github.com/grosv/laravel-passwordless-login'
 author: grosv
 composer: grosv/laravel-passwordless-login
 npm: null
-stars: 842
+stars: 844
 keywords: {  }
 first_release_at: '2020-02-28 21:54:49'
 latest_release_at: '2024-05-16 19:06:09'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-18T12:52:57+00:00
+updated_at: 2024-12-03T10:07:33+00:00

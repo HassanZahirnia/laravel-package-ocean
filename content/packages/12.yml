@@ -6,17 +6,17 @@ github: 'https://github.com/rebing/graphql-laravel'
 author: rebing
 composer: rebing/graphql-laravel
 npm: null
-stars: 2131
+stars: 2138
 keywords:
     - facebook
     - query
     - mutation
     - middleware
 first_release_at: '2016-09-19 10:55:53'
-latest_release_at: '2024-08-23 07:42:45'
+latest_release_at: '2024-11-22 08:49:11'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-18T12:52:30+00:00
+updated_at: 2024-12-03T10:07:11+00:00

@@ -6,14 +6,14 @@ github: 'https://github.com/orchidsoftware/platform'
 author: orchid
 composer: orchid/platform
 npm: null
-stars: 4435
+stars: 4456
 keywords:
     - builder
 first_release_at: '2016-11-23 14:26:02'
-latest_release_at: '2024-11-08 22:45:42'
+latest_release_at: '2024-11-26 14:45:49'
 laravel_dependency_versions:
     - '^10.0 || ^11.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2024-11-18T12:54:27+00:00
+updated_at: 2024-12-03T10:08:45+00:00
