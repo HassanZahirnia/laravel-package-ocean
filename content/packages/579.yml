@@ -6,12 +6,12 @@ github: 'https://github.com/Thavarshan/fetch-php'
 author: jerome
 composer: jerome/fetch-php
 npm: null
-stars: 367
+stars: 369
 keywords: {  }
 first_release_at: '2024-09-13 18:54:06'
-latest_release_at: '2024-10-19 02:44:45'
+latest_release_at: '2024-12-06 05:09:46'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2024-10-07T12:24:13+00:00
-updated_at: 2024-12-03T10:28:11+00:00
+updated_at: 2024-12-13T19:24:58+00:00

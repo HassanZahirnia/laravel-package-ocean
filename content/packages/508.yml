@@ -6,7 +6,7 @@ github: 'https://github.com/lucasdotvin/laravel-soulbscription'
 author: lucasdotvin
 composer: lucasdotvin/laravel-soulbscription
 npm: null
-stars: 607
+stars: 609
 keywords: {  }
 first_release_at: '2022-04-08 03:17:04'
 latest_release_at: '2024-04-08 03:49:14'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-04T09:07:23+00:00
-updated_at: 2024-12-03T10:25:35+00:00
+updated_at: 2024-12-13T19:22:14+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/blade-ui-kit/blade-ui-kit'
 author: blade-ui-kit
 composer: blade-ui-kit/blade-ui-kit
 npm: null
-stars: 1497
+stars: 1503
 keywords: {  }
 first_release_at: '2020-09-02 15:30:01'
 latest_release_at: '2024-12-02 13:32:27'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-18T12:44:09+00:00
-updated_at: 2024-12-03T10:27:19+00:00
+updated_at: 2024-12-13T19:24:00+00:00

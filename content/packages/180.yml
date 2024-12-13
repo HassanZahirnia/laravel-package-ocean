@@ -6,7 +6,7 @@ github: 'https://github.com/Intervention/image'
 author: intervention
 composer: intervention/image
 npm: null
-stars: 13962
+stars: 13977
 keywords:
     - gd
     - imagick
@@ -17,4 +17,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-12-03T10:13:47+00:00
+updated_at: 2024-12-13T19:09:28+00:00

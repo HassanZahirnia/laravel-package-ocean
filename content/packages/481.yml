@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/prompts'
 author: laravel
 composer: laravel/prompts
 npm: null
-stars: 538
+stars: 541
 keywords:
     - cli
 first_release_at: '2023-07-27 21:25:20'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-08-05T09:22:28+00:00
-updated_at: 2024-12-03T10:24:35+00:00
+updated_at: 2024-12-13T19:21:13+00:00
