@@ -6,7 +6,7 @@ github: 'https://github.com/RTippin/messenger'
 author: rtippin
 composer: rtippin/messenger
 npm: null
-stars: 416
+stars: 417
 keywords: {  }
 first_release_at: '2020-12-08 07:03:15'
 latest_release_at: '2024-05-23 20:35:18'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:29:20+00:00
-updated_at: 2024-12-13T19:19:05+00:00
+updated_at: 2024-12-21T11:16:34+00:00

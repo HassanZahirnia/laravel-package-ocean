@@ -6,13 +6,13 @@ github: 'https://github.com/daniel-cintra/modular'
 author: daniel-cintra
 composer: daniel-cintra/modular
 npm: null
-stars: 140
+stars: 143
 keywords: {  }
 first_release_at: '2023-03-30 14:33:08'
-latest_release_at: '2024-11-22 13:25:13'
+latest_release_at: '2024-12-19 22:25:24'
 laravel_dependency_versions:
     - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-02-23T14:50:18+00:00
-updated_at: 2024-12-13T19:23:37+00:00
+updated_at: 2024-12-21T11:21:00+00:00

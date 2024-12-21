@@ -6,7 +6,7 @@ github: 'https://github.com/aarondfrancis/solo'
 author: aaronfrancis
 composer: aaronfrancis/solo
 npm: null
-stars: 537
+stars: 574
 keywords: {  }
 first_release_at: '2024-11-07 16:56:57'
 latest_release_at: '2024-12-11 19:36:14'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-11-18T10:22:48+00:00
-updated_at: 2024-12-13T19:25:41+00:00
+updated_at: 2024-12-21T11:22:52+00:00

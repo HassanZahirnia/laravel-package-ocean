@@ -6,7 +6,7 @@ github: 'https://github.com/reliese/laravel'
 author: reliese
 composer: reliese/laravel
 npm: null
-stars: 1506
+stars: 1510
 keywords: {  }
 first_release_at: '2016-10-16 22:22:30'
 latest_release_at: '2024-09-26 13:33:01'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-12-13T19:06:15+00:00
+updated_at: 2024-12-21T11:03:25+00:00
