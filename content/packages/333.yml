@@ -6,7 +6,7 @@ github: 'https://github.com/YorCreative/Laravel-UrlShortener'
 author: yorcreative
 composer: yorcreative/laravel-urlshortener
 npm: null
-stars: 111
+stars: 112
 keywords: {  }
 first_release_at: '2022-08-22 17:52:28'
 latest_release_at: '2024-04-09 03:30:40'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T15:29:46+00:00
-updated_at: 2024-12-21T11:13:18+00:00
+updated_at: 2025-01-12T12:01:45+00:00

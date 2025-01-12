@@ -6,7 +6,7 @@ github: 'https://github.com/BePsvPT/secure-headers'
 author: bepsvpt
 composer: bepsvpt/secure-headers
 npm: null
-stars: 510
+stars: 512
 keywords: {  }
 first_release_at: '2016-12-19 05:04:33'
 latest_release_at: '2024-10-13 11:50:22'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-12-21T11:07:39+00:00
+updated_at: 2025-01-12T11:58:22+00:00

@@ -6,13 +6,13 @@ github: 'https://github.com/Jeroen-G/Explorer'
 author: jeroen-g
 composer: jeroen-g/explorer
 npm: null
-stars: 373
+stars: 374
 keywords: {  }
 first_release_at: '2020-10-23 22:54:57'
-latest_release_at: '2024-04-26 08:44:25'
+latest_release_at: '2025-01-05 19:18:29'
 laravel_dependency_versions:
-    - ^9.0||^10.0||^11.0
+    - ^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-12-21T11:02:43+00:00
+updated_at: 2025-01-12T11:54:29+00:00

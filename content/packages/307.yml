@@ -6,16 +6,16 @@ github: 'https://github.com/spatie/laravel-tags'
 author: spatie
 composer: spatie/laravel-tags
 npm: null
-stars: 1640
+stars: 1645
 keywords:
     - model
     - eloquent
     - sort
 first_release_at: '2016-10-19 08:47:17'
-latest_release_at: '2024-12-09 15:26:07'
+latest_release_at: '2025-01-06 09:32:31'
 laravel_dependency_versions:
     - ^8.67|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-12-21T11:12:05+00:00
+updated_at: 2025-01-12T12:01:02+00:00

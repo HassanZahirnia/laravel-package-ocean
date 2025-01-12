@@ -6,7 +6,7 @@ github: 'https://github.com/tighten/parental'
 author: parental
 composer: calebporzio/parental
 npm: null
-stars: 1381
+stars: 1388
 keywords: {  }
 first_release_at: '2019-10-16 18:15:11'
 latest_release_at: '2024-03-12 13:04:57'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2024-12-21T11:03:20+00:00
+updated_at: 2025-01-12T11:54:58+00:00
