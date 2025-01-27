@@ -6,7 +6,7 @@ github: 'https://github.com/codezero-be/laravel-localizer'
 author: codezero
 composer: codezero/laravel-localizer
 npm: null
-stars: 46
+stars: 47
 keywords: {  }
 first_release_at: '2018-04-01 14:37:44'
 latest_release_at: '2024-03-11 13:44:04'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-23T19:20:17+00:00
-updated_at: 2025-01-12T12:05:34+00:00
+updated_at: 2025-01-27T11:57:03+00:00

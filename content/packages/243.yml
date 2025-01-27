@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-login-link'
 author: spatie
 composer: spatie/laravel-login-link
 npm: null
-stars: 398
+stars: 399
 keywords: {  }
 first_release_at: '2022-05-27 18:05:55'
 latest_release_at: '2024-12-24 00:04:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-12T11:59:06+00:00
+updated_at: 2025-01-27T11:46:20+00:00

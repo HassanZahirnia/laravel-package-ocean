@@ -6,7 +6,7 @@ github: 'https://github.com/panphp/pan'
 author: panphp
 composer: panphp/pan
 npm: null
-stars: 1117
+stars: 1135
 keywords: {  }
 first_release_at: '2024-10-13 23:17:19'
 latest_release_at: '2024-11-02 02:04:52'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2024-10-16T10:15:28+00:00
-updated_at: 2025-01-12T12:08:41+00:00
+updated_at: 2025-01-27T12:03:06+00:00

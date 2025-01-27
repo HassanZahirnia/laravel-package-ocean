@@ -6,7 +6,7 @@ github: 'https://github.com/xiCO2k/laravel-vue-i18n'
 author: xico2k
 composer: null
 npm: laravel-vue-i18n
-stars: 634
+stars: 635
 keywords: {  }
 first_release_at: '2021-11-18 03:54:59'
 latest_release_at: '2024-10-28 16:24:37'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: npm-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-12T11:57:47+00:00
+updated_at: 2025-01-27T11:44:06+00:00

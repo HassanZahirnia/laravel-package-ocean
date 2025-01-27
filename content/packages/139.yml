@@ -6,7 +6,7 @@ github: 'https://github.com/itsgoingd/clockwork'
 author: itsgoingd
 composer: itsgoingd/clockwork
 npm: null
-stars: 5742
+stars: 5750
 keywords:
     - profiler
     - xdebug
@@ -15,9 +15,9 @@ keywords:
     - logging
     - timeline
 first_release_at: '2013-06-22 00:10:46'
-latest_release_at: '2024-12-02 22:59:59'
+latest_release_at: '2025-01-12 15:58:56'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-12T11:56:06+00:00
+updated_at: 2025-01-27T11:41:02+00:00

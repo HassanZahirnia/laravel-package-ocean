@@ -6,7 +6,7 @@ github: 'https://github.com/nnjeim/world'
 author: nnjeim
 composer: nnjeim/world
 npm: null
-stars: 786
+stars: 788
 keywords: {  }
 first_release_at: '2021-10-25 04:24:41'
 latest_release_at: '2024-12-20 16:13:16'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-12T11:57:38+00:00
+updated_at: 2025-01-27T11:43:50+00:00
