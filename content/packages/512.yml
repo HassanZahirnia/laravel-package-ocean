@@ -6,13 +6,13 @@ github: 'https://github.com/Laragear/CacheQuery'
 author: laragear
 composer: laragear/cache-query
 npm: null
-stars: 255
+stars: 256
 keywords: {  }
 first_release_at: '2022-02-16 18:42:29'
-latest_release_at: '2024-12-15 12:07:00'
+latest_release_at: '2025-01-29 04:11:59'
 laravel_dependency_versions:
     - '10.*|11.*'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-04T09:44:24+00:00
-updated_at: 2025-01-27T11:59:05+00:00
+updated_at: 2025-02-10T11:30:08+00:00

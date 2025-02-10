@@ -6,7 +6,7 @@ github: 'https://github.com/laradumps/laradumps'
 author: laradumps
 composer: laradumps/laradumps
 npm: null
-stars: 760
+stars: 768
 keywords: {  }
 first_release_at: '2022-06-07 17:09:58'
 latest_release_at: '2025-01-16 16:46:35'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: all-operating-systems-app
 paid_integration: false
 created_at: 2024-04-16T11:20:31+00:00
-updated_at: 2025-01-27T12:01:30+00:00
+updated_at: 2025-02-10T11:32:00+00:00

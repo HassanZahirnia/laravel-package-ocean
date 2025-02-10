@@ -6,7 +6,7 @@ github: 'https://github.com/WendellAdriel/laravel-validated-dto'
 author: wendelladriel
 composer: wendelladriel/laravel-validated-dto
 npm: null
-stars: 667
+stars: 668
 keywords: {  }
 first_release_at: '2022-12-09 17:43:52'
 latest_release_at: '2024-12-12 13:51:24'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-01-27T11:37:35+00:00
+updated_at: 2025-02-10T11:10:00+00:00

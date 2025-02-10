@@ -6,7 +6,7 @@ github: 'https://github.com/cybercog/laravel-ban'
 author: cybercog
 composer: cybercog/laravel-ban
 npm: null
-stars: 1078
+stars: 1082
 keywords:
     - jail
     - access
@@ -19,4 +19,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-01-27T11:34:49+00:00
+updated_at: 2025-02-10T11:07:24+00:00

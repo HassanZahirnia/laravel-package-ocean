@@ -6,7 +6,7 @@ github: 'https://github.com/rap2hpoutre/fast-excel'
 author: rap2hpoutre
 composer: rap2hpoutre/fast-excel
 npm: null
-stars: 2152
+stars: 2159
 keywords:
     - xlsx
 first_release_at: '2018-04-05 08:24:07'
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-27T11:43:19+00:00
+updated_at: 2025-02-10T11:15:12+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/gurgentil/laravel-eloquent-sequencer'
 author: gurgentil
 composer: gurgentil/laravel-eloquent-sequencer
 npm: null
-stars: 155
+stars: 154
 keywords: {  }
 first_release_at: '2020-04-27 21:51:06'
 latest_release_at: '2023-04-23 22:30:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T13:14:11+00:00
-updated_at: 2025-01-27T11:56:02+00:00
+updated_at: 2025-02-10T11:27:14+00:00

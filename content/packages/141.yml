@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/horizon'
 author: laravel
 composer: laravel/horizon
 npm: null
-stars: 3904
+stars: 3912
 keywords: {  }
 first_release_at: '2017-07-26 13:48:50'
 latest_release_at: '2025-01-13 16:51:22'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-27T11:41:08+00:00
+updated_at: 2025-02-10T11:13:17+00:00

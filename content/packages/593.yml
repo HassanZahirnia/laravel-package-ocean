@@ -6,7 +6,7 @@ github: 'https://github.com/maantje/charts'
 author: maantje
 composer: maantje/charts
 npm: null
-stars: 280
+stars: 285
 keywords: {  }
 first_release_at: '2024-09-04 17:05:56'
 latest_release_at: '2025-01-26 17:50:58'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2024-11-06T09:08:21+00:00
-updated_at: 2025-01-27T12:03:26+00:00
+updated_at: 2025-02-10T11:33:50+00:00

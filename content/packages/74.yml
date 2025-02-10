@@ -6,13 +6,13 @@ github: 'https://github.com/cjmellor/approval'
 author: cjmellor
 composer: cjmellor/approval
 npm: null
-stars: 341
+stars: 342
 keywords: {  }
 first_release_at: '2022-05-07 20:53:41'
-latest_release_at: '2024-12-04 10:43:55'
+latest_release_at: '2025-02-08 05:06:43'
 laravel_dependency_versions:
     - ^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-01-27T11:37:42+00:00
+updated_at: 2025-02-10T11:10:06+00:00

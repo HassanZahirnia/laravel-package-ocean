@@ -6,7 +6,7 @@ github: 'https://github.com/antonioribeiro/health'
 author: pragmarx
 composer: pragmarx/health
 npm: null
-stars: 1960
+stars: 1964
 keywords: {  }
 first_release_at: '2016-11-28 21:36:11'
 latest_release_at: '2022-11-25 11:17:31'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:18:49+00:00
-updated_at: 2025-01-27T11:52:32+00:00
+updated_at: 2025-02-10T11:23:54+00:00

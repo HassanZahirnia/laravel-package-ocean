@@ -6,16 +6,16 @@ github: 'https://github.com/laracasts/flash'
 author: laracasts
 composer: laracasts/flash
 npm: null
-stars: 2663
+stars: 2665
 keywords:
     - css
     - html
     - javascript
 first_release_at: '2014-06-30 04:07:13'
-latest_release_at: '2024-03-03 16:51:25'
+latest_release_at: '2025-02-06 14:43:27'
 laravel_dependency_versions:
-    - ~5.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0
+    - ~5.0|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-27T11:44:23+00:00
+updated_at: 2025-02-10T11:16:12+00:00

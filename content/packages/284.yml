@@ -6,7 +6,7 @@ github: 'https://github.com/Propaganistas/Laravel-Phone'
 author: propaganistas
 composer: propaganistas/laravel-phone
 npm: null
-stars: 2806
+stars: 2813
 keywords: {  }
 first_release_at: '2014-02-23 23:26:56'
 latest_release_at: '2024-12-27 11:45:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-01-27T11:48:08+00:00
+updated_at: 2025-02-10T11:19:44+00:00
