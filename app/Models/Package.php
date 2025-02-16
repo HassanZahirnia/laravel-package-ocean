@@ -15,7 +15,6 @@ use NumberFormatter;
 use Orbit\Concerns\Orbital;
 use Orbit\Contracts\Orbit;
 use Orbit\Drivers\Yaml;
-use Rennokki\QueryCache\Traits\QueryCacheable;
 use Spatie\Feed\Feedable;
 use Spatie\Feed\FeedItem;
 
@@ -23,11 +22,6 @@ class Package extends Model implements Feedable, Orbit
 {
     use HasFactory;
     use Orbital;
-    use QueryCacheable;
-
-    public $cacheFor = 3600 * 24; // In seconds
-
-    protected static $flushCacheOnUpdate = true;
 
     protected $casts = [
         'keywords' => 'array',
@@ -199,11 +193,11 @@ class Package extends Model implements Feedable, Orbit
     {
         return FeedItem::create()
             ->id($this->id)
-            ->title($this->name)
-            ->summary($this->description)
+            ->title((string) $this->name)
+            ->summary((string) $this->description)
             ->updated($this->created_at)
-            ->link($this->github)
-            ->authorName($this->author);
+            ->link((string) $this->github)
+            ->authorName((string) $this->author);
     }
 
     public static function getFeedItems()
