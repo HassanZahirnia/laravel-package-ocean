@@ -1,0 +1,19 @@
+id: 606
+name: 'Livewire Filemanager'
+description: 'A simple, friendly and practical Livewire file manager.'
+category_id: '1'
+github: 'https://github.com/livewire-filemanager/filemanager'
+author: livewire-filemanager
+composer: livewire-filemanager/filemanager
+npm: null
+stars: 281
+keywords: {  }
+first_release_at: '2024-06-11 12:54:20'
+latest_release_at: '2025-02-10 15:45:04'
+laravel_dependency_versions:
+    - ^10.0|^11.0
+    - ^10|^11
+package_type: laravel-package
+paid_integration: false
+created_at: 2025-02-18T12:33:54+00:00
+updated_at: 2025-02-18T12:33:54+00:00
