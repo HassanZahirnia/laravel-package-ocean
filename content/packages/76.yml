@@ -6,13 +6,13 @@ github: 'https://github.com/topclaudy/compoships'
 author: awobaz
 composer: awobaz/compoships
 npm: null
-stars: 1138
+stars: 1145
 keywords: {  }
 first_release_at: '2018-04-04 12:24:28'
-latest_release_at: '2025-01-09 12:32:04'
+latest_release_at: '2025-02-24 15:12:08'
 laravel_dependency_versions:
-    - '>=5.6 <12.0'
+    - '>=5.6 <13.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-02-10T11:10:10+00:00
+updated_at: 2025-02-24T22:28:38+00:00

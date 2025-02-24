@@ -6,7 +6,7 @@ github: 'https://github.com/tonysm/rich-text-laravel'
 author: tonysm
 composer: tonysm/rich-text-laravel
 npm: null
-stars: 366
+stars: 406
 keywords: {  }
 first_release_at: '2021-08-01 18:22:14'
 latest_release_at: '2024-10-31 15:28:52'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-10T11:18:11+00:00
+updated_at: 2025-02-24T22:36:21+00:00

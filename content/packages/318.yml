@@ -6,7 +6,7 @@ github: 'https://github.com/geocoder-php/GeocoderLaravel'
 author: toin0u
 composer: toin0u/geocoder-laravel
 npm: null
-stars: 716
+stars: 717
 keywords: {  }
 first_release_at: '2013-09-16 20:50:53'
 latest_release_at: '2024-03-14 22:56:46'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-10T11:21:20+00:00
+updated_at: 2025-02-24T22:39:20+00:00

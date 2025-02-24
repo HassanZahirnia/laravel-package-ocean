@@ -6,13 +6,13 @@ github: 'https://github.com/moonshine-software/moonshine'
 author: moonshine
 composer: moonshine/moonshine
 npm: null
-stars: 930
+stars: 959
 keywords: {  }
 first_release_at: '2023-04-10 09:22:52'
-latest_release_at: '2025-02-10 07:36:30'
+latest_release_at: '2025-02-20 18:52:32'
 laravel_dependency_versions:
     - ^10|^11
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-05-14T18:36:03+00:00
-updated_at: 2025-02-10T11:32:20+00:00
+updated_at: 2025-02-24T22:50:04+00:00

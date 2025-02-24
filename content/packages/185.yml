@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-image-optimizer'
 author: spatie
 composer: spatie/laravel-image-optimizer
 npm: null
-stars: 1235
+stars: 1240
 keywords: {  }
 first_release_at: '2017-07-07 20:58:22'
-latest_release_at: '2024-02-29 10:55:08'
+latest_release_at: '2025-02-21 14:01:59'
 laravel_dependency_versions:
-    - ^8.0|^9.0|^10.0|^11.0
+    - ^8.0|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-10T11:15:16+00:00
+updated_at: 2025-02-24T22:33:38+00:00

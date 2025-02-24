@@ -6,17 +6,17 @@ github: 'https://github.com/owen-it/laravel-auditing'
 author: owen-it
 composer: owen-it/laravel-auditing
 npm: null
-stars: 3125
+stars: 3142
 keywords:
     - log
     - history
     - activity
     - tracking
 first_release_at: '2015-08-20 11:45:08'
-latest_release_at: '2024-12-27 15:04:04'
+latest_release_at: '2025-02-21 14:58:02'
 laravel_dependency_versions:
     - ^7.0|^8.0|^9.0|^10.0|^11.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-10T11:11:25+00:00
+updated_at: 2025-02-24T22:29:52+00:00

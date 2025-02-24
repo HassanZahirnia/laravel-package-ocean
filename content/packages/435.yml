@@ -6,7 +6,7 @@ github: 'https://github.com/404labfr/laravel-auth-checker'
 author: lab404
 composer: lab404/laravel-auth-checker
 npm: null
-stars: 225
+stars: 224
 keywords: {  }
 first_release_at: '2017-03-25 15:26:40'
 latest_release_at: '2024-05-19 22:15:03'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:53:57+00:00
-updated_at: 2025-02-10T11:26:37+00:00
+updated_at: 2025-02-24T22:44:31+00:00

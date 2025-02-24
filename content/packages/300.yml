@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-google-fonts'
 author: spatie
 composer: spatie/laravel-google-fonts
 npm: null
-stars: 463
+stars: 464
 keywords: {  }
 first_release_at: '2021-06-21 23:25:20'
-latest_release_at: '2024-03-14 09:50:35'
+latest_release_at: '2025-02-17 09:41:23'
 laravel_dependency_versions:
-    - ^8.37|^9.0|^10.0|^11.0
+    - ^8.37|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-10T11:20:33+00:00
+updated_at: 2025-02-24T22:38:32+00:00

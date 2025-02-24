@@ -6,7 +6,7 @@ github: 'https://github.com/salehhashemi1992/laravel-intelli-db'
 author: salehhashemi
 composer: salehhashemi/laravel-intelli-db
 npm: null
-stars: 53
+stars: 54
 keywords: {  }
 first_release_at: '2023-05-05 07:41:00'
 latest_release_at: '2023-11-02 20:04:05'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-01T20:01:49+00:00
-updated_at: 2025-02-10T11:23:12+00:00
+updated_at: 2025-02-24T22:41:10+00:00

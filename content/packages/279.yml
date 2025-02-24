@@ -6,13 +6,13 @@ github: 'https://github.com/driesvints/vat-calculator'
 author: mpociot
 composer: mpociot/vat-calculator
 npm: null
-stars: 1217
+stars: 1224
 keywords: {  }
 first_release_at: '2015-08-31 22:47:37'
-latest_release_at: '2025-01-06 09:20:46'
+latest_release_at: '2025-02-13 21:09:06'
 laravel_dependency_versions:
-    - ^6.0|^7.0|^8.0|^9.0|^10.0|^11.0
+    - ^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-10T11:19:31+00:00
+updated_at: 2025-02-24T22:37:34+00:00
