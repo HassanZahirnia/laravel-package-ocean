@@ -6,7 +6,7 @@ github: 'https://github.com/glhd/linen'
 author: glhd
 composer: glhd/linen
 npm: null
-stars: 202
+stars: 203
 keywords: {  }
 first_release_at: '2024-07-25 15:35:37'
 latest_release_at: '2024-08-02 14:18:30'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-07T12:38:43+00:00
-updated_at: 2025-02-24T22:51:06+00:00
+updated_at: 2025-03-07T11:29:45+00:00

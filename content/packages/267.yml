@@ -6,13 +6,13 @@ github: 'https://github.com/hotwired-laravel/turbo-laravel'
 author: hotwired
 composer: hotwired/turbo-laravel
 npm: null
-stars: 812
+stars: 814
 keywords: {  }
 first_release_at: '2023-02-01 11:23:17'
-latest_release_at: '2024-12-14 14:34:24'
+latest_release_at: '2025-03-02 18:53:50'
 laravel_dependency_versions:
-    - ^10.0|^11.0
+    - ^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-24T22:37:07+00:00
+updated_at: 2025-03-07T11:14:14+00:00

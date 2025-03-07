@@ -6,7 +6,7 @@ github: 'https://github.com/multicaret/laravel-acquaintances'
 author: multicaret
 composer: multicaret/laravel-acquaintances
 npm: null
-stars: 825
+stars: 826
 keywords: {  }
 first_release_at: '2020-04-04 18:31:25'
 latest_release_at: '2025-02-17 16:10:36'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-24T22:29:40+00:00
+updated_at: 2025-03-07T11:05:34+00:00

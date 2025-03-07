@@ -6,13 +6,13 @@ github: 'https://github.com/gecche/laravel-multidomain'
 author: gecche
 composer: gecche/laravel-multidomain
 npm: null
-stars: 878
+stars: 879
 keywords: {  }
 first_release_at: '2018-06-24 14:10:58'
-latest_release_at: '2024-05-30 07:28:39'
+latest_release_at: '2025-02-26 08:06:23'
 laravel_dependency_versions:
-    - ^11.0
+    - ^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T10:46:36+00:00
-updated_at: 2025-02-24T22:42:33+00:00
+updated_at: 2025-03-07T11:20:18+00:00

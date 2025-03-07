@@ -6,7 +6,7 @@ github: 'https://github.com/LarsWiegers/laravel-translations-checker'
 author: larswiegers
 composer: larswiegers/laravel-translations-checker
 npm: null
-stars: 239
+stars: 238
 keywords: {  }
 first_release_at: '2022-02-16 14:23:56'
 latest_release_at: '2025-02-20 18:40:31'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-02-24T22:33:56+00:00
+updated_at: 2025-03-07T11:10:35+00:00

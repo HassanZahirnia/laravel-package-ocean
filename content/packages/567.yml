@@ -6,13 +6,13 @@ github: 'https://github.com/leventcz/laravel-top'
 author: leventcz
 composer: leventcz/laravel-top
 npm: null
-stars: 537
+stars: 539
 keywords: {  }
 first_release_at: '2024-05-14 20:54:07'
-latest_release_at: '2024-05-27 03:17:13'
+latest_release_at: '2025-03-02 22:07:29'
 laravel_dependency_versions:
-    - ^10.0|^11.0
+    - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-06-04T14:24:55+00:00
-updated_at: 2025-02-24T22:50:24+00:00
+updated_at: 2025-03-07T11:28:57+00:00

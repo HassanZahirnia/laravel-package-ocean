@@ -6,15 +6,15 @@ github: 'https://github.com/archtechx/laravel-seo'
 author: archtechx
 composer: archtechx/laravel-seo
 npm: null
-stars: 304
+stars: 308
 keywords:
     - flipp
     - previewify
 first_release_at: '2021-05-24 16:14:33'
-latest_release_at: '2024-11-22 23:46:28'
+latest_release_at: '2025-03-06 16:38:20'
 laravel_dependency_versions:
-    - ^10.0|^11.0
+    - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-13T11:47:33+00:00
-updated_at: 2025-02-24T22:40:21+00:00
+updated_at: 2025-03-07T11:17:53+00:00

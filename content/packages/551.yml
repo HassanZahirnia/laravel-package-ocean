@@ -6,7 +6,7 @@ github: 'https://github.com/hirethunk/verbs'
 author: hirethunk
 composer: hirethunk/verbs
 npm: null
-stars: 464
+stars: 466
 keywords: {  }
 first_release_at: '2023-11-16 06:30:45'
 latest_release_at: '2024-10-30 21:42:56'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-05T13:32:34+00:00
-updated_at: 2025-02-24T22:49:39+00:00
+updated_at: 2025-03-07T11:28:07+00:00
