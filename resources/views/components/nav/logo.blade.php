@@ -1,6 +1,5 @@
 <div>
     <a
-        wire:navigate.hover
         href="{{ route('home') }}"
         class="relative grid h-[53px] text-[#090959] dark:text-inherit"
         aria-label="Home"
@@ -420,14 +419,14 @@
             'object' == typeof exports && 'undefined' != typeof module
                 ? (module.exports = e())
                 : 'function' == typeof __SVGATOR_DEFINE__ &&
-                  __SVGATOR_DEFINE__.amd
-                ? __SVGATOR_DEFINE__(e)
-                : (((t =
-                      'undefined' != typeof globalThis
-                          ? globalThis
-                          : t || self).__SVGATOR_PLAYER__ =
-                      t.__SVGATOR_PLAYER__ || {}),
-                  (t.__SVGATOR_PLAYER__['91c80d77'] = e()))
+                    __SVGATOR_DEFINE__.amd
+                  ? __SVGATOR_DEFINE__(e)
+                  : (((t =
+                        'undefined' != typeof globalThis
+                            ? globalThis
+                            : t || self).__SVGATOR_PLAYER__ =
+                        t.__SVGATOR_PLAYER__ || {}),
+                    (t.__SVGATOR_PLAYER__['91c80d77'] = e()))
         })(this, () => {
             'use strict'
             function t(t, e) {
@@ -451,17 +450,17 @@
                               u(e, t, r[t])
                           })
                         : Object.getOwnPropertyDescriptors
-                        ? Object.defineProperties(
-                              e,
-                              Object.getOwnPropertyDescriptors(r),
-                          )
-                        : t(Object(r)).forEach((t) => {
-                              Object.defineProperty(
-                                  e,
-                                  t,
-                                  Object.getOwnPropertyDescriptor(r, t),
-                              )
-                          })
+                          ? Object.defineProperties(
+                                e,
+                                Object.getOwnPropertyDescriptors(r),
+                            )
+                          : t(Object(r)).forEach((t) => {
+                                Object.defineProperty(
+                                    e,
+                                    t,
+                                    Object.getOwnPropertyDescriptor(r, t),
+                                )
+                            })
                 }
                 return e
             }
@@ -687,27 +686,27 @@
                 return t < 0 || t > 1 || n < 0 || n > 1
                     ? null
                     : m(t, e) && m(n, r)
-                    ? w
-                    : function (i) {
-                          if (i <= 0)
-                              return t > 0
-                                  ? (i * e) / t
-                                  : 0 === e && n > 0
-                                  ? (i * r) / n
-                                  : 0
-                          if (i >= 1)
-                              return n < 1
-                                  ? 1 + ((i - 1) * (r - 1)) / (n - 1)
-                                  : 1 === n && t < 1
-                                  ? 1 + ((i - 1) * (e - 1)) / (t - 1)
-                                  : 1
-                          for (var o, u = 0, a = 1; u < a; ) {
-                              const l = k(t, n, (o = (u + a) / 2))
-                              if (m(i, l)) break
-                              l < i ? (u = o) : (a = o)
-                          }
-                          return k(e, r, o)
-                      }
+                      ? w
+                      : function (i) {
+                            if (i <= 0)
+                                return t > 0
+                                    ? (i * e) / t
+                                    : 0 === e && n > 0
+                                      ? (i * r) / n
+                                      : 0
+                            if (i >= 1)
+                                return n < 1
+                                    ? 1 + ((i - 1) * (r - 1)) / (n - 1)
+                                    : 1 === n && t < 1
+                                      ? 1 + ((i - 1) * (e - 1)) / (t - 1)
+                                      : 1
+                            for (var o, u = 0, a = 1; u < a; ) {
+                                const l = k(t, n, (o = (u + a) / 2))
+                                if (m(i, l)) break
+                                l < i ? (u = o) : (a = o)
+                            }
+                            return k(e, r, o)
+                        }
             }
             function A() {
                 return 1
@@ -1138,14 +1137,14 @@
                                             ? Array.isArray(t)
                                                 ? f(this, v(t))
                                                 : t instanceof this
-                                                ? t.clone()
-                                                : new this().recomposeSelf(
-                                                      t.origin,
-                                                      t.rotate,
-                                                      t.skew,
-                                                      t.scale,
-                                                      t.translate,
-                                                  )
+                                                  ? t.clone()
+                                                  : new this().recomposeSelf(
+                                                        t.origin,
+                                                        t.rotate,
+                                                        t.skew,
+                                                        t.scale,
+                                                        t.translate,
+                                                    )
                                             : new this()
                                     },
                                 },
@@ -1172,15 +1171,15 @@
                 return 0 === t
                     ? e
                     : 1 === t
-                    ? n
-                    : { x: D(t, e.x, n.x), y: D(t, e.y, n.y) }
+                      ? n
+                      : { x: D(t, e.x, n.x), y: D(t, e.y, n.y) }
             }
             function V(t, e, n) {
                 return 0 === t
                     ? e
                     : 1 === t
-                    ? n
-                    : { x: C(t, e.x, n.x), y: C(t, e.y, n.y) }
+                      ? n
+                      : { x: C(t, e.x, n.x), y: C(t, e.y, n.y) }
             }
             function G(t, e, n) {
                 const r = (function (t, e, n) {
@@ -1192,13 +1191,17 @@
                 return 0 === t
                     ? e
                     : 1 === t
-                    ? n
-                    : {
-                          r: G(t, e.r, n.r),
-                          g: G(t, e.g, n.g),
-                          b: G(t, e.b, n.b),
-                          a: D(t, null == e.a ? 1 : e.a, null == n.a ? 1 : n.a),
-                      }
+                      ? n
+                      : {
+                            r: G(t, e.r, n.r),
+                            g: G(t, e.g, n.g),
+                            b: G(t, e.b, n.b),
+                            a: D(
+                                t,
+                                null == e.a ? 1 : e.a,
+                                null == n.a ? 1 : n.a,
+                            ),
+                        }
             }
             function Y(t, e, n) {
                 const r = e.length
@@ -1275,47 +1278,47 @@
                     ? 'function' == typeof t
                         ? t
                         : Array.isArray(t)
-                        ? (function (t) {
-                              const e =
-                                  arguments.length > 1 &&
-                                  void 0 !== arguments[1]
-                                      ? arguments[1]
-                                      : w
-                              if (!Array.isArray(t)) return e
-                              switch (t.length) {
-                                  case 1:
-                                      return O(t[0]) || e
-                                  case 2:
-                                      return O(t[0], t[1]) || e
-                                  case 4:
-                                      return _(t[0], t[1], t[2], t[3]) || e
-                              }
-                              return e
-                          })(t, null)
-                        : (function (t, e) {
-                              const n =
-                                  arguments.length > 2 &&
-                                  void 0 !== arguments[2]
-                                      ? arguments[2]
-                                      : w
-                              switch (t) {
-                                  case 'linear':
-                                      return w
-                                  case 'steps':
-                                      return O(e.steps || 1, e.jump || 0) || n
-                                  case 'bezier':
-                                  case 'cubic-bezier':
-                                      return (
-                                          _(
-                                              e.x1 || 0,
-                                              e.y1 || 0,
-                                              e.x2 || 0,
-                                              e.y2 || 0,
-                                          ) || n
-                                      )
-                              }
-                              return n
-                          })(t.type, t.value, null)
+                          ? (function (t) {
+                                const e =
+                                    arguments.length > 1 &&
+                                    void 0 !== arguments[1]
+                                        ? arguments[1]
+                                        : w
+                                if (!Array.isArray(t)) return e
+                                switch (t.length) {
+                                    case 1:
+                                        return O(t[0]) || e
+                                    case 2:
+                                        return O(t[0], t[1]) || e
+                                    case 4:
+                                        return _(t[0], t[1], t[2], t[3]) || e
+                                }
+                                return e
+                            })(t, null)
+                          : (function (t, e) {
+                                const n =
+                                    arguments.length > 2 &&
+                                    void 0 !== arguments[2]
+                                        ? arguments[2]
+                                        : w
+                                switch (t) {
+                                    case 'linear':
+                                        return w
+                                    case 'steps':
+                                        return O(e.steps || 1, e.jump || 0) || n
+                                    case 'bezier':
+                                    case 'cubic-bezier':
+                                        return (
+                                            _(
+                                                e.x1 || 0,
+                                                e.y1 || 0,
+                                                e.x2 || 0,
+                                                e.y2 || 0,
+                                            ) || n
+                                        )
+                                }
+                                return n
+                            })(t.type, t.value, null)
                     : null
             }
             function Z(t, e, n) {
@@ -1341,12 +1344,12 @@
                         ? [i, 1, e[i].v]
                         : e[i].v
                     : u.t === a.t
-                    ? r
-                        ? [o, 1, a.v]
-                        : a.v
-                    : ((t = (t - u.t) / (a.t - u.t)),
-                      u.e && (t = u.e(t)),
-                      r ? [o, t, n(t, u.v, a.v)] : n(t, u.v, a.v))
+                      ? r
+                          ? [o, 1, a.v]
+                          : a.v
+                      : ((t = (t - u.t) / (a.t - u.t)),
+                        u.e && (t = u.e(t)),
+                        r ? [o, t, n(t, u.v, a.v)] : n(t, u.v, a.v))
             }
             function tt(t, e) {
                 let n =
@@ -1652,8 +1655,8 @@
                 return !t || t % e
                     ? t % e
                     : [0, 1].includes(e)
-                    ? e
-                    : ht(t / e, e)
+                      ? e
+                      : ht(t / e, e)
             }
             function vt(t, e, n) {
                 if (t && t.length) {
@@ -2261,11 +2264,11 @@
                         return 0 === t
                             ? e
                             : 1 === t
-                            ? n
-                            : {
-                                  width: C(t, e.width, n.width),
-                                  height: C(t, e.height, n.height),
-                              }
+                              ? n
+                              : {
+                                    width: C(t, e.width, n.width),
+                                    height: C(t, e.height, n.height),
+                                }
                     },
                     u(t, e) {
                         return function (n) {
@@ -2760,12 +2763,12 @@
                 return 0 === t
                     ? e
                     : 1 === t
-                    ? n
-                    : {
-                          blur: V(t, e.blur, n.blur),
-                          offset: L(t, e.offset, n.offset),
-                          color: z(t, e.color, n.color),
-                      }
+                      ? n
+                      : {
+                            blur: V(t, e.blur, n.blur),
+                            offset: L(t, e.offset, n.offset),
+                            color: z(t, e.color, n.color),
+                        }
             }
             const ue = {
                 blur: V,
@@ -3092,8 +3095,8 @@
                                 ? 'rollback'
                                 : 'playing'
                             : e.hasEnded
-                            ? 'ended'
-                            : 'paused'
+                              ? 'ended'
+                              : 'paused'
                     },
                     totalTime: 'maxFiniteDuration',
                     iterations: 'iterations',
@@ -3155,16 +3158,16 @@
                                     ? he[e].call(t, t, r)
                                     : t[he[e]]
                                 : ve[e]
-                                ? 'function' == typeof ve[e]
-                                    ? ve[e].call(t, t, r)
-                                    : de(t, ve[e], r)
-                                : -1 !== i.indexOf(e)
-                                ? n[e]
-                                : 'ready' === e
-                                ? function (t) {
-                                      return t && t.call(r, r), r
-                                  }
-                                : void 0
+                                  ? 'function' == typeof ve[e]
+                                      ? ve[e].call(t, t, r)
+                                      : de(t, ve[e], r)
+                                  : -1 !== i.indexOf(e)
+                                    ? n[e]
+                                    : 'ready' === e
+                                      ? function (t) {
+                                            return t && t.call(r, r), r
+                                        }
+                                      : void 0
                         },
                         set(t, e, r) {
                             return -1 !== i.indexOf(e) && (n[e] = r)
@@ -3523,8 +3526,8 @@
                                         return this._running
                                             ? this.pause()
                                             : this.reachedToEnd()
-                                            ? this.restart()
-                                            : this.play()
+                                              ? this.restart()
+                                              : this.play()
                                     },
                                 },
                                 {
@@ -3652,13 +3655,13 @@
                                                                 return t._running
                                                                     ? t.reverse()
                                                                     : t.reachedToEnd()
-                                                                    ? 1 ===
-                                                                      t.fill
-                                                                        ? t.reverse(
-                                                                              !0,
-                                                                          )
-                                                                        : t.restart()
-                                                                    : t.play()
+                                                                      ? 1 ===
+                                                                        t.fill
+                                                                          ? t.reverse(
+                                                                                !0,
+                                                                            )
+                                                                          : t.restart()
+                                                                      : t.play()
                                                             case 'none':
                                                             default:
                                                                 if (t._running)
@@ -3685,8 +3688,8 @@
                                                         return t.reachedToEnd()
                                                             ? t.restart()
                                                             : t._rollingBack
-                                                            ? t.reverse()
-                                                            : t.play()
+                                                              ? t.reverse()
+                                                              : t.play()
                                                     }
                                                     t._handlers.push({
                                                         element: e,
