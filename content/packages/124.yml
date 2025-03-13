@@ -6,7 +6,7 @@ github: 'https://github.com/staudenmeir/laravel-adjacency-list'
 author: staudenmeir
 composer: staudenmeir/laravel-adjacency-list
 npm: null
-stars: 1433
+stars: 1435
 keywords: {  }
 first_release_at: '2019-04-25 00:26:49'
 latest_release_at: '2025-02-25 21:23:11'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-07T11:06:58+00:00
+updated_at: 2025-03-13T13:49:11+00:00

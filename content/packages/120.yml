@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-settings'
 author: spatie
 composer: spatie/laravel-settings
 npm: null
-stars: 1302
+stars: 1305
 keywords: {  }
 first_release_at: '2020-10-20 10:11:16'
 latest_release_at: '2025-02-14 14:40:11'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-07T11:06:46+00:00
+updated_at: 2025-03-13T13:48:59+00:00

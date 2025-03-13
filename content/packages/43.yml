@@ -6,7 +6,7 @@ github: 'https://github.com/saleem-hadad/larecipe'
 author: binarytorch
 composer: binarytorch/larecipe
 npm: null
-stars: 2436
+stars: 2439
 keywords: {  }
 first_release_at: '2018-09-02 11:39:24'
 latest_release_at: '2024-03-26 11:57:09'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-03-07T11:02:32+00:00
+updated_at: 2025-03-13T13:44:57+00:00

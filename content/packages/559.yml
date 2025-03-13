@@ -6,7 +6,7 @@ github: 'https://github.com/laracord/laracord'
 author: laracord
 composer: laracord/laracord
 npm: null
-stars: 279
+stars: 280
 keywords: {  }
 first_release_at: '2024-01-14 17:48:48'
 latest_release_at: '2024-07-18 15:00:54'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-04-23T11:34:06+00:00
-updated_at: 2025-03-07T11:28:33+00:00
+updated_at: 2025-03-13T14:09:26+00:00

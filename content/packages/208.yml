@@ -6,7 +6,7 @@ github: 'https://github.com/realrashid/sweet-alert'
 author: realrashid
 composer: realrashid/sweet-alert
 npm: null
-stars: 1145
+stars: 1146
 keywords:
     - toast
     - message
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-07T11:11:28+00:00
+updated_at: 2025-03-13T13:53:10+00:00
