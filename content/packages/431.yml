@@ -6,7 +6,7 @@ github: 'https://github.com/sander3/laravel-gdpr'
 author: soved
 composer: soved/laravel-gdpr
 npm: null
-stars: 271
+stars: 273
 keywords: {  }
 first_release_at: '2018-05-04 11:36:16'
 latest_release_at: '2025-03-03 08:11:07'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:45:20+00:00
-updated_at: 2025-03-13T14:03:32+00:00
+updated_at: 2025-03-24T12:38:33+00:00

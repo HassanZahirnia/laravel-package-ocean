@@ -6,7 +6,7 @@ github: 'https://github.com/ElegantEngineeringTech/laravel-translator'
 author: elegantly
 composer: elegantly/laravel-translator
 npm: null
-stars: 31
+stars: 32
 keywords: {  }
 first_release_at: '2024-06-18 14:36:18'
 latest_release_at: '2025-03-07 18:04:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-02-15T12:12:26+00:00
-updated_at: 2025-03-13T14:11:28+00:00
+updated_at: 2025-03-24T12:46:16+00:00

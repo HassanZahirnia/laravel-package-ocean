@@ -6,13 +6,13 @@ github: 'https://github.com/artesaos/seotools'
 author: artesaos
 composer: artesaos/seotools
 npm: null
-stars: 3192
+stars: 3191
 keywords: {  }
 first_release_at: '2015-02-28 16:39:49'
-latest_release_at: '2024-05-20 12:43:47'
+latest_release_at: '2025-03-07 14:44:43'
 laravel_dependency_versions:
-    - '^10.0 || ^11.0'
+    - '^10.0 || ^11.0 || ^12.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-13T13:53:27+00:00
+updated_at: 2025-03-24T12:28:46+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/IndexZer0/eloquent-filtering'
 author: indexzer0
 composer: indexzer0/eloquent-filtering
 npm: null
-stars: 210
+stars: 211
 keywords: {  }
 first_release_at: '2024-04-28 01:24:52'
 latest_release_at: '2025-02-25 21:04:56'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-07T12:26:57+00:00
-updated_at: 2025-03-13T14:10:27+00:00
+updated_at: 2025-03-24T12:45:17+00:00

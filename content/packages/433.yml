@@ -6,7 +6,7 @@ github: 'https://github.com/tzsk/sms'
 author: tzsk
 composer: tzsk/sms
 npm: null
-stars: 300
+stars: 301
 keywords: {  }
 first_release_at: '2016-12-18 08:01:23'
 latest_release_at: '2024-03-12 13:05:02'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-07T12:49:08+00:00
-updated_at: 2025-03-13T14:03:37+00:00
+updated_at: 2025-03-24T12:38:39+00:00
