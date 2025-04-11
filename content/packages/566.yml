@@ -6,7 +6,7 @@ github: 'https://github.com/vcian/laravel-db-auditor'
 author: vcian
 composer: vcian/laravel-db-auditor
 npm: null
-stars: 279
+stars: 280
 keywords: {  }
 first_release_at: '2023-04-18 05:25:12'
 latest_release_at: '2024-08-09 11:38:38'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-06-04T14:23:45+00:00
-updated_at: 2025-03-24T12:44:37+00:00
+updated_at: 2025-04-11T12:55:42+00:00

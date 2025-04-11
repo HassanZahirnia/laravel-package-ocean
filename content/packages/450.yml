@@ -6,7 +6,7 @@ github: 'https://github.com/staudenmeir/laravel-migration-views'
 author: staudenmeir
 composer: staudenmeir/laravel-migration-views
 npm: null
-stars: 200
+stars: 201
 keywords: {  }
 first_release_at: '2019-06-15 12:40:38'
 latest_release_at: '2025-02-16 09:41:55'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T13:17:27+00:00
-updated_at: 2025-03-24T12:39:24+00:00
+updated_at: 2025-04-11T12:49:53+00:00

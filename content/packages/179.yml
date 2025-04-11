@@ -6,7 +6,7 @@ github: 'https://github.com/barryvdh/laravel-snappy'
 author: barryvdh
 composer: barryvdh/laravel-snappy
 npm: null
-stars: 2690
+stars: 2696
 keywords: {  }
 first_release_at: '2013-12-18 13:47:19'
 latest_release_at: '2025-02-24 15:20:06'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-24T12:26:48+00:00
+updated_at: 2025-04-11T12:36:15+00:00

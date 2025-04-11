@@ -6,7 +6,7 @@ github: 'https://github.com/shopperlabs/framework'
 author: shopper
 composer: shopper/framework
 npm: null
-stars: 948
+stars: 956
 keywords: {  }
 first_release_at: '2021-07-05 16:48:08'
 latest_release_at: '2025-03-10 06:19:20'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-15T09:16:33+00:00
-updated_at: 2025-03-24T12:34:50+00:00
+updated_at: 2025-04-11T12:44:46+00:00

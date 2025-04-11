@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-medialibrary'
 author: spatie
 composer: spatie/laravel-medialibrary
 npm: null
-stars: 5878
+stars: 5893
 keywords:
     - image
     - pdf
@@ -18,10 +18,10 @@ keywords:
     - storage
     - filesystem
 first_release_at: '2015-04-14 09:07:29'
-latest_release_at: '2025-03-21 09:15:22'
+latest_release_at: '2025-03-31 07:55:00'
 laravel_dependency_versions:
     - ^10.2|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-24T12:27:28+00:00
+updated_at: 2025-04-11T12:36:42+00:00

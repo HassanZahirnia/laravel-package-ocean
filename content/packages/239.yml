@@ -6,7 +6,7 @@ github: 'https://github.com/qirolab/laravel-themer'
 author: qirolab
 composer: qirolab/laravel-themer
 npm: null
-stars: 383
+stars: 382
 keywords: {  }
 first_release_at: '2021-01-02 14:04:00'
 latest_release_at: '2025-02-26 08:51:08'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-03-24T12:29:51+00:00
+updated_at: 2025-04-11T12:39:14+00:00

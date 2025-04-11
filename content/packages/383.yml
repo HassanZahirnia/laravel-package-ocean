@@ -6,7 +6,7 @@ github: 'https://github.com/fruitcake/laravel-telescope-toolbar'
 author: fruitcake
 composer: fruitcake/laravel-telescope-toolbar
 npm: null
-stars: 785
+stars: 787
 keywords: {  }
 first_release_at: '2019-08-09 08:29:35'
 latest_release_at: '2025-02-21 15:33:17'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:44:32+00:00
-updated_at: 2025-03-24T12:36:22+00:00
+updated_at: 2025-04-11T12:46:28+00:00
