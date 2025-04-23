@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-multitenancy'
 author: spatie
 composer: spatie/laravel-multitenancy
 npm: null
-stars: 1186
+stars: 1191
 keywords: {  }
 first_release_at: '2020-05-17 19:40:31'
 latest_release_at: '2025-02-20 14:48:22'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-04-11T12:30:40+00:00
+updated_at: 2025-04-23T10:16:02+00:00

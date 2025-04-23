@@ -6,13 +6,13 @@ github: 'https://github.com/echolabsdev/prism'
 author: echolabsdev
 composer: echolabsdev/prism
 npm: null
-stars: 1225
+stars: 1265
 keywords: {  }
 first_release_at: '2024-10-03 17:54:19'
-latest_release_at: '2025-04-10 18:21:01'
+latest_release_at: '2025-04-12 19:34:32'
 laravel_dependency_versions:
     - ^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-07T19:51:55+00:00
-updated_at: 2025-04-11T12:56:36+00:00
+updated_at: 2025-04-23T10:41:18+00:00

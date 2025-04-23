@@ -6,7 +6,7 @@ github: 'https://github.com/orangehill/iseed'
 author: orangehill
 composer: orangehill/iseed
 npm: null
-stars: 2842
+stars: 2847
 keywords: {  }
 first_release_at: '2013-07-17 13:46:24'
 latest_release_at: '2025-03-04 07:56:48'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-04-11T12:32:23+00:00
+updated_at: 2025-04-23T10:17:43+00:00

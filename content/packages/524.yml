@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/opening-hours'
 author: spatie
 composer: spatie/opening-hours
 npm: null
-stars: 1669
+stars: 1671
 keywords: {  }
 first_release_at: '2016-09-28 08:37:06'
 latest_release_at: '2025-02-17 09:14:58'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-11-24T19:37:20+00:00
-updated_at: 2025-04-11T12:53:33+00:00
+updated_at: 2025-04-23T10:38:21+00:00
