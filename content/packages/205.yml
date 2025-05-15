@@ -6,7 +6,7 @@ github: 'https://github.com/laracasts/flash'
 author: laracasts
 composer: laracasts/flash
 npm: null
-stars: 2667
+stars: 2665
 keywords:
     - css
     - html
@@ -18,4 +18,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-04-23T10:22:53+00:00
+updated_at: 2025-05-15T13:52:50+00:00

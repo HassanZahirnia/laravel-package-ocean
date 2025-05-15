@@ -6,7 +6,7 @@ github: 'https://github.com/Laragear/Poke'
 author: laragear
 composer: laragear/poke
 npm: null
-stars: 19
+stars: 20
 keywords: {  }
 first_release_at: '2022-02-16 04:59:48'
 latest_release_at: '2025-03-27 04:29:09'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-04T09:49:14+00:00
-updated_at: 2025-04-23T10:37:59+00:00
+updated_at: 2025-05-15T13:59:42+00:00

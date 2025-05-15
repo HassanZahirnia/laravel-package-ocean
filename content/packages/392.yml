@@ -6,7 +6,7 @@ github: 'https://github.com/diglactic/laravel-breadcrumbs'
 author: diglactic
 composer: diglactic/laravel-breadcrumbs
 npm: null
-stars: 927
+stars: 931
 keywords: {  }
 first_release_at: '2020-04-23 18:45:59'
 latest_release_at: '2025-02-25 05:44:07'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T10:50:57+00:00
-updated_at: 2025-04-23T10:32:00+00:00
+updated_at: 2025-05-15T13:57:02+00:00

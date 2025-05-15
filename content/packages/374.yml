@@ -6,13 +6,13 @@ github: 'https://github.com/orchestral/testbench'
 author: orchestra
 composer: orchestra/testbench
 npm: null
-stars: 2168
+stars: 2178
 keywords: {  }
 first_release_at: '2013-06-08 15:05:34'
-latest_release_at: '2025-04-13 01:19:04'
+latest_release_at: '2025-05-12 06:36:03'
 laravel_dependency_versions:
-    - ^12.3.0
+    - ^12.8.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:17:21+00:00
-updated_at: 2025-04-23T10:31:06+00:00
+updated_at: 2025-05-15T13:56:32+00:00

@@ -10,10 +10,10 @@ stars: 435
 keywords:
     - archive
 first_release_at: '2019-04-12 18:20:20'
-latest_release_at: '2025-02-21 01:20:38'
+latest_release_at: '2025-05-14 19:04:31'
 laravel_dependency_versions:
     - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T13:34:57+00:00
-updated_at: 2025-04-23T10:30:46+00:00
+updated_at: 2025-05-15T13:56:23+00:00

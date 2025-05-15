@@ -6,7 +6,7 @@ github: 'https://github.com/theriddleofenigma/laravel-model-validation'
 author: theriddleofenigma
 composer: theriddleofenigma/laravel-model-validation
 npm: null
-stars: 33
+stars: 34
 keywords: {  }
 first_release_at: '2018-11-17 18:01:38'
 latest_release_at: '2024-04-05 14:56:20'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-19T13:20:01+00:00
-updated_at: 2025-04-23T10:36:53+00:00
+updated_at: 2025-05-15T13:59:13+00:00

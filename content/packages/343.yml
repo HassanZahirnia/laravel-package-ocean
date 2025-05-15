@@ -6,7 +6,7 @@ github: 'https://github.com/rezaamini-ir/migrator'
 author: rezaamini-ir
 composer: rezaamini-ir/migrator
 npm: null
-stars: 525
+stars: 526
 keywords: {  }
 first_release_at: '2021-09-13 12:48:12'
 latest_release_at: '2024-06-07 13:36:38'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-13T11:54:16+00:00
-updated_at: 2025-04-23T10:29:28+00:00
+updated_at: 2025-05-15T13:55:48+00:00

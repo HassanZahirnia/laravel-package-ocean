@@ -6,13 +6,13 @@ github: 'https://github.com/proengsoft/laravel-jsvalidation'
 author: proengsoft
 composer: proengsoft/laravel-jsvalidation
 npm: null
-stars: 1144
+stars: 1146
 keywords: {  }
 first_release_at: '2015-03-17 01:52:49'
-latest_release_at: '2025-04-15 15:05:24'
+latest_release_at: '2025-05-12 08:28:30'
 laravel_dependency_versions:
     - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-05-25T11:16:05+00:00
-updated_at: 2025-04-23T10:30:15+00:00
+updated_at: 2025-05-15T13:56:09+00:00
