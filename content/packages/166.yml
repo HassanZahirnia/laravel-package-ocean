@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-dynamic-servers'
 author: spatie
 composer: spatie/laravel-dynamic-servers
 npm: null
-stars: 227
+stars: 228
 keywords: {  }
 first_release_at: '2022-08-27 00:30:28'
 latest_release_at: '2024-05-10 12:05:40'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-05-15T13:51:59+00:00
+updated_at: 2025-05-20T16:03:38+00:00

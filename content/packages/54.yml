@@ -6,7 +6,7 @@ github: 'https://github.com/statamic/cms'
 author: statamic
 composer: statamic/cms
 npm: null
-stars: 4370
+stars: 4373
 keywords: {  }
 first_release_at: '2019-11-21 14:49:01'
 latest_release_at: '2025-05-14 18:44:53'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-05-15T13:49:30+00:00
+updated_at: 2025-05-20T16:01:20+00:00

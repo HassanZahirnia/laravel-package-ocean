@@ -6,15 +6,15 @@ github: 'https://github.com/yajra/laravel-datatables'
 author: yajra
 composer: yajra/laravel-datatables-oracle
 npm: null
-stars: 4814
+stars: 4815
 keywords:
     - column
     - row
 first_release_at: '2013-11-27 05:02:00'
-latest_release_at: '2025-05-09 14:54:06'
+latest_release_at: '2025-05-17 03:40:31'
 laravel_dependency_versions:
     - ^12
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-05-15T13:49:31+00:00
+updated_at: 2025-05-20T16:01:21+00:00
