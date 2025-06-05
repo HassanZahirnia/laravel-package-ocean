@@ -6,7 +6,7 @@ github: 'https://github.com/pod-point/laravel-mail-export'
 author: pod-point
 composer: pod-point/laravel-mail-export
 npm: null
-stars: 6
+stars: 7
 keywords: {  }
 first_release_at: '2021-03-30 16:23:41'
 latest_release_at: '2024-11-07 13:45:40'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-16T13:41:08+00:00
-updated_at: 2025-05-20T16:10:03+00:00
+updated_at: 2025-06-05T11:50:47+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/JosephSilber/bouncer'
 author: silber
 composer: silber/bouncer
 npm: null
-stars: 3510
+stars: 3518
 keywords:
     - multitenancy
     - acl
@@ -19,4 +19,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-05-20T16:00:57+00:00
+updated_at: 2025-06-05T11:34:22+00:00

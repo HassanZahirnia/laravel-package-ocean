@@ -6,7 +6,7 @@ github: 'https://github.com/PlannrCrm/laravel-fast-refresh-database'
 author: plannr
 composer: plannr/laravel-fast-refresh-database
 npm: null
-stars: 423
+stars: 422
 keywords:
     - migration
 first_release_at: '2022-12-23 13:09:52'
@@ -15,4 +15,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-05-20T16:05:50+00:00
+updated_at: 2025-06-05T11:43:09+00:00

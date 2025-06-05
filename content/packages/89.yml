@@ -6,7 +6,7 @@ github: 'https://github.com/kirschbaum-development/eloquent-power-joins'
 author: kirschbaum-development
 composer: kirschbaum-development/eloquent-power-joins
 npm: null
-stars: 1486
+stars: 1493
 keywords: {  }
 first_release_at: '2020-03-25 00:30:01'
 latest_release_at: '2025-05-19 14:14:41'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-05-20T16:02:06+00:00
+updated_at: 2025-06-05T11:36:22+00:00

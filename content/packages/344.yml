@@ -6,7 +6,7 @@ github: 'https://github.com/5am-code/laravel-notion-api'
 author: fiveam-code
 composer: fiveam-code/laravel-notion-api
 npm: null
-stars: 431
+stars: 432
 keywords: {  }
 first_release_at: '2021-05-14 21:09:04'
 latest_release_at: '2025-03-05 07:55:57'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-13T17:55:02+00:00
-updated_at: 2025-05-20T16:07:03+00:00
+updated_at: 2025-06-05T11:45:22+00:00

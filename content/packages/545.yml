@@ -6,7 +6,7 @@ github: 'https://github.com/InterNACHI/modular'
 author: internachi
 composer: internachi/modular
 npm: null
-stars: 920
+stars: 933
 keywords: {  }
 first_release_at: '2020-07-07 20:36:20'
 latest_release_at: '2025-02-28 22:15:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-02-21T18:25:24+00:00
-updated_at: 2025-05-20T16:11:08+00:00
+updated_at: 2025-06-05T11:52:38+00:00

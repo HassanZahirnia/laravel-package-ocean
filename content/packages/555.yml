@@ -6,7 +6,7 @@ github: 'https://github.com/valorin/random'
 author: valorin
 composer: valorin/random
 npm: null
-stars: 215
+stars: 219
 keywords: {  }
 first_release_at: '2023-12-28 12:50:33'
 latest_release_at: '2025-03-18 00:59:34'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: php-package
 paid_integration: false
 created_at: 2024-04-17T13:42:38+00:00
-updated_at: 2025-05-20T16:11:19+00:00
+updated_at: 2025-06-05T11:53:01+00:00
