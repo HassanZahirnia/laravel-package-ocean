@@ -6,13 +6,13 @@ github: 'https://github.com/inspector-apm/inspector-laravel'
 author: inspector-apm
 composer: inspector-apm/inspector-laravel
 npm: null
-stars: 220
+stars: 222
 keywords: {  }
 first_release_at: '2019-05-31 18:17:12'
-latest_release_at: '2025-03-07 11:10:42'
+latest_release_at: '2025-06-18 09:01:03'
 laravel_dependency_versions:
-    - ^5.5|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0
+    - ^8.0|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: true
 created_at: 2024-06-04T14:10:33+00:00
-updated_at: 2025-06-05T11:53:22+00:00
+updated_at: 2025-06-26T20:01:31+00:00

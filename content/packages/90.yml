@@ -6,13 +6,13 @@ github: 'https://github.com/kitar/laravel-dynamodb'
 author: kitar
 composer: kitar/laravel-dynamodb
 npm: null
-stars: 190
+stars: 191
 keywords: {  }
 first_release_at: '2020-03-07 15:49:56'
-latest_release_at: '2024-03-16 06:30:49'
+latest_release_at: '2025-06-08 04:25:32'
 laravel_dependency_versions:
-    - ^6.0|^7.0|^8.0|^9.0|^10.0|^11.0
+    - ^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-06-05T11:36:24+00:00
+updated_at: 2025-06-26T19:42:02+00:00

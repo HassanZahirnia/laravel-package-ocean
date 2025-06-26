@@ -6,7 +6,7 @@ github: 'https://github.com/whitecube/laravel-timezones'
 author: whitecube
 composer: whitecube/laravel-timezones
 npm: null
-stars: 101
+stars: 102
 keywords: {  }
 first_release_at: '2022-12-13 14:51:37'
 latest_release_at: '2025-02-20 12:32:14'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-15T10:52:30+00:00
-updated_at: 2025-06-05T11:49:36+00:00
+updated_at: 2025-06-26T19:57:09+00:00

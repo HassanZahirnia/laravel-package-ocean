@@ -6,7 +6,7 @@ github: 'https://github.com/mokhosh/muddle'
 author: mokhosh
 composer: mokhosh/muddle
 npm: null
-stars: 69
+stars: 70
 keywords: {  }
 first_release_at: '2024-11-01 17:06:41'
 latest_release_at: '2025-03-07 01:44:25'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-11-18T10:23:33+00:00
-updated_at: 2025-06-05T11:54:47+00:00
+updated_at: 2025-06-26T20:02:54+00:00

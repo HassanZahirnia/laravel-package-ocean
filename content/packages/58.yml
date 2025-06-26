@@ -6,7 +6,7 @@ github: 'https://github.com/hybridly/hybridly'
 author: hybridly
 composer: hybridly/laravel
 npm: null
-stars: 573
+stars: 580
 keywords:
     - spa
     - vue
@@ -19,10 +19,10 @@ keywords:
     - modal
     - 'enzo innocenzi'
 first_release_at: '2022-10-12 17:20:19'
-latest_release_at: '2025-02-26 18:03:30'
+latest_release_at: '2025-06-14 20:30:29'
 laravel_dependency_versions:
     - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-06-05T11:35:15+00:00
+updated_at: 2025-06-26T19:40:37+00:00

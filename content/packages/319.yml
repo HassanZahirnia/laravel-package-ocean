@@ -6,7 +6,7 @@ github: 'https://github.com/Torann/laravel-geoip'
 author: torann
 composer: torann/geoip
 npm: null
-stars: 2185
+stars: 2186
 keywords: {  }
 first_release_at: '2013-12-11 22:28:05'
 latest_release_at: '2025-02-25 18:24:54'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-06-05T11:44:32+00:00
+updated_at: 2025-06-26T19:51:24+00:00
