@@ -6,7 +6,7 @@ github: 'https://github.com/Bottelet/translation-checker'
 author: bottelet
 composer: bottelet/translation-checker
 npm: null
-stars: 119
+stars: 123
 keywords: {  }
 first_release_at: '2024-09-17 18:32:05'
 latest_release_at: '2025-06-25 11:43:36'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-11-06T09:06:02+00:00
-updated_at: 2025-06-26T20:02:40+00:00
+updated_at: 2025-08-01T11:30:00+00:00

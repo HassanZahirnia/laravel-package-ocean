@@ -6,7 +6,7 @@ github: 'https://github.com/tehwave/laravel-achievements'
 author: tehwave
 composer: tehwave/laravel-achievements
 npm: null
-stars: 68
+stars: 69
 keywords: {  }
 first_release_at: '2019-03-28 20:26:14'
 latest_release_at: '2023-03-26 20:02:37'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-09-22T11:04:28+00:00
-updated_at: 2025-06-26T19:59:00+00:00
+updated_at: 2025-08-01T11:26:47+00:00

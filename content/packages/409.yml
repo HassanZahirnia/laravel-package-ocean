@@ -6,7 +6,7 @@ github: 'https://github.com/sergiorodenas/stream-parser'
 author: rodenastyle
 composer: rodenastyle/stream-parser
 npm: null
-stars: 441
+stars: 442
 keywords: {  }
 first_release_at: '2018-05-15 22:51:03'
 latest_release_at: '2025-05-13 14:24:11'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T11:52:48+00:00
-updated_at: 2025-06-26T19:55:05+00:00
+updated_at: 2025-08-01T11:23:28+00:00

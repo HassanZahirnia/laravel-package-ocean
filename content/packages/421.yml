@@ -6,7 +6,7 @@ github: 'https://github.com/axlon/laravel-postal-code-validation'
 author: axlon
 composer: axlon/laravel-postal-code-validation
 npm: null
-stars: 379
+stars: 381
 keywords: {  }
 first_release_at: '2018-12-07 10:25:48'
 latest_release_at: '2025-02-25 18:12:41'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:26:17+00:00
-updated_at: 2025-06-26T19:55:35+00:00
+updated_at: 2025-08-01T11:23:50+00:00

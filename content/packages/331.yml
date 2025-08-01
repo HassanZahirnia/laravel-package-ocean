@@ -6,7 +6,7 @@ github: 'https://github.com/hanifhefaz/dcter'
 author: hanifhefaz
 composer: hanifhefaz/dcter
 npm: null
-stars: 24
+stars: 25
 keywords: {  }
 first_release_at: '2023-04-07 13:42:26'
 latest_release_at: '2023-04-14 11:49:40'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-04-12T14:21:21+00:00
-updated_at: 2025-06-26T19:51:53+00:00
+updated_at: 2025-08-01T11:20:28+00:00

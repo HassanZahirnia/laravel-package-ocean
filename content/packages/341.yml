@@ -6,7 +6,7 @@ github: 'https://github.com/stefanzweifel/laravel-sends'
 author: wnx
 composer: wnx/laravel-sends
 npm: null
-stars: 190
+stars: 191
 keywords: {  }
 first_release_at: '2021-12-03 19:41:46'
 latest_release_at: '2025-02-11 19:34:06'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-13T11:35:17+00:00
-updated_at: 2025-06-26T19:52:14+00:00
+updated_at: 2025-08-01T11:20:52+00:00

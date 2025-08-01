@@ -6,7 +6,7 @@ github: 'https://github.com/TimoKoerber/laravel-one-time-operations'
 author: timokoerber
 composer: timokoerber/laravel-one-time-operations
 npm: null
-stars: 612
+stars: 614
 keywords:
     - ci/cd
 first_release_at: '2023-03-11 00:05:55'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-06-26T19:45:25+00:00
+updated_at: 2025-08-01T11:13:10+00:00

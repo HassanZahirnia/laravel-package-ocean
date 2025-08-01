@@ -6,7 +6,7 @@ github: 'https://github.com/cviebrock/eloquent-sluggable'
 author: cviebrock
 composer: cviebrock/eloquent-sluggable
 npm: null
-stars: 3966
+stars: 3973
 keywords: {  }
 first_release_at: '2013-06-11 16:19:46'
 latest_release_at: '2025-02-26 22:53:32'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-06-26T19:41:40+00:00
+updated_at: 2025-08-01T11:09:25+00:00
