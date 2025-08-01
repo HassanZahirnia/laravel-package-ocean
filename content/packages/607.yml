@@ -1,0 +1,24 @@
+id: 607
+name: 'Introspect For Laravel'
+description: 'Query your Laravel codebase like a database, with an Eloquent-like API.'
+category_id: '4'
+github: 'https://github.com/capevace/laravel-introspect'
+author: mateffy
+composer: mateffy/laravel-introspect
+npm: null
+stars: 108
+keywords:
+    - Introspection
+    - 'Static Analysis'
+    - Reflection
+    - Models
+    - Views
+    - 'JSON Schema'
+first_release_at: '2025-05-15 18:25:42'
+latest_release_at: '2025-06-29 17:24:49'
+laravel_dependency_versions:
+    - ^10.0||^11.0||^12.0
+package_type: laravel-package
+paid_integration: false
+created_at: 2025-07-01T10:42:23+00:00
+updated_at: 2025-07-01T10:44:29+00:00
