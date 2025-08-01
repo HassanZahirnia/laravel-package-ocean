@@ -1,0 +1,17 @@
+id: 612
+name: 'Laravel Toaster Magic'
+description: 'Generate theme able toast with RTL support.'
+category_id: '17'
+github: 'https://github.com/devrabiul/laravel-toaster-magic'
+author: devrabiul
+composer: devrabiul/laravel-toaster-magic
+npm: null
+stars: 184
+keywords: {  }
+first_release_at: '2025-03-07 20:39:17'
+latest_release_at: '2025-07-31 09:09:24'
+laravel_dependency_versions: {  }
+package_type: laravel-package
+paid_integration: false
+created_at: 2025-08-01T12:37:21+00:00
+updated_at: 2025-08-01T12:37:21+00:00

@@ -1,0 +1,17 @@
+id: 614
+name: 'Firebase Php'
+description: 'Enables access to Firebase services.'
+category_id: '7'
+github: 'https://github.com/kreait/firebase-php'
+author: kreait
+composer: kreait/firebase-php
+npm: null
+stars: 2370
+keywords: {  }
+first_release_at: '2015-01-09 11:28:45'
+latest_release_at: '2025-07-24 09:40:40'
+laravel_dependency_versions: {  }
+package_type: php-package
+paid_integration: false
+created_at: 2025-08-01T12:42:09+00:00
+updated_at: 2025-08-01T12:42:09+00:00
