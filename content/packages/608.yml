@@ -1,22 +1,22 @@
 id: 608
-name: "MCP Server For Laravel Codebase Insights"
-description: "Give any AI assistant Laravel-specific insights about your codebase, views, routes, models and more."
-category_id: "4"
-github: "https://github.com/capevace/laravel-codebase-mcp"
+name: 'MCP Server For Laravel Codebase Insights'
+description: 'Give any AI assistant Laravel-specific insights about your codebase, views, routes, models and more.'
+category_id: '4'
+github: 'https://github.com/capevace/laravel-codebase-mcp'
 author: mateffy
 composer: mateffy/laravel-codebase-mcp
 npm: null
-stars: 8
+stars: 11
 keywords:
-  - Introspection
-  - "Model Context Protocol"
-  - Analysis
-  - "Artificial Intelligence"
-first_release_at: "2025-05-22 15:54:04"
-latest_release_at: "2025-06-29 14:35:50"
+    - Introspection
+    - 'Model Context Protocol'
+    - Analysis
+    - 'Artificial Intelligence'
+first_release_at: '2025-05-22 15:54:04'
+latest_release_at: '2025-06-29 14:35:50'
 laravel_dependency_versions:
-  - ^10.0||^11.0||^12.0
+    - ^10.0||^11.0||^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-07-01T10:49:10+00:00
-updated_at: 2025-07-01T10:49:18+00:00
+updated_at: 2025-08-01T12:14:55+00:00
