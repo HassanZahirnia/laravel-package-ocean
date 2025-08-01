@@ -112,12 +112,12 @@
             class="group/sponsor-card mx-auto grid w-full max-w-3xl place-items-center transition duration-300 will-change-transform hover:translate-x-0.5"
         >
             <div
-                class="h-full w-full rounded-[1.6rem] bg-gradient-to-br transition-colors duration-300 [grid-area:1/-1] dark:from-fuchsia-500/5 dark:via-fuchsia-500/5 dark:to-fuchsia-500/40 group-hover/sponsor-card:dark:to-fuchsia-500/40"
+                class="h-full w-full rounded-[1.6rem] bg-linear-to-br transition-colors duration-300 [grid-area:1/-1] dark:from-fuchsia-500/5 dark:via-fuchsia-500/5 dark:to-fuchsia-500/40 dark:group-hover/sponsor-card:to-fuchsia-500/40"
             ></div>
             <a
                 href="https://github.com/sponsors/HassanZahirnia"
                 target="_blank"
-                class="grid h-[calc(100%-0.2rem)] w-[calc(100%-0.2rem)] place-items-center gap-5 overflow-hidden rounded-3xl bg-[#edf0fd] px-5 py-5 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition-colors duration-300 [grid-area:1/-1] hover:bg-[#f1f3fe] dark:bg-[#101332] dark:backdrop-blur-lg hover:dark:bg-[#110E26]/40 min-[550px]:flex min-[550px]:items-center min-[550px]:justify-between min-[550px]:px-10 min-[550px]:text-left"
+                class="grid h-[calc(100%-0.2rem)] w-[calc(100%-0.2rem)] place-items-center gap-5 overflow-hidden rounded-3xl bg-[#edf0fd] px-5 py-5 text-center shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] backdrop-blur-xl transition-colors duration-300 [grid-area:1/-1] hover:bg-[#f1f3fe] dark:bg-[#101332] dark:backdrop-blur-lg dark:hover:bg-[#110E26]/40 min-[550px]:flex min-[550px]:items-center min-[550px]:justify-between min-[550px]:px-10 min-[550px]:text-left"
             >
                 <div class="space-y-1.5">
                     {{-- Header --}}

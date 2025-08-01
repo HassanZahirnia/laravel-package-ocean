@@ -1,6 +1,6 @@
-<div class="hidden w-full max-w-[15rem] sm:block sm:pb-20">
+<div class="hidden w-full max-w-60 sm:block sm:pb-20">
     {{-- Category title --}}
-    <div class="flex min-h-[3rem] items-center">
+    <div class="flex min-h-12 items-center">
         <div class="text-2xl font-semibold transition duration-300">
             Categories
         </div>

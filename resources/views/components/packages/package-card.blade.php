@@ -35,7 +35,7 @@
     <a
         href="{{ $package->github }}"
         target="_blank"
-        class="group/package-card relative z-[1] flex h-60 flex-col rounded-3xl bg-white/40 p-6 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] ring-1 ring-slate-100 transition-all duration-300 hover:bg-white/60 hover:shadow-2xl hover:shadow-indigo-300/30 hover:ring-white dark:bg-[#362B59]/20 dark:ring-1 dark:ring-[#132447] dark:hover:bg-[#362B59]/30 dark:hover:shadow-xl dark:hover:shadow-[#1c164a] dark:hover:ring-[#373060]"
+        class="group/package-card relative z-1 flex h-60 flex-col rounded-3xl bg-white/40 p-6 shadow-[8.05051px_24.1515px_89.4501px_-11.6285px_rgba(22,52,80,0.05)] ring-1 ring-slate-100 transition-all duration-300 hover:bg-white/60 hover:shadow-2xl hover:shadow-indigo-300/30 hover:ring-white dark:bg-[#362B59]/20 dark:ring-1 dark:ring-[#132447] dark:hover:bg-[#362B59]/30 dark:hover:shadow-xl dark:hover:shadow-[#1c164a] dark:hover:ring-[#373060]"
     >
         {{-- Crown icon --}}
         @if ($package->is_official_laravel_package === true)

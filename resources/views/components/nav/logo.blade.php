@@ -2774,7 +2774,7 @@
                 blur: V,
                 brightness: C,
                 contrast: C,
-                'drop-shadow': oe,
+                'drop-shadow-sm': oe,
                 'inner-shadow': oe,
                 grayscale: C,
                 'hue-rotate': D,
@@ -2828,7 +2828,7 @@
                           }
                         : null
                 },
-                'drop-shadow': function (t, e, n) {
+                'drop-shadow-sm': function (t, e, n) {
                     const r = n.getElementById(`${e}-blur`)
                     if (!r) return null
                     const i = n.getElementById(`${e}-offset`)

@@ -39,7 +39,7 @@
                 width="20"
                 height="20"
                 viewBox="0 0 256 256"
-                class="absolute left-3 top-[0.75rem] text-[#9095AE] transition duration-300 dark:text-[#ABB0DD]"
+                class="absolute left-3 top-3 text-[#9095AE] transition duration-300 dark:text-[#ABB0DD]"
             >
                 <path
                     fill="currentColor"

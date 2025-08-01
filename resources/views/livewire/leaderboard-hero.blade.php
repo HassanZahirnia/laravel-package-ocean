@@ -71,7 +71,7 @@
         <a
             href="{{ $this->secondPlace->github }}"
             target="_blank"
-            class="order-2 transition duration-500 ease-out hover:!-translate-y-2 min-[920px]:order-1"
+            class="order-2 transition duration-500 ease-out hover:-translate-y-2! min-[920px]:order-1"
             x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
@@ -374,15 +374,15 @@
 
                 {{-- Content --}}
                 <div
-                    class="relative z-10 grid h-[8rem] w-[14rem] rounded-lg bg-gradient-to-b from-white via-transparent to-transparent p-1 dark:from-[#2D3679]"
+                    class="relative z-10 grid h-32 w-56 rounded-lg bg-linear-to-b from-white via-transparent to-transparent p-1 dark:from-[#2D3679]"
                 >
                     {{-- Inner --}}
                     <div
-                        class="grid h-[14rem] w-full place-items-center rounded bg-gradient-to-b from-blue-100/70 to-transparent pb-10 dark:from-[#121439]"
+                        class="grid h-56 w-full place-items-center rounded-sm bg-linear-to-b from-blue-100/70 to-transparent pb-10 dark:from-[#121439]"
                     >
                         {{-- Number --}}
                         <div
-                            class="bg-gradient-to-b from-slate-500 to-transparent bg-clip-text text-8xl font-bold text-transparent dark:from-white"
+                            class="bg-linear-to-b from-slate-500 to-transparent bg-clip-text text-8xl font-bold text-transparent dark:from-white"
                         >
                             2
                         </div>
@@ -395,7 +395,7 @@
         <a
             href="{{ $this->firstPlace->github }}"
             target="_blank"
-            class="order-1 transition duration-500 ease-out hover:!-translate-y-2 min-[920px]:order-2"
+            class="order-1 transition duration-500 ease-out hover:-translate-y-2! min-[920px]:order-2"
             x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
@@ -698,15 +698,15 @@
 
                 {{-- Content --}}
                 <div
-                    class="relative z-10 grid h-[12rem] w-[16rem] rounded-lg bg-gradient-to-b from-white via-transparent to-transparent p-1 dark:from-[#2D3679]"
+                    class="relative z-10 grid h-48 w-[16rem] rounded-lg bg-linear-to-b from-white via-transparent to-transparent p-1 dark:from-[#2D3679]"
                 >
                     {{-- Inner --}}
                     <div
-                        class="grid h-[18rem] w-full place-items-center rounded bg-gradient-to-b from-blue-100/70 to-transparent pb-10 dark:from-[#121439]"
+                        class="grid h-72 w-full place-items-center rounded-sm bg-linear-to-b from-blue-100/70 to-transparent pb-10 dark:from-[#121439]"
                     >
                         {{-- Number --}}
                         <div
-                            class="bg-gradient-to-b from-slate-500 to-transparent bg-clip-text text-9xl font-bold text-transparent dark:from-white"
+                            class="bg-linear-to-b from-slate-500 to-transparent bg-clip-text text-9xl font-bold text-transparent dark:from-white"
                         >
                             1
                         </div>
@@ -719,7 +719,7 @@
         <a
             href="{{ $this->thirdPlace->github }}"
             target="_blank"
-            class="order-3 transition duration-500 ease-out hover:!-translate-y-2"
+            class="order-3 transition duration-500 ease-out hover:-translate-y-2!"
             x-init="moveBarUp($el)"
         >
             {{-- Badge --}}
@@ -1022,15 +1022,15 @@
 
                 {{-- Content --}}
                 <div
-                    class="relative z-10 grid h-[8rem] w-[14rem] rounded-lg bg-gradient-to-b from-white via-transparent to-transparent p-1 dark:from-[#2D3679]"
+                    class="relative z-10 grid h-32 w-56 rounded-lg bg-linear-to-b from-white via-transparent to-transparent p-1 dark:from-[#2D3679]"
                 >
                     {{-- Inner --}}
                     <div
-                        class="grid h-[14rem] w-full place-items-center rounded bg-gradient-to-b from-blue-100/70 to-transparent pb-10 dark:from-[#121439]"
+                        class="grid h-56 w-full place-items-center rounded-sm bg-linear-to-b from-blue-100/70 to-transparent pb-10 dark:from-[#121439]"
                     >
                         {{-- Number --}}
                         <div
-                            class="bg-gradient-to-b from-slate-500 to-transparent bg-clip-text text-8xl font-bold text-transparent dark:from-white"
+                            class="bg-linear-to-b from-slate-500 to-transparent bg-clip-text text-8xl font-bold text-transparent dark:from-white"
                         >
                             3
                         </div>

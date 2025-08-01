@@ -9,7 +9,7 @@
                     titleAnimationEnd: $wire.selectedCategory === '' ? false : true,
                     categoryAnimationEnd: $wire.selectedCategory === '' ? true : false,
                 }"
-                class="grid min-h-[3rem] items-center"
+                class="grid min-h-12 items-center"
             >
                 {{-- Title --}}
                 <div
@@ -30,7 +30,7 @@
                 <div
                     wire:click="selectCategory('')"
                     x-show="$wire.selectedCategory && titleAnimationEnd"
-                    x-transition:enter="transition delay-[50ms] duration-150 ease-out"
+                    x-transition:enter="transition delay-50 duration-150 ease-out"
                     x-transition:enter-start="translate-x-2 opacity-0"
                     x-transition:enter-end="translate-x-0 opacity-100"
                     x-transition:leave="transition duration-150 ease-out"
@@ -79,7 +79,7 @@
             <x-packages.search-input />
 
             {{-- Sort --}}
-            <div class="w-full shrink-0 min-[920px]:w-[12.5rem]">
+            <div class="w-full shrink-0 min-[920px]:w-50">
                 <div class="relative z-20">
                     <select
                         wire:model.live="sortSelectValue"
@@ -117,13 +117,13 @@
             </div>
         </div>
     </div>
-    <div class="relative min-h-[16rem]">
+    <div class="relative min-h-64">
         {{-- Packages list --}}
         <div
             x-init="autoAnimate($el)"
             class="relative grid grid-cols-[repeat(auto-fill,minmax(19rem,1fr))] items-start justify-center gap-5 pt-6"
             :class="{
-                'min-h-[17rem]': $wire.packages.length,
+                'min-h-68': $wire.packages.length,
             }"
         >
             @foreach ($this->packages as $package)

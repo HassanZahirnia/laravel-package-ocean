@@ -131,7 +131,7 @@
         </div>
     </div>
     {{-- Micro star --}}
-    <div class="{{ $name }}-micro-star absolute left-[1rem] top-[1rem]">
+    <div class="{{ $name }}-micro-star absolute left-4 top-4">
         <div class="transition duration-300">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,36 +159,36 @@
         <div class="relative h-full w-full">
             {{-- Top --}}
             <div
-                class="absolute right-1/2 top-[0.5rem] h-[0.22rem] w-0.5 translate-x-1/2 rounded-full bg-current transition duration-300"
+                class="absolute right-1/2 top-2 h-[0.22rem] w-0.5 translate-x-1/2 rounded-full bg-current transition duration-300"
             ></div>
             {{-- Right --}}
             <div
-                class="absolute right-[0.5rem] top-1/2 h-[0.22rem] w-0.5 -translate-y-1/2 rotate-[90deg] rounded-full bg-current transition duration-300"
+                class="absolute right-2 top-1/2 h-[0.22rem] w-0.5 -translate-y-1/2 rotate-90 rounded-full bg-current transition duration-300"
             ></div>
             {{-- Bottom --}}
             <div
-                class="absolute bottom-[0.5rem] right-1/2 h-[0.22rem] w-0.5 translate-x-1/2 rounded-full bg-current transition duration-300"
+                class="absolute bottom-2 right-1/2 h-[0.22rem] w-0.5 translate-x-1/2 rounded-full bg-current transition duration-300"
             ></div>
             {{-- Left --}}
             <div
-                class="absolute left-[0.5rem] top-1/2 h-[0.22rem] w-0.5 -translate-y-1/2 rotate-[90deg] rounded-full bg-current transition duration-300"
+                class="absolute left-2 top-1/2 h-[0.22rem] w-0.5 -translate-y-1/2 rotate-90 rounded-full bg-current transition duration-300"
             ></div>
             {{-- Top Right --}}
             <div
-                class="absolute right-[0.75rem] top-[0.75rem] h-[0.22rem] w-0.5 rotate-[45deg] rounded-full bg-current transition duration-300"
+                class="absolute right-3 top-3 h-[0.22rem] w-0.5 rotate-45 rounded-full bg-current transition duration-300"
             ></div>
             {{-- Top Left --}}
             <div
-                class="absolute left-[0.75rem] top-[0.75rem] h-[0.22rem] w-0.5 rotate-[-45deg] rounded-full bg-current transition duration-300"
+                class="absolute left-3 top-3 h-[0.22rem] w-0.5 -rotate-45 rounded-full bg-current transition duration-300"
             ></div>
 
             {{-- Bottom Right --}}
             <div
-                class="absolute bottom-[0.75rem] right-[0.75rem] h-[0.22rem] w-0.5 rotate-[-45deg] rounded-full bg-current transition duration-300"
+                class="absolute bottom-3 right-3 h-[0.22rem] w-0.5 -rotate-45 rounded-full bg-current transition duration-300"
             ></div>
             {{-- Bottom Left --}}
             <div
-                class="absolute bottom-[0.75rem] left-[0.75rem] h-[0.22rem] w-0.5 rotate-[45deg] rounded-full bg-current transition duration-300"
+                class="absolute bottom-3 left-3 h-[0.22rem] w-0.5 rotate-45 rounded-full bg-current transition duration-300"
             ></div>
         </div>
     </div>

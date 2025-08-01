@@ -1,5 +1,5 @@
 <div
-    class="group relative w-full overflow-hidden rounded-xl transition-all delay-100 duration-500 ease-out md:max-w-[13rem] lg:focus-within:w-60 lg:hover:w-60"
+    class="group relative w-full overflow-hidden rounded-xl transition-all delay-100 duration-500 ease-out md:max-w-52 lg:focus-within:w-60 lg:hover:w-60"
     :class="{
         'lg:w-11': !$wire.search,
         'lg:w-60': $wire.search,
@@ -39,7 +39,7 @@
         width="20"
         height="20"
         viewBox="0 0 256 256"
-        class="absolute left-3 top-[0.75rem] text-[#9095AE] transition duration-300 dark:text-[#ABB0DD]"
+        class="absolute left-3 top-3 text-[#9095AE] transition duration-300 dark:text-[#ABB0DD]"
     >
         <path
             fill="currentColor"

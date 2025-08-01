@@ -1,9 +1,9 @@
 <footer class="relative z-10 mt-40 text-slate-600 dark:text-[#545D82]">
     <div
-        class="absolute -bottom-1/2 right-1/2 -z-10 h-[30rem] w-[50rem] translate-x-1/2 rounded-full bg-gradient-to-r from-pink-300 to-cyan-300 opacity-10 blur-[100px] dark:from-pink-600 dark:to-cyan-600"
+        class="absolute -bottom-1/2 right-1/2 -z-10 h-120 w-200 translate-x-1/2 rounded-full bg-linear-to-r from-pink-300 to-cyan-300 opacity-10 blur-[100px] dark:from-pink-600 dark:to-cyan-600"
     ></div>
     <div class="grid place-items-center pb-5 pt-20 sm:pt-10">
-        <div class="flex w-full max-w-[22rem] items-center gap-2">
+        <div class="flex w-full max-w-88 items-center gap-2">
             <div
                 class="h-px w-full bg-current opacity-20 dark:opacity-30"
             ></div>
@@ -27,7 +27,7 @@
             <div class="text-left">
                 <div
                     href="https://zahirnia.com"
-                    class="bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-xl font-extrabold text-transparent transition duration-300 will-change-transform group-hover:translate-x-1 dark:from-pink-300 dark:to-cyan-300"
+                    class="bg-linear-to-r from-pink-400 to-cyan-400 bg-clip-text text-xl font-extrabold text-transparent transition duration-300 will-change-transform group-hover:translate-x-1 dark:from-pink-300 dark:to-cyan-300"
                 >
                     Hassan Zahirnia
                 </div>
@@ -92,7 +92,7 @@
             </div>
         </div>
         <div
-            class="mt-6 h-px w-full max-w-[22rem] bg-current opacity-20 dark:opacity-30"
+            class="mt-6 h-px w-full max-w-88 bg-current opacity-20 dark:opacity-30"
         ></div>
         <div class="pt-20 text-center text-xs">
             <div>

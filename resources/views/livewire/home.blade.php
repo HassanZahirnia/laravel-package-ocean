@@ -3,7 +3,7 @@
 >
     <x-nav.bar />
     <div
-        class="relative z-10 mx-auto w-full max-w-screen-xl"
+        class="relative z-10 mx-auto w-full max-w-(--breakpoint-xl)"
         x-data="{
             init() {
                 gsap.set('.gsap-background-blur, .gsap-background-blur-opacity-70', {

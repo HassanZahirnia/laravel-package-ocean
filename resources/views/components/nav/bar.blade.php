@@ -1,4 +1,4 @@
-<nav class="relative z-50 mx-auto w-full max-w-screen-xl">
+<nav class="relative z-50 mx-auto w-full max-w-(--breakpoint-xl)">
     <header
         class="relative flex items-center justify-between gap-5 px-5 pb-14 pt-9 min-[850px]:py-10"
     >
