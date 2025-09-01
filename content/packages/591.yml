@@ -6,7 +6,7 @@ github: 'https://github.com/Blaspsoft/blasp'
 author: blaspsoft
 composer: blaspsoft/blasp
 npm: null
-stars: 250
+stars: 253
 keywords: {  }
 first_release_at: '2024-10-19 19:35:45'
 latest_release_at: '2025-02-27 21:57:21'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-11-06T09:03:03+00:00
-updated_at: 2025-08-01T11:29:58+00:00
+updated_at: 2025-09-01T10:04:07+00:00

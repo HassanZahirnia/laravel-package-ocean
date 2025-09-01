@@ -6,13 +6,13 @@ github: 'https://github.com/f9webltd/laravel-api-response-helpers'
 author: f9webltd
 composer: f9webltd/laravel-api-response-helpers
 npm: null
-stars: 632
+stars: 636
 keywords: {  }
 first_release_at: '2021-09-02 13:37:07'
-latest_release_at: '2025-02-15 10:57:04'
+latest_release_at: '2025-08-31 07:47:07'
 laravel_dependency_versions:
     - ^8.12|^9.0|^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-08-01T11:05:51+00:00
+updated_at: 2025-09-01T09:40:08+00:00

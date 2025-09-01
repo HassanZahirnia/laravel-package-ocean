@@ -6,7 +6,7 @@ github: 'https://github.com/Laragear/TwoFactor'
 author: laragear
 composer: laragear/two-factor
 npm: null
-stars: 307
+stars: 311
 keywords: {  }
 first_release_at: '2022-02-16 04:07:25'
 latest_release_at: '2025-02-16 19:29:26'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-10-04T09:14:13+00:00
-updated_at: 2025-08-01T11:27:05+00:00
+updated_at: 2025-09-01T10:00:55+00:00

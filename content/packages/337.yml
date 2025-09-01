@@ -6,13 +6,13 @@ github: 'https://github.com/spatie/laravel-csp'
 author: spatie
 composer: spatie/laravel-csp
 npm: null
-stars: 803
+stars: 812
 keywords: {  }
 first_release_at: '2018-02-12 15:24:19'
-latest_release_at: '2025-06-23 13:39:38'
+latest_release_at: '2025-08-25 07:38:42'
 laravel_dependency_versions:
     - ^11.36.1|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-13T11:10:07+00:00
-updated_at: 2025-08-01T11:20:45+00:00
+updated_at: 2025-09-01T09:54:00+00:00

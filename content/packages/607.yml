@@ -6,7 +6,7 @@ github: 'https://github.com/capevace/laravel-introspect'
 author: mateffy
 composer: mateffy/laravel-introspect
 npm: null
-stars: 132
+stars: 150
 keywords:
     - Introspection
     - 'Static Analysis'
@@ -21,4 +21,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-07-01T10:42:23+00:00
-updated_at: 2025-08-01T12:14:42+00:00
+updated_at: 2025-09-01T10:04:44+00:00

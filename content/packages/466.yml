@@ -6,7 +6,7 @@ github: 'https://github.com/stefanzweifel/laravel-backup-restore'
 author: wnx
 composer: wnx/laravel-backup-restore
 npm: null
-stars: 189
+stars: 191
 keywords: {  }
 first_release_at: '2023-03-10 16:02:57'
 latest_release_at: '2025-05-14 20:09:05'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-16T13:03:48+00:00
-updated_at: 2025-08-01T11:25:25+00:00
+updated_at: 2025-09-01T09:59:09+00:00

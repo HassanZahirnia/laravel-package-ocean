@@ -6,7 +6,7 @@ github: 'https://github.com/brandymedia/turbine-ui-core'
 author: brandymedia
 composer: brandymedia/turbine-ui-core
 npm: null
-stars: 82
+stars: 81
 keywords: {  }
 first_release_at: '2023-11-06 14:52:36'
 latest_release_at: '2025-04-24 19:12:01'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-11-28T17:44:59+00:00
-updated_at: 2025-08-01T11:27:40+00:00
+updated_at: 2025-09-01T10:01:43+00:00

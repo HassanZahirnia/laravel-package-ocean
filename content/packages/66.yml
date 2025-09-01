@@ -6,14 +6,14 @@ github: 'https://github.com/ksassnowski/venture'
 author: sassnowski
 composer: sassnowski/venture
 npm: null
-stars: 817
+stars: 818
 keywords:
     - directed-acyclic-graph
 first_release_at: '2020-10-10 06:12:55'
-latest_release_at: '2024-03-25 08:53:45'
+latest_release_at: '2025-08-31 00:13:23'
 laravel_dependency_versions:
-    - '^10.0 || ^11.0'
+    - '^11.0 || ^12.0'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-08-01T11:08:51+00:00
+updated_at: 2025-09-01T09:42:55+00:00

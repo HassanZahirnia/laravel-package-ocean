@@ -6,7 +6,7 @@ github: 'https://github.com/omaralalwi/Gpdf'
 author: omaralalwi
 composer: omaralalwi/gpdf
 npm: null
-stars: 126
+stars: 131
 keywords: {  }
 first_release_at: '2024-05-26 17:36:13'
 latest_release_at: '2025-03-14 02:53:36'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2025-08-01T12:33:13+00:00
-updated_at: 2025-08-01T12:33:13+00:00
+updated_at: 2025-09-01T10:04:56+00:00

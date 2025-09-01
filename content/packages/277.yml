@@ -6,7 +6,7 @@ github: 'https://github.com/mewebstudio/purifier'
 author: mews
 composer: mews/purifier
 npm: null
-stars: 1938
+stars: 1944
 keywords: {  }
 first_release_at: '2013-03-22 15:15:04'
 latest_release_at: '2025-02-24 16:00:29'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-08-01T11:18:04+00:00
+updated_at: 2025-09-01T09:51:40+00:00
