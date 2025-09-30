@@ -6,7 +6,7 @@ github: 'https://github.com/salahhusa9/laravel-updater'
 author: salahhusa9
 composer: salahhusa9/laravel-updater
 npm: null
-stars: 215
+stars: 214
 keywords: {  }
 first_release_at: '2023-10-18 10:13:07'
 latest_release_at: '2025-04-01 16:43:47'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-11-24T20:32:27+00:00
-updated_at: 2025-09-01T10:01:41+00:00
+updated_at: 2025-09-30T18:45:44+00:00

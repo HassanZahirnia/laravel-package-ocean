@@ -6,7 +6,7 @@ github: 'https://github.com/thomasjohnkane/snooze'
 author: thomasjohnkane
 composer: thomasjohnkane/snooze
 npm: null
-stars: 902
+stars: 905
 keywords: {  }
 first_release_at: '2019-09-24 22:15:51'
 latest_release_at: '2025-04-09 22:57:39'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-06T20:43:24+00:00
-updated_at: 2025-09-01T09:55:49+00:00
+updated_at: 2025-09-30T18:39:39+00:00

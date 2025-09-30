@@ -6,7 +6,7 @@ github: 'https://github.com/chinleung/laravel-multilingual-routes'
 author: chinleung
 composer: chinleung/laravel-multilingual-routes
 npm: null
-stars: 428
+stars: 429
 keywords: {  }
 first_release_at: '2019-07-30 12:10:37'
 latest_release_at: '2025-07-09 20:08:21'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T11:57:55+00:00
-updated_at: 2025-09-01T09:56:55+00:00
+updated_at: 2025-09-30T18:40:53+00:00

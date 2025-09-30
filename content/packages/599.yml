@@ -6,7 +6,7 @@ github: 'https://github.com/cerbero90/lazy-json-pages'
 author: cerbero
 composer: cerbero/lazy-json-pages
 npm: null
-stars: 193
+stars: 195
 keywords: {  }
 first_release_at: '2021-07-27 06:46:41'
 latest_release_at: '2024-09-13 00:53:12'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: php-package
 paid_integration: false
 created_at: 2024-11-18T10:28:42+00:00
-updated_at: 2025-09-01T10:04:26+00:00
+updated_at: 2025-09-30T18:48:35+00:00

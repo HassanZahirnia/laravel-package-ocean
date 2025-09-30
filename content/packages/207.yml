@@ -6,7 +6,7 @@ github: 'https://github.com/mckenziearts/laravel-notify'
 author: mckenziearts
 composer: mckenziearts/laravel-notify
 npm: null
-stars: 1693
+stars: 1690
 keywords:
     - toast
     - 'flash messages'
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-09-01T09:49:03+00:00
+updated_at: 2025-09-30T18:32:30+00:00

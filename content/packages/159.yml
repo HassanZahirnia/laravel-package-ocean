@@ -6,7 +6,7 @@ github: 'https://github.com/stefanzweifel/laravel-stats'
 author: wnx
 composer: wnx/laravel-stats
 npm: null
-stars: 1743
+stars: 1741
 keywords: {  }
 first_release_at: '2017-09-26 19:40:02'
 latest_release_at: '2025-08-21 19:04:48'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-09-01T09:46:43+00:00
+updated_at: 2025-09-30T18:30:24+00:00

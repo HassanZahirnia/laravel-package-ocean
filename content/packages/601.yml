@@ -6,7 +6,7 @@ github: 'https://github.com/waadmawlood/laravel-model-metadata'
 author: waad
 composer: waad/laravel-model-metadata
 npm: null
-stars: 70
+stars: 71
 keywords: {  }
 first_release_at: '2025-01-03 21:38:00'
 latest_release_at: '2025-04-05 10:22:09'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-02-15T12:10:07+00:00
-updated_at: 2025-09-01T10:04:30+00:00
+updated_at: 2025-09-30T18:48:39+00:00

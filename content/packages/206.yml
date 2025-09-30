@@ -6,12 +6,12 @@ github: 'https://github.com/laravel/echo'
 author: laravel
 composer: null
 npm: laravel-echo
-stars: 1281
+stars: 1286
 keywords: {  }
 first_release_at: '2016-04-30 01:29:09'
-latest_release_at: '2025-08-07 17:43:38'
+latest_release_at: '2025-09-26 16:58:04'
 laravel_dependency_versions: {  }
 package_type: npm-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-09-01T09:49:01+00:00
+updated_at: 2025-09-30T18:32:28+00:00

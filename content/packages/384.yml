@@ -6,12 +6,12 @@ github: 'https://github.com/azjezz/psl'
 author: azjezz
 composer: azjezz/psl
 npm: null
-stars: 1303
+stars: 1326
 keywords: {  }
 first_release_at: '2019-12-24 14:01:05'
-latest_release_at: '2025-03-03 00:07:00'
+latest_release_at: '2025-09-15 18:04:07'
 laravel_dependency_versions: {  }
 package_type: php-package
 paid_integration: false
 created_at: 2023-06-06T21:13:38+00:00
-updated_at: 2025-09-01T09:55:55+00:00
+updated_at: 2025-09-30T18:39:45+00:00

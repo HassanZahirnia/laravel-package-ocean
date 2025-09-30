@@ -6,7 +6,7 @@ github: 'https://github.com/izniburak/laravel-auto-routes'
 author: izniburak
 composer: izniburak/laravel-auto-routes
 npm: null
-stars: 236
+stars: 235
 keywords: {  }
 first_release_at: '2021-05-05 23:16:01'
 latest_release_at: '2024-08-08 18:13:53'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-08-23T15:41:45+00:00
-updated_at: 2025-09-01T10:03:31+00:00
+updated_at: 2025-09-30T18:47:37+00:00

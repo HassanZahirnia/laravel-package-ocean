@@ -6,7 +6,7 @@ github: 'https://github.com/ringlesoft/laravel-process-approval'
 author: ringlesoft
 composer: ringlesoft/laravel-process-approval
 npm: null
-stars: 493
+stars: 501
 keywords: {  }
 first_release_at: '2023-09-28 08:57:10'
 latest_release_at: '2025-08-11 05:56:30'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-02-18T12:32:37+00:00
-updated_at: 2025-09-01T10:04:39+00:00
+updated_at: 2025-09-30T18:48:51+00:00

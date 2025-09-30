@@ -6,7 +6,7 @@ github: 'https://github.com/nunomaduro/laravel-mojito'
 author: nunomaduro
 composer: nunomaduro/laravel-mojito
 npm: null
-stars: 372
+stars: 371
 keywords: {  }
 first_release_at: '2020-02-16 16:17:52'
 latest_release_at: '2022-01-13 14:37:07'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:18:10+00:00
-updated_at: 2025-09-01T09:57:13+00:00
+updated_at: 2025-09-30T18:41:12+00:00

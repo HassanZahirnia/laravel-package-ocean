@@ -6,7 +6,7 @@ github: 'https://github.com/recca0120/laravel-erd'
 author: recca0120
 composer: recca0120/laravel-erd
 npm: null
-stars: 346
+stars: 347
 keywords: {  }
 first_release_at: '2023-01-18 07:17:55'
 latest_release_at: '2025-03-02 04:40:10'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-07T12:36:53+00:00
-updated_at: 2025-09-01T10:03:45+00:00
+updated_at: 2025-09-30T18:47:52+00:00

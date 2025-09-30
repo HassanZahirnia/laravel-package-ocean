@@ -6,7 +6,7 @@ github: 'https://github.com/wire-elements/wire-spy'
 author: wire-elements
 composer: wire-elements/wire-spy
 npm: null
-stars: 453
+stars: 456
 keywords: {  }
 first_release_at: '2024-10-09 09:45:53'
 latest_release_at: '2025-01-03 12:44:33'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-10-10T11:25:07+00:00
-updated_at: 2025-09-01T10:03:54+00:00
+updated_at: 2025-09-30T18:48:00+00:00

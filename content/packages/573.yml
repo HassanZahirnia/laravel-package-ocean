@@ -6,7 +6,7 @@ github: 'https://github.com/Safemood/laravel-workflow'
 author: safemood
 composer: safemood/laravel-workflow
 npm: null
-stars: 196
+stars: 198
 keywords: {  }
 first_release_at: '2024-07-17 03:31:14'
 latest_release_at: '2024-11-17 18:29:16'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-08-23T15:33:16+00:00
-updated_at: 2025-09-01T10:03:24+00:00
+updated_at: 2025-09-30T18:47:30+00:00

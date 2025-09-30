@@ -6,7 +6,7 @@ github: 'https://github.com/ash-jc-allen/laravel-exchange-rates'
 author: ashallendesign
 composer: ashallendesign/laravel-exchange-rates
 npm: null
-stars: 479
+stars: 478
 keywords: {  }
 first_release_at: '2019-11-25 19:15:47'
 latest_release_at: '2025-02-23 23:26:51'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2023-06-07T12:24:55+00:00
-updated_at: 2025-09-01T09:57:18+00:00
+updated_at: 2025-09-30T18:41:17+00:00

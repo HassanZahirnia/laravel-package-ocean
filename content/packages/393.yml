@@ -6,13 +6,13 @@ github: 'https://github.com/glorand/laravel-model-settings'
 author: glorand
 composer: glorand/laravel-model-settings
 npm: null
-stars: 883
+stars: 885
 keywords: {  }
 first_release_at: '2019-01-08 14:24:10'
-latest_release_at: '2025-06-18 09:32:13'
+latest_release_at: '2025-09-14 18:58:56'
 laravel_dependency_versions:
     - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T10:52:30+00:00
-updated_at: 2025-09-01T09:56:17+00:00
+updated_at: 2025-09-30T18:40:08+00:00

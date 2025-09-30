@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/pulse'
 author: laravel
 composer: laravel/pulse
 npm: null
-stars: 1605
+stars: 1610
 keywords: {  }
 first_release_at: '2023-12-01 16:57:32'
 latest_release_at: '2025-07-18 15:54:11'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-08-01T13:01:09+00:00
-updated_at: 2025-09-01T10:05:10+00:00
+updated_at: 2025-09-30T18:49:22+00:00

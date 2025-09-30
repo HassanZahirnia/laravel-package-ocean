@@ -6,7 +6,7 @@ github: 'https://github.com/rawilk/laravel-printing'
 author: rawilk
 composer: rawilk/laravel-printing
 npm: null
-stars: 525
+stars: 539
 keywords: {  }
 first_release_at: '2020-06-27 02:29:14'
 latest_release_at: '2025-06-09 13:38:46'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-09-01T09:52:02+00:00
+updated_at: 2025-09-30T18:35:37+00:00

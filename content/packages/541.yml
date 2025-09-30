@@ -6,7 +6,7 @@ github: 'https://github.com/theriddleofenigma/laravel-google-chat-log'
 author: theriddleofenigma
 composer: theriddleofenigma/laravel-google-chat-log
 npm: null
-stars: 23
+stars: 24
 keywords: {  }
 first_release_at: '2021-02-21 07:53:35'
 latest_release_at: '2025-05-25 18:24:09'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-01-27T11:39:00+00:00
-updated_at: 2025-09-01T10:02:04+00:00
+updated_at: 2025-09-30T18:46:09+00:00

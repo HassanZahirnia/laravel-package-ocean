@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-site-search'
 author: spatie
 composer: spatie/laravel-site-search
 npm: null
-stars: 291
+stars: 292
 keywords: {  }
 first_release_at: '2021-09-17 22:46:41'
 latest_release_at: '2025-06-20 21:08:08'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-09-01T09:52:47+00:00
+updated_at: 2025-09-30T18:36:27+00:00
