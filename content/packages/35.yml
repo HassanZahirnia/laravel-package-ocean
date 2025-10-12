@@ -6,16 +6,16 @@ github: 'https://github.com/santigarcor/laratrust'
 author: santigarcor
 composer: santigarcor/laratrust
 npm: null
-stars: 2265
+stars: 2266
 keywords:
     - gate
     - policies
     - guard
 first_release_at: '2016-05-26 13:22:20'
-latest_release_at: '2025-06-02 14:29:05'
+latest_release_at: '2025-10-08 21:42:13'
 laravel_dependency_versions:
     - ^10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-09-30T18:23:53+00:00
+updated_at: 2025-10-12T10:19:32+00:00

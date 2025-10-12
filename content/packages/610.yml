@@ -6,7 +6,7 @@ github: 'https://github.com/MaestroError/LarAgent'
 author: maestroerror
 composer: maestroerror/laragent
 npm: null
-stars: 477
+stars: 486
 keywords: {  }
 first_release_at: '2025-02-15 18:44:50'
 latest_release_at: '2025-09-01 13:39:13'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: true
 created_at: 2025-08-01T12:27:54+00:00
-updated_at: 2025-09-30T18:49:05+00:00
+updated_at: 2025-10-12T10:43:13+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/envoy'
 author: laravel
 composer: laravel/envoy
 npm: null
-stars: 1607
+stars: 1609
 keywords: {  }
 first_release_at: '2014-03-01 02:21:50'
 latest_release_at: '2025-01-28 15:47:18'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-09-30T18:30:32+00:00
+updated_at: 2025-10-12T10:25:03+00:00

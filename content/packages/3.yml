@@ -6,7 +6,7 @@ github: 'https://github.com/DarkaOnLine/L5-Swagger'
 author: darkaonline
 composer: darkaonline/l5-swagger
 npm: null
-stars: 2832
+stars: 2834
 keywords:
     - swagger-php
     - swagger-ui
@@ -17,4 +17,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-09-30T18:21:55+00:00
+updated_at: 2025-10-12T10:18:04+00:00

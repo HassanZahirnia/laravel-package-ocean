@@ -6,7 +6,7 @@ github: 'https://github.com/soloterm/solo'
 author: soloterm
 composer: soloterm/solo
 npm: null
-stars: 1187
+stars: 1188
 keywords: {  }
 first_release_at: '2025-01-30 23:55:12'
 latest_release_at: '2025-03-21 19:37:43'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2024-11-18T10:22:48+00:00
-updated_at: 2025-09-30T18:48:30+00:00
+updated_at: 2025-10-12T10:42:41+00:00
