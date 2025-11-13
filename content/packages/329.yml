@@ -6,7 +6,7 @@ github: 'https://github.com/scrumble-nl/laravel-model-ts-type'
 author: scrumble-nl
 composer: scrumble-nl/laravel-model-ts-type
 npm: null
-stars: 68
+stars: 69
 keywords: {  }
 first_release_at: '2020-09-28 16:07:46'
 latest_release_at: '2025-03-01 06:06:03'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-12T13:52:40+00:00
-updated_at: 2025-10-12T10:31:47+00:00
+updated_at: 2025-11-13T11:11:25+00:00

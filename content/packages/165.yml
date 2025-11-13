@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-backup'
 author: spatie
 composer: spatie/laravel-backup
 npm: null
-stars: 5885
+stars: 5900
 keywords:
     - files
     - encrypt
@@ -15,10 +15,10 @@ keywords:
     - copy
     - remote
 first_release_at: '2015-02-17 16:21:56'
-latest_release_at: '2025-07-25 07:51:20'
+latest_release_at: '2025-11-05 11:25:01'
 laravel_dependency_versions:
     - ^10.10.0|^11.0|^12.0
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:25:09+00:00
+updated_at: 2025-11-13T11:04:52+00:00

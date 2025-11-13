@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-ciphersweet'
 author: spatie
 composer: spatie/laravel-ciphersweet
 npm: null
-stars: 395
+stars: 399
 keywords: {  }
 first_release_at: '2022-06-29 12:43:13'
 latest_release_at: '2025-09-18 10:35:25'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:27:32+00:00
+updated_at: 2025-11-13T11:07:13+00:00

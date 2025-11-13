@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-responsecache'
 author: spatie
 composer: spatie/laravel-responsecache
 npm: null
-stars: 2677
+stars: 2684
 keywords:
     - optimize
 first_release_at: '2015-07-16 14:28:16'
@@ -16,4 +16,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:30:41+00:00
+updated_at: 2025-11-13T11:10:18+00:00

@@ -6,7 +6,7 @@ github: 'https://github.com/deepseek-php/deepseek-laravel'
 author: deepseek-php
 composer: deepseek-php/deepseek-laravel
 npm: null
-stars: 390
+stars: 393
 keywords: {  }
 first_release_at: '2025-01-02 15:59:18'
 latest_release_at: '2025-08-14 17:10:45'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2025-02-15T12:14:51+00:00
-updated_at: 2025-10-12T10:42:55+00:00
+updated_at: 2025-11-13T11:22:24+00:00

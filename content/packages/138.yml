@@ -10,10 +10,10 @@ stars: 1493
 keywords:
     - performance
 first_release_at: '2020-04-06 02:19:28'
-latest_release_at: '2025-10-09 17:58:09'
+latest_release_at: '2025-11-08 22:44:20'
 laravel_dependency_versions:
     - '5.*|6.*|7.*|8.*|9.*|10.*|11.*|12.*'
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:24:13+00:00
+updated_at: 2025-11-13T11:03:50+00:00

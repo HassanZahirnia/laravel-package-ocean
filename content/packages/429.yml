@@ -6,7 +6,7 @@ github: 'https://github.com/sunspikes/clamav-validator'
 author: sunspikes
 composer: sunspikes/clamav-validator
 npm: null
-stars: 349
+stars: 353
 keywords: {  }
 first_release_at: '2014-12-04 13:58:35'
 latest_release_at: '2025-10-04 17:31:12'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-06-07T12:37:59+00:00
-updated_at: 2025-10-12T10:35:53+00:00
+updated_at: 2025-11-13T11:15:27+00:00

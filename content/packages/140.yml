@@ -6,7 +6,7 @@ github: 'https://github.com/laravel/homestead'
 author: laravel
 composer: null
 npm: null
-stars: 3872
+stars: 3913
 keywords: {  }
 first_release_at: '2014-11-17 03:16:34'
 latest_release_at: '2023-03-10 14:04:45'
@@ -14,4 +14,4 @@ laravel_dependency_versions: {  }
 package_type: all-operating-systems-app
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:24:17+00:00
+updated_at: 2025-11-13T11:03:53+00:00

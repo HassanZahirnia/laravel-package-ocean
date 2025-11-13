@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-model-status'
 author: spatie
 composer: spatie/laravel-model-status
 npm: null
-stars: 1025
+stars: 1030
 keywords: {  }
 first_release_at: '2018-02-06 15:07:21'
 latest_release_at: '2025-02-21 13:20:00'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:23:12+00:00
+updated_at: 2025-11-13T11:02:50+00:00

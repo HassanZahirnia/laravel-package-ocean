@@ -6,7 +6,7 @@ github: 'https://github.com/lukeraymonddowning/honey'
 author: lukeraymonddowning
 composer: lukeraymonddowning/honey
 npm: null
-stars: 415
+stars: 413
 keywords: {  }
 first_release_at: '2020-11-27 16:45:11'
 latest_release_at: '2024-04-29 14:28:19'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:27:30+00:00
+updated_at: 2025-11-13T11:07:11+00:00

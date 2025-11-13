@@ -6,7 +6,7 @@ github: 'https://github.com/qcod/laravel-app-settings'
 author: qcod
 composer: qcod/laravel-app-settings
 npm: null
-stars: 341
+stars: 342
 keywords: {  }
 first_release_at: '2018-10-04 17:09:35'
 latest_release_at: '2025-05-15 03:58:59'
@@ -15,4 +15,4 @@ laravel_dependency_versions:
 package_type: laravel-package
 paid_integration: false
 created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-10-12T10:29:57+00:00
+updated_at: 2025-11-13T11:09:35+00:00
