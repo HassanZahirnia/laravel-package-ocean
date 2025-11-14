@@ -3,6 +3,7 @@
 namespace App\Filament\Resources;
 
 use App\Filament\Resources\PackageResource\Pages;
+use App\Models\Category;
 use App\Models\Package;
 use Closure;
 use Filament\Forms;
@@ -228,6 +229,66 @@ class PackageResource extends Resource
                     ->description('This section is automatically filled when you click the "Fetch All Data" button.')
                     ->columns(3)
                     ->headerActions([
+                        Action::make('Generate With Ai')
+                            ->icon('heroicon-m-sparkles')
+                            ->color('primary')
+                            ->action(function (Get $get, Set $set) {
+                                $githubUrl = $get('github');
+
+                                if (blank($githubUrl)) {
+                                    return;
+                                }
+
+                                // 1) Fetch metadata & AI suggestion
+                                $metadata = getGithubPackageMetadata($githubUrl);
+                                $ai = aiGeneratePackageFormFields($metadata);
+
+                                // 2) Name
+                                if (! empty($ai['name'])) {
+                                    $set('name', $ai['name']);
+                                }
+
+                                // 3) Description
+                                if (! empty($ai['description'])) {
+                                    $set('description', $ai['description']);
+                                }
+
+                                // 4) Composer + author (composer-based packages)
+                                if (! empty($ai['composer'])) {
+                                    $set('composer', $ai['composer']);
+                                    $set('author', str($ai['composer'])->before('/')->trim());
+                                }
+
+                                // 5) Category (string -> category_id)
+                                if (! empty($ai['category'])) {
+                                    $categoryId = Category::query()
+                                        ->where('name', $ai['category'])
+                                        ->value('id');
+
+                                    if ($categoryId) {
+                                        $set('category_id', $categoryId);
+                                    }
+                                }
+
+                                // 6) Package type
+                                if (! empty($ai['package_type'])) {
+                                    $set('package_type', $ai['package_type']);
+                                }
+
+                                // 7) NPM package name
+                                if (! empty($ai['npm'])) {
+                                    $set('npm', $ai['npm']);
+                                }
+
+                                // 8) Author fallback for non-composer packages
+                                // If author is still blank here, use the GitHub owner (e.g. "xiCO2k").
+                                $currentAuthor = $get('author');
+
+                                if (blank($currentAuthor) && ! empty($metadata['owner'])) {
+                                    $set('author', $metadata['owner']);
+                                }
+                            }),
+
                         Action::make('Fetch All Data')
                             ->icon('heroicon-m-arrow-path')
                             ->color('success')
