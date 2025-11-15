@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Resources\Packages;
 
-use App\Filament\Resources\PackageResource\Pages\CreatePackage;
-use App\Filament\Resources\PackageResource\Pages\EditPackage;
-use App\Filament\Resources\PackageResource\Pages\ListPackages;
+use App\Filament\Resources\Packages\Pages\CreatePackage;
+use App\Filament\Resources\Packages\Pages\EditPackage;
+use App\Filament\Resources\Packages\Pages\ListPackages;
 use App\Models\Category;
 use App\Models\Package;
 use Closure;

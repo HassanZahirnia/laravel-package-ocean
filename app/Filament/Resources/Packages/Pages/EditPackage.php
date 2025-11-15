@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Filament\Resources\PackageResource\Pages;
+namespace App\Filament\Resources\Packages\Pages;
 
 use Filament\Actions\DeleteAction;
-use App\Filament\Resources\PackageResource;
+use App\Filament\Resources\Packages\PackageResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
