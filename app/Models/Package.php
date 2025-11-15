@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\OrbitArray;
 use Composer\Semver\Constraint\Constraint;
 use Composer\Semver\Constraint\ConstraintInterface;
 use Composer\Semver\Constraint\MultiConstraint;
@@ -24,8 +25,8 @@ class Package extends Model implements Feedable, Orbit
     use Orbital;
 
     protected $casts = [
-        'keywords' => 'array',
-        'laravel_dependency_versions' => 'array',
+        'keywords' => OrbitArray::class,
+        'laravel_dependency_versions' => OrbitArray::class,
         'paid_integration' => 'boolean',
     ];
 
@@ -46,10 +47,10 @@ class Package extends Model implements Feedable, Orbit
         $table->string('composer')->nullable()->unique();
         $table->string('npm')->nullable()->unique();
         $table->integer('stars');
-        $table->json('keywords');
+        $table->json('keywords')->nullable();
         $table->timestamp('first_release_at')->nullable();
         $table->timestamp('latest_release_at')->nullable();
-        $table->json('laravel_dependency_versions');
+        $table->json('laravel_dependency_versions')->nullable();
         $table->string('package_type');
         $table->boolean('paid_integration')->default(false);
     }
@@ -91,7 +92,7 @@ class Package extends Model implements Feedable, Orbit
         return isCompatibleWithLaravelActiveVersions($this->laravel_dependency_versions);
     }
 
-    public function minimumCompatibleLaravelVersion(): string
+    public function minimumCompatibleLaravelVersion(): ?string
     {
         $versionParser = new VersionParser;
         $lowestVersion = null;
