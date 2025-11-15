@@ -2,32 +2,43 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\PackageResource\Pages;
+use App\Filament\Resources\PackageResource\Pages\CreatePackage;
+use App\Filament\Resources\PackageResource\Pages\EditPackage;
+use App\Filament\Resources\PackageResource\Pages\ListPackages;
 use App\Models\Category;
 use App\Models\Package;
 use Closure;
-use Filament\Forms;
-use Filament\Forms\Components\Actions\Action;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Form;
-use Filament\Forms\Get;
-use Filament\Forms\Set;
+use Filament\Actions\Action;
+use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\EditAction;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TagsInput;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Toggle;
 use Filament\Resources\Resource;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Components\Utilities\Get;
+use Filament\Schemas\Components\Utilities\Set;
+use Filament\Schemas\Schema;
 use Filament\Support\Enums\FontWeight;
-use Filament\Tables;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 
 class PackageResource extends Resource
 {
     protected static ?string $model = Package::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function form(Schema $schema): Schema
     {
-        return $form
-            ->schema([
-                Forms\Components\TextInput::make('name')
+        return $schema
+            ->components([
+                TextInput::make('name')
                     ->prefixIcon('icon-name')
                     ->live(debounce: 500)
                     ->afterStateUpdated(fn (Set $set, ?string $state) => $set('name', str($state)->headline()))
@@ -56,7 +67,7 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
-                Forms\Components\TextInput::make('description')
+                TextInput::make('description')
                     ->prefixIcon('heroicon-o-chat-bubble-bottom-center-text')
                     ->live(debounce: 500)
                     ->afterStateUpdated(function (Set $set, ?string $state) {
@@ -90,13 +101,13 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
-                Forms\Components\Select::make('category_id')
+                Select::make('category_id')
                     ->prefixIcon('icon-category')
                     ->required()
                     ->searchable(['name'])
                     ->relationship(name: 'category', titleAttribute: 'name')
                     ->preload(),
-                Forms\Components\Select::make('package_type')
+                Select::make('package_type')
                     ->required()
                     ->live(debounce: 500)
                     ->options([
@@ -109,7 +120,7 @@ class PackageResource extends Resource
                         'ide-extension' => 'IDE Extension',
                     ])
                     ->default('laravel-package'),
-                Forms\Components\TagsInput::make('keywords')
+                TagsInput::make('keywords')
                     ->prefixIcon('heroicon-o-tag')
                     ->nullable()
                     ->nestedRecursiveRules([
@@ -129,7 +140,7 @@ class PackageResource extends Resource
                             }
                         },
                     ]),
-                Forms\Components\TextInput::make('composer')
+                TextInput::make('composer')
                     ->prefixIcon('icon-composer')
                     ->autocomplete(false)
                     ->live(debounce: 500)
@@ -157,7 +168,7 @@ class PackageResource extends Resource
                             }
                         },
                     ]),
-                Forms\Components\TextInput::make('npm')
+                TextInput::make('npm')
                     ->prefixIcon('icon-npm')
                     ->autocomplete(false)
                     ->live(debounce: 500)
@@ -182,7 +193,7 @@ class PackageResource extends Resource
                             }
                         },
                     ]),
-                Forms\Components\TextInput::make('author')
+                TextInput::make('author')
                     ->prefixIcon('icon-programmer')
                     ->autocomplete(false)
                     ->required()
@@ -197,7 +208,7 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
-                Forms\Components\TextInput::make('github')
+                TextInput::make('github')
                     ->prefixIcon('icon-github')
                     ->autocomplete(false)
                     ->columnSpan(2)
@@ -221,7 +232,7 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
-                Forms\Components\Toggle::make('paid_integration')
+                Toggle::make('paid_integration')
                     ->inline(false)
                     ->onIcon('heroicon-o-currency-dollar')
                     ->required(),
@@ -311,7 +322,7 @@ class PackageResource extends Resource
                             }),
                     ])
                     ->schema([
-                        Forms\Components\TagsInput::make('laravel_dependency_versions')
+                        TagsInput::make('laravel_dependency_versions')
                             ->prefixIcon('icon-laravel')
                             ->columnSpanFull()
                             ->nestedRecursiveRules([
@@ -341,15 +352,15 @@ class PackageResource extends Resource
 
                                 },
                             ]),
-                        Forms\Components\TextInput::make('stars')
+                        TextInput::make('stars')
                             ->prefixIcon('heroicon-o-star')
                             ->autocomplete(false)
                             ->required()
                             ->minValue(0)
                             ->default(0)
                             ->numeric(),
-                        Forms\Components\DateTimePicker::make('first_release_at'),
-                        Forms\Components\DateTimePicker::make('latest_release_at'),
+                        DateTimePicker::make('first_release_at'),
+                        DateTimePicker::make('latest_release_at'),
                     ]),
             ])->columns(3);
     }
@@ -358,43 +369,43 @@ class PackageResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')
+                TextColumn::make('name')
                     ->searchable()
                     ->weight(FontWeight::Bold)
                     ->description(fn (Package $record) => $record->getAuthorAndNameFromGithub()),
-                Tables\Columns\TextColumn::make('author')
+                TextColumn::make('author')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('category.name')
+                TextColumn::make('category.name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('composer')
+                TextColumn::make('composer')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('npm')
+                TextColumn::make('npm')
                     ->searchable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('stars')
+                TextColumn::make('stars')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('first_release_at')
+                TextColumn::make('first_release_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('latest_release_at')
+                TextColumn::make('latest_release_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('package_type')
+                TextColumn::make('package_type')
                     ->searchable(isIndividual: true)
                     ->sortable()
                     ->formatStateUsing(fn (string $state): string => str($state)->headline()),
-                Tables\Columns\IconColumn::make('paid_integration')
+                IconColumn::make('paid_integration')
                     ->boolean()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('created_at')
+                TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
+                TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
@@ -402,13 +413,13 @@ class PackageResource extends Resource
             ->filters([
                 //
             ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+            ->recordActions([
+                EditAction::make(),
+                DeleteAction::make(),
             ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+            ->toolbarActions([
+                BulkActionGroup::make([
+                    DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -423,9 +434,9 @@ class PackageResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListPackages::route('/'),
-            'create' => Pages\CreatePackage::route('/create'),
-            'edit' => Pages\EditPackage::route('/{record}/edit'),
+            'index' => ListPackages::route('/'),
+            'create' => CreatePackage::route('/create'),
+            'edit' => EditPackage::route('/{record}/edit'),
         ];
     }
 }

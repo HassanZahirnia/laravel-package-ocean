@@ -22,7 +22,7 @@ function isValidVersionConstraint($constraintString): bool
         Intervals::get($constraint);
 
         return true;
-    } catch (\Exception $e) {
+    } catch (Exception $e) {
         return false;
     }
 }
@@ -42,7 +42,7 @@ function fetchActiveLaravelVersions()
                 // If the primary source fails, try the fallback source
                 return fetchVersionsFromEndOfLife();
             }
-        } catch (\Exception $e) {
+        } catch (Exception $e) {
             // If there's an exception, try the fallback source
             Log::error('Error fetching active Laravel versions: '.$e->getMessage());
 
@@ -428,7 +428,7 @@ function getGithubPackageMetadata(string $githubUrl): array
 
             try {
                 $composerData = json_decode($body, true, 512, JSON_THROW_ON_ERROR);
-            } catch (\Throwable $e) {
+            } catch (Throwable $e) {
                 // Some setups may still return the "content" + base64; try that as a fallback
                 $json = $composerResponse->json();
 
@@ -436,7 +436,7 @@ function getGithubPackageMetadata(string $githubUrl): array
                     try {
                         $decoded = base64_decode($json['content'], true);
                         $composerData = json_decode($decoded, true, 512, JSON_THROW_ON_ERROR);
-                    } catch (\Throwable $ignored) {
+                    } catch (Throwable $ignored) {
                         $composerData = null;
                     }
                 }
@@ -649,7 +649,7 @@ PROMPT;
 
     try {
         $data = json_decode($jsonString, true, 512, JSON_THROW_ON_ERROR);
-    } catch (\Throwable $e) {
+    } catch (Throwable $e) {
         return [
             'name' => null,
             'description' => null,

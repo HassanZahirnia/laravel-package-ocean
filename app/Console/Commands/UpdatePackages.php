@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Exception;
 use App\Models\Package;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
@@ -45,7 +46,7 @@ class UpdatePackages extends Command
                     $package->updateReleaseDatesAndDependencies();
 
                     $package->touch();
-                } catch (\Exception $e) {
+                } catch (Exception $e) {
                     $this->error("Failed to update package {$package->name}: {$e->getMessage()}");
                     Log::error("Failed to update package {$package->name}", ['exception' => $e]);
 
