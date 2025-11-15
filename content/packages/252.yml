@@ -7,12 +7,11 @@ author: ashallendesign
 composer: ashallendesign/short-url
 npm: null
 stars: 1362
-keywords: {  }
+keywords: '[]'
 first_release_at: '2019-12-30 21:24:52'
 latest_release_at: '2025-10-17 19:17:32'
-laravel_dependency_versions:
-    - ^10.0|^11.0|^12.0
+laravel_dependency_versions: '["^10.0|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:08:28+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:26:39+00:00'

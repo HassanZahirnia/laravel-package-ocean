@@ -7,12 +7,11 @@ author: tomasvotruba
 composer: tomasvotruba/bladestan
 npm: null
 stars: 352
-keywords: {  }
+keywords: '[]'
 first_release_at: '2023-03-05 10:04:26'
 latest_release_at: '2025-04-30 12:55:55'
-laravel_dependency_versions:
-    - ^11.15|^12.0
+laravel_dependency_versions: '["^11.15|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:04:31+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:23:04+00:00'

@@ -7,12 +7,11 @@ author: tio
 composer: tio/laravel
 npm: null
 stars: 171
-keywords: {  }
+keywords: '[]'
 first_release_at: '2018-03-23 18:12:00'
 latest_release_at: '2023-04-13 09:53:38'
-laravel_dependency_versions:
-    - '>=5.5'
+laravel_dependency_versions: '[">=5.5"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:06:18+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:24:39+00:00'

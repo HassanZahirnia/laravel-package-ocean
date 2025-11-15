@@ -6,13 +6,12 @@ github: 'https://github.com/spatie/laravel-onboard'
 author: spatie
 composer: spatie/laravel-onboard
 npm: null
-stars: 772
-keywords: {  }
+stars: 775
+keywords: '[]'
 first_release_at: '2022-06-17 08:01:00'
 latest_release_at: '2025-03-21 08:27:17'
-laravel_dependency_versions:
-    - ^9.0|^10.0|^11.0|^12.0
+laravel_dependency_versions: '["^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:10:15+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:28:18+00:00'

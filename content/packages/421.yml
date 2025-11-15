@@ -7,12 +7,11 @@ author: axlon
 composer: axlon/laravel-postal-code-validation
 npm: null
 stars: 386
-keywords: {  }
+keywords: '[]'
 first_release_at: '2018-12-07 10:25:48'
-latest_release_at: '2025-02-25 18:12:41'
-laravel_dependency_versions:
-    - '^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0'
+latest_release_at: '2025-11-15 10:23:43'
+laravel_dependency_versions: '["^5.5 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-06-07T12:26:17+00:00
-updated_at: 2025-11-13T11:15:04+00:00
+paid_integration: 0
+created_at: '2023-06-07T12:26:17+00:00'
+updated_at: '2025-11-15T10:32:43+00:00'

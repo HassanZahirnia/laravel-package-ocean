@@ -7,11 +7,11 @@ author: skywarth
 composer: skywarth/chaotic-schedule
 npm: null
 stars: 123
-keywords: {  }
+keywords: '[]'
 first_release_at: '2023-08-26 20:43:32'
 latest_release_at: '2025-05-22 00:50:59'
-laravel_dependency_versions: {  }
+laravel_dependency_versions: '[]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2024-07-18T16:40:06+00:00
-updated_at: 2025-11-13T11:21:00+00:00
+paid_integration: 0
+created_at: '2024-07-18T16:40:06+00:00'
+updated_at: '2025-11-15T10:37:55+00:00'

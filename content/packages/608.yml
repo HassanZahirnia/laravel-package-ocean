@@ -7,16 +7,11 @@ author: mateffy
 composer: mateffy/laravel-codebase-mcp
 npm: null
 stars: 15
-keywords:
-    - Introspection
-    - 'Model Context Protocol'
-    - Analysis
-    - 'Artificial Intelligence'
+keywords: '["Introspection","Model Context Protocol","Analysis","Artificial Intelligence"]'
 first_release_at: '2025-05-22 15:54:04'
 latest_release_at: '2025-06-29 14:35:50'
-laravel_dependency_versions:
-    - ^10.0||^11.0||^12.0
+laravel_dependency_versions: '["^10.0||^11.0||^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2025-07-01T10:49:10+00:00
-updated_at: 2025-11-13T11:22:37+00:00
+paid_integration: 0
+created_at: '2025-07-01T10:49:10+00:00'
+updated_at: '2025-11-15T10:39:21+00:00'

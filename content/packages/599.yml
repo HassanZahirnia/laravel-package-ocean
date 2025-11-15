@@ -7,12 +7,11 @@ author: cerbero
 composer: cerbero/lazy-json-pages
 npm: null
 stars: 195
-keywords: {  }
+keywords: '[]'
 first_release_at: '2021-07-27 06:46:41'
 latest_release_at: '2024-09-13 00:53:12'
-laravel_dependency_versions:
-    - '>=8.12'
+laravel_dependency_versions: '[">=8.12"]'
 package_type: php-package
-paid_integration: false
-created_at: 2024-11-18T10:28:42+00:00
-updated_at: 2025-11-13T11:22:15+00:00
+paid_integration: 0
+created_at: '2024-11-18T10:28:42+00:00'
+updated_at: '2025-11-15T10:38:59+00:00'

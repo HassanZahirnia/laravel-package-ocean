@@ -6,15 +6,12 @@ github: 'https://github.com/spatie/laravel-health'
 author: spatie
 composer: spatie/laravel-health
 npm: null
-stars: 831
-keywords:
-    - monitor
-    - ssl
+stars: 832
+keywords: '["monitor","ssl"]'
 first_release_at: '2021-11-23 20:23:07'
 latest_release_at: '2025-10-10 08:08:20'
-laravel_dependency_versions:
-    - ^8.75|^9.0|^10.0|^11.0|^12.0
+laravel_dependency_versions: '["^8.75|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:04:57+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:23:21+00:00'

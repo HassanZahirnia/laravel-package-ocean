@@ -7,14 +7,11 @@ author: rap2hpoutre
 composer: rap2hpoutre/fast-excel
 npm: null
 stars: 2284
-keywords:
-    - xlsx
+keywords: '["xlsx"]'
 first_release_at: '2018-04-05 08:24:07'
 latest_release_at: '2025-02-18 12:50:31'
-laravel_dependency_versions:
-    - '^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0'
-    - '^6.20.12 || ^7.30.4 || ^8.24.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0'
+laravel_dependency_versions: '["^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0","^6.20.12 || ^7.30.4 || ^8.24.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:05:39+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:24:03+00:00'

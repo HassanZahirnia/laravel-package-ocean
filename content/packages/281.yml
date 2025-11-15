@@ -7,11 +7,11 @@ author: phlak
 composer: phlak/splat
 npm: null
 stars: 106
-keywords: {  }
+keywords: '[]'
 first_release_at: '2020-05-15 17:16:28'
 latest_release_at: '2024-12-06 03:10:15'
-laravel_dependency_versions: {  }
+laravel_dependency_versions: '[]'
 package_type: php-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:09:26+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:27:30+00:00'

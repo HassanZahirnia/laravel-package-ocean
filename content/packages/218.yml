@@ -7,11 +7,11 @@ author: bepsvpt
 composer: bepsvpt/secure-headers
 npm: null
 stars: 538
-keywords: {  }
+keywords: '[]'
 first_release_at: '2016-12-19 05:04:33'
 latest_release_at: '2025-01-18 07:18:04'
-laravel_dependency_versions: {  }
+laravel_dependency_versions: '[]'
 package_type: php-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:07:08+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:25:28+00:00'

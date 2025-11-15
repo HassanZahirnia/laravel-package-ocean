@@ -6,22 +6,12 @@ github: 'https://github.com/spatie/laravel-medialibrary'
 author: spatie
 composer: spatie/laravel-medialibrary
 npm: null
-stars: 6043
-keywords:
-    - image
-    - pdf
-    - video
-    - upload
-    - download
-    - optimize
-    - conversion
-    - storage
-    - filesystem
+stars: 6042
+keywords: '["image","pdf","video","upload","download","optimize","conversion","storage","filesystem"]'
 first_release_at: '2015-04-14 09:07:29'
-latest_release_at: '2025-11-12 14:19:45'
-laravel_dependency_versions:
-    - ^10.2|^11.0|^12.0
+latest_release_at: '2025-11-13 11:36:18'
+laravel_dependency_versions: '["^10.2|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:05:47+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:24:14+00:00'

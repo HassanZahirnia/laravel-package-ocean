@@ -6,13 +6,12 @@ github: 'https://github.com/WildsideUK/Laravel-Userstamps'
 author: wildside
 composer: wildside/userstamps
 npm: null
-stars: 718
-keywords: {  }
+stars: 721
+keywords: '[]'
 first_release_at: '2016-03-10 19:05:45'
 latest_release_at: '2025-06-09 07:03:35'
-laravel_dependency_versions:
-    - ^9.0|^10.0|^11.0|^12.0
+laravel_dependency_versions: '["^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:03:27+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:22:07+00:00'

@@ -7,17 +7,11 @@ author: itsgoingd
 composer: itsgoingd/clockwork
 npm: null
 stars: 5908
-keywords:
-    - profiler
-    - xdebug
-    - profiling
-    - collector
-    - logging
-    - timeline
+keywords: '["profiler","xdebug","profiling","collector","logging","timeline"]'
 first_release_at: '2013-06-22 00:10:46'
 latest_release_at: '2025-09-14 15:34:49'
-laravel_dependency_versions: {  }
+laravel_dependency_versions: '[]'
 package_type: php-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:03:52+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:22:29+00:00'

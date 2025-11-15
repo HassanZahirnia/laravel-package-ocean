@@ -7,12 +7,11 @@ author: directorytree
 composer: directorytree/ldaprecord
 npm: null
 stars: 563
-keywords: {  }
+keywords: '[]'
 first_release_at: '2019-04-27 18:41:26'
 latest_release_at: '2025-10-06 02:22:34'
-laravel_dependency_versions:
-    - ^8.0|^9.0|^10.0|^11.0|^12.0
+laravel_dependency_versions: '["^8.0|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-05-22T11:14:47+00:00
-updated_at: 2025-11-13T11:12:26+00:00
+paid_integration: 0
+created_at: '2023-05-22T11:14:47+00:00'
+updated_at: '2025-11-15T10:30:19+00:00'

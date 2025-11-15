@@ -7,12 +7,11 @@ author: nuwave
 composer: nuwave/lighthouse
 npm: null
 stars: 3462
-keywords: {  }
+keywords: '[]'
 first_release_at: '2016-05-29 21:50:57'
 latest_release_at: '2025-09-11 08:06:51'
-laravel_dependency_versions:
-    - '^9 || ^10 || ^11 || ^12'
+laravel_dependency_versions: '["^9 || ^10 || ^11 || ^12"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:02:10+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:20:51+00:00'

@@ -7,12 +7,11 @@ author: staudenmeir
 composer: staudenmeir/laravel-adjacency-list
 npm: null
 stars: 1505
-keywords: {  }
+keywords: '[]'
 first_release_at: '2019-04-25 00:26:49'
 latest_release_at: '2025-07-27 18:15:05'
-laravel_dependency_versions:
-    - ^12.0
+laravel_dependency_versions: '["^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:03:13+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:21:51+00:00'

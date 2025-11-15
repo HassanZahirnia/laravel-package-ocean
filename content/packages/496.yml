@@ -7,12 +7,11 @@ author: lomkit
 composer: lomkit/laravel-rest-api
 npm: null
 stars: 570
-keywords: {  }
+keywords: '[]'
 first_release_at: '2023-07-30 18:56:29'
 latest_release_at: '2025-10-28 10:05:40'
-laravel_dependency_versions:
-    - ^11|^12
+laravel_dependency_versions: '["^11|^12"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-09-21T09:32:24+00:00
-updated_at: 2025-11-13T11:18:05+00:00
+paid_integration: 0
+created_at: '2023-09-21T09:32:24+00:00'
+updated_at: '2025-11-15T10:35:11+00:00'

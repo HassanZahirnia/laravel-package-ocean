@@ -7,11 +7,11 @@ author: maantje
 composer: maantje/charts
 npm: null
 stars: 313
-keywords: {  }
+keywords: '[]'
 first_release_at: '2024-09-04 17:05:56'
 latest_release_at: '2025-08-09 10:42:18'
-laravel_dependency_versions: {  }
+laravel_dependency_versions: '[]'
 package_type: php-package
-paid_integration: false
-created_at: 2024-11-06T09:08:21+00:00
-updated_at: 2025-11-13T11:22:02+00:00
+paid_integration: 0
+created_at: '2024-11-06T09:08:21+00:00'
+updated_at: '2025-11-15T10:38:46+00:00'

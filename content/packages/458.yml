@@ -7,12 +7,11 @@ author: whitecube
 composer: whitecube/laravel-cookie-consent
 npm: null
 stars: 466
-keywords: {  }
+keywords: '[]'
 first_release_at: '2023-06-13 13:31:03'
 latest_release_at: '2025-10-21 09:28:38'
-laravel_dependency_versions:
-    - ^9|^10|^11|^12
+laravel_dependency_versions: '["^9|^10|^11|^12"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-06-15T10:42:47+00:00
-updated_at: 2025-11-13T11:16:32+00:00
+paid_integration: 0
+created_at: '2023-06-15T10:42:47+00:00'
+updated_at: '2025-11-15T10:33:51+00:00'

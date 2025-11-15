@@ -7,12 +7,11 @@ author: laragear
 composer: laragear/cache-query
 npm: null
 stars: 269
-keywords: {  }
+keywords: '[]'
 first_release_at: '2022-02-16 18:42:29'
 latest_release_at: '2025-02-14 01:44:28'
-laravel_dependency_versions:
-    - '11.*|12.*'
+laravel_dependency_versions: '["11.*|12.*"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-10-04T09:44:24+00:00
-updated_at: 2025-11-13T11:18:44+00:00
+paid_integration: 0
+created_at: '2023-10-04T09:44:24+00:00'
+updated_at: '2025-11-15T10:35:51+00:00'

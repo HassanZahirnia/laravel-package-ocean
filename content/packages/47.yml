@@ -7,12 +7,11 @@ author: laravel-shift
 composer: laravel-shift/blueprint
 npm: null
 stars: 3083
-keywords: {  }
+keywords: '[]'
 first_release_at: '2019-11-06 06:49:36'
 latest_release_at: '2025-04-16 16:22:29'
-laravel_dependency_versions:
-    - ^10.38|^11.0|^12.0
+laravel_dependency_versions: '["^10.38|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-11-13T10:59:50+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:47+00:00'
+updated_at: '2025-11-15T10:18:40+00:00'

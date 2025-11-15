@@ -7,12 +7,11 @@ author: bensampo
 composer: bensampo/laravel-enum
 npm: null
 stars: 2030
-keywords: {  }
+keywords: '[]'
 first_release_at: '2017-09-07 21:42:48'
 latest_release_at: '2025-08-12 08:34:06'
-laravel_dependency_versions:
-    - '^9 || ^10 || ^11 || ^12'
+laravel_dependency_versions: '["^9 || ^10 || ^11 || ^12"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:47+00:00
-updated_at: 2025-11-13T11:00:12+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:47+00:00'
+updated_at: '2025-11-15T10:18:59+00:00'

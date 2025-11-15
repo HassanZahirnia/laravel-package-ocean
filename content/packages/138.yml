@@ -7,13 +7,11 @@ author: imanghafoori
 composer: imanghafoori/laravel-microscope
 npm: null
 stars: 1493
-keywords:
-    - performance
+keywords: '["performance"]'
 first_release_at: '2020-04-06 02:19:28'
 latest_release_at: '2025-11-08 22:44:20'
-laravel_dependency_versions:
-    - '5.*|6.*|7.*|8.*|9.*|10.*|11.*|12.*'
+laravel_dependency_versions: '["5.*|6.*|7.*|8.*|9.*|10.*|11.*|12.*"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:03:50+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:22:27+00:00'

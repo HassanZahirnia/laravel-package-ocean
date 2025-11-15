@@ -7,11 +7,11 @@ author: zero-to-prod
 composer: zero-to-prod/data-model
 npm: null
 stars: 141
-keywords: {  }
+keywords: '[]'
 first_release_at: '2024-08-29 13:17:56'
 latest_release_at: '2024-09-04 00:00:00'
-laravel_dependency_versions: {  }
+laravel_dependency_versions: '[]'
 package_type: php-package
-paid_integration: false
-created_at: 2025-02-15T12:01:45+00:00
-updated_at: 2025-11-13T11:22:17+00:00
+paid_integration: 0
+created_at: '2025-02-15T12:01:45+00:00'
+updated_at: '2025-11-15T10:39:01+00:00'

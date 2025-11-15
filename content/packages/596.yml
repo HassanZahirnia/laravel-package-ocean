@@ -7,12 +7,11 @@ author: unicon-rocks
 composer: unicon-rocks/unicon-laravel
 npm: null
 stars: 26
-keywords: {  }
+keywords: '[]'
 first_release_at: '2024-11-23 13:04:58'
 latest_release_at: '2025-04-11 07:54:40'
-laravel_dependency_versions:
-    - ^12|^11|^10
+laravel_dependency_versions: '["^12|^11|^10"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2024-11-18T10:19:55+00:00
-updated_at: 2025-11-13T11:22:08+00:00
+paid_integration: 0
+created_at: '2024-11-18T10:19:55+00:00'
+updated_at: '2025-11-15T10:38:52+00:00'

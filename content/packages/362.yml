@@ -7,12 +7,11 @@ author: danharrin
 composer: squirephp/repository
 npm: null
 stars: 1046
-keywords: {  }
+keywords: '[]'
 first_release_at: '2021-01-11 10:00:17'
 latest_release_at: '2025-02-25 08:16:09'
-laravel_dependency_versions:
-    - ^8.0|^9.0|^10.0|^11.0|^12.0
+laravel_dependency_versions: '["^8.0|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-06-03T12:16:20+00:00
-updated_at: 2025-11-13T11:12:41+00:00
+paid_integration: 0
+created_at: '2023-06-03T12:16:20+00:00'
+updated_at: '2025-11-15T10:30:33+00:00'

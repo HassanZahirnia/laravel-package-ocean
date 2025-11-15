@@ -6,21 +6,12 @@ github: 'https://github.com/LaravelDaily/laravel-invoices'
 author: laraveldaily
 composer: laraveldaily/laravel-invoices
 npm: null
-stars: 1518
-keywords:
-    - taxes
-    - discount
-    - shipping
-    - 'due date'
-    - currency
-    - download
-    - stream
-    - filesystem
+stars: 1520
+keywords: '["taxes","discount","shipping","due date","currency","download","stream","filesystem"]'
 first_release_at: '2019-11-20 10:25:29'
 latest_release_at: '2025-02-26 04:33:47'
-laravel_dependency_versions:
-    - ^10|^11|^12
+laravel_dependency_versions: '["^10|^11|^12"]'
 package_type: laravel-package
-paid_integration: false
-created_at: 2023-04-09T13:58:48+00:00
-updated_at: 2025-11-13T11:05:18+00:00
+paid_integration: 0
+created_at: '2023-04-09T13:58:48+00:00'
+updated_at: '2025-11-15T10:23:42+00:00'
