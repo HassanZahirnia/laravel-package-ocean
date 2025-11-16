@@ -18,6 +18,7 @@ use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
+use Filament\Notifications\Notification;
 use Filament\Resources\Resource;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Utilities\Get;
@@ -38,6 +39,109 @@ class PackageResource extends Resource
     {
         return $schema
             ->components([
+                TextInput::make('github')
+                    ->prefixIcon('icon-github')
+                    ->autocomplete(false)
+                    ->columnSpanFull()
+                    ->required()
+                    ->unique(ignoreRecord: true)
+                    ->minLength(19)
+                    ->startsWith('https://github.com/')
+                    ->url()
+                    ->suffixAction(
+                        Action::make('Generate With Ai')
+                            ->icon('heroicon-m-sparkles')
+                            ->color('primary')
+                            ->action(function (Get $get, Set $set) {
+                                $githubUrl = $get('github');
+
+                                if (blank($githubUrl)) {
+                                    Notification::make()
+                                        ->title('GitHub URL Required')
+                                        ->body('Please enter a GitHub URL first.')
+                                        ->danger()
+                                        ->send();
+
+                                    return;
+                                }
+
+                                try {
+                                    // 1) Fetch metadata & AI suggestion
+                                    $metadata = getGithubPackageMetadata($githubUrl);
+                                    $ai = aiGeneratePackageFormFields($metadata);
+
+                                    // 2) Name
+                                    if (! empty($ai['name'])) {
+                                        $set('name', $ai['name']);
+                                    }
+
+                                    // 3) Description
+                                    if (! empty($ai['description'])) {
+                                        $set('description', $ai['description']);
+                                    }
+
+                                    // 4) Composer + author (composer-based packages)
+                                    if (! empty($ai['composer'])) {
+                                        $set('composer', $ai['composer']);
+                                        $set('author', str($ai['composer'])->before('/')->trim());
+                                    }
+
+                                    // 5) Category (string -> category_id)
+                                    if (! empty($ai['category'])) {
+                                        $categoryId = Category::query()
+                                            ->where('name', $ai['category'])
+                                            ->value('id');
+
+                                        if ($categoryId) {
+                                            $set('category_id', $categoryId);
+                                        }
+                                    }
+
+                                    // 6) Package type
+                                    if (! empty($ai['package_type'])) {
+                                        $set('package_type', $ai['package_type']);
+                                    }
+
+                                    // 7) NPM package name
+                                    if (! empty($ai['npm'])) {
+                                        $set('npm', $ai['npm']);
+                                    }
+
+                                    // 8) Author fallback for non-composer packages
+                                    $currentAuthor = $get('author');
+                                    if (blank($currentAuthor) && ! empty($metadata['owner'])) {
+                                        $set('author', $metadata['owner']);
+                                    }
+
+                                    Notification::make()
+                                        ->title('Success!')
+                                        ->body('Package details generated successfully with AI.')
+                                        ->success()
+                                        ->send();
+                                } catch (\Exception $e) {
+                                    Notification::make()
+                                        ->title('Generation Failed')
+                                        ->body('Failed to generate package details: '.$e->getMessage())
+                                        ->danger()
+                                        ->send();
+                                }
+                            })
+                    )
+                    ->rules([
+                        function () {
+                            return function (string $attribute, $value, Closure $fail) {
+                                // Must be a valid Github URL
+                                if (! preg_match('/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i', $value)) {
+                                    $fail('The :attribute must be a valid Github URL.');
+                                }
+
+                                // Must be healthy Github repository
+                                if (! isGithubRepositoryHealthy(extractRepoFromGithubUrl($value))) {
+                                    $fail('The :attribute must be a healthy Github repository.');
+                                }
+                            };
+                        },
+                    ]),
                 TextInput::make('name')
                     ->prefixIcon('icon-name')
                     ->live(debounce: 500)
@@ -208,116 +312,102 @@ class PackageResource extends Resource
                             };
                         },
                     ]),
-                TextInput::make('github')
-                    ->prefixIcon('icon-github')
-                    ->autocomplete(false)
-                    ->columnSpan(2)
-                    ->required()
-                    ->unique(ignoreRecord: true)
-                    ->minLength(19)
-                    ->startsWith('https://github.com/')
-                    ->url()
-                    ->rules([
-                        function () {
-                            return function (string $attribute, $value, Closure $fail) {
-                                // Must be a valid Github URL
-                                if (! preg_match('/^https:\/\/github\.com\/[a-zA-Z0-9\-_]+\/[a-zA-Z0-9\-_.]+$/i', $value)) {
-                                    $fail('The :attribute must be a valid Github URL.');
-                                }
-
-                                // Must be healthy Github repository
-                                if (! isGithubRepositoryHealthy(extractRepoFromGithubUrl($value))) {
-                                    $fail('The :attribute must be a healthy Github repository.');
-                                }
-                            };
-                        },
-                    ]),
                 Toggle::make('paid_integration')
                     ->inline(false)
                     ->onIcon('heroicon-o-currency-dollar')
                     ->required(),
                 Section::make('Composer & NPM & Github Data')
                     ->description('This section is automatically filled when you click the "Fetch All Data" button.')
+                    ->columnSpanFull()
                     ->columns(3)
                     ->headerActions([
-                        Action::make('Generate With Ai')
-                            ->icon('heroicon-m-sparkles')
-                            ->color('primary')
+                        Action::make('Fetch All Data')
+                            ->icon('heroicon-m-arrow-path')
+                            ->color('success')
+                            ->disabled(fn (Get $get): bool => empty($get('github')))
                             ->action(function (Get $get, Set $set) {
                                 $githubUrl = $get('github');
 
                                 if (blank($githubUrl)) {
+                                    Notification::make()
+                                        ->title('GitHub URL Required')
+                                        ->body('Please enter a GitHub URL first.')
+                                        ->danger()
+                                        ->send();
+
                                     return;
                                 }
 
-                                // 1) Fetch metadata & AI suggestion
-                                $metadata = getGithubPackageMetadata($githubUrl);
-                                $ai = aiGeneratePackageFormFields($metadata);
+                                try {
+                                    // 1) Fetch metadata & AI suggestion (hitting GitHub API once)
+                                    $metadata = getGithubPackageMetadata($githubUrl);
+                                    $ai = aiGeneratePackageFormFields($metadata);
 
-                                // 2) Name
-                                if (! empty($ai['name'])) {
-                                    $set('name', $ai['name']);
-                                }
-
-                                // 3) Description
-                                if (! empty($ai['description'])) {
-                                    $set('description', $ai['description']);
-                                }
-
-                                // 4) Composer + author (composer-based packages)
-                                if (! empty($ai['composer'])) {
-                                    $set('composer', $ai['composer']);
-                                    $set('author', str($ai['composer'])->before('/')->trim());
-                                }
-
-                                // 5) Category (string -> category_id)
-                                if (! empty($ai['category'])) {
-                                    $categoryId = Category::query()
-                                        ->where('name', $ai['category'])
-                                        ->value('id');
-
-                                    if ($categoryId) {
-                                        $set('category_id', $categoryId);
+                                    // 2) Set AI-generated fields if not already set
+                                    if (empty($get('name')) && ! empty($ai['name'])) {
+                                        $set('name', $ai['name']);
                                     }
-                                }
 
-                                // 6) Package type
-                                if (! empty($ai['package_type'])) {
-                                    $set('package_type', $ai['package_type']);
-                                }
+                                    if (empty($get('description')) && ! empty($ai['description'])) {
+                                        $set('description', $ai['description']);
+                                    }
 
-                                // 7) NPM package name
-                                if (! empty($ai['npm'])) {
-                                    $set('npm', $ai['npm']);
-                                }
+                                    if (empty($get('composer')) && ! empty($ai['composer'])) {
+                                        $set('composer', $ai['composer']);
+                                        $set('author', str($ai['composer'])->before('/')->trim());
+                                    }
 
-                                // 8) Author fallback for non-composer packages
-                                // If author is still blank here, use the GitHub owner (e.g. "xiCO2k").
-                                $currentAuthor = $get('author');
+                                    if (empty($get('category_id')) && ! empty($ai['category'])) {
+                                        $categoryId = Category::query()
+                                            ->where('name', $ai['category'])
+                                            ->value('id');
 
-                                if (blank($currentAuthor) && ! empty($metadata['owner'])) {
-                                    $set('author', $metadata['owner']);
-                                }
-                            }),
+                                        if ($categoryId) {
+                                            $set('category_id', $categoryId);
+                                        }
+                                    }
 
-                        Action::make('Fetch All Data')
-                            ->icon('heroicon-m-arrow-path')
-                            ->color('success')
-                            ->disabled(fn (Get $get): bool => (empty($get('composer')) && empty($get('npm'))) || empty($get('github')))
-                            ->action(function (Set $set, $state) {
-                                if (! empty($state['composer'])) {
-                                    $packagistData = getPackagistData($state['composer']);
-                                    $set('first_release_at', $packagistData['first_release_at']);
-                                    $set('latest_release_at', $packagistData['latest_release_at']);
-                                    $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
-                                } elseif (! empty($state['npm'])) {
-                                    $npmData = getNpmData($state['npm']);
-                                    $set('first_release_at', $npmData['first_release_at']);
-                                    $set('latest_release_at', $npmData['latest_release_at']);
-                                }
+                                    if (empty($get('package_type')) && ! empty($ai['package_type'])) {
+                                        $set('package_type', $ai['package_type']);
+                                    }
 
-                                if (! empty($state['github'])) {
-                                    $set('stars', fetchGithubStars($state['github']));
+                                    if (empty($get('npm')) && ! empty($ai['npm'])) {
+                                        $set('npm', $ai['npm']);
+                                    }
+
+                                    if (empty($get('author')) && ! empty($metadata['owner'])) {
+                                        $set('author', $metadata['owner']);
+                                    }
+
+                                    // 3) Fetch package-specific data (Packagist/NPM)
+                                    $composer = $get('composer');
+                                    $npm = $get('npm');
+
+                                    if (! empty($composer)) {
+                                        $packagistData = getPackagistData($composer);
+                                        $set('first_release_at', $packagistData['first_release_at']);
+                                        $set('latest_release_at', $packagistData['latest_release_at']);
+                                        $set('laravel_dependency_versions', $packagistData['laravel_dependency_versions']);
+                                    } elseif (! empty($npm)) {
+                                        $npmData = getNpmData($npm);
+                                        $set('first_release_at', $npmData['first_release_at']);
+                                        $set('latest_release_at', $npmData['latest_release_at']);
+                                    }
+
+                                    // 4) Fetch GitHub stars
+                                    $set('stars', fetchGithubStars($githubUrl));
+
+                                    Notification::make()
+                                        ->title('Success!')
+                                        ->body('All package data fetched and fields populated successfully.')
+                                        ->success()
+                                        ->send();
+                                } catch (\Exception $e) {
+                                    Notification::make()
+                                        ->title('Fetch Failed')
+                                        ->body('Failed to fetch package data: '.$e->getMessage())
+                                        ->danger()
+                                        ->send();
                                 }
                             }),
                     ])
