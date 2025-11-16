@@ -1,0 +1,21 @@
+{
+    "agents": [
+        "claude_code",
+        "codex",
+        "copilot",
+        "cursor",
+        "opencode",
+        "phpstorm"
+    ],
+    "editors": [
+        "claude_code",
+        "cursor",
+        "opencode",
+        "phpstorm",
+        "vscode"
+    ],
+    "guidelines": [
+        "filament/filament",
+        "prism-php/prism"
+    ]
+}
