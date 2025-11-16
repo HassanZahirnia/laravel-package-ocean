@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\Package;
+use App\Services\PackageHealthChecker;
 use Illuminate\Console\Command;
 
 use function Laravel\Prompts\info;
@@ -23,22 +24,23 @@ class CheckGithubHealth extends Command
             ->get();
 
         $unhealthyPackages = [];
+        $checker = new PackageHealthChecker;
 
         progress(
-            label: 'Checking Github health of packages',
+            label: 'Checking package health',
             steps: $packages,
-            callback: function ($package, $progress) use (&$unhealthyPackages) {
+            callback: function ($package, $progress) use (&$unhealthyPackages, $checker) {
                 $progress
                     ->label("{$package->name}")
                     ->hint("{$package->github}");
 
-                $status = reportGithubRepositoryHealthStatus(extractRepoFromGithubUrl($package->github));
+                $issues = $checker->checkPackageHealth($package);
 
-                if ($status !== true) {
+                if (! empty($issues)) {
                     $unhealthyPackages[] = [
                         'name' => $package->name,
                         'github' => $package->github,
-                        'status' => $status,
+                        'issues' => $issues,
                     ];
                 }
 
@@ -51,7 +53,11 @@ class CheckGithubHealth extends Command
             note('Unhealthy packages:');
 
             foreach ($unhealthyPackages as $package) {
-                warning("{$package['name']} ({$package['github']}): {$package['status']}");
+                warning("{$package['name']} ({$package['github']}):");
+
+                foreach ($package['issues'] as $issue) {
+                    $this->line("  • {$issue['message']}");
+                }
             }
         } else {
             info('All packages are healthy!');

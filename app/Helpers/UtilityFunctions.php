@@ -204,34 +204,34 @@ function isGithubRepositoryHealthy($repository): bool
 
 function reportGithubRepositoryHealthStatus($repository): string|bool
 {
-    $response = Http::timeout(60)->connectTimeout(60)->withHeaders([
+    $response = Http::timeout(10)->connectTimeout(10)->withHeaders([
         'Authorization' => 'Bearer '.config('services.github.token'),
     ])->get('https://api.github.com/repos/'.$repository);
 
     if ($response->failed()) {
-        return 'The repository could not be accessed.';
+        return 'not found';
     }
 
     $data = $response->json();
 
     if ($data['archived']) {
-        return 'The repository is archived.';
+        return 'archived';
     }
 
     if ($data['disabled']) {
-        return 'The repository is disabled.';
+        return 'disabled';
     }
 
     if ($data['private']) {
-        return 'The repository is private.';
+        return 'private';
     }
 
     if (data_get($data, 'message') === 'Not Found') {
-        return 'The repository was not found.';
+        return 'not found';
     }
 
     if (now()->subYear()->greaterThan($data['pushed_at'])) {
-        return 'The repository has not been updated in the last year.';
+        return 'inactive';
     }
 
     return true;
