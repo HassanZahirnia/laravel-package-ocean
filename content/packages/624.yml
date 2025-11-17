@@ -6,7 +6,7 @@ github: 'https://github.com/mateffy/laravel-job-progress'
 author: mateffy
 composer: mateffy/laravel-job-progress
 npm: null
-stars: 19
+stars: 20
 keywords: '["queue", "cancellation", "cache"]'
 first_release_at: '2025-10-10 12:13:57'
 latest_release_at: '2025-11-17 10:08:28'
