@@ -1,0 +1,17 @@
+id: 624
+name: 'Job Progress For Background Workers'
+description: 'Track and show progress of your background jobs in progress bar UIs and cancel running jobs.'
+category_id: '18'
+github: 'https://github.com/mateffy/laravel-job-progress'
+author: mateffy
+composer: mateffy/laravel-job-progress
+npm: null
+stars: 20
+keywords: '["queue", "cancellation", "cache"]'
+first_release_at: '2025-10-10 12:13:57'
+latest_release_at: '2025-11-17 10:08:28'
+laravel_dependency_versions: '["^11.0|^12.0"]'
+package_type: laravel-package
+paid_integration: 0
+created_at: '2025-11-17T12:34:48+00:00'
+updated_at: '2025-11-17T12:34:48+00:00'
