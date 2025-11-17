@@ -319,7 +319,6 @@ class PackageResource extends Resource
                 Section::make('Composer & NPM & Github Data')
                     ->description('This section is automatically filled when you click the "Fetch All Data" button.')
                     ->columnSpanFull()
-                    ->columns(3)
                     ->headerActions([
                         Action::make('Fetch All Data')
                             ->icon('heroicon-m-arrow-path')
@@ -451,8 +450,9 @@ class PackageResource extends Resource
                             ->numeric(),
                         DateTimePicker::make('first_release_at'),
                         DateTimePicker::make('latest_release_at'),
-                    ]),
-            ])->columns(3);
+                    ])
+                    ->columnSpanFull(),
+            ])->columns(2);
     }
 
     public static function table(Table $table): Table

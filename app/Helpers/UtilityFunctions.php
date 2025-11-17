@@ -202,39 +202,41 @@ function isGithubRepositoryHealthy($repository): bool
     return true;
 }
 
-function reportGithubRepositoryHealthStatus($repository): string|bool
+function reportGithubRepositoryHealthStatus($repository): array|bool
 {
     $response = Http::timeout(10)->connectTimeout(10)->withHeaders([
         'Authorization' => 'Bearer '.config('services.github.token'),
     ])->get('https://api.github.com/repos/'.$repository);
 
     if ($response->failed()) {
-        return 'not found';
+        return ['status' => 'not found', 'last_commit' => null];
     }
 
     $data = $response->json();
 
+    $lastCommit = $data['pushed_at'] ?? null;
+
     if ($data['archived']) {
-        return 'archived';
+        return ['status' => 'archived', 'last_commit' => $lastCommit];
     }
 
     if ($data['disabled']) {
-        return 'disabled';
+        return ['status' => 'disabled', 'last_commit' => $lastCommit];
     }
 
     if ($data['private']) {
-        return 'private';
+        return ['status' => 'private', 'last_commit' => $lastCommit];
     }
 
     if (data_get($data, 'message') === 'Not Found') {
-        return 'not found';
+        return ['status' => 'not found', 'last_commit' => null];
     }
 
     if (now()->subYear()->greaterThan($data['pushed_at'])) {
-        return 'inactive';
+        return ['status' => 'inactive', 'last_commit' => $lastCommit];
     }
 
-    return true;
+    return ['status' => true, 'last_commit' => $lastCommit];
 }
 
 // Get author and name of repo from the github link

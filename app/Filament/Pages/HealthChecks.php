@@ -187,7 +187,7 @@ class HealthChecks extends Page implements HasTable
 
             Notification::make()
                 ->title('Health Check Complete')
-                ->body("Scanned {$this->totalPackages} packages. Found ".count($this->unhealthyPackages).' unhealthy packages.')
+                ->body("Scanned {$this->scannedPackages} packages. Found ".count($this->unhealthyPackages).' unhealthy packages.')
                 ->success()
                 ->send();
 
@@ -202,13 +202,16 @@ class HealthChecks extends Page implements HasTable
         $checker = new PackageHealthChecker;
         $issues = $checker->checkPackageHealth($package);
 
-        if (! empty($issues)) {
+        // Filter out healthy status from issues
+        $actualIssues = collect($issues)->filter(fn ($issue) => $issue['status'] !== PackageHealthChecker::STATUS_HEALTHY)->toArray();
+
+        if (! empty($actualIssues)) {
             $this->unhealthyPackages[] = [
                 'id' => $package->id,
                 'name' => $package->name,
                 'github' => $package->github,
                 'author' => $package->author,
-                'issues' => $issues,
+                'issues' => $actualIssues,
             ];
 
             $this->persistResults();
@@ -321,21 +324,23 @@ class HealthChecks extends Page implements HasTable
                         $issues = $this->getPackageIssues($record->id);
                         $checker = new PackageHealthChecker;
 
-                        return collect($issues)->map(function ($issue) use ($checker) {
-                            $badge = $checker->getHealthStatusBadge($issue['status']);
+                        return collect($issues)
+                            ->filter(fn ($issue) => $issue['status'] !== PackageHealthChecker::STATUS_HEALTHY)
+                            ->map(function ($issue) use ($checker) {
+                                $badge = $checker->getHealthStatusBadge($issue['status']);
 
-                            return $badge['label'];
-                        })->toArray();
+                                return $badge['label'];
+                            })
+                            ->toArray();
                     })
-                    ->colors(function (Package $record) {
-                        $issues = $this->getPackageIssues($record->id);
-                        $checker = new PackageHealthChecker;
-
-                        return collect($issues)->mapWithKeys(function ($issue) use ($checker) {
-                            $badge = $checker->getHealthStatusBadge($issue['status']);
-
-                            return [$badge['label'] => $badge['color']];
-                        })->toArray();
+                    ->color(fn (string $state): string => match ($state) {
+                        'Archived' => 'danger',
+                        'Disabled' => 'danger',
+                        'Private' => 'danger',
+                        'Not Found' => 'danger',
+                        'Inactive' => 'warning',
+                        'Laravel Incompatible' => 'info',
+                        default => 'gray',
                     }),
 
                 TextColumn::make('issue_details')
@@ -344,11 +349,28 @@ class HealthChecks extends Page implements HasTable
                     ->state(function (Package $record) {
                         $issues = $this->getPackageIssues($record->id);
 
-                        return collect($issues)->map(fn ($issue) => '• '.$issue['message'])->join("\n");
+                        return collect($issues)
+                            ->filter(fn ($issue) => $issue['status'] !== PackageHealthChecker::STATUS_HEALTHY)
+                            ->map(fn ($issue) => '• '.$issue['message'])
+                            ->join("\n");
                     })
                     ->html()
                     ->formatStateUsing(fn (string $state) => nl2br(e($state)))
                     ->limit(150),
+
+                TextColumn::make('last_commit')
+                    ->label('Last Commit')
+                    ->state(function (Package $record) {
+                        $issues = $this->getPackageIssues($record->id);
+                        $lastCommit = $issues[0]['last_commit'] ?? null;
+
+                        if (! $lastCommit) {
+                            return 'Unknown';
+                        }
+
+                        return \Carbon\Carbon::parse($lastCommit)->diffForHumans();
+                    })
+                    ->sortable(false),
             ])
             ->recordActions([
                 Action::make('delete')

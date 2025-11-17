@@ -24,13 +24,17 @@ class PackageHealthChecker
     {
         $issues = [];
 
-        // Check GitHub health
-        $githubStatus = $this->checkGithubHealth($package);
+        // Check GitHub health and get last commit in one API call
+        $githubResult = $this->checkGithubHealth($package);
+        $githubStatus = $githubResult['status'];
+        $lastCommit = $githubResult['last_commit'];
+
         if ($githubStatus !== self::STATUS_HEALTHY) {
             $issues[] = [
                 'type' => 'github',
                 'status' => $githubStatus,
                 'message' => $this->getGithubStatusMessage($githubStatus),
+                'last_commit' => $lastCommit,
             ];
         }
 
@@ -41,40 +45,66 @@ class PackageHealthChecker
                     'type' => 'laravel_compatibility',
                     'status' => self::STATUS_LARAVEL_INCOMPATIBLE,
                     'message' => $this->getLaravelCompatibilityMessage($package),
+                    'last_commit' => $lastCommit,
                 ];
             }
+        }
+
+        // If healthy, still return last commit data
+        if (empty($issues) && $lastCommit) {
+            $issues[] = [
+                'type' => 'info',
+                'status' => self::STATUS_HEALTHY,
+                'message' => 'Package is healthy',
+                'last_commit' => $lastCommit,
+            ];
         }
 
         return $issues;
     }
 
-    public function checkGithubHealth(Package $package): string
+    public function checkGithubHealth(Package $package): array
     {
         $repository = extractRepoFromGithubUrl($package->github);
 
         if (! $repository) {
-            return self::STATUS_NOT_FOUND;
+            return ['status' => self::STATUS_NOT_FOUND, 'last_commit' => null];
         }
 
         try {
-            $status = reportGithubRepositoryHealthStatus($repository);
+            $result = reportGithubRepositoryHealthStatus($repository);
 
-            if ($status === true) {
-                return self::STATUS_HEALTHY;
+            // Handle the new array response
+            if (is_array($result)) {
+                $status = $result['status'];
+                $lastCommit = $result['last_commit'];
+
+                if ($status === true) {
+                    return ['status' => self::STATUS_HEALTHY, 'last_commit' => $lastCommit];
+                }
+
+                // Map the string status to our constants
+                $mappedStatus = match ($status) {
+                    'archived' => self::STATUS_ARCHIVED,
+                    'disabled' => self::STATUS_DISABLED,
+                    'private' => self::STATUS_PRIVATE,
+                    'not found' => self::STATUS_NOT_FOUND,
+                    'inactive' => self::STATUS_INACTIVE,
+                    default => $status,
+                };
+
+                return ['status' => $mappedStatus, 'last_commit' => $lastCommit];
             }
 
-            // Map the string status to our constants
-            return match ($status) {
-                'archived' => self::STATUS_ARCHIVED,
-                'disabled' => self::STATUS_DISABLED,
-                'private' => self::STATUS_PRIVATE,
-                'not found' => self::STATUS_NOT_FOUND,
-                'inactive' => self::STATUS_INACTIVE,
-                default => $status,
-            };
+            // Fallback for boolean response (backward compatibility)
+            if ($result === true) {
+                return ['status' => self::STATUS_HEALTHY, 'last_commit' => null];
+            }
+
+            return ['status' => $result, 'last_commit' => null];
         } catch (\Exception $e) {
             // If GitHub API fails, consider it healthy to avoid false positives
-            return self::STATUS_HEALTHY;
+            return ['status' => self::STATUS_HEALTHY, 'last_commit' => null];
         }
     }
 
