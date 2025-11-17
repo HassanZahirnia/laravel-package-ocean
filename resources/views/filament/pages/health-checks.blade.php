@@ -70,16 +70,16 @@
 
         {{-- Summary Stats --}}
         @if (!$isScanning && $scannedPackages > 0)
-            <div class="grid gap-6 md:grid-cols-3">
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
                 <x-filament::section compact>
                     <div class="flex items-center gap-4">
-                        <div class="rounded-full bg-primary-100 p-3 dark:bg-primary-900/30">
+                        <div class="shrink-0 rounded-full bg-primary-100 p-3 dark:bg-primary-900/30">
                             <x-filament::icon 
                                 icon="heroicon-o-document-check" 
                                 class="h-6 w-6 text-primary-600 dark:text-primary-400"
                             />
                         </div>
-                        <div>
+                        <div class="min-w-0 flex-1">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Total Scanned</p>
                             <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $scannedPackages }}</p>
                         </div>
@@ -88,13 +88,13 @@
 
                 <x-filament::section compact>
                     <div class="flex items-center gap-4">
-                        <div class="rounded-full bg-success-100 p-3 dark:bg-success-900/30">
+                        <div class="shrink-0 rounded-full bg-success-100 p-3 dark:bg-success-900/30">
                             <x-filament::icon 
                                 icon="heroicon-o-heart" 
                                 class="h-6 w-6 text-success-600 dark:text-success-400"
                             />
                         </div>
-                        <div>
+                        <div class="min-w-0 flex-1">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Healthy</p>
                             <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ $healthyPackages }}</p>
                         </div>
@@ -103,13 +103,13 @@
 
                 <x-filament::section compact>
                     <div class="flex items-center gap-4">
-                        <div class="rounded-full bg-danger-100 p-3 dark:bg-danger-900/30">
+                        <div class="shrink-0 rounded-full bg-danger-100 p-3 dark:bg-danger-900/30">
                             <x-filament::icon 
                                 icon="heroicon-o-exclamation-triangle" 
                                 class="h-6 w-6 text-danger-600 dark:text-danger-400"
                             />
                         </div>
-                        <div>
+                        <div class="min-w-0 flex-1">
                             <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Issues Found</p>
                             <p class="text-2xl font-semibold text-gray-900 dark:text-white">{{ count($unhealthyPackages) }}</p>
                         </div>
@@ -204,6 +204,14 @@
                     }
                 });
             }, 1000);
+        });
+
+        // Cancel scanning
+        $wire.on('cancel-scan', () => {
+            if (scanInterval) {
+                clearInterval(scanInterval);
+                scanInterval = null;
+            }
         });
 
         // Cleanup when component is destroyed

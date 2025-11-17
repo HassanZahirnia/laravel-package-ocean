@@ -158,6 +158,9 @@ class HealthChecks extends Page implements HasTable
 
         $this->clearCache();
 
+        // Dispatch event to stop the client-side interval
+        $this->dispatch('cancel-scan');
+
         Notification::make()
             ->title('Scan Cancelled')
             ->body('The health check has been cancelled.')
@@ -300,6 +303,8 @@ class HealthChecks extends Page implements HasTable
     {
         return $table
             ->query(fn () => $this->getUnhealthyPackagesQuery())
+            ->striped()
+            ->defaultPaginationPageOption(25)
             ->columns([
                 TextColumn::make('name')
                     ->label('Package')
@@ -320,6 +325,7 @@ class HealthChecks extends Page implements HasTable
                 TextColumn::make('health_issues')
                     ->label('Issues')
                     ->badge()
+                    ->separator(',')
                     ->state(function (Package $record) {
                         $issues = $this->getPackageIssues($record->id);
                         $checker = new PackageHealthChecker;
@@ -346,6 +352,7 @@ class HealthChecks extends Page implements HasTable
                 TextColumn::make('issue_details')
                     ->label('Details')
                     ->wrap()
+                    ->lineClamp(3)
                     ->state(function (Package $record) {
                         $issues = $this->getPackageIssues($record->id);
 
@@ -355,8 +362,7 @@ class HealthChecks extends Page implements HasTable
                             ->join("\n");
                     })
                     ->html()
-                    ->formatStateUsing(fn (string $state) => nl2br(e($state)))
-                    ->limit(150),
+                    ->formatStateUsing(fn (string $state) => nl2br(e($state))),
 
                 TextColumn::make('last_commit')
                     ->label('Last Commit')
