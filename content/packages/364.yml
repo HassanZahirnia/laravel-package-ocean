@@ -6,12 +6,12 @@ github: 'https://github.com/spatie/laravel-ray'
 author: spatie
 composer: spatie/laravel-ray
 npm: null
-stars: 312
+stars: 314
 keywords: '[]'
 first_release_at: '2021-01-07 14:20:30'
-latest_release_at: '2025-10-16 10:19:22'
-laravel_dependency_versions: '["^7.20 || ^8.19 || ^9.0 || ^10.0 || ^11.0 || ^12.0"]'
+latest_release_at: '2025-12-15 09:06:48'
+laravel_dependency_versions: '["^7.20|^8.19|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 1
 created_at: '2023-06-05T12:36:55+00:00'
-updated_at: '2025-11-15T10:30:38+00:00'
+updated_at: '2025-12-31T09:14:29+00:00'

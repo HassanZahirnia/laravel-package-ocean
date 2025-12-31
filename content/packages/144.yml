@@ -6,12 +6,12 @@ github: 'https://github.com/laravel/telescope'
 author: laravel
 composer: laravel/telescope
 npm: null
-stars: 5089
+stars: 5125
 keywords: '["request","exceptions","log entries","database queries","query","queued jobs","notifications","schedule","dump","cache"]'
 first_release_at: '2018-10-23 14:27:56'
-latest_release_at: '2025-10-23 15:19:35'
+latest_release_at: '2025-12-09 13:34:29'
 laravel_dependency_versions: '["^8.37|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2025-11-15T10:22:41+00:00'
+updated_at: '2025-12-31T09:05:52+00:00'

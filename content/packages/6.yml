@@ -6,7 +6,7 @@ github: 'https://github.com/GrahamCampbell/Laravel-GitHub'
 author: graham-campbell
 composer: graham-campbell/github
 npm: null
-stars: 636
+stars: 639
 keywords: '[]'
 first_release_at: '2014-07-26 16:32:17'
 latest_release_at: '2025-03-03 21:35:19'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^10.44 || ^11.0 || ^12.0"]'
 package_type: laravel-package
 paid_integration: 1
 created_at: '2023-04-09T13:58:47+00:00'
-updated_at: '2025-11-15T10:16:55+00:00'
+updated_at: '2025-12-31T08:59:28+00:00'

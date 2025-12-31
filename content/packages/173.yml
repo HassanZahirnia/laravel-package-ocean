@@ -6,7 +6,7 @@ github: 'https://github.com/aimeos/aimeos-laravel'
 author: aimeos
 composer: aimeos/aimeos-laravel
 npm: null
-stars: 8359
+stars: 8429
 keywords: '["warehouse","multi tentant","product","vendor","subscription","price","graphql","admin","voucher"]'
 first_release_at: '2015-03-06 14:24:42'
 latest_release_at: '2025-10-13 11:53:41'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^10.0||^11.0||^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2025-11-15T10:23:36+00:00'
+updated_at: '2025-12-31T09:06:53+00:00'

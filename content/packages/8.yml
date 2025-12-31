@@ -6,12 +6,12 @@ github: 'https://github.com/mateusjunges/laravel-kafka'
 author: mateusjunges
 composer: mateusjunges/laravel-kafka
 npm: null
-stars: 693
+stars: 710
 keywords: '[]'
 first_release_at: '2021-09-12 05:09:28'
-latest_release_at: '2025-08-24 23:51:04'
+latest_release_at: '2025-12-01 15:22:46'
 laravel_dependency_versions: '["^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:47+00:00'
-updated_at: '2025-11-15T10:17:00+00:00'
+updated_at: '2025-12-31T08:59:34+00:00'

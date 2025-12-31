@@ -6,12 +6,12 @@ github: 'https://github.com/spatie/laravel-analytics'
 author: spatie
 composer: spatie/laravel-analytics
 npm: null
-stars: 3216
+stars: 3224
 keywords: '["statistics"]'
 first_release_at: '2015-03-12 12:34:28'
-latest_release_at: '2025-04-28 14:10:31'
-laravel_dependency_versions: '["^10.0|^11.42.1|^12.0"]'
+latest_release_at: '2025-11-26 14:55:40'
+laravel_dependency_versions: '["^12.40.1"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2025-11-15T10:27:57+00:00'
+updated_at: '2025-12-31T09:11:38+00:00'

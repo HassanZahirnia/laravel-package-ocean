@@ -6,7 +6,7 @@ github: 'https://github.com/teamtnt/laravel-scout-tntsearch-driver'
 author: teamtnt
 composer: teamtnt/laravel-scout-tntsearch-driver
 npm: null
-stars: 1133
+stars: 1132
 keywords: '[]'
 first_release_at: '2016-08-15 21:48:47'
 latest_release_at: '2025-02-18 19:15:04'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["~5.4|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2025-11-15T10:21:54+00:00'
+updated_at: '2025-12-31T09:05:00+00:00'

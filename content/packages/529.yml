@@ -6,12 +6,12 @@ github: 'https://github.com/saloonphp/xml-wrangler'
 author: saloonphp
 composer: saloonphp/xml-wrangler
 npm: null
-stars: 416
+stars: 418
 keywords: '[]'
 first_release_at: '2023-11-02 20:42:21'
-latest_release_at: '2025-02-15 23:12:03'
+latest_release_at: '2025-11-20 22:31:56'
 laravel_dependency_versions: '["^10.30"]'
 package_type: php-package
 paid_integration: 0
 created_at: '2023-11-24T20:28:10+00:00'
-updated_at: '2025-11-15T10:36:21+00:00'
+updated_at: '2025-12-31T09:20:36+00:00'

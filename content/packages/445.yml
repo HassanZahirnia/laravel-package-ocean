@@ -6,12 +6,12 @@ github: 'https://github.com/hammerstonedev/airdrop'
 author: hammerstone
 composer: hammerstone/airdrop
 npm: null
-stars: 192
+stars: 191
 keywords: '[]'
 first_release_at: '2021-02-23 02:55:05'
-latest_release_at: '2024-03-15 22:06:38'
-laravel_dependency_versions: '["^7.0|^8.0|^9.0|^10.0|^11.0"]'
+latest_release_at: '2025-11-27 20:30:53'
+laravel_dependency_versions: '["^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-06-07T13:10:47+00:00'
-updated_at: '2025-11-15T10:33:27+00:00'
+updated_at: '2025-12-31T09:17:37+00:00'

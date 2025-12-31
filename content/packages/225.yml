@@ -6,12 +6,12 @@ github: 'https://github.com/pestphp/pest'
 author: pestphp
 composer: pestphp/pest
 npm: null
-stars: 11086
+stars: 11186
 keywords: '["expectations","assert","phpunit","mocking","optimize","coverage","higher order testing","architecture","dataset"]'
 first_release_at: '2020-05-19 23:10:29'
-latest_release_at: '2025-10-29 22:45:27'
+latest_release_at: '2025-12-30 19:48:33'
 laravel_dependency_versions: '[]'
 package_type: php-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2025-11-15T10:25:44+00:00'
+updated_at: '2025-12-31T09:09:13+00:00'

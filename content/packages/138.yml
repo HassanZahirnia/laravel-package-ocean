@@ -9,9 +9,9 @@ npm: null
 stars: 1493
 keywords: '["performance"]'
 first_release_at: '2020-04-06 02:19:28'
-latest_release_at: '2025-11-08 22:44:20'
-laravel_dependency_versions: '["5.*|6.*|7.*|8.*|9.*|10.*|11.*|12.*"]'
+latest_release_at: '2025-12-16 00:14:18'
+laravel_dependency_versions: '["6.*|7.*|8.*|9.*|10.*|11.*|12.*"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2025-11-15T10:22:27+00:00'
+updated_at: '2025-12-31T09:05:36+00:00'
