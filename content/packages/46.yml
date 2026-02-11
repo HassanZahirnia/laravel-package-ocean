@@ -6,12 +6,12 @@ github: 'https://github.com/filamentphp/filament'
 author: filamentphp
 composer: filament/filament
 npm: null
-stars: 28402
+stars: 29171
 keywords: '["dashboard","livewire","user","widget","menu","bar","dark","notification","chart","stats","actions","security","records"]'
 first_release_at: '2020-04-28 19:14:44'
-latest_release_at: '2025-12-30 13:02:13'
+latest_release_at: '2026-02-10 13:21:47'
 laravel_dependency_versions: '[]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:47+00:00'
-updated_at: '2025-12-31T09:01:19+00:00'
+updated_at: '2026-02-11T12:07:35+00:00'

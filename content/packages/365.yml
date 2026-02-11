@@ -6,7 +6,7 @@ github: 'https://github.com/koossaayy/laravel-mapbox'
 author: koossaayy
 composer: koossaayy/laravel-mapbox
 npm: null
-stars: 78
+stars: 77
 keywords: '[]'
 first_release_at: '2021-11-29 21:24:38'
 latest_release_at: '2025-04-02 20:46:20'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 1
 created_at: '2023-06-05T12:42:35+00:00'
-updated_at: '2025-12-31T09:14:31+00:00'
+updated_at: '2026-02-11T12:36:29+00:00'

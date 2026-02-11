@@ -6,12 +6,12 @@ github: 'https://github.com/Laravel-Lang/lang'
 author: laravel-lang
 composer: laravel-lang/common
 npm: null
-stars: 7765
+stars: 7770
 keywords: '[]'
 first_release_at: '2023-02-12 11:08:30'
-latest_release_at: '2025-06-23 09:38:20'
+latest_release_at: '2026-01-14 22:00:53'
 laravel_dependency_versions: '[]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-12T01:45:40+00:00'
-updated_at: '2025-12-31T09:13:03+00:00'
+updated_at: '2026-02-11T12:33:33+00:00'

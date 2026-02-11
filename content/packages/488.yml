@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^11.0 || ^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-08-29T22:35:45+00:00'
-updated_at: '2025-12-31T09:19:07+00:00'
+updated_at: '2026-02-11T12:49:22+00:00'

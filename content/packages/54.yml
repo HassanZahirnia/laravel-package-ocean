@@ -6,12 +6,12 @@ github: 'https://github.com/statamic/cms'
 author: statamic
 composer: statamic/cms
 npm: null
-stars: 4667
+stars: 4713
 keywords: '[]'
 first_release_at: '2019-11-21 14:49:01'
-latest_release_at: '2025-12-03 18:32:28'
-laravel_dependency_versions: '["^10.48.29 || ^11.44.1 || ^12.1.1"]'
+latest_release_at: '2026-02-06 01:32:06'
+laravel_dependency_versions: '["^12.40.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:47+00:00'
-updated_at: '2025-12-31T09:01:35+00:00'
+updated_at: '2026-02-11T12:07:58+00:00'

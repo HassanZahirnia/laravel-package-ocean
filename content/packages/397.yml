@@ -6,7 +6,7 @@ github: 'https://github.com/laracasts/cypress'
 author: laracasts
 composer: laracasts/cypress
 npm: null
-stars: 626
+stars: 627
 keywords: '[]'
 first_release_at: '2020-07-24 04:15:52'
 latest_release_at: '2025-02-27 15:15:08'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 1
 created_at: '2023-06-07T11:14:07+00:00'
-updated_at: '2025-12-31T09:15:56+00:00'
+updated_at: '2026-02-11T12:40:16+00:00'

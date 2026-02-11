@@ -6,12 +6,12 @@ github: 'https://github.com/livewire-filemanager/filemanager'
 author: livewire-filemanager
 composer: livewire-filemanager/filemanager
 npm: null
-stars: 347
+stars: 354
 keywords: '[]'
 first_release_at: '2024-06-11 12:54:20'
-latest_release_at: '2025-12-03 08:55:56'
+latest_release_at: '2026-01-22 16:04:42'
 laravel_dependency_versions: '["^10.0|^11.0|^12.0","^10|^11|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2025-02-18T12:33:54+00:00'
-updated_at: '2025-12-31T09:23:50+00:00'
+updated_at: '2026-02-11T12:58:55+00:00'

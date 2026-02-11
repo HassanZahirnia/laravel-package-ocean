@@ -6,7 +6,7 @@ github: 'https://github.com/awssat/laravel-visits'
 author: awssat
 composer: awssat/laravel-visits
 npm: null
-stars: 973
+stars: 976
 keywords: '[]'
 first_release_at: '2018-06-15 15:47:59'
 latest_release_at: '2025-04-14 11:43:36'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["~5.5.0 || ~5.6.0 || ~5.7.0 || ~5.8.0 || ^6.0 || 
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-06-06T20:33:38+00:00'
-updated_at: '2025-12-31T09:15:02+00:00'
+updated_at: '2026-02-11T12:38:24+00:00'

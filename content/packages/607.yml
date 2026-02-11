@@ -6,7 +6,7 @@ github: 'https://github.com/capevace/laravel-introspect'
 author: mateffy
 composer: mateffy/laravel-introspect
 npm: null
-stars: 165
+stars: 167
 keywords: '["Introspection","Static Analysis","Reflection","Models","Views","JSON Schema"]'
 first_release_at: '2025-05-15 18:25:42'
 latest_release_at: '2025-06-29 17:24:49'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^10.0||^11.0||^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2025-07-01T10:42:23+00:00'
-updated_at: '2025-12-31T09:23:53+00:00'
+updated_at: '2026-02-11T12:58:57+00:00'

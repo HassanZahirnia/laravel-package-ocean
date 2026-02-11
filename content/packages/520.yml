@@ -6,12 +6,12 @@ github: 'https://github.com/sinnbeck/laravel-dom-assertions'
 author: sinnbeck
 composer: sinnbeck/laravel-dom-assertions
 npm: null
-stars: 106
+stars: 105
 keywords: '[]'
 first_release_at: '2022-10-19 09:57:59'
-latest_release_at: '2025-11-26 10:51:51'
-laravel_dependency_versions: '["^9.0|^10.0|^11.0|^12.0"]'
+latest_release_at: '2026-01-26 09:11:09'
+laravel_dependency_versions: '["^10.0|^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-10-05T08:48:08+00:00'
-updated_at: '2025-12-31T09:20:15+00:00'
+updated_at: '2026-02-11T12:51:23+00:00'
