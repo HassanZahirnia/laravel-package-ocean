@@ -54,7 +54,7 @@
                     </a>
                     <a
                         target="_blank"
-                        href="https://twitter.com/HassanZahirnia"
+                        href="https://x.com/HassanZahirnia"
                         class="flex items-center gap-2 transition duration-300 will-change-transform hover:scale-110 hover:opacity-90 dark:hover:brightness-150"
                     >
                         <svg
