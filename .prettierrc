@@ -13,7 +13,6 @@
             }
         }
     ],
-    "tailwindConfig": "./tailwind.config.js",
     "singleQuote": true,
     "semi": false,
     "trailingComma": "all",
