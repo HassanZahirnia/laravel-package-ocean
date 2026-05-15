@@ -40,7 +40,7 @@
         {{-- Star Cup --}}
         <div class="flex justify-center">
             <img
-                src="@viteAsset('resources/images/star-cup.webp')"
+                src="{{ Vite::asset('resources/images/star-cup.webp') }}"
                 width="130"
                 height="130"
                 alt=""

@@ -36,7 +36,7 @@
     {{-- Earth --}}
     <div class="absolute right-1/2 top-0 z-[-1] translate-x-1/2 sm:-top-5">
         <img
-            src="@viteAsset('resources/images/earth.webp')"
+            src="{{ Vite::asset('resources/images/earth.webp') }}"
             width="250"
             height="237"
             alt=""
@@ -162,7 +162,7 @@
                 >
                     {{-- Heart Bottle --}}
                     <img
-                        src="@viteAsset('resources/images/heart-bottle.webp')"
+                        src="{{ Vite::asset('resources/images/heart-bottle.webp') }}"
                         width="50"
                         height="80"
                         alt=""

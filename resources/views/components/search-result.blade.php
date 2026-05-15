@@ -7,7 +7,7 @@
     {{-- Emote faces --}}
     <div class="grid h-28 w-28">
         <img
-            src="@viteAsset('resources/images/emotes/sad.webp')"
+            src="{{ Vite::asset('resources/images/emotes/sad.webp') }}"
             width="auto"
             height="auto"
             alt=""
@@ -17,7 +17,7 @@
             }"
         />
         <img
-            src="@viteAsset('resources/images/emotes/excited.webp')"
+            src="{{ Vite::asset('resources/images/emotes/excited.webp') }}"
             width="auto"
             height="auto"
             alt=""
