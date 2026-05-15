@@ -18,7 +18,11 @@ window.dayjs = dayjs
 window.autoAnimate = autoAnimate
 
 // Asset loading
-import.meta.glob(['../images/**', '../svg/**'])
+window.__viteStaticAssets = import.meta.glob(['../images/**', '../svg/**'], {
+    eager: true,
+    query: '?url',
+    import: 'default',
+})
 
 // GSAP
 gsap.registerPlugin(ScrollTrigger)
