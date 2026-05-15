@@ -6,7 +6,7 @@ github: 'https://github.com/oddvalue/laravel-drafts'
 author: oddvalue
 composer: oddvalue/laravel-drafts
 npm: null
-stars: 419
+stars: 435
 keywords: '[]'
 first_release_at: '2022-06-27 15:16:08'
 latest_release_at: '2026-01-28 08:00:11'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^11.0|^12.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-02-11T12:11:21+00:00'
+updated_at: '2026-05-15T20:28:27+00:00'
