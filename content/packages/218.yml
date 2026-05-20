@@ -6,12 +6,12 @@ github: 'https://github.com/BePsvPT/secure-headers'
 author: bepsvpt
 composer: bepsvpt/secure-headers
 npm: null
-stars: 548
+stars: 549
 keywords: '[]'
 first_release_at: '2016-12-19 05:04:33'
-latest_release_at: '2025-01-18 07:18:04'
+latest_release_at: '2026-03-17 22:51:53'
 laravel_dependency_versions: '[]'
 package_type: php-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-02-11T12:22:12+00:00'
+updated_at: '2026-05-20T18:57:43+00:00'

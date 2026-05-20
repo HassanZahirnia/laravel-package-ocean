@@ -6,12 +6,12 @@ github: 'https://github.com/barryvdh/laravel-snappy'
 author: barryvdh
 composer: barryvdh/laravel-snappy
 npm: null
-stars: 2746
+stars: 2756
 keywords: '[]'
 first_release_at: '2013-12-18 13:47:19'
-latest_release_at: '2025-02-24 15:20:06'
-laravel_dependency_versions: '["^9|^10|^11|^12"]'
+latest_release_at: '2026-02-21 08:57:45'
+laravel_dependency_versions: '["^9|^10|^11|^12|^13"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-02-11T12:17:24+00:00'
+updated_at: '2026-05-20T18:55:43+00:00'

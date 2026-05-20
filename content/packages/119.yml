@@ -6,12 +6,12 @@ github: 'https://github.com/spatie/laravel-searchable'
 author: spatie
 composer: spatie/laravel-searchable
 npm: null
-stars: 1369
+stars: 1371
 keywords: '[]'
 first_release_at: '2018-12-07 13:32:42'
-latest_release_at: '2026-02-09 20:25:35'
-laravel_dependency_versions: '["^8.78|^9.0|^10.0|^11.0|^12.0"]'
+latest_release_at: '2026-02-21 21:53:08'
+laravel_dependency_versions: '["^8.78|^9.0|^10.0|^11.0|^12.0|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-02-11T12:13:12+00:00'
+updated_at: '2026-05-20T11:49:50+00:00'

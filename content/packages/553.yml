@@ -6,12 +6,12 @@ github: 'https://github.com/laradumps/laradumps'
 author: laradumps
 composer: laradumps/laradumps
 npm: null
-stars: 1250
+stars: 1263
 keywords: '[]'
 first_release_at: '2022-06-07 17:09:58'
-latest_release_at: '2026-02-06 12:07:25'
-laravel_dependency_versions: '["^11.0|^12.0"]'
+latest_release_at: '2026-03-25 12:27:54'
+laravel_dependency_versions: '["^11.0 || ^12.0 || ^13.0"]'
 package_type: all-operating-systems-app
 paid_integration: 0
 created_at: '2024-04-16T11:20:31+00:00'
-updated_at: '2026-02-11T12:53:48+00:00'
+updated_at: '2026-05-20T19:11:32+00:00'

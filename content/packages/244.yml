@@ -6,12 +6,12 @@ github: 'https://github.com/spatie/laravel-menu'
 author: spatie
 composer: spatie/laravel-menu
 npm: null
-stars: 977
+stars: 980
 keywords: '[]'
 first_release_at: '2016-02-22 22:23:32'
-latest_release_at: '2025-02-21 10:35:09'
-laravel_dependency_versions: '["^8.0|^9.0|^10.0|^11.0|^12.0","^8.71|^9.0|^10.0|^11.0|^12.0"]'
+latest_release_at: '2026-02-21 21:16:50'
+laravel_dependency_versions: '["^8.0|^9.0|^10.0|^11.0|^12.0|^13.0","^8.71|^9.0|^10.0|^11.0|^12.0|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-02-11T12:26:17+00:00'
+updated_at: '2026-05-20T18:58:50+00:00'
