@@ -6,12 +6,12 @@ github: 'https://github.com/mcamara/laravel-localization'
 author: mcamara
 composer: mcamara/laravel-localization
 npm: null
-stars: 3556
+stars: 3561
 keywords: '["language","locale","translate","translation","internationalization"]'
 first_release_at: '2013-09-01 19:17:57'
-latest_release_at: '2026-03-17 19:24:07'
+latest_release_at: '2026-07-28 17:38:56'
 laravel_dependency_versions: '["^11.0|^12.0|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-05-20T18:56:23+00:00'
+updated_at: '2026-08-18T17:38:37+00:00'

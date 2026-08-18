@@ -6,12 +6,12 @@ github: 'https://github.com/barryvdh/laravel-debugbar'
 author: barryvdh
 composer: barryvdh/laravel-debugbar
 npm: null
-stars: 19218
+stars: 19280
 keywords: '["profiling","profiler","collector","logging","timeline","memory","events"]'
 first_release_at: '2013-09-05 10:33:08'
-latest_release_at: '2026-04-20 13:31:29'
+latest_release_at: '2026-08-03 06:23:16'
 laravel_dependency_versions: '["^11|^12|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-05-20T11:50:37+00:00'
+updated_at: '2026-08-18T17:04:48+00:00'

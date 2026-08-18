@@ -6,12 +6,12 @@ github: 'https://github.com/mongodb/laravel-mongodb'
 author: mongodb
 composer: mongodb/laravel-mongodb
 npm: null
-stars: 7079
+stars: 7073
 keywords: '[]'
 first_release_at: '2023-08-30 10:44:11'
-latest_release_at: '2026-04-15 12:18:12'
-laravel_dependency_versions: '["^10.36|^11|^12|^13.0","^10.0|^11|^12|^13.0","^10.30|^11|^12|^13.0"]'
+latest_release_at: '2026-07-28 12:02:07'
+laravel_dependency_versions: '["^12|^13.0","^12.51|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-05-20T11:48:14+00:00'
+updated_at: '2026-08-18T17:02:36+00:00'

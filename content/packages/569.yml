@@ -6,12 +6,12 @@ github: 'https://github.com/skywarth/chaotic-schedule'
 author: skywarth
 composer: skywarth/chaotic-schedule
 npm: null
-stars: 122
+stars: 123
 keywords: '[]'
 first_release_at: '2023-08-26 20:43:32'
-latest_release_at: '2025-05-22 00:50:59'
-laravel_dependency_versions: '[]'
+latest_release_at: '2026-06-06 20:03:53'
+laravel_dependency_versions: '["^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2024-07-18T16:40:06+00:00'
-updated_at: '2026-05-20T19:12:17+00:00'
+updated_at: '2026-08-18T17:59:28+00:00'

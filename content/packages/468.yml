@@ -6,7 +6,7 @@ github: 'https://github.com/gehrisandro/tailwind-merge-laravel'
 author: gehrisandro
 composer: gehrisandro/tailwind-merge-laravel
 npm: null
-stars: 340
+stars: 342
 keywords: '[]'
 first_release_at: '2023-06-16 08:19:30'
 latest_release_at: '2026-03-21 06:54:49'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^12.0|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-06-21T18:23:19+00:00'
-updated_at: '2026-05-20T19:08:16+00:00'
+updated_at: '2026-08-18T17:55:21+00:00'

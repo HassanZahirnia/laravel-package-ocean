@@ -6,7 +6,7 @@ github: 'https://github.com/BenSampo/laravel-enum'
 author: bensampo
 composer: bensampo/laravel-enum
 npm: null
-stars: 2029
+stars: 2030
 keywords: '[]'
 first_release_at: '2017-09-07 21:42:48'
 latest_release_at: '2026-03-29 17:00:09'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^9 || ^10 || ^11 || ^12 || ^13"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:47+00:00'
-updated_at: '2026-05-20T11:46:41+00:00'
+updated_at: '2026-08-18T17:01:16+00:00'

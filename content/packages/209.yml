@@ -6,7 +6,7 @@ github: 'https://github.com/spatie/laravel-flash'
 author: spatie
 composer: spatie/laravel-flash
 npm: null
-stars: 667
+stars: 671
 keywords: '[]'
 first_release_at: '2019-03-14 10:37:31'
 latest_release_at: '2026-02-21 21:49:50'
@@ -14,4 +14,4 @@ laravel_dependency_versions: '["^8.0|^9.0|^10.0|^11.0|^12.0|^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2023-04-09T13:58:48+00:00'
-updated_at: '2026-05-20T18:57:10+00:00'
+updated_at: '2026-08-18T17:39:29+00:00'

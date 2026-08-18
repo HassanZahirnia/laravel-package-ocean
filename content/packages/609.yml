@@ -6,12 +6,12 @@ github: 'https://github.com/ElegantEngineeringTech/laravel-media'
 author: elegantly
 composer: elegantly/laravel-media
 npm: null
-stars: 47
+stars: 48
 keywords: '[]'
 first_release_at: '2024-05-26 15:36:34'
-latest_release_at: '2026-05-14 15:58:52'
+latest_release_at: '2026-08-11 20:42:14'
 laravel_dependency_versions: '["^11.0||^12.0||^13.0"]'
 package_type: laravel-package
 paid_integration: 0
 created_at: '2025-08-01T12:24:10+00:00'
-updated_at: '2026-05-20T19:13:58+00:00'
+updated_at: '2026-08-18T18:01:19+00:00'
