@@ -1,6 +1,6 @@
 <nav class="relative z-50 mx-auto w-full max-w-(--breakpoint-xl)">
     <header
-        class="relative flex items-center justify-between gap-5 px-5 pb-14 pt-9 min-[850px]:py-10"
+        class="relative flex items-center justify-between gap-5 px-5 pt-9 pb-14 min-[850px]:py-10"
     >
         {{-- Logo and brand name --}}
         <x-nav.logo />
@@ -13,7 +13,7 @@
             {{-- Top Packages --}}
             <a
                 href="{{ route('leaderboard') }}"
-                class="mr-2 flex h-11 select-none items-center justify-center gap-2 truncate rounded-xl bg-white/30 pl-4 pr-5 text-sm font-medium text-[#404a6b] shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20 backdrop-blur-xl transition duration-300 hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40 dark:hover:text-[#ABB0DD] dark:hover:shadow-none"
+                class="mr-2 flex h-11 items-center justify-center gap-2 truncate rounded-xl bg-white/30 pr-5 pl-4 text-sm font-medium text-[#404a6b] shadow-lg ring-1 shadow-fuchsia-100/70 ring-slate-200/20 backdrop-blur-xl transition duration-300 select-none hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40 dark:hover:text-[#ABB0DD] dark:hover:shadow-none"
             >
                 <svg
                     width="26"
@@ -55,14 +55,14 @@
             <a
                 href="https://github.com/HassanZahirnia/laravel-package-ocean/discussions/categories/package-suggestions"
                 target="_blank"
-                class="mr-1 select-none truncate rounded-xl bg-white/30 px-5 py-3 text-sm font-medium text-[#404a6b] shadow-lg shadow-fuchsia-100/70 ring-1 ring-slate-200/20 backdrop-blur-xl transition duration-300 hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40 dark:hover:text-[#ABB0DD] dark:hover:shadow-none"
+                class="mr-1 truncate rounded-xl bg-white/30 px-5 py-3 text-sm font-medium text-[#404a6b] shadow-lg ring-1 shadow-fuchsia-100/70 ring-slate-200/20 backdrop-blur-xl transition duration-300 select-none hover:bg-white/40 hover:text-slate-900 hover:shadow-xl hover:shadow-fuchsia-100 dark:bg-transparent dark:text-[#ABB0DD] dark:shadow-none dark:ring-[#627288]/40 dark:hover:bg-[#110E26]/40 dark:hover:text-[#ABB0DD] dark:hover:shadow-none"
             >
                 Suggest a new package
             </a>
 
             {{-- Github Link --}}
             <a
-                class="select-none p-2 transition duration-300 hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
+                class="p-2 transition duration-300 select-none hover:text-slate-600 dark:text-[#ABB0DD] dark:hover:text-[#bcc1ef]"
                 href="https://github.com/HassanZahirnia/laravel-package-ocean"
                 target="_blank"
                 aria-label="Github"
